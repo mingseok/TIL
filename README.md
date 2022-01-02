@@ -10,4 +10,4 @@
 Servlet
 -------
 - 쿠키
-  - 쿠키의 구성
+  - [쿠키의 구성] (https://github.com/mingseok/TIL/blob/main/Servlet/%EC%BF%A0%ED%82%A4%EC%9D%98%20%EA%B8%B0%EC%B4%88.md).
