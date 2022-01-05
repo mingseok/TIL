@@ -10,7 +10,7 @@ Spring
 ---
 
 - Servlet
-  - [Servlet 기초](https://github.com/mingseok/TIL/tree/main/Servlet)<br/>
+  - [Servlet 기초](https://github.com/mingseok/TIL/tree/main/Servlet & JSP)<br/>
 
 
 ## 프로그래밍
