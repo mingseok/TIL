@@ -10,9 +10,13 @@ Spring
 ---
 
 - Servlet
-  - [Servlet 기초](https://github.com/mingseok/TIL/tree/main/Servlet & JSP)<br/>
-
+  - [Servlet & JSP](https://github.com/mingseok/TIL/tree/main/Servlet%20&%20JSP)<br/>
+  - [서블릿](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
+  - [cookie](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/cookie.md)<br/>
+  - [session](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/session.md)<br/>
+  - [쿠키 & 세션 간단 설명](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/%EC%BF%A0%ED%82%A4%20%26%20%EC%84%B8%EC%85%98%20%EA%B0%84%EB%8B%A8%ED%95%9C%20%EC%84%A4%EB%AA%85.md)<br/>
 
 ## 프로그래밍
 - 웹 프로그래밍
   - [웹 프로그래밍 기초](https://github.com/mingseok/TIL/tree/main/programming)<br/>
+  - [request, response](https://github.com/mingseok/TIL/blob/main/programming/request%2C%20response.md)<br/>
