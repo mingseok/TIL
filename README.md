@@ -10,7 +10,7 @@ Spring
 
 - Servlet & JSP
   - [서블릿](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
-  - [MVC 패턴](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/cookie.md)<br/>
+  - [MVC 패턴](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/MVC%20%ED%8C%A8%ED%84%B4%20%EA%B5%AC%ED%98%84.md)<br/>
   - [cookie](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/cookie.md)<br/>
   - [session](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/session.md)<br/>
   - [GET, POST](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/GET%2C%C2%A0POST.md)<br/>
