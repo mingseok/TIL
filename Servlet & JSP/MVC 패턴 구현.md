@@ -48,15 +48,15 @@
 
 ```java
 public void doGet(HttpServletRequest request, HttpServletResponse response)
-											throws ServletException, IOException {
+	throws ServletException, IOException {
 
-					processRequest(request, response);
+	processRequest(request, response);
 }
 
 public void doPost(HttpServletRequest request, HttpServletResponse response)
-											throws ServletException, IOException {
+	throws ServletException, IOException {
 
-					processRequest(request, response);
+	processRequest(request, response);
 }
 			
 ```
@@ -65,9 +65,9 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
 
 ```java
 private void processRequest(HttpServletRequest request, HttpServletResponse response)
-											throws ServletException, IOException {
+	throws ServletException, IOException {
 
-					String type = request.getParameter("type");
+	String type = request.getParameter("type");
 }
 ```
 <br/><br/>
@@ -78,11 +78,11 @@ Object result = null;
 
 if(type == null || type.equals("greeting")) {
 		
-				result = "안녕하세요";
+	result = "안녕하세요";
 		 
   } else if (type.equals("date")) {
 	
-				... 
+	... 
 	
 	}
 ```
