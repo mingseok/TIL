@@ -67,9 +67,9 @@ A (int[] n) {
 for ( int i = 0; i <= n.length; i++) {
        for ( int j = 0; j <= n.length; j++) {
 		System.out.println(i + j);
-	 }
-		}
-}
+	   }
+     }
+  }
 ```
 
 <br/>그래프로 표시 하면 이렇다.
