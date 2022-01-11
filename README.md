@@ -20,9 +20,9 @@ Spring
 
 
 ## 자료구조 & 알고리즘
-  - [자료구조의 분류]()<br/>
-  - [알고리즘]()<br/>
-  - [Big-O]()<br/>
+  - [자료구조의 분류](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%9D%98%20%EB%B6%84%EB%A5%98.md)<br/>
+  - [알고리즘](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)<br/>
+  - [Big-O](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Big_O.md)<br/>
 
 
 
@@ -31,4 +31,4 @@ Spring
 - 웹 프로그래밍
   - [웹 프로그래밍 기초](https://github.com/mingseok/TIL/blob/main/programming/%EC%9B%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B8%B0%EC%B4%88.md)<br/>
   - [request, response](https://github.com/mingseok/TIL/blob/main/programming/request%2C%20response.md)<br/>
-  - [소프트웨어 생명 주기]()<br/>
+  - [소프트웨어 생명 주기](https://github.com/mingseok/TIL/blob/main/programming/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EC%83%9D%EB%AA%85%20%EC%A3%BC%EA%B8%B0.md)<br/>
