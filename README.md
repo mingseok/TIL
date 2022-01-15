@@ -24,8 +24,8 @@ Spring
 
 - 자료구조의 기본 표현 방식
   - [선형 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
-  - [노드]()
-  - [연결 리스트 표현]()
+  - [노드](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%85%B8%EB%93%9C.md)
+  - [연결 리스트 표현](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%ED%91%9C%ED%98%84.md)
   
 <br/>
 
