@@ -18,14 +18,24 @@ Spring
   - [Java Bean](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/Java%20Bean.md)<br/>
   - [쿠키 & 세션 간단 설명](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/%EC%BF%A0%ED%82%A4%20%26%20%EC%84%B8%EC%85%98%20%EA%B0%84%EB%8B%A8%ED%95%9C%20%EC%84%A4%EB%AA%85.md)<br/>
 
+<br/>
 
 ## 자료구조 & 알고리즘
+
+- 자료구조의 기본 표현 방식
+  - [선형 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
+  - [노드]()
+  - [연결 리스트 표현]()
+  
+<br/>
+
+- 자료구조 시작하기
   - [자료구조의 분류](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%9D%98%20%EB%B6%84%EB%A5%98.md)<br/>
   - [알고리즘](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)<br/>
   - [Big-O](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Big_O.md)<br/>
 
 
-
+<br/>
 
 ## 프로그래밍
 - 웹 프로그래밍
