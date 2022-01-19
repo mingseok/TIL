@@ -22,6 +22,14 @@ Spring
 
 ## 자료구조 & 알고리즘
 
+- 응용 자료구조
+  - 스택
+
+ 
+ 
+<br/>
+
+
 - 자료구조의 기본 표현 방식
   - [노드](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%85%B8%EB%93%9C.md)<br/>
   - [선형 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
@@ -36,6 +44,7 @@ Spring
 <br/>
 
 - 자료구조 시작하기
+  - [자료 구조가 중요한 까닭]()<br/>
   - [자료구조의 분류](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%9D%98%20%EB%B6%84%EB%A5%98.md)<br/>
   - [알고리즘](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)<br/>
   - [Big-O](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Big_O.md)<br/>
