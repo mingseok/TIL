@@ -1,9 +1,18 @@
 # Today I Learned(TIL)
 
 >오늘 배운, 알게 된, 학습한 내용을 정리하는 저장소. <br/>
->좋은 개발자가 되기 위해 하루동안 학습한 내용이나 개발관련 경험들을 기록으로 남긴다.<br/>
+>좋은 개발자가 되기 위해 하루동안 학습한 내용이나 개발관련 경험들을 기록으로 남긴다.
+> ***
+<br/>
+
+## 좋은 개발자가 되기 위한 마인드.
+>### **This is not rocket science !**
+>**"이거 어려운 일 아닌데!" (왜 어렵게 생각해?)**
+>### 우주로 로켓을 쏘는 과학에는 정말 답이 없을 수 있지만, 
+>내 수준에서 만나는 문제들은 반드시 문제의 원인과 답이 있다.
 > ***
 
+<br/>
 
 Spring
 ---
@@ -32,15 +41,15 @@ Spring
 
 - 자료구조의 기본 표현 방식
   - [선형 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
-  - [선형 검색 & 이진 검색]()<br/>
+  - [선형 검색 & 이진 검색](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EA%B2%80%EC%83%89%20%26%20%EC%9D%B4%EC%A7%84%20%EA%B2%80%EC%83%89.md)<br/>
   - [연결 리스트 표현](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%ED%91%9C%ED%98%84.md)<br/>
   - [단순 연결 리스트의 알고리즘](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8B%A8%EC%88%9C%20%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%9D%98%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)<br/>
   - [원형 연결 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9B%90%ED%98%95%20%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
   - [이중 연결 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B4%EC%A4%91%20%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
   - [버블 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B2%84%EB%B8%94%20%EC%A0%95%EB%A0%AC.md)<br/>
-  - [선택 정렬]()<br/>
-
-
+  - [선택 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%83%9D%20%EC%A0%95%EB%A0%AC.md)<br/>
+  - [삽입 정렬]()<br/>
+  - [해시 테이블]()<br/>
 
 <br/>
 
