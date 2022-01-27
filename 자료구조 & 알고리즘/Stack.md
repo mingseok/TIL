@@ -1,16 +1,21 @@
 ## 스택
 
-스택은 결국 쌓는 것이다.
+### 스택은 결국 쌓는 것이다.
 
 그리고 마지막에 올린 애부터 꺼낼 수 있는 것이다.
 
 즉, 나중에 저장한 데이터가 먼저 나오는 것이다
 
-![이미지]()
+![이미지](/programming/img/스택0.PNG)
 
 <br/>
 
-스텍이 지원하는 4가지 기능.
+### [스택 코드 보러 가기]()
+
+<br/>
+
+### 스텍이 지원하는 4가지 기능.
+
 
 ```java
 pop() -> 맨 마지막에 넣은 데이터를 가져 오면서 지우는 기능.
@@ -22,74 +27,7 @@ peek() -> 맨 마지막 데이터를 보는 기능
 isEmpty() -> 스택에 데이터가 있는지 없는지 확인하는 기능
 ```
 
-<br/><br/>
-
-
-```java
-package test;
-
-import java.util.EmptyStackException;
-
-class Stack<T> {
-	class Node<T> {
-		private T data;
-		private Node<T> next;
-
-		public Node(T data) {
-			this.data = data;
-		}
-	}
-
-	private Node<T> top;
-
-	public T pop() {
-		if (top == null) {
-
-			throw new EmptyStackException();
-		}
-
-		T item = top.data;
-		top = top.next;
-		return item;
-	}
-
-	public void push(T item) {
-		Node<T> t = new Node<T>(item);
-		t.next = top;
-		top = t;
-	}
-
-	public T peek() {
-		if (top == null) {
-			throw new EmptyStackException();
-		}
-		return top.data;
-	}
-
-	public boolean isEmpty() {
-		return top == null;
-	}
-}
-
-public class Test2 {
-	public static void main(String[] args) {
-		Stack<Integer> s = new Stack<Integer>();
-		s.push(1);
-		s.push(2);
-		s.push(3);
-		s.push(4);
-
-		System.out.println(s.pop());
-		System.out.println(s.pop());
-		System.out.println(s.peek());
-		System.out.println(s.pop());
-		System.out.println(s.isEmpty());
-		System.out.println(s.pop());
-		System.out.println(s.isEmpty());
-	}
-
-}
-```
+<br/>
 
 스택과 큐는 임시 데이터를 처리할 수 있는 간결한 도구다.
 
@@ -99,7 +37,7 @@ public class Test2 {
 
 <br/>
 
-### 스택
+## 스택
 
 데이터를 저장하는 방법은 배열과 같다.
 
@@ -127,17 +65,23 @@ public class Test2 {
 
 접시 더미 위에 한 접시를 얹는다고 생각하면 된다.
 
+<br/>
+
 5를 스택에 푸시하자.
 
 ![이미지](/programming/img/스택1.PNG)
+
+<br/>
 
 이제 3을 스택에 푸시하자.
 
 ![이미지](/programming/img/스택2.PNG)
 
+<br/>
+
 다음 0을 스택에 푸시하자.
 
-스택의 위(즉, 끝)에 추가하고 있다. 
+<br/>스택의 위(즉, 끝)에 추가하고 있다. 
 
 스택의 밑이나 중간에 0을 삽입하고 싶어도 데이터는 위에만 추가할 수 있다는 스택의 특징 때문에 그럴 수 없다.
 
@@ -147,19 +91,21 @@ public class Test2 {
 
 ![이미지](/programming/img/스택3.PNG)
 
+<br/>
+
 먼저 0을 팝한다.
 
 ![이미지](/programming/img/스택4.PNG)
 
-이제 스택은 5와 3, 두 원소만 포함한다.
+<br/>이제 스택은 5와 3, 두 원소만 포함한다.
 
 다음으로 3을 팝한다.
 
 ![이미지](/programming/img/스택5.PNG)
 
-이제 스택은 5만 포함한다.
+<br/>이제 스택은 5만 포함한다.
 
-스택 연산을 묘사하는 데 쓰이는 유용한 단어
+<br/>스택 연산을 묘사하는 데 쓰이는 유용한 단어
 
 “Last In, First Out” 을 뜻 하는 LIFO 다.
 
@@ -171,4 +117,10 @@ public class Test2 {
 
 ## 스택 다뤄보기.
 
-오래 사용할 데이터를 저장할 때는 일반적으로 스택을 사용하지 않지만 임시 데이터를 다뤄야 하는 다양한 알고리즘에서는 스택이 유용한 도구다.
+오래 사용할 데이터를 저장할 때는 일반적으로 스택을 사용하지 않지만 <br/>임시 데이터를 다뤄야 하는 다양한 알고리즘에서는 스택이 유용한 도구다.
+
+<br/><br/>
+
+>**Reference**
+<br/>제이 웬그로우 지음, 심지현 옮김 **『**누구나 자료구조와 알고리즘**』**, 길벗. <br/>
+엔지니어대한민국 - https://www.youtube.com/watch?v=YbsQiiubO74
