@@ -6,11 +6,11 @@
 
 즉, 나중에 저장한 데이터가 먼저 나오는 것이다
 
-![이미지](/programming/img/스택0.PNG)
+![이미지](/programming/img/스택0.png)
 
 <br/>
 
-### [스택 코드 보러 가기]()
+### [스택 코드 보러 가기](https://github.com/mingseok/TIL/blob/main/code/Stack.java)
 
 <br/>
 
