@@ -14,8 +14,7 @@
 
 <br/>
 
-Spring
----
+## Spring
 
 - Servlet & JSP
   - [서블릿](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
@@ -44,7 +43,7 @@ Spring
 
 - 자료구조의 기본 표현 방식
   - [선형 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
-  - [선형 검색 & 이진 검색](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EA%B2%80%EC%83%89%20%26%20%EC%9D%B4%EC%A7%84%20%EA%B2%80%EC%83%89.md)<br/>
+  - [선형 탐색 & 이진 탐색](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EA%B2%80%EC%83%89%20%26%20%EC%9D%B4%EC%A7%84%20%EA%B2%80%EC%83%89.md)<br/>
   - [Linked list](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%ED%91%9C%ED%98%84.md)<br/>
   - [단순 Linked list](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8B%A8%EC%88%9C%20%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%9D%98%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)<br/>
   - [원형 Linked list](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9B%90%ED%98%95%20%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
