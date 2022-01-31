@@ -8,7 +8,7 @@
 
 <br/>
 
-### [큐 코드 보러 가기](https://github.com/mingseok/TIL/blob/main/code/Queue.java)
+### ✔️[큐 코드](https://github.com/mingseok/TIL/blob/main/code/Queue.java)
 
 <br/>
 

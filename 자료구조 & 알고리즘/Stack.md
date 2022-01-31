@@ -10,7 +10,7 @@
 
 <br/>
 
-### [스택 코드 보러 가기](https://github.com/mingseok/TIL/blob/main/code/Stack.java)
+### ✔️[스택 코드](https://github.com/mingseok/TIL/blob/main/code/Stack.java)
 
 <br/>
 
