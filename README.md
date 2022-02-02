@@ -31,7 +31,7 @@
 ## 자료구조 & 알고리즘
 
 - 알고리즘 문제  
-  - [Linked list - 중복값 삭제]()<br/>
+  - [Linked list - 중복값 삭제](https://github.com/mingseok/TIL/blob/main/code/Linked_list_ag.java)<br/>
 
 
 
