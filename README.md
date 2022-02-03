@@ -32,7 +32,7 @@
 
 - 알고리즘 문제  
   - [Linked list - 중복값 삭제](https://github.com/mingseok/TIL/blob/main/code/Linked_list_ag.java)<br/>
-
+  - [Linked list - n번째 노드를 찾기]()<br/>
 
 
 
