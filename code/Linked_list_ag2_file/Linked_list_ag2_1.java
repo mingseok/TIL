@@ -1,9 +1,18 @@
+package test;
+
 import test.LinkedList.Node;
 
-// 단방향 LinkedList의 끝에서 부터 n번째 노드를 찾는 알고리즘을 구현 하시오.
-
-// 단방향 리스트는 항상 맨 앞에서 부터 시작한다.
+// 방법 2.
 // 재귀호출 방법으로 풀기.
+
+// 단방향 LinkedList의 끝에서 부터 n번째 노드를 찾는 알고리즘을 구현 하시오.
+// (단방향 리스트는 항상 맨 앞에서 부터 시작한다.)
+
+// k이가 3이면 뒤에서 부터 노드 3까지 거리를 카운트 한다고 생각하면 된다.
+// 거리를 카운트 하니깐 맨뒤도(자기도) 포함 되는 것이다.
+//   1  2  3  4
+//     정답은 2
+
 
 class LinkedList {
 	Node header;
@@ -94,3 +103,5 @@ public class Test2 {
 	}
 
 }
+
+// 엔지니어대한민국 - https://www.youtube.com/watch?v=Vb24scNDAVg

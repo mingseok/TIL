@@ -1,3 +1,9 @@
+
+import test.LinkedList.Node;
+
+// 단방향 Linked List 중간노드 삭제.
+// 단, 당신은 첫번째 노드가 어딨는지 모르고, 오직 삭제할 노드만 갖고 있다. 
+
 class LinkedList {
 	Node header;
 
@@ -7,13 +13,13 @@ class LinkedList {
 	}
 
 	LinkedList() {
-		header = new Node(); // 노드의 대표 첫부분 (스타트 부분)
+		header = new Node();
 	}
 
 	void append(int d) {
-		Node end = new Node(); // 노드 생성
+		Node end = new Node();
 		end.data = d;
-		Node n = header; // 노드 머리인 0|null -> n에 대입
+		Node n = header;
 
 		while (n.next != null) {
 
@@ -45,9 +51,17 @@ class LinkedList {
 		}
 		System.out.println(n.data);
 	}
+
+	public Node get(int i) {
+		Node n = header;
+		for (int j = 0; j < i; j++) {
+			n = n.next;
+		}
+		return n;
+	}
 }
 
-public class Test {
+public class Test2 {
 
 	public static void main(String[] args) {
 		LinkedList ll = new LinkedList();
@@ -56,10 +70,22 @@ public class Test {
 		ll.append(3);
 		ll.append(4);
 		ll.retrieve();
-		ll.delete(1);
+
+		deleteNode(ll.get(3));
 		ll.retrieve();
+	}
+
+	public static boolean deleteNode(Node n) {
+		if (n == null || n.next == null) {
+			return false;
+		}
+		Node next = n.next;
+		n.data = next.data;
+		n.next = next.next;
+		return true;
+
 	}
 
 }
 
-// 엔지니어대한민국 - https://www.youtube.com/watch?v=IrXYr7T8u_s
+// 엔지니어대한민국 - https://www.youtube.com/watch?v=xI4iPEmkHlc
