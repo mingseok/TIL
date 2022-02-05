@@ -34,7 +34,7 @@
   - [Linked list - 중복값 삭제](https://github.com/mingseok/TIL/blob/main/code/Linked_list_ag.java)<br/>
   - [Linked list - n번째 노드를 찾기](https://github.com/mingseok/TIL/tree/main/code/Linked_list_ag2_file)<br/>
   - [Linked list - 중간노드 삭제](https://github.com/mingseok/TIL/blob/main/code/Linked_list_ag_middle_delete.java)<br/>
-  - [Linked list - List_Digit]()<br/>
+  - [Linked list - List_Digit](https://github.com/mingseok/TIL/tree/main/code/List_Digit_file)<br/>
 
 
 
