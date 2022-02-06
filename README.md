@@ -26,6 +26,9 @@
   - [Java Bean](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/Java%20Bean.md)<br/>
   - [쿠키 & 세션 간단 설명](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/%EC%BF%A0%ED%82%A4%20%26%20%EC%84%B8%EC%85%98%20%EA%B0%84%EB%8B%A8%ED%95%9C%20%EC%84%A4%EB%AA%85.md)<br/>
 
+
+  
+
 <br/>
 
 ## 자료구조 & 알고리즘
@@ -35,8 +38,8 @@
   - [Linked list - n번째 노드를 찾기](https://github.com/mingseok/TIL/tree/main/code/Linked_list_ag2_file)<br/>
   - [Linked list - 중간노드 삭제](https://github.com/mingseok/TIL/blob/main/code/Linked_list_ag_middle_delete.java)<br/>
   - [Linked list - List_Digit](https://github.com/mingseok/TIL/tree/main/code/List_Digit_file)<br/>
-
-
+  - [Linked list - 교차점찾기]()<br/>
+  - [Linked list - 루프찾기]()<br/>
 
 
 <br/>
