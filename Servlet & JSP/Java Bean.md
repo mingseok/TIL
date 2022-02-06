@@ -36,6 +36,8 @@ public class MemberInfo {
 ```
 
 
->**Reference** [https://jjingho.tistory.com/10](https://jjingho.tistory.com/10)
+>**Reference** 
+> <br/>
+[https://jjingho.tistory.com/10](https://jjingho.tistory.com/10)
 <br/>
 최범균,**『**최범균의 JSP 2.3 웹프로그래밍 기초부터 중급까지**』**, 가메출판사.

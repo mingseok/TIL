@@ -106,5 +106,9 @@ RequestDispatcher dispatcher = request.getRequestDispatcher("/simpleView.jsp");
 dispatcher.forward(request, response);
 ```
 
+
 <br/><br/>
+
+>**Reference** 
+> <br/>
 최범균,**『**최범균의 JSP 2.3 웹프로그래밍 기초부터 중급까지**』**, 가메출판사.
