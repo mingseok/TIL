@@ -124,3 +124,5 @@ isEmpty() -> 스택에 데이터가 있는지 없는지 확인하는 기능
 >**Reference**
 <br/>제이 웬그로우 지음, 심지현 옮김 **『**누구나 자료구조와 알고리즘**』**, 길벗. <br/>
 엔지니어대한민국 - https://www.youtube.com/watch?v=YbsQiiubO74
+
+

@@ -127,3 +127,10 @@ public class test {
 무조건 실행 해야 된다 하면 do while
 
 조건에 따라 실행하고 싶다 하면 그냥 while
+
+
+
+<br/><br/>
+
+>**Reference**
+><br/>남궁 성 지음, 『자바의 정석』, 도우출판.

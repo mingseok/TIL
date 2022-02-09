@@ -90,3 +90,8 @@ public static void main (String[] args()) {
 <br/><br/>결과 값은 —> 0, false 가 나온다
 
 ![이미지](/programming/img/set.PNG)
+
+<br/><br/>
+
+>**Reference**
+><br/>제로베이스 - https://zero-base.co.kr/category_dev_camp/java_challenge
