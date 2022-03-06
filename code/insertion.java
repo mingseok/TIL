@@ -1,29 +1,38 @@
-public class aaa {
+class aaa {
 
-    private static void insertion_sort(int[] a) {
-        insertion_sort(a, a.length);
+    /*
+     * 테스트 설명.
+     * int[] arr = { 4, 2, 3 };
+     * 4 2 3 -> 2 < 4 비교
+     * 4 4 3 -> 카피 해뒀으니 2는 신경쓰지말고 4를 2자리에 대입한다. 그리고,
+     * j 가 -1 이므로 while문 종료 후 카피 해둔 2를 원래 있던 4 자리에 넣는다.
+     * 
+     * 2 4 3 -> (현재 i는 2 이고, j는 1이다.) 3 < 4 비교
+     * 2 4 4 -> 카피 해뒀으니 3는 신경쓰지말고 4를 3자리에 대입한다. 그리고 핵심은 그 다음이다.
+     * 2 3 4 -> j가 0이므로 다시 while문 조건으로 올라가는데, 3 < 2 비교가 되는 것이다.
+     * -> while()문 실행하지 않고 바로 밑으로 내려온다.
+     * -> 타켓은 3이였고, j는 0 이였다. 그러면 0 + 1 이 되므로 인덱스 1에 타켓 3을 넣는것이다.
+     * -> 타겟보다 작으므로 그 밑으론 손볼 필요가 없는 것이다. !!
+     */
+    
+    private static void insert(int[] arr) {
+        insert(arr, arr.length);
     }
 
-    private static void insertion_sort(int[] a, int size) {
+    private static void insert(int[] arr, int length) {
 
-        for (int i = 1; i < size; i++) {
-            // 타겟 넘버
-            int target = a[i];
+        for (int i = 1; i < length; i++) {
 
+            int target = arr[i];
             int j = i - 1;
 
-            // 타겟이 이전 원소보다 크기 전 까지 반복
-            while (j >= 0 && target < a[j]) {
-                a[j + 1] = a[j]; // 이전 원소를 한 칸씩 뒤로 미룬다.
+            while (j >= 0 && target < arr[j]) {
+                arr[j + 1] = arr[j];
                 j--;
             }
 
-            /*
-             * 위 반복문에서 탈출 하는 경우 앞의 원소가 타겟보다 작다는 의미이므로
-             * 타겟 원소는 j번째 원소 뒤에 와야한다.
-             * 그러므로 타겟은 j + 1 에 위치하게 된다.
-             */
-            a[j + 1] = target;
+            arr[j + 1] = target;
+
         }
 
     }
@@ -36,9 +45,9 @@ public class aaa {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 4, 2, 7, 1, 3, 5, 6 };
+        int[] arr = { 4, 1, 5, 2, 3 };
         print(arr);
-        insertion_sort(arr);
+        insert(arr);
         print(arr);
     }
 }
