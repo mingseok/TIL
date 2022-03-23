@@ -132,11 +132,6 @@ public class aaa {
 
 <br/>
 
-무조건 실행 해야 된다 하면 do while
-
-조건에 따라 실행하고 싶다 하면 그냥 while
-
-
 
 <br/><br/>
 
