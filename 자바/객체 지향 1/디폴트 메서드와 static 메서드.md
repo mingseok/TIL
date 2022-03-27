@@ -1,18 +1,33 @@
-## 디폴트 메서드와 static메서드
+## Default Method
 
-아래 왼쪽과 같이 newMethod( ) 라는 추상 메서드를 추가하는 대신, <br/>오른쪽과 같이 디폴트 메서드를 추가하면, 기존의 MyInterface를 구현한 클래스를 변경하지 않아도 된다.
-
-<br/>즉, 조상 클래스에 새로운 메서드를 추가한 것과 동일해 지는 것이다.
-
-![이미지](/programming/img/디폴트.PNG)
-
+인터페이스는 기능에 대한 선언만 가능하기 때문에, 실제 코드를 구현한 로직은 포함될 수 없다. <br/>하지만 자바8에서 이러한 룰을 깨트리는 기능이 나오게 되었는데 <br/>그것이 Default Method(디폴트 메소드)이다. <br/>메소드 선언 시에 default를 명시하게 되면 인터페이스 내부에서도 로직이 포함된 메소드를 선언할 수 있다.
 
 <br/>
 
+- interface에서도 메소드 구현이 가능하다.
+- 참조 변수로 함수를 호출할 수 있다.
+- implements한 클래스에서 재정의가 가능하다.
 
-![이미지](/programming/img/디폴트2.PNG)
+<br/>
 
-<br/><br/>위의 규칙이 외우기 귀찮으면, 그냥 필요한 쪽의 메서드와 같은 내용으로 오버라이딩 해버리면 그만이다.
+이런식이다.
+
+```java
+interface MyInterface { 
+    default void printHello() { 
+    	System.out.println("Hello World"); 
+    } 
+}
+```
+default라는 키워드를 메소드에 명시하게 되면 인터페이스 내부라도 코드를 작성할 수 있다.
+
+<br/>
+
+## static Method
+
+- interface에서도 메소드 구현이 가능하다.
+- 반드시 클래스 명으로 메소드를 호출해야 한다.
+- 재정의 불가능!
 
 
 <br/>
@@ -78,3 +93,5 @@ staticMethod() in MyInterface2
 
 >**Reference**
 ><br/>남궁 성 지음, 『자바의 정석』, 도우출판.
+><br/>siyoon210 - https://siyoon210.tistory.com/95
+><br/>dahye_e - https://dahyeee.tistory.com/entry/JAVA-interface-default-static%EB%A9%94%EC%86%8C%EB%93%9C
