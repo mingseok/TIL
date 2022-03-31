@@ -20,7 +20,20 @@ public class Test {
 		}
 	}
 
-	private static void swap(int[] arr, int source, int target) {
+	private static void swap(int[] arr, int source, int target) { // void 지만 int[] arr로 참조변수가 있으니깐
+								      // 서로 변경된 값이 저장 되는 것이다.
+								      // 여기가 끝나고 다시 여기를 호출 했던 부분으로 돌아간다.
+							              // 그리고 내려가 나머지 작업을 동작하는 것이다.
+		
+								      // 만약! swap() 메서드로 넘어와서 안에 printArray() 메서드로 
+								      // 이동하는게 있다면 printArray()으로 가서 진행하면 되는거다. 
+								      // 그리고 진행이 다 끝나면 원래 내가 호출 당했던 곳으로 돌아가면 된다.
+								
+								      // 중요!!!! 돌아가는건 맞다. 
+								      // 그런데 또 다른 메서드가 있다면 그걸 타고 들어가 
+								      // 해당 메서드를 수행하고 돌아가는 것이다.
+									
+									
 		int tmp = arr[source];
 		arr[source] = arr[target];
 		arr[target] = tmp;
