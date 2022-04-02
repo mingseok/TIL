@@ -16,7 +16,10 @@ public class Test5 {
 
 	private static int partition(int[] arr, int start, int end) {
 		int pivot = arr[(start + end) / 2];
-		while (start <= end) {
+		
+		while (start <= end) { // 배열 위치를 생각해 본다면 start - end 이런 모양이 나와야 되는데
+				       // 마지막에는 end - start이 나온다. end - start 처럼 서로 교차 되면 while문 을 끝내는 것이다.
+
 			while (arr[start] < pivot) {
 				start++;
 			}
