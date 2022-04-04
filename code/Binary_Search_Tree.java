@@ -27,7 +27,7 @@ class Tree {
 	}
 
 	public void searchBTree(Node n, int find) {
-		if (find < n.data) {
+		if (find < n.data) { // 1 < 4 n.data가 더 크다고 할수 있다.
 			System.out.println("Data is smaller than " + n.data);
 			searchBTree(n.left, find);
 		} else if (find > n.data) {
