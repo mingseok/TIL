@@ -4,12 +4,12 @@
 
 ```java
 void buy(Product p) {
-		money = money - p.price; 
-		bonusPoint = bonusPoint + p.bonusPoint;
+	money = money - p.price; 
+	bonusPoint = bonusPoint + p.bonusPoint;
 }
 ```
 
-<br/>매개변수가 Product타입의 참조변수라는 것은, 메서드의 매개변수로 Product 클래스의 자손타입의 참조변수면 어느 것이나 <br/>매개변수로 받아들일 수 있다는 뜻이다.
+<br/>매개변수가 Product타입의 참조변수라는 것은, <br/>메서드의 매개변수로 Product 클래스의 **자손타입의 참조변수면 어느 것이나 매개변수로 받아들일 수 있다는 뜻이다.**
 
 <br/>p로 인스턴스의 price 와 bonusPoint를 사용할 수 있기에 이와 같이 할 수 있다.
 
@@ -42,7 +42,7 @@ class Product {
 
 class Tv extends Product {
 	Tv() {
-		// 조상클래스의 생성자 Product(int price)를 호출한다.
+		// 조상클래스의 생성자 Product(int price)를 호출하여 price에 100이 들어간다.
 		super(100);
 	}
 
@@ -65,7 +65,8 @@ class Computer extends Product {
 class Buyer {
 	int money = 1000;
 	int bonusPoint = 0;
-
+	
+	// 다형성에 의해 Product 타입 하나로 Tv랑 Computer 를 받을수 있는 것이다.
 	void buy(Product p) {
 		if (money < p.price) {
 			System.out.println("잔액이 부족하여 물건을 살 수 없습니다.");
@@ -74,6 +75,10 @@ class Buyer {
 
 		money -= p.price; // 가진 돈에서 구입한 제품의 가격을 뺀다.
 		bonusPoint += p.bonusPoint; // 제품의 보너스 점수를 추가한다.
+		
+		// 출력값에 ~ Tv랑, Computer가 나올수 있었던 이유는.
+		// p가 p.toString() 되어 있기 때문에 각자의 객체에 toStirng()이 호출 된것이다.
+		// toString() 생략이 가능하다.
 		System.out.println(p + "을/를 구입하셨습니다.");
 	}
 }
