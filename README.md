@@ -32,7 +32,7 @@
 - [조건문과 반복문](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EC%A1%B0%EA%B1%B4%EB%AC%B8%EA%B3%BC%20%EB%B0%98%EB%B3%B5%EB%AC%B8)<br/>
 - [객체 지향 1](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%201)<br/>
 - [객체 지향 2](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%202)<br/>
-- [예외처리]()<br/>
+- [예외처리](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC)<br/>
 
 
 
