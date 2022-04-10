@@ -5,7 +5,14 @@ public class Test1 {
 	}
 
 	private static void selectionSort(int[] arr, int start) {
-		if (start < arr.length - 1) {
+		if (start < arr.length - 1) { // 어차피 마지막에는 정렬할게 하나 이기 때문에 할 필요가 없는 것이다.
+					      //5 4 2 3 1 --> 0 인덱스
+					      //  4 2 3 5 --> 1 인덱스
+					      //    4 3 5 --> 2 인덱스
+					      //      4 5 --> 3 인덱스
+					      //        5 --> 4 남은게 5 하나 이기 때문할 필요가 없는것이다.
+	
+			
 			int min_index = start;
 
 			for (int i = start; i < arr.length; i++) {
