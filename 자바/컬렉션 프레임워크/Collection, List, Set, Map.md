@@ -206,6 +206,9 @@ int size()
 
 ## Map 인터페이스의 메서드
 
+### 하나의 key와 value를 엔트리 라고 한다.
+
+
 여기서 중요한건 HashMap, TreeMap 이다.
 
 Hashtable은 HashMap이랑 같다.
