@@ -75,14 +75,14 @@ checkedList.add(new Integer(3)); // 에러. Integer 타입은 오지 못한다.
 
 ## 컬렉션 클래스 정리 & 요약
 
-1. ArrayList 와 Vector 특징 : Object 배열을 가지고 있고, 여기에 저장을 한다. 배열기반의 컬렉션 클래스들이다.
+1. ArrayList 와 Vector 특징 : Object 배열을 가지고 있고, 저장을 한다. 배열기반의 컬렉션 클래스들이다.
 
-2. 1번을 기반으로 만든 것이 Stack 이다. - 마지막에 들어 간것이 제일 일찍 나오는 구조. Vector 를 가지고 Stack을 구현한다.
+2. (1)을 기반으로 만든 것이 Stack 이다. - 마지막에 들어 간것이 제일 일찍 나오는 구조. Vector 를 가지고 Stack을 구현한다.
 3. 배열의 단점은?? → 추가, 삭제가 불리하다. 그걸 개선 한것이 ListedList 이다. ListedList 는 연결 기반이다. 
-4. 3번인 ListedList를 가지고 만든 것이 Queue 이다. 제일 먼저 들어간 것이 제일 빨리 나오는 것이다. 
+4. (3)인 ListedList를 가지고 만든 것이 Queue 이다. 제일 먼저 들어간 것이 제일 빨리 나오는 것이다. 
 5. 검색기능을 항샹 시킨것이 HashMap 이다. 어떤 것이냐, 배열의 장점과 링크드리스트의 장점을 합친 것이다. <br/>HashMap은 key와 value를 쌍으로 저장하는 것이다. 그리고 HashMap은 신버전이고 Hashtable은 옛날 버전이다. <br/>신버전을 사용하도록 하자.
 6. TreeMap 같은 경우는 연결 기반을 변경한 것으로 최대 2개 까지 연결 할 수 있는 것이다.<br/> TreeMap 의 장점은 검색, 범위검색, 정렬기능 향상 시킨것이다. (중위 순회 하면 정렬 된다)
-7. HashMap 에서의 key 가지고만 만든 것이 HashSet 이고, TreeMap에서의 key만 가지고 만든 것이 TreeSet 이다.
+7. HashMap 에서의 key만 가지고 만든 것이 HashSet 이고, TreeMap에서의 key만 가지고 만든 것이 TreeSet 이다.
 8. HashMap 의 변경으로 Properties 가 있다. 다른점은 HashMap은 키, 벨류가 (Object, Object) 이지만,<br/> Properties 는 키, 벨류가 (String, String) 이다. 장점은 파일에 읽기와 쓰기가 쉽다.
 9. HashMap은 순서를 유지 하지 않지만, 순서를 유지 하고 싶다면, LinkedHashMap과 LinkedHashSet을 사용하면 되는 것이다.
 
