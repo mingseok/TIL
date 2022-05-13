@@ -4,7 +4,7 @@
 
 ```java
 Comparable // 기본 정렬기준으로 구현하는데 사용. (default)
-Comparator // 기본 정렬기준 외에 다른 기준으로 정렬하고자할 때 사용
+Comparator // 기본 정렬기준 외에 다른 기준으로 정렬하고자할 때 사용 (역순)
 ```
 
 <br/>
@@ -34,19 +34,19 @@ public interface Comparable {
 <br/><br/>
 
 
-## 기본 정렬 기준' 이란?
+## '기본 정렬 기준' 이란?
 
-사전 순서이다. 대문자 먼저 출력, 소문자는 뒤에 출력.
+사전 순서이다. 대문자 먼저 출력하고 소문자는 뒤에 출력.
 
-하지만 "나는 대소문자 구분 하기 싫다." 
+하지만 "나는 대소문자 구분 하기 싫다." 한다면 
 
-한다면 String.CASE_INSENSITIVE_ORDER 메서드 사용하면 된다.
+String.CASE_INSENSITIVE_ORDER 메서드 사용하면 된다.
 
 <br/>그리고 "나는 역순으로 정렬 하고 싶다" 한다면 밑에 Descending 클래스 만들어 주기.
 
 Comparator를 구현하고 있다. compareTo()메서드를 내가 코드 수정하면 된다. 
 
-어떻게? String이 가지고 있던 '기본 정렬 기준'을 이용해서 거기다 * -1 를 했다.
+어떻게? String이 가지고 있던 기본 정렬 기준'을 이용해서 거기다 -1 를 했다.
 
 그러면? 거꾸로 바뀌는 것이다. 음수값으로 변하면서 역순이 되는 것이다. (하지만 - 하면 된다. 이부분은 뒤에 설명)
 
@@ -80,16 +80,19 @@ class aaa {
 		String[] strArr = { "cat", "Dog", "lion", "tiger" };
 
 		Arrays.sort(strArr); // String의 Comparable구현에 의한 정렬
+		
 		// 출력값. strArr=[Dog, cat, lion, tiger] => Dog가 먼저 나온 이유는 대문자라서 
 		System.out.println("strArr=" + Arrays.toString(strArr));
 
 
 		Arrays.sort(strArr, String.CASE_INSENSITIVE_ORDER); // 대소문자 구분안함
+		
 		// 출력값. strArr=[cat, Dog, lion, tiger]
 		System.out.println("strArr=" + Arrays.toString(strArr));
 
 
 		Arrays.sort(strArr, new Descending()); // 역순 정렬
+		
 		// 출력값. strArr=[tiger, lion, cat, Dog]
 		System.out.println("strArr=" + Arrays.toString(strArr));
 	}
@@ -101,7 +104,7 @@ class Descending implements Comparator {
 			Comparable c1 = (Comparable) o1;
 			Comparable c2 = (Comparable) o2;
 			return c1.compareTo(c2) * -1; // -1을 곱해서 기본 정렬방식의 역으로 변경한다.
-						                  // 또는 c2.compareTo(c1)와 같이 순서를 바꿔도 된다.
+						      // 또는 c2.compareTo(c1)와 같이 순서를 바꿔도 된다.
 
 		}
 		return -1;
