@@ -24,7 +24,7 @@
 
 더 이상 읽어 올게 없으면 hasNext() 에서 false 를 반환 하여 끝나는 것이다.
 
-<br/>Iterator 이랑 Enumeration 은 거의 같다.
+**<br/>Iterator 이랑 Enumeration 은 거의 같다.**
 
 Iterator 이 최신 버전이고, Enumeration 구버전이라고 생각하면 된다.
 
