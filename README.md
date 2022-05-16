@@ -17,14 +17,7 @@
 ## Spring
 
 - Servlet & JSP
-  - [서블릿](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
-  - [MVC 패턴](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/MVC%20%ED%8C%A8%ED%84%B4%20%EA%B5%AC%ED%98%84.md)<br/>
    - [필터](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/%ED%95%84%ED%84%B0.md)<br/>
-  - [cookie](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/cookie.md)<br/>
-  - [session](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/session.md)<br/>
-  - [GET, POST](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/GET%2C%C2%A0POST.md)<br/>
-  - [Java Bean](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/Java%20Bean.md)<br/>
-  - [쿠키 & 세션 간단 설명](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/%EC%BF%A0%ED%82%A4%20%26%20%EC%84%B8%EC%85%98%20%EA%B0%84%EB%8B%A8%ED%95%9C%20%EC%84%A4%EB%AA%85.md)<br/>
 
 
 ## Java
@@ -36,24 +29,10 @@
 - [컬렉션 프레임워크](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)<br/>
 
 
-
-
-
 <br/>
 
 
 ## 자료구조 & 알고리즘
-
-- 알고리즘 문제  
-  - [Linked list - 중복값 삭제](https://github.com/mingseok/TIL/blob/main/code/Linked_list_ag.java)<br/>
-  - [Linked list - n번째 노드를 찾기](https://github.com/mingseok/TIL/tree/main/code/Linked_list_ag2_file)<br/>
-  - [Linked list - 중간노드 삭제](https://github.com/mingseok/TIL/blob/main/code/Linked_list_ag_middle_delete.java)<br/>
-  - [Linked list - List_Digit](https://github.com/mingseok/TIL/tree/main/code/List_Digit_file)<br/>
-  - [Linked list - 교차점찾기]()<br/>
-  - [Linked list - 루프찾기]()<br/>
-
-
-<br/>
 
 - 응용 자료구조 
   - [Stack](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Stack.md)<br/>
@@ -77,7 +56,7 @@
   - [버블 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B2%84%EB%B8%94%20%EC%A0%95%EB%A0%AC.md)<br/>
   - [선택 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%83%9D%20%EC%A0%95%EB%A0%AC.md)<br/>
   - [삽입 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%82%BD%EC%9E%85%20%EC%A0%95%EB%A0%AC.md)<br/>
-  - [해시 테이블](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%95%B4%EC%8B%9C%20%ED%85%8C%EC%9D%B4%EB%B8%94.md)<br/>
+
 
 <br/>
 
@@ -88,13 +67,3 @@
   - [자료구조의 분류](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%9D%98%20%EB%B6%84%EB%A5%98.md)<br/>
   - [자료 구조가 중요한 까닭](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0%EA%B0%80%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EA%B9%8C%EB%8B%AD.md)<br/>
 
-
-
-<br/>
-
-## 프로그래밍
-- 웹 프로그래밍
-  - [객체 지향 프로그래밍](https://github.com/mingseok/TIL/blob/main/programming/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)<br/>
-  - [웹 프로그래밍 기초](https://github.com/mingseok/TIL/blob/main/programming/%EC%9B%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B8%B0%EC%B4%88.md)<br/>
-  - [request, response](https://github.com/mingseok/TIL/blob/main/programming/request%2C%20response.md)<br/>
-  - [소프트웨어 생명 주기](https://github.com/mingseok/TIL/blob/main/programming/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EC%83%9D%EB%AA%85%20%EC%A3%BC%EA%B8%B0.md)<br/>
