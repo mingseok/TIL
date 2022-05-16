@@ -84,7 +84,8 @@ checkedList.add(new Integer(3)); // 에러. Integer 타입은 오지 못한다.
 6. TreeMap 같은 경우는 연결 기반을 변경한 것으로 최대 2개 까지 연결 할 수 있는 것이다.<br/> TreeMap 의 장점은 검색, 범위검색, 정렬기능 향상 시킨것이다. (중위 순회 하면 정렬 된다)
 7. HashMap 에서의 key 가지고만 만든 것이 HashSet 이고, TreeMap에서의 key만 가지고 만든 것이 TreeSet 이다.
 8. HashMap 의 변경으로 Properties 가 있다. 다른점은 HashMap은 키, 벨류가 (Object, Object) 이지만,<br/> Properties 는 키, 벨류가 (String, String) 이다. 장점은 파일에 읽기와 쓰기가 쉽다.
-9. HashMap은 순서를 유지 하지 않지만, 순서를 유지 하고 싶다면, LinkedHashMap과 LinkedHashSet을 사용하면 되는 것이다.
+9. HashMap은 순서를 유지 하지 않지만, 순서를 유지 하고 싶다면, LinkedHashMap과 LinkedHashSet을 사용하면 되는 것이다. 
+
 
 ![이미지](/programming/img/컬렉션정리.PNG)
 
