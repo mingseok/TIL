@@ -235,7 +235,7 @@ void putAll(Map t)
 
 <br/>
 
-삭제 - 지정한 key객체오 일치하는 key-value객체를 삭제한다.
+삭제 - 지정한 key객체 일치하는 key-value객체를 삭제한다.
 
 ```java
 Object remove(Object key)

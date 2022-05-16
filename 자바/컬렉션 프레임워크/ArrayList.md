@@ -10,8 +10,6 @@ ArrayList : 데이터의 공간으로 배열을 사용한다.
 
 ## ArrayList의 메서드
 
-<br/>
-
 ### 생성자.
 
 ```java
@@ -138,7 +136,7 @@ class bbb {
 		// 정렬하는 것이다.
 		// Collection은 인터페이스이고, Collections는 클래스 이다.
 		// Collections 유틸 클래스란? math 클래스 처럼 컬렉션을 다루는 데 있어
-        // 필요한 메서드들을 제공하는 클래스 이다. 안에 sort 정렬 등등 메서드들이 있다.
+                // 필요한 메서드들을 제공하는 클래스 이다. 안에 sort 정렬 등등 메서드들이 있다.
 		Collections.sort(list1);	
 		Collections.sort(list2);	
 		print(list1, list2);

@@ -4,6 +4,13 @@
 
 <br/>
 
+
+## asIterator() 메서드
+이 열거에 포함 된 요소들을 순회 하는 Iterator를 리턴합니다.
+
+<br/>
+
+
 ## Iterator 메서드
 
 | 메서드 | 설명 |
@@ -17,11 +24,11 @@
 
 더 이상 읽어 올게 없으면 hasNext() 에서 false 를 반환 하여 끝나는 것이다.
 
-<br/>Iterator 이랑 Enumeration 은 거의 같다.
+**<br/>Iterator 이랑 Enumeration 은 거의 같다.**
 
 Iterator 이 최신 버전이고, Enumeration 구버전이라고 생각하면 된다.
 
-<br/><br/>
+<br/>
 
 ## Enumeration 메서드
 
