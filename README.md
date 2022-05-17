@@ -14,25 +14,30 @@
 
 <br/>
 
-## Spring
+### ETC
+- [🍞 빵 부스러기 저장소]()<br/>
+- [용어 정리]()<br/>
+- [메서드 정리]()<br/>
 
-- Servlet & JSP
-   - [필터](https://github.com/mingseok/TIL/blob/main/Servlet%20%26%20JSP/%ED%95%84%ED%84%B0.md)<br/>
+
+### Spring
+- [스프링이란?]()<br/>
 
 
-## Java
-- [변수 & 연산자](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EB%B3%80%EC%88%98%20%26%20%EC%97%B0%EC%82%B0%EC%9E%90)<br/>
-- [조건문과 반복문](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EC%A1%B0%EA%B1%B4%EB%AC%B8%EA%B3%BC%20%EB%B0%98%EB%B3%B5%EB%AC%B8)<br/>
-- [객체 지향 1](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%201)<br/>
-- [객체 지향 2](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%202)<br/>
-- [예외처리](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC)<br/>
+
+### Java
+- [자바 기초](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94)<br/>
+- [오토박싱 & 언박싱](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%98%A4%ED%86%A0%EB%B0%95%EC%8B%B1%20%26%20%EC%96%B8%EB%B0%95%EC%8B%B1.md)<br/>
+- [래퍼(wrapper) 클래스](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EB%9E%98%ED%8D%BC(wrapper)%20%ED%81%B4%EB%9E%98%EC%8A%A4%2C%20%EB%B3%80%ED%99%98%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)<br/>
 - [컬렉션 프레임워크](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)<br/>
+- [Optional<T>](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/Optional.md)<br/>
+- [람다식]()<br/>
+- [스트림]()<br/>
 
 
-<br/>
 
 
-## 자료구조 & 알고리즘
+### 자료구조 & 알고리즘
 
 - 응용 자료구조 
   - [Stack](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Stack.md)<br/>
@@ -40,10 +45,8 @@
    - [재귀](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%AC%EA%B7%80.md)<br/>
    - [Quick](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%80%B5.md)<br/>
    - [이진 트리](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B4%EC%A7%84%20%ED%8A%B8%EB%A6%AC.md)<br/>
-   - [그래프](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84.md)<br/>  
+   - [그래프](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84.md) 
 
-
-<br/>
 
 
 - 자료구조의 기본 표현 방식
@@ -58,7 +61,6 @@
   - [삽입 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%82%BD%EC%9E%85%20%EC%A0%95%EB%A0%AC.md)<br/>
 
 
-<br/>
 
 - 자료구조 시작하기
   - [노드](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%85%B8%EB%93%9C.md)<br/>
