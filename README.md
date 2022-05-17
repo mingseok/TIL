@@ -13,13 +13,21 @@
 > ***
 
 ### ETC
-- [🍞 빵 부스러기 저장소](https://github.com/Integerous/TIL/blob/master/ETC/BreadCrumbs.md)<br/>
-- [:books: 개발 용어 사전]()<br/>
-- [메서드 정리]()<br/>
+- [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
+- [:books: 개발 용어 사전](https://github.com/mingseok/TIL/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%9A%A9%EC%96%B4%20%EC%82%AC%EC%A0%84/%EA%B0%9C%EB%B0%9C%20%EC%9A%A9%EC%96%B4.md)<br/>
 
 
 ### Spring
-- [스프링이란?]()<br/>
+- [스프링 프레임워크? 스프링 부트?]()<br/>
+- [역할과 구현]()<br/>
+- [OCP]()<br/>
+- [DIP]()<br/>
+- [SRP, LSP, ISP]()<br/>
+- [객체 지향 설계와 스프링]()<br/>
+- [AppConfig, 생성자 주입]()<br/>
+- [프레임워크 vs 라이브러리]()<br/>
+- [IoC, DI, 그리고 컨테이너]()<br/>
+
 
 
 
