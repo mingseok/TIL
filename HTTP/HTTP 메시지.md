@@ -88,6 +88,23 @@ Content-Length: 3423
 - 실제 전송할 데이터
 - HTML 문서, 이미지, 영상,  JSON 등등 byte로 표현할 수 있는 모든 데이터 전송 가능.
 
+<br/>
+
+### 표현
+
+- Content-Type: 표현 데이터의 형식
+    - 미디어 타입, 문자 인코딩
+
+- Content-Encoding: 표현 데이터의 압축 방식
+    - 표현 데이터를 압축하기 위해 사용
+    - 데이터를 읽는 쪽에서 인코딩 헤더의 정보로 압축 해제
+
+- Content-Language: 표현 데이터의 자연 언어
+    - 표현 데이터의 자연 언어를 표현
+    - ko, en, en-US
+
+- Content-Length: 표현 데이터의 길이
+    -  바이트 단위
 
 <br/>
 

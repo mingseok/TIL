@@ -44,9 +44,6 @@
 - [프록시](https://github.com/mingseok/TIL/blob/main/Spring/%ED%94%84%EB%A1%9D%EC%8B%9C.md)<br/>
 
 
-
-
-
 ### Java
 - [자바 기초](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94)<br/>
 - [오토박싱 & 언박싱](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%98%A4%ED%86%A0%EB%B0%95%EC%8B%B1%20%26%20%EC%96%B8%EB%B0%95%EC%8B%B1.md)<br/>
@@ -71,9 +68,13 @@
 - [Stateful, Stateless]()<br/>
 - [비 연결성(connectionless)]()<br/>
 - [HTTP 메시지]()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
+- [URI 설계]()<br/>
+- [HTTP 메서드 - GET, POST]()<br/>
+- [2xx, 3xx, 4xx, 5xx]()<br/>
+- [쿠키]()<br/>
+- [캐시]()<br/>
+
+
 
 
 
