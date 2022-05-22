@@ -42,6 +42,40 @@
 - [애노테이션 @PostConstruct, @PreDestroy](https://github.com/mingseok/TIL/blob/main/Spring/%EC%95%A0%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98%20%40PostConstruct%2C%20%40PreDestroy.md)<br/>
 - [빈 스코프, request 스코프](https://github.com/mingseok/TIL/blob/main/Spring/%EB%B9%88%20%EC%8A%A4%EC%BD%94%ED%94%84%2C%20request%20%EC%8A%A4%EC%BD%94%ED%94%84.md)<br/>
 - [프록시](https://github.com/mingseok/TIL/blob/main/Spring/%ED%94%84%EB%A1%9D%EC%8B%9C.md)<br/>
+- [WEB-INF]()<br/>
+
+
+
+### MVC
+- []()<br/>
+- []()<br/>
+- []()<br/>
+
+
+
+
+### Servlet & 웹 애플리케이션
+- [WAS 서버와 WEB 서버의 이해]()<br/>
+- [Servlet]()<br/>
+- [멀티 쓰레드]()<br/>
+- [HTML, HTTP API, CSR, SSR]()<br/>
+- [HttpServletRequest]()<br/>
+- [HTTP 요청 데이터 & GET 쿼리 파라미터]()<br/>
+- [POST HTML Form]()<br/>
+- [API 메세지 바디 - JSON]()<br/>
+- [단순 텍스트, HTML]()<br/>
+- [API JSON]()<br/>
+- [JSP]()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+
+
+
+
+
+
+
 
 
 ### Java
