@@ -88,7 +88,7 @@ public class RequestParamController {
 
 <br/>
 
-결국 `equest.getParameter("username")` 하는 거랑 똑같은 효과가 있는 것이다.
+결국 `request.getParameter("username")` 하는 거랑 똑같은 효과가 있는 것이다.
 
 
 <br/>
