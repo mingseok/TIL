@@ -14,7 +14,7 @@
 
 ### ETC
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
-- [:scroll: 첫째도 기본기, 둘째도 기본기](https://github.com/mingseok/TIL/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%9A%A9%EC%96%B4%20%EC%82%AC%EC%A0%84/%EA%B0%9C%EB%B0%9C%20%EC%9A%A9%EC%96%B4.md)<br/>
+- [:scroll: 첫째도 기본기, 둘째도 기본기](https://github.com/mingseok/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EA%B8%B0/%EC%B2%AB%EC%A7%B8%EB%8F%84%20%EA%B8%B0%EB%B3%B8%EA%B8%B0%2C%20%EB%91%98%EC%A7%B8%EB%8F%84%20%EA%B8%B0%EB%B3%B8%EA%B8%B0.md)<br/>
 
 
 
