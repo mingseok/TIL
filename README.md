@@ -18,6 +18,8 @@
 
 
 
+
+
 ### Spring
 - [스프링 프레임워크? 스프링 부트?](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.md)<br/>
 - [역할과 구현](https://github.com/mingseok/TIL/blob/main/Spring/%EC%97%AD%ED%95%A0.md)<br/>
@@ -27,9 +29,10 @@
 - [객체 지향 설계와 스프링](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%EC%84%A4%EA%B3%84%EC%99%80%20%EC%8A%A4%ED%94%84%EB%A7%81.md)<br/>
 - [AppConfig, 생성자 주입](https://github.com/mingseok/TIL/blob/main/Spring/AppConfig%2C%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85.md)<br/>
 - [프레임워크 vs 라이브러리](https://github.com/mingseok/TIL/blob/main/Spring/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%20vs%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC.md)<br/>
-- [DI]()<br/>
+- [DI](https://github.com/mingseok/TIL/blob/main/Spring/DI.md)<br/>
 - [IoC, DI, 그리고 컨테이너](https://github.com/mingseok/TIL/blob/main/Spring/IoC%2C%20DI%2C%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88.md)<br/>
-- [bean 등록 방식]()<br/>
+- [bean 등록 방식](https://github.com/mingseok/TIL/blob/main/Spring/bean%20%EB%93%B1%EB%A1%9D%20%EB%B0%A9%EC%8B%9D.md)<br/>
+- [스프링 빈의 이벤트 라이프사이클]()<br/>
 - [ApplicationContext 생성](https://github.com/mingseok/TIL/blob/main/Spring/ApplicationContext%20%EC%83%9D%EC%84%B1.md)<br/>
 - [스프링 빈 조회 기술](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88%20%EC%A1%B0%ED%9A%8C%20%EA%B8%B0%EC%88%A0.md)<br/>
 - [스프링 빈 설정 메타 정보](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88%20%EC%84%A4%EC%A0%95%20%EB%A9%94%ED%83%80%20%EC%A0%95%EB%B3%B4.md)<br/>
@@ -37,6 +40,7 @@
 - [AppConfig@CGLIB](https://github.com/mingseok/TIL/blob/main/Spring/AppConfig%40CGLIB.md)<br/>
 - [탐색 위치와 필터](https://github.com/mingseok/TIL/blob/main/Spring/%ED%83%90%EC%83%89%20%EC%9C%84%EC%B9%98%EC%99%80%20%ED%95%84%ED%84%B0.md)<br/>
 - [의존관계 주입 방법](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84%20%EC%A3%BC%EC%9E%85%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [@Autowired]()<br/>
 - [@Autowired 옵션 처리](https://github.com/mingseok/TIL/blob/main/Spring/%EC%98%B5%EC%85%98%20%EC%B2%98%EB%A6%AC.md)<br/>
 - [lombok](https://github.com/mingseok/TIL/blob/main/Spring/lombok.md)<br/>
 - [@Autowired 필드 명, @Qualifier, @Primary](https://github.com/mingseok/TIL/blob/main/Spring/%40Autowired%20%ED%95%84%EB%93%9C%20%EB%AA%85%2C%20%40Qualifier%2C%20%40Primary.md)<br/>
@@ -46,6 +50,8 @@
 - [빈 스코프, request 스코프](https://github.com/mingseok/TIL/blob/main/Spring/%EB%B9%88%20%EC%8A%A4%EC%BD%94%ED%94%84%2C%20request%20%EC%8A%A4%EC%BD%94%ED%94%84.md)<br/>
 - [프록시](https://github.com/mingseok/TIL/blob/main/Spring/%ED%94%84%EB%A1%9D%EC%8B%9C.md)<br/>
 - [WEB-INF](https://github.com/mingseok/TIL/blob/main/Spring/WEB-INF.md)<br/>
+- [@Primary]()<br/>
+
 
 
 
@@ -95,6 +101,27 @@
 - [익명](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%9D%B5%EB%AA%85.md)<br/>
 - [람다식](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EB%9E%8C%EB%8B%A4%EC%8B%9D.md)<br/>
 - [스트림](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%8A%A4%ED%8A%B8%EB%A6%BC.md)<br/>
+
+
+
+
+### TDD
+- [TDD란?]()<br/>
+- [Assertions.assertThat()]()<br/>
+- [@AfterEach]()<br/>
+- [@BeforeEach]()<br/>
+- [isSameAs()와 isEqualTo()]()<br/>
+- [contains()]()<br/>
+- [isNotNull()]()<br/>
+- [isInstanceOf()]()<br/>
+- [isNotSameAs()]()<br/>
+- [트랜잭션]()<br/>
+- [롤백]()<br/>
+
+
+
+
+
 
 
 ### HTTP

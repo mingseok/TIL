@@ -78,3 +78,18 @@ new로 생성하지 않아도 new로 생성한 객체를 이용할 수 있게 �
 - 의존관계 주입을 사용하면 정적인 클래스 의존관계를 변경하지 않고,
     
     동적인 객체 인스턴스 의존관계를 쉽게 변경할 수 있다.
+
+
+<br/><br/>
+
+
+## `HelloSpringApplication` 부터 자바빈을 찾는다.
+
+그 상위 이상의 폴더는 자바빈을 찾지 않는다.
+
+![이미지](/programming/img/스7.PNG)
+
+
+<br/>
+
+>**Reference** <br/>스프링 핵심 원리 - 기본편 : https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8
