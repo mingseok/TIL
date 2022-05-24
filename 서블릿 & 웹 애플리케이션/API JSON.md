@@ -18,7 +18,7 @@ public class HelloData {
 
 <br/>
 
-`basic 폴더` → `response 패키지`  선택해서 `ResponseJsonServlet` 클래스 생성한다.
+`ResponseJsonServlet` 클래스 생성한다.
 
 ```java
 package hello.servlet.basic.response;

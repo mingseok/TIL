@@ -8,7 +8,7 @@
 
 <br/>
 
-`basic 폴더` → `response 패키지` 선택해서 `ResponseHtmlServlet 클래스` 생성하기.
+`ResponseHtmlServlet 클래스` 생성하기.
 
 ```java
 package hello.servlet.basic.response;
