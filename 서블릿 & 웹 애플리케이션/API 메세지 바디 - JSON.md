@@ -16,7 +16,6 @@ json은 바로 쓰지 않고, 보통 객체로 바꿔서 사용한다.
 
 <br/>
 
-### `basic 폴더` 선택하고, `HelloData` 클래스를 생성해준다.
 
 ```java
 package hello.servlet.basic;
@@ -51,7 +50,7 @@ public class RequestBodyJsonServlet extends HttpServlet {
         ServletInputStream inputStream = request.getInputStream();
 
         // StreamUtils.copyToString()는. bytecode를 문자열로 변환. 
-				// 단, 인코딩 형태를 항상 명시.
+	// 단, 인코딩 형태를 항상 명시.
         String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
 
         System.out.println("messageBody = " + messageBody);
@@ -59,7 +58,7 @@ public class RequestBodyJsonServlet extends HttpServlet {
         // 객체로 뽑아낸 것처럼 동일하게 ObjectMapper 를 통해 객체를 담아서 전송한다. 
         HelloData helloData = objectMapper.readValue(messageBody, HelloData.class);
 
-				// 객체로 변환 한것이다.
+	// 객체로 변환 한것이다.
         System.out.println("helloData.username = " + helloData.getUsername());
         System.out.println("helloData.age = " + helloData.getAge());
 
