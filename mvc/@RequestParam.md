@@ -16,10 +16,11 @@ public class RequestParamController {
     /**
      * 반환 타입이 없으면서 이렇게 응답에 값을 직접 집어넣으면, view 조회X
      */
-	// http://localhost:8080/request-param-v1?username=hello&age=20
+    // http://localhost:8080/request-param-v1?username=hello&age=20
     @RequestMapping("/request-param-v1") // 이거 실행시키는게 아니고 위에꺼
     public void requestParamV1(HttpServletRequest request,
                                HttpServletResponse response) throws IOException {
+			       
         String username = request.getParameter("username");
         int age = Integer.parseInt(request.getParameter("age"));
         log.info("username={}, age={}", username, age);
@@ -28,7 +29,7 @@ public class RequestParamController {
     }
 
     
-	// http://localhost:8080/request-param-v2?username=hello&age=20
+    // http://localhost:8080/request-param-v2?username=hello&age=20
     @ResponseBody
     @RequestMapping("/request-param-v2")
     public String requestParamV2(
@@ -40,8 +41,8 @@ public class RequestParamController {
     }
 
 			
-	// 이렇게 생략 할 수도 있다.
-	// http://localhost:8080/request-param-v3?username=hello&age=20
+    // 이렇게 생략 할 수도 있다.
+    // http://localhost:8080/request-param-v3?username=hello&age=20
     @ResponseBody
     @RequestMapping("/request-param-v3")
     public String requestParamV3(
@@ -52,8 +53,9 @@ public class RequestParamController {
         return "ok";
     }
 
-	// 더 줄일수 있다.
-	// http://localhost:8080/request-param-v4?username=hello&age=20
+
+    // 더 줄일수 있다.
+    // http://localhost:8080/request-param-v4?username=hello&age=20
     @ResponseBody
     @RequestMapping("/request-param-v4")
     public String requestParamV4(String username, int age) {
@@ -62,12 +64,13 @@ public class RequestParamController {
         return "ok";
     }
 		
-	// 모든 요청을 다 받고 싶다 할때는.
+		
+    // 모든 요청을 다 받고 싶다 할때는.
     @ResponseBody
     @RequestMapping("/request-param-map")
     public String requestParamMap(@RequestParam Map<String, Object> paramMap) {
-        log.info("username={}, age={}", paramMap.get("username"),
-                paramMap.get("age"));
+    
+        log.info("username={}, age={}", paramMap.get("username"), paramMap.get("age"));
         return "ok";
     }
 
