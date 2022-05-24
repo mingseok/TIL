@@ -13,7 +13,9 @@
 
 메시지 바디에 쿼리 파리미터 형식으로 데이터를 전달한다. `username=hello&age=20`
 
-### `webapp 폴더(이거 위에 폴더가 main 폴더)`에서 `basic 패키지` 들어가 `hello-form.html` 생성하기
+<br/>
+
+`hello-form.html` 생성하기
 
 ```html
 <!DOCTYPE html>
@@ -67,9 +69,9 @@
 `request.getParameter()` 로 편리하게 구분없이 조회할 수 있다
 
 정리하면 `request.getParameter()` 는 GET URL 쿼리 파라미터 형식도 지원하고, 
-POST HTML Form 형식도 둘 다 지원한다.<br/> (자바 코드를 안만들어도 되니깐 편한 것이다)
+POST HTML Form 형식도 둘 다 지원한다. 
 
-<br/>
+(자바 코드를 안만들어도 되니깐 편한 것이다)
 
 ### form<> 태그에서 온 것을 request.getParameter() 를 이용해서 꺼내는 것이다.
 
