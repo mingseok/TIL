@@ -72,7 +72,7 @@ public String modelAttributeV1(@RequestParam String username, @RequestParam int 
 public String modelAttributeV1(@ModelAttribute HelloData helloData) {
      log.info("username={}, age={}", helloData.getUsername(), helloData.getAge());
        
-		 return "ok";
+     return "ok";
 }
 ```
 
@@ -150,9 +150,9 @@ username 프로퍼티의 값을 변경하면 setUsername() 이 호출되고, 조
     @PostMapping("/add")
     public String addItemV3(@ModelAttribute Item item) {
     
-    		itemRepository.save(item);
+    	itemRepository.save(item);
     
-    		return "basic/item";
+    	return "basic/item";
     }
     ```
  <br/>   
