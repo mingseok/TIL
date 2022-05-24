@@ -67,9 +67,7 @@
 - [쿼리 파라미터, HTML Form](https://github.com/mingseok/TIL/blob/main/mvc/%EC%BF%BC%EB%A6%AC%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%2C%20HTML%20Form.md)<br/>
 - [@RequestParam](https://github.com/mingseok/TIL/blob/main/mvc/%40RequestParam.md)<br/>
 - [@ModelAttribute](https://github.com/mingseok/TIL/blob/main/mvc/%40ModelAttribute.md)<br/>
-- [@RequestBody, @ResponseBody]()<br/>
-
-
+- [@RequestBody, @ResponseBody](https://github.com/mingseok/TIL/blob/main/mvc/%40RequestBody%2C%20%40ResponseBody.md)<br/>
 - [HTTP 요청 메세지 - 단순 텍스트](https://github.com/mingseok/TIL/blob/main/mvc/%EB%8B%A8%EC%88%9C%20%ED%85%8D%EC%8A%A4%ED%8A%B8.md)<br/>
 - [HTTP 요청 메세지 - JSON](https://github.com/mingseok/TIL/blob/main/mvc/JSON.md)<br/>
 - [응답 - 정적 리소스, 뷰 템블릿](https://github.com/mingseok/TIL/blob/main/mvc/%EC%9D%91%EB%8B%B5%20-%20%EC%A0%95%EC%A0%81%20%EB%A6%AC%EC%86%8C%EC%8A%A4%2C%20%EB%B7%B0%20%ED%85%9C%EB%B8%94%EB%A6%BF.md)<br/>

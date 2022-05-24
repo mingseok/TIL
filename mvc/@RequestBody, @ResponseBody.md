@@ -31,6 +31,10 @@ public String requestBodyStringV3(@RequestBody String messageBody) {
 
 ## @ResponseBody
 
+
+`@ResponseBody` : `View` 조회를 무시하고, `HTTP message body`에 직접 해당 내용 입력
+
+
 만약 @ResponseBody를 사용하지 않고 아래와 같이 코드를 작성하면, helloworld.jsp 라는 찾는다.
 
 
