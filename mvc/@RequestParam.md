@@ -85,9 +85,12 @@ public class RequestParamController {
 
 <br/>
 
-`@RequestParam`의 `name(value)` 속성이 파라미터 이름으로 사용
+`@RequestParam`의 `name(value)` 속성이 파라미터 이름으로 사용되는 것이다.
 
 `@RequestParam("username") String memberName`
+
+
+![이미지](/programming/img/갸2.PNG)
 
 <br/>
 
