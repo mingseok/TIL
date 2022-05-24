@@ -116,6 +116,16 @@ view는 MyView의 객체가 들어가게 되면서
 
 물리 뷰 경로: /WEB-INF/views/members.jsp
 
+```java
+private MyView viewResolver(String viewName) {
+
+    return new MyView("/WEB-INF/views/" + viewName + ".jsp");
+
+}
+```
+
+
+
 <br/>
 
 >**Reference** <br/>스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1
