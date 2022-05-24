@@ -40,8 +40,8 @@ public class ResponseJsonServlet extends HttpServlet {
         helloData.setAge(777);
 
         // HelloData 클래스에 있는 객체를 
-				// {"username":"MMMMMMM", "age":777} 이렇게 스트링(=json) 형태로 
-				// 변경하고 값도 변경한 것이다.
+	// {"username":"MMMMMMM", "age":777} 이렇게 스트링(=json) 형태로 
+	// 변경하고 값도 변경한 것이다.
         String result = objectMapper.writeValueAsString(helloData);
         response.getWriter().write(result);
 
