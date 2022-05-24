@@ -40,7 +40,7 @@ public String addItemV4(Item item, RedirectAttributes redirectAttributes) {
 
 <br/>실행해보면 다음과 같은 리다이렉트 결과가 나온다.
 
-http://localhost:8080/basic/items/3?status=true
+localhost:8080/basic/items/3?status=true
 
 <br/>
 

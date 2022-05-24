@@ -2,7 +2,7 @@
 
 ### JSON 형식 전송
 
-POST (http://localhost:8080/request-body-json)
+POST localhost:8080/request-body-json
 
 `content-type: application/json`
 

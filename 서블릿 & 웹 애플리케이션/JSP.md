@@ -76,7 +76,7 @@ implementation 'javax.servlet:jstl'
 
 실행 시켜보면,
 
-[http://localhost:8080/](http://localhost:8080/) 검색하고 들어가서
+localhost:8080/ 검색하고 들어가서
 
 ‘JSP 회원가입’ 을 클릭하여 이름과 나이를 입력 후에 전송 보내면 
 
@@ -145,7 +145,7 @@ implementation 'javax.servlet:jstl'
 
 <br/>실행시 `.jsp` 까지 함께 적어주어야 한다.
 
-[http://localhost:8080/jsp/members/new-form.jsp](http://localhost:8080/jsp/members/new-form.jsp)
+localhost:8080/jsp/members/new-form.jsp
 
 <br/>JSP는 자바 코드를 그대로 다 사용할 수 있다.
 

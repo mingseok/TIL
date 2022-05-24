@@ -55,7 +55,7 @@ form<> 태그에서 온 것을 request.getParameter() 를 이용해서 꺼내는
 
 추가 파라미터는 `&` 로 구분하면 된다.
 
-http://localhost:8080/request-param?username=hello&age=20
+localhost:8080/request-param?username=hello&age=20
 
 <br/>서버에서는 HttpServletRequest 가 제공하는 다음 메서드를 통해 쿼리 파라미터를 편리하게 조회할 수 있다.
 

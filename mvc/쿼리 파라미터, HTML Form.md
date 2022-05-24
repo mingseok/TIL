@@ -41,7 +41,7 @@ POST, PUT, PATCH
 
 ### GET, 쿼리 파라미터 전송
 
-예시 : http://localhost:8080/request-param?username=hello&age=20
+예시 : localhost:8080/request-param?username=hello&age=20
 
 <br/>
 

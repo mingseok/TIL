@@ -1,7 +1,7 @@
 ## 속성 변경 - th:value
 
 ```html
-th:value="${[item.id](http://item.id/)}"
+th:value="${[item.id](//item.id/)}"
 ```
 
 <br/>모델에 있는 item 정보를 획득하고 프로퍼티 접근법으로 출력한다. ( item.getId() )
@@ -15,7 +15,7 @@ value 속성을 th:value 속성으로 변경한다.
 ### 상품 수정 링크
 
 ```html
-th:onclick="|location.href='@{/basic/items/{itemId}/edit(itemId=${[item.id](http://item.id/)})}'|"
+th:onclick="|location.href='@{/basic/items/{itemId}/edit(itemId=${[item.id](//item.id/)})}'|"
 ```
 
 <br/>
