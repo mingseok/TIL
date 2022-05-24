@@ -1,5 +1,46 @@
 ## Model
 
+
+ModelView 클래스 생성하기.
+
+```java
+package hello.servlet.web.frontcontroller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ModelView {
+    
+    private String viewName;
+    private Map<String, Object> model = new HashMap<>();
+    
+    public ModelView(String viewName) {
+        this.viewName = viewName;
+    }
+
+    public String getViewName() {
+        return viewName;
+    }
+
+    public void setViewName(String viewName) {
+        this.viewName = viewName;
+    }
+
+    public Map<String, Object> getModel() {
+        return model;
+    }
+
+    public void setModel(Map<String, Object> model) {
+        this.model = model;
+    }
+    
+    
+}
+```
+
+<br/>
+
+
 `ControllerV3 인터페이스` 만들기 생성하기.
 
 ```java
@@ -31,7 +72,7 @@ public class MemberFormControllerV3 implements ControllerV3 {
 }
 ```
 
-<br/>
+<br/><br/>
 
 `MemberSaveControllerV3` 클래스 생성
 
