@@ -154,6 +154,16 @@
 - []()<br/>
 - []()<br/>
 - []()<br/>
+
+
+연산
+속성 값 설정
+
+
+
+
+
+
 - [타임리프](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EA%B0%84%EB%8B%A8%ED%9E%88%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.md)<br/>
 - [속성 변경 - th:value](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%86%8D%EC%84%B1%20%EB%B3%80%EA%B2%BD%20-%20th-value.md)<br/>
 - [속성 변경 - th:action](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%86%8D%EC%84%B1%20%EB%B3%80%EA%B2%BD%20-%20th-action.md)<br/>

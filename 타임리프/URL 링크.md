@@ -56,46 +56,6 @@ hello : 상대 경로
 
 <br/>
 
-java 클래스
 
-```java
-package hello.thymeleaf.basic;
-
-@Controller
-@RequestMapping("/basic")
-public class BasicController {
-
-    @GetMapping("link")
-    public String link(Model model) {
-        model.addAttribute("param1", "data1");
-        model.addAttribute("param2", "data3");
-        return "basic/link";
-    }
-}
-```
-
-<br/>
-
-/resources/templates/basic/link.html
-```html
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>URL 링크</h1>
-<ul>
-    <li><a th:href="@{/hello}">basic url</a></li>
-    <li><a th:href="@{/hello(param1=${param1}, param2=${param2})}">hello query param</a></li>
-    <li><a th:href="@{/hello/{param1}/{param2}(param1=${param1}, param2=${param2})}">path variable</a></li>
-    <li><a th:href="@{/hello/{param1}(param1=${param1}, param2=${param2})}">path variable + query parameter</a></li>
-</ul>
-</body>
-</html>
-```
-
-<br/>
 
 >**Reference** <br/>스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1
