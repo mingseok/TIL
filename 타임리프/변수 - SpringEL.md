@@ -51,9 +51,37 @@ public class BasicController {
 }
 ```
 
-<br/><br/>
+<br/>
 
 /resources/templates/basic/variable.html
+
+<br/>
+
+${user.username} 이렇게 사용할 수 있고, <br/>
+
+또는 ${user['username']} 도 사용 할 수 있고,
+
+또는 ${user.getUsername()} 도 사용 할 수 있다.
+
+<br/>
+
+### List 로 사용 할때는 
+
+    ${users[0].username} 도 사용 가능 하며, 
+    ${users[0]['username']} 도 사용가능 하며,
+    ${users[0].getUsername()} 가능 하다.
+
+<br/>
+
+### Map 으로 사용 할때는 이렇게도 가능하다.
+
+    ${userMap['userA'].username}
+    ${userMap['userA']['username']}
+    ${userMap['userA'].getUsername()}
+
+
+<br/>
+
 ```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
@@ -86,6 +114,12 @@ public class BasicController {
 실행 시켜 보면
 
 ![이미지](/programming/img/겨2.PNG)
+
+
+<br/>
+
+### 추가로 th:with= 로 지역 변수도 선언 할수 있다.
+
 
 <br/>
 

@@ -151,24 +151,14 @@
 - [기본 객체들]()<br/>
 - [URL 링크]()<br/>
 - [리터럴]()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-
-
-연산 (중요)
-속성 값 설정
-조건부 if, switch 문
-반복
-블록
-
-
-
-
-- [타임리프](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EA%B0%84%EB%8B%A8%ED%9E%88%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.md)<br/>
-- [속성 변경 - th:value](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%86%8D%EC%84%B1%20%EB%B3%80%EA%B2%BD%20-%20th-value.md)<br/>
-- [속성 변경 - th:action](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%86%8D%EC%84%B1%20%EB%B3%80%EA%B2%BD%20-%20th-action.md)<br/>
-- [해당 조건이 참이면 실행 - th-if](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%95%B4%EB%8B%B9%20%EC%A1%B0%EA%B1%B4%EC%9D%B4%20%EC%B0%B8%EC%9D%B4%EB%A9%B4%20%EC%8B%A4%ED%96%89%20-%20th-if.md)<br/>
+- [연산 (중요)]()<br/>
+- [속성 값 설정]()<br/>
+- [조건부 if, switch 문]()<br/>
+- [반복]()<br/>
+- [블록]()<br/>
+- [자바스크립트 인라인]()<br/>
+- [템플릿 조각]()<br/>
+- [템플릿 레이아웃]()<br/>
 
 
 
