@@ -1,4 +1,4 @@
-## 요청 매핑
+## 요청 매핑, @PathVariable
 
 http://localhost:8080/hello-basic 를 실행 시켜보면 OK가 출력되는 걸 알 수 있다.
 
@@ -62,6 +62,35 @@ public class MappingController {
 
 <br/>
 <br/>
+
+
+## @PathVariable 이란?
+
+<br/>
+
+![이미지](/programming/img/겨10.PNG)
+
+<br/>
+
+```java
+@GetMapping("/test/{cat}")
+public String methodName(@PathVariable int cat){
+  
+
+  return "test";
+}
+```
+
+위와 같이 코드를 작성하면,
+
+"localhost:8080/test/3"과 같이 호출했을 때 cat 값이 3이 된다.
+
+
+하지만, 만약에 "localhost:8080/test"와 같이 변수를 넣어주지 않으면 에러가 발생한다.
+
+
+<br/>
+
 
 ### 밑에 코드에서의 1-1 과 1-2 의 차이점
 
@@ -148,3 +177,5 @@ localhost:8080/mapping/users/userA/orders/100
 <br/>
 
 >**Reference** <br/>스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1
+<br/>
+매트의 개발 블로그 - https://kkangdda.tistory.com/36

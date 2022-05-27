@@ -11,16 +11,27 @@
 
 
 ```java
-// RedirectAttributes 방법
-@PostMapping("/add")
-public String addItemV4(Item item, RedirectAttributes redirectAttributes) {
+    // RedirectAttributes 방법
+    @PostMapping("/add")
+    public String addItemV4(Item item, RedirectAttributes redirectAttributes) {
         Item savedItem = itemRepository.save(item);
-       
+
+        // redirectAttributes 에다가 항상 하는 addAttribute를 사용하여 넣을 수가 있다.
         redirectAttributes.addAttribute("itemId", savedItem.getId());
+
+        // 그냥 status 안에 'true' 를 저장하는 것이다.
         redirectAttributes.addAttribute("status", true);
-       
+
+        // 이렇게 사용하면 return 마지막 {itemId} 부분이 매개변수로 받은 "itemId" 로 치환 된다.
+        // 즉, savedItem.getId()) 가 된다는 말이다.
+        
+        // 그리고 못들어간 "status" 는 쿼리 파라미터식으로 들어가게 되는 것이다.
+        // "redirect:/basic/items/savedItem.getId())?status=true" 가 되는 것이다.
+        
+        // 브라우저에서 확인 해보면 
+        // localhost:8080/basic/items/3?status=true 가 되는 것이다.
         return "redirect:/basic/items/{itemId}";
-}
+    }
 ```
 
 
