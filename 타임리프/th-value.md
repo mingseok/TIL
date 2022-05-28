@@ -1,4 +1,20 @@
-## 속성 변경 - th:value
+## th:value
+
+input 의 value에 값을 삽입할 때 사용
+
+```java
+th:value = "${표현 값}"
+```
+
+<br/>
+
+value 를 th:value 로 변경하고 출력하고자 하는 변수를 입력해주면 된다.
+
+```java
+<input type="hidden" th:value="${data.idx}"/>
+```
+
+<br/>
 
 ```html
 th:value="${[item.id](//item.id/)}"
