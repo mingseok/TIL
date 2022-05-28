@@ -28,7 +28,7 @@ public class FormItemController {
 
 이렇게 한다면,
 
-### 다른 곳에서 Model model 에 "regions" 가 담겨져 가는 것이다. 
+### 다른 메서드에 Model model 에 "regions" 가 담겨져 가는 것이다. 
 
 
 이렇게 함으로써 반복 되는 코드를 줄일 수가 있다.
