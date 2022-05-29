@@ -78,6 +78,21 @@
 - [요청 매핑 헨들러 어뎁터 구조](https://github.com/mingseok/TIL/blob/main/mvc/%ED%97%A8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8E%81%ED%84%B0%20%EA%B5%AC%EC%A1%B0.md)<br/>
 - [PRG (Post-Redirect-Get)](https://github.com/mingseok/TIL/blob/main/mvc/PRG%20(Post-Redirect-Get).md)<br/>
 - [RedirectAttributes](https://github.com/mingseok/TIL/blob/main/mvc/RedirectAttributes.md)<br/>
+- [메시지, 국제화 소개]()<br/>
+- [스프링 메시지 소스 설정]()<br/>
+- [스프링 메시지 소스 사용]()<br/>
+- [웹 애플리케이션에 메시지 적용하기]()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+
+
+
+
 
 
 
@@ -118,6 +133,7 @@
 - [isNotNull()](https://github.com/mingseok/TIL/blob/main/TDD/isNotNull().md)<br/>
 - [isInstanceOf()](https://github.com/mingseok/TIL/blob/main/TDD/isInstanceOf().md)<br/>
 - [isNotSameAs()](https://github.com/mingseok/TIL/blob/main/TDD/isNotSameAs().md)<br/>
+- [assertThatThrownBy()]()<br/>
 - [트랜잭션](https://github.com/mingseok/TIL/blob/main/TDD/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98.md)<br/>
 - [롤백](https://github.com/mingseok/TIL/blob/main/TDD/%EB%A1%A4%EB%B0%B1(rollback).md)<br/>
 - [@Transactional](https://github.com/mingseok/TIL/blob/main/TDD/%40Transactional.md)<br/>
