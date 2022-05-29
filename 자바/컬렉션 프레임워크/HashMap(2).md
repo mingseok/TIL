@@ -65,7 +65,9 @@ boolean containsValue(Object value) // 현재 벨류가 맵에 있는지 확인�
 ```java
 int size() // 크기 확인
 
-boolean isEmpty() // 비었는지 확인
+boolean isEmpty() // 비었는지 확인 
+
+- 공백의 length를 가지고 0이면 true / 아니면 false를 반환
 
 void clear() // 모두 삭제
 
