@@ -31,6 +31,8 @@ public String requestBodyStringV3(@RequestBody String messageBody) {
 
 ## @ResponseBody
 
+Json 형태로 객체 데이터를 반환하는 것입니다.
+
 
 `@ResponseBody` : `View` 조회를 무시하고, `HTTP message body`에 직접 해당 내용 입력
 
@@ -46,6 +48,8 @@ public String requestBodyStringV3(@RequestBody String messageBody) {
 <br/>
 
 메소드에 @ResponseBody 로 어노테이션이 되어 있다면 메소드에서 리턴되는 값은 View 를 통해서 출력되지 않고 HTTP Response Body 에 직접 쓰여지게 됩니다.
+
+
 출처: https://ismydream.tistory.com/140 [창조적고찰:티스토리]
 
 
