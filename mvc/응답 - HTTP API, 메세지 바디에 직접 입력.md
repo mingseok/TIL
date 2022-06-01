@@ -101,6 +101,13 @@ public class ResponseBodyController {
 
 <br/>
 
+@RestController는 @Controller에 @ResponseBody가 추가된 것입니다. 
+
+당연하게도 RestController의 주용도는 Json 형태로 객체 데이터를 반환하는 것입니다.
+
+
+<br/>
+
 ### 만약 `@ResponseBody` 어너테이션을 메서드 하나하나 붙이기 싫으면 클래스에 붙이면 되는 것이다. <br/>대신 메서드 전부다 적용이 되는 것이다.
 
 <br/>
