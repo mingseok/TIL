@@ -4,6 +4,12 @@
 
 ### @RequestParam 이 있으면 명확하게 요청 파리미터에서 데이터를 읽는 다는 것을 알 수 있다.
 
+요청 매개변수에 들어있는 기본 타입 데이터를 메서드 인자로 받아올 수 있다.
+
+여기서 요청 매개변수란 URL 요청의 localhost:8080?username=value&age=value 의 쿼리 매개변수와 HTML 태그의 Form 데이터가 해당한다.
+
+1개의 HTTP 요청 파라미터를 받기 위해서 사용한다
+
 
 
 ```java
@@ -80,6 +86,15 @@ public class RequestParamController {
 <br/>
 
 `@RequestParam` : 파라미터 이름으로 바인딩
+
+String username = request.getParameter("username"); -> 이걸
+
+
+@RequestParam("username") String memberName, 이렇게 이름으로 바인딩 한다는 것이다.
+
+
+<br/>
+
 
 `@ResponseBody` : `View` 조회를 무시하고, `HTTP message body`에 직접 해당 내용 입력
 
