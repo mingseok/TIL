@@ -1,13 +1,28 @@
 ## 애노테이션 @PostConstruct, @PreDestroy
 
 <br/>
+
 결론부터 말하자면 이 방법을 사용하면 되는것이다.
+
+<br/>
+
+@PostConstruct는 의존성 주입이 이루어진 후 초기화를 수행하는 메서드이다. <br/>@PostConstruct가 붙은 메서드는 클래스가 service(로직을 탈 때? 로 생각 됨)를 수행하기 전에 발생한다. <br/>이 메서드는 다른 리소스에서 호출되지 않는다해도 수행된다
+
+<br/>
+
+왜 사용하는가?
+
+1) 생성자(일반)가 호출 되었을 때, 빈(bean)은 아직 초기화 되지 않았다. (예를 들어, 주입된 의존성이 없음)
+
+    하지만, @PostConstruct를 사용하면, 빈(bean)이 초기화 됨과 동시에 의존성을 확인할 수 있다. 
+
+
+<br/><br/>
 
 위치, 코드 수정
 
 ![이미지](/programming/img/스프링35.PNG)
 
-<br/>
 
 ## @PostConstruct, @PreDestroy 애노테이션 특징
 
