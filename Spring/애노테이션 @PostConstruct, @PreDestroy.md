@@ -23,7 +23,6 @@
 
 ![이미지](/programming/img/스프링35.PNG)
 
-
 ## @PostConstruct, @PreDestroy 애노테이션 특징
 
 - 최신 스프링에서 가장 권장하는 방법이다.
