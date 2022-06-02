@@ -12,7 +12,60 @@ public final class Optional<T> {
 	...
 }
 ```
+	
+<br/>
+	
+	
+Optional.empty() : 빈 Optional 객체 생성한다
+	
+Optional.of(value) : value값이 null이 아닌 경우에 사용한다
+	
+Optional.ofNullable(value) : value값이 null인지 아닌지 확실하지 않은 경우에 사용한다	
+	
+	
+<br/>	
+	
+	
+## 1. Optional.empty()
 
+```java
+Optional<String> optStr = Optional.empty();
+```	
+비어있는 옵셔널 객체를 생성합니다. 조건에 따라 분기를 태워야하고 반환할 값이 없는 경우에도 사용됩니다.	 	
+	
+<br/>		
+	
+## 2. Optional.of(value)
+
+```java
+String str = "test";
+Optional<String> optStr1 = Optional.of(str);
+```
+	
+value가 null 인 경우 NPE 예외를 던집니다. 반드시 값이 있어야 하는 객체인 경우 해당 메서드를 사용하면 됩니다.	
+	
+Optional.of()는 null이 아닌 객체를 담고 있는 Optional 객체를 생성합니다. 
+
+null이 아닌 객체를 생성하기 때문에 null을 넘겨서 생성하면 NPE이 발생하게 됩니다. 
+
+```java	
+String nullStr = null;
+Optional<String> optStr2 = Optional.of(nullStr); //NPE 발생(null point exception)
+```	
+	
+<br/>
+
+## 3. Optional.ofNullable(value)
+
+```java
+String str = "test";
+Optional<String> optStr1 = Optional.ofNullable(str);
+```
+	
+value가 null 인 경우 비어있는 Optional 을 반환합니다. 값이 null 일수도 있는 것은 해당 메서드를 사용하면 됩니다.		
+	
+
+	
 <br/>
 
 ### null을 직접 다루는 것은 위험하다. 
