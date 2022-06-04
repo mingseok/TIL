@@ -8,6 +8,11 @@
 ## asIterator() 메서드
 이 열거에 포함 된 요소들을 순회 하는 Iterator를 리턴합니다.
 
+
+### forEachRemaining() 을 이용한 Iterator to ArrayList
+
+Java8 에서 추가된 forEachRemaining() 메소드를 사용해 Iterator 를 ArrayList 로 변환 할 수 있다
+
 <br/>
 
 
