@@ -56,3 +56,7 @@ public class Item {
 <br/>결과적으로 item 은 등록과 수정에서 검증 조건의 충돌이 발생하고, 
 
 등록과 수정은 같은 BeanValidation 을 적용할 수 없다.
+
+<br/>
+
+>**Reference** <br/>스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2

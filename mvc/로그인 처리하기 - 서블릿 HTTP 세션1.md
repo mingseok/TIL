@@ -236,3 +236,7 @@ sessionid(=uuid)를 key로 갖고 session(저장공간)을 value로 갖는 세�
 sessionid(=uuid)는 tomcat에서 생성합니다.
 
 ![이미지](/programming/img/나20.PNG)
+
+<br/>
+
+>**Reference** <br/>스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2

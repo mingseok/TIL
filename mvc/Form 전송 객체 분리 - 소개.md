@@ -47,3 +47,7 @@ Item 도메인 객체를 폼 전달 데이터로 사용하고, 그대로 쭉 넘
 이름은 의미있게 지으면 된다. ItemSave 라고 해도 되고, ItemSaveForm , ItemSaveRequest , ItemSaveDto 등으로 사용해도 된다. 
 
 중요한 것은 일관성이다.
+
+<br/>
+
+>**Reference** <br/>스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2

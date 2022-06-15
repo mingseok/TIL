@@ -208,3 +208,7 @@ html
 
 - `BindingResult` 가 있으면 오류 정보( FieldError )를 BindingResult 에 담아서 
 컨트롤러를 정상 호출한다.
+
+<br/>
+
+>**Reference** <br/>스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2

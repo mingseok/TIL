@@ -126,3 +126,7 @@ item 클래스에서 itemName 에 문자 "A" 입력 타입 변환 성공 itemNam
 price 에 문자 "A" 입력 "A"를 숫자 타입 변환 시도 실패 typeMismatch FieldError 추가
 
 price 필드는 BeanValidation 적용 X
+
+<br/>
+
+>**Reference** <br/>스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2

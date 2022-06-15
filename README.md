@@ -83,40 +83,68 @@
 - [스프링 메시지 소스 사용](https://github.com/mingseok/TIL/blob/main/mvc/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%86%8C%EC%8A%A4%20%EC%82%AC%EC%9A%A9.md)<br/>
 - [웹 애플리케이션에 메시지 적용하기](https://github.com/mingseok/TIL/blob/main/mvc/%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)<br/>
 - [검증]()<br/>
-    - []()<br/>
-
-
+    - [검증 직접 처리 - 개발]()<br/>
+    - [BindingResult]()<br/>
+    - [오류 코드와 메시지 처리1]()<br/>
+    - [오류 코드와 메시지 처리2]()<br/>
+    - [Validator 분리]()<br/>
+    - [Bean Validation - 소개]()<br/>
+    - [Bean Validation - 스프링 적용]()<br/>
+    - [Bean Validation - 에러 코드]()<br/>
+    - [Bean Validation - 한계]()<br/>
+    - [Form 전송 객체 분리 - 소개]()<br/>
+    - [Form 전송 객체 분리 - 개발]()<br/>
+    - [Bean Validation - HTTP 메시지 컨버터]()<br/>
 
 - [로그인 처리1 - 쿠키, 세션]()<br/>
-    - []()<br/>
-
-
+    - [회원 가입]()<br/>
+    - [로그인 기능]()<br/>
+    - [로그인 처리하기 - 쿠키 사용]()<br/>
+    - [로그인 처리하기 - 세션 동작 방식]()<br/>
+    - [로그인 처리하기 - 세션 직접 만들기]()<br/>
+    - [로그인 처리하기 - 서블릿 HTTP 세션1]()<br/>
+    - [로그인 처리하기 - 서블릿 HTTP 세션2]()<br/>
+    - [세션 정보와 타임아웃 설정]()<br/>
 - [로그인 처리2 - 필터, 인터셉터]()<br/>
-    - []()<br/>
+    - [서블릿 필터 - 소개]()<br/>
+    - [서블릿 필터 - 요청 로그]()<br/>
+    - [서블릿 필터 - 인증 체크, RedirectURL 처리]()<br/>
+    - [스프링 인터셉터 - 소개]()<br/>
+    - [스프링 인터셉터 - 요청 로그]()<br/>
+    - [스프링 인터셉터 - 인증 체크]()<br/>
+- [스프링 타입 컨버터]()<br/>
+- [컨버전 서비스 - ConversionService]()<br/>
+- [스프링에 Converter 적용하기]()<br/>
+- [뷰 템플릿에 컨버터 적용하기]()<br/>
+- [포맷터 - Formatter]()<br/>
+- [포맷터를 지원하는 컨버전 서비스]()<br/>
+- [포맷터 적용하기]()<br/>
+- [스프링이 제공하는 기본 포맷터(중요)]()<br/>
+- [파일 업로드]()<br/>
+- [서블릿과 파일 업로드1]()<br/>
+- [서블릿과 파일 업로드2]()<br/>
+- [스프링과 파일 업로드]()<br/>
+- [예제로 구현하는 파일 업로드, 다운로드]()<br/>
 
 
+### 예외 처리 & API 예외 처리
 
+- 예외 처리와 오류 페이지
+    - [서블릿 예외 처리]()<br/>
+    - [서블릿 예외 처리 - 필터]()<br/>
+    - [서블릿 예외 처리 - 인터셉터]()<br/>
+    - [예외 처리 - 인터셉터 총 정리]()<br/>
+    - [스프링 부트 - 오류 페이지1]()<br/>
 
+- API 예외 처리        
+    - [API 예외 처리]()<br/>
+    - [API 예외 처리 - 스프링 부트 기본 오류 처리]()<br/>
+    - [HandlerExceptionResolver 활용]()<br/>
+    - [API 예외 처리 - 스프링이 제공하는 ExceptionResolver1]()<br/>
+    - [스프링이 제공하는 ExceptionResolver2]()<br/>
+    - [API 예외 처리 - @ExceptionHandler(핵심)]()<br/>
+    - [@ControllerAdvice]()<br/>
 
-
-### 예외 처리와 오류 페이지
-- [서블릿 예외 처리 - 시작]()<br/>
-
-
-
-
-### Servlet & 웹 애플리케이션
-- [WAS 서버와 WEB 서버의 이해](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/WAS%20%EC%84%9C%EB%B2%84%EC%99%80%20WEB%20%EC%84%9C%EB%B2%84%EC%9D%98%20%EC%9D%B4%ED%95%B4.md)<br/>
-- [Servlet](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
-- [멀티 쓰레드](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%A9%80%ED%8B%B0%20%EC%93%B0%EB%A0%88%EB%93%9C.md)<br/>
-- [HTML, HTTP API, CSR, SSR](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HTML%2C%20HTTP%20API%2C%20CSR%2C%20SSR.md)<br/>
-- [HttpServletRequest](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HttpServletRequest.md)<br/>
-- [HTTP 요청 데이터 & GET 쿼리 파라미터](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HTTP%20%EC%9A%94%EC%B2%AD%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B0%8F%20GET%20%EC%BF%BC%EB%A6%AC%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0.md)<br/>
-- [POST HTML Form](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/POST%20HTML%20Form.md)<br/>
-- [API 메세지 바디 - JSON](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/API%20%EB%A9%94%EC%84%B8%EC%A7%80%20%EB%B0%94%EB%94%94%20-%20JSON.md)<br/>
-- [단순 텍스트, HTML](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%8B%A8%EC%88%9C%20%ED%85%8D%EC%8A%A4%ED%8A%B8%2C%20HTML.md)<br/>
-- [API JSON](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/API%20JSON.md)<br/>
-- [JSP](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/JSP.md)<br/>
 
 
 ### Java
@@ -171,6 +199,24 @@
 - [2xx, 3xx, 4xx, 5xx](https://github.com/mingseok/TIL/blob/main/HTTP/2xx%2C%203xx%2C%204xx%2C%205xx.md)<br/>
 - [쿠키](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BF%A0%ED%82%A4.md)<br/>
 - [캐시](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BA%90%EC%8B%9C.md)<br/>
+
+
+
+### Servlet & 웹 애플리케이션
+- [WAS 서버와 WEB 서버의 이해](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/WAS%20%EC%84%9C%EB%B2%84%EC%99%80%20WEB%20%EC%84%9C%EB%B2%84%EC%9D%98%20%EC%9D%B4%ED%95%B4.md)<br/>
+- [Servlet](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
+- [멀티 쓰레드](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%A9%80%ED%8B%B0%20%EC%93%B0%EB%A0%88%EB%93%9C.md)<br/>
+- [HTML, HTTP API, CSR, SSR](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HTML%2C%20HTTP%20API%2C%20CSR%2C%20SSR.md)<br/>
+- [HttpServletRequest](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HttpServletRequest.md)<br/>
+- [HTTP 요청 데이터 & GET 쿼리 파라미터](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HTTP%20%EC%9A%94%EC%B2%AD%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B0%8F%20GET%20%EC%BF%BC%EB%A6%AC%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0.md)<br/>
+- [POST HTML Form](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/POST%20HTML%20Form.md)<br/>
+- [API 메세지 바디 - JSON](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/API%20%EB%A9%94%EC%84%B8%EC%A7%80%20%EB%B0%94%EB%94%94%20-%20JSON.md)<br/>
+- [단순 텍스트, HTML](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%8B%A8%EC%88%9C%20%ED%85%8D%EC%8A%A4%ED%8A%B8%2C%20HTML.md)<br/>
+- [API JSON](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/API%20JSON.md)<br/>
+- [JSP](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/JSP.md)<br/>
+
+
+
 
 
 

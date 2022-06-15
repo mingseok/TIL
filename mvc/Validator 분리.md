@@ -214,3 +214,7 @@ itemValidator.validate(item, bindingResult);
 <br/>
 
 ### 여기서는 `supports(Item.class)` 호출되고, 결과가 `true` 이므로 ItemValidator 의 validate() 가 호출된다.
+
+<br/>
+
+>**Reference** <br/>스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2
