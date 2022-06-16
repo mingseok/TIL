@@ -191,13 +191,6 @@ public class AppConfig {
 ```java
 package hello.core;
 
-import hello.core.member.Grade;
-import hello.core.member.Member;
-import hello.core.member.MemberService;
-import hello.core.member.MemberServiceImpl;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 public class MemberApp {
 
     public static void main(String[] args) {
@@ -205,15 +198,16 @@ public class MemberApp {
         ApplicationContext applicationContext
                 = new AnnotationConfigApplicationContext(AppConfig.class);
 
-		// 기본적으로 빈에 등록이 될때 AppConfig 클래스에 있는 메서드 이름으로 등록이 된다.
+
+	// 기본적으로 빈에 등록이 될때 AppConfig 클래스에 있는 메서드 이름으로 등록이 된다.
         // 즉, 앞에 "memberService" 부분은 메서드 이름을 말하는 것이다. 
 
-		// MemberService.class 는 그냥 타입이다. 
-		// 무슨타입? "memberService" 꺼내기 위한 타입 설정이라고 생각하면 된다.
+	// MemberService.class 는 그냥 타입이라고 생각하자. 
+	// 무슨타입? "memberService" 꺼내기 위한 타입 설정이라고 생각하면 된다.
 
-		// 결록적으로는 '키' 는 "memberService" 가 되는 것이고,
-		// '벨류' 는 memberService() 메서드 안에 있는
-		// new MemberServiceImpl(memberRepository()); 가 되어 스프링 컨테이너에 등록 된다.
+	// 결록적으로는 '키' 는 "memberService" 가 되는 것이고,
+	// '벨류' 는 memberService() 메서드 안에 있는
+	// new MemberServiceImpl(memberRepository()); 가 되어 스프링 컨테이너에 등록 된다.
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
         
         Member member = new Member(1L, "memberA", Grade.VIP);
@@ -231,6 +225,7 @@ public class MemberApp {
 
 출력시켜보면 이렇게 스프링 컨테이너에 등록 되는 걸 알 수 있다.
 
+<br/>
 
 ### ApplicationContext 를 스프링 컨테이너라고 한다.
 
