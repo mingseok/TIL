@@ -14,7 +14,7 @@ ex) 테스트 코드를 생각해보면 된다.
 
 ### 이런 식으로 테스트 코드의 라이프 사이클 순서가 있다.
 
-![이미지](/programming/img/스프링4.PNG)
+![이미지](/programming/img/뉴스3.PNG)
 
 <br/>
 
@@ -24,7 +24,7 @@ ex) 테스트 코드를 생각해보면 된다.
 
 필요한건 new 를 이용하여 돌리고 하는 것이다. 순차적으로
 
-![이미지](/programming/img/스프링5.PNG)
+![이미지](/programming/img/뉴스5.PNG)
 
 <br/>
 
