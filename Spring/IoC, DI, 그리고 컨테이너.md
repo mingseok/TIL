@@ -44,28 +44,6 @@ AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationConte
 스프링 부트는 스프링의 기술들을 좀 더 편리하게 사용하는데 도움을 주는 프레임워크.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br/>
 
 ## 정적인 클래스 의존관계
@@ -77,6 +55,8 @@ AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationConte
 <br/>클래스 다이어그램을 보자.
 
 ![이미지](/programming/img/스프링6.PNG)
+
+
 
 <br/>`OrderServiceImpl`  클래스를 보면 “상위 클래스에 `OrderService` 있구나” 알 수 있다.
 
@@ -91,6 +71,14 @@ AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationConte
 ## 동적인 객체 인스턴스 의존 관계
 
 애플리케이션 실행 시점에 실제 생성된 객체 인스턴스의 참조가 연결된 의존 관계다.
+
+
+```java
+public class OrderServiceImpl implements OrderService {
+
+ private final MemberRepository memberRepository = new MemoryMemberRepository();
+ private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
+```
 
 `OrderServiceImpl` 은 `MemberRepository`, `DiscountPolicy` 에 의존한다는 것을 알 수 있다.
 
