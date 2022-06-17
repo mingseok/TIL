@@ -57,7 +57,7 @@
 
 애플리케이션 “실행 시점” 에 외부에서 실제 구현 객체를 생성하고 
 
-<br/>클라이언트에 전달해서 클라이언트와 서버의 실제 의존관계가 
+클라이언트에 전달해서 클라이언트와 서버의 실제 의존관계가 
 
 연결 되는 것을 “의존관계 주입” == 디펜던시 인젝션 이라고 한다.
 
@@ -114,6 +114,8 @@ private Car myCar;
 ![이미지](/programming/img/의3.PNG)
 
 <br/>여기로
+
+memberService 클래스에 memberRepository에는 MemoryMemberRepository 가 저장 되는 것이다.
 
 ![이미지](/programming/img/의4.PNG)
 
