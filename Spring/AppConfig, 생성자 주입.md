@@ -158,6 +158,7 @@ public class AppConfig {
 
     @Bean
     public MemberService memberService() {
+    	// MemberServiceImpl 클래스에서 MemoryMemberRepository 를 사용 하겠다는 것이다.
         return new MemberServiceImpl(memberRepository());
     }
 
@@ -207,7 +208,8 @@ public class MemberApp {
 
 	// 결록적으로는 '키' 는 "memberService" 가 되는 것이고,
 	// '벨류' 는 memberService() 메서드 안에 있는
-	// new MemberServiceImpl(memberRepository()); 가 되어 스프링 컨테이너에 등록 된다.
+	// 즉, 컨테이너에 등록 할때는 new MemberServiceImpl(memberRepository()); 이다.
+	// MemberServiceImpl 에서 memberRepository() 메서드 안에 있는 MemoryMemberRepository를 사용하겠다고 하는 것이다. 
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
         
         Member member = new Member(1L, "memberA", Grade.VIP);
