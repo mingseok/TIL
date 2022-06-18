@@ -8,7 +8,7 @@ ApplicationContext applicationContext
 - ApplicationContext 를 스프링 컨테이너라 한다.
 - ApplicationContext 는 인터페이스이다.
 - 자바 설정 클래스를 기반으로 스프링 컨테이너( ApplicationContext )를 만들어보자.<br/>
-new AnnotationConfigApplicationContext(AppConfig.class); 생성자에 파라미터로 클래스를 매개변수로 넣어준 것이다. 이 클래스는 ApplicationContext 인터페이스의 구현체이다
+new AnnotationConfigApplicationContext(AppConfig.class); 생성자에 파라미터로 클래스를 매개변수로 넣어준 것이다. <br/>이 클래스는 ApplicationContext 인터페이스의 구현체이다
 
 <br/>
 
