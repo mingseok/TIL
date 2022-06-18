@@ -11,11 +11,13 @@ public class AllBeanTest {
     }
 
     static class DiscountService {
+
         private final Map<String, DiscountService> policyMap;
         private final List<DiscountService> policies;
 
-        public DiscountService(Map<String, DiscountService> policyMap, 
-																									List<DiscountService> policies) {
+
+        public DiscountService(Map<String, DiscountService> policyMap,          List<DiscountService> policies) {
+            
             this.policyMap = policyMap;
             this.policies = policies;
             System.out.println("policyMap = " + policyMap);
@@ -48,11 +50,11 @@ public class AllBeanTest {
 
     @Test
     void findAllBean() {
-        ApplicationContext ac = 
-			new AnnotationConfigApplicationContext(AutoAppConfig.class, DiscountService.class);
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class, DiscountService.class);
     }
 
     static class DiscountService {
+
         private final Map<String, DiscountService> policyMap;
         private final List<DiscountService> policies;
 
@@ -122,10 +124,9 @@ public class AllBeanTest {
 
     @Test
     void findAllBean() {
-        ApplicationContext ac = 
-			new AnnotationConfigApplicationContext(AutoAppConfig.class, DiscountService.class);
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class, DiscountService.class);
         
-		DiscountService discountService = ac.getBean(DiscountService.class);
+	DiscountService discountService = ac.getBean(DiscountService.class);
 
         Member member = new Member(1L, "userA", Grade.VIP);
         
@@ -193,9 +194,9 @@ public class AllBeanTest {
 
 ```java
 policyMap = {fixDiscountPolicy=hello.core.discount.FixDiscountPolicy@6b7906b3, 
-		         rateDiscountPolicy=hello.core.discount.RateDiscountPolicy@3a1dd365}
+		    rateDiscountPolicy=hello.core.discount.RateDiscountPolicy@3a1dd365}
 policies = [hello.core.discount.FixDiscountPolicy@6b7906b3, 
-			       hello.core.discount.RateDiscountPolicy@3a1dd365]
+			hello.core.discount.RateDiscountPolicy@3a1dd365]
 ```
 
 ![이미지](/programming/img/스프링33.PNG)

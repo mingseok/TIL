@@ -30,38 +30,11 @@ public class FormItemController {
 
 ### 다른 메서드에 Model model 에 "regions" 가 담겨져 가는 것이다. 
 
-
-이렇게 함으로써 반복 되는 코드를 줄일 수가 있다.
-
-```java
-
-    @GetMapping
-    public String items(Model model) {
-        
-        List<Item> items = itemRepository.findAll();
-        model.addAttribute("items", items);
-        
-        return "form/items";
-    }
-
-
-    @GetMapping("/{itemId}")
-    public String item(@PathVariable long itemId, Model model) {
-       
-        Item item = itemRepository.findById(itemId);
-        model.addAttribute("item", item);
-
-        return "form/item";
-    }
-```
-
 <br/>
 
 ## 정리
 
-@ModelAttribute 어너테이션을 사용한다면
-
-항상 어떤 컨트롤러의 메서드든 모델에 담겨져 있는 것이다.
+@ModelAttribute 어너테이션을 사용한다면 항상 어떤 컨트롤러의 메서드든 모델에 담겨져 있는 것이다.
 
 <br/>
 

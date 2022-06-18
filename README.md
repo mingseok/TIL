@@ -64,7 +64,7 @@
 - [View & viewResolver](https://github.com/mingseok/TIL/blob/main/mvc/View%20%26%20viewResolver.md)<br/>
 - [Model](https://github.com/mingseok/TIL/blob/main/mvc/Model.md)<br/>
 - [HandlerAdapter](https://github.com/mingseok/TIL/blob/main/mvc/HandlerAdapter.md)<br/>
-- [요청 매핑, @PathVariable](https://github.com/mingseok/TIL/blob/main/mvc/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91.md)<br/>
+- [요청 매핑, @PathVariable](https://github.com/mingseok/TIL/blob/main/mvc/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%2C%20%40PathVariable.md)<br/>
 - [요청 매핑 - API 예시](https://github.com/mingseok/TIL/blob/main/mvc/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20-%20API%20%EC%98%88%EC%8B%9C.md)<br/>
 - [쿼리 파라미터, HTML Form](https://github.com/mingseok/TIL/blob/main/mvc/%EC%BF%BC%EB%A6%AC%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%2C%20HTML%20Form.md)<br/>
 - [@RequestParam](https://github.com/mingseok/TIL/blob/main/mvc/%40RequestParam.md)<br/>

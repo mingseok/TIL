@@ -68,13 +68,15 @@ public class HelloLombok {
     private int age;
 
     public static void main(String[] args) {
+
         HelloLombok helloLombok = new HelloLombok();
+
         helloLombok.setName("하하하");
 
         String name = helloLombok.getName();
         System.out.println("name = " + name);
 
-				// @toString 이용
+		// @toString 이용
         System.out.println("helloLombok = " + helloLombok);
     }
 
@@ -86,7 +88,7 @@ helloLombok = HelloLombok(name=하하하, age=0)
 
 // 이런게 필요가 없는 것이다.
 /* 
-		public Long getId() {
+	public Long getId() {
         return id;
     }
 

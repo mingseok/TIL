@@ -47,9 +47,9 @@ public class MappingController {
 
 <br/>
 
-### 요즘 선언하는 방식. (많이 사용한다.)
+## 요즘 선언하는 방식. (많이 사용한다.)
 
-패스베리어블 쓰는 방식, 경로변수 방식 둘다 부른다.
+### 패스베리어블 쓰는 방식, 경로변수 방식 둘다 부른다.
 
 1. 이렇게 작성하고 실행 시켜보면
     
@@ -76,14 +76,13 @@ public class MappingController {
 @GetMapping("/test/{cat}")
 public String methodName(@PathVariable int cat){
   
-
   return "test";
 }
 ```
 
 위와 같이 코드를 작성하면,
 
-"localhost:8080/test/3"과 같이 호출했을 때 cat 값이 3이 된다.
+### "localhost:8080/test/3"과 같이 호출했을 때 cat 값이 3이 된다.
 
 
 하지만, 만약에 "localhost:8080/test"와 같이 변수를 넣어주지 않으면 에러가 발생한다.
