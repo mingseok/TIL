@@ -100,7 +100,6 @@ String username = request.getParameter("username"); -> 이걸
 
 <br/>
 
-`@RequestParam`의 `name(value)` 속성이 파라미터 이름으로 사용되는 것이다.
 
 `@RequestParam("username") String memberName`
 
