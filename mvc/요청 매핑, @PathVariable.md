@@ -1,6 +1,6 @@
 ## 요청 매핑, @PathVariable
 
-http://localhost:8080/hello-basic 를 실행 시켜보면 OK가 출력되는 걸 알 수 있다.
+localhost:8080/hello-basic 를 실행 시켜보면 OK가 출력되는 걸 알 수 있다.
 
 “이, `"/hello-basic"` url이 오면 이 `helloBasic()` 메서드가 호출된다” 생각하면 된다.
 
@@ -176,5 +176,4 @@ localhost:8080/mapping/users/userA/orders/100
 <br/>
 
 >**Reference** <br/>스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1
-<br/>
-매트의 개발 블로그 - https://kkangdda.tistory.com/36
+<br/> 매트의 개발 블로그 - https://kkangdda.tistory.com/36
