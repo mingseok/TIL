@@ -104,6 +104,8 @@ String username = request.getParameter("username"); -> 이걸
 
 `@RequestParam("username") String memberName`
 
+"username" 으로 넘어온 값을 memberName(매개변수) 으로 받겠다 한것이다. 
+
 
 ![이미지](/programming/img/갸2.PNG)
 
