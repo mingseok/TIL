@@ -1,5 +1,13 @@
 ## 요청 매핑, @PathVariable
 
+### @PathVariable 과 @RequestParam 차이 
+
+`@PathVariable` 은 url에 값을 보내서 매개변수로 사용하는 것이고, 
+
+`@RequestParam` 은 html에서 값을 받아서 그 값으로 매개변수로 사용하는 것이다.
+
+<br/>
+
 localhost:8080/hello-basic 를 실행 시켜보면 OK가 출력되는 걸 알 수 있다.
 
 “이, `"/hello-basic"` url이 오면 이 `helloBasic()` 메서드가 호출된다” 생각하면 된다.
