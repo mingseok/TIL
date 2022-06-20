@@ -1,7 +1,5 @@
 ## HTTP 요청 파라미터 - @RequestParam
 
-<br/>
-
 ### @RequestParam 이 있으면 명확하게 요청 파리미터에서 데이터를 읽는 다는 것을 알 수 있다.
 
 요청 매개변수에 들어있는 기본 타입 데이터를 메서드 인자로 받아올 수 있다.
@@ -112,7 +110,64 @@ String username = request.getParameter("username"); -> 이걸
 
 결국 `request.getParameter("username")` 하는 거랑 똑같은 효과가 있는 것이다.
 
+<br/>
 
+## 정리
+
+`@RequestParam` 은 밑에 코드이다. html에서 값을 받아서 그 값으로 매개변수로 사용하는 것이다.
+    
+컨트롤러에서 `@RequestParam` 도 생략 가능하다.
+
+```html
+<td>
+   <a th:href="@{/view(id=${list.id})}">
+       [[${list.title}]]
+   </a>
+</td>
+```
+
+
+```java
+// 게시판 상세 보기
+@GetMapping("/post-view")
+public String viewPost(Model model, @RequestParam Long id) {
+      model.addAttribute("post", postService.getPost(id));
+      return "posts/post-view";
+}
+
+// 이렇게도 가능하다.
+@GetMapping("/post-view")
+public String viewPost(Model model, Long id) {
+      model.addAttribute("post", postService.getPost(id));
+      return "posts/post-view";
+}
+```
+
+<br/>
+
+### 이렇게도 사용가능하다. 에러 사용할때 사용
+
+`@RequestParam(required = false` 되어 있으니, 에러가 있으면 담게 되는 것이고, 
+
+없으면 그냥 null 인 것이다. 즉, `@RequestParam` 은 파라미터 이름으로 바인딩 한다는 것인데
+    
+여기서는 넘어온 에러를 `value = "exception"` 이름으로 사용하겠다 한 것이다.
+    
+정리하면 에러가 있으면 담고, 없으면 담지 않는 것이다.
+
+```java
+@GetMapping("/login")
+public String login(@RequestParam(required = false, value = "error") String error,
+                    @RequestParam(required = false, value = "exception") String exception, Model model)        {
+
+    model.addAttribute("error", error);
+    model.addAttribute("exception", exception);
+
+    return "/members/login";
+}
+```
+
+<br/>
 <br/>
 
 >**Reference** <br/>스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1
