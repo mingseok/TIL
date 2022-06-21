@@ -1,4 +1,4 @@
-## 요청 매핑 - API 예시
+## 요청 매핑 - API 예시 (postman 사용)
 
 postman 잘 사용하기.
 
