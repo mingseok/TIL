@@ -121,7 +121,7 @@
 - [스프링이 제공하는 기본 포맷터(핵심)](https://github.com/mingseok/TIL/blob/main/mvc/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%B4%20%EC%A0%9C%EA%B3%B5%ED%95%98%EB%8A%94%20%EA%B8%B0%EB%B3%B8%20%ED%8F%AC%EB%A7%B7%ED%84%B0(%ED%95%B5%EC%8B%AC).md)<br/>
 - [파일 업로드](https://github.com/mingseok/TIL/blob/main/mvc/%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C%20%EC%86%8C%EA%B0%9C.md)<br/>
 - [서블릿과 파일 업로드1](https://github.com/mingseok/TIL/blob/main/mvc/%EC%84%9C%EB%B8%94%EB%A6%BF%EA%B3%BC%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C1.md)<br/>
-- [서블릿과 파일 업로드2](https://github.com/mingseok/TIL/blob/main/mvc/%EC%84%9C%EB%B8%94%EB%A6%BF%EA%B3%BC%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C2%2Cmd)<br/>
+- [서블릿과 파일 업로드2](https://github.com/mingseok/TIL/blob/main/mvc/%EC%84%9C%EB%B8%94%EB%A6%BF%EA%B3%BC%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C2.md)<br/>
 - [스프링과 파일 업로드](https://github.com/mingseok/TIL/blob/main/mvc/%EC%8A%A4%ED%94%84%EB%A7%81%EA%B3%BC%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C.md)<br/>
 - [예제로 구현하는 파일 업로드, 다운로드](https://github.com/mingseok/TIL/blob/main/mvc/%EC%98%88%EC%A0%9C%EB%A1%9C%20%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C%2C%20%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C.md)<br/>
 
