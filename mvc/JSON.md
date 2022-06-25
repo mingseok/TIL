@@ -18,6 +18,7 @@ public class RequestBodyJsonController {
 
     @PostMapping("/request-body-json-v1")
     public void requestBodyJsonV1(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    
         ServletInputStream inputStream = request.getInputStream();
         String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
 
@@ -106,6 +107,7 @@ HTTP 메시지 바디가 아니라 요청 파라미터를 처리하게 된다
 @ResponseBody
 @PostMapping("/request-body-json-v3")
 public String requestBodyJsonV3(HttpEntity<HelloData> httpEntity) {
+
      HelloData helloData = httpEntity.getBody();
      log.info("username={}, age={}", helloData.getUsername(), helloData.getAge());
 
