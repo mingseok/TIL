@@ -15,7 +15,7 @@
 ### ETC
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
 - [:scroll: 첫째도 기본기, 둘째도 기본기](https://github.com/mingseok/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EA%B8%B0/%EC%B2%AB%EC%A7%B8%EB%8F%84%20%EA%B8%B0%EB%B3%B8%EA%B8%B0%2C%20%EB%91%98%EC%A7%B8%EB%8F%84%20%EA%B8%B0%EB%B3%B8%EA%B8%B0.md)<br/>
-- [Ajax]()<br/>
+- [Ajax](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
 
 
 
@@ -270,14 +270,14 @@
 
   
 ### JavaScript
-- [자바스크립트 (=JS)]()<br/>
-- [이벤트]()<br/>
-- [데이터타입, 변수]()<br/>
-- [CSS 선택자]()<br/>
-- [제어할 태그 선택하기]()<br/>
-- [배열과 반복문의 활용]()<br/>
-- [Function()]()<br/>
-- [JS 변수]()<br/>
-- [객체와 반복문, 활용]()<br/>
+- [자바스크립트 (=JS)](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8(JS).md)<br/>
+- [이벤트](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8.md)<br/>
+- [데이터타입, 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%2C%20%EB%B3%80%EC%88%98.md)<br/>
+- [CSS 선택자](https://github.com/mingseok/TIL/blob/main/JavaScript/CSS%20%EC%84%A0%ED%83%9D%EC%9E%90.md)<br/>
+- [제어할 태그 선택하기](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%A0%9C%EC%96%B4%ED%95%A0%20%ED%83%9C%EA%B7%B8%20%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0.md)<br/>
+- [배열과 반복문의 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A9%E1%86%A8%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC.md)<br/>
+- [Function()](https://github.com/mingseok/TIL/blob/main/JavaScript/Function().md)<br/>
+- [JS 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/JS%20%EB%B3%80%EC%88%98.md)<br/>
+- [객체와 반복문, 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%80%E1%85%A2%E1%86%A8%E1%84%8E%E1%85%A6%EC%99%80%20%EB%B0%98%EB%B3%B5%EB%AC%B8%2C%20%ED%99%9C%EC%9A%A9.md)<br/>
 
 
