@@ -26,13 +26,14 @@ CSS를 어디다 줄것인가. 명확히 하기 위해서 쓰는 것.
 
 ```html
 <style>
-		.g1{ <!-- '.'의 뜻은 *.g1 이다. 전체를 말한 것 이였다. 
-			        그렇다면 li.g1 이렇게도 가능하단 얘기이다. 
-					풀이 하자면 *.g1은 g1안에 들어가 있는 모든 것들 이였는데
-					li.g1 이렇게 한다면 g1안에 들은 li만 찾아라 가 되는것이다.-->
-					color: red;
-					font-weight: bold;
-		 }
+ .g1 {  <!-- '.'의 뜻은 *.g1 이다. 전체를 말한 것 이였다. 
+	      그렇다면 li.g1 이렇게도 가능하단 얘기이다. 
+	      풀이 하자면 *.g1은 g1안에 들어가 있는 모든 것들 이였는데
+	      li.g1 이렇게 한다면 g1안에 들은 li만 찾아라 가 되는것이다. -->
+	
+  color: red;
+  font-weight: bold;
+  }
 </style>
 
 <h1 class="g1">서두</h1>
@@ -44,10 +45,10 @@ CSS를 어디다 줄것인가. 명확히 하기 위해서 쓰는 것.
 
 ```html
 <style>
-		#name1{
-					color: red;
-					font-weight: bold;
-		}
+  #name1{
+  color: red;
+  font-weight: bold;
+  }
 </style>
 
 <h1 id="name1">서두</h1>
