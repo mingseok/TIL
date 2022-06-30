@@ -10,16 +10,16 @@
     <title>Title</title>
 </head>
 <body>
-		<script>
-			  document.write('hello world); 
-		</script>
+    <script>
+       document.write('hello world); 
+    </script>
 </body>
 </html>
 
 출력값: hello world
 ```
 
-<br/>
+
 
 ### 어떤 페이지에 글씨를 출력할 때는 `document.write()` 라는 걸 사용해주는 것이다.
 
@@ -40,14 +40,14 @@
 </head>
 <body>
 
-		<h1>JavaScript</h1>
+    <h1>JavaScript</h1>
 		
-		<script>
-		  document.write(1+1);
-		</script>
+    <script>
+       document.write(1+1);
+    </script>
 
-		<h1>html</h1>
-		1+1
+    <h1>html</h1>
+    1+1
 
 </body>
 </html>
@@ -55,7 +55,7 @@
 
 <br/>
 
-결과 화면
+### 결과 화면
 
 ![이미지](/programming/img/js1.PNG)
 
