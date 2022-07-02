@@ -6,7 +6,7 @@
 
 ```java
 if (!StringUtils.hasText(item.getItemName())) {
-		bindingResult.addError(new FieldError("item", "itemName", "상품 이름은 필수입니다."));
+	bindingResult.addError(new FieldError("item", "itemName", "상품 이름은 필수입니다."));
 }
 ```
 
@@ -61,10 +61,10 @@ public ObjectError(String objectName, String defaultMessage) { }
 ```java
 @PostMapping("/add")
 public String addItemV1(@ModelAttribute Item item,
-                BindingResult bindingResult, // item 매개변수에 바인딩 된 결과를 여기에 담기는 것이다.
-                                            // bindingResult 가 v1에 사용했던 errors 변수 역할을 해주는 것이다.
-                RedirectAttributes redirectAttributes,
-                Model model) {
+     BindingResult bindingResult, // item 매개변수에 바인딩 된 결과를 여기에 담기는 것이다.
+                                  // bindingResult 가 v1에 사용했던 errors 변수 역할을 해주는 것이다.
+     RedirectAttributes redirectAttributes,
+     Model model) {
 
      if (!StringUtils.hasText(item.getItemName())) {
             bindingResult.addError(new FieldError("item", "itemName", "상품 이름은 필수 입니다."));
@@ -129,7 +129,7 @@ public String addItemV1(@ModelAttribute Item item,
 
 ```html
 <input type="text" id="itemName" th:field="*{itemName}"
-			th:errorclass="field-error" class="form-control" placeholder="이름을 입력하세요">
+       th:errorclass="field-error" class="form-control" placeholder="이름을 입력하세요">
 
 <div class="field-error" th:errors="*{itemName}">상품명 오류</div>
 ```
