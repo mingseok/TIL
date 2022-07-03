@@ -219,22 +219,6 @@
 
 
 
-### Database
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-
-
-
-
-
-
-
-
-
-
-
 ### thymeleaf
 - [타임리프 소개](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%86%8C%EA%B0%9C.md)<br/>
 - [텍스트 - text, utext](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%8D%EC%8A%A4%ED%8A%B8%20-%20text%2C%20utext.md)<br/>
