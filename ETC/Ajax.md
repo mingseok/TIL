@@ -210,7 +210,68 @@ setting는 Ajax 통신을 위한 옵션을 담고 있는 객체가 들어간다.
 - type데이터를 전송하는 방법을 지정한다. get, post를 사용할 수 있다.
 
 
+<br/><br/>
 
+## 실제 코드에서 사용시
+
+```html
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments.html :: head"></head>
+<body>
+<div th:replace="fragments.html :: main-nav"></div>
+<div class="container">
+    <p>글번호 : [[${post.id}]]</p>
+    <p>제목 : [[${post.title}]]</p>
+    <p>작성자 : [[${post.writer}]]</p>
+    내용 : <textarea class="form-control" th:text="${post.content}"></textarea>
+    <p>조회수 : [[${post.hit}]]</p>
+
+    <button id="update" class="btn btn-outline-primary" type="button">
+        <a th:href="@{'/update/' + ${post.id}}">수정</a>
+    </button>
+    <button id="delete" class="btn btn-danger delete-btn" type="button" th:value="${post.id}">삭제</button>
+</div>
+<script type="application/javascript" th:inline="javascript">
+
+    $(document).on("click", ".delete-btn", function () {
+
+        // 스프링 시큐리티를 사용하면 Ajax 통신을 할때 이런 과정을 수행 해야 되는 것이다.
+
+        // 스프링 시큐리티로 Ajax 통신 하려면 토큰이 필요한 것이다.
+        // header, token 은 무조건 작성해주기.
+        let header = [[${_csrf.headerName}]];
+        let token = [[${_csrf.token}]];
+
+        // val() 는 delete-btn 버튼에 value() 값을 말하는 것이다.
+        let id = $(".delete-btn").val();
+
+        $.ajax({
+            url: '/delete/' + id, // url은 컨트롤러의 @DeleteMapping("/delete/{id}") 으로 가는 것이다.
+                                  // 그리고 id는 위에 있는 id를 말하는 것이다.
+
+            type: 'delete', // @GetMapping, @PostMapping, @PutMapping, @DeleteMapping 을 말하는 것이다.
+
+            success: function (data) { // (data) 는 컨트롤러의 @DeleteMapping("/delete/{id}") 메서드의 리턴값을 말하는 것이다.
+                window.location.replace(data); // 그리고 여기서 replace() 가 리다이렉트라고 생각하면 된다. -> return "/post";
+            },
+
+            // beforeSend 통신하기 전에 먼저 실행 되는 것이다.
+            // 즉, beforeSend 가 먼저 실행되고 그 다음 위가 실행 되는 것이다.
+            // http 헤더에 header, token 실어서 보내면서 통신이 되는 것이다.
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader(header, token);
+            },
+        });
+
+    })
+
+</script>
+</body>
+
+</html>
+```
 
 
 <br/><br/>
