@@ -32,8 +32,11 @@ th: text태그 안의 텍스트를 서버에서 전달 받은 값에 따라 표�
 ## 메시지 표현:#{...}
 
 
+```html
+<small class="form-text text-danger" th:if="${#fields.hasErrors('loginId')}" th:errors="*{loginId}">loginId Error</small>
+```
 
-
+'html 안에서 자바 코드를 실행하고 그 결과를 렌더 하겠다' 라고 생각하면 될 것이다.
 
 
 
