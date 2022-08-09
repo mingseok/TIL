@@ -82,6 +82,8 @@ System.out.println(Arrays.deepEquals(str2Dd, str2D2)); // true
 
 ## 5. 배열을 List로 변환 - asList(Object...a)
 
+Arrays.asList()는 배열의 내용을 수정하려고 할 때 List로 바꿔서 편리하게 사용하기 위함.
+
 (Object...a) 는 배열이다. 매개변수 여러개 넣어도 된다는 말이다. 
 
 (가변: 갯수가 정해져 있지 않다.)
