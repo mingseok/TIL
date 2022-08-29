@@ -5,20 +5,12 @@
 > ***
 <br/>
 
-### 📌 좋은 개발자가 되기 위한 마인드.
->### **This is not rocket science !**
->**"이거 어려운 일 아닌데!" (왜 어렵게 생각해?)**
-><br/>우주로 로켓을 쏘는 과학에는 정말 답이 없을 수 있지만, 
-><br/>내 수준에서 만나는 문제들은 반드시 문제의 원인과 답이 있다.
-> ***
 
 ### ETC
 - [백엔드 개발자?](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%EC%9E%90.md)<br/>
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
 - [:scroll: 첫째도 기본기, 둘째도 기본기](https://github.com/mingseok/TIL/blob/main/%EA%B8%B0%EB%B3%B8%EA%B8%B0/%EC%B2%AB%EC%A7%B8%EB%8F%84%20%EA%B8%B0%EB%B3%B8%EA%B8%B0%2C%20%EB%91%98%EC%A7%B8%EB%8F%84%20%EA%B8%B0%EB%B3%B8%EA%B8%B0.md)<br/>
 - [Ajax](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
-
-
 
 
 
