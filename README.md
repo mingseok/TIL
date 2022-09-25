@@ -273,9 +273,23 @@
 - [선택 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%83%9D%20%EC%A0%95%EB%A0%AC.md)<br/>
 - [삽입 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%82%BD%EC%9E%85%20%EC%A0%95%EB%A0%AC.md)<br/>
 - [Linked list](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%ED%91%9C%ED%98%84.md)<br/>
-- [단순 Linked list](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8B%A8%EC%88%9C%20%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%9D%98%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)<br/>
-- [원형 Linked list](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9B%90%ED%98%95%20%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
-- [이중 Linked list](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B4%EC%A4%91%20%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
+
+
+- [합병정렬]()<br/>
+- [퀵정렬]()<br/>
+- [완전탐색]()<br/>
+- [재귀 함수]()<br/>
+- [이진 탐색]()<br/>
+- [스택]()<br/>
+- [큐]()<br/>
+- [그래프]()<br/>
+- [깊이 우선 탐색 (=DFS)]()<br/>
+- [트리]()<br/>
+- [너비 우선 탐색 (=BFS)]()<br/>
+- [다익스트라]()<br/>
+- [동적계획법 (=DP)]()<br/>
+
+
 
   
 ### JavaScript
