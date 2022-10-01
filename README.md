@@ -8,8 +8,10 @@
 ### ETC
 - [백엔드 개발자?](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%EC%9E%90.md)<br/>
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
+- [면접을 위한 CS]()<br/>
+- [객체지향 사실과 오해]()<br/>
+- []()<br/>
 - [Ajax](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
-
 
 
 
