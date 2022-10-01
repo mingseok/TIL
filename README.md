@@ -221,9 +221,9 @@
 - [데이터 갱신하기 - UPDATE](https://github.com/mingseok/TIL/blob/main/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
 - [물리삭제와 논리삭제](https://github.com/mingseok/TIL/blob/main/Database/%EB%AC%BC%EB%A6%AC%EC%82%AD%EC%A0%9C%EC%99%80%20%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
 - [행 개수 구하기 - COUNT](https://github.com/mingseok/TIL/blob/main/Database/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
+- [COUNT 이외의 집계함수]()<br/>
+- [그룹화 - GROUP BY]()<br/>
+- [서브쿼리]()<br/>
 - []()<br/>
 - []()<br/>
 - [트랜잭션 - 개념 이해](https://github.com/mingseok/TIL/blob/main/Database/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20-%20%EA%B0%9C%EB%85%90%20%EC%9D%B4%ED%95%B4.md)<br/>
