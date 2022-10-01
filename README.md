@@ -221,9 +221,9 @@
 - [데이터 갱신하기 - UPDATE](https://github.com/mingseok/TIL/blob/main/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
 - [물리삭제와 논리삭제](https://github.com/mingseok/TIL/blob/main/Database/%EB%AC%BC%EB%A6%AC%EC%82%AD%EC%A0%9C%EC%99%80%20%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
 - [행 개수 구하기 - COUNT](https://github.com/mingseok/TIL/blob/main/Database/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
-- [COUNT 이외의 집계함수]()<br/>
-- [그룹화 - GROUP BY]()<br/>
-- [서브쿼리]()<br/>
+- [COUNT 이외의 집계함수](https://github.com/mingseok/TIL/blob/main/Database/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
+- [그룹화 - GROUP BY](https://github.com/mingseok/TIL/blob/main/Database/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
+- [서브쿼리](https://github.com/mingseok/TIL/blob/main/Database/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
 - []()<br/>
 - []()<br/>
 - [트랜잭션 - 개념 이해](https://github.com/mingseok/TIL/blob/main/Database/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20-%20%EA%B0%9C%EB%85%90%20%EC%9D%B4%ED%95%B4.md)<br/>
@@ -272,7 +272,6 @@
 - [선택 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%83%9D%20%EC%A0%95%EB%A0%AC.md)<br/>
 - [삽입 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%82%BD%EC%9E%85%20%EC%A0%95%EB%A0%AC.md)<br/>
 - [합병정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%95%A9%EB%B3%91%EC%A0%95%EB%A0%AC.md)<br/>
-
 - [퀵정렬]()<br/>
 - [Linked list](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%ED%91%9C%ED%98%84.md)<br/>
 - [완전탐색]()<br/>
