@@ -156,12 +156,13 @@
 - [Assertions.assertThat()](https://github.com/mingseok/TIL/blob/main/TDD/Assertions.assertThat().md)<br/>
 - [@AfterEach](https://github.com/mingseok/TIL/blob/main/TDD/%40AfterEach.md)<br/>
 - [@BeforeEach](https://github.com/mingseok/TIL/blob/main/TDD/%40BeforeEach.md)<br/>
+- [isEqualTo()](https://github.com/mingseok/TIL/blob/main/TDD/isEqualTo().md)<br/>
 - [isSameAs()와 isEqualTo()](https://github.com/mingseok/TIL/blob/main/TDD/isSameAs()%EC%99%80%20isEqualTo().md)<br/>
 - [contains()](https://github.com/mingseok/TIL/blob/main/TDD/contains().md)<br/>
 - [isNotNull()](https://github.com/mingseok/TIL/blob/main/TDD/isNotNull().md)<br/>
 - [isInstanceOf()](https://github.com/mingseok/TIL/blob/main/TDD/isInstanceOf().md)<br/>
 - [isNotSameAs()](https://github.com/mingseok/TIL/blob/main/TDD/isNotSameAs().md)<br/>
-- [assertThatThrownBy()]()<br/>
+- [assertThatThrownBy()](https://github.com/mingseok/TIL/blob/main/TDD/assertThatThrownBy().md)<br/>
 - [트랜잭션](https://github.com/mingseok/TIL/blob/main/TDD/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98.md)<br/>
 - [롤백](https://github.com/mingseok/TIL/blob/main/TDD/%EB%A1%A4%EB%B0%B1(rollback).md)<br/>
 - [@Transactional](https://github.com/mingseok/TIL/blob/main/TDD/%40Transactional.md)<br/>
@@ -241,7 +242,6 @@
 - [텍스트 - text, utext](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%8D%EC%8A%A4%ED%8A%B8%20-%20text%2C%20utext.md)<br/>
 - [변수 - SpringEL](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B3%80%EC%88%98%20-%20SpringEL.md)<br/>
 - [기본 객체들](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EA%B8%B0%EB%B3%B8%20%EA%B0%9D%EC%B2%B4%EB%93%A4.md)<br/>
-- [간단한 표현]()<br/>
 - [선택 변수 표현식 - "*{...}"](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%84%A0%ED%83%9D%20%EB%B3%80%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
 - [URL 링크](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/URL%20%EB%A7%81%ED%81%AC.md)<br/>
 - [th:action](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/th-action.md)<br/>
