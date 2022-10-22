@@ -7,10 +7,11 @@
 
 ### ETC
 - [백엔드 개발자?](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%EC%9E%90.md)<br/>
+- [Java 네이밍 규칙]()<br/>
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
 - [면접을 위한 CS]()<br/>
 - [객체지향 사실과 오해](https://github.com/mingseok/TIL/tree/main/Dev-Book-Review/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98%20%EC%82%AC%EC%8B%A4%EA%B3%BC%20%EC%98%A4%ED%95%B4)<br/>
-- []()<br/>
+- [이펙티브 자바]()<br/>
 - [Ajax](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
 
 
