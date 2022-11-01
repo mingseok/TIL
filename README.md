@@ -286,7 +286,7 @@
 - [그래프](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84.md)<br/>
     - [인접 행렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B8%EC%A0%91%20%ED%96%89%EB%A0%AC.md)<br/>
     - [인접 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B8%EC%A0%91%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
-    - [그래프 순회의 뜻]()<br/>
+    - [그래프 순회의 뜻](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%88%9C%ED%9A%8C%EC%9D%98%20%EB%9C%BB.md)<br/>
 - [깊이 우선 탐색 (=DFS)]()<br/>
 - [트리]()<br/>
 - [너비 우선 탐색 (=BFS)]()<br/>
