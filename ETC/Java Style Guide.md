@@ -17,6 +17,8 @@ package com.navercorp.api_gateway
 package com.navercorp.apigateway
 ```
 
+---
+
 <br/><br/>
 
 ## 소스파일당 1개의 탑레벨 클래스를 담기
@@ -41,6 +43,8 @@ public class LogParser {
 }
 ```
 
+---
+
 <br/><br/>
 
 ## static import에만 와일드 카드 허용
@@ -58,6 +62,8 @@ import java.util.List;
 import java.util.ArrayList;
 ```
 
+---
+
 <br/><br/>
 
 ## 상수는 대문자와 언더스코어로 구성
@@ -66,6 +72,8 @@ import java.util.ArrayList;
 public final int UNLIMITED = -1;
 public final String POSTAL_CODE_EXPRESSION = “POST”;
 ```
+
+---
 
 <br/><br/>
 
@@ -85,6 +93,8 @@ private boolean authorized;
 private int accessToken;
 ```
 
+---
+
 <br/><br/>
 
 ## 한 줄에 한 문장
@@ -101,6 +111,8 @@ int base = 0; int weight = 2;
 int base = 0;
 int weight = 2;
 ```
+
+---
 
 <br/><br/>
 
@@ -150,6 +162,8 @@ if (condition)
     body(); 
 ```
 
+---
+
 <br/><br/>
 
 ## K&R 스타일로 중괄호 선언
@@ -195,6 +209,8 @@ public class SearchConditionParser {
     }
 }
 ```
+
+---
 
 <br/><br/>
 
@@ -275,6 +291,8 @@ do {
 } while (line != null);
 ```
 
+---
+
 <br/><br/>
 
 ## 조건/반복문에 중괄호 필수 사용
@@ -302,6 +320,8 @@ for (char ch : exp.toCharArray()) {
 
 }
 ```
+
+---
 
 <br/><br/>
 
@@ -331,6 +351,8 @@ public String removeEndingDot(String original) {
 }
 ```
 
+---
+
 <br/><br/>
 
 ## 타입 캐스팅에 쓰이는 소괄호 내부 공백 미삽입
@@ -346,6 +368,8 @@ String message = ( String ) rawLine;
 ```java
 String message = (String)rawLine;
 ```
+
+---
 
 <br/><br/>
 
@@ -367,6 +391,8 @@ for (int i = 0; i < length; i++) {
 }
 ```
 
+---
+
 <br/><br/>
 
 ## 단항 연산자와 연산 대상 사이에 공백을 미삽입
@@ -383,6 +409,8 @@ int point = score[++ index] * rank -- * - 1;
 int point = score[++index] * rank-- * -1;
 ```
 
+---
+
 <br/><br/>
 
 ## ASCII 코드 외의 문자
@@ -392,6 +420,8 @@ String unitAbbrev = "μs";  - Best
 
 String unitAbbrev = "\u03bcs"; // 최악, 이게 뭔지 알 도리가 없음
 ```
+
+---
 
 <br/><br/>
 
@@ -415,6 +445,8 @@ try {
 } catch (Exception e) {}
 ```
 
+---
+
 <br/><br/>
 
 ## 공백
@@ -427,6 +459,8 @@ private int   x;      // 해도 되지만, 권장하지 않음
 private Color color;  // 괜찮음
 ```
 
+---
+
 <br/><br/>
 
 ## 그룹화 괄호 : 권장
@@ -436,6 +470,8 @@ int n = 5 * 3 + 1 // 가능하지만 별로
 
 int n = (5 * 3) + 1 // 이렇게 사용하자
 ```
+
+---
 
 <br/><br/>
 
@@ -455,6 +491,8 @@ new int[] {             3,
                           {0, 1, 2, 3}
 ```
 
+---
+
 <br/><br/>
 
 ## 숫자 리터럴
@@ -462,3 +500,5 @@ new int[] {             3,
 long형 숫자의 경우 `3000000000l`대신 `3000000000L` 으로 쓴다.
 
 소문자 l은 숫자 1과 헷갈릴 수 있기 때문이다.
+
+---
