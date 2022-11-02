@@ -7,6 +7,7 @@
 
 ### ETC
 - [백엔드 개발자?](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%EC%9E%90.md)<br/>
+- [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
 - [Java 네이밍 규칙]()<br/>
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
 - [면접을 위한 CS]()<br/>

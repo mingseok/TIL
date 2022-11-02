@@ -7,6 +7,7 @@
 ```java
 package com.navercorp.apiGateway
 
+
 package com.navercorp.api_gateway
 ```
 
@@ -139,8 +140,10 @@ if (condition) {
     body();
 }
 
+
 // 나름 허용한다.
 if (condition) body();
+
 
 // 이건 허용하지 않는다.
 if (condition)
@@ -223,7 +226,7 @@ if (line.startWith(WARNING_PREFIX)) {
 }
 ```
 
-<br/>
+<br/><br/>
 
 ex2) 나쁜 예시
 
@@ -251,7 +254,7 @@ try {
 }
 ```
 
-<br/>
+<br/><br/>
 
 ex3) 나쁜 예시
 
@@ -400,9 +403,11 @@ String unitAbbrev = "\u03bcs"; // 최악, 이게 뭔지 알 도리가 없음
 // 가능
 void doNothing() {}
 
+
 // 가능
 void doNothingElse() {
 }
+
 
 // 안됨 (try에는 내용이 있기 때문에)
 try {
