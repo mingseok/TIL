@@ -34,15 +34,15 @@ try {
 
 ```java
 class aaa {
-	public static void main(String args[]) {
-		int number = 100;
-		int result = 0;
+   public static void main(String args[]) {
+      int number = 100;
+      int result = 0;
 
-		for (int i = 0; i < 10; i++) {
-			result = number / (int) (Math.random() * 10); // 9번째 라인
-			System.out.println(result);
-		}
-	} 
+      for (int i = 0; i < 10; i++) {
+	 result = number / (int) (Math.random() * 10); // 9번째 라인
+	 System.out.println(result);
+      }
+    } 
 }
 
 출력값.
@@ -71,19 +71,19 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 
 ```java
 class aaaa {
-	public static void main(String args[]) {
-		int number = 100;
-		int result = 0;
+   public static void main(String args[]) {
+      int number = 100;
+      int result = 0;
 
-		for (int i = 0; i < 10; i++) {
-			try {
-				result = number / (int) (Math.random() * 10);
-				System.out.println(result);
-			} catch (ArithmeticException e) {
-				System.out.println("0");
-			}
-		}
-	}
+      for (int i = 0; i < 10; i++) {
+         try {
+            result = number / (int) (Math.random() * 10);
+            System.out.println(result);
+         } catch (ArithmeticException e) {
+            System.out.println("0");
+         }
+      }
+    }
 }
 
 출력값.
@@ -123,19 +123,19 @@ class aaaa {
 
 ```java
 class aaaa {
-	public static void main(String args[]) {
-		System.out.println(1);
-		System.out.println(2);
-		try {
-			System.out.println(3);
-			System.out.println(4);
+   public static void main(String args[]) {
+      System.out.println(1);
+      System.out.println(2);
+      
+      try {
+         System.out.println(3);
+         System.out.println(4);
+      } catch (Exception e) {
+         System.out.println(5); // 실행되지 않는다.
 
-		} catch (Exception e) {
-			System.out.println(5); // 실행되지 않는다.
-
-		} // try-catch의 끝.
-		System.out.println(6);
-	}
+      } // try-catch의 끝.
+        System.out.println(6);
+   }
 }
 
 출력값.
@@ -158,20 +158,21 @@ try블럭에서 예외가 발생하면, 예외가 발생한 위치 이후에 있
 
 ```java
 class aaaa {
-	public static void main(String args[]) {
-		System.out.println(1);
-		System.out.println(2);
-		try {
-			System.out.println(3);
-			System.out.println(0 / 0); // 0으로 나눠서 고의로 ArithmeticException 에러 발생.
-			System.out.println(4); // 실행되지 않는다.
+   public static void main(String args[]) {
+      System.out.println(1);
+      System.out.println(2);
+      
+      try {
+         System.out.println(3);
+         System.out.println(0 / 0); // 0으로 나눠서 고의로 ArithmeticException 에러 발생.
+         System.out.println(4); // 실행되지 않는다.
 			
-		} catch (ArithmeticException ae) {
-			System.out.println(5);
+      } catch (ArithmeticException ae) {
+            System.out.println(5);
 			
-		} // try-catch의 끝
-		System.out.println(6);
-	} 
+      } // try-catch의 끝
+        System.out.println(6);
+   } 
 }
 
 출력값
@@ -208,20 +209,22 @@ Exception클래스의 자손이므로 ArithmeticException 인스턴스와 Except
 
 ```java
 class ExceptionEx6 {
-	public static void main(String args[]) {
-		System.out.println(1);			
-		System.out.println(2);
-		try {
-			System.out.println(3);
-			System.out.println(0/0);
-			System.out.println(4); 	// 실행되지 않는다.
+   public static void main(String args[]) {
+      System.out.println(1);			
+      System.out.println(2);
+      
+      try {
+        System.out.println(3);
+        System.out.println(0/0);
+        System.out.println(4); 	// 실행되지 않는다.
 
-		} catch (Exception e)	{	// ArithmeticException대신 Exception을 사용.
-			System.out.println(5);
+        } catch (Exception e) {	// ArithmeticException대신 Exception을 사용.
+             System.out.println(5);
 
-		}	// try-catch의 끝
-		System.out.println(6);
-	}	// main메서드의 끝
+        } // try-catch의 끝
+          System.out.println(6);
+	  
+    } // main메서드의 끝
 }
 
 출력값.
@@ -245,25 +248,27 @@ Exception 클래스 타입의 참조변수를 선언한 것을 사용 하였다.
 <br/>어떤 종류의 예외가 발생하더라도 이 catch블럭에 의해 처리되도록 할 수 있다.
 ```java
 class aaaa {
-	public static void main(String args[]) {
-		System.out.println(1);
-		System.out.println(2);
-		try {
-			System.out.println(3);
-			System.out.println(0 / 0); // 0으로 나눠서 에러 발생.
-			System.out.println(4); // 실행되지 않는다.
+   public static void main(String args[]) {
+     System.out.println(1);
+     System.out.println(2);
+     
+     try {
+       System.out.println(3);
+       System.out.println(0 / 0); // 0으로 나눠서 에러 발생.
+       System.out.println(4); // 실행되지 않는다.
 
-		} catch (ArithmeticException ae) {
-			if (ae instanceof ArithmeticException) {
-				System.out.println("true");
+      } catch (ArithmeticException ae) {
+         if (ae instanceof ArithmeticException) {
+            System.out.println("true");
       }
-			System.out.println("ArithmeticException");
+            System.out.println("ArithmeticException");
 
-		} catch (Exception e) {
-			System.out.println("Exception");
-		} // try-catch의 끝
-		System.out.println(6);
-	} // main메서드의 끝
+      } catch (Exception e) {
+         System.out.println("Exception");
+      } // try-catch의 끝
+         System.out.println(6);
+	 
+    } // main메서드의 끝
 }
 
 출력값.
