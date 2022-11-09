@@ -10,7 +10,7 @@
 - [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
 - [Java 네이밍 규칙]()<br/>
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
-- [면접을 위한 CS]()<br/>
+- [책임, 위임, 협력](https://github.com/mingseok/TIL/blob/main/ETC/%EC%B1%85%EC%9E%84%2C%20%EC%9C%84%EC%9E%84%2C%20%ED%98%91%EB%A0%A5.md)<br/>
 - [객체지향 사실과 오해](https://github.com/mingseok/TIL/tree/main/Dev-Book-Review/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98%20%EC%82%AC%EC%8B%A4%EA%B3%BC%20%EC%98%A4%ED%95%B4)<br/>
 - [이펙티브 자바](https://github.com/mingseok/TIL/tree/main/Dev-Book-Review/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%20%EC%9E%90%EB%B0%94)<br/>
 - [Ajax](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
