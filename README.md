@@ -43,6 +43,11 @@
     - [Comparable을 구현할지 고려하라](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%20%EC%9E%90%EB%B0%94/Comparable%EC%9D%84%20%EA%B5%AC%ED%98%84%ED%95%A0%EC%A7%80%20%EA%B3%A0%EB%A0%A4%ED%95%98%EB%9D%BC.md)<br/>
     - [추상 클래스 보다는 인터페이스를 우선하라](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%20%EC%9E%90%EB%B0%94/%EC%B6%94%EC%83%81%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%B3%B4%EB%8B%A4%EB%8A%94%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC%20%EC%9A%B0%EC%84%A0%ED%95%98%EB%9D%BC.md)<br/>
     - [이왕이면 제네릭 메서드로 만들라](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%20%EC%9E%90%EB%B0%94/%EC%9D%B4%EC%99%95%EC%9D%B4%EB%A9%B4%20%EC%A0%9C%EB%84%A4%EB%A6%AD%20%EB%A9%94%EC%84%9C%EB%93%9C%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EB%9D%BC.md)<br/>
+    - [타입 안전 이종 컨테이너 패턴](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%20%EC%9E%90%EB%B0%94/%ED%83%80%EC%9E%85%20%EC%95%88%EC%A0%84%20%EC%9D%B4%EC%A2%85%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%ED%8C%A8%ED%84%B4.md)<br/>    
+
+
+
+
 
 
 
