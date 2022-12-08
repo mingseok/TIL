@@ -34,8 +34,11 @@
     - [이왕이면 제네릭 메서드로 만들라](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%20%EC%9E%90%EB%B0%94/%EC%9D%B4%EC%99%95%EC%9D%B4%EB%A9%B4%20%EC%A0%9C%EB%84%A4%EB%A6%AD%20%EB%A9%94%EC%84%9C%EB%93%9C%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EB%9D%BC.md)<br/>
     - [타입 안전 이종 컨테이너 패턴](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%20%EC%9E%90%EB%B0%94/%ED%83%80%EC%9E%85%20%EC%95%88%EC%A0%84%20%EC%9D%B4%EC%A2%85%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%ED%8C%A8%ED%84%B4.md)<br/>    
 - [Http Net Work Basic](https://github.com/mingseok/TIL/tree/main/Dev-Book-Review/%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20HTTP.md)<br/>
-    - [웹과 네트워크의 기본에 대해 알아보자](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20HTTP.md/1%EC%9E%A5%20-%20%EC%9B%B9%EA%B3%BC%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98%20%EA%B8%B0%EB%B3%B8%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.md)<br/>   
-
+    - [웹과 네트워크의 기본에 대해 알아보자](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20HTTP/1%EC%9E%A5%20-%20%EC%9B%B9%EA%B3%BC%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98%20%EA%B8%B0%EB%B3%B8%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.md)<br/> 
+    - [간단한 프로토콜 HTTP](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20HTTP/2%EC%9E%A5.%20%EA%B0%84%EB%8B%A8%ED%95%9C%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%20HTTP.md)<br/>
+    - [HTTP 정보는 HTTP 메시지에 있다](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20HTTP/3%EC%9E%A5.%20HTTP%20%EC%A0%95%EB%B3%B4%EB%8A%94%20HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80%EC%97%90%20%EC%9E%88%EB%8B%A4.md)<br/>
+    - [결과를 전달하는 HTTP 상태 코드](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20HTTP/4%EC%9E%A5.%20%EA%B2%B0%EA%B3%BC%EB%A5%BC%20%EC%A0%84%EB%8B%AC%ED%95%98%EB%8A%94%20HTTP%20%EC%83%81%ED%83%9C%20%EC%BD%94%EB%93%9C.md)<br/>
+    - [HTTP와 연계하는 웹 서버](https://github.com/mingseok/TIL/blob/main/Dev-Book-Review/%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20HTTP/5%EC%9E%A5.%20HTTP%EC%99%80%20%EC%97%B0%EA%B3%84%ED%95%98%EB%8A%94%20%EC%9B%B9%20%EC%84%9C%EB%B2%84.md)<br/>
 
 
 
