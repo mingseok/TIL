@@ -265,8 +265,6 @@
 - [COUNT 이외의 집계함수](https://github.com/mingseok/TIL/blob/main/Database/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
 - [그룹화 - GROUP BY](https://github.com/mingseok/TIL/blob/main/Database/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
 - [서브쿼리](https://github.com/mingseok/TIL/blob/main/Database/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
-- []()<br/>
-- []()<br/>
 - [트랜잭션 - 개념 이해](https://github.com/mingseok/TIL/blob/main/Database/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20-%20%EA%B0%9C%EB%85%90%20%EC%9D%B4%ED%95%B4.md)<br/>
 
 
