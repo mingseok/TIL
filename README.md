@@ -17,6 +17,17 @@
 - [책임, 위임, 협력](https://github.com/mingseok/TIL/blob/main/ETC/%EC%B1%85%EC%9E%84%2C%20%EC%9C%84%EC%9E%84%2C%20%ED%98%91%EB%A0%A5.md)<br/>
 - [Ajax](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
 
+
+
+
+
+### CS
+- [운영체제란?]()<br/>
+
+
+
+
+
 ### Spring
 - [스프링 프레임워크? 스프링 부트?](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.md)<br/>
 - [역할과 구현](https://github.com/mingseok/TIL/blob/main/Spring/%EC%97%AD%ED%95%A0.md)<br/>
