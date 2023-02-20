@@ -22,7 +22,7 @@
 
 
 ### CS
-- [운영체제란?]()<br/>
+- [운영체제란?](https://github.com/mingseok/TIL/blob/main/CS/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EB%9E%80.md)<br/>
 
 
 
