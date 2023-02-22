@@ -23,6 +23,9 @@
 
 ### CS
 - [운영체제란?](https://github.com/mingseok/TIL/blob/main/CS/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EB%9E%80.md)<br/>
+- [O/S가 수행하는 작업](https://github.com/mingseok/TIL/blob/main/CS/OS%EA%B0%80%20%EC%88%98%ED%96%89%ED%95%98%EB%8A%94%20%EC%9E%91%EC%97%85.md)<br/>
+
+
 
 
 
