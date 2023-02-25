@@ -31,8 +31,8 @@
 7. 댓글
 8. 좋아요
 ```
-- [1-1. 테이블 작성]()<br/>
-- [1-2. (lntellij) DB 연결]()<br/>
+- [1-1. 테이블 작성](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%9E%91%EC%84%B1.md)<br/>
+- [1-2. (lntellij) DB 연결](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/DB%20%EC%97%B0%EA%B2%B0.md)<br/>
 - []()<br/>
 - []()<br/>
 - []()<br/>
