@@ -18,23 +18,21 @@
 
 
 
-### 혼자 기능 구현 + Trouble Shooting.
-
-[전체 코드 Link](https://github.com/mingseok/facegram)
+### 혼자 기능 구현 + Trouble Shooting. [(Link)](https://github.com/mingseok/facegram) 
 ```
 기술 스택 : Spring + MyBatis 
 
-0-1. DB 연결, table 작성
-1-1. 회원가입
-2-1. 로그인(Security)
-3-1. 게시판 글 등록, 상세보기, 수정, 삭제
-4-1. 프로필, 프로필 수정
-5-1. 조회수
-6-1. 댓글
-7-1. 좋아요
+1. DB 연결, table 작성
+2. 회원가입
+3. 로그인(Security)
+4. 게시판 글 등록, 상세보기, 수정, 삭제
+5. 프로필, 프로필 수정
+6. 조회수
+7. 댓글
+8. 좋아요
 ```
-- [테이블 작성]()<br/>
-- []()<br/>
+- [1-1. 테이블 작성]()<br/>
+- [1-2. (lntellij) DB 연결]()<br/>
 - []()<br/>
 - []()<br/>
 - []()<br/>
