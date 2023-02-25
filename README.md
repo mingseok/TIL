@@ -15,16 +15,34 @@
 - [질문하는 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EC%A7%88%EB%AC%B8%20%EB%B0%A9%EB%B2%95.md)<br/>
 - [객체와 인스턴스](https://github.com/mingseok/TIL/blob/main/ETC/%EA%B0%9D%EC%B2%B4%EC%99%80%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4.md)<br/>
 - [책임, 위임, 협력](https://github.com/mingseok/TIL/blob/main/ETC/%EC%B1%85%EC%9E%84%2C%20%EC%9C%84%EC%9E%84%2C%20%ED%98%91%EB%A0%A5.md)<br/>
-- [Ajax](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
 
 
 
+### 혼자 기능 구현 + Trouble Shooting.
 
+[전체 코드 Link](https://github.com/mingseok/facegram)
+```
+기술 스택 : Spring + MyBatis 
 
-### CS
-- [운영체제란?](https://github.com/mingseok/TIL/blob/main/CS/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EB%9E%80.md)<br/>
-- [O/S가 수행하는 작업](https://github.com/mingseok/TIL/blob/main/CS/OS%EA%B0%80%20%EC%88%98%ED%96%89%ED%95%98%EB%8A%94%20%EC%9E%91%EC%97%85.md)<br/>
+0-1. DB 연결, table
+1-1. 회원가입
+2-1. 로그인(Security)
+3-1. 게시판 글 등록, 상세보기, 수정, 삭제
+4-1. 프로필, 프로필 수정
+5-1. 조회수
+6-1. 댓글
+7-1. 좋아요
 
+번호에 맞게 목록(링크)을 작성하였습니다.
+
+```
+- [테이블 생성]()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
 
 
 
@@ -254,85 +272,81 @@
 
 
 ### thymeleaf
-- [타임리프 소개](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%86%8C%EA%B0%9C.md)<br/>
-- [텍스트 - text, utext](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%8D%EC%8A%A4%ED%8A%B8%20-%20text%2C%20utext.md)<br/>
-- [변수 - SpringEL](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B3%80%EC%88%98%20-%20SpringEL.md)<br/>
-- [기본 객체들](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EA%B8%B0%EB%B3%B8%20%EA%B0%9D%EC%B2%B4%EB%93%A4.md)<br/>
-- [선택 변수 표현식 - "*{...}"](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%84%A0%ED%83%9D%20%EB%B3%80%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
-- [URL 링크](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/URL%20%EB%A7%81%ED%81%AC.md)<br/>
-- [th:action](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/th-action.md)<br/>
-- [th:value](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/th-value.md)<br/>
-- [리터럴](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A6%AC%ED%84%B0%EB%9F%B4.md)<br/>
-- [연산 (중요)](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%97%B0%EC%82%B0.md)<br/>
-- [속성 값 설정](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%86%8D%EC%84%B1%20%EA%B0%92%20%EC%84%A4%EC%A0%95.md)<br/>
-- [조건부 if, switch 문](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%A1%B0%EA%B1%B4%EB%B6%80%20if.md)<br/>
-- [반복](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B0%98%EB%B3%B5.md)<br/>
-- [블록](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B8%94%EB%A1%9D.md)<br/>
-- [자바스크립트 인라인](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%9D%B8%EB%9D%BC%EC%9D%B8%20each.md)<br/>
-- [템플릿 조각](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EC%A1%B0%EA%B0%81.md)<br/>
-- [템플릿 레이아웃](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)<br/>
-- [입력 폼 처리](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%85%EB%A0%A5%20%ED%8F%BC%20%EC%B2%98%EB%A6%AC.md)<br/>
-- [체크 박스 - 단일](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%EB%8B%A8%EC%9D%BC.md)<br/>
-- [체크 박스 - 타임리프 적용](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%A0%81%EC%9A%A9.md)<br/>
-- [멀티 체크 박스](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A9%80%ED%8B%B0%20%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4.md)<br/>
-- [라디오 버튼](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%9D%BC%EB%94%94%EC%98%A4%20%EB%B2%84%ED%8A%BC.md)<br/>
-- [셀렉트 박스](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%85%80%EB%A0%89%ED%8A%B8%20%EB%B0%95%EC%8A%A4.md)<br/>
+- [1. 타임리프 소개](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%86%8C%EA%B0%9C.md)<br/>
+- [2. 텍스트 - text, utext](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%8D%EC%8A%A4%ED%8A%B8%20-%20text%2C%20utext.md)<br/>
+- [3. 변수 - SpringEL](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B3%80%EC%88%98%20-%20SpringEL.md)<br/>
+- [4. 기본 객체들](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EA%B8%B0%EB%B3%B8%20%EA%B0%9D%EC%B2%B4%EB%93%A4.md)<br/>
+- [5. 선택 변수 표현식 - "*{...}"](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%84%A0%ED%83%9D%20%EB%B3%80%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
+- [6. URL 링크](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/URL%20%EB%A7%81%ED%81%AC.md)<br/>
+- [7. th:action](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/th-action.md)<br/>
+- [8. th:value](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/th-value.md)<br/>
+- [9. 리터럴](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A6%AC%ED%84%B0%EB%9F%B4.md)<br/>
+- [10. 연산 (중요)](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%97%B0%EC%82%B0.md)<br/>
+- [11. 속성 값 설정](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%86%8D%EC%84%B1%20%EA%B0%92%20%EC%84%A4%EC%A0%95.md)<br/>
+- [12. 조건부 if, switch 문](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%A1%B0%EA%B1%B4%EB%B6%80%20if.md)<br/>
+- [13. 반복](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B0%98%EB%B3%B5.md)<br/>
+- [14. 블록](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B8%94%EB%A1%9D.md)<br/>
+- [15. 자바스크립트 인라인](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%9D%B8%EB%9D%BC%EC%9D%B8%20each.md)<br/>
+- [16. 템플릿 조각](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EC%A1%B0%EA%B0%81.md)<br/>
+- [17. 템플릿 레이아웃](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)<br/>
+- [18. 입력 폼 처리](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%85%EB%A0%A5%20%ED%8F%BC%20%EC%B2%98%EB%A6%AC.md)<br/>
+- [19. 체크 박스 - 단일](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%EB%8B%A8%EC%9D%BC.md)<br/>
+- [20. 체크 박스 - 타임리프 적용](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%A0%81%EC%9A%A9.md)<br/>
+- [21. 멀티 체크 박스](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A9%80%ED%8B%B0%20%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4.md)<br/>
+- [22. 라디오 버튼](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%9D%BC%EB%94%94%EC%98%A4%20%EB%B2%84%ED%8A%BC.md)<br/>
+- [23. 셀렉트 박스](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%85%80%EB%A0%89%ED%8A%B8%20%EB%B0%95%EC%8A%A4.md)<br/>
 
 
 
 
 ### 자료구조 & 알고리즘
 
-- [Big-O](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Big_O.md)<br/>
-- [노드](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%85%B8%EB%93%9C.md)<br/>
-- [선형 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
-- [버블 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B2%84%EB%B8%94%20%EC%A0%95%EB%A0%AC.md)<br/>
-- [선택 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%83%9D%20%EC%A0%95%EB%A0%AC.md)<br/>
-- [삽입 정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%82%BD%EC%9E%85%20%EC%A0%95%EB%A0%AC.md)<br/>
-- [합병정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%95%A9%EB%B3%91%EC%A0%95%EB%A0%AC.md)<br/>
-- [퀵정렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%80%B5%EC%A0%95%EB%A0%AC.md)<br/>
-- [Linked list](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%ED%91%9C%ED%98%84.md)<br/>
-- [완전탐색](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89.md)<br/>
-- [재귀 함수](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%AC%EA%B7%80%ED%95%A8%EC%88%98.md)<br/>
-- [이진 탐색](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B4%EC%A7%84%20%ED%83%90%EC%83%89.md)<br/>
-- [자료구조란? (=해시)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EB%9E%80.md)<br/>
-- [스택](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%8A%A4%ED%83%9D.md)<br/>
-- [큐](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%81%90.md)<br/>
-- [그래프](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84.md)<br/>
-    - [인접 행렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B8%EC%A0%91%20%ED%96%89%EB%A0%AC.md)<br/>
-    - [인접 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B8%EC%A0%91%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
-    - [그래프 순회의 뜻](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%88%9C%ED%9A%8C%EC%9D%98%20%EB%9C%BB.md)<br/>
-- [깊이 우선 탐색 (=DFS)](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)<br/>
-    - [깊이 우선 탐색의 철학](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B9%8A%EC%9D%B4%20%EC%9A%B0%EC%84%A0%20%ED%83%90%EC%83%89%EC%9D%98%20%EC%B2%A0%ED%95%99.md)<br/>
-    - [깊이 우선 탐색의 예제](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B9%8A%EC%9D%B4%20%EC%9A%B0%EC%84%A0%20%ED%83%90%EC%83%89%EC%9D%98%20%EC%98%88%EC%A0%9C.md)<br/>
-    - [깊이 우선 탐색의 구현](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B9%8A%EC%9D%B4%20%EC%9A%B0%EC%84%A0%20%ED%83%90%EC%83%89%EC%9D%98%20%EA%B5%AC%ED%98%84.md)<br/>
-- [트리](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)<br/> 
-    - [트리의 개념](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%8A%B8%EB%A6%AC%EC%9D%98%20%EA%B0%9C%EB%85%90.md)<br/>
-    - [트리의 순회, 종류](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%8A%B8%EB%A6%AC%EC%88%9C%ED%9A%8C.md)<br/>
-    - [트리 순회 구현](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%8A%B8%EB%A6%AC%20%EC%88%9C%ED%9A%8C%20%EA%B2%B0%EA%B3%BC%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0.md)<br/>
-- [너비 우선 탐색 (=BFS)]()<br/>
-    - [너비 우선 탐색 구현](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%84%88%EB%B9%84%20%EC%9A%B0%EC%84%A0%20%ED%83%90%EC%83%89%20%EA%B5%AC%ED%98%84.md)<br/>
-- [다익스트라]()<br/>
-    - [최단경로 문제와 알고리즘(1)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C%20%EB%AC%B8%EC%A0%9C%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)<br/>
-    - [최단경로 문제와 알고리즘(2)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C%20%EB%AC%B8%EC%A0%9C%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98(2).md)<br/>    
-    - [다익스트라 알고리즘 구현(최단거리)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EA%B5%AC%ED%98%84.md)<br/>    
-- [동적계획법 (=DP)]()<br/>
-    - [동적 계획법의 개념](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8F%99%EC%A0%81%20%EA%B3%84%ED%9A%8D%EB%B2%95%EC%9D%98%20%EA%B0%9C%EB%85%90.md)<br/>    
-    - [동적 계획법의 문제 풀이 순서](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8F%99%EC%A0%81%20%EA%B3%84%ED%9A%8D%EB%B2%95%EC%9D%98%20%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4%20%EC%88%9C%EC%84%9C.md)<br/>        
-    - [동적계획법의 예제: 피보나치 수](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8F%99%EC%A0%81%EA%B3%84%ED%9A%8D%EB%B2%95%EC%9D%98%20%EC%98%88%EC%A0%9C%20%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%20%EC%88%98.md)<br/>    
-    - [동적계획법의 예제: 직사각형 배치의 경우의 수](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95%20%EB%B0%B0%EC%B9%98%EC%9D%98%20%EA%B2%BD%EC%9A%B0%EC%9D%98%20%EC%88%98.md)<br/> 
+- [1-1. Big-O](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/Big_O.md)<br/>
+- [2-1. 노드](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%85%B8%EB%93%9C.md)<br/>
+- [3-1. 선형 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
+- [4-1. bubble sort(버블 정렬)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B2%84%EB%B8%94%20%EC%A0%95%EB%A0%AC.md)<br/>
+- [4-2. selection sort(선택 정렬)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%83%9D%20%EC%A0%95%EB%A0%AC.md)<br/>
+- [4-3. insertion sort(삽입 정렬)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%82%BD%EC%9E%85%20%EC%A0%95%EB%A0%AC.md)<br/>
+- [4-4. Merge Sort(합병정렬)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%95%A9%EB%B3%91%EC%A0%95%EB%A0%AC.md)<br/>
+- [4-5. quick sort(퀵정렬)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%80%B5%EC%A0%95%EB%A0%AC.md)<br/>
+- [5-1. Linked list](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%ED%91%9C%ED%98%84.md)<br/>
+- [6-1. 완전탐색](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89.md)<br/>
+- [7-1. 재귀 함수](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%AC%EA%B7%80%ED%95%A8%EC%88%98.md)<br/>
+- [8-1. 이진 탐색](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B4%EC%A7%84%20%ED%83%90%EC%83%89.md)<br/>
+- [9-1. 자료구조란? (=해시)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EB%9E%80.md)<br/>
+- [9-2. stack(스택)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%8A%A4%ED%83%9D.md)<br/>
+- [9-3. queue(큐)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%81%90.md)<br/>
+- [10-1. 그래프](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84.md)<br/>
+- [10-2. 인접 행렬](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B8%EC%A0%91%20%ED%96%89%EB%A0%AC.md)<br/>
+- [10-3. 인접 리스트](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B8%EC%A0%91%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)<br/>
+- [10-4. 그래프 순회의 뜻](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%88%9C%ED%9A%8C%EC%9D%98%20%EB%9C%BB.md)<br/>
+- [11-1. 깊이 우선 탐색 (=DFS)](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)<br/>
+- [11-2. 깊이 우선 탐색의 철학](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B9%8A%EC%9D%B4%20%EC%9A%B0%EC%84%A0%20%ED%83%90%EC%83%89%EC%9D%98%20%EC%B2%A0%ED%95%99.md)<br/>
+- [11-3. 깊이 우선 탐색의 예제](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B9%8A%EC%9D%B4%20%EC%9A%B0%EC%84%A0%20%ED%83%90%EC%83%89%EC%9D%98%20%EC%98%88%EC%A0%9C.md)<br/>
+- [11-4. 깊이 우선 탐색의 구현](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B9%8A%EC%9D%B4%20%EC%9A%B0%EC%84%A0%20%ED%83%90%EC%83%89%EC%9D%98%20%EA%B5%AC%ED%98%84.md)<br/>
+- [12-1. 트리의 개념](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%8A%B8%EB%A6%AC%EC%9D%98%20%EA%B0%9C%EB%85%90.md)<br/>
+- [12-2. 트리의 순회, 종류](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%8A%B8%EB%A6%AC%EC%88%9C%ED%9A%8C.md)<br/>
+- [12-3. 트리 순회 구현](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%8A%B8%EB%A6%AC%20%EC%88%9C%ED%9A%8C%20%EA%B2%B0%EA%B3%BC%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0.md)<br/>
+- [13-1. 너비 우선 탐색 구현(=BFS)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%84%88%EB%B9%84%20%EC%9A%B0%EC%84%A0%20%ED%83%90%EC%83%89%20%EA%B5%AC%ED%98%84.md)<br/>
+- [14-1. 최단경로 문제와 알고리즘(1)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C%20%EB%AC%B8%EC%A0%9C%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)<br/>
+- [14-2. 최단경로 문제와 알고리즘(2)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C%20%EB%AC%B8%EC%A0%9C%EC%99%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98(2).md)<br/>    
+- [14-3. 다익스트라 알고리즘 구현(최단거리)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EA%B5%AC%ED%98%84.md)<br/>    
+- [15-1. 동적 계획법의 개념](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8F%99%EC%A0%81%20%EA%B3%84%ED%9A%8D%EB%B2%95%EC%9D%98%20%EA%B0%9C%EB%85%90.md)<br/>    
+- [15-2. 동적 계획법의 문제 풀이 순서](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8F%99%EC%A0%81%20%EA%B3%84%ED%9A%8D%EB%B2%95%EC%9D%98%20%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4%20%EC%88%9C%EC%84%9C.md)<br/>        
+- [15-3. 동적계획법의 예제: 피보나치 수](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8F%99%EC%A0%81%EA%B3%84%ED%9A%8D%EB%B2%95%EC%9D%98%20%EC%98%88%EC%A0%9C%20%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%20%EC%88%98.md)<br/>    
+- [15-4. 동적계획법의 예제: 직사각형 배치의 경우의 수](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95%20%EB%B0%B0%EC%B9%98%EC%9D%98%20%EA%B2%BD%EC%9A%B0%EC%9D%98%20%EC%88%98.md)<br/> 
 
 
   
 ### JavaScript
-- [자바스크립트 (=JS)](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8(JS).md)<br/>
-- [이벤트](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8.md)<br/>
-- [데이터타입, 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%2C%20%EB%B3%80%EC%88%98.md)<br/>
-- [CSS 선택자](https://github.com/mingseok/TIL/blob/main/JavaScript/CSS%20%EC%84%A0%ED%83%9D%EC%9E%90.md)<br/>
-- [제어할 태그 선택하기](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%A0%9C%EC%96%B4%ED%95%A0%20%ED%83%9C%EA%B7%B8%20%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0.md)<br/>
-- [배열과 반복문의 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A9%E1%86%A8%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC.md)<br/>
-- [Function()](https://github.com/mingseok/TIL/blob/main/JavaScript/Function().md)<br/>
-- [JS 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/JS%20%EB%B3%80%EC%88%98.md)<br/>
-- [객체와 반복문, 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%80%E1%85%A2%E1%86%A8%E1%84%8E%E1%85%A6%EC%99%80%20%EB%B0%98%EB%B3%B5%EB%AC%B8%2C%20%ED%99%9C%EC%9A%A9.md)<br/>
-
+- [1. 자바스크립트 (=JS)](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8(JS).md)<br/>
+- [2. 이벤트](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8.md)<br/>
+- [3. 데이터타입, 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%2C%20%EB%B3%80%EC%88%98.md)<br/>
+- [4. CSS 선택자](https://github.com/mingseok/TIL/blob/main/JavaScript/CSS%20%EC%84%A0%ED%83%9D%EC%9E%90.md)<br/>
+- [5. 제어할 태그 선택하기](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%A0%9C%EC%96%B4%ED%95%A0%20%ED%83%9C%EA%B7%B8%20%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0.md)<br/>
+- [6. 배열과 반복문의 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A9%E1%86%A8%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC.md)<br/>
+- [7. Function()](https://github.com/mingseok/TIL/blob/main/JavaScript/Function().md)<br/>
+- [8. JS 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/JS%20%EB%B3%80%EC%88%98.md)<br/>
+- [9. 객체와 반복문, 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%80%E1%85%A2%E1%86%A8%E1%84%8E%E1%85%A6%EC%99%80%20%EB%B0%98%EB%B3%B5%EB%AC%B8%2C%20%ED%99%9C%EC%9A%A9.md)<br/>
+- [10. Ajax](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
 
