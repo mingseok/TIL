@@ -8,13 +8,14 @@
 
 ### ETC
 - [백엔드 개발자?](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%EC%9E%90.md)<br/>
-- [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
 - [프로그래머는 문제해결사다](https://github.com/mingseok/TIL/blob/main/ETC/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%8A%94%20%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EC%82%AC%EB%8B%A4.md)<br/>
+- [✔️실패 이력서 (=내 블로그 Link)](https://alstjr706.tistory.com/210)<br/>
+- [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
 - [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
 - [Java 네이밍 규칙](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9E%90%EB%B0%94%EB%84%A4%EC%9D%B4%EB%B0%8D%EA%B7%9C%EC%B9%99.md)<br/>
 - [질문하는 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EC%A7%88%EB%AC%B8%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [객체와 인스턴스](https://github.com/mingseok/TIL/blob/main/ETC/%EA%B0%9D%EC%B2%B4%EC%99%80%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4.md)<br/>
-- [책임, 위임, 협력](https://github.com/mingseok/TIL/blob/main/ETC/%EC%B1%85%EC%9E%84%2C%20%EC%9C%84%EC%9E%84%2C%20%ED%98%91%EB%A0%A5.md)<br/>
+
+
 
 
 
