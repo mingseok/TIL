@@ -21,7 +21,7 @@
 
 ### 혼자 기능 구현 + Trouble Shooting. [(Link)](https://github.com/mingseok/facegram) 
 
-(html 파일은 설명글에서 부분으로만 표시)
+(html 로직은 부분으로만 표시)
 
 ```
 기술 스택 : Spring + MyBatis 
@@ -39,9 +39,15 @@
 - [1-2. (lntellij) DB 연결](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/DB%20%EC%97%B0%EA%B2%B0.md)<br/>
 - [2-1. 회원가입 Logic](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85.md)<br/>
 - [2-2. 회원가입 (설명 + 해결책)](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%20%EC%84%A4%EB%AA%85.md)<br/>
-- [3-1. 로그인, 시큐리티 (설명)]()<br/>
-- [3-2. 로그인, 시큐리티 (추가 흐름 설명)]()<br/>
+- [3-1. 로그인, 시큐리티 (설명)](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EB%A1%9C%EA%B7%B8%EC%9D%B8%2C%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0.md)<br/>
+- [3-2. 로그인, 시큐리티 (추가 흐름 설명)](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EB%A1%9C%EA%B7%B8%EC%9D%B8%2C%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%20%ED%9D%90%EB%A6%84.md)<br/>
+- [4-1. 게시판 글 쓰기, 상세보기]()<br/>
+- [4-2. 게시판 글 쓰기, 상세보기를 구현해보며 몰랐던 점]()<br/>
 - []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+
 
 
 
