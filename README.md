@@ -21,7 +21,7 @@
 
 ### 혼자 기능 구현 + Trouble Shooting. [(Link)](https://github.com/mingseok/facegram) 
 
-(html 로직은 부분으로만 표시)
+(html은 해당 부분만 표시)
 
 ```
 기술 스택 : Spring + MyBatis 
