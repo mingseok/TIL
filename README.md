@@ -43,14 +43,14 @@
 - [3-2. 로그인, 시큐리티 (흐름 설명)](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EB%A1%9C%EA%B7%B8%EC%9D%B8%2C%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%20%ED%9D%90%EB%A6%84.md)<br/>
 - [4-1. 게시판 글 쓰기, 상세보기](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EA%B8%80%20%EB%93%B1%EB%A1%9D%2C%20%EC%83%81%EC%84%B8%EB%B3%B4%EA%B8%B0.md)<br/>
 - [4-2. 게시판 글 쓰기, 상세보기를 (몰랐던 점)](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9D%84%20%EB%A7%8C%EB%93%A4%EB%A9%B0%20%EC%96%B4%EB%A0%A4%EC%9B%A0%EB%8D%98%EC%A0%90.md)<br/>
-- [4-3. 게시판 수정, 삭제]()<br/>
-- [5-1. 프로필, 프로필 수정]()<br/>
-- [5-2. 프로필, 프로필 수정 (몰랐던 점)]()<br/>
-- [6-1. 조회수]()<br/>
-- [6-2. 조회수 (몰랐던 점)]()<br/>
-- [7-1. 댓글]()<br/>
-- [7-2. 댓글 기능 몰랐던 점]()<br/>
-- [8-1. 좋아요]()<br/>
+- [4-3. 게시판 수정, 삭제](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EC%88%98%EC%A0%95%2C%20%EC%82%AD%EC%A0%9C.md)<br/>
+- [5-1. 프로필, 프로필 수정](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%ED%94%84%EB%A1%9C%ED%95%84%2C%20%ED%94%84%EB%A1%9C%ED%95%84%20%EC%88%98%EC%A0%95.md)<br/>
+- [5-2. 프로필, 프로필 수정 (몰랐던 점)](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%ED%94%84%EB%A1%9C%ED%95%84%2C%20%ED%94%84%EB%A1%9C%ED%95%84%20%EC%88%98%EC%A0%95%20%EB%AA%B0%EB%9E%90%EB%8D%98%20%EC%A0%90.md)<br/>
+- [6-1. 조회수](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EC%A1%B0%ED%9A%8C%EC%88%98.md)<br/>
+- [6-2. 조회수 (몰랐던 점)](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EC%A1%B0%ED%9A%8C%EC%88%98%20%EB%AA%B0%EB%9E%90%EB%8D%98%20%EC%A0%90.md)<br/>
+- [7-1. 댓글](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EB%8C%93%EA%B8%80.md)<br/>
+- [7-2. 댓글 기능 몰랐던 점](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EB%8C%93%EA%B8%80%20%EA%B8%B0%EB%8A%A5%20%EB%AA%B0%EB%9E%90%EB%8D%98%20%EC%A0%90.md)<br/>
+- [8-1. 좋아요](https://github.com/mingseok/TIL/blob/main/%ED%98%BC%EC%9E%90%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%84/%EC%A2%8B%EC%95%84%EC%9A%94.md)<br/>
 
 
 
