@@ -54,12 +54,24 @@
 
 
 
-- [[스프링] @GetMapping , Model]()<br/>
-
-
-
 
 ### Spring
+- [[Spring] - @GetMapping , Model](https://github.com/mingseok/TIL/blob/main/Spring/%40Get%EB%A7%A4%ED%95%91%2C%20Model.md)<br/>
+- [[Spring] - @RequestParam()]()<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - [스프링 프레임워크? 스프링 부트?](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.md)<br/>
 - [역할과 구현](https://github.com/mingseok/TIL/blob/main/Spring/%EC%97%AD%ED%95%A0.md)<br/>
 - [OCP](https://github.com/mingseok/TIL/blob/main/Spring/OCP.md)<br/>
