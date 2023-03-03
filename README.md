@@ -56,7 +56,7 @@
 
 
 ### Spring
-- [[Spring] - @Controller]()<br/>
+- [[Spring] - @Controller](https://github.com/mingseok/TIL/blob/main/Spring/%40Controller.md)<br/>
 - [[Spring] - @GetMapping , Model](https://github.com/mingseok/TIL/blob/main/Spring/%40Get%EB%A7%A4%ED%95%91%2C%20Model.md)<br/>
 - [[Spring] - @RequestParam()](https://github.com/mingseok/TIL/blob/main/Spring/%40RequestParam().md)<br/>
 
