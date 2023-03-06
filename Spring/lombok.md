@@ -1,29 +1,19 @@
-## lombok
+## 롬복과 최신 트랜드
 
-막상 개발을 해보면, 대부분이 다 불변이고, 
+필드 주입처럼 좀 편리하게 사용하는 방법
 
-그래서 다음과 같이 생성자에 final 키워드를 사용하게 된다.
-
-그런데 생성자도 만들어야 하고, 주입 받은 값을 대입하는 코드도 만들어야 하고…
 
 <br/>
 
-### 필드 주입처럼 좀 편리하게 사용하는 방법은 없을까?
+### 기존 설정을 추가 해보자.
 
-역시 개발자는 귀찮은 것은 못 참는다!
-
-<br/>
-
-### 다음 기본 코드를 최적화해보자.
-
-위치
 
 ![이미지](/programming/img/스프링26.PNG)
 
-<br/>
+<br/><br/>
 
 
-마지막에 코끼리 꼭 리플레쉬 해주기.
+### 마지막에 코끼리 꼭 리플레쉬 해주기.
 
 ```java
 dependencies {
@@ -36,15 +26,15 @@ dependencies {
 }
 ```
 
-<br/>
+<br/><br/>
 
-설치 해주기.
+### 설치 해주기.
 
 ![이미지](/programming/img/스프링27.PNG)
 
-<br/>
+<br/><br/>
 
-설정에서 꼭 해주기.
+### 체크 박스 따라 해주기.
 
 ![이미지](/programming/img/스프링28.PNG)
 
@@ -68,27 +58,21 @@ public class HelloLombok {
     private int age;
 
     public static void main(String[] args) {
-
         HelloLombok helloLombok = new HelloLombok();
-
-        helloLombok.setName("하하하");
+        helloLombok.setName("김민석");
 
         String name = helloLombok.getName();
-        System.out.println("name = " + name);
+        System.out.println("name = " + name); // 출력: name = 김민석
 
-		// @toString 이용
-        System.out.println("helloLombok = " + helloLombok);
+        // @ToString 어너테이션  출력값이 밑에 처럼 나오는 것이다.
+        System.out.println(helloLombok); // 출력: HelloLombok(name=김민석, age=0)
     }
-
 }
 
-출력값.
-name = 하하하
-helloLombok = HelloLombok(name=하하하, age=0)
 
-// 이런게 필요가 없는 것이다.
+// 밑에 코드들을 생략할 수 있게 되었다.
 /* 
-	public Long getId() {
+    public Long getId() {
         return id;
     }
 
@@ -106,19 +90,32 @@ helloLombok = HelloLombok(name=하하하, age=0)
 */
 ```
 
-<br/>
+<br/><br/>
+
+### 주입 해줬던 생성자를 생략할 수 있다.
 
 ![이미지](/programming/img/스프링29.PNG)
 
-<br/>
+<br/><br/>
 
-## `@RequiredArgsConstructor` 롬복에 있는 것이며,
 
-현재 `OrderServiceImpl` 클래스에 `final`이 붙은 객체들을 가지고 생성자를 만들어 주는 것이다.
+`OrderServiceImpl` 클래스에서 `final`이 붙은 객체들을 `@RequiredArgsConstructor` 어너테이션이 생성자를 만들어 주는 것이다.
 
 ![이미지](/programming/img/스프링30.PNG)
 
+<br/><br/>
+
+
+`@NoArgsConstructor` : 매개변수가 없는 기본 생성자 어너테이션.
+
 <br/>
 
+`@AllArgsConstructor` : 모든 필드 값을 매개변수로 받는 생성자 어너테이션.
 
->**Reference** <br/>스프링 핵심 원리 - 기본편 : https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8
+<br/>
+
+`@Data` : `@Getter`, `@Setter`, `@RequiredArgsConstructor`, `@ToString`, `@EqualsAndHashCode`을 한꺼번에 설정 해주는 어너테이션.
+
+<br/><br/>
+
+>**Reference** <br/>[스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8?utm_source=google&utm_medium=cpc&utm_campaign=04.general_backend&utm_content=spring&utm_term=%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9E%85%EB%AC%B8&gclid=CjwKCAiAjPyfBhBMEiwAB2CCImohok2YrQ2tRdhqfr3cZvKqkIJOHUJ36u6s1-7C9X1gzZIapTvOtxoCangQAvD_BwE)
