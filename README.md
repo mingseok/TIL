@@ -67,61 +67,22 @@
 - [[Spring] - @PostMapping() , form태그 , input태그](https://github.com/mingseok/TIL/blob/main/Spring/%40PostMapping()%20%2C%20form%ED%83%9C%EA%B7%B8%20%2C%20input%ED%83%9C%EA%B7%B8.md)<br/>
 - [[Spring] - @Autowired , DI , @Component , @ComponentScan, 옵션 처리](https://github.com/mingseok/TIL/blob/main/Spring/%40Autowired%20%2C%20DI%20%2C%20%40Component%20%2C%20%40ComponentScan%2C%20%EC%98%B5%EC%85%98%20%EC%B2%98%EB%A6%AC.md)<br/>
 - [[Spring] - 생성자 주입을 선택](https://github.com/mingseok/TIL/blob/main/Spring/%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EC%84%A0%ED%83%9D.md)<br/>
+- [[Spring] - 스프링 컨테이너, 스프링 빈, BeanDefinition](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%2C%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88%2C%20BeanDefinition.md)<br/>
+- [[Spring] - 싱글톤 패턴, 싱글톤 방식의 주의점, 바이트 조작](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8B%B1%EA%B8%80%ED%86%A4%20%ED%8C%A8%ED%84%B4%2C%20%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B0%A9%EC%8B%9D%EC%9D%98%20%EC%A3%BC%EC%9D%98%EC%A0%90%2C%20%EB%B0%94%EC%9D%B4%ED%8A%B8%20%EC%A1%B0%EC%9E%91.md)<br/>
+- [[Spring] - 롬복](https://github.com/mingseok/TIL/blob/main/Spring/lombok.md)<br/>
 
 
 
+
+
+- [[Spring] - @Primary, 빈 생명주기 콜백 @PostConstruct, @PreDestroy]()<br/>
 - [[Spring] - ]()<br/>
 - [[Spring] - ]()<br/>
 - [[Spring] - ]()<br/>
 - [[Spring] - ]()<br/>
 - [[Spring] - ]()<br/>
-- [[Spring] - ]()<br/>
-- [[Spring] - ]()<br/>
-- [[Spring] - ]()<br/>
-- [[Spring] - ]()<br/>
 
 
-- [롬복](https://github.com/mingseok/TIL/blob/main/Spring/lombok.md)<br/>
-
-
-
-
-
-
-
-
-
-- [스프링 프레임워크? 스프링 부트?](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.md)<br/>
-- [역할과 구현](https://github.com/mingseok/TIL/blob/main/Spring/%EC%97%AD%ED%95%A0.md)<br/>
-- [OCP](https://github.com/mingseok/TIL/blob/main/Spring/OCP.md)<br/>
-- [DIP](https://github.com/mingseok/TIL/blob/main/Spring/DIP.md)<br/>
-- [SRP, LSP, ISP](https://github.com/mingseok/TIL/blob/main/Spring/SRP%2C%20LSP%2C%20ISP.md)<br/>
-- [객체 지향 설계와 스프링](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%EC%84%A4%EA%B3%84%EC%99%80%20%EC%8A%A4%ED%94%84%EB%A7%81.md)<br/>
-- [AppConfig, 생성자 주입](https://github.com/mingseok/TIL/blob/main/Spring/AppConfig%2C%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85.md)<br/>
-- [프레임워크 vs 라이브러리](https://github.com/mingseok/TIL/blob/main/Spring/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%20vs%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC.md)<br/>
-- [DI](https://github.com/mingseok/TIL/blob/main/Spring/DI.md)<br/>
-- [IoC, DI, 그리고 컨테이너](https://github.com/mingseok/TIL/blob/main/Spring/IoC%2C%20DI%2C%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88.md)<br/>
-- [bean 등록 방식](https://github.com/mingseok/TIL/blob/main/Spring/bean%20%EB%93%B1%EB%A1%9D%20%EB%B0%A9%EC%8B%9D.md)<br/>
-- [스프링 빈의 이벤트 라이프사이클](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88%EC%9D%98%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4.md)<br/>
-- [ApplicationContext 생성](https://github.com/mingseok/TIL/blob/main/Spring/ApplicationContext%20%EC%83%9D%EC%84%B1.md)<br/>
-- [스프링 빈 조회 기술](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88%20%EC%A1%B0%ED%9A%8C%20%EA%B8%B0%EC%88%A0.md)<br/>
-- [스프링 빈 설정 메타 정보](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88%20%EC%84%A4%EC%A0%95%20%EB%A9%94%ED%83%80%20%EC%A0%95%EB%B3%B4.md)<br/>
-- [싱글톤 방식의 주의점](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B0%A9%EC%8B%9D%EC%9D%98%20%EC%A3%BC%EC%9D%98%EC%A0%90.md)<br/>
-- [AppConfig@CGLIB](https://github.com/mingseok/TIL/blob/main/Spring/AppConfig%40CGLIB.md)<br/>
-- [탐색 위치와 필터](https://github.com/mingseok/TIL/blob/main/Spring/%ED%83%90%EC%83%89%20%EC%9C%84%EC%B9%98%EC%99%80%20%ED%95%84%ED%84%B0.md)<br/>
-- [의존관계 주입 방법](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84%20%EC%A3%BC%EC%9E%85%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [@Autowired](https://github.com/mingseok/TIL/blob/main/Spring/%40Autowired.md)<br/>
-- [@Autowired 옵션 처리](https://github.com/mingseok/TIL/blob/main/Spring/%EC%98%B5%EC%85%98%20%EC%B2%98%EB%A6%AC.md)<br/>
-- [@RequiredArgsConstructor](https://github.com/mingseok/TIL/blob/main/Spring/%40RequiredArgsConstructor.md)<br/>
-- [@Autowired 필드 명, @Qualifier, @Primary](https://github.com/mingseok/TIL/blob/main/Spring/%40Autowired%20%ED%95%84%EB%93%9C%20%EB%AA%85%2C%20%40Qualifier%2C%20%40Primary.md)<br/>
-- [@ModelAttribute](https://github.com/mingseok/TIL/blob/main/Spring/%40ModelAttribute.md)<br/>
-- [조회한 빈이 모두 필요할 때, List, Map](https://github.com/mingseok/TIL/blob/main/Spring/%EC%A1%B0%ED%9A%8C%ED%95%9C%20%EB%B9%88%EC%9D%B4%20%EB%AA%A8%EB%91%90%20%ED%95%84%EC%9A%94%ED%95%A0%20%EB%95%8C%2C%20List%2C%20Map.md)<br/>
-- [빈 생명주기 콜백 알아보기](https://github.com/mingseok/TIL/blob/main/Spring/%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%20%EC%BD%9C%EB%B0%B1%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.md)<br/>
-- [애노테이션 @PostConstruct, @PreDestroy](https://github.com/mingseok/TIL/blob/main/Spring/%EC%95%A0%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98%20%40PostConstruct%2C%20%40PreDestroy.md)<br/>
-- [빈 스코프, request 스코프](https://github.com/mingseok/TIL/blob/main/Spring/%EB%B9%88%20%EC%8A%A4%EC%BD%94%ED%94%84%2C%20request%20%EC%8A%A4%EC%BD%94%ED%94%84.md)<br/>
-- [프록시](https://github.com/mingseok/TIL/blob/main/Spring/%ED%94%84%EB%A1%9D%EC%8B%9C.md)<br/>
-- [WEB-INF](https://github.com/mingseok/TIL/blob/main/Spring/WEB-INF.md)<br/>
-- [@Primary](https://github.com/mingseok/TIL/blob/main/Spring/%40Primary.md)<br/>
 
 
 
