@@ -1,4 +1,4 @@
-## @Autowired , DI , @Component , @ComponentScan
+## @Autowired , DI , @Component , @ComponentScan, 옵션 처리
 
 <br/>
 
@@ -44,7 +44,11 @@
 
 ![이미지](/programming/img/입문10.PNG)
 
+<br/><br/>
+
 그리하여, 상관이 없는 것이다. (우린 명시적으로 더 확실히 사용할 수 있게 되는 것이다)
+
+![이미지](/programming/img/입문21.PNG)
 
 <br/><br/>
 
