@@ -18,14 +18,11 @@
 
 
 
+### MyBatis 사용해보기 + Trouble Shooting. [(Link)](https://github.com/mingseok/facegram) 
 
-### 혼자 기능 구현 + Trouble Shooting. [(Link)](https://github.com/mingseok/facegram) 
 
-(html은 해당 부분만 표시)
 
 ```
-기술 스택 : Spring + MyBatis 
-
 1. DB 연결, table 작성
 2. 회원가입
 3. 로그인(Security)
@@ -171,10 +168,17 @@
 
 
 
-### 웹 애플리케이션 이해
-- [WAS 서버와 WEB 서버의 이해](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/WAS%20%EC%84%9C%EB%B2%84%EC%99%80%20WEB%20%EC%84%9C%EB%B2%84%EC%9D%98%20%EC%9D%B4%ED%95%B4.md)<br/>
-- [Servlet](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
-- [동시 요청 - 멀티 쓰레드](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%A9%80%ED%8B%B0%20%EC%93%B0%EB%A0%88%EB%93%9C.md)<br/>
+### Web Basic
+- [[Web Basic] - WAS 서버와 WEB 서버의 이해](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/WAS%20%EC%84%9C%EB%B2%84%EC%99%80%20WEB%20%EC%84%9C%EB%B2%84%EC%9D%98%20%EC%9D%B4%ED%95%B4.md)<br/>
+- [[Web Basic] - Servlet](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
+- [[Web Basic] - 동시 요청 - 멀티 쓰레드](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%A9%80%ED%8B%B0%20%EC%93%B0%EB%A0%88%EB%93%9C.md)<br/>
+- [[Web Basic] - HTML, HTTP API, SSR](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HTML%2C%20HTTP%20API%2C%20CSR%2C%20SSR.md)<br/>
+
+
+
+
+
+- [[Web Basic] - HttpServletRequest, 쿼리 파라미터 조회 메서드들](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HttpServletRequest.md)<br/>
 
 
 
@@ -182,9 +186,6 @@
 
 
 
-- [HTML, HTTP API, CSR, SSR](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HTML%2C%20HTTP%20API%2C%20CSR%2C%20SSR.md)<br/>
-- [HttpServletRequest](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HttpServletRequest.md)<br/>
-- [HTTP 요청 데이터 & GET 쿼리 파라미터](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HTTP%20%EC%9A%94%EC%B2%AD%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B0%8F%20GET%20%EC%BF%BC%EB%A6%AC%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0.md)<br/>
 - [POST HTML Form](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/POST%20HTML%20Form.md)<br/>
 - [API 메세지 바디 - JSON](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/API%20%EB%A9%94%EC%84%B8%EC%A7%80%20%EB%B0%94%EB%94%94%20-%20JSON.md)<br/>
 - [단순 텍스트, HTML](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%8B%A8%EC%88%9C%20%ED%85%8D%EC%8A%A4%ED%8A%B8%2C%20HTML.md)<br/>
@@ -200,16 +201,16 @@
 
 
 ### Java
-- [자바 기초 폴더](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94)<br/>
-- [Map 정리](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/Map%20%EC%A0%95%EB%A6%AC.md)<br/>
-- [오토박싱 & 언박싱](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%98%A4%ED%86%A0%EB%B0%95%EC%8B%B1%20%26%20%EC%96%B8%EB%B0%95%EC%8B%B1.md)<br/>
-- [래퍼(wrapper) 클래스](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EB%9E%98%ED%8D%BC(wrapper)%20%ED%81%B4%EB%9E%98%EC%8A%A4%2C%20%EB%B3%80%ED%99%98%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [컬렉션 프레임워크](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)<br/>
-- [Comparable과 Comparator](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/Comparable%EA%B3%BC%20Comparator.md)<br/>
-- [Optional<T>](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/Optional.md)<br/>
-- [익명](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%9D%B5%EB%AA%85.md)<br/>
-- [람다식](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EB%9E%8C%EB%8B%A4%EC%8B%9D.md)<br/>
-- [스트림](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%8A%A4%ED%8A%B8%EB%A6%BC.md)<br/>
+- [[Java] - 자바 기초 디렉토리](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94)<br/>
+- [[Java] - Map 정리](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/Map%20%EC%A0%95%EB%A6%AC.md)<br/>
+- [[Java] - 오토박싱 & 언박싱](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%98%A4%ED%86%A0%EB%B0%95%EC%8B%B1%20%26%20%EC%96%B8%EB%B0%95%EC%8B%B1.md)<br/>
+- [[Java] - 래퍼(wrapper) 클래스](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EB%9E%98%ED%8D%BC(wrapper)%20%ED%81%B4%EB%9E%98%EC%8A%A4%2C%20%EB%B3%80%ED%99%98%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [[Java] - 컬렉션 프레임워크](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)<br/>
+- [[Java] - Comparable과 Comparator](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/Comparable%EA%B3%BC%20Comparator.md)<br/>
+- [[Java] - Optional<T>](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/Optional.md)<br/>
+- [[Java] - 익명](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%9D%B5%EB%AA%85.md)<br/>
+- [[Java] - 람다식](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EB%9E%8C%EB%8B%A4%EC%8B%9D.md)<br/>
+- [[Java] - 스트림](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%8A%A4%ED%8A%B8%EB%A6%BC.md)<br/>
 
 
 
@@ -217,44 +218,44 @@
 
 
 ### HTTP
-- [IP프로토콜 (=인터넷 프로토콜)](https://github.com/mingseok/TIL/blob/main/HTTP/IP%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C.md)<br/>
-- [TCP, 3 way handshake, UDP](https://github.com/mingseok/TIL/blob/main/HTTP/TCP%2C%203%20way%20handshake%2C%20UDP.md)<br/>
-- [PORT (=포트)](https://github.com/mingseok/TIL/blob/main/HTTP/PORT.md)<br/>
-- [DNS](https://github.com/mingseok/TIL/blob/main/HTTP/DNS.md)<br/>
-- [(지금까지)인터넷 네트워크 정리](https://github.com/mingseok/TIL/blob/main/HTTP/(%EC%A7%80%EA%B8%88%EA%B9%8C%EC%A7%80)%EC%9D%B8%ED%84%B0%EB%84%B7%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%A0%95%EB%A6%AC.md)<br/>
-- [URI](https://github.com/mingseok/TIL/blob/main/HTTP/URI.md)<br/>
-- [웹 브라우저 요청 흐름](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%9A%94%EC%B2%AD%20%ED%9D%90%EB%A6%84.md)<br/>
-- [클라이언트 서버 구조](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%EC%A1%B0.md)<br/>
-- [Stateful, Stateless](https://github.com/mingseok/TIL/blob/main/HTTP/Stateful%2C%20Stateless.md)<br/>
-- [비 연결성(connectionless)](https://github.com/mingseok/TIL/blob/main/HTTP/%EB%B9%84%20%EC%97%B0%EA%B2%B0%EC%84%B1(connectionless).md)<br/>
-- [HTTP 메시지](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80.md)<br/>
-- [URI 설계](https://github.com/mingseok/TIL/blob/main/HTTP/URI%20%EC%84%A4%EA%B3%84.md)<br/>
-- [HTTP 메서드 - GET, POST](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%20-%20GET%2C%20POST.md)<br/>
-- [2xx, 3xx, 4xx, 5xx](https://github.com/mingseok/TIL/blob/main/HTTP/2xx%2C%203xx%2C%204xx%2C%205xx.md)<br/>
-- [쿠키](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BF%A0%ED%82%A4.md)<br/>
-- [캐시](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BA%90%EC%8B%9C.md)<br/>
+- [[HTTP] - IP프로토콜 (=인터넷 프로토콜)](https://github.com/mingseok/TIL/blob/main/HTTP/IP%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C.md)<br/>
+- [[HTTP] - TCP, 3 way handshake, UDP](https://github.com/mingseok/TIL/blob/main/HTTP/TCP%2C%203%20way%20handshake%2C%20UDP.md)<br/>
+- [[HTTP] - PORT (=포트)](https://github.com/mingseok/TIL/blob/main/HTTP/PORT.md)<br/>
+- [[HTTP] - DNS](https://github.com/mingseok/TIL/blob/main/HTTP/DNS.md)<br/>
+- [[HTTP] - (지금까지)인터넷 네트워크 정리](https://github.com/mingseok/TIL/blob/main/HTTP/(%EC%A7%80%EA%B8%88%EA%B9%8C%EC%A7%80)%EC%9D%B8%ED%84%B0%EB%84%B7%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%A0%95%EB%A6%AC.md)<br/>
+- [[HTTP] - URI](https://github.com/mingseok/TIL/blob/main/HTTP/URI.md)<br/>
+- [[HTTP] - 웹 브라우저 요청 흐름](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%9A%94%EC%B2%AD%20%ED%9D%90%EB%A6%84.md)<br/>
+- [[HTTP] - 클라이언트 서버 구조](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%EC%A1%B0.md)<br/>
+- [[HTTP] - Stateful, Stateless](https://github.com/mingseok/TIL/blob/main/HTTP/Stateful%2C%20Stateless.md)<br/>
+- [[HTTP] - 비 연결성(connectionless)](https://github.com/mingseok/TIL/blob/main/HTTP/%EB%B9%84%20%EC%97%B0%EA%B2%B0%EC%84%B1(connectionless).md)<br/>
+- [[HTTP] - HTTP 메시지](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80.md)<br/>
+- [[HTTP] - URI 설계](https://github.com/mingseok/TIL/blob/main/HTTP/URI%20%EC%84%A4%EA%B3%84.md)<br/>
+- [[HTTP] - HTTP 메서드 - GET, POST](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%20-%20GET%2C%20POST.md)<br/>
+- [[HTTP] - 2xx, 3xx, 4xx, 5xx](https://github.com/mingseok/TIL/blob/main/HTTP/2xx%2C%203xx%2C%204xx%2C%205xx.md)<br/>
+- [[HTTP] - 쿠키](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BF%A0%ED%82%A4.md)<br/>
+- [[HTTP] - 캐시](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BA%90%EC%8B%9C.md)<br/>
 
 
 
 
 ### Database
-- [데이터베이스](https://github.com/mingseok/TIL/blob/main/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
-- [테이블 구조 참조, 검색 조건, NULL 값, 비교 연산자](https://github.com/mingseok/TIL/blob/main/Database/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B5%AC%EC%A1%B0%20%EC%B0%B8%EC%A1%B0%2C%20%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
-- [조건 조합](https://github.com/mingseok/TIL/blob/main/Database/%EC%A1%B0%EA%B1%B4%20%EC%A1%B0%ED%95%A9.md)<br/>
-- [LIKE 패턴 매칭](https://github.com/mingseok/TIL/blob/main/Database/LIKE%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD.md)<br/>
-- [정렬 -  ORDER BY](https://github.com/mingseok/TIL/blob/main/Database/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
-- [결과 행 제한하기 - LIMIT](https://github.com/mingseok/TIL/blob/main/Database/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
-- [열의 별명](https://github.com/mingseok/TIL/blob/main/Database/%EC%97%B4%EC%9D%98%20%EB%B3%84%EB%AA%85.md)<br/>
-- [문자열 연산](https://github.com/mingseok/TIL/blob/main/Database/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
-- [행 추가하기 - INSERT](https://github.com/mingseok/TIL/blob/main/Database/%ED%96%89%20%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0%20-%20INSERT.md)<br/>
-- [삭제하기 - DELETE](https://github.com/mingseok/TIL/blob/main/Database/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
-- [데이터 갱신하기 - UPDATE](https://github.com/mingseok/TIL/blob/main/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
-- [물리삭제와 논리삭제](https://github.com/mingseok/TIL/blob/main/Database/%EB%AC%BC%EB%A6%AC%EC%82%AD%EC%A0%9C%EC%99%80%20%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
-- [행 개수 구하기 - COUNT](https://github.com/mingseok/TIL/blob/main/Database/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
-- [COUNT 이외의 집계함수](https://github.com/mingseok/TIL/blob/main/Database/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
-- [그룹화 - GROUP BY](https://github.com/mingseok/TIL/blob/main/Database/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
-- [서브쿼리](https://github.com/mingseok/TIL/blob/main/Database/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
-- [트랜잭션 - 개념 이해](https://github.com/mingseok/TIL/blob/main/Database/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20-%20%EA%B0%9C%EB%85%90%20%EC%9D%B4%ED%95%B4.md)<br/>
+- [[SQL] - 데이터베이스](https://github.com/mingseok/TIL/blob/main/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
+- [[SQL] - 테이블 구조 참조, 검색 조건, NULL 값, 비교 연산자](https://github.com/mingseok/TIL/blob/main/Database/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B5%AC%EC%A1%B0%20%EC%B0%B8%EC%A1%B0%2C%20%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
+- [[SQL] - 조건 조합](https://github.com/mingseok/TIL/blob/main/Database/%EC%A1%B0%EA%B1%B4%20%EC%A1%B0%ED%95%A9.md)<br/>
+- [[SQL] - LIKE 패턴 매칭](https://github.com/mingseok/TIL/blob/main/Database/LIKE%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD.md)<br/>
+- [[SQL] - 정렬 -  ORDER BY](https://github.com/mingseok/TIL/blob/main/Database/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
+- [[SQL] - 결과 행 제한하기 - LIMIT](https://github.com/mingseok/TIL/blob/main/Database/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
+- [[SQL] - 열의 별명](https://github.com/mingseok/TIL/blob/main/Database/%EC%97%B4%EC%9D%98%20%EB%B3%84%EB%AA%85.md)<br/>
+- [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/Database/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
+- [[SQL] - 행 추가하기 - INSERT](https://github.com/mingseok/TIL/blob/main/Database/%ED%96%89%20%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0%20-%20INSERT.md)<br/>
+- [[SQL] - 삭제하기 - DELETE](https://github.com/mingseok/TIL/blob/main/Database/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
+- [[SQL] - 데이터 갱신하기 - UPDATE](https://github.com/mingseok/TIL/blob/main/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
+- [[SQL] - 물리삭제와 논리삭제](https://github.com/mingseok/TIL/blob/main/Database/%EB%AC%BC%EB%A6%AC%EC%82%AD%EC%A0%9C%EC%99%80%20%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
+- [[SQL] - 행 개수 구하기 - COUNT](https://github.com/mingseok/TIL/blob/main/Database/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
+- [[SQL] - COUNT 이외의 집계함수](https://github.com/mingseok/TIL/blob/main/Database/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
+- [[SQL] - 그룹화 - GROUP BY](https://github.com/mingseok/TIL/blob/main/Database/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
+- [[SQL] - 서브쿼리](https://github.com/mingseok/TIL/blob/main/Database/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
+- [[SQL] - 트랜잭션 - 개념 이해](https://github.com/mingseok/TIL/blob/main/Database/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20-%20%EA%B0%9C%EB%85%90%20%EC%9D%B4%ED%95%B4.md)<br/>
 
 
 
@@ -263,29 +264,29 @@
 
 
 ### thymeleaf
-- [1. 타임리프 소개](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%86%8C%EA%B0%9C.md)<br/>
-- [2. 텍스트 - text, utext](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%8D%EC%8A%A4%ED%8A%B8%20-%20text%2C%20utext.md)<br/>
-- [3. 변수 - SpringEL](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B3%80%EC%88%98%20-%20SpringEL.md)<br/>
-- [4. 기본 객체들](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EA%B8%B0%EB%B3%B8%20%EA%B0%9D%EC%B2%B4%EB%93%A4.md)<br/>
-- [5. 선택 변수 표현식 - "*{...}"](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%84%A0%ED%83%9D%20%EB%B3%80%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
-- [6. URL 링크](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/URL%20%EB%A7%81%ED%81%AC.md)<br/>
-- [7. th:action](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/th-action.md)<br/>
-- [8. th:value](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/th-value.md)<br/>
-- [9. 리터럴](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A6%AC%ED%84%B0%EB%9F%B4.md)<br/>
-- [10. 연산 (중요)](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%97%B0%EC%82%B0.md)<br/>
-- [11. 속성 값 설정](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%86%8D%EC%84%B1%20%EA%B0%92%20%EC%84%A4%EC%A0%95.md)<br/>
-- [12. 조건부 if, switch 문](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%A1%B0%EA%B1%B4%EB%B6%80%20if.md)<br/>
-- [13. 반복](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B0%98%EB%B3%B5.md)<br/>
-- [14. 블록](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B8%94%EB%A1%9D.md)<br/>
-- [15. 자바스크립트 인라인](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%9D%B8%EB%9D%BC%EC%9D%B8%20each.md)<br/>
-- [16. 템플릿 조각](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EC%A1%B0%EA%B0%81.md)<br/>
-- [17. 템플릿 레이아웃](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)<br/>
-- [18. 입력 폼 처리](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%85%EB%A0%A5%20%ED%8F%BC%20%EC%B2%98%EB%A6%AC.md)<br/>
-- [19. 체크 박스 - 단일](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%EB%8B%A8%EC%9D%BC.md)<br/>
-- [20. 체크 박스 - 타임리프 적용](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%A0%81%EC%9A%A9.md)<br/>
-- [21. 멀티 체크 박스](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A9%80%ED%8B%B0%20%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4.md)<br/>
-- [22. 라디오 버튼](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%9D%BC%EB%94%94%EC%98%A4%20%EB%B2%84%ED%8A%BC.md)<br/>
-- [23. 셀렉트 박스](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%85%80%EB%A0%89%ED%8A%B8%20%EB%B0%95%EC%8A%A4.md)<br/>
+- [[thymeleaf] - 타임리프 소개](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%86%8C%EA%B0%9C.md)<br/>
+- [[thymeleaf] - 텍스트 - text, utext](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%8D%EC%8A%A4%ED%8A%B8%20-%20text%2C%20utext.md)<br/>
+- [[thymeleaf] - 변수 - SpringEL](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B3%80%EC%88%98%20-%20SpringEL.md)<br/>
+- [[thymeleaf] - 기본 객체들](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EA%B8%B0%EB%B3%B8%20%EA%B0%9D%EC%B2%B4%EB%93%A4.md)<br/>
+- [[thymeleaf] - 선택 변수 표현식 - "*{...}"](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%84%A0%ED%83%9D%20%EB%B3%80%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
+- [[thymeleaf] - URL 링크](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/URL%20%EB%A7%81%ED%81%AC.md)<br/>
+- [[thymeleaf] - th:action](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/th-action.md)<br/>
+- [[thymeleaf] - th:value](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/th-value.md)<br/>
+- [[thymeleaf] - 리터럴](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A6%AC%ED%84%B0%EB%9F%B4.md)<br/>
+- [[thymeleaf] - 연산 (중요)](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%97%B0%EC%82%B0.md)<br/>
+- [[thymeleaf] - 속성 값 설정](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%86%8D%EC%84%B1%20%EA%B0%92%20%EC%84%A4%EC%A0%95.md)<br/>
+- [[thymeleaf] - 조건부 if, switch 문](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%A1%B0%EA%B1%B4%EB%B6%80%20if.md)<br/>
+- [[thymeleaf] - 반복](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B0%98%EB%B3%B5.md)<br/>
+- [[thymeleaf] - 블록](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B8%94%EB%A1%9D.md)<br/>
+- [[thymeleaf] - 자바스크립트 인라인](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%9D%B8%EB%9D%BC%EC%9D%B8%20each.md)<br/>
+- [[thymeleaf] - 템플릿 조각](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EC%A1%B0%EA%B0%81.md)<br/>
+- [[thymeleaf] - 템플릿 레이아웃](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)<br/>
+- [[thymeleaf] - 입력 폼 처리](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%85%EB%A0%A5%20%ED%8F%BC%20%EC%B2%98%EB%A6%AC.md)<br/>
+- [[thymeleaf] - 체크 박스 - 단일](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%EB%8B%A8%EC%9D%BC.md)<br/>
+- [[thymeleaf] - 체크 박스 - 타임리프 적용](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%A0%81%EC%9A%A9.md)<br/>
+- [[thymeleaf] - 멀티 체크 박스](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A9%80%ED%8B%B0%20%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4.md)<br/>
+- [[thymeleaf] - 라디오 버튼](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%9D%BC%EB%94%94%EC%98%A4%20%EB%B2%84%ED%8A%BC.md)<br/>
+- [[thymeleaf] - 셀렉트 박스](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%85%80%EB%A0%89%ED%8A%B8%20%EB%B0%95%EC%8A%A4.md)<br/>
 
 
 
@@ -330,14 +331,14 @@
 
   
 ### JavaScript
-- [1. 자바스크립트 (=JS)](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8(JS).md)<br/>
-- [2. 이벤트](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8.md)<br/>
-- [3. 데이터타입, 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%2C%20%EB%B3%80%EC%88%98.md)<br/>
-- [4. CSS 선택자](https://github.com/mingseok/TIL/blob/main/JavaScript/CSS%20%EC%84%A0%ED%83%9D%EC%9E%90.md)<br/>
-- [5. 제어할 태그 선택하기](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%A0%9C%EC%96%B4%ED%95%A0%20%ED%83%9C%EA%B7%B8%20%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0.md)<br/>
-- [6. 배열과 반복문의 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A9%E1%86%A8%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC.md)<br/>
-- [7. Function()](https://github.com/mingseok/TIL/blob/main/JavaScript/Function().md)<br/>
-- [8. JS 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/JS%20%EB%B3%80%EC%88%98.md)<br/>
-- [9. 객체와 반복문, 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%80%E1%85%A2%E1%86%A8%E1%84%8E%E1%85%A6%EC%99%80%20%EB%B0%98%EB%B3%B5%EB%AC%B8%2C%20%ED%99%9C%EC%9A%A9.md)<br/>
-- [10. Ajax](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
+- [[JavaScript] - 자바스크립트 (=JS)](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8(JS).md)<br/>
+- [[JavaScript] - 이벤트](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8.md)<br/>
+- [[JavaScript] - 데이터타입, 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%2C%20%EB%B3%80%EC%88%98.md)<br/>
+- [[JavaScript] - CSS 선택자](https://github.com/mingseok/TIL/blob/main/JavaScript/CSS%20%EC%84%A0%ED%83%9D%EC%9E%90.md)<br/>
+- [[JavaScript] - 제어할 태그 선택하기](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%A0%9C%EC%96%B4%ED%95%A0%20%ED%83%9C%EA%B7%B8%20%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0.md)<br/>
+- [[JavaScript] - 배열과 반복문의 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A9%E1%86%A8%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC.md)<br/>
+- [[JavaScript] - Function()](https://github.com/mingseok/TIL/blob/main/JavaScript/Function().md)<br/>
+- [[JavaScript] - JS 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/JS%20%EB%B3%80%EC%88%98.md)<br/>
+- [[JavaScript] - 객체와 반복문, 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%80%E1%85%A2%E1%86%A8%E1%84%8E%E1%85%A6%EC%99%80%20%EB%B0%98%EB%B3%B5%EB%AC%B8%2C%20%ED%99%9C%EC%9A%A9.md)<br/>
+- [[JavaScript] - Ajax](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
 
