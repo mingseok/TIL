@@ -55,7 +55,21 @@ public class HelloController {
 
 `("data", "hello 민석!!")` → 키와 벨류 라고 생각하면 된다.
 
-<br/>
+
+<br/><br/>
+
+
+### 자세히 설명하자면,
+
+Model은 `HttpServletRequest` 객체를 사용한다. 
+
+`request`는 내부에 `데이터 저장소`를 가지고 있는데, 
+
+`request.setAttribute()` 을 사용하여 데이터를 저장 할 수 있고, 
+
+`request.getAttribute()` 를 사용하여 데이터를 조회할 수 있다.
+
+<br/><br/>
 
 (밑 html 코드랑 같이 보기)
 
@@ -113,9 +127,20 @@ public class HelloController {
 
 ![이미지](/programming/img/입문.PNG)
 
+<br/><br/>
+
+## 추가로
+
+```markdown
+### http 바디에 데이터를 보내지 않는다. 
+    
+URL라는 주소에 쿼리 파라미터인 데이터를 포함해서 전달 하는 것이다.
+
+예) 검색, 필터, 페이징 등에서 많이 사용하는 방식.
+```
 
 
-<br/>
+<br/><br/>
 
 
 >**Reference** <br/>[스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8?utm_source=google&utm_medium=cpc&utm_campaign=04.general_backend&utm_content=spring&utm_term=%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9E%85%EB%AC%B8&gclid=CjwKCAiAjPyfBhBMEiwAB2CCImohok2YrQ2tRdhqfr3cZvKqkIJOHUJ36u6s1-7C9X1gzZIapTvOtxoCangQAvD_BwE)

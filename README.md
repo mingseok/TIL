@@ -173,28 +173,18 @@
 - [[Web Basic] - Servlet](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
 - [[Web Basic] - 동시 요청 - 멀티 쓰레드](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%A9%80%ED%8B%B0%20%EC%93%B0%EB%A0%88%EB%93%9C.md)<br/>
 - [[Web Basic] - HTML, HTTP API, SSR](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HTML%2C%20HTTP%20API%2C%20CSR%2C%20SSR.md)<br/>
-- [[Web Basic] - 웰컴 페이지](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%9B%B0%EC%BB%B4%20%ED%8E%98%EC%9D%B4%EC%A7%80.md)<br/>
-
-
-
-
+- [[Web Basic] - 웰컴 페이지, WEB-INF 디렉토리](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%9B%B0%EC%BB%B4%20%ED%8E%98%EC%9D%B4%EC%A7%80.md)<br/>
+- [[Web Basic] - HttpServletRequest, HttpServletResponse](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HttpServletRequest%2C%20HttpServletResponse.md)<br/>
 - [[Web Basic] - HttpServletRequest, 쿼리 파라미터 조회 메서드들](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HttpServletRequest.md)<br/>
+- [[Web Basic] - JSP, 서블릿과 JSP의 한계](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/JSP.md)<br/>
 
 
 
-
-
-
-
-- [POST HTML Form](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/POST%20HTML%20Form.md)<br/>
-- [API 메세지 바디 - JSON](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/API%20%EB%A9%94%EC%84%B8%EC%A7%80%20%EB%B0%94%EB%94%94%20-%20JSON.md)<br/>
-- [단순 텍스트, HTML](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%8B%A8%EC%88%9C%20%ED%85%8D%EC%8A%A4%ED%8A%B8%2C%20HTML.md)<br/>
-- [API JSON](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/API%20JSON.md)<br/>
-- [JSP](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/JSP.md)<br/>
-
-
-
-
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
 
 
 
