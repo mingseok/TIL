@@ -181,7 +181,7 @@
 
 
 - [[Web Basic] - Postman 사용 이유, 사용 방법]()<br/>
-- [[Web Basic] - ]()<br/>
+- [[Web Basic] - 절대 경로, 상대 경로]()<br/>
 - [[Web Basic] - ]()<br/>
 - [[Web Basic] - ]()<br/>
 - [[Web Basic] - ]()<br/>
