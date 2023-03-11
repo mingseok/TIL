@@ -77,6 +77,12 @@
 
 
 
+--- 수정 부분
+
+- [로깅 알아보기](https://github.com/mingseok/TIL/blob/main/mvc/%EB%A1%9C%EA%B9%85.md)<br/>
+
+
+
 
 
 
@@ -93,8 +99,18 @@
 
 
 
-- [프론트 컨트롤러 패턴 소개](https://github.com/mingseok/TIL/blob/main/mvc/%ED%94%84%EB%A1%A0%ED%8A%B8%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%ED%8C%A8%ED%84%B4%20%EC%86%8C%EA%B0%9C.md)<br/>
-- [로깅 알아보기](https://github.com/mingseok/TIL/blob/main/mvc/%EB%A1%9C%EA%B9%85.md)<br/>
+
+- [프론트 컨트롤러 패턴](https://github.com/mingseok/TIL/blob/main/mvc/%ED%94%84%EB%A1%A0%ED%8A%B8%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%ED%8C%A8%ED%84%B4%20%EC%86%8C%EA%B0%9C.md)<br/>
+
+
+
+
+
+
+
+
+
+
 - [MVC 패턴](https://github.com/mingseok/TIL/blob/main/mvc/MVC%20%ED%8C%A8%ED%84%B4%EC%9D%98%20%EB%93%B1%EC%9E%A5.md)<br/>
 - [View & viewResolver](https://github.com/mingseok/TIL/blob/main/mvc/View%20%26%20viewResolver.md)<br/>
 - [HandlerAdapter](https://github.com/mingseok/TIL/blob/main/mvc/HandlerAdapter.md)<br/>
