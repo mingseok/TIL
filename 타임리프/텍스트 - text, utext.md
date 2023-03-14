@@ -1,10 +1,8 @@
 ## 텍스트 - text, utext
 
-타임리프의 가장 기본. 
 
-텍스트를 출력하는 기능 먼저 알아보자.
 
-<br/>타임리프는 기본적으로 HTML 테그의 속성에 기능을 정의해서 동작한다. 
+타임리프는 기본적으로 HTML 태그의 속성에 기능을 정의해서 동작한다. 
 
 HTML의 콘텐츠(content)에 데이터를 출력할 때는 다음과 같이 `th:text` 를 사용하면 된다.
 
@@ -12,29 +10,21 @@ HTML의 콘텐츠(content)에 데이터를 출력할 때는 다음과 같이 `th
 <span th:text="${data}">
 ```
 
-<br/>HTML 테그의 속성이 아니라 HTML 콘텐츠 영역 안에서 직접 데이터를 출력하고 
+<br/>
 
-싶으면 다음과 같이 `[[...]]` 를 사용하면 된다.
+HTML 콘텐츠 영역 안에서 직접 데이터를 출력하고 싶다면 다음과 같이 `[[...]]` 를 사용하면 된다.
 
 ```html
 컨텐츠 안에서 직접 출력하기 = [[${data}]]
 ```
 
-<br/>
+<br/><br/>
 
-### 예제 1)
+## 예제 1)
 
-java 클래스
+### 컨트롤러
 
 ```java
-package hello.thymeleaf.basic;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 @Controller
 @RequestMapping("/basic")
 public class BasicController {
@@ -47,9 +37,9 @@ public class BasicController {
 }
 ```
 
-<br/>
+<br/><br/>
 
-resources → templates → basic → text-basic.html 생성
+### resources → templates → basic → text-basic.html 생성
 
 ```html
 <!DOCTYPE html>
@@ -68,13 +58,13 @@ resources → templates → basic → text-basic.html 생성
 </html>
 ```
 
-<br/>
+<br/><br/>
 
-실행시켜보면 
+## 실행시켜보면 
 
 ![이미지](/programming/img/겨.PNG)
 
-<br/>
+<br/><br/>
 
 ## 한가지 문제가 있다.
 
@@ -84,7 +74,10 @@ Spring! **을 강조 하고 싶어서 <b> 태그를 사용 했다.**
 
 <br/>
 
+```
 Hello < b >Spring!</ b >
+```
+
 
 이렇게 출력 되는 것이다.
 
@@ -92,20 +85,18 @@ Hello < b >Spring!</ b >
 
 <br/>
 
-### 타임리프는 다음 두 기능을 사용하면 된다.
+## 타임리프의 다음 두 기능을 사용하면 된다.
 
 ```html
 th:text -> th:utext 로 변경하면 된다.
 [[...]] -> [(...)] 로 변경하면 된다.
 ```
 
-실행 시켜보면
+실행 시켜보면 -> 실행해보면 다음과 같이 정상 수행되는 것을 확인할 수 있다.
 
-실행해보면 다음과 같이 정상 수행되는 것을 확인할 수 있다.
+<br/>
 
 웹 브라우저: Hello **Spring! → 이렇게 잘 출력 되는 걸 알 수 있다.**
-
-소스보기: `Hello <b>Spring!</b>`
 
 
 <br/>
