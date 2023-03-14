@@ -2,13 +2,16 @@
 
 타임리프에서 변수를 사용할 때는 변수 표현식을 사용한다.
 
+즉, 스프링이 내부에서 객체를 접근하는 문법이다.
+
+```
 변수 표현식 : ${...}
+```
 
 <br/>
 
-그리고 이 변수 표현식에는 스프링 EL이라는 스프링이 제공하는 표현식을 사용할 수 있다.
 
-java 클래스
+## 컨트롤러
 
 ```java
 package hello.thymeleaf.basic;
@@ -51,36 +54,15 @@ public class BasicController {
 }
 ```
 
-<br/>
 
-/resources/templates/basic/variable.html
-
-<br/>
-
-${user.username} 이렇게 사용할 수 있고, <br/>
-
-또는 ${user['username']} 도 사용 할 수 있고,
-
-또는 ${user.getUsername()} 도 사용 할 수 있다.
-
-<br/>
-
-### List 로 사용 할때는 
-
-    ${users[0].username} 도 사용 가능 하며, 
-    ${users[0]['username']} 도 사용가능 하며,
-    ${users[0].getUsername()} 가능 하다.
-
-<br/>
-
-### Map 으로 사용 할때는 이렇게도 가능하다.
-
-    ${userMap['userA'].username}
-    ${userMap['userA']['username']}
-    ${userMap['userA'].getUsername()}
+<br/><br/>
 
 
-<br/>
+
+## HTML 파일
+
+각각 3가지씩 묶은 표현 방식들이 같은 기능들을 수행한다.
+
 
 ```html
 <!DOCTYPE html>
@@ -92,33 +74,33 @@ ${user.username} 이렇게 사용할 수 있고, <br/>
 <body>
 <h1>SpringEL 표현식</h1>
 <ul>Object
-    <li>${user.username} = <span th:text="${user.username}"></span></li>
-    <li>${user['username']} = <span th:text="${user['username']}"></span></li>
-    <li>${user.getUsername()} = <span th:text="${user.getUsername()}"></span></li>
+    <li><span th:text="${user.username}"></span></li>
+    <li><span th:text="${user['username']}"></span></li>
+    <li><span th:text="${user.getUsername()}"></span></li>
 </ul>
 <ul>List
-    <li>${users[0].username} = <span th:text="${users[0].username}"></span></li>
-    <li>${users[0]['username']} = <span th:text="${users[0]['username']}"></span></li>
-    <li>${users[0].getUsername()} = <span th:text="${users[0].getUsername()}"></span></li>
+    <li><span th:text="${users[0].username}"></span></li>
+    <li><span th:text="${users[0]['username']}"></span></li>
+    <li><span th:text="${users[0].getUsername()}"></span></li>
 </ul>
 <ul>Map
-    <li>${userMap['userA'].username} = <span th:text="${userMap['userA'].username}"></span></li>
-    <li>${userMap['userA']['username']} = <span th:text="${userMap['userA']['username']}"></span></li>
-    <li>${userMap['userA'].getUsername()} = <span th:text="${userMap['userA'].getUsername()}"></span></li>
+    <li><span th:text="${userMap['userA'].username}"></span></li>
+    <li><span th:text="${userMap['userA']['username']}"></span></li>
+    <li><span th:text="${userMap['userA'].getUsername()}"></span></li>
 </ul>
 </body>
 </html>
 ```
-<br/>
 
-실행 시켜 보면
+
+<br/><br/>
+
+
+## 실행 시켜 보면
 
 ![이미지](/programming/img/겨2.PNG)
 
 
-<br/>
-
-### 추가로 th:with= 로 지역 변수도 선언 할수 있다.
 
 
 <br/>
