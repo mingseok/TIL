@@ -299,13 +299,7 @@
 - [[thymeleaf] - 조건부 if, switch 문](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%A1%B0%EA%B1%B4%EB%B6%80%20if.md)<br/>
 - [[thymeleaf] - 블록](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B8%94%EB%A1%9D.md)<br/>
 - [[thymeleaf] - 자바스크립트 인라인](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%9D%B8%EB%9D%BC%EC%9D%B8%20each.md)<br/>
-
-
-
-
-
-<!-- 이거 이름 수정하였기에 url 수정해야 된다. -->
-- [[thymeleaf] - 템플릿 조각(상단, 하단, 사이드)]()<br/>
+- [[thymeleaf] - 템플릿 조각(상단, 하단, 사이드)](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EC%A1%B0%EA%B0%81%20(%EC%83%81%EB%8B%A8%2C%20%ED%95%98%EB%8B%A8%2C%20%EC%82%AC%EC%9D%B4%EB%93%9C).md)<br/>
 - [[thymeleaf] - 템플릿 레이아웃](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)<br/>
 - [[thymeleaf] - 체크 박스 - 단일](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%EB%8B%A8%EC%9D%BC.md)<br/>
 - [[thymeleaf] - 체크 박스 - 타임리프 적용](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%A0%81%EC%9A%A9.md)<br/>
