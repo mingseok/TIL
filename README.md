@@ -64,14 +64,20 @@
 
 
 
-- [[Spring] - @RequestMapping() , (HttpServletRequest request)]()<br/>
+- [[Spring] - @RequestMapping() , (HttpServletRequest request)](https://github.com/mingseok/TIL/blob/main/Spring/%40RequestMapping()%2C%20HttpServletRequest.md)<br/>
 
 
 
 
 
 - [[Spring] - @GetMapping , Model](https://github.com/mingseok/TIL/blob/main/Spring/%40Get%EB%A7%A4%ED%95%91%2C%20Model.md)<br/>
-- [[Spring] - @RequestParam()](https://github.com/mingseok/TIL/blob/main/Spring/%40RequestParam().md)<br/>
+- [[Spring] - HTTP 요청 파라미터 - @RequestParam(), @PathVariable]()<br/>
+
+
+
+
+
+
 - [[Spring] - API 방식(json) , @ResponseBody](https://github.com/mingseok/TIL/blob/main/Spring/API%20%EB%B0%A9%EC%8B%9D(json)%20%2C%20%40ResponseBody.md)<br/>
 - [[Spring] - @PostMapping() , form태그 , input태그](https://github.com/mingseok/TIL/blob/main/Spring/%40PostMapping()%20%2C%20form%ED%83%9C%EA%B7%B8%20%2C%20input%ED%83%9C%EA%B7%B8.md)<br/>
 - [[Spring] - @Autowired , DI , @Component , @ComponentScan, 옵션 처리](https://github.com/mingseok/TIL/blob/main/Spring/%40Autowired%20%2C%20DI%20%2C%20%40Component%20%2C%20%40ComponentScan%2C%20%EC%98%B5%EC%85%98%20%EC%B2%98%EB%A6%AC.md)<br/>
