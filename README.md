@@ -71,7 +71,7 @@
 
 
 - [[Spring] - @GetMapping , Model](https://github.com/mingseok/TIL/blob/main/Spring/%40Get%EB%A7%A4%ED%95%91%2C%20Model.md)<br/>
-- [[Spring] - HTTP 요청 파라미터 - @RequestParam(), @PathVariable]()<br/>
+- [[Spring] - HTTP 요청 파라미터 - @RequestParam(), @PathVariable](https://github.com/mingseok/TIL/blob/main/Spring/HTTP%20%EC%9A%94%EC%B2%AD%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20-%20%40RequestParam()%2C%20%40PathVariable.md)<br/>
 
 
 
