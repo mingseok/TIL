@@ -151,4 +151,62 @@ public String addItemV2(@ModelAttribute Item item) {
 <br/><br/>
 
 
+## 전체 정리 사용 예제)
+
+### html form 안에 체크 박스 추가.
+
+```html
+<div>판매 여부</div>
+<div>
+   <div class="form-check">
+      <input type="checkbox" id="open" name="open" class="form-check-input">
+      <label for="open" class="form-check-label">판매 오픈</label>
+   </div>
+</div>
+```
+
+<br/>
+
+### 체크 박스 관련 컨트롤러
+
+```java
+@PostMapping("/add")
+public String addItem(@ModelAttribute Item item) {
+
+     log.info("item.open={}", item.getOpen());
+
+     // ... 생략
+}
+```
+
+<br/>
+
+### `(@ModelAttribute Item item)`를 통해서 Item 클래스에 Boolean 형태로 값이 들어가게 되는 것이다.
+
+```java
+@Data
+public class Item {
+
+    // ... 생략
+
+    private Boolean open; //판매 여부
+}
+```
+
+- Item 클래스의 변수명이 `open`인 이유
+
+    - `form`태그의 체크 박스 `name`이 `"open"`이기 때문이다 `(name="open")`
+
+- `(@ModelAttribute Item item)` 부분의 매개변수명이 `"item"`인 이유
+
+    - `Item`이라는 저장 시킬 수 있는 클래스가 있기 때문이다.
+
+```
+log에 출력된 값으로 true가 나온다.
+```
+
+
+<br/><br/>
+
+
 >**Reference** <br/>[스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8?utm_source=google&utm_medium=cpc&utm_campaign=04.general_backend&utm_content=spring&utm_term=%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9E%85%EB%AC%B8&gclid=CjwKCAiAjPyfBhBMEiwAB2CCImohok2YrQ2tRdhqfr3cZvKqkIJOHUJ36u6s1-7C9X1gzZIapTvOtxoCangQAvD_BwE)
