@@ -139,10 +139,24 @@
 - [요청 매핑 헨들러 어뎁터 구조](https://github.com/mingseok/TIL/blob/main/mvc/%ED%97%A8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8E%81%ED%84%B0%20%EA%B5%AC%EC%A1%B0.md)<br/>
 - [PRG (Post-Redirect-Get)](https://github.com/mingseok/TIL/blob/main/mvc/PRG%20(Post-Redirect-Get).md)<br/>
 - [RedirectAttributes](https://github.com/mingseok/TIL/blob/main/mvc/RedirectAttributes.md)<br/>
-- [메시지, 국제화 소개](https://github.com/mingseok/TIL/blob/main/mvc/%EB%A9%94%EC%8B%9C%EC%A7%80%2C%20%EA%B5%AD%EC%A0%9C%ED%99%94%20%EC%86%8C%EA%B0%9C.md)<br/>
+- [메시지, 국제화](https://github.com/mingseok/TIL/blob/main/mvc/%EB%A9%94%EC%8B%9C%EC%A7%80%2C%20%EA%B5%AD%EC%A0%9C%ED%99%94%20%EC%86%8C%EA%B0%9C.md)<br/>
 - [스프링 메시지 소스 설정](https://github.com/mingseok/TIL/blob/main/mvc/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%86%8C%EC%8A%A4%20%EC%84%A4%EC%A0%95.md)<br/>
 - [스프링 메시지 소스 사용](https://github.com/mingseok/TIL/blob/main/mvc/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%86%8C%EC%8A%A4%20%EC%82%AC%EC%9A%A9.md)<br/>
-- [웹 애플리케이션에 메시지 적용하기](https://github.com/mingseok/TIL/blob/main/mvc/%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)<br/>
+
+
+
+
+
+
+-- 링크 최신 없뎃해서 올리기 --
+- [메시지 적용하기]()<br/>
+
+
+
+
+
+
+
 - 검증 <br/>
     - [검증 직접 처리 - 개발 / th:if="${errors?. ``` 설명](https://github.com/mingseok/TIL/blob/main/mvc/%EA%B2%80%EC%A6%9D%20%EC%A7%81%EC%A0%91%20%EC%B2%98%EB%A6%AC%20-%20%EA%B0%9C%EB%B0%9C.md)<br/>
     - [BindingResult](https://github.com/mingseok/TIL/blob/main/mvc/BindingResult.md)<br/>

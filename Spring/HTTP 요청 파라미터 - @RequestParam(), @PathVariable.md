@@ -195,6 +195,8 @@ http://localhost:8080/request-param-default?username=kim&age=10
 
 ## `@PathVariable` 설명
 
+![이미지](/programming/img/겨10.PNG)
+
 `경로 변수` 방식이라고 부르고, `PathVariable` 방식이라고도 부른다.
 
 `@GetMapping` 주소로 넘어온 `{userId}` 는 달라지는 경로(=데이터)이다.
