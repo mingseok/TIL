@@ -50,3 +50,39 @@ Post 방법을 사용해서 데이터가 서버단으로 제대로 가는지 테
 이렇게 포스트맨을 사용하면 HTML 파일을 만들지 않고, 테스트를 쉽게 할 수 있는 것이다.
 
 ![이미지](/programming/img/입문51.PNG)
+
+
+<br/><br/>
+
+
+
+## 예제)
+
+```java
+@Slf4j
+public class MappingController {
+
+    @GetMapping("/hello-basic")
+    public String helloBasic() {
+        log.info("helloBasic");
+        return "ok";
+    }
+}
+```
+
+<br/><br/>
+
+위 코드를 `포스트맨`에서 `GET`으로 실행 시키면 “ok” 가 출력 되며, 잘 실행되는 것을 알 수 있다.
+
+![이미지](/programming/img/입문70.PNG)
+
+
+<br/><br/>
+
+## 만약 Post로 한다면?
+
+이렇게 `405 에러`가 발생하는 것을 알 수 있다.
+
+추가로 url 주소를 잘못 입력해서 실행하더라도 에러가 발생한다. `(url 에러는 404에러)`
+
+![이미지](/programming/img/입문71.PNG)
