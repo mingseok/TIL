@@ -63,6 +63,7 @@
 - [[Spring] - @GetMapping , Model](https://github.com/mingseok/TIL/blob/main/Spring/%40Get%EB%A7%A4%ED%95%91%2C%20Model.md)<br/>
 - [[Spring] - HTTP 요청 파라미터 - @RequestParam(), @PathVariable](https://github.com/mingseok/TIL/blob/main/Spring/HTTP%20%EC%9A%94%EC%B2%AD%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20-%20%40RequestParam()%2C%20%40PathVariable.md)<br/>
 - [[Spring] - HTTP 요청 파라미터 - @ModelAttribute](https://github.com/mingseok/TIL/blob/main/Spring/HTTP%20%EC%9A%94%EC%B2%AD%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20-%20%40ModelAttribute.md)<br/>
+- [[Spring] - 특별한 @ModelAttribute 사용법](https://github.com/mingseok/TIL/blob/main/Spring/%ED%8A%B9%EB%B3%84%ED%95%9C%20%40ModelAttribute%20%EC%82%AC%EC%9A%A9%EB%B2%95.md)<br/>
 - [[Spring] - API 방식(json) , @ResponseBody](https://github.com/mingseok/TIL/blob/main/Spring/API%20%EB%B0%A9%EC%8B%9D(json)%20%2C%20%40ResponseBody.md)<br/>
 - [[Spring] - @PostMapping() , form태그 , input태그](https://github.com/mingseok/TIL/blob/main/Spring/%40PostMapping()%20%2C%20form%ED%83%9C%EA%B7%B8%20%2C%20input%ED%83%9C%EA%B7%B8.md)<br/>
 - [[Spring] - @Autowired , DI , @Component , @ComponentScan, 옵션 처리](https://github.com/mingseok/TIL/blob/main/Spring/%40Autowired%20%2C%20DI%20%2C%20%40Component%20%2C%20%40ComponentScan%2C%20%EC%98%B5%EC%85%98%20%EC%B2%98%EB%A6%AC.md)<br/>
@@ -72,6 +73,19 @@
 - [[Spring] - Lombok](https://github.com/mingseok/TIL/blob/main/Spring/lombok.md)<br/>
 - [[Spring] - @Primary, 빈 생명주기 콜백 @PostConstruct, @PreDestroy](https://github.com/mingseok/TIL/blob/main/Spring/%40Primary%2C%20%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%20%EC%BD%9C%EB%B0%B1%20%40PostConstruct%2C%20%40PreDestroy.md)<br/>
 - [[Spring] - 빈 스코프, 스코프와 프록시](https://github.com/mingseok/TIL/blob/main/Spring/%EB%B9%88%20%EC%8A%A4%EC%BD%94%ED%94%84%2C%20%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80%20%ED%94%84%EB%A1%9D%EC%8B%9C.md)<br/>
+
+
+
+- [[Spring] - HTTP body에 데이터를 직접 담아서 요청 - @RequestBody]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+
+
 
 
 
