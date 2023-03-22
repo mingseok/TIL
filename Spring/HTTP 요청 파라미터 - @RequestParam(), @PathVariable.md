@@ -16,6 +16,19 @@ HTML `폼 태그` 데이터 전송 하는 방식을 말하는 것이다.
 HTTP 메시지 바디를 직접 조회하는 기능: @RequestBody
 ```
 
+<br/>
+
+```java
+--머리에 삽입해야될 내용--
+
+@ModelAttribute 는 HTTP 요청 파라미터(URL 쿼리 스트링, POST Form)를 다룰 때 사용한다.
+
+@RequestBody 는 HTTP Body의 데이터를 객체로 변환할 때 사용한다. 
+- 주로 API JSON 요청을 다룰 때 사용한다.
+```
+
+
+
 <br/><br/>
 
 ## `@RequestParam()` : 쿼리 파라미터 방식이다. (=요청 파라미터)
@@ -157,9 +170,11 @@ http://localhost:8080/request-param-map?username=kim&age=20
 
 ## 파라미터 필수 여부
 
-`@RequestParam.required` 파라미터 필수 여부 기본값이 파라미터 필수`(true)`이다.
+- `@RequestParam.required` 파라미터 필수 여부 기본값이 파라미터 필수`(true)`이다.
 
-파라미터에 값이 없는 경우 `defaultValue`를 사용하면 기본 값으로 적용할 수 있다.
+- 파라미터에 값이 없는 경우 `defaultValue`를 사용하면 기본 값으로 적용할 수 있다.
+
+    `defaultValue` 는 빈 문자의 경우에도 설정한 기본 값으로 적용된다.
 
 <br/>
 
