@@ -329,7 +329,7 @@
 - [[thymeleaf] - 텍스트 - text, utext](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%8D%EC%8A%A4%ED%8A%B8%20-%20text%2C%20utext.md)<br/>
 - [[thymeleaf] - 변수 - SpringEL](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B3%80%EC%88%98%20-%20SpringEL.md)<br/>
 - [[thymeleaf] - URL 링크](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/URL%20%EB%A7%81%ED%81%AC.md)<br/>
-- [[thymeleaf] - 선택 변수 표현식 - "*{...}"](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%84%A0%ED%83%9D%20%EB%B3%80%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
+- [[thymeleaf] - 선택 변수 표현식 -> *{...}, object=${...}](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%84%A0%ED%83%9D%20%EB%B3%80%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
 - [[thymeleaf] - 리터럴](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A6%AC%ED%84%B0%EB%9F%B4.md)<br/>
 - [[thymeleaf] - 입력 폼 처리](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%85%EB%A0%A5%20%ED%8F%BC%20%EC%B2%98%EB%A6%AC.md)<br/>
 - [[thymeleaf] - 연산](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%97%B0%EC%82%B0.md)<br/>
