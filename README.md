@@ -86,9 +86,7 @@
 
 
 - [[Spring] - ‘뷰 리졸버’를 왜 사용하는가?](https://github.com/mingseok/TIL/blob/main/Spring/%E2%80%98%EB%B7%B0%20%EB%A6%AC%EC%A1%B8%EB%B2%84%E2%80%99%EB%A5%BC%20%EC%99%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80.md)<br/>
-
-
-- [[Spring] - 핸들러 == 컨트롤러]()<br/>
+- [[Spring] - 핸들러 == 컨트롤러](https://github.com/mingseok/TIL/blob/main/Spring/%ED%95%B8%EB%93%A4%EB%9F%AC%20%3D%3D%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC.md)<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
