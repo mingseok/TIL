@@ -98,10 +98,24 @@
 
 - [[Spring] - 요청 매핑 헨들러 어뎁터 구조](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20%ED%97%A8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8E%81%ED%84%B0%20%EA%B5%AC%EC%A1%B0.md)<br/>
 - [[Spring] - PRG, RedirectAttributes 설명](https://github.com/mingseok/TIL/blob/main/Spring/PRG%2C%20RedirectAttributes%20%EC%84%A4%EB%AA%85.md)<br/>
+- [[Spring] - 스프링 메시지 적용하기](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)<br/>
+- [[Spring] - MessageCodesResolver]()<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+- [[Spring] -]()<br/>
+
+
 
 
 
