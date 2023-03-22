@@ -97,7 +97,7 @@
 
 
 - [[Spring] - 요청 매핑 헨들러 어뎁터 구조](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20%ED%97%A8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8E%81%ED%84%B0%20%EA%B5%AC%EC%A1%B0.md)<br/>
-- [[Spring] - PRG, RedirectAttributes 설명]()<br/>
+- [[Spring] - PRG, RedirectAttributes 설명](https://github.com/mingseok/TIL/blob/main/Spring/PRG%2C%20RedirectAttributes%20%EC%84%A4%EB%AA%85.md)<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
