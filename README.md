@@ -101,8 +101,8 @@
 - [[Spring] - 스프링 메시지 적용하기](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)<br/>
 - [[Spring] - MessageCodesResolver](https://github.com/mingseok/TIL/blob/main/Spring/MessageCodesResolver.md)<br/>
 - [[Spring] - Validation, @Validated](https://github.com/mingseok/TIL/blob/main/Spring/Validation%2C%20%40Validated.md)<br/>
-- [[Spring] -]()<br/>
-- [[Spring] -]()<br/>
+- [[Spring] - Bean Validation](https://github.com/mingseok/TIL/blob/main/Spring/Bean%20Validation.md)<br/>
+- [[Spring] - 검증: Form 전송 객체 분리](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20Form%20%EC%A0%84%EC%86%A1%20%EA%B0%9D%EC%B2%B4%20%EB%B6%84%EB%A6%AC.md)<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
