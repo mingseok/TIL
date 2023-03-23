@@ -76,26 +76,15 @@
 - [[Spring] - @Primary, 빈 생명주기 콜백 @PostConstruct, @PreDestroy](https://github.com/mingseok/TIL/blob/main/Spring/%40Primary%2C%20%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%20%EC%BD%9C%EB%B0%B1%20%40PostConstruct%2C%20%40PreDestroy.md)<br/>
 - [[Spring] - 빈 스코프, 스코프와 프록시](https://github.com/mingseok/TIL/blob/main/Spring/%EB%B9%88%20%EC%8A%A4%EC%BD%94%ED%94%84%2C%20%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80%20%ED%94%84%EB%A1%9D%EC%8B%9C.md)<br/>
 - [[Spring] - 리다이렉트, 디스패처](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8%2C%20%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B2%98.md)<br/>
+- [프론트 컨트롤러 패턴](https://github.com/mingseok/TIL/blob/main/mvc/%ED%94%84%EB%A1%A0%ED%8A%B8%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%ED%8C%A8%ED%84%B4%20%EC%86%8C%EA%B0%9C.md)<br/>
 - [[Spring] - MVC(=Model View Controller)](https://github.com/mingseok/TIL/blob/main/Spring/MVC(%3DModel%20View%20Controller).md)<br/>
 - [[Spring] - 입력 화면, 출력 화면 흐름](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9E%85%EB%A0%A5%20%ED%99%94%EB%A9%B4%2C%20%EC%B6%9C%EB%A0%A5%20%ED%99%94%EB%A9%B4%20%ED%9D%90%EB%A6%84.md)<br/>
-
-
-
-
-
-
-
 - [[Spring] - ‘뷰 리졸버’를 왜 사용하는가?](https://github.com/mingseok/TIL/blob/main/Spring/%E2%80%98%EB%B7%B0%20%EB%A6%AC%EC%A1%B8%EB%B2%84%E2%80%99%EB%A5%BC%20%EC%99%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80.md)<br/>
 - [[Spring] - 핸들러 == 컨트롤러](https://github.com/mingseok/TIL/blob/main/Spring/%ED%95%B8%EB%93%A4%EB%9F%AC%20%3D%3D%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC.md)<br/>
 - [[Spring] - 스프링 MVC 구조](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20MVC%20%EA%B5%AC%EC%A1%B0.md)<br/>
 - [[Spring] - 핸들러 매핑과 핸들러 어댑터](https://github.com/mingseok/TIL/blob/main/Spring/%ED%95%B8%EB%93%A4%EB%9F%AC%20%EB%A7%A4%ED%95%91%EA%B3%BC%20%ED%95%B8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8C%91%ED%84%B0.md)<br/>
 - [[Spring] - 요청 매핑 - API 예시](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20-%20API%20%EC%98%88%EC%8B%9C.md)<br/>
 - [[Spring] - HTTP 메시지 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
-
-
-
-
-
 - [[Spring] - 요청 매핑 헨들러 어뎁터 구조](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20%ED%97%A8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8E%81%ED%84%B0%20%EA%B5%AC%EC%A1%B0.md)<br/>
 - [[Spring] - PRG, RedirectAttributes 설명](https://github.com/mingseok/TIL/blob/main/Spring/PRG%2C%20RedirectAttributes%20%EC%84%A4%EB%AA%85.md)<br/>
 - [[Spring] - 스프링 메시지 적용하기](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)<br/>
@@ -108,47 +97,13 @@
 - [[Spring] - 필터, 스프링 인터셉터 설명](https://github.com/mingseok/TIL/blob/main/Spring/%ED%95%84%ED%84%B0%2C%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9D%B8%ED%84%B0%EC%85%89%ED%84%B0%20%EC%84%A4%EB%AA%85.md)<br/>
 - [[Spring] - 예외 처리와 오류 페이지 개념](https://github.com/mingseok/TIL/blob/main/Spring/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%EC%99%80%20%EC%98%A4%EB%A5%98%20%ED%8E%98%EC%9D%B4%EC%A7%80%20%EA%B0%9C%EB%85%90.md)<br/>
 - [[Spring] - API 예외 처리](https://github.com/mingseok/TIL/blob/main/Spring/API%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC.md)<br/>
-- [[Spring] - 스프링 타입 컨버터]()<br/>
+- [[Spring] - 스프링 타입 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%83%80%EC%9E%85%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
 
 
 
 
 
 
-
---- 수정 부분
-
-
-
-
-
-
-
-
-### MVC
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-- [[MVC] - ]()<br/>
-
-
-
-
-
-
-
-- [프론트 컨트롤러 패턴](https://github.com/mingseok/TIL/blob/main/mvc/%ED%94%84%EB%A1%A0%ED%8A%B8%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%ED%8C%A8%ED%84%B4%20%EC%86%8C%EA%B0%9C.md)<br/>
 
 
 
@@ -181,12 +136,6 @@
 - [스프링 메시지 소스 사용](https://github.com/mingseok/TIL/blob/main/mvc/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%86%8C%EC%8A%A4%20%EC%82%AC%EC%9A%A9.md)<br/>
 
 
-
-
-
-
--- 링크 최신 없뎃해서 올리기 --
-- [메시지 적용하기]()<br/>
 
 
 
