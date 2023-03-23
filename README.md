@@ -103,8 +103,8 @@
 - [[Spring] - Validation, @Validated](https://github.com/mingseok/TIL/blob/main/Spring/Validation%2C%20%40Validated.md)<br/>
 - [[Spring] - Bean Validation](https://github.com/mingseok/TIL/blob/main/Spring/Bean%20Validation.md)<br/>
 - [[Spring] - 검증: Form 전송 객체 분리](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20Form%20%EC%A0%84%EC%86%A1%20%EA%B0%9D%EC%B2%B4%20%EB%B6%84%EB%A6%AC.md)<br/>
-- [[Spring] -]()<br/>
-- [[Spring] -]()<br/>
+- [[Spring] - 검증: HTTP 메시지 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
+- [[Spring] - 로그인 쿠키, 세션 이해, ArgumentResolver 활용]()<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
 - [[Spring] -]()<br/>
