@@ -4,7 +4,10 @@
 
 `@Valid` , `@Validated` 는 `HttpMessageConverter(@RequestBody)`에도 적용할 수 있다.
 
-## 머리에 삽입해야될 내용
+
+<br/>
+
+## 머리에 삽입
 
 ```java
 @ModelAttribute 는 HTTP 요청 파라미터(URL 쿼리 스트링, POST Form)를 다룰 때 사용한다.

@@ -258,46 +258,8 @@ public class ValidationItemController {
 
 <br/><br/>
 
-## @Validated 설명
 
-`@ModelAttribute Item` 에 대해서 자동으로 검증기가 수행이 되는 것이다.
-
-그리고 검증을 끝내고 문제가 있다면 → `BindingResult bindingResult` 에 담기는 것이다.
-
-<br/>
-
-### 이렇게 할 수 있었던 이유는,
-
-`@InitBinder` 메서드 내부로직에 검증기가 있기 때문에 가능한 것이다.
-
-- `@Validated`는 검증 대상 앞에 붙어야 된다.
-
-- `@Validated`는 "검증기를 실행하라" 라는 애노테이션이다.
-- `@Validated`와 `@Valid` 는 동일하다. (둘다 사용해도 된다.)
-
-```java
-@Slf4j
-@Controller
-public class ValidationItemControllerV2 {
-
-		// ... 생략
-
-    @PostMapping("/add")
-    public String addItemV6(@Validated @ModelAttribute Item item, 
-                                       BindingResult bindingResult, 
-                                       RedirectAttributes redirectAttributes) {
-
-        if (bindingResult.hasErrors()) {
-            log.info("errors={}", bindingResult);
-            return "validation/v2/addForm";
-        }
-    }
-
-    // ... 생략
-}
-```
-
-추가로 `@Validated` 와 `BindingResult bindingResult`는 세트라고 생각하면 된다.
+## 다음 챕터 이어서.
 
 
 <br/><br/>

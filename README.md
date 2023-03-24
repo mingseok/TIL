@@ -87,8 +87,8 @@
 - [[Spring] - 요청 매핑 헨들러 어뎁터 구조](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20%ED%97%A8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8E%81%ED%84%B0%20%EA%B5%AC%EC%A1%B0.md)<br/>
 - [[Spring] - PRG, RedirectAttributes 설명](https://github.com/mingseok/TIL/blob/main/Spring/PRG%2C%20RedirectAttributes%20%EC%84%A4%EB%AA%85.md)<br/>
 - [[Spring] - 스프링 메시지 적용하기](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)<br/>
-- [[Spring] - MessageCodesResolver, Validation, @Validated](https://github.com/mingseok/TIL/blob/main/Spring/Validation%2C%20%40Validated.md)<br/>
-- [[Spring] - Bean Validation](https://github.com/mingseok/TIL/blob/main/Spring/Bean%20Validation.md)<br/>
+- [[Spring] - MessageCodesResolver, Validation](https://github.com/mingseok/TIL/blob/main/Spring/Validation%2C%20%40Validated.md)<br/>
+- [[Spring] - @Validated 설명, Bean Validation](https://github.com/mingseok/TIL/blob/main/Spring/Bean%20Validation.md)<br/>
 - [[Spring] - 검증: Form 전송 객체 분리](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20Form%20%EC%A0%84%EC%86%A1%20%EA%B0%9D%EC%B2%B4%20%EB%B6%84%EB%A6%AC.md)<br/>
 - [[Spring] - 검증: HTTP 메시지 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
 - [[Spring] - 로그인 쿠키, 세션 이해, ArgumentResolver 활용](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%EC%BF%A0%ED%82%A4%2C%20%EC%84%B8%EC%85%98%20%EC%9D%B4%ED%95%B4%2C%20ArgumentResolver%20%ED%99%9C%EC%9A%A9.md)<br/>
