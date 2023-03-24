@@ -4,9 +4,7 @@
 
 뷰 템플릿으로 HTML을 생성해서 응답하는 것이 아니라, HTTP API처럼 
 
-JSON 데이터를 HTTP 메시지 바디에서 직접 읽거나 쓰는 경우 
-
-HTTP 메시지 컨버터를 사용하면 편리하다.
+JSON 데이터를 HTTP 메시지 바디에서 직접 읽거나 쓰는 경우 HTTP 메시지 컨버터를 사용하면 편리하다.
 
 ![이미지](/programming/img/입문100.PNG)
 
@@ -33,9 +31,7 @@ HTTP 메시지 컨버터를 사용하면 편리하다.
 HTTP 메시지 컨버터는 `HTTP 요청`, `HTTP 응답` 둘 다 사용된다
 
 - HTTP 응답에 있는 메시지 바디를 읽어서 객체로 바꾸고 컨트롤러에 파라미터로 넘겨주는 역할.
-- 또 하나는, 컨트롤러에서 `@ResponseBody` 으로 되어 있으면, 
-
-    리턴값 가지고 HTTP 응답 메시지에도 넣는 역할을 하는 것이다.
+- 또 하나는, 컨트롤러에서 `@ResponseBody` 으로 되어 있으면, 리턴값 가지고 HTTP 응답 메시지에도 넣는 역할을 하는 것이다.
     
 
 ```
@@ -75,8 +71,7 @@ HTTP 메시지 컨버터는 `HTTP 요청`, `HTTP 응답` 둘 다 사용된다
 ```
 content-type: application/json // 이런 형식으로 온다는 것
 
-@RequestMapping
-void hello(@RequestBody String data) {}
+void hello(@RequestBody String data) {...}
 ```
 
 <br/>
@@ -90,8 +85,7 @@ void hello(@RequestBody String data) {}
 ```
 content-type: application/json // 이런 형식으로 온다는 것
 
-@RequestMapping
-void hello(@RequestBody HelloData data) {}
+void hello(@RequestBody HelloData data) {...}
 ```
 
 <br/><br/>
@@ -101,7 +95,6 @@ void hello(@RequestBody HelloData data) {}
 ```
 content-type: text/html // 이런 형식으로 온다는 것
 
-@RequestMapping
 void hello(@RequestBody HelloData data) {}
 ```
 

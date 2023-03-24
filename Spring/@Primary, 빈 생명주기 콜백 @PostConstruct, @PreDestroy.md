@@ -29,6 +29,8 @@ public class FixDiscountPolicy implements DiscountPolicy {}
 
 코드부터 보면 이렇다.
 
+밑에 결과 잘보기.
+
 ```java
 public class NetworkClient {
     private String url;
@@ -96,9 +98,7 @@ Closing NetworkClient.close
 close + http://hello-spring.dev
 ```
 
-`@PostConstruct` , `@PreDestroy` 이 두 애노테이션을 사용하면 가장 편리하게 
-
-초기화와 종료를 실행할 수 있다.
+`@PostConstruct` , `@PreDestroy` 이 두 애노테이션을 사용하면 가장 편리하게 초기화와 종료를 실행할 수 있다.
 
 <br/><br/>
 

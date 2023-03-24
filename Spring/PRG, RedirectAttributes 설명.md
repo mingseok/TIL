@@ -37,6 +37,8 @@ public String addItemV3(@ModelAttribute Item item) {
 
 ![이미지](/programming/img/입문106.PNG)
 
+<br/><br/>
+
 ## RedirectAttributes 설명
 
 고객 입장에서 저장이 잘 된 것인지 안 된 것인지 확신이 들지 않는다. 
@@ -48,11 +50,6 @@ public String addItemV3(@ModelAttribute Item item) {
 <br/><br/>
 
 ## 동작 흐름 순서대로 설명
-
-1. 첫번째 리다이렉트로 보낸다.
-
-2. “itemId” 에 번호가 담긴다.
-3. 반환 될때는 "redirect:/basic/items/3?status=true" 이렇게 URL이 만들어 지는 것이다.
 
 ```java
 @PostMapping("/add")
@@ -68,10 +65,24 @@ public String addItemV4(@ModelAttribute Item item,
 }
 ```
 
+1. 첫번째 리다이렉트로 보낸다.
+
+2. `.../{itemId}` 에 번호가 담긴다.
+
+    - `redirectAttributes.addAttribute("itemId", saveItem.getId())` 이부분을 사용함으로써 
+    
+        `return` 값에 치환이 되도록 `{itemId}`인 문법으로 사용할 수 있게 된 것이다. 
+        
+        기존 같으면 이렇게 사용하지 못한다.
+
+3. 반환 될때는 "redirect:/basic/items/3?status=true" 이렇게 URL이 만들어 지는 것이다.
+
+    - 나머지 `?status=true"` 부분은 쿼리 파라미터로 전달 되는 것이다.
+
+
 <br/><br/>
 
-4. 이쪽으로 요청이 오게 된다.
-5. 그리하여 HTML로 모델을 보낸다.
+
 
 ```java
 @Controller
@@ -84,17 +95,20 @@ public class BasicItemController {
     @GetMapping("/{itemId}")
     public String item(@PathVariable long itemId, Model model) {
         Item item = itemRepository.findById(itemId);
+
         model.addAttribute("item", item);
         return "basic/item";
-    }
-
-		// ...		
+    }	
 }
 ```
 
+4. 이쪽으로 요청이 오게 된다.
+
+5. 그리하여 HTML로 모델을 보낸다.
+
 <br/><br/>
 
-6. 이렇게 코드를 추가 해주는 것이다.
+
 
 ```html
 <body>
@@ -108,6 +122,10 @@ public class BasicItemController {
 
     // ... 코드 생략
 ```
+
+6. 이렇게 `param.status` 을 꺼내서 true를 사용할 수 있게 되는 것이다.
+
+
 
 <br/><br/>
 

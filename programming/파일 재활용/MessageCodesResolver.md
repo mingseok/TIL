@@ -50,6 +50,11 @@ code는 에러 코드를 말함
 
 <br/><br/>
 
+
+
+
+
+
 ## 동작 방식
 
 `rejectValue()` , `reject()` 는 내부에서 `MessageCodesResolver` 를 사용한다. 

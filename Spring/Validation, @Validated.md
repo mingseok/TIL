@@ -1,3 +1,67 @@
+## MessageCodesResolver, Validation, @Validated
+
+<br/>
+
+## 핵심은 구체적인 것에서! 덜 구체적인 것으로!
+
+- 검증 오류 코드로 메시지 코드들을 생성한다.
+
+- `MessageCodesResolver` 인터페이스이고 `DefaultMessageCodesResolver` 는 기본 구현체이다.
+
+### `DefaultMessageCodesResolver`의 기본 메시지 생성 규칙
+
+<br/><br/>
+
+## 객체 오류
+
+code는 에러 코드를 말함.
+
+```
+객체 오류의 경우 다음 순서로 2가지 생성
+1.: code + "." + object name 
+2.: code
+
+위의 예시) 오류 코드: required, object name: item
+1.: required.item
+2.: required
+```
+
+<br/><br/>
+
+## 필드 오류
+
+code는 에러 코드를 말함
+
+자세한 순서에서 → 덜 자세한 순으로 내려가게 된다.
+
+```
+필드 오류의 경우 다음 순서로 4가지 메시지 코드 생성
+1.: code + "." + object name + "." + field
+2.: code + "." + field
+3.: code + "." + field type
+4.: code
+
+위의 예시) 오류 코드: typeMismatch, object name "user", field "age", field type: int
+1. "typeMismatch.user.age"
+2. "typeMismatch.age"
+3. "typeMismatch.int"
+4. "typeMismatch"
+```
+
+<br/><br/>
+
+
+
+## 중요한 것은?
+
+애플리케이션 코드를 변경할 필요 없이 ‘설정’ 만으로도 
+
+메시지를 변경할 수 있다는 것이 중요한 것이다.
+
+
+<br/><br/>
+
+
 ## Validation, @Validated
 
 <br/>
@@ -41,13 +105,15 @@ errors가 null 이라면, `errors.containsKey()` 를 호출하는 순간 `NullPo
 
 <br/><br/>
 
-## 틀렸을 경우 입력칸에 빨간색 테두리 로직 설명 필요
+## 틀렸을 경우 
+
+입력칸에 빨간색줄 로직 설명 필요
 
 ![이미지](/programming/img/입문117.PNG)
 
-‘itemName’ 에 오류가 들어 있으면, `.field-error` 스코프를 실행 시키고, 
+`itemName` 에 오류가 들어 있으면, `.field-error` 스코프를 실행 시키고, 
 
-‘itemName’ 에 오류가 없다면, 그냥 `form-control` 보여주는 것이다.
+`itemName` 에 오류가 없다면, 그냥 `form-control` 보여주는 것이다.
 
 <br/>
 
@@ -57,7 +123,7 @@ errors가 null 이라면, `errors.containsKey()` 를 호출하는 순간 `NullPo
 
 ## `BindingResult` 란?
 
-Item으로 바인딩 된 결과가 담기게 되는 것이다. 
+`Item`으로 바인딩 된 결과가 담기게 되는 것이다. 
 
 그리고 모델에 담을 필요 없이 자동으로 넘어간다.
 

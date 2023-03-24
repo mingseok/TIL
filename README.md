@@ -56,9 +56,15 @@
 - [[Spring] - 스프링이 뭔가?](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%B4%20%EB%AD%94%EA%B0%80.md)<br/>
 - [[Spring] - Java에서의 ‘역할’과 ‘구현’](https://github.com/mingseok/TIL/blob/main/Spring/Java%EC%97%90%EC%84%9C%EC%9D%98%20%E2%80%98%EC%97%AD%ED%95%A0%E2%80%99%EA%B3%BC%20%E2%80%98%EA%B5%AC%ED%98%84%E2%80%99.md)<br/>
 - [[Spring] - SOLID](https://github.com/mingseok/TIL/blob/main/Spring/SOLID.md)<br/>
-- [[Spring] - IoC (=제어의 역전, =DI 컨테이너) → 스프링 전환](https://github.com/mingseok/TIL/blob/main/Spring/IoC%20(%3D%EC%A0%9C%EC%96%B4%EC%9D%98%20%EC%97%AD%EC%A0%84%2C%20%3DDI%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88)%20%E2%86%92%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%A0%84%ED%99%98.md)<br/>
-- [[Spring] - @Configuration](https://github.com/mingseok/TIL/blob/main/Spring/%40Configuration.md)<br/>
+- [[Spring] - IoC (=제어의 역전, =DI 컨테이너), @Configuration](https://github.com/mingseok/TIL/blob/main/Spring/IoC%20(%3D%EC%A0%9C%EC%96%B4%EC%9D%98%20%EC%97%AD%EC%A0%84%2C%20%3DDI%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88)%20%E2%86%92%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%A0%84%ED%99%98.md)<br/>
 - [[Spring] - @Controller, @RestController의 이해](https://github.com/mingseok/TIL/blob/main/Spring/%40Controller%20%2C%20%40RestController%EC%9D%98%20%EC%9D%B4%ED%95%B4.md)<br/>
+- [[Spring] - @Autowired , DI , @Component , @ComponentScan, 옵션 처리](https://github.com/mingseok/TIL/blob/main/Spring/%40Autowired%20%2C%20DI%20%2C%20%40Component%20%2C%20%40ComponentScan%2C%20%EC%98%B5%EC%85%98%20%EC%B2%98%EB%A6%AC.md)<br/>
+- [[Spring] - 생성자 주입을 선택](https://github.com/mingseok/TIL/blob/main/Spring/%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EC%84%A0%ED%83%9D.md)<br/>
+- [[Spring] - 스프링 컨테이너, 스프링 빈, BeanDefinition](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%2C%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88%2C%20BeanDefinition.md)<br/>
+- [[Spring] - 싱글톤 패턴, 싱글톤 방식의 주의점, 바이트 조작](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8B%B1%EA%B8%80%ED%86%A4%20%ED%8C%A8%ED%84%B4%2C%20%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B0%A9%EC%8B%9D%EC%9D%98%20%EC%A3%BC%EC%9D%98%EC%A0%90%2C%20%EB%B0%94%EC%9D%B4%ED%8A%B8%20%EC%A1%B0%EC%9E%91.md)<br/>
+- [[Spring] - Lombok](https://github.com/mingseok/TIL/blob/main/Spring/lombok.md)<br/>
+- [[Spring] - @Primary, 빈 생명주기 콜백 @PostConstruct, @PreDestroy](https://github.com/mingseok/TIL/blob/main/Spring/%40Primary%2C%20%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%20%EC%BD%9C%EB%B0%B1%20%40PostConstruct%2C%20%40PreDestroy.md)<br/>
+- [[Spring] - 빈 스코프, 스코프와 프록시](https://github.com/mingseok/TIL/blob/main/Spring/%EB%B9%88%20%EC%8A%A4%EC%BD%94%ED%94%84%2C%20%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80%20%ED%94%84%EB%A1%9D%EC%8B%9C.md)<br/>
 - [[Spring] - @RequestMapping(), HttpServletRequest](https://github.com/mingseok/TIL/blob/main/Spring/%40RequestMapping()%2C%20HttpServletRequest.md)<br/>
 - [[Spring] - @GetMapping , Model](https://github.com/mingseok/TIL/blob/main/Spring/%40Get%EB%A7%A4%ED%95%91%2C%20Model.md)<br/>
 - [[Spring] - HTTP 요청 파라미터 - @RequestParam(), @PathVariable](https://github.com/mingseok/TIL/blob/main/Spring/HTTP%20%EC%9A%94%EC%B2%AD%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20-%20%40RequestParam()%2C%20%40PathVariable.md)<br/>
@@ -68,15 +74,8 @@
 - [[Spring] - @PostMapping() , form태그 , input태그](https://github.com/mingseok/TIL/blob/main/Spring/%40PostMapping()%20%2C%20form%ED%83%9C%EA%B7%B8%20%2C%20input%ED%83%9C%EA%B7%B8.md)<br/>
 - [[Spring] - HTTP body에 데이터를 직접 담아서 요청 - @RequestBody](https://github.com/mingseok/TIL/blob/main/Spring/HTTP%20body%EC%97%90%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EC%A7%81%EC%A0%91%20%EB%8B%B4%EC%95%84%EC%84%9C%20%EC%9A%94%EC%B2%AD%20-%20%40RequestBody.md)<br/>
 - [[Spring] - HTTP 요청 메시지 - JSON](https://github.com/mingseok/TIL/blob/main/Spring/HTTP%20%EC%9A%94%EC%B2%AD%20%EB%A9%94%EC%8B%9C%EC%A7%80%20-%20JSON.md)<br/>
-- [[Spring] - @Autowired , DI , @Component , @ComponentScan, 옵션 처리](https://github.com/mingseok/TIL/blob/main/Spring/%40Autowired%20%2C%20DI%20%2C%20%40Component%20%2C%20%40ComponentScan%2C%20%EC%98%B5%EC%85%98%20%EC%B2%98%EB%A6%AC.md)<br/>
-- [[Spring] - 생성자 주입을 선택](https://github.com/mingseok/TIL/blob/main/Spring/%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EC%84%A0%ED%83%9D.md)<br/>
-- [[Spring] - 스프링 컨테이너, 스프링 빈, BeanDefinition](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%2C%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88%2C%20BeanDefinition.md)<br/>
-- [[Spring] - 싱글톤 패턴, 싱글톤 방식의 주의점, 바이트 조작](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8B%B1%EA%B8%80%ED%86%A4%20%ED%8C%A8%ED%84%B4%2C%20%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B0%A9%EC%8B%9D%EC%9D%98%20%EC%A3%BC%EC%9D%98%EC%A0%90%2C%20%EB%B0%94%EC%9D%B4%ED%8A%B8%20%EC%A1%B0%EC%9E%91.md)<br/>
-- [[Spring] - Lombok](https://github.com/mingseok/TIL/blob/main/Spring/lombok.md)<br/>
-- [[Spring] - @Primary, 빈 생명주기 콜백 @PostConstruct, @PreDestroy](https://github.com/mingseok/TIL/blob/main/Spring/%40Primary%2C%20%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%20%EC%BD%9C%EB%B0%B1%20%40PostConstruct%2C%20%40PreDestroy.md)<br/>
-- [[Spring] - 빈 스코프, 스코프와 프록시](https://github.com/mingseok/TIL/blob/main/Spring/%EB%B9%88%20%EC%8A%A4%EC%BD%94%ED%94%84%2C%20%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80%20%ED%94%84%EB%A1%9D%EC%8B%9C.md)<br/>
 - [[Spring] - 리다이렉트, 디스패처](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8%2C%20%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B2%98.md)<br/>
-- [프론트 컨트롤러 패턴](https://github.com/mingseok/TIL/blob/main/mvc/%ED%94%84%EB%A1%A0%ED%8A%B8%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%ED%8C%A8%ED%84%B4%20%EC%86%8C%EA%B0%9C.md)<br/>
+- [[Spring] - 프론트 컨트롤러 패턴](https://github.com/mingseok/TIL/blob/main/mvc/%ED%94%84%EB%A1%A0%ED%8A%B8%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%ED%8C%A8%ED%84%B4%20%EC%86%8C%EA%B0%9C.md)<br/>
 - [[Spring] - MVC(=Model View Controller)](https://github.com/mingseok/TIL/blob/main/Spring/MVC(%3DModel%20View%20Controller).md)<br/>
 - [[Spring] - 입력 화면, 출력 화면 흐름](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9E%85%EB%A0%A5%20%ED%99%94%EB%A9%B4%2C%20%EC%B6%9C%EB%A0%A5%20%ED%99%94%EB%A9%B4%20%ED%9D%90%EB%A6%84.md)<br/>
 - [[Spring] - ‘뷰 리졸버’를 왜 사용하는가?](https://github.com/mingseok/TIL/blob/main/Spring/%E2%80%98%EB%B7%B0%20%EB%A6%AC%EC%A1%B8%EB%B2%84%E2%80%99%EB%A5%BC%20%EC%99%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80.md)<br/>
@@ -88,8 +87,7 @@
 - [[Spring] - 요청 매핑 헨들러 어뎁터 구조](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20%ED%97%A8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8E%81%ED%84%B0%20%EA%B5%AC%EC%A1%B0.md)<br/>
 - [[Spring] - PRG, RedirectAttributes 설명](https://github.com/mingseok/TIL/blob/main/Spring/PRG%2C%20RedirectAttributes%20%EC%84%A4%EB%AA%85.md)<br/>
 - [[Spring] - 스프링 메시지 적용하기](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)<br/>
-- [[Spring] - MessageCodesResolver](https://github.com/mingseok/TIL/blob/main/Spring/MessageCodesResolver.md)<br/>
-- [[Spring] - Validation, @Validated](https://github.com/mingseok/TIL/blob/main/Spring/Validation%2C%20%40Validated.md)<br/>
+- [[Spring] - MessageCodesResolver, Validation, @Validated](https://github.com/mingseok/TIL/blob/main/Spring/Validation%2C%20%40Validated.md)<br/>
 - [[Spring] - Bean Validation](https://github.com/mingseok/TIL/blob/main/Spring/Bean%20Validation.md)<br/>
 - [[Spring] - 검증: Form 전송 객체 분리](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20Form%20%EC%A0%84%EC%86%A1%20%EA%B0%9D%EC%B2%B4%20%EB%B6%84%EB%A6%AC.md)<br/>
 - [[Spring] - 검증: HTTP 메시지 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>

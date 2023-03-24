@@ -32,11 +32,14 @@
 
 ## IoC, 제어의 역전 용어.
 
-```
+
 OrderServiceImpl 자체를 생성해주는 것도 AppConfig가 하고,
+
 OrderServiceImpl에 어떤게 주입이 되서 전체의 애플리케이션 흐름을 잡는것 또한 
+
 AppConfig가 전부 다 하는 것이다. (이렇게 의존관계 역전을 일으킨 것이다.)
-```
+
+<br/>
 
 그리하여 이걸 IoC 컨테이너라고도 부르고 최근에는 `DI 컨테이너` 라고 많이 부른다.
 
@@ -69,41 +72,10 @@ public class AppConfig {
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 
-    @Bean
-    public MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
-
-    @Bean
-    public DiscountPolicy discountPolicy() {
-        return new RateDiscountPolicy();
-    }
+    // ... 생략
 }
 ```
 
-<br/>
-
-### 기존과 동일한 결과가 출력된다.
-
-```java
-public class MemberApp {
-    public static void main(String[] args) {
-
-        // AppConfig appConfig = new AppConfig();
-        // MemberService memberService = appConfig.memberService();
-
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
-        MemberService getMemberService = applicationContext.getBean("memberService", MemberService.class);
-
-        Member member = new Member(1L, "memberA", Grade.VIP);
-        getMemberService.join(member);
-        Member findMember = getMemberService.findMember(1L);
-
-        System.out.println("new member = " + member.getName());
-        System.out.println("find Member = " + findMember.getName());
-    }
-}
-```
 
 <br/><br/>
 
@@ -123,6 +95,29 @@ public class MemberApp {
     
     이렇게 스프링 컨테이너에 등록된 객체를 스프링 빈이라 한다.
 - 스프링 빈은 `applicationContext.getBean()` 메서드를 사용해서 찾을 수 있다.
+
+
+<br/><br/>
+
+## @Configuration
+
+### 내가 ‘직접 스프링 빈을 등록 할거다’ 라고 생각하면 된다.
+
+<br/>
+
+이렇게 하면 스프링이 실행 될때 `@Configuration` 어너테이션을 보고 
+
+`@Bean` 달려 있는 것들을 모두 컨테이너에 등록하게 된다.
+
+![이미지](/programming/img/입문15.PNG)
+
+<br/>
+
+등록된 스프링 빈들은 해당 클래스의 생성자 주입 되는 것이다.
+
+
+
+
 
 
 <br/><br/>

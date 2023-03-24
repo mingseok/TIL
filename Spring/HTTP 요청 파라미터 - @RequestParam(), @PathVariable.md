@@ -2,7 +2,7 @@
 
 `요청 파라미터`란? → `GET`에 쿼리스트링 오는 것, or `POST`방식으로 
 
-HTML `폼 태그` 데이터 전송 하는 방식을 말하는 것이다. 
+HTML `Form 태그` 데이터 전송 하는 방식을 말하는 것이다. 
 
 <br/>
 
@@ -12,19 +12,18 @@ HTML `폼 태그` 데이터 전송 하는 방식을 말하는 것이다.
 
 ```
 요청 파라미터 vs HTTP 메시지 바디
-요청 파라미터를 조회하는 기능: @RequestParam , @ModelAttribute
-HTTP 메시지 바디를 직접 조회하는 기능: @RequestBody
+요청 파라미터를 조회 : @RequestParam , @ModelAttribute
+HTTP 메시지 바디를 직접 조회 : @RequestBody
 ```
 
 <br/>
 
 ```java
---머리에 삽입해야될 내용--
-
+--머리에 삽입--
 @ModelAttribute 는 HTTP 요청 파라미터(URL 쿼리 스트링, POST Form)를 다룰 때 사용한다.
 
 @RequestBody 는 HTTP Body의 데이터를 객체로 변환할 때 사용한다. 
-- 주로 API JSON 요청을 다룰 때 사용한다.
+- 주로 API JSON 요청을 다룰 때 사용
 ```
 
 
@@ -32,8 +31,6 @@ HTTP 메시지 바디를 직접 조회하는 기능: @RequestBody
 <br/><br/>
 
 ## `@RequestParam()` : 쿼리 파라미터 방식이다. (=요청 파라미터)
-
-밑에 있는 코드의 `@RequestParam("aaa")` 가 뭘까?
 
 ```java
 @GetMapping("hello-mvc")
@@ -43,17 +40,23 @@ public String helloMvc(@RequestParam("aaa") String name, Model model) {
 }
 ```
 
+코드의 `@RequestParam("aaa")` 가 뭘까?
+
+
+
 <br/>
-
-### 밑에 있는 URL 그림의 `?aaa=` 를 잘 보자
-
-
 
 ![이미지](/programming/img/입문2.PNG)
 
+URL 그림의 `?aaa=` 를 잘 보자
+
+
+
+
+
 <br/>
 
-사진 처럼 `url`로 부터 `?aaa=` 하여 ‘=’ 뒤에 값을 입력 해주면 (`’민석!!!!!!'`) 입력값이 
+`url`로 부터 `?aaa=` 하여 ‘=’ 뒤에 값을 입력 해주면 (`민석!!!!!!`) 입력값이 
 
 매개변수인 `@RequestParam("aaa")` 뒤에 있는 `String name` 에 저장되어 `model`에 담기게 되는 것이다. 
 
@@ -84,8 +87,6 @@ public String helloMvc(@RequestParam("aaa") String name, Model model) {
 
 ## 다른 예제)
 
-코드를 보면 `“name”` 으로 수정 되었고, `url`에 `‘스프링’` 이라고 입력하며 `‘스프링’`이 출력 되었다.
-
 ```java
 @GetMapping("hello-mvc")
 public String helloMvc(@RequestParam("name") String name, Model model) {
@@ -94,17 +95,24 @@ public String helloMvc(@RequestParam("name") String name, Model model) {
 }
 ```
 
+
+코드를 보면 `“name”` 으로 수정 되었고, `url`에 `‘스프링’` 이라고 입력하여 `‘스프링’`이 출력 되었다.
+
+
 <br/>
 
 ![이미지](/programming/img/입문4.PNG)
+
+
+
 
 <br/><br/>
 
 ## `@RequestParam()` 변수명을 생략할 수도 있다.
 
-@RequestParam("aaa")인 `(“aaa”)` 처럼 이름을 지정하지 않았다면 
+`@RequestParam("aaa")`인 -> `@RequestParam` 처럼 이름을 지정하지 않았다면 
 
-html에서 넘어 오는 name인 → `“itemName”` 이 되는 것이다.
+html에서 넘어 오는 `name`인 → `“itemName”` 이 되는 것이다.
 
 ![이미지](/programming/img/입문56.PNG)
 
@@ -116,20 +124,17 @@ html에서 넘어 오는 name인 → `“itemName”` 이 되는 것이다.
 -- 변경 전 코드 --
 @ResponseBody
 @RequestMapping("/request-param")
-public String requestParam(
-        @RequestParam("username") String memberName,
-        @RequestParam("age") int memberAge) {
+public String requestParam(@RequestParam("username") String memberName, @RequestParam("age") int memberAge) {
 
     log.info("username={}, age={}", memberName, memberAge);
     return "ok";
 }
 
+
 -- 변경 후 코드--
 @ResponseBody
 @RequestMapping("/request-param")
-public String requestParam(
-        @RequestParam String username,
-        @RequestParam int age) {
+public String requestParam(@RequestParam String username, @RequestParam int age) {
 
     log.info("username={}, age={}", username, age);
     return "ok";
@@ -137,14 +142,14 @@ public String requestParam(
 ```
 
 ```
-http://localhost:8080/request-param?username=kim&age=20
+요청 URL : localhost:8080/request-param?username=kim&age=20
 
 출력 : username=kim, age=20
 ```
 
 <br/><br/>
 
-## 파라미터를 ‘키’ , ‘벨류’ 전부 가져오고 싶은 경우
+## 파라미터를 전부 가져오고 싶은 경우 (‘키’ , ‘벨류’)
 
 `Map`으로 조회하기.
 
@@ -161,7 +166,7 @@ public String requestParamMap(@RequestParam Map<String, Object> paramMap) {
 
 
 ```
-http://localhost:8080/request-param-map?username=kim&age=20
+요청 URL : localhost:8080/request-param-map?username=kim&age=20
 
 출력 : username=kim, age=20
 ```
@@ -171,6 +176,15 @@ http://localhost:8080/request-param-map?username=kim&age=20
 ## 파라미터 필수 여부
 
 - `@RequestParam.required` 파라미터 필수 여부 기본값이 파라미터 필수`(true)`이다.
+
+
+- 필수 값 여부: required 대상이 없어도 동작하게 하려면 (required = false) 로 지정하면 된다
+
+
+
+<br/>
+
+
 
 - 파라미터에 값이 없는 경우 `defaultValue`를 사용하면 기본 값으로 적용할 수 있다.
 
@@ -193,15 +207,23 @@ public String requestParamDefault(
 ```
 
 ```java
+
+(아예, 없는 경우)
 http://localhost:8080/request-param-default
 출력 : username=guest, age=-1
 
+
+(없는 경우)
 http://localhost:8080/request-param-default?username=&age=
 username=guest, age=-1
 
+
+(age만 제대로 요청된 경우)
 http://localhost:8080/request-param-default?username=&age=10
 출력 : username=guest, age=10
 
+
+(둘다 제대로 요청된 경우)
 http://localhost:8080/request-param-default?username=kim&age=10
 출력 : username=kim, age=10
 ```
@@ -218,9 +240,7 @@ http://localhost:8080/request-param-default?username=kim&age=10
 
 <br/>
 
-그리하여 같은 이름이 있는 @PathVariable(`"userId"`) 로 바인딩 되어 
-
-`String data` 매개변수에 들어가게 되는 것이다.
+그리하여 같은 이름이 있는 @PathVariable(`"userId"`) 로 바인딩 되어 `String data` 매개변수에 들어가게 되는 것이다.
 
 ```java
 @GetMapping("/mapping/{userId}") // /mapping/3 이런식으로 되는 것이다.
@@ -232,11 +252,10 @@ public String mappingPath(@PathVariable("userId") String data) {
 
 <br/>
 
-위 코드를 포스트맨으로 실행하면 이렇다.
+### 위 코드를 포스트맨으로 실행하면 이렇다.
 
-URL을 이렇게 작성하기. → http://localhost:8080/mapping/`minseok` 
+URL을 이렇게 작성하기. → localhost:8080/mapping/`minseok` 
 
-<br/>
 
 ![이미지](/programming/img/입문57.PNG)
 
@@ -265,6 +284,7 @@ public String mappingPath(@PathVariable("userId") String userId) {
     log.info("userId={}", data);
     return "ok";
 }
+
 
 -- 변경후 코드 --
 @GetMapping("/mapping/{userId}")

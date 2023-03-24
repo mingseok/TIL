@@ -110,7 +110,20 @@ public class HelloLombok {
 
 <br/>
 
-`@AllArgsConstructor` : 모든 필드 값을 매개변수로 받는 생성자 어너테이션.
+`@AllArgsConstructor` : 모든 필드 값을 파라미터로 받는 생성자를 만들어줍니다.
+
+```java
+@AllArgsConstructor
+public class Customer {
+    private final Long id;
+    private String name;
+    private int age;
+}
+
+Customer customer = new Customer(2L, "김민석", 23);
+```
+
+
 
 <br/>
 

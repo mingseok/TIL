@@ -1,8 +1,10 @@
 ## API 방식(json) , @ResponseBody
 
+@ResponseBody는 두가지 기능이 있다.
+
 <br/>
 
-## http 바디 부분에 내가 직접 넣겠다는 말이다.
+## 첫번째. http 바디 부분에 내가 직접 넣는 방법.
 
 view 페이지를 통해서 화면에 출력 시켜주는게 아닌, 
 
@@ -31,7 +33,7 @@ public String heeloString(@RequestParam("name") String name) {
 
 <br/><br/>
 
-## API (json)방식 설명
+## 두번째. API (json)방식
 
 일단 json은 ‘키’, ‘벨류’ 형태로 이루어진 구조이다.
 

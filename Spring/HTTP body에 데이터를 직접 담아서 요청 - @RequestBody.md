@@ -2,34 +2,45 @@
 
 <br/>
 
-## 헷갈리지 말기.
+`요청 파라미터`란? → `GET`에 쿼리스트링 오는 것, or `POST`방식으로 
 
-`요청 파라미터`란? → `GET`에 쿼리스트링 오는 것, or `POST`방식으로 HTML `폼 태그` 데이터 전송
+HTML `Form 태그` 데이터 전송 하는 방식을 말하는 것이다. 
 
-하는 방식을 말하는 것이다. 둘 경우에만 `@RequestParam` 이랑 `@ModelAttribute` 를 사용하는 것이다.
+<br/>
+
+둘 경우에만 `@RequestParam` 이랑 `@ModelAttribute` 를 사용하는 것이다.
 
 그 외 경우들은 전부 `@RequestBody`를 사용하거나, 데이터를 직접 꺼내야 되는 것이다.
 
 ```
 요청 파라미터 vs HTTP 메시지 바디
-요청 파라미터를 조회하는 기능: @RequestParam , @ModelAttribute
-HTTP 메시지 바디를 직접 조회하는 기능: @RequestBody
+요청 파라미터를 조회 : @RequestParam , @ModelAttribute
+HTTP 메시지 바디를 직접 조회 : @RequestBody
 ```
 
-<br/><br/>
-
-## 머리에 삽입해야 될 내용
+<br/>
 
 ```java
+--머리에 삽입--
 @ModelAttribute 는 HTTP 요청 파라미터(URL 쿼리 스트링, POST Form)를 다룰 때 사용한다.
 
 @RequestBody 는 HTTP Body의 데이터를 객체로 변환할 때 사용한다. 
-- 주로 API JSON 요청을 다룰 때 사용한다.
+- 주로 API JSON 요청을 다룰 때 사용
 ```
+
+
+
+
+
 
 HTTP API에서 주로 사용하며, JSON을 담아서 반환 할 수도 있고, XML, TEXT 등 가능하다.
 
 - 주로 JSON 형식으로 사용한다.
+
+
+
+
+
 
 <br/><br/>
 
@@ -107,7 +118,8 @@ public String requestBodyString(@RequestBody String messageBody) {
 
 ### 무엇이든 문자로 변환 되는 것을 알 수 있다.
 
-반환 해보면 String 타입으로 된다.
+반환 타입을 보면 String 타입으로 된다는 것을 알 수 있다.
+
 
 ```java
 @ResponseBody

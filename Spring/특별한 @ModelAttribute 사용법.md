@@ -2,9 +2,11 @@
 
 <br/>
 
-컨트롤러에서 `model.addAttribute(...)` 를 사용하여 담아야 되는 중복 코드가 있다면 이렇게 작성할 수 있다. 
+컨트롤러에서 `model.addAttribute(...)` 를 사용하여 model 담아야 되는 중복 코드가 있다면 이렇게 작성할 수 있다. 
 
-즉, 컨트롤러 실행시 처음에 메서드에 붙은 @ModelAttribute("regions") 을 확인하고 모델에 담아둔다. 
+즉, 스프링 실행시 컨트롤러로 오면 첫번째로 하는 일이 `@ModelAttribute("regions")` 애노테이션이 붙은 메서드를 실행한다. 
+
+따라서 미리 모델에 담아둔 것이다.
 
 <br/>그리하여 다른 메서드에서 모델을 사용하더라도 담아 놨던 데이터를 사용할 수 있다.
 
@@ -13,22 +15,20 @@
 @RequestMapping("/basic/items")
 public class BasicItemController {
 
-    private final ItemRepository itemRepository;
-
-		@ModelAttribute("regions")
-		public Map<String, String> regions() {
-		    Map<String, String> regions = new LinkedHashMap<>();
-		    regions.put("SEOUL", "서울");
-		    regions.put("BUSAN", "부산");
-		    regions.put("JEJU", "제주");
-		    return regions;
-		}
+	@ModelAttribute("regions")
+	public Map<String, String> regions() {
+		Map<String, String> regions = new LinkedHashMap<>();
+		regions.put("SEOUL", "서울");
+		regions.put("BUSAN", "부산");
+		regions.put("JEJU", "제주");
+		return regions;
+	}
 
     // ... 생략
 }
 ```
 
-@ModelAttribute 는 이렇게 컨트롤러에 있는 별도의 메서드에 적용할 수 있다.
+`@ModelAttribute` 는 이렇게 컨트롤러에 있는 별도의 메서드에 적용할 수 있다.
 
 <br/><br/>
 

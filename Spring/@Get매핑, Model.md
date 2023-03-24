@@ -8,13 +8,15 @@
 
 ## `@GetMapping` 이란?
 
+![이미지](/programming/img/입문1.PNG)
+
 웹 어플리케이션에서 `'/hello'` 라고 들어오면 이 메서드를 호출해준다.
 
 어떻게? → @GetMapping(`"hello"`) 으로 되어 있기 때문이다.
 
 다시 말해, 클라이언트가 `url` 등으로 요청을 보내는 이름이다.
 
-![이미지](/programming/img/입문1.PNG)
+
 
 
 <br/><br/>
@@ -25,15 +27,9 @@ return의 `hello`는 `html` 파일의 이름이다. (컨트롤 + v 하면 해당
 
 즉, html 파일로 모델을 넘기는 것이다. (이 처리를 해주는 애가 `뷰 리졸버`)
 
-예시) `member/register` 되어 있으면 저 페이지로 넘어가게 된다.
+예시) `member/register` 되어 있으면 member/register 페이지로 넘어가게 된다.
 
 ```java
-package com.example.hellospring.controller;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-
 @Controller
 public class HelloController {
 
@@ -71,15 +67,9 @@ Model은 `HttpServletRequest` 객체를 사용한다.
 
 <br/><br/>
 
-(밑 html 코드랑 같이 보기)
+### 밑 html 코드랑 같이 보기
 
 ```java
-package com.example.hellospring.controller;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-
 @Controller
 public class HelloController {
 
@@ -110,7 +100,7 @@ public class HelloController {
 
 <br/><br/>
 
-## `Model` 이란?
+## `Model` 정리
 
 컨트롤러를 보면 앞쪽 `"data"` 에 `"hello 민석!!"` 를 저장하는 것이다.
 
