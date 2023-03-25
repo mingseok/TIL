@@ -167,8 +167,8 @@
 
 ### SQL-Query
 - [[SQL] - 데이터베이스](https://github.com/mingseok/TIL/blob/main/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
-- [[SQL] -]()<br/>
-- [[SQL] -]()<br/>
+- [[SQL] - 테이블 생성 (CREATE TABLE)](https://github.com/mingseok/TIL/blob/main/Database/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1.md)<br/>
+- [[SQL] - 검색 조건, NULL 값, 비교 연산자]()<br/>
 - [[SQL] -]()<br/>
 - [[SQL] -]()<br/>
 - [[SQL] -]()<br/>
