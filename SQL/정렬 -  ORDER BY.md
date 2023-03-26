@@ -22,7 +22,7 @@ age 열의 값을 오름차순으로 정렬하기.
 SELECT * FROM sample31 ORDER BY age;
 ```
 
-<br/>
+<br/><br/>
 
 ## ORDER BY DESC로 내림차순으로 정렬하기.
 
@@ -38,7 +38,7 @@ SELECT 열명 FROM 테이블명 ORDER BY 열명 DESC
 
 그리고 정렬에 기준이 있는데 문자열형 같은 경우는 ‘사전식 순서’ 에 의해 결정된다.
 
-<br/>
+<br/><br/>
 
 ## ORDER BY로 복수 열 지정하기.
 
@@ -60,7 +60,7 @@ SELECT 열명 FROM 테이블명 ORDER BY 열명1, 열명2
 
 <br/>
 
-이렇게 변한다.
+### 이렇게 변한다.
 
 | a | b |
 | --- | --- |
@@ -74,7 +74,7 @@ SELECT 열명 FROM 테이블명 ORDER BY 열명1, 열명2
 
 뒤에 온 b의 순서는 1, 1, 2, 2, 3 이런게 아니라 a 에 맞춰 있는걸 기준으로 하는 것이다.
 
-<br/>
+<br/><br/>
 
 ## NULL 값을 정렬순서
 
