@@ -1,4 +1,4 @@
-## COUNT 이외의 집계함수
+## 집계함수 (SUM, AVG, MIN, MAX)
 
 SUM으로 합계 구하기
 

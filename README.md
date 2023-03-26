@@ -169,7 +169,10 @@
 - [[SQL] - 데이터베이스](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
 - [[SQL] - 테이블 생성 (CREATE TABLE)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1.md)<br/>
 - [[SQL] - 검색 조건, NULL 값, 비교 연산자](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
-- [[SQL] - 삽입 (INSERT)]()<br/>
+- [[SQL] - 삽입 (INSERT)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
+- [[SQL] - 결과 행 제한하기 (LIMIT)](https://github.com/mingseok/TIL/blob/main/Database/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
+- [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/Database/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
+- [[SQL] - 집계함수 (SUM, AVG, MIN, MAX)](https://github.com/mingseok/TIL/blob/main/Database/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
 - [[SQL] -]()<br/>
 - [[SQL] -]()<br/>
 - [[SQL] -]()<br/>
@@ -184,15 +187,12 @@
 - [[SQL] - 조건 조합](https://github.com/mingseok/TIL/blob/main/Database/%EC%A1%B0%EA%B1%B4%20%EC%A1%B0%ED%95%A9.md)<br/>
 - [[SQL] - LIKE 패턴 매칭](https://github.com/mingseok/TIL/blob/main/Database/LIKE%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD.md)<br/>
 - [[SQL] - 정렬 -  ORDER BY](https://github.com/mingseok/TIL/blob/main/Database/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
-- [[SQL] - 결과 행 제한하기 - LIMIT](https://github.com/mingseok/TIL/blob/main/Database/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
 - [[SQL] - 열의 별명](https://github.com/mingseok/TIL/blob/main/Database/%EC%97%B4%EC%9D%98%20%EB%B3%84%EB%AA%85.md)<br/>
-- [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/Database/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
 - [[SQL] - 행 추가하기 - INSERT](https://github.com/mingseok/TIL/blob/main/Database/%ED%96%89%20%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0%20-%20INSERT.md)<br/>
 - [[SQL] - 삭제하기 - DELETE](https://github.com/mingseok/TIL/blob/main/Database/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
 - [[SQL] - 데이터 갱신하기 - UPDATE](https://github.com/mingseok/TIL/blob/main/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
 - [[SQL] - 물리삭제와 논리삭제](https://github.com/mingseok/TIL/blob/main/Database/%EB%AC%BC%EB%A6%AC%EC%82%AD%EC%A0%9C%EC%99%80%20%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
 - [[SQL] - 행 개수 구하기 - COUNT](https://github.com/mingseok/TIL/blob/main/Database/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
-- [[SQL] - COUNT 이외의 집계함수](https://github.com/mingseok/TIL/blob/main/Database/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
 - [[SQL] - 그룹화 - GROUP BY](https://github.com/mingseok/TIL/blob/main/Database/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
 - [[SQL] - 서브쿼리](https://github.com/mingseok/TIL/blob/main/Database/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
 - [[SQL] - 트랜잭션 - 개념 이해](https://github.com/mingseok/TIL/blob/main/Database/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20-%20%EA%B0%9C%EB%85%90%20%EC%9D%B4%ED%95%B4.md)<br/>
