@@ -178,6 +178,7 @@
 - [[SQL] - 중복값을 제외 (DISTINCT)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%2C%20%EC%A4%91%EB%B3%B5%EA%B0%92%EC%9D%84%20%EC%A0%9C%EC%99%B8%20DISTINCT.md)<br/>
 - [[SQL] - 정렬 (ORDER BY)](https://github.com/mingseok/TIL/blob/main/Database/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
 - [[SQL] - 데이터를 수정 (UPDATE)](https://github.com/mingseok/TIL/blob/main/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
+- [[SQL] - 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/Database/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
 - [[SQL] -]()<br/>
 - [[SQL] -]()<br/>
 - [[SQL] -]()<br/>
@@ -199,7 +200,7 @@
 
 - [[SQL] - 열의 별명](https://github.com/mingseok/TIL/blob/main/Database/%EC%97%B4%EC%9D%98%20%EB%B3%84%EB%AA%85.md)<br/>
 
-- [[SQL] - 삭제하기 - DELETE](https://github.com/mingseok/TIL/blob/main/Database/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
+
 - [[SQL] - 물리삭제와 논리삭제](https://github.com/mingseok/TIL/blob/main/Database/%EB%AC%BC%EB%A6%AC%EC%82%AD%EC%A0%9C%EC%99%80%20%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
 - [[SQL] - 그룹화 - GROUP BY](https://github.com/mingseok/TIL/blob/main/Database/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
 - [[SQL] - 서브쿼리](https://github.com/mingseok/TIL/blob/main/Database/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
