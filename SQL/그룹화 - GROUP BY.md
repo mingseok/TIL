@@ -31,7 +31,7 @@ GROUP BY 구에 열을 지정하여 그룹화하면 지정된 열의 값이 같�
 
 따라서 GROUP BY를 지정해 그룹화하면 DISTINCT와 같이 중복을 제거하는 효과가 있다.
 
-<br/>
+<br/><br/>
 
 ## name 열을 그룹화해 계산하기
 
@@ -49,15 +49,17 @@ FROM sample51 GROUP BY name;
 | B | 1 | 10 |
 | C | 1 | 3 |
 
-GROUP BY name에 의해 name 열 값이 A, B, C 그리고 NULL의 네 개 그룹으로 나뉜다.
+GROUP BY name에 의해 name 열 값인 A, B, C, NULL 4개의 그룹으로 나뉜다.
 
-COUNT는 행의 개수를 반환 하므로 2가 된다.
+COUNT는 행의 개수를 반환 하므로 2가 된다. (2개라서 합하여 한줄에 표현한다고 생각)
 
 <br/>
 
-2개의 행의 quantity 열 값은 각각 1과 2이다.
+2개의 행의 quantity 열 값은 각각 1과 2이다. -> 1 + 2 되어 A에 3이 된것이다.
 
 SUM은 합계를 구하는 집계함수 이므로 3을 반환한다.
+
+
 
 | no | name | quantity |
 | --- | --- | --- |
@@ -67,11 +69,9 @@ SUM은 합계를 구하는 집계함수 이므로 3을 반환한다.
 | 4 | C | 3 |
 | 5 | NULL | NULL |
 
-다시 말해, A그룹 → COUNT(name) → 2 되고, B그룹 → COUNT(name) → 1 이 된다.
 
-점포별, 상품별, 월별, 일별 등 특정 단위로 집계할 때 GROUP BY를 자주 사용한다.
 
-<br/>
+<br/><br/>
 
 ## HAVING 구로 조건 지정
 
@@ -85,7 +85,7 @@ WHERE 구 -> GROUP BY 구 -> SELECT 구 -> ORDER BY 구
 
 <br/>
 
-HAVING을 사용해 검색
+### 기존 GROUP BY 검색
 
 ```sql
 SELECT name, COUNT(name) FROM sample51 GROUP BY name;
@@ -116,11 +116,11 @@ GROUP BY name HAVING COUNT(name) = 1;
 
 다만 SELECT 구보다도 먼저 처리되므로 별명을 사용할 수 없다.
 
-<br/>
+<br/><br/>
 
 ## 복수열의 그룹화
 
-GROUP BY를 사용할 때 주의할 점이 하나 더 있습니다.
+GROUP BY를 사용할 때 주의할 점이 하나 더 있다.
 
 GROUP BY에 지정한 열 이외의 열은 집계함수를 사용하지 않은 채 SELECT 구에 기술해서는 안된다.
 
