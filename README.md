@@ -179,7 +179,7 @@
 - [[SQL] - 정렬 (ORDER BY)](https://github.com/mingseok/TIL/blob/main/Database/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
 - [[SQL] - 데이터를 수정 (UPDATE)](https://github.com/mingseok/TIL/blob/main/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
 - [[SQL] - 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/Database/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
-- [[SQL] -]()<br/>
+- [[SQL] - 조회 (SELECT), AND, OR, LIMIT]()<br/>
 - [[SQL] -]()<br/>
 - [[SQL] -]()<br/>
 - [[SQL] -]()<br/>
