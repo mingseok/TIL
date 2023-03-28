@@ -79,7 +79,7 @@
 - [[Spring] - HTTP body에 데이터를 직접 담아서 요청 - @RequestBody](https://github.com/mingseok/TIL/blob/main/Spring/HTTP%20body%EC%97%90%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EC%A7%81%EC%A0%91%20%EB%8B%B4%EC%95%84%EC%84%9C%20%EC%9A%94%EC%B2%AD%20-%20%40RequestBody.md)<br/>
 - [[Spring] - HTTP 요청 메시지 - JSON](https://github.com/mingseok/TIL/blob/main/Spring/HTTP%20%EC%9A%94%EC%B2%AD%20%EB%A9%94%EC%8B%9C%EC%A7%80%20-%20JSON.md)<br/>
 - [[Spring] - 리다이렉트, 디스패처](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8%2C%20%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B2%98.md)<br/>
-- [[Spring] - 프론트 컨트롤러 패턴](https://github.com/mingseok/TIL/blob/main/mvc/%ED%94%84%EB%A1%A0%ED%8A%B8%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%ED%8C%A8%ED%84%B4%20%EC%86%8C%EA%B0%9C.md)<br/>
+- [[Spring] - 프론트 컨트롤러 패턴](https://github.com/mingseok/TIL/blob/main/Spring/%ED%94%84%EB%A1%A0%ED%8A%B8%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%ED%8C%A8%ED%84%B4%20%EC%86%8C%EA%B0%9C.md)<br/>
 - [[Spring] - MVC(=Model View Controller)](https://github.com/mingseok/TIL/blob/main/Spring/MVC(%3DModel%20View%20Controller).md)<br/>
 - [[Spring] - 입력 화면, 출력 화면 흐름](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9E%85%EB%A0%A5%20%ED%99%94%EB%A9%B4%2C%20%EC%B6%9C%EB%A0%A5%20%ED%99%94%EB%A9%B4%20%ED%9D%90%EB%A6%84.md)<br/>
 - [[Spring] - ‘뷰 리졸버’를 왜 사용하는가?](https://github.com/mingseok/TIL/blob/main/Spring/%E2%80%98%EB%B7%B0%20%EB%A6%AC%EC%A1%B8%EB%B2%84%E2%80%99%EB%A5%BC%20%EC%99%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80.md)<br/>
