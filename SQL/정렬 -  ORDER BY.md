@@ -1,26 +1,51 @@
 ## 정렬 -  ORDER BY
 
-FROM 구 뒤에  ORDER BY 구를 지정하는 경우
 
-```sql
-SELECT 열명 FROM 테이블명 ORDER BY 열명
-```
 
-age 열로 정렬하기.
 
-| name | age | address |
-| --- | --- | --- |
-| A씨 | 36 | 대구광역시 중구 |
-| B씨 | 18 | 부산광역시 연제구 |
-| C씨 | 25 | 서울특별시 중구 |
+지정된 칼럼을 기준으로 행을 정렬
 
 <br/>
 
-age 열의 값을 오름차순으로 정렬하기.
+## 문법
 
 ```sql
-SELECT * FROM sample31 ORDER BY age;
+SELECT * FROM 테이블명 ORDER BY 정렬의 기준으로 사용할 열 [DESC | ASC]
 ```
+
+![이미지](/programming/img/입문183.PNG)
+
+<br/><br/>
+
+## 예제
+
+```sql
+select * from student order by distance desc;
+```
+
+
+
+![이미지](/programming/img/입문184.PNG)
+
+
+<br/><br/>
+
+
+```sql
+select * from student order by distance desc, address asc;
+```
+
+
+
+![이미지](/programming/img/입문185.PNG)
+
+
+
+
+<br/><br/>
+
+
+
 
 <br/><br/>
 
@@ -81,6 +106,8 @@ SELECT 열명 FROM 테이블명 ORDER BY 열명1, 열명2
 NULL 값을 가지는 행은 가장 먼저 표시되거나 가장 나중에 표시된다.
 
 데이터베이스 제품에 따라 기준이 다른다.
+
+<br/>
 
 MySQL의 경우는 NULL 값을 가장 작은 값으로 취급해 ASC(오름차순) 에서는 가장 먼저, 
 

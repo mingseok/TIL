@@ -13,7 +13,7 @@
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
 - [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
 - [Java 네이밍 규칙](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9E%90%EB%B0%94%EB%84%A4%EC%9D%B4%EB%B0%8D%EA%B7%9C%EC%B9%99.md)<br/>
-- [@Slf4j - 사용 방법](https://github.com/mingseok/TIL/blob/main/mvc/%EB%A1%9C%EA%B9%85.md)<br/>
+- [@Slf4j - 사용 방법](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B9%85.md)<br/>
 - [bootstrap - 사용 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9.md)<br/>
 - [질문하는 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EC%A7%88%EB%AC%B8%20%EB%B0%A9%EB%B2%95.md)<br/>
 
@@ -181,7 +181,7 @@
 - [[SQL] - 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/Database/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
 - [[SQL] - 조회 (SELECT), AND, OR, LIMIT](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A1%B0%ED%9A%8C%20(SELECT)%2C%20AND%2C%20OR%2C%20LIMIT.md)<br/>
 - [[SQL] - 그룹화 (GROUP BY)](https://github.com/mingseok/TIL/blob/main/Database/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
-- [[SQL] -]()<br/>
+- [[SQL] - JOIN]()<br/>
 - [[SQL] -]()<br/>
 - [[SQL] -]()<br/>
 - [[SQL] -]()<br/>
