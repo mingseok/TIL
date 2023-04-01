@@ -13,6 +13,7 @@
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
 - [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
 - [Java 네이밍 규칙](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9E%90%EB%B0%94%EB%84%A4%EC%9D%B4%EB%B0%8D%EA%B7%9C%EC%B9%99.md)<br/>
+- [스트림 컨벤션](http://blog.marcinchwedczuk.pl/java-streams-best-practices)<br/>
 - [@Slf4j - 사용 방법](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B9%85.md)<br/>
 - [bootstrap - 사용 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9.md)<br/>
 - [질문하는 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EC%A7%88%EB%AC%B8%20%EB%B0%A9%EB%B2%95.md)<br/>
@@ -101,7 +102,7 @@
 - [[Spring] - 예외 처리와 오류 페이지 개념](https://github.com/mingseok/TIL/blob/main/Spring/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%EC%99%80%20%EC%98%A4%EB%A5%98%20%ED%8E%98%EC%9D%B4%EC%A7%80%20%EA%B0%9C%EB%85%90.md)<br/>
 - [[Spring] - API 예외 처리](https://github.com/mingseok/TIL/blob/main/Spring/API%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC.md)<br/>
 - [[Spring] - 스프링 타입 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%83%80%EC%9E%85%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
-- [[Spring] - @EventListener]()<br/>
+- [[Spring] - @EventListener](https://github.com/mingseok/TIL/blob/main/Spring/%40EventListener.md)<br/>
 
 
 
