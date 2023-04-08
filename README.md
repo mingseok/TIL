@@ -113,7 +113,7 @@
 
 
 - [[DB] - 커넥션 풀, DataSource](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%BB%A4%EB%84%A5%EC%85%98%20%ED%92%80%2C%20DataSource.md)<br/>
-- [[DB] - ]()<br/>
+- [[DB] - 트랜잭션의 정의](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98%20%EC%A0%95%EC%9D%98.md)<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
