@@ -125,3 +125,9 @@ DataSource 는 커넥션을 획득하는 방법을 추상화 하는 인터페이
 `MemberRepositoryV1` 는 `DataSource` 인터페이스에만 의존하기 때문이다. 
 
 이것이 `DataSource` 를 사용하는 장점이다.`(DI + OCP)`
+
+
+<br/><br/>
+
+>**Reference** <br/>[스프링 DB 2편 - 데이터 접근 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-2/dashboard)
+
