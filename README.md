@@ -115,8 +115,8 @@
 - [[DB] - 트랜잭션 (개념 이해)](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20-%20%EA%B0%9C%EB%85%90%20%EC%9D%B4%ED%95%B4.md)<br/>
 
 
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
+- [[DB] - DB 락](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EB%9D%BD.md)<br/>
+- [[DB] - 서비스 계층]()<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
