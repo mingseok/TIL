@@ -113,10 +113,10 @@
 - [[DB] - 커넥션 풀, DataSource](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%BB%A4%EB%84%A5%EC%85%98%20%ED%92%80%2C%20DataSource.md)<br/>
 - [[DB] - 트랜잭션 (정의)](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98%20%EC%A0%95%EC%9D%98.md)<br/>
 - [[DB] - 트랜잭션 (개념 이해)](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20-%20%EA%B0%9C%EB%85%90%20%EC%9D%B4%ED%95%B4.md)<br/>
-
-
 - [[DB] - DB 락](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EB%9D%BD.md)<br/>
-- [[DB] - 서비스 계층]()<br/>
+- [[DB] - 서비스 계층](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B3%84%EC%B8%B5.md)<br/>
+
+
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
