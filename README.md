@@ -120,7 +120,7 @@
 - [[DB] - JdbcTemplate 장/단점](https://github.com/mingseok/TIL/blob/main/DataBase/JdbcTemplate%20%EC%9E%A5%EB%8B%A8%EC%A0%90.md)<br/>
 
 
-- [[DB] - ]()<br/>
+- [[DB] - DB 접근 (+테스트 방법)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20(%2B%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%A9%EB%B2%95).md)<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
