@@ -143,7 +143,7 @@
 
 ### 객체지향 설계 방법
 - [[객체지향 설계] - 일급 컬렉션을 사용하는 이유](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%BC%EA%B8%89%20%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%9E%80.md)<br/>
-- [[객체지향 설계] - ]()<br/>
+- [[객체지향 설계] - 방어적 복사, Unmodifiable]()<br/>
 - [[객체지향 설계] - ]()<br/>
 
 
