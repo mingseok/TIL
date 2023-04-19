@@ -141,10 +141,10 @@
 
 
 
-### 객체지향 설계 방법
+### 객체지향 설계
+- [[객체지향 설계] - 방어적 복사, Unmodifiable](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC%2C%20Unmodifiable.md)<br/>
 - [[객체지향 설계] - 일급 컬렉션을 사용하는 이유](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%BC%EA%B8%89%20%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%9E%80.md)<br/>
-- [[객체지향 설계] - 방어적 복사, Unmodifiable]()<br/>
-- [[객체지향 설계] - ]()<br/>
+- [[객체지향 설계] - 객체지향 설계 방법](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84.md)<br/>
 
 
 
