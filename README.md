@@ -124,10 +124,10 @@
 - [[DB] - DB연결 테스트 코드 (설정)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20(%2B%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%A9%EB%B2%95).md)<br/>
 - [[DB] - DB연결 테스트 방법 (@Transactional)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%A9%EB%B2%95%20(%40Transactional).md)<br/>
 - [[DB] - 임베디드 모드](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20(%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%20%EB%AA%A8%EB%93%9C).md)<br/>
+- [[DB] - 트랜잭션 AOP 주의 사항](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%20%EC%A3%BC%EC%9D%98%20%EC%82%AC%ED%95%AD.md)<br/>
 
 
 
-- [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
