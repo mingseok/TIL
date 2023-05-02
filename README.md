@@ -128,7 +128,12 @@
 
 
 
-- [[DB] - ]()<br/>
+
+
+
+### JPA
+
+- [[DB] - DB 접근(JPA)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC(JPA).md)<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
 
