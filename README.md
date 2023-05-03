@@ -134,7 +134,7 @@
 ### JPA
 
 - [[DB] - DB 접근(JPA)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC(JPA).md)<br/>
-- [[DB] - ]()<br/>
+- [[DB] - JPA 설정, 적용, 핵심](https://github.com/mingseok/TIL/blob/main/DataBase/JPA%20%EC%84%A4%EC%A0%95%2C%20%EC%A0%81%EC%9A%A9%2C%20%ED%95%B5%EC%8B%AC.md)<br/>
 - [[DB] - ]()<br/>
 
 
