@@ -125,8 +125,18 @@
 - [[DB] - DB연결 테스트 방법 (@Transactional)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%A9%EB%B2%95%20(%40Transactional).md)<br/>
 - [[DB] - 임베디드 모드](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20(%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%20%EB%AA%A8%EB%93%9C).md)<br/>
 - [[DB] - 트랜잭션 AOP 주의 사항](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%20%EC%A3%BC%EC%9D%98%20%EC%82%AC%ED%95%AD.md)<br/>
-
-
+- [[DB] - 트랜잭션 AOP 주의 사항 - 초기화 시점]()<br/>
+- [[DB] - ]()<br/>
+- [[DB] - ]()<br/>
+- [[DB] - ]()<br/>
+- [[DB] - ]()<br/>
+- [[DB] - ]()<br/>
+- [[DB] - ]()<br/>
+- [[DB] - ]()<br/>
+- [[DB] - ]()<br/>
+- [[DB] - ]()<br/>
+- [[DB] - ]()<br/>
+- [[DB] - ]()<br/>
 
 
 
@@ -137,7 +147,7 @@
 - [[DB] - JPA 설정, 적용, 핵심](https://github.com/mingseok/TIL/blob/main/DataBase/JPA%20%EC%84%A4%EC%A0%95%2C%20%EC%A0%81%EC%9A%A9%2C%20%ED%95%B5%EC%8B%AC.md)<br/>
 - [[DB] - 스프링 데이터 JPA (사용 이유)](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20JPA%20(%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0).md)<br/>
 - [[DB] - Querydsl, 설정 방법](https://github.com/mingseok/TIL/blob/main/DataBase/Querydsl%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [[DB] - ]()<br/>
+- [[DB] - 트레이드 오프](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%93%9C%20%EC%98%A4%ED%94%84.md)<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
