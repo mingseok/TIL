@@ -62,6 +62,33 @@
 
 
 
+
+
+
+
+
+### JPA
+
+- [[JPA] - ]()<br/>
+- [[JPA] - ]()<br/>
+- [[JPA] - ]()<br/>
+- [[JPA] - ]()<br/>
+- [[JPA] - ]()<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Spring
 - [[Spring] - 스프링이 뭔가?](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%B4%20%EB%AD%94%EA%B0%80.md)<br/>
 - [[Spring] - Java에서의 ‘역할’과 ‘구현’](https://github.com/mingseok/TIL/blob/main/Spring/Java%EC%97%90%EC%84%9C%EC%9D%98%20%E2%80%98%EC%97%AD%ED%95%A0%E2%80%99%EA%B3%BC%20%E2%80%98%EA%B5%AC%ED%98%84%E2%80%99.md)<br/>
@@ -129,38 +156,23 @@
 - [[DB] - 트랜잭션 옵션](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%98%B5%EC%85%98.md)<br/>
 - [[DB] - 예외와 트랜잭션 커밋, 롤백](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%98%88%EC%99%B8%EC%99%80%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%BB%A4%EB%B0%8B%2C%20%EB%A1%A4%EB%B0%B1.md)<br/>
 - [[DB] - 스프링 트랜잭션 전파](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%A0%84%ED%8C%8C.md)<br/>
-- [[DB] - REQUIRED]()<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
-
-
-
-
-### JPA
-
+- [[DB] - REQUIRED](https://github.com/mingseok/TIL/blob/main/DataBase/REQUIRED.md)<br/>
+- [[DB] - MyBatis 설명, 설정 방법](https://github.com/mingseok/TIL/blob/main/DataBase/MyBatis%20%EC%84%A4%EB%AA%85%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [[DB] - MyBatis 적용 해보기](https://github.com/mingseok/TIL/blob/main/DataBase/MyBatis%20%EC%A0%81%EC%9A%A9.md)<br/>
 - [[DB] - DB 접근(JPA)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC(JPA).md)<br/>
 - [[DB] - JPA 설정, 적용, 핵심](https://github.com/mingseok/TIL/blob/main/DataBase/JPA%20%EC%84%A4%EC%A0%95%2C%20%EC%A0%81%EC%9A%A9%2C%20%ED%95%B5%EC%8B%AC.md)<br/>
 - [[DB] - 스프링 데이터 JPA (사용 이유)](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20JPA%20(%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0).md)<br/>
 - [[DB] - Querydsl, 설정 방법](https://github.com/mingseok/TIL/blob/main/DataBase/Querydsl%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95.md)<br/>
 - [[DB] - 트레이드 오프](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%93%9C%20%EC%98%A4%ED%94%84.md)<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
-- [[DB] - ]()<br/>
 
 
 
 
 
-- [[DB] - MyBatis 설명, 설정 방법](https://github.com/mingseok/TIL/blob/main/DataBase/MyBatis%20%EC%84%A4%EB%AA%85%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [[DB] - MyBatis 적용 해보기](https://github.com/mingseok/TIL/blob/main/DataBase/MyBatis%20%EC%A0%81%EC%9A%A9.md)<br/>
+
+
+
+
 
 
 
@@ -171,6 +183,8 @@
 - [[스프링 예외처리] - ]()<br/>
 - [[스프링 예외처리] - ]()<br/>
 - [[스프링 예외처리] - ]()<br/>
+
+
 
 
 
