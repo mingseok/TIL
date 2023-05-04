@@ -127,7 +127,7 @@
 - [[DB] - 트랜잭션 AOP 주의 사항](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%20%EC%A3%BC%EC%9D%98%20%EC%82%AC%ED%95%AD.md)<br/>
 - [[DB] - 트랜잭션 AOP 주의 사항 - 초기화 시점](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%20%EC%A3%BC%EC%9D%98%20%EC%82%AC%ED%95%AD%20-%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%8B%9C%EC%A0%90.md)<br/>
 - [[DB] - 트랜잭션 옵션](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%98%B5%EC%85%98.md)<br/>
-- [[DB] - 예외와 트랜잭션 커밋, 롤백]()<br/>
+- [[DB] - 예외와 트랜잭션 커밋, 롤백](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%98%88%EC%99%B8%EC%99%80%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%BB%A4%EB%B0%8B%2C%20%EB%A1%A4%EB%B0%B1.md)<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
