@@ -136,7 +136,7 @@
 - [[DB] - DB 접근(JPA)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC(JPA).md)<br/>
 - [[DB] - JPA 설정, 적용, 핵심](https://github.com/mingseok/TIL/blob/main/DataBase/JPA%20%EC%84%A4%EC%A0%95%2C%20%EC%A0%81%EC%9A%A9%2C%20%ED%95%B5%EC%8B%AC.md)<br/>
 - [[DB] - 스프링 데이터 JPA (사용 이유)](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20JPA%20(%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0).md)<br/>
-- [[DB] - Querydsl, 설정 방법]()<br/>
+- [[DB] - Querydsl, 설정 방법](https://github.com/mingseok/TIL/blob/main/DataBase/Querydsl%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95.md)<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
 - [[DB] - ]()<br/>
