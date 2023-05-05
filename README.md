@@ -175,7 +175,7 @@
 ### 예외처리
 - [[예외처리] - 에러는 크게 2가지](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%97%90%EB%9F%AC%EB%8A%94%20%ED%81%AC%EA%B2%8C%202%EA%B0%80%EC%A7%80.md)<br/>
 - [[예외처리] - 예외 계층](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%EA%B3%84%EC%B8%B5.md)<br/>
-- [[예외처리] - ]()<br/>
+- [[예외처리] - 체크 예외, 언체크 예외](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8.md)<br/>
 - [[예외처리] - ]()<br/>
 - [[예외처리] - ]()<br/>
 - [[예외처리] - ]()<br/>
