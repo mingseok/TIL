@@ -178,7 +178,7 @@
 - [[예외처리] - 체크 예외, 언체크 예외 설명](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8.md)<br/>
 - [[예외처리] - 체크 예외, 언체크(런타임) 예외 활용](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC(%EB%9F%B0%ED%83%80%EC%9E%84)%20%EC%98%88%EC%99%B8%20%ED%99%9C%EC%9A%A9.md)<br/>
 - [[예외처리] - 예외 포함과 스택 트레이스](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%ED%8F%AC%ED%95%A8%EA%B3%BC%20%EC%8A%A4%ED%83%9D%20%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%8A%A4.md)<br/>
-- [[예외처리] - ]()<br/>
+- [[예외처리] - 스프링 예외 추상화, SQL 예외 변환기]()<br/>
 - [[예외처리] - ]()<br/>
 - [[예외처리] - ]()<br/>
 - [[예외처리] - ]()<br/>
