@@ -147,6 +147,7 @@
 - [[DB] - 서비스 계층](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B3%84%EC%B8%B5.md)<br/>
 - [[DB] - 스프링으로 트랜잭션 해결](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9C%BC%EB%A1%9C%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%ED%95%B4%EA%B2%B0.md)<br/>
 - [[DB] - 트랜잭션 AOP, @Transactional](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%2C%20%40Transactional.md)<br/>
+- [[DB] - JDBC 반복 문제 해결 (JdbcTemplate)](https://github.com/mingseok/TIL/blob/main/DataBase/JDBC%20%EB%B0%98%EB%B3%B5%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20(JdbcTemplate).md)<br/>
 - [[DB] - JdbcTemplate 장/단점](https://github.com/mingseok/TIL/blob/main/DataBase/JdbcTemplate%20%EC%9E%A5%EB%8B%A8%EC%A0%90.md)<br/>
 - [[DB] - DB연결 테스트 코드 (설정)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20(%2B%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%A9%EB%B2%95).md)<br/>
 - [[DB] - DB연결 테스트 방법 (@Transactional)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%A9%EB%B2%95%20(%40Transactional).md)<br/>
@@ -172,6 +173,8 @@
 
 
 
+
+
 ### 예외처리
 - [[예외처리] - 에러는 크게 2가지](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%97%90%EB%9F%AC%EB%8A%94%20%ED%81%AC%EA%B2%8C%202%EA%B0%80%EC%A7%80.md)<br/>
 - [[예외처리] - 예외 계층](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%EA%B3%84%EC%B8%B5.md)<br/>
@@ -179,12 +182,7 @@
 - [[예외처리] - 체크 예외, 언체크(런타임) 예외 활용](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC(%EB%9F%B0%ED%83%80%EC%9E%84)%20%EC%98%88%EC%99%B8%20%ED%99%9C%EC%9A%A9.md)<br/>
 - [[예외처리] - 예외 포함과 스택 트레이스](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%ED%8F%AC%ED%95%A8%EA%B3%BC%20%EC%8A%A4%ED%83%9D%20%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%8A%A4.md)<br/>
 - [[예외처리] - 스프링 예외 추상화, SQL 예외 변환기](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%98%88%EC%99%B8%20%EC%B6%94%EC%83%81%ED%99%94%2C%20SQL%20%EC%98%88%EC%99%B8%20%EB%B3%80%ED%99%98%EA%B8%B0.md)<br/>
-- [[예외처리] - ]()<br/>
-- [[예외처리] - ]()<br/>
-- [[예외처리] - ]()<br/>
-- [[예외처리] - ]()<br/>
-- [[예외처리] - ]()<br/>
-- [[예외처리] - ]()<br/>
+
 
 
 
