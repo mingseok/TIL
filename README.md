@@ -18,6 +18,8 @@
 - [@Slf4j - 사용 방법](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B9%85.md)<br/>
 - [bootstrap - 사용 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9.md)<br/>
 - [질문하는 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EC%A7%88%EB%AC%B8%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [‘우아한 테크코스’ -> PR](https://github.com/woowacourse/java-ladder/pulls?q=is%3Apr+is%3Aclosed)<br/>
+
 
 
 
