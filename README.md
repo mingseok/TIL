@@ -71,7 +71,7 @@
 
 ### JPA
 
-- [[JPA] - ]()<br/>
+- [[JPA] - ORM](https://github.com/mingseok/TIL/blob/main/JPA/ORM.md)<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
