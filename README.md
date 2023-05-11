@@ -73,7 +73,7 @@
 ### JPA
 
 - [[JPA] - ORM](https://github.com/mingseok/TIL/blob/main/JPA/ORM.md)<br/>
-- [[JPA] - ]()<br/>
+- [[JPA] - JPA 설정(Maven 환경)](https://github.com/mingseok/TIL/blob/main/JPA/JPA%20%EC%84%A4%EC%A0%95%20-%20persistence.xml.md)<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
