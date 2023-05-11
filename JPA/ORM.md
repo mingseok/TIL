@@ -13,3 +13,10 @@
 ```
 그렇게 중간에서 다른부분들을 'ORM 프레임워크'가 매핑하여 해결해 준다는 것이다.
 ```
+
+<br/><br/>
+
+>**Reference** <br/>[자바 ORM 표준 JPA 프로그래밍 - 기본편](https://www.inflearn.com/course/ORM-JPA-Basic)
+
+
+
