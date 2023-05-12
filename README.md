@@ -76,6 +76,13 @@
 - [[JPA] - JPA 설정(Maven 환경)](https://github.com/mingseok/TIL/blob/main/JPA/JPA%20%EC%84%A4%EC%A0%95%20-%20persistence.xml.md)<br/>
 - [[JPA] - JPA 어떻게 동작하는가](https://github.com/mingseok/TIL/blob/main/JPA/JPA%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%80.md)<br/>
 - [[JPA] - 영속성 컨텍스트](https://github.com/mingseok/TIL/blob/main/JPA/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8.md)<br/>
+- [[JPA] - 플러시](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%8C%EB%9F%AC%EC%8B%9C.md)<br/>
+- [[JPA] - ]()<br/>
+- [[JPA] - ]()<br/>
+- [[JPA] - ]()<br/>
+- [[JPA] - ]()<br/>
+- [[JPA] - ]()<br/>
+- [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
 
 
