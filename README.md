@@ -79,7 +79,7 @@
 - [[JPA] - 플러시](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%8C%EB%9F%AC%EC%8B%9C.md)<br/>
 - [[JPA] - 엔티티 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%94%ED%8B%B0%ED%8B%B0%20%EB%A7%A4%ED%95%91.md)<br/>
 - [[JPA] - DB 스키마 자동 생성](https://github.com/mingseok/TIL/blob/main/JPA/DB%20%EC%8A%A4%ED%82%A4%EB%A7%88%20%EC%9E%90%EB%8F%99%20%EC%83%9D%EC%84%B1.md)<br/>
-- [[JPA] - ]()<br/>
+- [[JPA] - 기본 키 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B8%B0%EB%B3%B8%20%ED%82%A4%20%EB%A7%A4%ED%95%91.md)<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
