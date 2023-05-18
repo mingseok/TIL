@@ -12,7 +12,7 @@
 - [인프랩(CTO) - 이동욱님의 강연](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%B4%EB%8F%99%EC%9A%B1%EB%8B%98%EC%9D%98%20%EA%B0%95%EC%97%B0.md)<br/>
 - [📈실패 이력서 (내 블로그 Link)](https://alstjr706.tistory.com/210)<br/>
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
-- [🎓‘우아한 테크코스’ -> PR 정리 리스트](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4.md)<br/>
+- [🎒‘우아한 테크코스’ -> PR 정리 리스트](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4.md)<br/>
 - [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
 - [Java 네이밍 규칙](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9E%90%EB%B0%94%EB%84%A4%EC%9D%B4%EB%B0%8D%EA%B7%9C%EC%B9%99.md)<br/>
 - [스트림 컨벤션](http://blog.marcinchwedczuk.pl/java-streams-best-practices)<br/>
