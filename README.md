@@ -180,7 +180,7 @@
 
 
 ### 관계형 데이터베이스
-- [[관계형 DB] - 관계형 DB 설명]()<br/>
+- [[관계형 DB] - 관계형 DB 설명](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
 
 
 
