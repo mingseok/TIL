@@ -199,6 +199,14 @@
 
 
 
+### ‘우아한 테크코스’ 프리코스 과정 피드백
+- [[우테코] - ]()<br/>
+
+
+
+
+
+
 ### 객체지향 설계
 - [[객체지향 설계] - 객체지향 생활 체조 9가지 원칙](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%83%9D%ED%99%9C%20%EC%B2%B4%EC%A1%B0%209%EA%B0%80%EC%A7%80%20%EC%9B%90%EC%B9%99.md)<br/>
 - [[객체지향 설계] - 방어적 복사, Unmodifiable](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC%2C%20Unmodifiable.md)<br/>
