@@ -189,10 +189,10 @@
 - [[우아한 테크코스] - 메소드, 필드, enum 작성을 위한 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EB%A9%94%EC%86%8C%EB%93%9C%2C%20%ED%95%84%EB%93%9C%2C%20enum%20%EC%9E%91%EC%84%B1%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EA%B7%9C%EC%B9%99.md)<br/>
 - [[우아한 테크코스] - 객체는 객체스럽게 사용한다](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EA%B0%9D%EC%B2%B4%EB%8A%94%20%EA%B0%9D%EC%B2%B4%EC%8A%A4%EB%9F%BD%EA%B2%8C%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4.md)<br/>
 - [[우아한 테크코스] - 테스트 코드 작성 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EA%B7%9C%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 객체지향 설계 방법](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84.md)<br/>
 - [[우아한 테크코스] - 객체지향 생활 체조 9가지 원칙](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%83%9D%ED%99%9C%20%EC%B2%B4%EC%A1%B0%209%EA%B0%80%EC%A7%80%20%EC%9B%90%EC%B9%99.md)<br/>
 - [[우아한 테크코스] - 방어적 복사, Unmodifiable](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC%2C%20Unmodifiable.md)<br/>
 - [[우아한 테크코스] - 일급 컬렉션을 사용하는 이유](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%BC%EA%B8%89%20%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%9E%80.md)<br/>
-- [[우아한 테크코스] - 객체지향 설계 방법](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84.md)<br/>
 
 
 
@@ -219,7 +219,7 @@
 
 
 ### Java
-- [[Java] - 자바 기초 디렉토리](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94)<br/>
+- [[Java] - 📁자바 기초 디렉토리](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94)<br/>
 - [[Java] - Map 정리](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/Map%20%EC%A0%95%EB%A6%AC.md)<br/>
 - [[Java] - 오토박싱 & 언박싱](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%98%A4%ED%86%A0%EB%B0%95%EC%8B%B1%20%26%20%EC%96%B8%EB%B0%95%EC%8B%B1.md)<br/>
 - [[Java] - 래퍼(wrapper) 클래스](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EB%9E%98%ED%8D%BC(wrapper)%20%ED%81%B4%EB%9E%98%EC%8A%A4%2C%20%EB%B3%80%ED%99%98%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)<br/>
@@ -280,18 +280,38 @@
 - [[SQL] - 데이터베이스](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
 - [[SQL] - 테이블 생성 (CREATE TABLE)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1.md)<br/>
 - [[SQL] - 검색 조건, NULL 값, 비교 연산자](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
+
+
+
+
+- [[SQL] - 조건 조합](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A1%B0%EA%B1%B4%20%EC%A1%B0%ED%95%A9.md)<br/>
+- [[SQL] - LIKE, BETWEEN](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
+
+
+
+
 - [[SQL] - 삽입 (INSERT)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
 - [[SQL] - 결과 행 제한하기 (LIMIT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
 - [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
 - [[SQL] - 집계함수 (SUM, AVG, MIN, MAX)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
 - [[SQL] - 컬럼명 수정 (AS)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%BB%AC%EB%9F%BC%EB%AA%85%20%EC%88%98%EC%A0%95%20(AS).md)<br/>
+
+
+
+
+-- 여기 수정
+- [[SQL] - 별칭(alias) 사용]()<br/>
+
+
+
+
+
 - [[SQL] - 행 개수 구하기 (COUNT)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
 - [[SQL] - 중복값을 제외 (DISTINCT)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%2C%20%EC%A4%91%EB%B3%B5%EA%B0%92%EC%9D%84%20%EC%A0%9C%EC%99%B8%20DISTINCT.md)<br/>
 - [[SQL] - 정렬 (ORDER BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
 - [[SQL] - 데이터를 수정 (UPDATE)](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
 - [[SQL] - 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
 - [[SQL] - 조회 (SELECT), AND, OR, LIMIT](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A1%B0%ED%9A%8C%20(SELECT)%2C%20AND%2C%20OR%2C%20LIMIT.md)<br/>
-- [[SQL] - LIKE, BETWEEN](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
 - [[SQL] - 그룹화 (GROUP BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
 - [[SQL] - JOIN](https://github.com/mingseok/TIL/blob/main/SQL/JOIN.md)<br/>
 - [[SQL] - index](https://github.com/mingseok/TIL/blob/main/SQL/index.md)<br/>
