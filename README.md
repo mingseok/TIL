@@ -178,26 +178,6 @@
 
 
 
-### 관계형 데이터베이스
-- [[관계형 DB] - 관계형 DB 설명](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
-
-
-
-
-
-
-### 예외처리
-- [[예외처리] - 에러는 크게 2가지](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%97%90%EB%9F%AC%EB%8A%94%20%ED%81%AC%EA%B2%8C%202%EA%B0%80%EC%A7%80.md)<br/>
-- [[예외처리] - 예외 계층](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%EA%B3%84%EC%B8%B5.md)<br/>
-- [[예외처리] - 체크 예외, 언체크 예외 설명](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8.md)<br/>
-- [[예외처리] - 체크 예외, 언체크(런타임) 예외 활용](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC(%EB%9F%B0%ED%83%80%EC%9E%84)%20%EC%98%88%EC%99%B8%20%ED%99%9C%EC%9A%A9.md)<br/>
-- [[예외처리] - 예외 포함과 스택 트레이스](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%ED%8F%AC%ED%95%A8%EA%B3%BC%20%EC%8A%A4%ED%83%9D%20%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%8A%A4.md)<br/>
-- [[예외처리] - 스프링 예외 추상화, SQL 예외 변환기](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%98%88%EC%99%B8%20%EC%B6%94%EC%83%81%ED%99%94%2C%20SQL%20%EC%98%88%EC%99%B8%20%EB%B3%80%ED%99%98%EA%B8%B0.md)<br/>
-
-
-
-
-
 ### ‘우아한 테크코스’ 프리코스 과정 피드백
 - [🎒‘우아한 테크코스’ -> PR 정리 List](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4.md)<br/>
 - [[우아한 테크코스] - git, PR, README 작성법](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/git%2C%20PR%2C%20README%20%EC%9E%91%EC%84%B1%EB%B2%95.md)<br/>
@@ -270,6 +250,31 @@
 - [[HTTP] - 2xx, 3xx, 4xx, 5xx](https://github.com/mingseok/TIL/blob/main/HTTP/2xx%2C%203xx%2C%204xx%2C%205xx.md)<br/>
 - [[HTTP] - 쿠키](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BF%A0%ED%82%A4.md)<br/>
 - [[HTTP] - 캐시](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BA%90%EC%8B%9C.md)<br/>
+
+
+
+
+
+
+
+### 관계형 데이터베이스
+- [[관계형 DB] - 관계형 DB 설명](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
+
+
+
+
+
+
+### 예외처리
+- [[예외처리] - 에러는 크게 2가지](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%97%90%EB%9F%AC%EB%8A%94%20%ED%81%AC%EA%B2%8C%202%EA%B0%80%EC%A7%80.md)<br/>
+- [[예외처리] - 예외 계층](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%EA%B3%84%EC%B8%B5.md)<br/>
+- [[예외처리] - 체크 예외, 언체크 예외 설명](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8.md)<br/>
+- [[예외처리] - 체크 예외, 언체크(런타임) 예외 활용](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC(%EB%9F%B0%ED%83%80%EC%9E%84)%20%EC%98%88%EC%99%B8%20%ED%99%9C%EC%9A%A9.md)<br/>
+- [[예외처리] - 예외 포함과 스택 트레이스](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%ED%8F%AC%ED%95%A8%EA%B3%BC%20%EC%8A%A4%ED%83%9D%20%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%8A%A4.md)<br/>
+- [[예외처리] - 스프링 예외 추상화, SQL 예외 변환기](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%98%88%EC%99%B8%20%EC%B6%94%EC%83%81%ED%99%94%2C%20SQL%20%EC%98%88%EC%99%B8%20%EB%B3%80%ED%99%98%EA%B8%B0.md)<br/>
+
+
+
 
 
 
