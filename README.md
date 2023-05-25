@@ -12,13 +12,12 @@
 - [인프랩(CTO) - 이동욱님의 강연](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%B4%EB%8F%99%EC%9A%B1%EB%8B%98%EC%9D%98%20%EA%B0%95%EC%97%B0.md)<br/>
 - [📈실패 이력서 (내 블로그 Link)](https://alstjr706.tistory.com/210)<br/>
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
-- [🎒‘우아한 테크코스’ -> PR 정리 리스트](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4.md)<br/>
-- [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
-- [Java 네이밍 규칙](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9E%90%EB%B0%94%EB%84%A4%EC%9D%B4%EB%B0%8D%EA%B7%9C%EC%B9%99.md)<br/>
-- [스트림 컨벤션](http://blog.marcinchwedczuk.pl/java-streams-best-practices)<br/>
 - [@Slf4j - 사용 방법](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B9%85.md)<br/>
 - [bootstrap - 사용 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9.md)<br/>
 - [질문하는 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EC%A7%88%EB%AC%B8%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
+- [Java 네이밍 규칙](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9E%90%EB%B0%94%EB%84%A4%EC%9D%B4%EB%B0%8D%EA%B7%9C%EC%B9%99.md)<br/>
+- [스트림 컨벤션](http://blog.marcinchwedczuk.pl/java-streams-best-practices)<br/>
 
 
 
@@ -200,18 +199,18 @@
 
 
 ### ‘우아한 테크코스’ 프리코스 과정 피드백
-- [[우테코] - git, PR, README 작성법]()<br/>
-
-
-
-
-
-
-### 객체지향 설계
-- [[객체지향 설계] - 객체지향 생활 체조 9가지 원칙](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%83%9D%ED%99%9C%20%EC%B2%B4%EC%A1%B0%209%EA%B0%80%EC%A7%80%20%EC%9B%90%EC%B9%99.md)<br/>
-- [[객체지향 설계] - 방어적 복사, Unmodifiable](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC%2C%20Unmodifiable.md)<br/>
-- [[객체지향 설계] - 일급 컬렉션을 사용하는 이유](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%BC%EA%B8%89%20%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%9E%80.md)<br/>
-- [[객체지향 설계] - 객체지향 설계 방법](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84.md)<br/>
+- [🎒‘우아한 테크코스’ -> PR 정리 List](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4.md)<br/>
+- [[우아한 테크코스] - git, PR, README 작성법](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/git%2C%20PR%2C%20README%20%EC%9E%91%EC%84%B1%EB%B2%95.md)<br/>
+- [[우아한 테크코스] - 클래스명, 메소드명, 변수명 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85%2C%20%EB%A9%94%EC%86%8C%EB%93%9C%EB%AA%85%2C%20%EB%B3%80%EC%88%98%EB%AA%85%20%EA%B7%9C%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 코딩 컨벤션](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EC%BD%94%EB%94%A9%20%EC%BB%A8%EB%B2%A4%EC%85%98.md)<br/>
+- [[우아한 테크코스] - 자바 API를 사용하자](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EC%9E%90%EB%B0%94%20API%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EC%9E%90.md)<br/>
+- [[우아한 테크코스] - 메소드, 필드, enum 작성을 위한 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EB%A9%94%EC%86%8C%EB%93%9C%2C%20%ED%95%84%EB%93%9C%2C%20enum%20%EC%9E%91%EC%84%B1%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EA%B7%9C%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 객체는 객체스럽게 사용한다](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EA%B0%9D%EC%B2%B4%EB%8A%94%20%EA%B0%9D%EC%B2%B4%EC%8A%A4%EB%9F%BD%EA%B2%8C%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4.md)<br/>
+- [[우아한 테크코스] - 테스트 코드 작성 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EA%B7%9C%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 객체지향 생활 체조 9가지 원칙](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%83%9D%ED%99%9C%20%EC%B2%B4%EC%A1%B0%209%EA%B0%80%EC%A7%80%20%EC%9B%90%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 방어적 복사, Unmodifiable](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC%2C%20Unmodifiable.md)<br/>
+- [[우아한 테크코스] - 일급 컬렉션을 사용하는 이유](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%BC%EA%B8%89%20%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%9E%80.md)<br/>
+- [[우아한 테크코스] - 객체지향 설계 방법](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84.md)<br/>
 
 
 
