@@ -283,6 +283,10 @@
 - [[SQL] - 조건 조합](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A1%B0%EA%B1%B4%20%EC%A1%B0%ED%95%A9.md)<br/>
 - [[SQL] - LIKE, BETWEEN](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
 - [[SQL] - 정렬 (ORDER BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
+- [[SQL] - 행 제한하기 (LIMIT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
+
+
+
 
 
 
@@ -290,7 +294,7 @@
 
 
 - [[SQL] - 삽입 (INSERT)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
-- [[SQL] - 결과 행 제한하기 (LIMIT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
+
 - [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
 - [[SQL] - 집계함수 (SUM, AVG, MIN, MAX)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
 - [[SQL] - 컬럼명 수정 (AS)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%BB%AC%EB%9F%BC%EB%AA%85%20%EC%88%98%EC%A0%95%20(AS).md)<br/>
