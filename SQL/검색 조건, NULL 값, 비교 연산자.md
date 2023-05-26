@@ -119,6 +119,27 @@ select address, name from sample21
 그리고 동일한 열을 중복해서 지정해도 무관하다.
 
 
+<br/><br/>
+
+## 예제1)
+
+```sql
+SELECT * FROM student;
+```
+
+전체 읽어 오는것.
+
+```sql
+SELECT name, birthday FROM student;
+```
+
+name, birthday 컬럼만 가져 오는 것이다.
+
+![이미지](/programming/img/입문176.PNG)
+
+
+
+
 
 <br/><br/>
 
@@ -160,6 +181,24 @@ select 열 from 테이블명 where 조건식
 <br/>
 
 no = 2의 조건식에서 no열 값이 2인 행은 참이 되며 1이나 3인 행은 거짓이 된다.
+
+
+
+<br/><br/>
+
+## 예제2)
+
+```sql
+SELECT * FROM student WHERE id=3;
+```
+
+3번 id인 사람의 정보만 가져 오는 것이다.
+
+![이미지](/programming/img/입문177.PNG)
+
+
+
+
 
 
 

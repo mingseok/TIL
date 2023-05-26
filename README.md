@@ -279,9 +279,9 @@
 ### SQL-Query
 - [[SQL] - 데이터베이스](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
 - [[SQL] - 테이블 생성 (CREATE TABLE)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1.md)<br/>
-- [[SQL] - 검색 조건, 비교 연산자](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
-- [[SQL] - 조건 조합](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A1%B0%EA%B1%B4%20%EC%A1%B0%ED%95%A9.md)<br/>
-- [[SQL] - LIKE, BETWEEN](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
+- [[SQL] - 검색 조건(WHERE), 비교 연산자](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
+- [[SQL] - 조건 조합 (AND, OR)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A1%B0%EA%B1%B4%20%EC%A1%B0%ED%95%A9.md)<br/>
+- [[SQL] - 패턴 매칭 (LIKE, BETWEEN)](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
 - [[SQL] - 정렬 (ORDER BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
 - [[SQL] - 행 제한하기 (LIMIT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
 
@@ -297,13 +297,11 @@
 
 - [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
 - [[SQL] - 집계함수 (SUM, AVG, MIN, MAX)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
-- [[SQL] - 컬럼명 수정 (AS)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%BB%AC%EB%9F%BC%EB%AA%85%20%EC%88%98%EC%A0%95%20(AS).md)<br/>
 
 
 
 
--- 여기 수정
-- [[SQL] - 별칭(alias) 사용]()<br/>
+- [[SQL] - 수치 연산, 별칭(AS) 사용]()<br/>
 
 
 
@@ -314,7 +312,6 @@
 
 - [[SQL] - 데이터를 수정 (UPDATE)](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
 - [[SQL] - 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
-- [[SQL] - 조회 (SELECT), AND, OR, LIMIT](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A1%B0%ED%9A%8C%20(SELECT)%2C%20AND%2C%20OR%2C%20LIMIT.md)<br/>
 - [[SQL] - 그룹화 (GROUP BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
 - [[SQL] - JOIN](https://github.com/mingseok/TIL/blob/main/SQL/JOIN.md)<br/>
 - [[SQL] - index](https://github.com/mingseok/TIL/blob/main/SQL/index.md)<br/>

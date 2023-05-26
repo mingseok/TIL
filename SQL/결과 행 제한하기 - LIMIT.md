@@ -79,6 +79,48 @@ SELECT * FROM sample33 LIMIT 3;
 
 <br/><br/>
 
+
+## 예제
+
+
+```sql
+SELECT * FROM student LIMIT 1;
+```
+
+LIMIT 은 내가 조회한 결과를 몇개를 가져 올 것인지 하는 것이다.
+
+![이미지](/programming/img/입문180.PNG)
+
+
+<br/><br/>
+
+
+
+
+
+```sql
+SELECT * FROM student LIMIT 3,1;
+```
+
+id 3번 말고 그 다음부터(=4부터) ~ 1개를 가져 오는 것이다.
+
+![이미지](/programming/img/입문181.PNG)
+
+<br/><br/>
+
+```sql
+SELECT * FROM student WHERE sex='남자' LIMIT 2;
+```
+
+student 테이블 에서 * 전체를 조회 할건데 '남자' 인 데이터 2개 까지 출력 한다는 것이다.
+
+![이미지](/programming/img/입문182.PNG)
+
+
+
+<br/><br/>
+
+
 ## 오프셋 지정
 
 
