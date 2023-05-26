@@ -1,18 +1,18 @@
 ## 삭제하기 - DELETE
 
-행단위로 데이터를 삭제
+행단위로 데이터를 삭제한다.
 
+<br/>
 
-
-### 문법
+## DELETE로 행 삭제하기 문법
 
 ```sql
-DELETE FROM 테이블명 [WHERE 삭제하려는 칼럼 명=값]
+DELETE FROM 테이블명 WHERE 조건식
 ```
 
 <br/><br/>
 
-이런 표가 있다고 생각하자.
+### 이런 표가 있다고 생각하자.
 
 ![이미지](/programming/img/입문172.PNG)
 
@@ -37,6 +37,8 @@ DELETE FROM student WHERE id = 2;
 DELETE FROM student;
 ```
 
+<br/><br/>
+
 ## TRUNCATE (자르다)
 
 - 테이블의 전체 데이터를 삭제
@@ -51,13 +53,15 @@ DELETE FROM student;
 TRUNCATE 테이블명
 ```
 
-
+<br/>
 
 ### 예제
 
 ```sql
 TRUNCATE student;
 ```
+
+<br/>
 
 다 지워 지는 걸 알 수 있다.
 
@@ -68,11 +72,15 @@ TRUNCATE student;
 
 ## DROP TABLE - 테이블을 삭제한다.
 
-문법
+<br/>
+
+### 문법
 
 ```sql
 DROP TABLE 테이블명;
 ```
+
+<br/>
 
 ### 예제
 
