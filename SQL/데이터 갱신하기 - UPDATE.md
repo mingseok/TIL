@@ -1,20 +1,127 @@
-## 데이터를 수정 (UPDATE)
+## 데이터 갱신 (UPDATE)
 
-### 문법
+<br/>
+
+## 문법
 
 ```sql
-UPDATE 테이블명 SET (컬럼1)=(컬럼1의값), (컬럼2)=(컬럼2의값) WHERE (대상이될컬럼명)=(컬럼의값)
+UPDATE 테이블명 SET 열명 = 값 where 조건식
+```
+
+`where` 구를 생략한 경우에는 `DELETE`의 경우와 마찬가지로 테이블의 모든 행이 갱신된다.
+
+<br/>
+
+`UPDATE` 명령에서는 `SET` 구를 사용하여 갱신할 열과 값을 지정한다.
+
+문법은 `'SET 열명 = 값'` 이다.
+
+이때, `=`은 비교 연산자가 아닌, 값을 대입하는 대입 연산자이다.
+
+<br/><br/>
+
+## 셀 값을 갱신하기
+
+![이미지](/programming/img/입문349.PNG)
+
+<br/><br/>
+
+## UPDATE 명령으로 증가 연산하기
+
+
+![이미지](/programming/img/입문350.PNG)
+
+
+<br/><br/>
+
+
+
+## 복수열 갱신
+
+밑에 코드 처럼 하나로 묶어서 update 명령을 실행 할 수 있다
+
+```sql
+UPDATE sample41 SET a = 'xxx', b = '2014-01-01' WHERE no = 2;
 ```
 
 <br/><br/>
 
-### 이렇게 출력 된다.
+## 예제1) 복수열 mySQL 같은 경우
+
+<br/>
+
+### 테이블 확인
+
+| no | a | b |
+| --- | --- | --- |
+| 2 | ABC | 2014-01-25 |
+| 3 | XYZ | 2014-01-25 |
+
+<br/>
+
+### 검색 결과 쿼리
+
+```sql
+update sample41 set no = no + 1, a = no;
+
+select * from sample41;
+```
+
+<br/>
+
+
+### 검색 결과 확인
+
+| no | a | b |
+| --- | --- | --- |
+| 3 | 3 | 2014-01-25 |
+| 4 | 4 | 2014-01-25 |
+
+no 열과 a 열의 값이 서로 같아진다.
+
+no 열의 값에 1을 더하여 no 열에 저장한 뒤, 그 값이 다시 a열에 대입되기 때문이다.
+
+
+<br/><br/>
+
+
+## 예제2) 복수열 mySQL 같은 경우
+
+```sql
+update sample41 set a = no, no = no + 1;
+
+select * from sample41;
+```
+
+
+<br/>
+
+### 검색 결과 확인
+
+
+| no | a | b |
+| --- | --- | --- |
+| 4 | 3 | 2014-01-25 |
+| 5 | 4 | 2014-01-25 |
+
+
+
+
+
+
+
+
+
+
+<br/><br/>
+
+## 예제 테이블 출력
 
 ![이미지](/programming/img/입문168.PNG)
 
 <br/><br/>
 
-## 예제
+## 예제1)
 
 ```sql
 UPDATE `student` SET address='서울';
@@ -24,19 +131,22 @@ UPDATE `student` SET address='서울';
 
 <br/>
 
-하면 모두 서울로 변하는 것이다.
+그러면, 모두 서울로 변하는 것이다.
 
 ![이미지](/programming/img/입문169.PNG)
 
 <br/><br/>
 
+
+## 예제2)
+
 ```sql
 UPDATE `student` SET name='이진경' WHERE id=1;
 ```
 
-### where 문은 “어디에 적용 될 것인가?” , ”어떤 행에 적용 될 것인가?” 
+### where 문은 “어디에 적용 될 것인가?” , ”어떤 행에 적용 될 것인가?” 지정하는 키워드이다.
 
-지정하는 키워드이다.
+<br/>
 
 그렇다면 WHERE id=1; 이라고 했다면, `id` 컬럼의 값이 1인 행에 대해서 실행 한다는 것이다.
 
@@ -46,9 +156,14 @@ UPDATE `student` SET name='이진경' WHERE id=1;
 
 <br/><br/>
 
+## 예제3)
+
+
 ```sql
 UPDATE `student` SET name='이고잉', birthday='2001-4-1' WHERE id=3;
 ```
+
+<br/>
 
 이렇게 변경 되는 것이다.
 
