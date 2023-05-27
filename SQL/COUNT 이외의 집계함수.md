@@ -1,6 +1,10 @@
 ## 집계함수 (SUM, AVG, MIN, MAX)
 
-SUM으로 합계 구하기
+<br/>
+
+## SUM으로 합계 구하기
+
+### 테이블 확인
 
 | no | quantity |
 | --- | --- |
@@ -10,19 +14,17 @@ SUM으로 합계 구하기
 | 4 | 3 |
 | 5 | NULL |
 
-출력값 → 16
-
-
-SUM 집계함수의 인수로 이 집합을 지정하면 1+2+3으로 계산하여 6이라는 값을 반환한다.
-
 <br/>
 
-## SUM으로 quantity 열의 합계 구하기.
+### SUM으로 quantity 열의 합계 쿼리
 
 ```sql
 SELECT SUM(quantity) FROM sample51;
 ```
 
+<br/>
+
+### 검색 결과 확인
 
 | SUM(quantity) |
 | --- |
@@ -32,38 +34,50 @@ SELECT SUM(quantity) FROM sample51;
 
 NULL 값을 제거한 뒤에 합계를 낸다.
 
-<br/>
+<br/><br/>
 
 ## AVG로 평균내기
+
+밑에 쿼리 둘다 같은 값을 출력한다.
 
 ```sql
 SELECT AVG(quantity), SUM(quantity)/COUNT(quantity) FROM sample51;
 ```
 
 
-
 AVG 집계함수도 NULL 값을 무시한다.
+
+
+하지만, 굳이 `sum`과 `count`를 이용하지 않아도, `AVG`라는 집계함수를 통해 평균값을 간단하게 구할 수 있다.
 
 
 <br/>
 
-### 만약 NULL을 0로 간주해서 평균을 내고 싶다면
+### 검색 결과 출력
+
+| AVG(quantity) | SUM(quantity)/COUNT(quantity) |
+| --- | --- |
+| 4.0000 | 4.0000 |
+
+
+
+
+<br/><br/>
+
+## 만약 NULL을 0로 간주해서 평균을 내고 싶다면
 
 CASE를 사용해 NULL을 0로 변환한 뒤에 AVG 함수로 계산하면 된다.
 
 ```sql
-SELECT AVG(CASE WHEN quantity IS NULL THEN 0 ELSE quantity END) 
-AS avgnull0 FROM sample51;
+SELECT AVG(CASE WHEN quantity IS NULL THEN 0 ELSE quantity END) AS avgnull0 FROM sample51;
 ```
 
 
-| avgnull0 |
-| --- |
-| 3.2000 |
-
-<br/>
+<br/><br/>
 
 ## MIN / MAX 로 최솟값, 최댓값 구하기
+
+최솟값과 최댓값을 구할 수 있다.
 
 NULL 값을 무시하는 기본규칙은 다른 집계함수와 같다.
 
@@ -83,11 +97,14 @@ SELECT * FROM sample51;
 
 <br/>
 
+
+### 검색 결과 확인
+
+
 ```sql
 SELECT MIN(quantity), MAX(quantity), MIN(name), MAX(name)
 FROM sample51;
 ```
-
 
 
 | MIN(quantity) | MAX(quantity) | MIN(name) | MAX(name) |

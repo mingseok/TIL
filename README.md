@@ -289,32 +289,20 @@
 - [[SQL] - 행 추가 (INSERT)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
 - [[SQL] - 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
 - [[SQL] - 데이터 갱신 (UPDATE)](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
-
-
-
-
-
-
-
-- [[SQL] - 물리삭제와 논리삭제]()<br/>
+- [[SQL] - 물리삭제와 논리삭제](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%BC%EB%A6%AC%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
 - [[SQL] - 행 개수 구하기 (COUNT)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
 - [[SQL] - 중복값 제외 (DISTINCT)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%2C%20%EC%A4%91%EB%B3%B5%EA%B0%92%EC%9D%84%20%EC%A0%9C%EC%99%B8%20DISTINCT.md)<br/>
-
-
-
-
-
-
-
-
-
-
 - [[SQL] - 집계함수 (SUM, AVG, MIN, MAX)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
 
 
 
-
 - [[SQL] - 그룹화 (GROUP BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
+
+
+
+
+
+
 - [[SQL] - JOIN](https://github.com/mingseok/TIL/blob/main/SQL/JOIN.md)<br/>
 - [[SQL] - index](https://github.com/mingseok/TIL/blob/main/SQL/index.md)<br/>
 - [[SQL] - 서브쿼리](https://github.com/mingseok/TIL/blob/main/SQL/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
