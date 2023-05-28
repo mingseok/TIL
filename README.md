@@ -295,11 +295,7 @@
 - [[SQL] - 집계함수 (SUM, AVG, MIN, MAX)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
 - [[SQL] - 그룹화 (GROUP BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
 - [[SQL] - 서브쿼리](https://github.com/mingseok/TIL/blob/main/SQL/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
-
-
-
-
-- [[SQL] - 상관 서브쿼리]()<br/>
+- [[SQL] - 상관 서브쿼리 (EXISTS)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%83%81%EA%B4%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
 
 
 
