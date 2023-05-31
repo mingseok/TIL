@@ -73,10 +73,10 @@ WHERE 조건은 생략이 가능하다.
 
 ```sql
 SELECT *
-	FROM buy
-		INNER JOIN member
-		ON buy.mem_id = member.mem_id
-	WHERE buy.mem_id = 'GRL';
+FROM buy
+INNER JOIN member
+ON buy.mem_id = member.mem_id
+WHERE buy.mem_id = 'GRL';
 ```
 
 1. `SELECT *` : 모든 열을 다 본다는 것.
@@ -122,9 +122,9 @@ SELECT *
 
 ```sql
 SELECT mem_id, prod_name, addr, CONCAT(phone1, phone2) AS '연락처'
-	FROM buy
-	INNER JOIN member
-    ON buy.mem_id = member.mem_id;
+FROM buy
+INNER JOIN member
+ON buy.mem_id = member.mem_id;
 ```
 
 실행했더니 아래와 같은 에러가 뜬다.
@@ -139,9 +139,9 @@ SELECT mem_id, prod_name, addr, CONCAT(phone1, phone2) AS '연락처'
 
 ```sql
 SELECT buy.mem_id, prod_name, addr, CONCAT(phone1, phone2) AS '연락처'
-	FROM buy
-	INNER JOIN member
-    ON buy.mem_id = member.mem_id;
+FROM buy
+INNER JOIN member
+ON buy.mem_id = member.mem_id;
 ```
 
 <br/>
@@ -161,9 +161,9 @@ SQL을 명확히 하기 위해서 SELECT 다음의 열 이름(컬럼 이름)에�
 ```sql
 -- 이렇게 간단한게 좋다.
 SELECT B.mem_id, M.mem_name, B.prod_name, M.addr, CONCAT(M.phone1, M.phone2) AS '연락처'
-	FROM buy B
-		INNER JOIN member M
-    ON B.mem_id = M.mem_id;
+FROM buy B
+INNER JOIN member M
+ON B.mem_id = M.mem_id;
 ```
 
 <br/><br/>
@@ -176,10 +176,10 @@ SELECT B.mem_id, M.mem_name, B.prod_name, M.addr, CONCAT(M.phone1, M.phone2) AS 
 
 ```sql
 SELECT DISTINCT M.mem_id, M.mem_name, M.addr
-	FROM buy B
-        INNER JOIN member M
-        ON B.mem_id = M.mem_id
-        ORDER BY M.mem_id;
+FROM buy B
+INNER JOIN member M
+ON B.mem_id = M.mem_id
+ORDER BY M.mem_id;
 ```
 
 <br/>
@@ -211,10 +211,10 @@ SELECT DISTINCT M.mem_id, M.mem_name, M.addr
 
 ```sql
 SELECT M.mem_id, M.mem_name, B.prod_name, M.addr
-	FROM member M
-		LEFT OUTER JOIN buy B
-		ON M.mem_id = B.mem_id
-	ORDER BY M.mem_id;
+FROM member M
+LEFT OUTER JOIN buy B
+ON M.mem_id = B.mem_id
+ORDER BY M.mem_id;
 ```
 
 - `M.mem_id, M.mem_name, B.prod_name, M.addr` : 4개만 출력한다는 뜻
