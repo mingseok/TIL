@@ -298,18 +298,14 @@
 - [[SQL] - 상관 서브쿼리 (EXISTS)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%83%81%EA%B4%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
 - [[SQL] - 테이블 관리 방법](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B4%80%EB%A6%AC.md)<br/>
 - [[SQL] - 제약](https://github.com/mingseok/TIL/blob/main/SQL/index.md)<br/>
+- [[SQL] - 내부결합 (INNER JOIN)](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
+- [[SQL] - JOIN 추가 설명](https://github.com/mingseok/TIL/blob/main/SQL/JOIN.md)<br/>
 
 
-
-
-
-
-
-
-- [[SQL] - JOIN](https://github.com/mingseok/TIL/blob/main/SQL/JOIN.md)<br/>
-
-
-
+- [[SQL] - ]()<br/>
+- [[SQL] - ]()<br/>
+- [[SQL] - ]()<br/>
+- [[SQL] - ]()<br/>
 
 
 
