@@ -81,7 +81,7 @@ DESC 테이블명;
 <br/><br/>
 
 
-## 검색 조건 지정하기 (=where)
+## 검색 조건 지정하기 (where)
 
 조건을 지정하여 데이터를 검색하는 방법
 
@@ -217,6 +217,64 @@ no열 값이 2가 아닐 경우 참이 되므로, 값이 1과 3인 행이 결과
 <br/><br/>
 
 
+## where 예제)
+
+### 나이가 30세 이상
+
+```sql
+select name, age
+from Address
+where age >= 30;
+```
+
+| name | age |
+| --- | --- |
+| 인성 | 30 |
+| 준 | 45 |
+| 민 | 32 |
+| 하린 | 55 |
+
+
+<br/>
+
+### 주소가 서울시 이외
+
+```sql
+select name, address
+from Address
+where address <> '서울시';
+```
+
+| name | address |
+| --- | --- |
+| 인성 | 부산시 |
+| 준 | 인천시 |
+| 민 | 속초시 |
+| 하린 | 서귀포시 |
+
+
+<br/>
+
+### 주소가 서울시에 있다 그리고 나이가 30세 이상이다.
+
+```sql
+select name, address, age
+from Address
+where address = '서울시'
+AND age >= 30;
+```
+
+| name | address | age |
+| --- | --- | --- |
+| 인성 | 서울시 | 30 |
+| 준 | 서울시 | 45 |
+
+
+
+
+
+<br/><br/>
+
 ## 문자열형의 상수
 
 문자열형을 비교할 경우는 ‘박준용’ 처럼 싱글쿼트`(’ ’)`로 둘러싸 표기 해야 한다.
@@ -240,13 +298,15 @@ SELECT * FROM sample21 WHERE name = '박준용'
 ### 틀린 코드
 
 ```sql
-select * from sample21 where birthday = null
+select name, address
+from Address
+where phone_nbr = NULL;
 ```
 
-이렇게 가능하지가 않는 것이다.
+실제로 제대로 작동하는 select구문이 아니다. (물론 오류가 발생하지도 않는다)
 
 
-null을 검색하고 싶을때는 IS NULL 사용하기
+`null을 검색하고 싶을때는 'IS NULL' 사용하기`
 
 <br/><br/>
 

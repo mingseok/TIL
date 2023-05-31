@@ -148,8 +148,6 @@
 
 
 ### DataBase
-- [[관계형 DB] - 관계형 DB 설명](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
-- [[관계형 DB] - 개념적 데이터 모델링](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B0%9C%EB%85%90%EC%A0%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8%EB%A7%81.md)<br/>
 - [[DB] - JDBC 표준 인터페이스](https://github.com/mingseok/TIL/blob/main/DataBase/JDBC%20%ED%91%9C%EC%A4%80%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)<br/>
 - [[DB] - 커넥션 풀, DataSource](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%BB%A4%EB%84%A5%EC%85%98%20%ED%92%80%2C%20DataSource.md)<br/>
 - [[DB] - 트랜잭션 (정의)](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98%20%EC%A0%95%EC%9D%98.md)<br/>
@@ -276,7 +274,7 @@
 
 
 
-### SQL-Query
+### SQL-Query + 관계형 DB
 - [[SQL] - 데이터베이스](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
 - [[SQL] - 테이블 생성 (CREATE TABLE)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1.md)<br/>
 - [[SQL] - 검색 조건(WHERE), 비교 연산자](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
@@ -295,17 +293,16 @@
 - [[SQL] - 집계함수 (SUM, AVG, MIN, MAX)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
 - [[SQL] - 그룹화 (GROUP BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
 - [[SQL] - 서브쿼리](https://github.com/mingseok/TIL/blob/main/SQL/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
-- [[SQL] - 상관 서브쿼리 (EXISTS)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%83%81%EA%B4%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
+- [[SQL] - 상관 서브쿼리 (EXISTS) , IN 설명](https://github.com/mingseok/TIL/blob/main/SQL/%EC%83%81%EA%B4%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
 - [[SQL] - 테이블 관리 방법](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B4%80%EB%A6%AC.md)<br/>
 - [[SQL] - 제약](https://github.com/mingseok/TIL/blob/main/SQL/index.md)<br/>
 - [[SQL] - 내부결합 (INNER JOIN)](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
 - [[SQL] - JOIN 추가 설명](https://github.com/mingseok/TIL/blob/main/SQL/JOIN.md)<br/>
+- [[관계형 DB] - 관계형 DB 설명](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
+- [[관계형 DB] - 개념적 데이터 모델링](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B0%9C%EB%85%90%EC%A0%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8%EB%A7%81.md)<br/>
 
 
-- [[SQL] - ]()<br/>
-- [[SQL] - ]()<br/>
-- [[SQL] - ]()<br/>
-- [[SQL] - ]()<br/>
+
 
 
 

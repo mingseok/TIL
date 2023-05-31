@@ -1,6 +1,21 @@
 ## 그룹화 - GROUP BY
 
-그룹화를 통해 집계함수의 활용범위를 넓힐 수 있다.
+테이블에서 단순하게 데이터를 선택하는 것뿐만 아니라 
+
+합계 또는 평균 등의 집계 연산을 SQL 구문으로 할 수 있다.
+
+<br/>
+
+## group by 구의 기능을 쉽게 설명
+
+
+```
+테이블을 홀 케이크 처럼 다룬다
+```
+
+동근 형태의 큰 케이크가 있다면, 칼이라는 도구를 사용해 케이크를 자르고 많은 사람이 나눠 먹는 것이 일반적이다.
+
+이때, group by 구는 케이크를 자르는 `칼`과 같은 역할을 한다.
 
 <br/>
 
@@ -9,6 +24,42 @@
 ```sql
 select * from 테이블명 group by 열1, 열2 ...
 ```
+
+<br/><br/>
+
+## 설명을 위한 예제)
+
+### 테이블 확인
+
+| name | address | age |
+| --- | --- | --- |
+| 인성 | 서울시 | 30 |
+| 하진 | 서울시 | 21 |
+| 준 | 서울시 | 45 |
+| 민 | 부산시 | 32 |
+| 하린 | 부산시 | 55 |
+| 빛나래 | 인천시 | 19 |
+| 인아 | 인천시 | 20 |
+| 아린 | 속초시 | 25 |
+| 기주 | 서귀포시 | 32 |
+
+
+<br/>
+
+```sql
+select address, COUNT(*)
+from Address
+group by address;
+```
+
+| address | count |
+| --- | --- |
+| 서울시 | 3 |
+| 인천시 | 2 |
+| 부산시 | 2 |
+| 속초시 | 1 |
+| 서귀포시 | 1 |
+
 
 
 
@@ -84,9 +135,7 @@ SELECT name, COUNT(name), SUM(quantity)
 FROM sample51 GROUP BY name;
 ```
 
-<br/>
 
-### 검색 결과 확인
 
 | name | COUNT(name) | SUM(quantity) |
 | --- | --- | --- |
@@ -284,9 +333,7 @@ group by name
 order by SUM(quantity) DESC;
 ```
 
-<br/>
 
-### 검색 결과 확인
 
 | name | COUNT(name) | SUM(quantity) |
 | --- | --- | --- |
