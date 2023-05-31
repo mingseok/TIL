@@ -104,6 +104,14 @@ WHERE buy.mem_id = 'GRL';
 
 이렇게 하는 것이 내부 조인이다.
 
+<br/>
+
+where 조건으로 'GRL' 을 하였기 때문에 'GRL' 관련만 나오는 것이다. 
+
+(현재 buy 테이블에서는 'GRL'은 하나 뿐이다.)
+
+
+
 ![이미지](/programming/img/입문190.PNG)
 
 <br/><br/>
@@ -115,6 +123,8 @@ WHERE buy.mem_id = 'GRL';
 - 기준은 구매 테이블에 있는 것이다.
 
 - 이유는? → `FROM buy` : `FROM` 바로 뒤에 온것을 기준 테이블로 정했기 때문이다.
+
+    - 그리하여 member 기준으로 지정했다면, member 기준으로 순서대로 하나씩 출력 되었을 것이다.
 
 ![이미지](/programming/img/입문191.PNG)
 
