@@ -85,7 +85,7 @@
 - [[JPA] - 다양한 연관관계 매핑 (실습)](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%8B%A4%EC%8A%B5).md)<br/>
 - [[JPA] - 상속관계 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)<br/>
 - [[JPA] - 상속관계 매핑 (실습)](https://github.com/mingseok/TIL/blob/main/JPA/%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%8B%A4%EC%8A%B5).md)<br/>
-- [[JPA] - ]()<br/>
+- [[JPA] - 프록시 기초](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%84%EB%A1%9D%EC%8B%9C%20%EA%B8%B0%EC%B4%88.md)<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
