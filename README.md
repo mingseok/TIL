@@ -88,7 +88,7 @@
 - [[JPA] - 프록시 기초](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%84%EB%A1%9D%EC%8B%9C%20%EA%B8%B0%EC%B4%88.md)<br/>
 - [[JPA] - 즉시 로딩과 지연 로딩](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A6%89%EC%8B%9C%20%EB%A1%9C%EB%94%A9%EA%B3%BC%20%EC%A7%80%EC%97%B0%20%EB%A1%9C%EB%94%A9.md)<br/>
 - [[JPA] - 영속성 전이: CASCADE](https://github.com/mingseok/TIL/blob/main/JPA/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%A0%84%EC%9D%B4%20CASCADE.md)<br/>
-- [[JPA] - ]()<br/>
+- [[JPA] - 기본값 타입](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B8%B0%EB%B3%B8%EA%B0%92%20%ED%83%80%EC%9E%85.md)<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
