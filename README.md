@@ -93,7 +93,7 @@
 - [[JPA] - 값 타입과 불변 객체](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B0%92%20%ED%83%80%EC%9E%85%EA%B3%BC%20%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4.md)<br/>
 - [[JPA] - 객체지향 쿼리 언어(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BF%BC%EB%A6%AC%20%EC%96%B8%EC%96%B4(JPQL).md)<br/>
 - [[JPA] - 경로 표현식(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%EA%B2%BD%EB%A1%9C%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
-- [[JPA] - ]()<br/>
+- [[JPA] - 페치 조인(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%ED%8E%98%EC%B9%98%20%EC%A1%B0%EC%9D%B8.md)<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
 
