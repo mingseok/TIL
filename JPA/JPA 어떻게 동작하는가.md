@@ -222,7 +222,7 @@ public class Member {
     private Long id;
     private String name;
 
-		// ... 생략
+    // ... 생략
 ```
 
 <br/><br/>
