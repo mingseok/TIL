@@ -51,6 +51,10 @@ public class HelloController {
 
 `("data", "hello 민석!!")` → 키와 벨류 라고 생각하면 된다.
 
+```
+주의해야 될 점은 "data"라는 이름과 html에서의 "data"라는 변수명이 일치해야 된다는 것이다.
+```
+
 
 <br/><br/>
 
