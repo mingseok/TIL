@@ -64,11 +64,6 @@
 
 
 
-
-
-
-
-
 ### JPA
 
 - [[JPA] - ORM](https://github.com/mingseok/TIL/blob/main/JPA/ORM.md)<br/>
@@ -82,9 +77,9 @@
 - [[JPA] - 연관관계 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)<br/>
 - [[JPA] - 연관관계 매핑(=코드)](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%BD%94%EB%93%9C).md)<br/>
 - [[JPA] - 다양한 연관관계 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)<br/>
-- [[JPA] - 다양한 연관관계 매핑 (실습)](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%8B%A4%EC%8A%B5).md)<br/>
+- [[JPA] - 다양한 연관관계 매핑(=코드)](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%8B%A4%EC%8A%B5).md)<br/>
 - [[JPA] - 상속관계 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)<br/>
-- [[JPA] - 상속관계 매핑 (실습)](https://github.com/mingseok/TIL/blob/main/JPA/%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%8B%A4%EC%8A%B5).md)<br/>
+- [[JPA] - 상속관계 매핑(=코드)](https://github.com/mingseok/TIL/blob/main/JPA/%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%8B%A4%EC%8A%B5).md)<br/>
 - [[JPA] - 프록시 기초](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%84%EB%A1%9D%EC%8B%9C%20%EA%B8%B0%EC%B4%88.md)<br/>
 - [[JPA] - 즉시 로딩과 지연 로딩](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A6%89%EC%8B%9C%20%EB%A1%9C%EB%94%A9%EA%B3%BC%20%EC%A7%80%EC%97%B0%20%EB%A1%9C%EB%94%A9.md)<br/>
 - [[JPA] - 영속성 전이: CASCADE](https://github.com/mingseok/TIL/blob/main/JPA/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%A0%84%EC%9D%B4%20CASCADE.md)<br/>
@@ -94,9 +89,6 @@
 - [[JPA] - 객체지향 쿼리 언어(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BF%BC%EB%A6%AC%20%EC%96%B8%EC%96%B4(JPQL).md)<br/>
 - [[JPA] - 경로 표현식(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%EA%B2%BD%EB%A1%9C%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
 - [[JPA] - 페치 조인(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%ED%8E%98%EC%B9%98%20%EC%A1%B0%EC%9D%B8.md)<br/>
-- [[JPA] - ]()<br/>
-- [[JPA] - ]()<br/>
-
 
 
 
