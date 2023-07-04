@@ -266,10 +266,11 @@ boolean hasMemberType = Member.class.isAssignableFrom(parameter.getParameterType
     
 - 반환 되는 것은 같다면 `true`를 아니면 `false` 를 반환 한다.
 
-그리하여 `return hasLoginAnnotation && hasMemberType;` 둘 다 만족하면 true가 되어 
-코드 기준, 
+<br/>
 
-밑에 있는 메서드인 `resolveArgument()` 가 실행이 되는 것이다.
+그리하여 `return hasLoginAnnotation && hasMemberType;` 둘 다 만족하면 
+
+true가 되어 코드 기준, 밑에 있는 메서드인 `resolveArgument()` 가 실행이 되는 것이다.
 
 - 만약 false면 `resolveArgument()` 실행 되지 않음
 
