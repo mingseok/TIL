@@ -143,8 +143,8 @@ public class ValidationItemController {
     - (참고 : 바인딩에 성공한 필드만 Bean Validation을 적용한다.)
 
 2-1. 만약, `@ModelAttribute` 데이터 바인딩에 실패한다면 `typeMismatch`로 `FieldError`에 추가 한다.
-
-- (바인딩에 실패 예시는 → 가격에는 int만 넣어야 되는데, String 넣는 경우들)
+	
+ 	- (바인딩에 실패 예시는 → 가격에는 int만 넣어야 되는데, String 넣는 경우들)
 
 
 <br/><br/>
