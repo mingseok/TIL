@@ -111,10 +111,14 @@ Query query = em.createQuery("SELECT m.username, m.age from Member m");
 ### 프로젝션 문법
 
 - `SELECT m FROM Member m` -> "엔티티 프로젝션” 이라고 부름.
+  
     - Member 엔티티를 조회한다는 얘기이다.
+      
 - `SELECT m.team FROM Member m` -> "엔티티 프로젝션”
     - Member에 연관된 team을 가져오는 것이다.
+      
 - `SELECT m.address FROM Member m` -> “임베디드 타입 프로젝션”
+  
     - Member에 있는 값 타입인 address를 가져온다
 - SELECT m.username, m.age FROM Member m -> “스칼라 타입 프로젝션”
 - DISTINCT로 중복 제거
