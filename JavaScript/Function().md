@@ -5,7 +5,8 @@
 
 
 `two()` 함수를 사용함으로써 `document.write('<li>2-1</li>');` ,
- `document.write('<li>2-2</li>');` 인 중복 코드를 없애고, 
+
+`document.write('<li>2-2</li>');` 인 중복 코드를 없애고, 
 
 함수를 부름으로써 해결할 수 있게 된 것이다.
 
@@ -41,9 +42,9 @@
 </html>
 ```
 
-<br/>
+<br/><br/>
 
-`nightDayHandler();` 만 사용 하였을 경우, 
+## `nightDayHandler();` 만 사용 하였을 경우, 
 
 함수는 이 이벤트가 소속된 이 태그를 가리키도록 약속 되어 있는데,
 
@@ -53,9 +54,9 @@
 
 ![이미지](/programming/img/js12.PNG)
 
-<br/>
+<br/><br/>
 
-여기로 받는 것이다.
+## 여기로 받는 것이다.
 
 ![이미지](/programming/img/js13.PNG)
 
