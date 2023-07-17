@@ -39,7 +39,9 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 
 ![이미지](/programming/img/입문261.PNG)
 
-- JpaRepository 인터페이스만 상속받으면, 스프링 데이터 JPA가 프록시 기술을 사용해서 구현 클래스를 직접 만들어준다는 것이다.
+- JpaRepository 인터페이스만 상속받으면,
+
+  스프링 데이터 JPA가 프록시 기술을 사용해서 구현 클래스를 직접 만들어준다는 것이다.
     
     - 그리고 만든 구현 클래스의 인스턴스를 만들어서 스프링 빈으로 등록한다.
 
