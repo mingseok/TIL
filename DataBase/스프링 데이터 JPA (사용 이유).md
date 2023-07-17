@@ -51,7 +51,9 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 
 ## 쿼리 메서드 기능
 
-스프링 데이터 JPA는 인터페이스에 메서드만 적어두면, 메서드 이름을 분석해서 쿼리를 자동으로 만들고 실행해주는 기능을 제공한다.
+스프링 데이터 JPA는 인터페이스에 메서드만 적어두면, 
+
+메서드 이름을 분석해서 쿼리를 자동으로 만들고 실행해주는 기능을 제공한다.
 
 ### 순수 JPA 리포지토리 (데이터 JPA 사용 전)
 
