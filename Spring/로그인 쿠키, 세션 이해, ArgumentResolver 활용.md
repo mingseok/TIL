@@ -88,7 +88,7 @@ public class HomeController {
 
 <br/>
 
-필수 값 여부: required 대상이 없어도 동작하게 하려면 (required = false) 로 지정하면 된다
+필수 값 여부: required 대상이 없어도 동작하게 하려면 `(required = false)` 로 지정하면 된다
 
 ```java
 required = false는 쿠키값이 있는지 없는지 여부를 나타내는 것입니다.
