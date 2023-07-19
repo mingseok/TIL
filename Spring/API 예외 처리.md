@@ -14,11 +14,15 @@
 
 ## ExceptionResolver
 
-ExceptionResolver 를 사용하면 컨트롤러에서 예외가 발생해도 ExceptionResolver 에서 예외를
+ExceptionResolver 를 사용하면 컨트롤러에서 예외가 발생해도 ExceptionResolver 에서 예외를 처리해 버린다. 
 
-처리해 버린다. 따라서 예외가 발생해도 서블릿 컨테이너까지 예외가 전달되지 않고, 
+따라서 예외가 발생해도 서블릿 컨테이너까지 예외가 전달되지 않고, 
 
-스프링 mvc에서 예외 처리는 끝이 난다. 결과적으로 WAS 입장에서는 정상 처리가 된 것이다.
+스프링 mvc에서 예외 처리는 끝이 난다. 
+
+<br/>
+
+결과적으로 WAS 입장에서는 정상 처리가 된 것이다.
 
 ```
 이렇게 예외를 이곳에서 모두 처리할 수 있다는 것이 핵심이다.
@@ -28,9 +32,11 @@ ExceptionResolver 를 사용하면 컨트롤러에서 예외가 발생해도 Exc
 
 ## @ExceptionHandler
 
-스프링은 API 예외 처리 문제를 해결하기 위해 `@ExceptionHandler` 라는 애노테이션을 사용하는 
+스프링은 API 예외 처리 문제를 해결하기 위해 `@ExceptionHandler` 라는 
 
-매우 편리한 예외 처리 기능을 제공하는데, 이것이 바로 `ExceptionHandlerExceptionResolver` 이다.
+애노테이션을 사용하는 매우 편리한 예외 처리 기능을 제공하는데, 
+
+이것이 바로 `ExceptionHandlerExceptionResolver` 이다.
 
 <br/><br/>
 
