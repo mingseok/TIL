@@ -151,7 +151,7 @@ public String create(MemberForm form) {
 
 ![이미지](/programming/img/입문19.PNG)
 
-<br/>
+<br/><br/>
 
 ![이미지](/programming/img/입문20.PNG)
 
