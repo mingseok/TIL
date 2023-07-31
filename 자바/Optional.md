@@ -8,19 +8,20 @@ T 타입 객체의 래퍼 클래스 - Optional<T>
 
 ```java
 public final class Optional<T> {
-	private final T value; // T타입의 참조변수.
-	...
+   private final T value; // T타입의 참조변수.
+
+      ...
 }
 ```
 	
 <br/>
 	
 	
-Optional.empty() : 빈 Optional 객체 생성한다
+`Optional.empty()` : 빈 Optional 객체 생성한다
 	
-Optional.of(value) : value값이 null이 아닌 경우에 사용한다
+`Optional.of(value)` : value값이 null이 아닌 경우에 사용한다
 	
-Optional.ofNullable(value) : value값이 null인지 아닌지 확실하지 않은 경우에 사용한다	
+`Optional.ofNullable(value)` : value값이 null인지 아닌지 확실하지 않은 경우에 사용한다	
 	
 	
 <br/>	
@@ -165,7 +166,7 @@ String str4 = optVal.orElseThrow();
 
 ```java
 if(Optional.ofNullable(str).isPresent() ) { // if(str!=null) {
-		System.out.println(str);
+    System.out.println(str);
 }
 ```
 
