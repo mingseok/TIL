@@ -48,21 +48,19 @@ Comparator 인터페이스를 쓰려면 compre 메소드를 구현해야 한다�
 
 ```java
 public class Test {
-	public static void main(String[] args)  {
+    public static void main(String[] args)  {
  
-		int a = 1;
-		int b = 2;
+        int a = 1;
+        int b = 2;
 		
-		if(a > b) {
-			System.out.println("a가 b보다 큽니다.");
-		}
-		else if(a == b) {
-			System.out.println("a와 b는 같습니다.");
-		}
-		else {
-			System.out.println("b가 a보다 큽니다. ");
-		}
-	}
+        if(a > b) {
+           System.out.println("a가 b보다 큽니다.");
+        } else if(a == b) {
+           System.out.println("a와 b는 같습니다.");
+        } else {
+           System.out.println("b가 a보다 큽니다. ");
+        }
+    }
 }
 ```
 
@@ -80,7 +78,7 @@ public class Test {
 
 ```java
 public class Test {
-	public static void main(String[] args)  {
+    public static void main(String[] args)  {
  
 		Student a = new Student(17, 2);	// 17살 2반
 		Student b = new Student(18, 1);	// 18살 1반
