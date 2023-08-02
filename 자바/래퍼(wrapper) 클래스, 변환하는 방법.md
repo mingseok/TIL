@@ -17,9 +17,10 @@
 
 ```java
 public final class Integer extends Number implements Comparable {
-		...
-		private int value; // 기본형(int)을 감싸고 있는 것이다.
-		...
+      
+      private int value; // 기본형(int)을 감싸고 있는 것이다.
+
+      ...
 }
 ```
 
