@@ -94,7 +94,9 @@
 자동 주입 대상을 옵션으로 처리하는 방법은 다음과 같다
 
 - `@Autowired(required=false)` : 자동 주입할 대상이 없으면 수정자 메서드 자체가 호출 안됨
+  
 - `org.springframework.lang.@Nullable` : 자동 주입할 대상이 없으면 null이 입력된다.
+  
 - `Optional<>` : 자동 주입할 대상이 없으면 Optional.empty 가 입력된다.
 
 ```java
