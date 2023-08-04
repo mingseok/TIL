@@ -27,10 +27,6 @@
 ## 코드 작성해보기.
 
 ```java
-package org.example.hellojpa;
-
-import javax.persistence.Persistence;
-
 public class JpaMain {
     public static void main(String[] args) {
         Persistence.createEntityManagerFactory("hello");
@@ -52,9 +48,9 @@ public class JpaMain {
 
 ```sql
 create table Member ( 
- id bigint not null, 
- name varchar(255), 
- primary key (id) 
+   id bigint not null, 
+   name varchar(255), 
+   primary key (id) 
 );
 ```
 
@@ -69,11 +65,6 @@ create table Member (
 객체와 테이블을 생성하고 매핑하기
 
 ```java
-package org.example.hellojpa;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
 @Entity
 public class Member {
 
@@ -112,13 +103,6 @@ public class Member {
 실제로, DB에 저장하거나 하는 트랜잭션 단위들은 전부 `EntityManager` 만들어 줘야 하는 것이다.
 
 ```java
-package org.example.hellojpa;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
-
 public class JpaMain {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
@@ -158,13 +142,6 @@ public class JpaMain {
 이렇게 작성해야 한다.
 
 ```java
-package org.example.hellojpa;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
-
 public class JpaMain {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
