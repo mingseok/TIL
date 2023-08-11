@@ -167,7 +167,9 @@ List<Member> resultList = em.createQuery(jpql, Member.class)
 - 내부 조인: `SELECT m FROM Member m [INNER] JOIN m.team t`
 
     - 이렇게 함으로써 쿼리 맨끝에 있는 `‘t’`를 사용할 수 있게 되는 것이다.
-
+ 
+    - 즉, Member -> 'm'하고 team이 조인 된것이 't'라고 하는 것이다
+       
 - 외부 조인: `SELECT m FROM Member m LEFT [OUTER] JOIN m.team t`
     - `OUTER` 같은 경우는 생략이 가능하다.
 - 세타 조인: `select count(m) from Member m, Team t where m.username = [t.name](http://t.name/)`
