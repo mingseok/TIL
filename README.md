@@ -88,8 +88,11 @@
 - [[JPA] - 객체지향 쿼리 언어(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BF%BC%EB%A6%AC%20%EC%96%B8%EC%96%B4(JPQL).md)<br/>
 - [[JPA] - 경로 표현식(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%EA%B2%BD%EB%A1%9C%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
 - [[JPA] - 페치 조인(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%ED%8E%98%EC%B9%98%20%EC%A1%B0%EC%9D%B8.md)<br/>
+- [[JPA] - API를 만들시 '회원 조회' 유의사항](https://github.com/mingseok/TIL/blob/main/JPA/JPA%ED%9A%8C%EC%9B%90%EC%A1%B0%ED%9A%8C.md)<br/>
 
 
+
+- [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
 - [[JPA] - ]()<br/>
