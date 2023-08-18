@@ -63,6 +63,28 @@
 
 
 
+
+### ‘우아한 테크코스’ 프리코스 과정 피드백
+- [🎒‘우아한 테크코스’ -> PR 정리 List](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4.md)<br/>
+- [[우아한 테크코스] - git, PR, README 작성법](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/git%2C%20PR%2C%20README%20%EC%9E%91%EC%84%B1%EB%B2%95.md)<br/>
+- [[우아한 테크코스] - 클래스명, 메소드명, 변수명 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85%2C%20%EB%A9%94%EC%86%8C%EB%93%9C%EB%AA%85%2C%20%EB%B3%80%EC%88%98%EB%AA%85%20%EA%B7%9C%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 코딩 컨벤션](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EC%BD%94%EB%94%A9%20%EC%BB%A8%EB%B2%A4%EC%85%98.md)<br/>
+- [[우아한 테크코스] - 자바 API를 사용하자](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EC%9E%90%EB%B0%94%20API%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EC%9E%90.md)<br/>
+- [[우아한 테크코스] - 메소드, 필드, enum 작성을 위한 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EB%A9%94%EC%86%8C%EB%93%9C%2C%20%ED%95%84%EB%93%9C%2C%20enum%20%EC%9E%91%EC%84%B1%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EA%B7%9C%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 객체는 객체스럽게 사용한다](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EA%B0%9D%EC%B2%B4%EB%8A%94%20%EA%B0%9D%EC%B2%B4%EC%8A%A4%EB%9F%BD%EA%B2%8C%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4.md)<br/>
+- [[우아한 테크코스] - 테스트 코드 작성 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EA%B7%9C%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 객체지향 설계 방법](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84.md)<br/>
+- [[우아한 테크코스] - 객체지향 생활 체조 9가지 원칙](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%83%9D%ED%99%9C%20%EC%B2%B4%EC%A1%B0%209%EA%B0%80%EC%A7%80%20%EC%9B%90%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 방어적 복사, Unmodifiable](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC%2C%20Unmodifiable.md)<br/>
+- [[우아한 테크코스] - 일급 컬렉션을 사용하는 이유](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%BC%EA%B8%89%20%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%9E%80.md)<br/>
+
+
+
+
+
+
+
+
 ### JPA
 
 - [[JPA] - ORM](https://github.com/mingseok/TIL/blob/main/JPA/ORM.md)<br/>
@@ -94,23 +116,23 @@
 ### JPQL
 
 - [[JPQL] - 객체지향 쿼리 언어(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BF%BC%EB%A6%AC%20%EC%96%B8%EC%96%B4(JPQL).md)<br/>
-- [[JPQL] - TypeQuery, Query, 프로젝션]()<br/>
-- [[JPQL] - 페이징 API, 조인]()<br/>
-- [[JPQL] - 서브 쿼리, JPQL 타입 표현]()<br/>
-- [[JPQL] - 조건식, JPQL 기본 함수]()<br/>
+- [[JPQL] - TypeQuery, Query, 프로젝션](https://github.com/mingseok/TIL/blob/main/JPA/TypeQuery%2C%20Query%2C%20%ED%94%84%EB%A1%9C%EC%A0%9D%EC%85%98.md)<br/>
+- [[JPQL] - 페이징 API, 조인](https://github.com/mingseok/TIL/blob/main/JPA/%ED%8E%98%EC%9D%B4%EC%A7%95%20API%2C%20%EC%A1%B0%EC%9D%B8.md)<br/>
+- [[JPQL] - 서브 쿼리, JPQL 타입 표현](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A1%B0%EA%B1%B4%EC%8B%9D%2C%20JPQL%20%EA%B8%B0%EB%B3%B8%20%ED%95%A8%EC%88%98.md)<br/>
+- [[JPQL] - 조건식, JPQL 기본 함수](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A1%B0%EA%B1%B4%EC%8B%9D%20-%20CASE%20%EC%8B%9D%2C%20JPQL%20%EA%B8%B0%EB%B3%B8%20%ED%95%A8%EC%88%98.md)<br/>
 - [[JPQL] - 경로 표현식(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%EA%B2%BD%EB%A1%9C%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
 - [[JPQL] - 페치 조인(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%ED%8E%98%EC%B9%98%20%EC%A1%B0%EC%9D%B8.md)<br/>
 
 
 
-### 스프링 데이터 JPA
+### Spring Data JPA
 
-- [[JPA] - ]()<br/>
-- [[JPA] - ]()<br/>
-- [[JPA] - ]()<br/>
-- [[JPA] - ]()<br/>
-- [[JPA] - ]()<br/>
-- [[JPA] - ]()<br/>
+- [[Spring Data JPA] - Spring Data JPA 설명]()<br/>
+- [[Spring Data JPA] - 쿼리 메소드]()<br/>
+- [[Spring Data JPA] - ]()<br/>
+- [[Spring Data JPA] - ]()<br/>
+- [[Spring Data JPA] - ]()<br/>
+- [[Spring Data JPA] - ]()<br/>
 
 
 
@@ -191,23 +213,6 @@
 - [[DB] - 스프링 데이터 JPA (사용 이유)](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20JPA%20(%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0).md)<br/>
 - [[DB] - Querydsl, 설정 방법](https://github.com/mingseok/TIL/blob/main/DataBase/Querydsl%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95.md)<br/>
 - [[DB] - 트레이드 오프](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%93%9C%20%EC%98%A4%ED%94%84.md)<br/>
-
-
-
-
-### ‘우아한 테크코스’ 프리코스 과정 피드백
-- [🎒‘우아한 테크코스’ -> PR 정리 List](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4.md)<br/>
-- [[우아한 테크코스] - git, PR, README 작성법](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/git%2C%20PR%2C%20README%20%EC%9E%91%EC%84%B1%EB%B2%95.md)<br/>
-- [[우아한 테크코스] - 클래스명, 메소드명, 변수명 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85%2C%20%EB%A9%94%EC%86%8C%EB%93%9C%EB%AA%85%2C%20%EB%B3%80%EC%88%98%EB%AA%85%20%EA%B7%9C%EC%B9%99.md)<br/>
-- [[우아한 테크코스] - 코딩 컨벤션](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EC%BD%94%EB%94%A9%20%EC%BB%A8%EB%B2%A4%EC%85%98.md)<br/>
-- [[우아한 테크코스] - 자바 API를 사용하자](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EC%9E%90%EB%B0%94%20API%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EC%9E%90.md)<br/>
-- [[우아한 테크코스] - 메소드, 필드, enum 작성을 위한 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EB%A9%94%EC%86%8C%EB%93%9C%2C%20%ED%95%84%EB%93%9C%2C%20enum%20%EC%9E%91%EC%84%B1%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EA%B7%9C%EC%B9%99.md)<br/>
-- [[우아한 테크코스] - 객체는 객체스럽게 사용한다](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EA%B0%9D%EC%B2%B4%EB%8A%94%20%EA%B0%9D%EC%B2%B4%EC%8A%A4%EB%9F%BD%EA%B2%8C%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4.md)<br/>
-- [[우아한 테크코스] - 테스트 코드 작성 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EA%B7%9C%EC%B9%99.md)<br/>
-- [[우아한 테크코스] - 객체지향 설계 방법](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84.md)<br/>
-- [[우아한 테크코스] - 객체지향 생활 체조 9가지 원칙](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%83%9D%ED%99%9C%20%EC%B2%B4%EC%A1%B0%209%EA%B0%80%EC%A7%80%20%EC%9B%90%EC%B9%99.md)<br/>
-- [[우아한 테크코스] - 방어적 복사, Unmodifiable](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC%2C%20Unmodifiable.md)<br/>
-- [[우아한 테크코스] - 일급 컬렉션을 사용하는 이유](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%BC%EA%B8%89%20%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%9E%80.md)<br/>
 
 
 
