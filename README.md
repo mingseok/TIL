@@ -129,7 +129,7 @@
 
 - [[Spring Data JPA] - Spring Data JPA 설명](https://github.com/mingseok/TIL/blob/main/JPA/Spring%20Data%20JPA%20%EC%84%A4%EB%AA%85.md)<br/>
 - [[Spring Data JPA] - 메소드 이름으로 쿼리 생성](https://github.com/mingseok/TIL/blob/main/JPA/%EC%BF%BC%EB%A6%AC%20%EB%A9%94%EC%86%8C%EB%93%9C.md)<br/>
-- [[Spring Data JPA] - @Query 설명, 값, DTO 조회]()<br/>
+- [[Spring Data JPA] - @Query 설명, 값, DTO 조회](https://github.com/mingseok/TIL/blob/main/JPA/%40Query%2C%20%EA%B0%92%2C%20DTO%20%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0.md)<br/>
 - [[Spring Data JPA] - ]()<br/>
 - [[Spring Data JPA] - ]()<br/>
 - [[Spring Data JPA] - ]()<br/>
