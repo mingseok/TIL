@@ -107,6 +107,8 @@ QHello 클래스를 클릭하였을때,
 
 ## 여섯번째. 메인 애플리케이션 테스트에서 확인해보기
 
+테스트까지 통과 되었다면, 세팅에 있어서 더 이상 문제가 없는 것이다
+
 
 ```java
 @SpringBootTest
@@ -135,4 +137,8 @@ class QuerydslApplicationTests {
 }
 ```
 
-테스트가 통과 된다면, 세팅에 있어서 더 이상 문제가 없는 것이다
+
+<br/><br/>
+
+>**Reference** <br/>[실전! Querydsl](https://www.inflearn.com/course/querydsl-%EC%8B%A4%EC%A0%84?_gl=1*lhve3a*_ga*OTY2ODU2MjYxLjE2NzkwNjYzNDU.*_ga_85V6SRKGJV*MTY5MjcwODMyNi40Mi4xLjE2OTI3MDgzMzMuNTMuMC4w)
+
