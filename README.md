@@ -86,7 +86,6 @@
 
 
 ### JPA
-
 - [[JPA] - ORM](https://github.com/mingseok/TIL/blob/main/JPA/ORM.md)<br/>
 - [[JPA] - JPA 설정(Maven 환경)](https://github.com/mingseok/TIL/blob/main/JPA/JPA%20%EC%84%A4%EC%A0%95%20-%20persistence.xml.md)<br/>
 - [[JPA] - JPA 어떻게 동작하는가](https://github.com/mingseok/TIL/blob/main/JPA/JPA%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%80.md)<br/>
@@ -114,7 +113,6 @@
 
 
 ### JPQL
-
 - [[JPQL] - 객체지향 쿼리 언어(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BF%BC%EB%A6%AC%20%EC%96%B8%EC%96%B4(JPQL).md)<br/>
 - [[JPQL] - TypeQuery, Query, 프로젝션](https://github.com/mingseok/TIL/blob/main/JPA/TypeQuery%2C%20Query%2C%20%ED%94%84%EB%A1%9C%EC%A0%9D%EC%85%98.md)<br/>
 - [[JPQL] - 페이징 API, 조인](https://github.com/mingseok/TIL/blob/main/JPA/%ED%8E%98%EC%9D%B4%EC%A7%95%20API%2C%20%EC%A1%B0%EC%9D%B8.md)<br/>
@@ -126,21 +124,26 @@
 
 
 ### Spring Data JPA
-
 - [[Spring Data JPA] - Spring Data JPA 설명](https://github.com/mingseok/TIL/blob/main/JPA/Spring%20Data%20JPA%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[Spring Data JPA] - Spring Data JPA 분석]()<br/>
+- [[Spring Data JPA] - 스프링 데이터 JPA 분석]()<br/>
 - [[Spring Data JPA] - 메소드 이름으로 쿼리 생성](https://github.com/mingseok/TIL/blob/main/JPA/%EC%BF%BC%EB%A6%AC%20%EB%A9%94%EC%86%8C%EB%93%9C.md)<br/>
 - [[Spring Data JPA] - @Query 설명, 값, DTO 조회](https://github.com/mingseok/TIL/blob/main/JPA/%40Query%2C%20%EA%B0%92%2C%20DTO%20%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0.md)<br/>
 - [[Spring Data JPA] - 페이징과 정렬](https://github.com/mingseok/TIL/blob/main/JPA/%ED%8E%98%EC%9D%B4%EC%A7%95%EA%B3%BC%20%EC%A0%95%EB%A0%AC.md)<br/>
 - [[Spring Data JPA] - Auditing](https://github.com/mingseok/TIL/blob/main/JPA/Auditing.md)<br/>
-- [[Spring Data JPA] - ]()<br/>
-- [[Spring Data JPA] - ]()<br/>
-- [[Spring Data JPA] - ]()<br/>
-- [[Spring Data JPA] - ]()<br/>
-- [[Spring Data JPA] - ]()<br/>
-- [[Spring Data JPA] - ]()<br/>
-- [[Spring Data JPA] - ]()<br/>
-- [[Spring Data JPA] - ]()<br/>
+
+
+
+
+### Querydsl
+- [[Querydsl] - Querydsl 설정과 검증]()<br/>
+- [[Querydsl] - ]()<br/>
+- [[Querydsl] - ]()<br/>
+- [[Querydsl] - ]()<br/>
+- [[Querydsl] - ]()<br/>
+- [[Querydsl] - ]()<br/>
+- [[Querydsl] - ]()<br/>
+- [[Querydsl] - ]()<br/>
+
 
 
 
