@@ -133,10 +133,13 @@
 
 
 
+
+
+
 ### Querydsl
 - [[Querydsl] - Querydsl 설정과 검증](https://github.com/mingseok/TIL/blob/main/JPA/Querydsl%20%EC%84%A4%EC%A0%95.md)<br/>
-- [[Querydsl] - Querydsl vs JPQL 차이]()<br/>
-- [[Querydsl] - ]()<br/>
+- [[Querydsl] - Querydsl vs JPQL 차이, Q-Type 관례]()<br/>
+- [[Querydsl] - 검색 조건 쿼리]()<br/>
 - [[Querydsl] - ]()<br/>
 - [[Querydsl] - ]()<br/>
 - [[Querydsl] - ]()<br/>

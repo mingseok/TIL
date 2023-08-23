@@ -1,4 +1,4 @@
-## Querydsl vs JPQL
+## Querydsl vs JPQL, Q-Type 관례
 
 <br/>
 
@@ -45,6 +45,42 @@ public void startQuerydsl() {
     assertThat(findMember.getUsername()).isEqualTo("member1");
 }
 ```
+
+<br/><br/>
+
+## 위 코드에서 Q-Type 줄여쓰기
+
+Q타입을 이렇게 많이 사용한다고 한다.
+
+```java
+@SpringBootTest
+@Transactional
+class MemberTest {
+
+    JPAQueryFactory queryFactory;
+    
+    @BeforeEach
+    public void before() {
+        queryFactory = new JPAQueryFactory(em);
+
+        // ...생략
+    }
+
+
+@Test
+@DisplayName("Querydsl 사용")
+public void startQuerydsl() {
+    Member findMember = queryFactory
+            .select(member) // QMember.member 처음에 이렇게 했다가 `QMember`부분만 static 임포트 시키면 된다
+            .from(member)
+            .where(member.username.eq("member1"))
+            .fetchOne();
+
+    assertThat(findMember.getUsername()).isEqualTo("member1");
+}
+```
+
+
 
 
 
