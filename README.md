@@ -332,7 +332,7 @@
 - [[SQL] - 상관 서브쿼리 (EXISTS) , IN 설명](https://github.com/mingseok/TIL/blob/main/SQL/%EC%83%81%EA%B4%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
 - [[SQL] - 테이블 관리 방법](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B4%80%EB%A6%AC.md)<br/>
 - [[SQL] - 제약](https://github.com/mingseok/TIL/blob/main/SQL/index.md)<br/>
-- [[SQL] - 내부결합 (INNER JOIN)](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
+- [[SQL] - 내부결합 (INNER JOIN), 외부결합](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
 - [[SQL] - JOIN 추가 설명](https://github.com/mingseok/TIL/blob/main/SQL/JOIN.md)<br/>
 - [[관계형 DB] - 관계형 DB 설명](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
 - [[관계형 DB] - 개념적 데이터 모델링](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B0%9C%EB%85%90%EC%A0%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8%EB%A7%81.md)<br/>

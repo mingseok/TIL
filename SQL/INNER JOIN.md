@@ -176,6 +176,28 @@ where 상품.상품분류 = '식료품';
 
 ## LEFT JOIN
 
+
+LEFT의 의미는 왼쪽 테이블을 기준 테이블로 지정한다는 의미이다.
+
+`LEFT OUTER JOIN`은 `OUTER` 키워드를 생략하고, `LEFT JOIN`으로 사용하기도 한다.
+
+- `OUTER` 같은 경우는 생략이 한다
+
+
+
+![이미지](/programming/img/입문383.PNG)
+
+
+
+
+
+<br/><br/>
+
+![이미지](/programming/img/입문382.PNG)
+
+
+<br/>
+
 외부결합으로 상품코드 0009인 상품도 결과에 포함하기
 
 ```sql
@@ -191,9 +213,30 @@ where 상품.상품분류 = '식료품';
 | 상품22 | 500 |
 | 추가상품 | NULL |
 
-재고수 테이블에는 0009에 대한 데이터가 없으므로 값이 NULL로 표시되는 점에 주의하자.
+재고수 테이블에는 0009에 대한 데이터가 없으므로 값이 `NULL`로 표시되는 점에 주의하자.
 
 ```
 상품 테이블을 오른쪽에 지정하는 경우나 재고 테이블을 기준으로 
 삼고 싶은 경우에는 RIGHT JOIN을 사용해 외부결합을 하면 된다
 ```
+
+
+<br/><br/>
+
+## Right outer join
+
+
+![이미지](/programming/img/입문384.PNG)
+
+
+<br/><br/>
+
+## INNER JOIN vs OUTER JOIN
+
+
+- `INNER JOIN`은 A 테이블과 B테이블이 모두 가지고 있는 `데이터만!`이 검색됨
+
+- `OUTER JOIN`은 `Left`와 `RIGHT` 두가지로 나뉜다 
+
+    - `INNER JOIN`과 다르게 해당 데이터가 없으면 `null`을 표시한다
+
