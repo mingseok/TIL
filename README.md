@@ -138,9 +138,9 @@
 
 ### Querydsl
 - [[Querydsl] - Querydsl 설정과 검증](https://github.com/mingseok/TIL/blob/main/JPA/Querydsl%20%EC%84%A4%EC%A0%95.md)<br/>
-- [[Querydsl] - Querydsl vs JPQL 차이, Q-Type 관례]()<br/>
-- [[Querydsl] - 검색 조건 쿼리]()<br/>
-- [[Querydsl] - 결과 조회]()<br/>
+- [[Querydsl] - Querydsl vs JPQL 차이, Q-Type 관례](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20vs%20Querydsl.md)<br/>
+- [[Querydsl] - 검색 조건 쿼리](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%20%EC%BF%BC%EB%A6%AC.md)<br/>
+- [[Querydsl] - 결과 조회](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B2%B0%EA%B3%BC%20%EC%A1%B0%ED%9A%8C.md)<br/>
 - [[Querydsl] - ]()<br/>
 - [[Querydsl] - ]()<br/>
 - [[Querydsl] - ]()<br/>
