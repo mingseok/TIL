@@ -143,7 +143,7 @@
 - [[Querydsl] - 결과 조회](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B2%B0%EA%B3%BC%20%EC%A1%B0%ED%9A%8C.md)<br/>
 - [[Querydsl] - 정렬, 페이징, 집합](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A0%95%EB%A0%AC%2C%20%ED%8E%98%EC%9D%B4%EC%A7%95%2C%20%EC%A7%91%ED%95%A9.md)<br/>
 - [[Querydsl] - Querydsl 조인](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A1%B0%EC%9D%B8.md)<br/>
-- [[Querydsl] - ]()<br/>
+- [[Querydsl] - Querydsl 서브 쿼리](https://github.com/mingseok/TIL/blob/main/JPA/%EC%84%9C%EB%B8%8C%20%EC%BF%BC%EB%A6%AC.md)<br/>
 - [[Querydsl] - ]()<br/>
 
 
