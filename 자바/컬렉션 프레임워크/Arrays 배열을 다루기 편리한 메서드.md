@@ -66,7 +66,7 @@ System.out.println(Arrays.toString(arr)); // [0, 1, 2, 3, 4]
 System.out.println(Arrays.deepToString(arr2D)); // [[11, 12], [21, 22]]
 ```
 
-<br/>
+<br/><br/>
 
 ### 다차원 배열의 비교 - deepEquals()
 
@@ -103,7 +103,6 @@ List list = new ArrayList(Arrays.asList(1,2,3,4,5));
 
 ## 전체 예제1)
 ```java
-import java.util.*;
 
 class aaa {
 	public static void main(String[] args) {
