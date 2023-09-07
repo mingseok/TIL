@@ -127,8 +127,7 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
 protected void service(HttpServletRequest request, HttpServletResponse response) ... {
 
 request.getParameterNames().asIterator()
-        .forEachRemaining(paramName ->
-                 System.out.println(paramName + "=" + request.getParameter(paramName)));
+        .forEachRemaining(paramName -> System.out.println(paramName + "=" + request.getParameter(paramName)));
 
    // ...생략
 ```
