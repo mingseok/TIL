@@ -12,7 +12,7 @@
 - [인프랩(CTO) - 이동욱님의 강연](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%B4%EB%8F%99%EC%9A%B1%EB%8B%98%EC%9D%98%20%EA%B0%95%EC%97%B0.md)<br/>
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
 - [@Slf4j - 사용 방법](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B9%85.md)<br/>
-- [테스트 코드 작성 이유?]()<br/>
+- [테스트 코드 작성 이유?](https://github.com/mingseok/TIL/blob/main/ETC/%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EC%9D%B4%EC%9C%A0.md)<br/>
 - [bootstrap - 사용 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9.md)<br/>
 - [질문하는 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EC%A7%88%EB%AC%B8%20%EB%B0%A9%EB%B2%95.md)<br/>
 - [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
