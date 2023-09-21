@@ -127,8 +127,7 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
 protected void service(HttpServletRequest request, HttpServletResponse response) ... {
 
 request.getParameterNames().asIterator()
-        .forEachRemaining(paramName ->
-                 System.out.println(paramName + "=" + request.getParameter(paramName)));
+        .forEachRemaining(paramName -> System.out.println(paramName + "=" + request.getParameter(paramName)));
 
    // ...생략
 ```
@@ -183,7 +182,7 @@ http://localhost:8080/request-param?username=hello&age=20&kim=hello2&age=20
 
 
 
-
+<br/><br/>
 
 <br/><br/>
 

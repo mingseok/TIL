@@ -1,11 +1,21 @@
 ## lntellij 내장 DB
 
 ### 1. mySQL 들어가기 -> root 으로 일단 들어가자. 비번 1234
-    
+
+
+
 
 ![이미지](/programming/img/개인1.PNG)
 
 <br/><br/>
+
+
+
+
+```
+꼭 참고하기
+https://www.notion.so/mySQL-a5c0418f122b403a9fd0099832c2c5a7
+```
 
 ### 2. 테이블 생성
 
