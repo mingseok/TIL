@@ -18,14 +18,7 @@
 - [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
 - [Java 네이밍 규칙](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9E%90%EB%B0%94%EB%84%A4%EC%9D%B4%EB%B0%8D%EA%B7%9C%EC%B9%99.md)<br/>
 - [스트림 컨벤션](http://blog.marcinchwedczuk.pl/java-streams-best-practices)<br/>
-
-
-
-
-
-
-
-
+- [객체지향적 코드 설계](https://github.com/mingseok/TIL/blob/main/ETC/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1.md)<br/>
 
 
 
@@ -148,14 +141,6 @@
 - [[Querydsl] - 프로젝션](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%84%EB%A1%9C%EC%A0%9D%EC%85%98.md)<br/>
 - [[Querydsl] - 동적 쿼리](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8F%99%EC%A0%81%20%EC%BF%BC%EB%A6%AC.md)<br/>
 - [[Querydsl] - 순수 JPA 리포지토리, Querydsl 비교](https://github.com/mingseok/TIL/blob/main/JPA/%EC%88%9C%EC%88%98%20JPA%20%EB%A6%AC%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%2C%20Querydsl%20%EB%B9%84%EA%B5%90.md)<br/>
-
-
-
-- [[Querydsl] - ]()<br/>
-- [[Querydsl] - ]()<br/>
-
-
-
 
 
 
