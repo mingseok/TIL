@@ -10,6 +10,7 @@
 - [백엔드 개발자?](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%EC%9E%90.md)<br/>
 - [테스트 코드 작성 이유?](https://github.com/mingseok/TIL/blob/main/ETC/%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EC%9D%B4%EC%9C%A0.md)<br/>
 - [질문하는 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EC%A7%88%EB%AC%B8%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [효율을 올리는 독서 방법](https://brunch.co.kr/@gleet/61)<br/>
 - [멘토링 진행과정 (나의 블로그✏️)](https://alstjr706.tistory.com/category/%EB%A9%98%ED%86%A0%EB%A7%81)<br/>
 - [우아한형제들 - 김영한님의 강연](https://github.com/mingseok/TIL/blob/main/ETC/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%8A%94%20%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EC%82%AC%EB%8B%A4.md)<br/>
 - [인프랩(CTO) - 이동욱님의 강연](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%B4%EB%8F%99%EC%9A%B1%EB%8B%98%EC%9D%98%20%EA%B0%95%EC%97%B0.md)<br/>
@@ -24,7 +25,6 @@
 
 
 ### MyBatis 사용해보기 + Trouble Shooting. [(Link)](https://github.com/mingseok/facegram) 
-
 
 
 ```
