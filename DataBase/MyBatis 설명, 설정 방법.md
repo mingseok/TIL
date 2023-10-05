@@ -107,6 +107,8 @@ return template.query(sql, param, itemRowMapper());
 
 단순한 쿼리들이 많으면 `JdbcTemplate`을 선택해서 사용하면 된다. 
 
+<br/>
+
 물론 둘을 함께 사용해도 된다. 
 
 ```
