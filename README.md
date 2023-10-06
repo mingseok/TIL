@@ -24,6 +24,25 @@
 
 
 
+
+
+
+### 디자인패턴 & 자바 가상머신(JVM)
+- [컴파일]()<br/>
+- [JVM 동작원리]()<br/>
+- [디자인 패턴이란?]()<br/>
+- [스트래티지 패턴 (=전략패턴)]()<br/>
+- [싱글톤 패턴 (Singleton Pattern)]()<br/>
+- [옵저버 패턴 (Observer Pattern)]()<br/>
+
+
+
+
+
+
+
+
+
 ### MyBatis 사용해보기 + Trouble Shooting. [(Link)](https://github.com/mingseok/facegram) 
 
 
