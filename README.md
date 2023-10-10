@@ -30,11 +30,14 @@
 ### 내부 원리에 대해 깊게 이해하기
 
 ```
-단순 문법적인 내용을 익히는게 아니라 내부 원리에 대해 깊게 이해하도록 노력하기
+평소, 생각 없이 사용해 왔던 것들.
+정확히 어떤 의미인지 모르고 사용해 왔던것들.
+
+단순 문법적인 내용을 익히는 게 아니라, 
+내부 원리에 대해 깊게 이해하도록 노력하기
 ```
 
-
-- [System.out.println() 내부 동작원리]()<br/>
+- [System.out.println() 내부 동작원리](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/System.out.println()%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md)<br/>
 - []()<br/>
 - []()<br/>
 - []()<br/>
