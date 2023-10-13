@@ -40,7 +40,7 @@
 - [System.out.println() 내부 동작원리](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/System.out.println()%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md)<br/>
 - [실행을 위해서 왜 main() 메서드가 필요한 것인가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%A4%ED%96%89%EC%9D%84%20%EC%9C%84%ED%95%B4%EC%84%9C%20%EC%99%9C%20main%20%EB%A9%94%EC%84%9C%EB%93%9C%EA%B0%80%20%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
 - [컴파일(=compile) 내부 동작](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%BB%B4%ED%8C%8C%EC%9D%BC(%3Dcompile)%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
-- []()<br/>
+- [클래스와 메소드의 사용 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%9D%98%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
 - []()<br/>
 - []()<br/>
 - []()<br/>
