@@ -46,7 +46,7 @@
 - [변수들은 JVM에서 어디에 할당되는가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%80%20JVM%EC%97%90%EC%84%9C%20%EC%96%B4%EB%94%94%EC%97%90%20%ED%95%A0%EB%8B%B9%EB%90%98%EB%8A%94%EA%B0%80.md)<br/>
 - [char타입은 정수인가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/char%ED%83%80%EC%9E%85%EC%9D%80%20%EC%A0%95%EC%88%98%EC%9D%B8%EA%B0%80.md)<br/>
 - [String 객체를 생성하는 방법과 내부 동작 원리](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EB%A5%BC%20%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%EA%B3%BC%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.md)<br/>
-- [byte는 왜 만들어졌나?]()<br/>
+- [byte는 왜 만들어졌나?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/byte%EB%8A%94%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A1%8C%EB%82%98%EC%9A%94.md)<br/>
 - []()<br/>
 - []()<br/>
 - []()<br/>
