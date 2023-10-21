@@ -49,11 +49,32 @@
 - [byte는 왜 만들어졌나?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/byte%EB%8A%94%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A1%8C%EB%82%98%EC%9A%94.md)<br/>
 - [컴파일러는 왜 기본 생성자를 자동으로 생성해줄까?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%8A%94%20%EC%99%9C%20%EA%B8%B0%EB%B3%B8%20%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C%20%EC%83%9D%EC%84%B1%ED%95%B4%EC%A4%84%EA%B9%8C.md)<br/>
 - [생성자를 왜 만들어야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%95%BC%20%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
+- [배열의 index는 왜 0부터 시작하나요?]()<br/>
+- [DTO를 만들어 두면 무슨 장점이 있나요?]()<br/>
+- [상속 정의 / 상속이 갖는 단점들]()<br/>
+- [인터페이스는 상수 필드만 선언이 가능한 이유는?]()<br/>
+- [왜 모든 클래스는 Object 클래스의 상속을 받을까?]()<br/>
+- [toString() 내부 동작]()<br/>
+- [내부 클래스와 익명 클래스 장점이 무엇인가요?]()<br/>
 - []()<br/>
 - []()<br/>
 - []()<br/>
 - []()<br/>
 - []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+- []()<br/>
+
 
 
 
