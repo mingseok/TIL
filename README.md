@@ -37,44 +37,41 @@
 내부 원리에 대해 깊게 이해하도록 노력하기
 ```
 
-- [System.out.println() 내부 동작원리](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/System.out.println()%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md)<br/>
-- [실행을 위해서 왜 main() 메서드가 필요한 것인가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%A4%ED%96%89%EC%9D%84%20%EC%9C%84%ED%95%B4%EC%84%9C%20%EC%99%9C%20main%20%EB%A9%94%EC%84%9C%EB%93%9C%EA%B0%80%20%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [컴파일(=compile) 내부 동작](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%BB%B4%ED%8C%8C%EC%9D%BC(%3Dcompile)%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
-- [클래스와 메소드 사용 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%9D%98%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
-- [배열의 선언과 메모리 할당](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%ED%95%A0%EB%8B%B9.md)<br/>
-- [클래스와 객체 차이](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%B0%A8%EC%9D%B4.md)<br/>
-- [변수들은 JVM에서 어디에 할당되는가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%80%20JVM%EC%97%90%EC%84%9C%20%EC%96%B4%EB%94%94%EC%97%90%20%ED%95%A0%EB%8B%B9%EB%90%98%EB%8A%94%EA%B0%80.md)<br/>
-- [char타입은 정수인가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/char%ED%83%80%EC%9E%85%EC%9D%80%20%EC%A0%95%EC%88%98%EC%9D%B8%EA%B0%80.md)<br/>
-- [String 객체를 생성하는 방법과 내부 동작 원리](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EB%A5%BC%20%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%EA%B3%BC%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.md)<br/>
-- [byte는 왜 만들어졌나?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/byte%EB%8A%94%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A1%8C%EB%82%98%EC%9A%94.md)<br/>
-- [컴파일러는 왜 기본 생성자를 자동으로 생성해줄까?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%8A%94%20%EC%99%9C%20%EA%B8%B0%EB%B3%B8%20%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C%20%EC%83%9D%EC%84%B1%ED%95%B4%EC%A4%84%EA%B9%8C.md)<br/>
-- [생성자를 왜 만들어야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%95%BC%20%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
-- [배열의 index는 왜 0부터 시작하나요?]()<br/>
-- [DTO를 만들어 두면 무슨 장점이 있나요?]()<br/>
-- [상속 정의 / 상속이 갖는 단점들]()<br/>
-- [인터페이스는 상수 필드만 선언이 가능한 이유는?]()<br/>
-- [왜 모든 클래스는 Object 클래스의 상속을 받을까?]()<br/>
-- [toString() 내부 동작]()<br/>
-- [내부 클래스와 익명 클래스 장점이 무엇인가요?]()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-- []()<br/>
-
+- [[깊게 이해하기] - System.out.println() 내부 동작원리](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/System.out.println()%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md)<br/>
+- [[깊게 이해하기] - 실행을 위해서 왜 main() 메서드가 필요한 것인가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%A4%ED%96%89%EC%9D%84%20%EC%9C%84%ED%95%B4%EC%84%9C%20%EC%99%9C%20main%20%EB%A9%94%EC%84%9C%EB%93%9C%EA%B0%80%20%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [[깊게 이해하기] - 컴파일(=compile) 내부 동작](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%BB%B4%ED%8C%8C%EC%9D%BC(%3Dcompile)%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
+- [[깊게 이해하기] - 클래스와 메소드 사용 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%9D%98%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [[깊게 이해하기] - 배열의 선언과 메모리 할당](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%ED%95%A0%EB%8B%B9.md)<br/>
+- [[깊게 이해하기] - 클래스와 객체 차이 / JVM 메모리 위치는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%B0%A8%EC%9D%B4.md)<br/>
+- [[깊게 이해하기] - 변수들은 JVM에서 어디에 할당되는가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%80%20JVM%EC%97%90%EC%84%9C%20%EC%96%B4%EB%94%94%EC%97%90%20%ED%95%A0%EB%8B%B9%EB%90%98%EB%8A%94%EA%B0%80.md)<br/>
+- [[깊게 이해하기] - char타입은 정수인가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/char%ED%83%80%EC%9E%85%EC%9D%80%20%EC%A0%95%EC%88%98%EC%9D%B8%EA%B0%80.md)<br/>
+- [[깊게 이해하기] - String 객체를 생성하는 방법과 내부 동작 원리](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EB%A5%BC%20%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%EA%B3%BC%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.md)<br/>
+- [[깊게 이해하기] - byte는 왜 만들어졌나?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/byte%EB%8A%94%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A1%8C%EB%82%98%EC%9A%94.md)<br/>
+- [[깊게 이해하기] - 컴파일러는 왜 기본 생성자를 자동으로 생성해줄까?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%8A%94%20%EC%99%9C%20%EA%B8%B0%EB%B3%B8%20%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C%20%EC%83%9D%EC%84%B1%ED%95%B4%EC%A4%84%EA%B9%8C.md)<br/>
+- [[깊게 이해하기] - 생성자를 왜 만들어야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%95%BC%20%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
+- [[깊게 이해하기] - 배열의 index는 왜 0부터 시작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20index%EB%8A%94%20%EC%99%9C%200%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
+- [[깊게 이해하기] - DTO를 만들어 두면 무슨 장점이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DTO%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%91%90%EB%A9%B4%20%EB%AC%B4%EC%8A%A8%20%EC%9E%A5%EC%A0%90%EC%9D%B4%20%EC%9E%88%EB%82%98%EC%9A%94.md)<br/>
+- [[깊게 이해하기] - 상속 정의 / 상속이 갖는 단점들](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%81%EC%86%8D%20%EC%A0%95%EC%9D%98%2C%20%EC%83%81%EC%86%8D%EC%9D%B4%20%EA%B0%96%EB%8A%94%20%EB%8B%A8%EC%A0%90%EB%93%A4.md)<br/>
+- [[깊게 이해하기] - 인터페이스는 상수 필드만 선언이 가능한 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%8A%94%20%EC%83%81%EC%88%98%20%ED%95%84%EB%93%9C%EB%A7%8C%20%EC%84%A0%EC%96%B8%EC%9D%B4%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [[깊게 이해하기] - 왜 모든 클래스는 Object 클래스의 상속을 받을까?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%99%9C%20%EB%AA%A8%EB%93%A0%20%ED%81%B4%EB%9E%98%EC%8A%A4%EB%8A%94%20Object%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98%20%EC%83%81%EC%86%8D%EC%9D%84%20%EB%B0%9B%EC%9D%84%EA%B9%8C.md)<br/>
+- [[깊게 이해하기] - toString() 내부 동작](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/toString()%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
+- [[깊게 이해하기] - 내부 클래스와 익명 클래스 장점이 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%82%B4%EB%B6%80%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%9D%B5%EB%AA%85%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%9E%A5%EC%A0%90%EC%9D%B4%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
 
 
 
