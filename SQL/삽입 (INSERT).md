@@ -61,6 +61,35 @@ insert 해보면 이렇게 저장 되는 걸 알 수 있다.
 ![이미지](/programming/img/입문163.PNG)
 
 
+</br></br>
+
+## 추가로 내가 넣고 싶은 데이터만 삽입 할 수 있다.
+
+
+### 기존 테이블 스키마
+
+| id | name | birth_date | sex | position(직군) | salary(연봉) | dept_id(부서id) |
+| --- | --- | --- | --- | --- | --- | --- |
+
+</br>
+
+### 넣고 싶은 데이터만 넣기
+
+id인 프라이머리키가 뒤로 빠진걸 알 수 있고,
+
+salary(연봉), dept_id(부서id) 두개의 컬럼이 빠진걸 알 수 있다.
+
+```sql
+insert into employee (name, birth_date, sex, position, id) 
+values ('JENNT', '2000-10-12', 'F', 'DEV_BACK', 3);
+```
+
+### 만약, 넣지 않은 경우는 무슨 경우 일까?
+
+아마도, 해당 attribute를 보면 default값으로 설정되어 있기 때문일 것이다. (=아닐수도 있다.)
+
+
+
 
 </br></br>
 

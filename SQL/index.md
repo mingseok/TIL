@@ -1,229 +1,126 @@
-## 제약, 인덱스
+## keys, reference_option
 
-이처럼 열에 대해 정의하는 제약을 '`열 제약`'이라고 부른다.
+## relation의 특징들은?
 
-```sql
-create table sample631 (
-    a integer NOT NULL,
-    b integer NOT NULL UNIQUE,
-    c varchar(30)
-);
-```
+### 1. `relation`은 중복된 `tuple`을 가질 수 없다.
 
-<br/><br/>
+![이미지](/programming/img/입문402.PNG)
 
-## 테이블 제약 정의하기
+### 2. relation의 tuple을 식별하기 위해 attribute의 부분 집합을 `key`로 설정한다.
 
-한개의 제약으로 복수의 열에 제약을 설명하는 경우를 '`테이블 제약`'이라고 부른다.
+![이미지](/programming/img/입문403.PNG)
 
-```sql
-create table sample632 (
-    no integer NOT NULL,
-    sub_no integer NOT NULL,
-    name varchar(30),
-    PRIMARY KEY (no, sub_no)
-);
-```
+3. relation에서 tuple의 순서는 중요하지 않다.
 
+4. 하나의 relation에서 attribute의 이름은 중복되면 안된다.
 
-<br/><br/>
+5. 하나의 tuple에서 attribute의 순서는 중요하지 않다.
 
-## 제약 이름 붙이기
-
-제약에 이름을 붙이면 관리하기 쉬워진다.
+6. attribute는 atomic 해야 한다.
 
 ```sql
-create table sample632 (
-    no integer NOT NULL,
-    sub_no integer NOT NULL,
-    name varchar(30),
-    CONSTRAINT pkey_sample PRIMARY KEY (no, sub_no)
-);
+6. 추가 설명
+ex1) "서울특별시 강남구 청담동" 이런 데이터가 있다면, 3개로 나눠야 한다는 것이다.
+ex2) "컴공, 디자인" 되어 있다면 → 2개로 나눠야 한다는 것이다.
 ```
-
-이렇게 이름을 지정할 수가 있다.
 
 <br/><br/>
 
-## 인덱스
 
-인덱스의 역할은 검색속도의 향상이다.
-
-<br/>
-
-### 검색이란?
-
-`select` 명령에 `where` 구로 조건을 지정하고 그에 일치하는 행을 찾는 일련의 과정을 말한다.
-
-
-<br/>
-
-### 예시
-
-책안에 있는 특정한 부분을 찾고 싶은 경우, 
-
-본문을 처음부터 읽어나가기보다 목차나 색인을 참고해서 찾는 편이 효율적이다.
-
-```
-인덱스가 바로 이런 역할이다
-```
-
-
-<br/><br/>
-
-## 인덱스의 종류 (=키)
-
-- `primary :` 중복되지 않는 유일한 키
-
-- `normal :` 중복을 허용하는 인덱스
-- `unique :` 중복을 허용하지 않는 유일한 키
-- `foreign :` 다른 테이블과의 관계성을 부여하는 키
-- `full text :` 자연어 검색, myisam에서만 지원
-
-<br/><br/>
-
-## 예제를 위한 준비 단계.
-
-```sql
-DROP TABLE IF EXISTS `student`;
-CREATE TABLE `student` (
-  `id` tinyint(4) NOT NULL AUTO_INCREMENT,
-  `name` char(4) NOT NULL,
-  `address` varchar(50) NOT NULL,
-  `department` enum('국문과','영문과','컴퓨터공학과','전자공학과','물리학과') NOT NULL,
-  `introduction` text NOT NULL,
-  `number` char(255) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `idx_number` (`number`) USING BTREE,
-  KEY `idx_department` (`department`),
-  KEY `idx_department_name` (`department`,`address`),
-  FULLTEXT KEY `idx_introduction` (`introduction`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
-```
-
-<br/>
-
-
-## INSERT
-
-```sql
-INSERT INTO `student` VALUES (1, '이숙경', '청주', '컴퓨터공학과', '저는 컴퓨터 공학과에 다닙니다. computer', '0212031');
-INSERT INTO `student` VALUES (2, '박재숙', '서울', '영문과', '저는 영문과에 다닙니다.', '0512321');
-INSERT INTO `student` VALUES (3, '백태호', '경주', '컴퓨터공학과', '저는 컴퓨터 공학과에 다니고 경주에서 왔습니다.', '0913134');
-INSERT INTO `student` VALUES (4, '김경훈', '제천', '국문과', '제천이 고향이고 국문과에 다닙니다.', '9813413');
-INSERT INTO `student` VALUES (6, '김경진', '제주', '국문과', '이번에 국문과에 입학한 김경진이라고 합니다. 제주에서 왔어요.', '0534543');
-INSERT INTO `student` VALUES (7, '박경호', '제주', '국문과', '박경호입니다. 잘 부탁드립니다.', '0134511');
-INSERT INTO `student` VALUES (8, '김정인', '대전', '영문과', '김정인입니다. 대전에서 왔고, 영문과에 다닙니다.', '0034543');
-```
-
-<br/>
-
-![이미지](/programming/img/입문196.PNG)
-
-<br/><br/>
-
-## primary key (프라이머리 키)
+## primary key : 중복되지 않는 유일한 키
 
 ```
 PRIMARY KEY (`id`)
 ```
 
+테이블 전체를 통틀어서 중복되지 않는 값을 지정해야 한다.
 
-- 테이블 전체를 통틀어서 중복되지 않는 값을 지정해야 한다.
-    - ‘id’ 인 컬럼을 ‘프라이머리 키' 로 지정한다. 라는 뜻은 `INSERT` 될때 중복이 되어선 안된다 라는 뜻이다.
 
-        
+
+- INSERT 될때 중복이 되어선 안된다 라는 뜻이다.
+
 - where 문을 이용해서 데이터를 조회할 때 가장 고속으로 데이터를 가져올 수 있다.
 
 - 테이블마다 딱 하나의 primary key를 가질 수 있다.
+
 - null 값도 절대로 허용이 안된다.
 
-<br/>
-
-### 예제
-
-```sql
-select * from student where id=3;
-```
-
-장점은. 아주 고속으로 데이터를 가져 올 수 있는 것이다.
-
-![이미지](/programming/img/입문197.PNG)
 
 <br/><br/>
 
-## unique key (유니크 키)
+## unique key
 
-- `UNIQUE KEY` idx_number 는 유니크 키의 이름이다. 
+- `primary key`가 아닌 `alternate key`(대체 키)
 
-    만약, 이걸 생략하면 자동으로 데이터 베이스가 이름을 만들어 준다.
-    
-    그리고 `(`number`)` 지정하면 number 컬럼이 `‘유니크 키’` 로 지정이 된다. 
-
-<br/>
-    
-- 즉, 이 `“테이블 전체에서 다른 값이랑 충돌하지 않는다”` 라는 것이 보장이 되는 것이다.
-    
-    여기서 `number는 == 학생의 학번`이라고 생각하면 된다. (유일한 식별자)
-
-<br/>
-
-
-### `프라이머리 키`와의 차이는 null을 허용한다 vs 안한다 의 차이다.
-
-- `유니크 키` 는 `null을 허용 한다.`
-
-- 여러개의 `unique key`를 지정할 수 있다.
-
-<br/>
-
-### 예제
+- 유니크 키로 지정 되었다면, `중복`된 값을 가질 수 없다
+- 단, `NULL`은 `중복`을 허용할 수도 있다.
 
 ```sql
-select * from student where number=0534543;
+// id는 primary key로 설정 되어 있다고 가정.
+PLAYER(id, name, team_id, back_number, birth_date)의 unique key는? 
+-> {team_id, back_number}
 ```
 
-![이미지](/programming/img/입문198.PNG)
+<br/>
+
+### 프라이머리 키와의 차이는 null을 허용한다 vs 안한다 의 차이다.
+
+유니크 키 는 null을 허용 한다.
+
+여러개의 unique key를 지정할 수 있다.
+
 
 <br/><br/>
 
-## normal key
+## foreign key
 
-- 'KEY' `idx_department` (`department`)` - KEY 라고 되어 있는 것들은 모두 normal key 이다.
-- 인덱스가 중복되는 “국문과 사람들을 중복으로 걸고 싶다.” 이럴때 사용한다.
-    
-    즉, 인덱스를 걸어 놨기 때문에 인덱스를 걸어 놓지 않은것 보다 더 빠르게 조회 가능하다.
-    
-- `중복을 허용한다.`
-- 여러개의 키를 지정할 수 있다.
+- 다른 `relation`의 `PK`를 참조하는 `attributes set`이다.
 
+- 즉, `attribute`가 다른 `table`의 `primary key`나 `unique key`를 참조할 때 사용한다.
+
+- 그리고, 다른 table의 프라이머리키가 반드시 존재하는 값이여 한다.
+    
+![이미지](/programming/img/입문404.PNG)
+    
 
 <br/>
 
-### 예제
-
 ```sql
-select * from student where department='국문과'
-```
+PLAYER(id, name, team_id, back_number, birth_date)와
+TEAM(id, name, manager)가 있을 때
+foreign key는 PLAYER의 {team_id} 가 된다.
 
-![이미지](/programming/img/입문199.PNG)
+그리하여, "PLAYER의 {team_id}"는 "TEAM의 {id}"를 참조하게 되는 것이다.
+```
 
 <br/><br/>
 
-## 중복키
+## foreign key reference_option 추가 설명
 
-- `KEY `idx_department_name` (`department`,`address`)` 즉, (`department`,`address`) 를 묶어서 
+![이미지](/programming/img/입문405.PNG)
 
-    하나의 노멀 키로 구성을 한것이다. 즉, 하나의 정의 안에 두개의 키가 들어간 것이다.
-- 하나의 키에 여러개의 칼럼을 포함
+### 빨간색 부분을 설명하자면
 
+- `FORELGN KEY (dept_id)`
+
+    - 현재 employee의 포링키를 `dept_id`로 지정 했다
+
+- `references DEPARTMENT(id)`
+
+    - `dept_id`가 참조하는 것은 `DEPARTMENT(id)`의 id를 참조한다.
+
+- `on delete SET NULL`
+
+    - 참조하는 값이 삭제가 될 경우에는 `dept_id` 를 NULL로 변경해준다.
+    
+- `on update CASCADE`
+
+    - 만약, 위 과정이 아니라, 참조하는 값이 업데이트가 된다면,
+        
+        업데이트 되는 값으로 변경해 준다고 선언한 것이다.
+        
+    - `CASCADE`에 관련 추가 내용들은 밑에 참고하기!
 
 <br/>
 
-### 예제
-
-```sql
-select * from student where department='국문과' AND address='제주';
-```
-
-![이미지](/programming/img/입문200.PNG)
+![이미지](/programming/img/입문406.PNG)

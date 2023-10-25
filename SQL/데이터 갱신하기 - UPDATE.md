@@ -168,3 +168,98 @@ UPDATE `student` SET name='이고잉', birthday='2001-4-1' WHERE id=3;
 이렇게 변경 되는 것이다.
 
 ![이미지](/programming/img/입문171.PNG)
+
+
+<br/><br/>
+
+## 만약, 개발팀 연봉을 두 배로 인상하고 싶다면?
+
+
+### EMPLOYEE : 직원
+
+| id | name | birth_date | sex | position(직군) | salary(연봉) | dept_id(부서id) |
+| --- | --- | --- | --- | --- | --- | --- |
+
+<br/>
+
+### PROJECT : 이, 회사가 진행하는 프로젝트 정보
+
+| id | name | leader_id | start_date | end_date |
+| --- | --- | --- | --- | --- |
+
+
+<br/>
+
+### WORKS_ON : 직원들이 어떤 프로젝트에 일하고 있는지에 대한 정보
+
+| empl_id | proj_id |
+| --- | --- |
+
+
+
+<br/><br/>
+
+- 개발팀 ID는 1003이다.
+
+```sql
+update employee
+set salary = salary * 2
+where dept_id = 1003;
+```
+
+<br/><br/>
+
+## 위 테이블 참고) 만약, 프로젝트에 참여한 직원의 연봉을 두 배로 인상하고 싶다면?
+
+- 프로젝트팀의 ID는 2003이다.
+
+- 일단, 직원들의 정보도 알아야하기 때문에 `employee` 테이블도 연관이 있을 것이다.
+
+
+<br/>
+
+### 추가로 알고 있어야 할 테이블
+
+`WORKS_ON`: 직원들이 어떤 프로젝트에 일하고 있는지에 대한 정보인 테이블이다.
+
+
+| empl_id | proj_id |
+| --- | --- |
+
+
+```sql
+update employee, works_on
+set salary = salary * 2
+where employee.id = works_on.empl_id and works_on.proj_id = 2003;
+```
+
+<br/>
+
+### where employee.id = works_on.empl_id and works_on.proj_id = 2003; -> 설명
+
+- `where employee.id`: employee 테이블에 있는 id이다.
+
+- `= works_on.empl_id`: works_on 테이블에 있는 empl_id 이다
+
+
+```
+여기까지 무슨 뜻이냐?
+-> `employee.id = works_on.empl_id` 가 동일하다는 걸 말하는 것이다. 
+-> 즉, "연결고리 역할을 하는 것이다."
+
+
+그리고 `and works_on.proj_id = 2003` 
+직원 id가 2003일때 연봉을 올려주는 것이다.
+```
+
+<br/><br/>
+
+## 회사의 모든 구성원의 연봉을 두 배로 올리자.
+
+```sql
+update employee
+set salary = salary * 2;
+```
+
+
+
