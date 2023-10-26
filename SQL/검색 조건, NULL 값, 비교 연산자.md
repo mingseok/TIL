@@ -1,202 +1,81 @@
-## 검색 조건, NULL 값, 비교 연산자
+## 데이터 조회 (SELECT) / AS 사용 / 중복값 제외 (DISTINCT)
 
+SELECT statement 라고도 부른다.
 
-
-<br/>
-
-## 세미콜론
-
-```sql
-mysql> select * from sample706
-    -> ...
-```
-
-mysql은 명령의 마지막에는 세미콜론(;)을 붙여줘야 한다. (그렇지 않으면 계속 다음줄로 넘어감)
-
-<br/><br/>
-
-
-## 명령의 종류
-
-```
-SELECT * FROM sample21
-```
-
-
-<br/>
-
-### SELECT 구
-
-SELECT는 SQL 명령의 한 종류로 'SELECT 명령을 실행하세요' 라는 의미이다.
-
-<br/>
-
-### * (=열을 의미한다)
-
-애스터리스크(*) '모든 열'을 의미하는 메타문자이다.
-
-sample21 테이블의 모든 데이터를 읽어 온다.
-
-
-<br/>
-
-### FROM 구
-
-처리 대상 테이블을 지정하는 키워드이다.
-
-FROM 뒤에 테이블명을 지정한다.
-
-
-<br/><br/>
-
-## 테이블 구조
-
-![이미지](/programming/img/입문160.PNG)
-
-'no'라는 열은 숫자만으로 구성된 데이터를 ‘수치형’ 데이터라고 한다.
-
-'name' 이라는 열은 ‘문자열형’ 데이터라고 부른다. 
-
-'birthday' 라는 열은 ‘날짜시간형’ 데이터라고 부른다.
-
+문제들의 상황에 따라 설명하도록 한다.
 
 <br/>
 
 
-### 값이 없는 데이터 = NULL
+## 문제 1)
 
-NULL이라는 데이터가 저장되어 있는 것이 아닌, '아무 것도 저장되어 있지 않은 상태'라는 뜻이다.
-
-<br/><br/>
-
-## 테이블 구조 참조하기
+id가 9인 직원의 이름과 직군을 알고 싶다.
 
 ```sql
-DESC 테이블명;
+select name, position 
+from employee
+where id = 9;
 ```
 
-![이미지](/programming/img/입문161.PNG)
+- 앞부분 `name, position`은 projection attributes 라고 부른다.
 
 
-<br/><br/>
-
-
-## 검색 조건 지정하기 (where)
-
-조건을 지정하여 데이터를 검색하는 방법
-
-```sql
-select 열1, 열2 from 테이블명 where 조건식
-```
-
-(중요) `행`을 선택할 때는 `where` 구를 사용하며, `열`을 선택할 때는 `select` 구를 사용한다.
-
-
+- 마지막 `id = 9` 조건 부분을 selection condition 이라고 부른다.
 
 
 <br/><br/>
 
-## select 구에서 열 지정하기
+## 문제 2)
 
-```sql
-select 열1, 열2 from 테이블명
-```
-
-열은 콤마(,)를 이용하여 구분 짓는다.
+project 2002를 리딩하고 있는 직원의 id와 이름과 직군을 알고 싶다.
 
 
-![이미지](/programming/img/입문336.PNG)
+![이미지](/programming/img/입문407.PNG)
+
+
+그림을 설명하자면, `leader_id`를 통해서 -> `employee`테이블로 접근이 가능하게 되는 것이다.
+
+그렇게, 최종적으로 내가 관심있는 attributes들에게 접근하면 되는 것이다.
 
 
 <br/>
 
-```sql
-select address, name from sample21
-```
-
-결과는 지정한 열의 순서대로 표시된다.
-
-그리고 동일한 열을 중복해서 지정해도 무관하다.
-
-
-<br/><br/>
-
-## 예제1)
+### 쿼리 작성
 
 ```sql
-SELECT * FROM student;
-```
-
-전체 읽어 오는것.
-
-```sql
-SELECT name, birthday FROM student;
-```
-
-name, birthday 컬럼만 가져 오는 것이다.
-
-![이미지](/programming/img/입문176.PNG)
-
-
-
-
-
-<br/><br/>
-
-
-## where 구에서 행 지정하기
-
-where 구는 from 구의 뒤에 표기한다.
-
-```sql
-select 열 from 테이블명 where 조건식
+select employee.id, employee.name, position
+from project, employee
+where project.id = 2002 and project.leader_id = employee.id;
 ```
 
 <br/>
 
-### where 구처럼 생략 가능한 것도 있다.
+### 그림으로 설명
 
-만약, where 구를 생략한 경우는 테이블 내의 모든 행이 검색 대상이 되는 것이다.
+1. `project` 테이블에 id 컬럼이 `2002`에 대한 튜플(=가로 한줄)이 선택이 되는 것이다.
 
-<br/>
+2. 그리고 `project` 테이블에 `leader_id` 컬럼 데이터와 
 
-### 'no = 1' 조건식
+    `employee` 테이블의 `id`가 같아야 된다고 조건을 명시 하는 것이다.
 
-이 조건식에 일치하는 행만 select의 결과를 반환한다.
-
-
-![이미지](/programming/img/입문337.PNG)
-
-포인트는 : where 구의 조건에 일치하는 행만 결과로 반환 한다는 것이다.
+    - 즉, 두개의 테이블을 연결 시키는 역할을 하는 것이다.
 
 
-<br/><br/>
+3. where구의 조건은 `and`로 묶여있기 때문에 `project` `id`가 `2002`인 `leader_id`로 선택 되는 것이다.
 
-## 조건식
+4. 추가로) `employee.id` 처럼 id 앞에 테이블 이름을 작성해주는 이유는, `attribute`가 충돌나기 때문이다. 
 
-조건식 'no = 2'는 no열 값이 2일 경우에 참이 되는 조건이다.
+    - 만약, 충돌이나지 않는다면 테이블명을 작성하지 않아도 된다.
 
-'=' 연산자를 기준으로 서로 같으면 참을, 같지 않으면 거짓을 반환한다.
+![이미지](/programming/img/입문408.PNG)
 
 <br/>
 
-no = 2의 조건식에서 no열 값이 2인 행은 참이 되며 1이나 3인 행은 거짓이 된다.
+### 출력값 확인
 
-
-
-<br/><br/>
-
-## 예제2)
-
-```sql
-SELECT * FROM student WHERE id=3;
-```
-
-3번 id인 사람의 정보만 가져 오는 것이다.
-
-![이미지](/programming/img/입문177.PNG)
-
-
+| id | name | position |
+| --- | --- | --- |
+| 13 | JISUNG | PO |
 
 
 
@@ -205,21 +84,9 @@ SELECT * FROM student WHERE id=3;
 
 <br/><br/>
 
-## 값이 서로 다른 경우 '<>'
-
-서로 다른 값인지를 비교하는 연산자이다.
-
-no열 값이 2가 아닐 경우 참이 되므로, 값이 1과 3인 행이 결과로 표시된다.
 
 
-![이미지](/programming/img/입문162.PNG)
-
-<br/><br/>
-
-
-## where 예제)
-
-### 나이가 30세 이상
+### 문제 3) 나이가 30세 이상
 
 ```sql
 select name, age
@@ -237,12 +104,12 @@ where age >= 30;
 
 <br/>
 
-### 주소가 서울시 이외
+### 문제 4) 주소가 서울시 이외
 
 ```sql
 select name, address
 from Address
-where address <> '서울시';
+where address != '서울시';
 ```
 
 | name | address |
@@ -255,7 +122,7 @@ where address <> '서울시';
 
 <br/>
 
-### 주소가 서울시에 있다 그리고 나이가 30세 이상이다.
+### 문제 5) 주소가 서울시에 있다, 그리고 나이가 30세 이상이다.
 
 ```sql
 select name, address, age
@@ -271,76 +138,126 @@ AND age >= 30;
 
 
 
-
-
 <br/><br/>
 
-## 문자열형의 상수
+## AS 사용하기
 
-문자열형을 비교할 경우는 ‘박준용’ 처럼 싱글쿼트`(’ ’)`로 둘러싸 표기 해야 한다.
+AS는 테이블이나 attribute에 별칭을 붙일 때 사용한다.
 
-위 사진에서 '박준용' 만 가지고 오고 싶다면 밑에 쿼리처럼 작성해야 한다.
+```
+- AS는 생략도 가능하다.
+```
+<br/>
+
+### 문제 2번을 예시로 설명하겠다.
+
+이렇게 수정이 가능하다
+
+- 포인트는 `from`절에서 `project AS P` 이렇게 선언을 해줘야 한다는 것이다.
+
+- `from` 절에도 AS 생략 가능하다.
+
+
 
 ```sql
-SELECT * FROM sample21 WHERE name = '박준용'
+select E.id, E.name, position
+from project AS P, employee AS E
+where P.id = 2002 and P.leader_id = E.id;
 ```
 
-<br/><br/>
+<br/>
 
-## NULL 값 검색
 
-= 연산자로 NULL 을 검색할 수 없다.
+### 그리고 출력값을 확인해보자.
+
+`id`, `name`, `position`으로 출력 시키기는 뭔가 명확하지 않다.
+
+그렇기에 이것도 AS 사용하여 바꿔주는 것이다.
+
+즉, 셀렉트 결과에 대한 이름에 대해서 새로운 이름을 붙여주고 싶은 것이다.
+
+| id | name | position |
+| --- | --- | --- |
+| 13 | JISUNG | PO |
 
 
 <br/>
 
 
-### 틀린 코드
+### 쿼리 변경해보기
+
 
 ```sql
-select name, address
-from Address
-where phone_nbr = NULL;
+select E.id AS leader_id, E.name AS leader_name, position
+from project AS P, employee AS E
+where P.id = 2002 and P.leader_id = E.id;
 ```
 
-실제로 제대로 작동하는 select구문이 아니다. (물론 오류가 발생하지도 않는다)
+이렇게 작성이 가능한 것이다.
 
+- AS는 생략 가능하다.
 
-`null을 검색하고 싶을때는 'IS NULL' 사용하기`
 
 <br/><br/>
 
-## IS NULL
 
-NULL 값을 검색할 때는 = 연산자가 아닌 `‘IS NULL’` 을 사용 해야 한다.
+## 중복값 제외 (DISTINCT)
 
-`IS NULL` 을 사용해 birthday가 NULL인 행만 추출
 
-```sql
-SELECT * FROM sample21 WHERE birthday IS NULL;
-```
+SQL의 SELECT 명령은 이러한 중복된 값을 제거하는 함수를 제공한다.
 
 <br/>
 
-### 출력값
 
-| no | name | birthday | address |
-| --- | --- | --- | --- |
-| 2 | 김재진 | NULL | 대구광역시 동구 |
-| 3 | 홍길동 | NULL | 서울특별시 마포구 |
+## 문제 1)
 
-반대로 NULL 값이 아닌 행을 검색하고 싶다면 `‘IS NOT NULL’` 을 사용하면 된다.
+디자이너들이 참여하고 있는 프로젝트들의 ID와 이름을 알고 싶다
 
-<br/><br/>
+- 디자이너와 프로젝트를 연결 시켜주는 것이 `WORKS_ON` 테이블인것이다.
 
-## 비교 연산자
+- 왜냐면, `WORKS_ON` 테이블은 어떤 직원이, 어떤 프로젝트에 일하고 있는지 알 수 있기 때문이다.
 
-대표적인 비교 연산자들은 이렇게 있다.
+![이미지](/programming/img/입문410.PNG)
+
+
+<br/>
+
+### 쿼리 작성
+
+```sql
+select P.id, P.name
+FROM employee AS E, works_on AS W, project P
+WHERE E.position = 'DSGN' and
+      E.id = W.empl_id and W.proj_id = P.id;
+```
+
+
+<br/>
+
+### 출력값 확인
 
 ```
-`=` , `<>` , `>` , `>=` , `<` , `<=`
+중복값이 발생했다! -> 이때 사용하는 것이 DISTINCT 키워드 인것이다.
 ```
 
-<br/><br/>
+| id | name |
+| --- | --- |
+| 2002 | 백엔드 리팩토링 |
+| 2003 | 홈페이지 UI 개선 |
+| 2003 | 홈페이지 UI 개선 |
 
->**Reference** <br/> SQL 첫걸음 : 아사이 아츠시 지음, 박준용 옮김, 한빛미디어
+<br/>
+
+
+### 쿼리 수정
+
+DISTINCT 키워드를 사용할 경우 P.id, P.name에 대해서들은 
+
+중복된 값을 제외하고 나오게 되는 것이다.
+
+```sql
+select DISTINCT P.id, P.name
+FROM employee AS E, works_on AS W, project P
+WHERE E.position = 'DSGN' and
+      E.id = W.empl_id and W.proj_id = P.id;
+```

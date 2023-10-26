@@ -2,128 +2,96 @@
 
 <br/>
 
-## 패턴 매칭 (=LIKE)
 
-왼쪽에는 매칭 대상을 지정하고 오른쪽에는 패턴을 문자열로 지정한다.
+## LIKE 문제 1)
 
-```sql
-열명 LIKE '패턴'
-```
-
-<br/>
-
-패턴을 정의할 때는 `메타문자`를 사용할 수 있다. (`와일드카드` 라고도 불린다)
+이름이 N으로 시작하거나 N으로 끝나는 직원들의 이름을 알고 싶다.
 
 ```sql
-'%' , '_'
+select name
+from employee
+where name like 'N%' or name like '%N';
 ```
 
+- N% : n으로 시작하는 경우
 
-<br/><br/>
-
-## LIKE 예제
-
-![이미지](/programming/img/입문340.PNG)
+- %N : n으로 끝나는 경우
 
 
 <br/>
 
-### 여기서 no가 3인 행이 검색되지 않은 이유는?
 
-text 열 값이 SQL로 시작되지 않았기 때문이다.
+### 출력값 확인
 
-다시말해, 'SQL' 앞에 문자열이 존재하기 때문이다.
-
-<br/>
-
-
-### 만약, 'SQL'이 존재하는 모든것을 검색하고자 한다면?
-
-```sql
-select * from sample21 where text LIKE '%SQL%';
-```
-
-이렇게 작성하면 no=1 과 no=3을 가지고 오게 되는 것이다.
-
+| name |
+| --- |
+| BROWN |
+| JOHN |
+| NICOLE |
 
 
 <br/><br/>
 
 
-## 예제) ‘%’
+## LIKE 문제 2)
+
+이름에 NG가 들어가는 직원들의 이름을 알고 싶다
 
 ```sql
-SELECT
-  'HELLO' LIKE 'hel%', -- hel 도 참이고, hellllll 도 참 인것이다.
-  'HELLO' LIKE 'H%O', -- HO 도 참이고, hellllllO 도 참 인것이다.
-  'HELLO' LIKE '%O', -- O 도 참이고, hellllllO 도 참 인것이다.
-  'HELLO' LIKE '%HELLO%', -- %HELLO% 앞뒤로 있으니, 'asdgaweggHELLOasasd' 이것도 참이다.
-  'HELLO' LIKE '%H', -- H로 끝난다는 의미이다.
-  'HELLO' LIKE 'L%' -- L로 시작한다는 의미이다.
+select name
+from employee
+where name like '%NG%';
 ```
 
 <br/>
 
-```sql
-SELECT * FROM Customers
-WHERE CustomerName LIKE 'b%';
-```
+### 출력값 확인
 
-CustomerName 컬럼에서 첫글자가 ‘b’ 인 애들 모두 출력
+| name |
+| --- |
+| DINGYO |
+| JISUNG |
 
 
 
-![이미지](/programming/img/입문207.PNG)
 
 <br/><br/>
 
 
-```sql
-SELECT * FROM Employees
-WHERE Notes LIKE '%economics%'
-```
+## LIKE 문제 3)
 
-
-활용도는 이걸 포함한 것을 찾고 싶을때 사용 하는 것이다.
-
-![이미지](/programming/img/입문208.PNG)
-
-<br/><br/>
-
-
-## 예제) ‘_’
-
-딱 맞게 빈자리를 채울 수 있다면 참인 것이다.
+이름이 J로 시작하는, 총 네글자의 이름을 가지는 직원들의 이름을 알고 싶다
 
 ```sql
-SELECT
-  'HELLO' LIKE 'HEL__', -- HEL__ 은 2글자 더 올수 있는 것이다. 그리하여 'HELLO' 가 참이다.
-  'HELLO' LIKE 'h___O', -- h___O 는 3글자 더 올수 있으니, 'HELLO' 가 참인 것이다. 
-  'HELLO' LIKE 'HE_LO', -- HE_LO 는 1글자 더 올수 있으니, 'HELLO' 가 참인 것이다.
-  'HELLO' LIKE '_____',  -- 여기까지가 참이다.
-  'HELLO' LIKE '_HELLO', -- 거짓이다. false 
-  'HELLO' LIKE 'HEL_',   -- 거짓이다. false
-  'HELLO' LIKE 'H_O'     -- 거짓이다. false
+select name
+from employee
+where name 'J___';
 ```
 
 <br/>
 
+### 출력값 확인
+
+| name |
+| --- |
+| JANE |
+| AOHN |
+
+
+
+
+<br/><br/>
+
+
+## 만약, 찾고 싶은 대상이 '%' 이거나 '_' 일 경우는?
+
+%로 시작하거나 _로 끝나는 프로젝트 이름을 찾고 싶다면?
 
 ```sql
-SELECT * FROM OrderDetails
-WHERE OrderID LIKE '1025_'
+select name
+from project
+where name LIKE '\%%' or name name LIKE '%\_';
 ```
-
-![이미지](/programming/img/입문209.PNG)
-
-
-
-
-
-
-
-
-
 
 
 

@@ -345,8 +345,6 @@
 
 
 
-
-
 ### 예외처리
 - [[예외처리] - 에러는 크게 2가지](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%97%90%EB%9F%AC%EB%8A%94%20%ED%81%AC%EA%B2%8C%202%EA%B0%80%EC%A7%80.md)<br/>
 - [[예외처리] - 예외 계층](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%EA%B3%84%EC%B8%B5.md)<br/>
@@ -364,25 +362,33 @@
 ### SQL-Query + 관계형 DB
 - [[SQL] - 데이터베이스](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
 - [[SQL] - 테이블 생성 (CREATE TABLE)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1.md)<br/>
-- [[SQL] - 검색 조건(WHERE), 비교 연산자](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
+- [[SQL] - NULL 값, 비교 연산자]()<br/>
 - [[SQL] - 조건 조합 (AND, OR)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A1%B0%EA%B1%B4%20%EC%A1%B0%ED%95%A9.md)<br/>
 - [[SQL] - 패턴 매칭 (LIKE, BETWEEN)](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
 - [[SQL] - 정렬 (ORDER BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
 - [[SQL] - 행 제한하기 (LIMIT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
 - [[SQL] - 수치 연산, 별칭(AS) 사용](https://github.com/mingseok/TIL/blob/main/SQL/%EC%97%B4%EC%9D%98%20%EB%B3%84%EB%AA%85.md)<br/>
 - [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
-- [[SQL] - 행 추가 (INSERT)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
-- [[SQL] - 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0%20-%20DELETE.md)<br/>
-- [[SQL] - 데이터 갱신 (UPDATE)](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%B1%EC%8B%A0%ED%95%98%EA%B8%B0%20-%20UPDATE.md)<br/>
+- [[SQL] - 데이터 조회 (SELECT) / 별칭(AS) 사용 / 중복값 제외 (DISTINCT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
+
+
+
+
+
+- [[SQL] - 행 추가 (INSERT) / 데이터 갱신 (UPDATE) / 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
+
+
+
+
+
 - [[SQL] - 물리삭제와 논리삭제](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%BC%EB%A6%AC%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
 - [[SQL] - 행 개수 구하기 (COUNT)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
-- [[SQL] - 중복값 제외 (DISTINCT)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%2C%20%EC%A4%91%EB%B3%B5%EA%B0%92%EC%9D%84%20%EC%A0%9C%EC%99%B8%20DISTINCT.md)<br/>
 - [[SQL] - 집계함수 (SUM, AVG, MIN, MAX)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
 - [[SQL] - 그룹화 (GROUP BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
 - [[SQL] - 서브쿼리](https://github.com/mingseok/TIL/blob/main/SQL/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
 - [[SQL] - 상관 서브쿼리 (EXISTS) , IN 설명](https://github.com/mingseok/TIL/blob/main/SQL/%EC%83%81%EA%B4%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
 - [[SQL] - 테이블 관리 방법](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B4%80%EB%A6%AC.md)<br/>
-- [[SQL] - 제약](https://github.com/mingseok/TIL/blob/main/SQL/index.md)<br/>
+- [[SQL] - keys, reference_option](https://github.com/mingseok/TIL/blob/main/SQL/index.md)<br/>
 - [[SQL] - 내부결합 (INNER JOIN), 외부결합](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
 - [[SQL] - JOIN 추가 설명](https://github.com/mingseok/TIL/blob/main/SQL/JOIN.md)<br/>
 - [[관계형 DB] - 관계형 DB 설명](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
