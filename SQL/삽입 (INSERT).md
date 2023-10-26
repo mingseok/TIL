@@ -1,4 +1,4 @@
-## 행 추가 - (INSERT)
+# INSERT - 행 추가
 
 `신규등록`이나 `추가`와 같은 버튼을 클릭 했을때 처리되는 데이터 추가 기능이라 생각하면 된다.
 
@@ -93,9 +93,9 @@ insert into sample41(a, no) values('XYZ', 2);
 
 
 
-## UPDATE - 데이터 갱신
+# UPDATE - 데이터 갱신
 
-<br/>
+
 
 ## 예제1)
 
@@ -238,9 +238,9 @@ update employee
 set salary = salary * 2;
 ```
 
+<br/><br/>
 
-
-## 삭제하기 - DELETE
+# 삭제하기 - DELETE
 
 행단위로 데이터를 삭제한다.
 

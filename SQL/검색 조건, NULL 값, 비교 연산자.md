@@ -140,7 +140,7 @@ AND age >= 30;
 
 <br/><br/>
 
-## AS 사용하기
+# AS 사용하기
 
 AS는 테이블이나 attribute에 별칭을 붙일 때 사용한다.
 
@@ -201,7 +201,7 @@ where P.id = 2002 and P.leader_id = E.id;
 <br/><br/>
 
 
-## 중복값 제외 (DISTINCT)
+# 중복값 제외 (DISTINCT)
 
 
 SQL의 SELECT 명령은 이러한 중복된 값을 제거하는 함수를 제공한다.
