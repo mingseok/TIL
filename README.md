@@ -54,6 +54,9 @@
 - [["왜?" 관점에서 생각 - JVM 관련] - ]()<br/>
 
 
+
+
+
 깊게 이해 - JAVA
 - [["왜?" 관점에서 생각 - JAVA] - 왜 모든 클래스는 Object 클래스의 상속을 받나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%99%9C%20%EB%AA%A8%EB%93%A0%20%ED%81%B4%EB%9E%98%EC%8A%A4%EB%8A%94%20Object%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98%20%EC%83%81%EC%86%8D%EC%9D%84%20%EB%B0%9B%EC%9D%84%EA%B9%8C.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 왜 인터페이스는 상수 필드만 선언이 가능한가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%8A%94%20%EC%83%81%EC%88%98%20%ED%95%84%EB%93%9C%EB%A7%8C%20%EC%84%A0%EC%96%B8%EC%9D%B4%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
@@ -81,6 +84,10 @@
 - [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
 
 
+
+
+
+
 깊게 이해 - Spring
 - [["왜?" 관점에서 생각 - Spring] - 왜 스프링을 쓰는 건가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%B4%EB%9E%80%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각 - Spring] - IoC, DI, DIP 다 같은거 아닌가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/IoC%2C%20DI%2C%20DIP%20%EB%8B%A4%20%EA%B0%99%EC%9D%80%EA%B1%B0%20%EC%95%84%EB%8B%8C%EA%B0%80.md)<br/>
@@ -95,6 +102,9 @@
 - [["왜?" 관점에서 생각 - Spring] - 스프링에서 빈을 등록하는 방법은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%EC%97%90%EC%84%9C%20%EB%B9%88%EC%9D%84%20%EB%93%B1%EB%A1%9D%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)<br/>
 - [["왜?" 관점에서 생각 - Spring] - ]()<br/>
 - [["왜?" 관점에서 생각 - Spring] - ]()<br/>
+
+
+
 
 
 깊게 이해 - DataBase
@@ -112,7 +122,6 @@
 
 
 
-
 깊게 이해 - 운영체제
 - [[깊게 이해 - 동시성 vs 동기화]](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%20%EB%8F%99%EA%B8%B0%ED%99%94.md)<br/>
 - [["왜?" 관점에서 생각 - 운영체제] - 동시성 문제 해결 방법으로는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)<br/>
@@ -123,43 +132,6 @@
 - [["왜?" 관점에서 생각 - 운영체제] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
 - [["왜?" 관점에서 생각 - 운영체제] - ]()<br/>
 - [["왜?" 관점에서 생각 - 운영체제] - ]()<br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- [["왜?" 관점에서 생각 - 컬렉션] - ]()<br/>
-
-
-
-
-- [[깊게 이해하기] - Map 컬렉션 정의 및 특징은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Map%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%A0%95%EC%9D%98%20%EB%B0%8F%20%ED%8A%B9%EC%A7%95%EC%9D%80.md)<br/>
-- [[깊게 이해하기] - Set 컬렉션 정의 및 특징은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Set%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%A0%95%EC%9D%98%20%EB%B0%8F%20%ED%8A%B9%EC%A7%95%EC%9D%80.md)<br/>
-- [[깊게 이해하기] - List 컬렉션 정의 및 특징은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/List%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%A0%95%EC%9D%98%20%EB%B0%8F%20%ED%8A%B9%EC%A7%95%EC%9D%80.md)<br/>
-- [[깊게 이해하기] - 컬렉션 프레임워크에 대해 설명](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[깊게 이해하기] - 동시성 / 동기화](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%20%EB%8F%99%EA%B8%B0%ED%99%94.md)<br/>
-- [[깊게 이해하기] - 동시성 문제 해결 방법](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [[깊게 이해하기] - Blocking, Non-Blocking](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Blocking%2C%20Non-Blocking.md)<br/>
-- [[깊게 이해하기] - multi thread VS multi process](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/multi%20thread%20VS%20multi%20process.md)<br/>
-- [[깊게 이해하기] - PSA(Portable Service Abstraction)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/PSA(Portable%20Service%20Abstraction).md)<br/>
-- [[깊게 이해하기] - Reentrant Lock과 synchronized의 차이](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
-
-
-
-
-
-
-
 
 
 
