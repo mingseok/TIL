@@ -148,20 +148,26 @@
 - [[깊게 이해하기] - 제네릭이 필요한 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%9D%B4%20%ED%95%84%EC%9A%94%ED%95%9C%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
 - [[깊게 이해하기] - 래퍼 클래스 사용 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%9E%98%ED%8D%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
 - [[깊게 이해하기] - exception VS error](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/exception%20VS%20error.md)<br/>
-- [[깊게 이해하기] - static에 대해 설명 / static을 사용하는 이유는?]()<br/>
-- [[깊게 이해하기] - 불변 객체 설명 / 불변 객체나 final을 굳이 사용해야 하는 이유가 있나요?]()<br/>
-- [[깊게 이해하기] - String, StringBuffer, StringBuilder의 차이는?]()<br/>
-- [[깊게 이해하기] - 접근 제한자에 대해 설명]()<br/>
-- [[깊게 이해하기] - 클래스 멤버 변수 초기화 순서에 대해 설명]()<br/>
-- [[깊게 이해하기] - CheckedException과 UnCheckedException의 차이는?]()<br/>
-- [[깊게 이해하기] - 프록시 패턴 (대리인 패턴)]()<br/>
-- [[깊게 이해하기] - 템플릿 메서드 패턴]()<br/>
-- [[깊게 이해하기] - 어댑터 패턴]()<br/>
-- [[깊게 이해하기] - 팩토리 메서드 패턴]()<br/>
-- [[깊게 이해하기] - Map 컬렉션 정의 및 특징은?]()<br/>
-- [[깊게 이해하기] - Set 컬렉션 정의 및 특징은?]()<br/>
-- [[깊게 이해하기] - List 컬렉션 정의 및 특징은?]()<br/>
-- [[깊게 이해하기] - 컬렉션 프레임워크에 대해 설명]()<br/>
+- [[깊게 이해하기] - static에 대해 설명 / static을 사용하는 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/static%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%20static%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [[깊게 이해하기] - 불변 객체 설명 / 불변 객체나 final을 굳이 사용해야 하는 이유가 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80%20%EC%84%A4%EB%AA%85.md)<br/>
+- [[깊게 이해하기] - String, StringBuffer, StringBuilder의 차이는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%2C%20StringBuffer%2C%20StringBuilder%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EB%8A%94.md)<br/>
+- [[깊게 이해하기] - 접근 제한자에 대해 설명](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%A0%91%EA%B7%BC%20%EC%A0%9C%ED%95%9C%EC%9E%90%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85.md)<br/>
+- [[깊게 이해하기] - 클래스 멤버 변수 초기화 순서에 대해 설명](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%A9%A4%EB%B2%84%20%EB%B3%80%EC%88%98%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%88%9C%EC%84%9C%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85.md)<br/>
+- [[깊게 이해하기] - CheckedException과 UnCheckedException의 차이는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/CheckedException%EA%B3%BC%20UnCheckedException%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EB%8A%94.md)<br/>
+- [[깊게 이해하기] - 프록시 패턴 (대리인 패턴)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9D%EC%8B%9C%20%ED%8C%A8%ED%84%B4%20(%EB%8C%80%EB%A6%AC%EC%9D%B8%20%ED%8C%A8%ED%84%B4).md)<br/>
+- [[깊게 이해하기] - 템플릿 메서드 패턴](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A9%94%EC%84%9C%EB%93%9C%20%ED%8C%A8%ED%84%B4.md)<br/>
+- [[깊게 이해하기] - 어댑터 패턴](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%96%B4%EB%8C%91%ED%84%B0%20%ED%8C%A8%ED%84%B4.md)<br/>
+- [[깊게 이해하기] - 팩토리 메서드 패턴](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%8C%A9%ED%86%A0%EB%A6%AC%20%EB%A9%94%EC%84%9C%EB%93%9C%20%ED%8C%A8%ED%84%B4.md)<br/>
+- [[깊게 이해하기] - Map 컬렉션 정의 및 특징은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Map%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%A0%95%EC%9D%98%20%EB%B0%8F%20%ED%8A%B9%EC%A7%95%EC%9D%80.md)<br/>
+- [[깊게 이해하기] - Set 컬렉션 정의 및 특징은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Set%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%A0%95%EC%9D%98%20%EB%B0%8F%20%ED%8A%B9%EC%A7%95%EC%9D%80.md)<br/>
+- [[깊게 이해하기] - List 컬렉션 정의 및 특징은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/List%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%A0%95%EC%9D%98%20%EB%B0%8F%20%ED%8A%B9%EC%A7%95%EC%9D%80.md)<br/>
+- [[깊게 이해하기] - 컬렉션 프레임워크에 대해 설명](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85.md)<br/>
+- [[깊게 이해하기] - 동시성 / 동기화]()<br/>
+- [[깊게 이해하기] - 동시성 문제 해결 방법]()<br/>
+- [[깊게 이해하기] - Blocking, Non-Blocking]()<br/>
+- [[깊게 이해하기] - multi thread VS multi process]()<br/>
+- [[깊게 이해하기] - PSA(Portable Service Abstraction)]()<br/>
+- [[깊게 이해하기] - Reentrant Lock과 synchronized의 차이]()<br/>
 - [[깊게 이해하기] - ]()<br/>
 - [[깊게 이해하기] - ]()<br/>
 - [[깊게 이해하기] - ]()<br/>
@@ -192,6 +198,33 @@
 
 차이는 무엇인가? exception VS error
 ```
+
+
+
+### database
+- [[깊게 이해하기] - database system 동작하는 방식]()<br/>
+- [[깊게 이해하기] - RDBMS와 DBMS 차이는?]()<br/>
+- [[깊게 이해하기] - logical vs conceptual vs physical]()<br/>
+- [[깊게 이해하기] - three-schema architecture 란?]()<br/>
+- [[깊게 이해하기] - DML, VDL, DDL 설명]()<br/>
+- [[깊게 이해하기] - relation database 개념 / 특징 / keys 종류]()<br/>
+- [[깊게 이해하기] - attribute data type 정의]()<br/>
+- [[깊게 이해하기] - SQL 주요 용어]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+
+
+
+
+
 
 
 
@@ -486,22 +519,25 @@
 
 ### SQL-Query + 관계형 DB
 - [[SQL] - 데이터베이스](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
-- [[SQL] - 테이블 생성 (CREATE TABLE)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1.md)<br/>
-- [[SQL] - NULL 값, 비교 연산자]()<br/>
-- [[SQL] - 조건 조합 (AND, OR)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A1%B0%EA%B1%B4%20%EC%A1%B0%ED%95%A9.md)<br/>
+- [[SQL] - 테이블 구조 조작](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B4%80%EB%A6%AC.md)<br/>
+
+
+
+
+
+
 - [[SQL] - 패턴 매칭 (LIKE, BETWEEN)](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
 - [[SQL] - 정렬 (ORDER BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
 - [[SQL] - 행 제한하기 (LIMIT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
 - [[SQL] - 수치 연산, 별칭(AS) 사용](https://github.com/mingseok/TIL/blob/main/SQL/%EC%97%B4%EC%9D%98%20%EB%B3%84%EB%AA%85.md)<br/>
 - [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
+
+
+
+
 - [[SQL] - 데이터 조회 (SELECT) / 별칭(AS) 사용 / 중복값 제외 (DISTINCT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
-
-
-
-
-
 - [[SQL] - 행 추가 (INSERT) / 데이터 갱신 (UPDATE) / 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
-
+- [[SQL] - subquery / IN / EXISTS / ANY / ALL]()<br/>
 
 
 
@@ -510,10 +546,9 @@
 - [[SQL] - 행 개수 구하기 (COUNT)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
 - [[SQL] - 집계함수 (SUM, AVG, MIN, MAX)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
 - [[SQL] - 그룹화 (GROUP BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
-- [[SQL] - 서브쿼리](https://github.com/mingseok/TIL/blob/main/SQL/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
-- [[SQL] - 상관 서브쿼리 (EXISTS) , IN 설명](https://github.com/mingseok/TIL/blob/main/SQL/%EC%83%81%EA%B4%80%20%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC.md)<br/>
-- [[SQL] - 테이블 관리 방법](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B4%80%EB%A6%AC.md)<br/>
-- [[SQL] - keys, reference_option](https://github.com/mingseok/TIL/blob/main/SQL/index.md)<br/>
+
+
+
 - [[SQL] - 내부결합 (INNER JOIN), 외부결합](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
 - [[SQL] - JOIN 추가 설명](https://github.com/mingseok/TIL/blob/main/SQL/JOIN.md)<br/>
 - [[관계형 DB] - 관계형 DB 설명](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
