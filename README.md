@@ -148,6 +148,24 @@
 - [[깊게 이해하기] - 제네릭이 필요한 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%9D%B4%20%ED%95%84%EC%9A%94%ED%95%9C%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
 - [[깊게 이해하기] - 래퍼 클래스 사용 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%9E%98%ED%8D%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
 - [[깊게 이해하기] - exception VS error](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/exception%20VS%20error.md)<br/>
+- [[깊게 이해하기] - static에 대해 설명 / static을 사용하는 이유는?]()<br/>
+- [[깊게 이해하기] - 불변 객체 설명 / 불변 객체나 final을 굳이 사용해야 하는 이유가 있나요?]()<br/>
+- [[깊게 이해하기] - String, StringBuffer, StringBuilder의 차이는?]()<br/>
+- [[깊게 이해하기] - 접근 제한자에 대해 설명]()<br/>
+- [[깊게 이해하기] - 클래스 멤버 변수 초기화 순서에 대해 설명]()<br/>
+- [[깊게 이해하기] - CheckedException과 UnCheckedException의 차이는?]()<br/>
+- [[깊게 이해하기] - 프록시 패턴 (대리인 패턴)]()<br/>
+- [[깊게 이해하기] - 템플릿 메서드 패턴]()<br/>
+- [[깊게 이해하기] - 어댑터 패턴]()<br/>
+- [[깊게 이해하기] - 팩토리 메서드 패턴]()<br/>
+- [[깊게 이해하기] - Map 컬렉션 정의 및 특징은?]()<br/>
+- [[깊게 이해하기] - Set 컬렉션 정의 및 특징은?]()<br/>
+- [[깊게 이해하기] - List 컬렉션 정의 및 특징은?]()<br/>
+- [[깊게 이해하기] - 컬렉션 프레임워크에 대해 설명]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
+- [[깊게 이해하기] - ]()<br/>
 - [[깊게 이해하기] - ]()<br/>
 - [[깊게 이해하기] - ]()<br/>
 - [[깊게 이해하기] - ]()<br/>
