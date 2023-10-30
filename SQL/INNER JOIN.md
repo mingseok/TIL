@@ -1,242 +1,116 @@
-## 내부결합 (INNER JOIN)
+## inner join, outer join 종류
 
-데이터베이스에는 다양한 데이터가 저장되지만, 
+두 개 이상의 table들에 있는 데이터를 한 번에 조회하는 것
 
-동일한 데이터를 중복해서 여러 곳에 저장하지 않도록 하는게 중요하다.
-
-<br/>
-
-만약, 데이터가 변경되는 경우 여기저기 저장되어 있는 데이터를 모두 동일한 값으로 변경하기란 힘든 일이다.
-
-이때, 중요한 것이 기본키이다. 하나의 데이터행을 대표로 할 수 있다.
-
-<br/>
-
-### 예를 들어,
-
-상품명의 경우 값이 중복할 우려가 있으므로 기본키로는 적합하지 않다.
-
-이러한 이유로 `상품코드`를 `기본키`로 사용하는 경우가 많은 것이다.
-
+- 여러 종류의 join이 존재한다.
 
 <br/><br/>
 
-## INNER JOIN 설명
-
-여기서 INNER는 '안쪽'이라는 의미이며 JOIN은 '연결시킨다'라는 의미이다. -> 그리하여 '내부결합'이라는 의미가 된다
-
-구식 방법에서는 `where` 구에 결합조건을 지정하였지만 `inner join`에서는 `ON`을 사용하여 결합조건을 지정한다.
-
-```
-inner join으로 두 개 테이블을 가로로 결합할 수 있다.
-```
-
-<br/><br/>
-
-
-## 설명을 위한 예제
-
-
-### 상품 테이블
+## inner join
 
 ```sql
-create table 상품 (
-    상품코드 char(4) not null,
-    상품명 varchar(30),
-    메이커코드 char(4),
-    가격 integer,
-    상품분류 varchar(30),
-    primary key (상품코드)
-);
-``` 
+select *
+from employee E join department D on E.dept_id = D.id;
+```
 
-| 상품코드 | 상품명 | 메이커코드 | 가격 | 상품분류 |
-| --- | --- | --- | --- | --- |
-| 0001 | 상품11 | M001 | 100 | 식료품 |
-| 0002 | 상품22 | M001 | 200 | 식료품 |
-| 0003 | 상품33 | M002 | 1980 | 생활용품 |
+위 코드에서는,  `join` 앞에 `inner`가 생략된 것이다.
 
+즉, 우리는 이미 inner 조인이라는 것을 사용하고 있었던 것이다.
 
 <br/>
 
-### 메이커 테이블
+![이미지](/programming/img/입문434.PNG)
+
+<br/>
+
+### 출력값 확인하기
+
+이 결과에서 중요한 것은, `employee`의 `SIMON`이랑 `department`의 `1002`랑은 테이블에서 빠졌다는 것이다.
+
+![이미지](/programming/img/입문435.PNG)
+
+<br/><br/>
+
+## 이것이 inner 조인이다.
+
+- inner join : 두 table에서 join condition을 만족하는 tuple들로 result table을 만드는 join
+
+- from table1 E `inner join` table2 D `on` join_condition
+
+    - 위 쿼리에서 from table1 E `join` table2 D `on` join_condition
+        
+        이렇게 사용 가능하다.
+        
+- 사용 가능한 연산자 : `=, <, >, ≠` 등등 여러 비교 연산자가 가능하다
+
+- join condition에서 null 값을 가지는 tuple은 result table에 포함되지 못한다
+
+<br/><br/>
+
+## outer join
+
+- outer join : 두 table에서 join condition을 만족하지 않는 tuple들도 result table에 포함하는 join
+
+- outer join은 세가지 종류가 있다 → [ ] 안에 들어가 있는 건 생략이 가능하다는 것
+
+    - from table1 `left [outer] join` table2 `on` join_condition
+
+    - from table1 `right [outer] join` table2 `on` join_condition
+
+- 사용 가능한 연산자: `=, <, >, ≠`
+
+<br/>
+
+### left [outer] join 출력값 확인하기
+
+이제는 SIMON이 포함이 되었다.
+
+![이미지](/programming/img/입문436.PNG)
+
+`left`의 개념이 쿼리상에서 `left outer join` 기준으로 왼쪽에 있는 테이블을 의미한다. → employee 테이블
+
+<br/>
+
+그런 뜻은, `employee` 테이블에서 위에 `ON`(join_condition이라고 부름)에 
+의해서 
+
+매칭 되지 않는 tuple들 까지도 함께 출력 되기에 `SIMON`도 출력 되어 나온 것이다.
+
+- 나머지 `department` 테이블에 관련된 정보들은 전부 `null`로 표시한다.
+
+<br/><br/>
+
+## right [outer] join
+
+left [outer] join의 반대라고 생각하면 된다.
+
+![이미지](/programming/img/입문437.PNG)
+
+<br/><br/>
+
+## join을 사용한 예제
+
+### 문제1)
+
+id가 1003인 부서에 속하는 직원 중 리더를 제외한 부서원의 id, 이름, 연봉을 알고 싶다
 
 ```sql
-create table 메이커 (
-    메이커코드 char(4) not null,
-    메이커명 varchar(30),
-    primary key (메이커코드)
-);
+select E.id, E.name, E.salary
+from employee E join department D on E.dept_id = D.id
+where E.dept_id = 1003 and E.id != D.leader_id;
 ```
-
-| 메이커코드 | 메이커명 |
-| --- | --- |
-| M001 | 11메이커 |
-| M002 | 22메이커 |
-
 
 <br/>
 
-### 재고수 테이블
+### 문제2)
+
+id가 2001인 프로젝트에 참여한 직원들의 이름과 직군과 소속 부서 이름을 알고 싶다.
 
 ```sql
-create table 재고수 (
-    상품코드 char(4),
-    입고날짜 date,
-    재고수 integer
-);
+select E.name AS empl_name,
+       E.position AS empl_position,
+       D.name AS dept_name
+from works_on W join employee E on W.empl_id = E.id
+                left join department D on E.dept_id = D.id
+where W.proj_id = 2001;
 ```
-
-| 상품코드 | 입고날짜 | 재고수 |
-| --- | --- | --- |
-| 0001 | 2014-01-03 | 200 |
-| 0002 | 2014-02-10 | 500 |
-| 0003 | 2014-02-14 | 10 |
-
-
-
-<br/><br/>
-
-## 상품 테이블과 메이커 테이블 INNER JOIN 하기
-
-```sql
-select s.상품명, m.메이커명
-    from 상품 s inner join 메이커 m
-    on s.메이커코드 = m.메이커코드;
-```
-
-| 상품명 | 메이커명 |
-| --- | --- |
-| 상품11 | 11메이커 |
-| 상품22 | 11메이커 |
-| 상품33 | 22메이커 |
-
-
-이때 테이블명을 매번 지정하는 것은 번거로운 일이다.
-
-짧게 줄여 별명을 붙이는 경우가 많다.
-
-
-<br/><br/>
-
-## 외부결합
-
-외부결합은 '어느 한 쪽에만 존재하는 데이터행을 어떻게 다룰지'를 변경할 수 있는 결합 방법이다.
-
-
-```
-상품 테이블과 재고수 테이블 중에 상품 테이블에만 행이 존재하는 상황을 생각해 보면 된다
-```
-
-
-<br/>
-
-### 상품 테이블에 새로운 상품 추가하기
-
-
-상품 테이블에 상품코드가 0009인 행이 새롭게 추가 되었다.
-
-
-| 상품코드 | 상품명 | 메이커코드 | 가격 | 상품분류 |
-| --- | --- | --- | --- | --- |
-| 0001 | 상품11 | M001 | 100 | 식료품 |
-| 0002 | 상품22 | M001 | 200 | 식료품 |
-| 0003 | 상품33 | M002 | 1980 | 생활용품 |
-| 0009 | 추가상품 | M001 | 300 | 식료품 |
-
-재고수 테이블에는 아직 이 상품에 대한 데이터가 없다.
-
-이런 상태에서 `inner join`을 구해도 `0009 = 0009`가 되는 행은 존재하지 않으므로 상품코드가 `0009`인 상품은 `제외`된다.
-
-
-<br/><br/>
-
-## 제외되는지 확인해보기
-
-```sql
-select 상품.상품명, 재고수.재고수
-from 상품 inner join 재고수
-on 상품.상품코드 = 재고수.상품코드
-where 상품.상품분류 = '식료품';
-```
-
-| 상품명 | 재고수 |
-| --- | --- |
-| 상품11 | 200 |
-| 상품22 | 500 |
-
-
-이런 경우에 외부결합을 사용하면 된다.
-
-외부결합(LEFT JOIN)은 결합하는 테이블 중에 어느 쪽을 기준으로 할지 결정할 수 있다.
-
-
-<br/>
-<br/>
-
-## LEFT JOIN
-
-
-LEFT의 의미는 왼쪽 테이블을 기준 테이블로 지정한다는 의미이다.
-
-`LEFT OUTER JOIN`은 `OUTER` 키워드를 생략하고, `LEFT JOIN`으로 사용하기도 한다.
-
-- `OUTER` 같은 경우는 생략이 한다
-
-
-
-![이미지](/programming/img/입문383.PNG)
-
-
-
-
-
-<br/><br/>
-
-![이미지](/programming/img/입문382.PNG)
-
-
-<br/>
-
-외부결합으로 상품코드 0009인 상품도 결과에 포함하기
-
-```sql
-select 상품.상품명, 재고수.재고수
-from 상품 LEFT JOIN 재고수
-on 상품.상품코드 = 재고수.상품코드
-where 상품.상품분류 = '식료품';
-```
-
-| 상품명 | 재고수 |
-| --- | --- |
-| 상품11 | 200 |
-| 상품22 | 500 |
-| 추가상품 | NULL |
-
-재고수 테이블에는 0009에 대한 데이터가 없으므로 값이 `NULL`로 표시되는 점에 주의하자.
-
-```
-상품 테이블을 오른쪽에 지정하는 경우나 재고 테이블을 기준으로 
-삼고 싶은 경우에는 RIGHT JOIN을 사용해 외부결합을 하면 된다
-```
-
-
-<br/><br/>
-
-## Right outer join
-
-
-![이미지](/programming/img/입문384.PNG)
-
-
-<br/><br/>
-
-## INNER JOIN vs OUTER JOIN
-
-
-- `INNER JOIN`은 A 테이블과 B테이블이 모두 가지고 있는 `데이터만!`이 검색됨
-
-- `OUTER JOIN`은 `Left`와 `RIGHT` 두가지로 나뉜다 
-
-    - `INNER JOIN`과 다르게 해당 데이터가 없으면 `null`을 표시한다
-

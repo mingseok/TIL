@@ -176,3 +176,127 @@ b 가 없어서 출력 안되는 것이 아니다.
 ![이미지](/programming/img/입문205.PNG)
 
 
+<br/><br/>
+
+
+# NULL 값, 비교 연산자
+
+```sql
+select id
+from employee
+where birth_data = null;
+```
+
+위 쿼리를 실행 시키면 아무것도 나오지 않을 수도 있다!! 
+
+### 함정이 있다는걸 알고있기!
+
+여기서는 `=` 을 사용하면 안된다
+
+- 왜? -> null과 비교 할때는 같다는 `=` 걸 사용하면 안된다.
+
+
+<br/><br/>
+
+
+## 그러면 어떻게 해야돼? -> `IS` 라는 연산자 사용하기!
+
+```sql
+select id
+from employee
+where birth_data = IS NULL;
+```
+
+<br/>
+
+```
+만약, 생일 정보가 null이 아닌 직원들의 id를 가져 오고 싶다면 `IS NOT`을 사용하기
+```
+
+<br/><br/>
+
+## Three-Valued Logic
+
+- SQL에서 NULL과 비교 연산을 하게 되면 그 결과는 `unknown` 이다
+
+- `unknown`은 'true 일수도 있고 false일 수도 있다' 라는 의미이다
+
+```
+Three-Valued Logic 이란?
+비교/논리 연산의 결과로 true, false, unknown을 가진다
+```
+
+<br/><br/>
+
+
+## unknown에 대해서
+
+- 1 = 1 -> `true`
+
+- 1 != 1 -> `false`
+
+- 1 = null = `unknown`
+
+- 1 != null = `unknown`
+
+- 1 > null = `unknown`
+
+- 1 <= null = `unknown`
+
+- null > null = `unknown`
+
+
+<br/><br/>
+
+## where절의 condition(S)
+
+where절에 있는 condition의 결과가 true인 tuple만 선택 된다.
+
+- 즉, 결과가 `false`거나 `unknown`이면 tuple은 선택되지 않는다
+
+
+<br/><br/>
+
+## NOT IN 사용시 주의점!
+
+2000년대생이 없는 부서의 ID와 이름을 알고 싶다면?
+
+<br/>
+
+### 문제점!
+
+2000년생이 회사에 입사를 했는데, 
+
+아직 부서 배치를 받지 않아서 null로 처리되어 있는 상태인 것이다.
+
+<br/>
+
+
+### 변경 전 코드
+
+```SQL
+select D.id, D.name
+from department AS D
+where D.id NOT IN (
+              select E.dept_id
+              from employee E
+              where E.birth_date >= '2000-01-01'
+              );
+)
+```
+
+<br/>
+
+## 변경 후 코드
+
+```SQL
+select D.id, D.name
+from department AS D
+where D.id NOT IN (
+              select E.dept_id
+              from employee E
+              where E.birth_date >= '2000-01-01' AND E.dept_id IS NOT NULL
+              );
+)
+```
+

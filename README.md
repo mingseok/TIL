@@ -27,7 +27,7 @@
 
 
 
-## 내부 원리에 대해 깊게 이해하기
+### 내부 원리에 대해 깊게 이해하기
 
 ```
 평소, 생각 없이 사용해 왔던 것들.
@@ -66,7 +66,7 @@
 - [["왜?" 관점에서 생각 - JAVA] - DTO를 만들어 두면 무슨 장점이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DTO%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%91%90%EB%A9%B4%20%EB%AC%B4%EC%8A%A8%20%EC%9E%A5%EC%A0%90%EC%9D%B4%20%EC%9E%88%EB%82%98%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 왜 배열의 index는 0부터 시작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20index%EB%8A%94%20%EC%99%9C%200%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 왜 생성자를 만들어야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%95%BC%20%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 String 객체가 불변인가요?]()<br/>
+- [["왜?" 관점에서 생각 - JAVA] - 왜 String 객체가 불변인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EA%B0%80%20%EB%B6%88%EB%B3%80%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 왜 char타입은 정수인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/char%ED%83%80%EC%9E%85%EC%9D%80%20%EC%A0%95%EC%88%98%EC%9D%B8%EA%B0%80.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 클래스와 객체 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%B0%A8%EC%9D%B4.md#%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EA%B0%9D%EC%B2%B4-%EC%B0%A8%EC%9D%B4)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 클래스와 메소드를 사용하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%9D%98%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
@@ -115,23 +115,22 @@
 - [["왜?" 관점에서 생각 - DB] - DML, VDL, DDL 각각 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DML%2C%20VDL%2C%20DDL%20%EC%84%A4%EB%AA%85.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - relation database 개념 / 특징 / keys 종류에 대해 설명해주세요.](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/relation%20database%20%EA%B0%9C%EB%85%90%20%ED%8A%B9%EC%A7%95%20keys%20%EC%A2%85%EB%A5%98.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - attribute data type 정의란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/attribute%20data%20type%20%EC%A0%95%EC%9D%98.md)<br/>
-- [[["왜?" 관점에서 생각 - DB] - ]()<br/>
-- [[["왜?" 관점에서 생각 - DB] - ]()<br/>
-- [[["왜?" 관점에서 생각 - DB] - ]()<br/>
+- [["왜?" 관점에서 생각 - DB] - ]()<br/>
+- [["왜?" 관점에서 생각 - DB] - ]()<br/>
+- [["왜?" 관점에서 생각 - DB] - ]()<br/>
 
 
 
 
-깊게 이해 - 운영체제
-- [[깊게 이해 - 동시성 vs 동기화]](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%20%EB%8F%99%EA%B8%B0%ED%99%94.md)<br/>
-- [["왜?" 관점에서 생각 - 운영체제] - 동시성 문제 해결 방법으로는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)<br/>
-
-- [["왜?" 관점에서 생각 - 운영체제] - Blocking, Non-Blocking이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Blocking%2C%20Non-Blocking.md)<br/>
-- [["왜?" 관점에서 생각 - 운영체제] - multi thread VS multi process](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/multi%20thread%20VS%20multi%20process.md)<br/>
-- [["왜?" 관점에서 생각 - 운영체제] - PSA(Portable Service Abstraction)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/PSA(Portable%20Service%20Abstraction).md)<br/>
-- [["왜?" 관점에서 생각 - 운영체제] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
-- [["왜?" 관점에서 생각 - 운영체제] - ]()<br/>
-- [["왜?" 관점에서 생각 - 운영체제] - ]()<br/>
+### CS (Computer Science)
+- [[CS] - 동시성 vs 동기화](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%20%EB%8F%99%EA%B8%B0%ED%99%94.md)<br/>
+- [[CS] - 동시성 문제 해결 방법으로는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [[CS] - Blocking, Non-Blocking이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Blocking%2C%20Non-Blocking.md)<br/>
+- [[CS] - multi thread VS multi process](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/multi%20thread%20VS%20multi%20process.md)<br/>
+- [[CS] - PSA(Portable Service Abstraction)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/PSA(Portable%20Service%20Abstraction).md)<br/>
+- [[CS] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
 
 
 
@@ -368,9 +367,9 @@
 
 
 ### 디자인 패턴
-- [[디자인 패턴 - 싱글톤 패턴]]()<br/>
-- [[디자인 패턴 - 스트래티지 패턴]]()<br/>
-- [[디자인 패턴 - 옵저버 패턴]]()<br/>
+- [[디자인 패턴 - 싱글톤 패턴]](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%B1%EA%B8%80%ED%86%A4%20%ED%8C%A8%ED%84%B4%20(Singleton%20Pattern).md)<br/>
+- [[디자인 패턴 - 스트래티지 패턴]](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%20%ED%8C%A8%ED%84%B4%20(%3D%EC%A0%84%EB%9E%B5%ED%8C%A8%ED%84%B4).md)<br/>
+- [[디자인 패턴 - 옵저버 패턴]](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%98%B5%EC%A0%80%EB%B2%84%20%ED%8C%A8%ED%84%B4.md)<br/>
 - [[디자인 패턴 - 팩토리 메서드 패턴]](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%8C%A9%ED%86%A0%EB%A6%AC%20%EB%A9%94%EC%84%9C%EB%93%9C%20%ED%8C%A8%ED%84%B4.md)<br/>
 - [[디자인 패턴 - 어댑터 패턴]](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%96%B4%EB%8C%91%ED%84%B0%20%ED%8C%A8%ED%84%B4.md)<br/>
 - [[디자인 패턴 - 템플릿 메서드 패턴]](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A9%94%EC%84%9C%EB%93%9C%20%ED%8C%A8%ED%84%B4.md)<br/>
@@ -454,32 +453,27 @@
 
 
 ### SQL-Query + 관계형 DB
-- [[SQL] - 데이터베이스](https://github.com/mingseok/TIL/blob/main/SQL/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
 - [[SQL] - 테이블 구조 조작](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B4%80%EB%A6%AC.md)<br/>
-- [[SQL] - 패턴 매칭 (LIKE, BETWEEN)](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
-- [[SQL] - 정렬 (ORDER BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
+- [[SQL] - 패턴 매칭 (LIKE, BETWEEN) / null 의미와 Three-Valued Logic에 대해 설명](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
+- [[SQL] - 행 추가 (INSERT) / 데이터 갱신 (UPDATE) / 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
+- [[SQL] - 데이터 조회 (SELECT) / 별칭(AS) 사용 / 중복값 제외 (DISTINCT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
+- [[SQL] - 데이터 조회 기술 subquery / IN / EXISTS / ANY / ALL](https://github.com/mingseok/TIL/blob/main/SQL/subquery%20%20IN%20%20EXISTS%20%20ANY%20%20ALL.md)<br/>
+- [[SQL] - inner join, outer join 종류](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
+- [[SQL] - 그룹별로 원하는 통계 group by / aggregate function / order by](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
+
+
+
+
+
+
+
+
+
 - [[SQL] - 행 제한하기 (LIMIT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
 - [[SQL] - 수치 연산, 별칭(AS) 사용](https://github.com/mingseok/TIL/blob/main/SQL/%EC%97%B4%EC%9D%98%20%EB%B3%84%EB%AA%85.md)<br/>
 - [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
-
-
-
-
-
-
-- [[SQL] - 데이터 조회 (SELECT) / 별칭(AS) 사용 / 중복값 제외 (DISTINCT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
-- [[SQL] - 행 추가 (INSERT) / 데이터 갱신 (UPDATE) / 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
-- [[SQL] - subquery / IN / EXISTS / ANY / ALL](https://github.com/mingseok/TIL/blob/main/SQL/subquery%20%20IN%20%20EXISTS%20%20ANY%20%20ALL.md)<br/>
-
-
-
-
 - [[SQL] - 물리삭제와 논리삭제](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%BC%EB%A6%AC%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
 - [[SQL] - 행 개수 구하기 (COUNT)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
-- [[SQL] - 집계함수 (SUM, AVG, MIN, MAX)](https://github.com/mingseok/TIL/blob/main/SQL/COUNT%20%EC%9D%B4%EC%99%B8%EC%9D%98%20%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98.md)<br/>
-- [[SQL] - 그룹화 (GROUP BY)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B7%B8%EB%A3%B9%ED%99%94%20-%20GROUP%20BY.md)<br/>
-- [[SQL] - 내부결합 (INNER JOIN), 외부결합](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
-- [[SQL] - JOIN 추가 설명](https://github.com/mingseok/TIL/blob/main/SQL/JOIN.md)<br/>
 - [[관계형 DB] - 관계형 DB 설명](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
 - [[관계형 DB] - 개념적 데이터 모델링](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B0%9C%EB%85%90%EC%A0%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8%EB%A7%81.md)<br/>
 
