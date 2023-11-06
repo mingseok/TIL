@@ -80,7 +80,7 @@
 - [["왜?" 관점에서 생각 - JAVA] - 왜 equals, hashCode 메서드는 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/equals%2C%20hashCode%20%EB%A9%94%EC%84%9C%EB%93%9C%EB%8A%94%20%EC%99%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 왜 불변 객체나 final을 굳이 사용해야 하는 이유가 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80%20%EC%84%A4%EB%AA%85.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - String, StringBuffer, StringBuilder의 3개의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%2C%20StringBuffer%2C%20StringBuilder%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
+- [["왜?" 관점에서 생각 - JAVA] - String을 합칠때 “+” 연산자를 사용한다면 단점은?]()<br/>
 - [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
 
 
@@ -97,6 +97,7 @@
 - [["왜?" 관점에서 생각 - Spring] - Annotation을 왜 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Annotation.md#%EC%82%AC%EC%9A%A9-%EC%9D%B4%EC%9C%A0%EB%8A%94-1)<br/>
 - [["왜?" 관점에서 생각 - Spring] - IoC, DI, DIP 다 같은거 아닌가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/IoC%2C%20DI%2C%20DIP%20%EB%8B%A4%20%EA%B0%99%EC%9D%80%EA%B1%B0%20%EC%95%84%EB%8B%8C%EA%B0%80.md)<br/>
 - [["왜?" 관점에서 생각 - Spring] - 왜 AOP를 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/AOP%20(%3DAspect%20Oriented%20Programming).md)<br/>
+- [["왜?" 관점에서 생각 - Spring] - DI 생성자 주입을 권장 하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DI%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EA%B6%8C%EC%9E%A5%20%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
 - [["왜?" 관점에서 생각 - Spring] - 스프링 컨테이너 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
 - [["왜?" 관점에서 생각 - Spring] - 스프링 빈(Bean)이랑, BeanDefinition 차이가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88(Bean)%EC%9D%B4%EB%9E%80%20%20BeanDefinition%EC%9D%B4%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각 - Spring] - 빈 생명주기 콜백 내부 동작 순서는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%C2%A0%EC%BD%9C%EB%B0%B1(Bean%20LifeCycle)%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
@@ -105,13 +106,15 @@
 - [["왜?" 관점에서 생각 - Spring] - 왜? @Bean과 @Configuration 함께 사용해야 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40Bean%EA%B3%BC%20%40Configuration%20%ED%95%A8%EA%BB%98%20%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC%20%EB%90%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
 - [["왜?" 관점에서 생각 - Spring] - @Bean vs @Component 차이가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40Bean%20vs%20%40%20Component%20%EC%B0%A8%EC%9D%B4%EA%B0%80%20%EB%AD%98%EA%B9%8C.md)<br/>
 - [["왜?" 관점에서 생각 - Spring] - 스프링에서 빈을 등록하는 방법은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%EC%97%90%EC%84%9C%20%EB%B9%88%EC%9D%84%20%EB%93%B1%EB%A1%9D%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - 프로토타입 사용 이유 / 싱글톤 빈과 같이 사용시 문제점](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%20%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B9%88%EA%B3%BC%20%EA%B0%99%EC%9D%B4%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - DI - 생성자 주입을 권장 하는 이유는?]()<br/>
+- [["왜?" 관점에서 생각 - Spring] - 프로토타입 사용 이유 / 싱글톤 빈과 같이 사용시 문제점은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%20%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B9%88%EA%B3%BC%20%EA%B0%99%EC%9D%B4%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)<br/>
 - [["왜?" 관점에서 생각 - Spring] - ]()<br/>
 - [["왜?" 관점에서 생각 - Spring] - ]()<br/>
 - [["왜?" 관점에서 생각 - Spring] - ]()<br/>
 - [["왜?" 관점에서 생각 - Spring] - ]()<br/>
 - [["왜?" 관점에서 생각 - Spring] - ]()<br/>
+
+
+
 
 
 
@@ -124,7 +127,7 @@
 - [["왜?" 관점에서 생각 - DB] - logical vs conceptual vs physical 각각의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/logical%20vs%20conceptual%20vs%20physical.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - three-schema architecture란? 무엇인지 설명해주세요](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/three-schema%20architecture%20%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - DML, VDL, DDL 각각 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DML%2C%20VDL%2C%20DDL%20%EC%84%A4%EB%AA%85.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - relation database 개념 / 특징 / keys 종류에 대해 설명해주세요.](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/relation%20database%20%EA%B0%9C%EB%85%90%20%ED%8A%B9%EC%A7%95%20keys%20%EC%A2%85%EB%A5%98.md)<br/>
+- [["왜?" 관점에서 생각 - DB] - relation database 개념 / 특징 / keys 종류는 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/relation%20database%20%EA%B0%9C%EB%85%90%20%ED%8A%B9%EC%A7%95%20keys%20%EC%A2%85%EB%A5%98.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - attribute data type 정의란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/attribute%20data%20type%20%EC%A0%95%EC%9D%98.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
