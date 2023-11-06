@@ -131,7 +131,7 @@
 - [["왜?" 관점에서 생각 - DB] - DML, VDL, DDL 각각 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DML%2C%20VDL%2C%20DDL%20%EC%84%A4%EB%AA%85.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - relation database 개념 / 특징 / keys 종류는 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/relation%20database%20%EA%B0%9C%EB%85%90%20%ED%8A%B9%EC%A7%95%20keys%20%EC%A2%85%EB%A5%98.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - attribute data type 정의란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/attribute%20data%20type%20%EC%A0%95%EC%9D%98.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
+- [["왜?" 관점에서 생각 - DB] - 프로시저(procedure)란?]()<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
 
@@ -146,7 +146,7 @@
 - [[CS] - PSA(Portable Service Abstraction)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/PSA(Portable%20Service%20Abstraction).md)<br/>
 - [[CS] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
 - [[CS] - CAS 알고리즘이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/CAS%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[CS] - sync(동기) vs async(비동기)]()<br/>
+- [[CS] - sync(동기) vs async(비동기)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
 - [[CS] - ]()<br/>
 - [[CS] - ]()<br/>
 - [[CS] - ]()<br/>
