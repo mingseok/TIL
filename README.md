@@ -131,7 +131,7 @@
 - [["왜?" 관점에서 생각 - DB] - DML, VDL, DDL 각각 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DML%2C%20VDL%2C%20DDL%20%EC%84%A4%EB%AA%85.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - relation database 개념 / 특징 / keys 종류는 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/relation%20database%20%EA%B0%9C%EB%85%90%20%ED%8A%B9%EC%A7%95%20keys%20%EC%A2%85%EB%A5%98.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - attribute data type 정의란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/attribute%20data%20type%20%EC%A0%95%EC%9D%98.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - 프로시저(procedure)란?]()<br/>
+- [["왜?" 관점에서 생각 - DB] - 프로시저(procedure)란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80(procedure)%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
 
