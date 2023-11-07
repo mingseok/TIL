@@ -81,6 +81,12 @@
 - [["왜?" 관점에서 생각 - JAVA] - 왜 불변 객체나 final을 굳이 사용해야 하는 이유가 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80%20%EC%84%A4%EB%AA%85.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - String, StringBuffer, StringBuilder의 3개의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%2C%20StringBuffer%2C%20StringBuilder%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EB%8A%94.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - String을 합칠때 “+” 연산자를 사용한다면 단점은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%EC%9D%84%20%ED%95%A9%EC%B9%A0%EB%95%8C%20%E2%80%9C%2B%E2%80%9D%20%EC%97%B0%EC%82%B0%EC%9E%90%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%8B%A8%EC%A0%90%EC%9D%80.md)<br/>
+- [["왜?" 관점에서 생각 - JAVA] - Comparable과 Comparator을 사용하는 이유는 무엇인가요?]()<br/>
+- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
+- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
+- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
+- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
+- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
 - [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
 - [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
 - [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
@@ -131,8 +137,8 @@
 - [["왜?" 관점에서 생각 - DB] - DML, VDL, DDL 각각 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DML%2C%20VDL%2C%20DDL%20%EC%84%A4%EB%AA%85.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - relation database 개념 / 특징 / keys 종류는 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/relation%20database%20%EA%B0%9C%EB%85%90%20%ED%8A%B9%EC%A7%95%20keys%20%EC%A2%85%EB%A5%98.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - attribute data type 정의란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/attribute%20data%20type%20%EC%A0%95%EC%9D%98.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - 프로시저(procedure)란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80(procedure)%EB%9E%80.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
+- [["왜?" 관점에서 생각 - DB] - 프로시저(procedure)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80(procedure)%EB%9E%80.md)<br/>
+- [["왜?" 관점에서 생각 - DB] - trigger란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/trigger%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
 
 
