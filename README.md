@@ -145,6 +145,7 @@
 
 
 ### CS (Computer Science)
+- [[CS] - ‘메모리에 적재’ / CPU의 연산](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%E2%80%98%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%97%90%20%EC%A0%81%EC%9E%AC%E2%80%99%20CPU%EC%9D%98%20%EC%97%B0%EC%82%B0.md)<br/>
 - [[CS] - 동시성 vs 동기화](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%20%EB%8F%99%EA%B8%B0%ED%99%94.md)<br/>
 - [[CS] - 동시성 문제 해결 방법으로는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)<br/>
 - [[CS] - Blocking, Non-Blocking이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Blocking%2C%20Non-Blocking.md)<br/>
@@ -153,8 +154,8 @@
 - [[CS] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
 - [[CS] - CAS 알고리즘이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/CAS%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EB%AA%85.md)<br/>
 - [[CS] - sync(동기) vs async(비동기)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
-- [[CS] - ‘메모리에 적재’ / CPU의 연산]()<br/>
-- [[CS] - ]()<br/>
+
+- [[CS] - context switch vs Context]()<br/>
 - [[CS] - ]()<br/>
 - [[CS] - ]()<br/>
 - [[CS] - ]()<br/>
