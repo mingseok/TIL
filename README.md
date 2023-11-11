@@ -64,6 +64,7 @@
 - [["왜?" 관점에서 생각 - JAVA] - System.out.println() 내부 동작원리가 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/System.out.println()%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 상속이 갖는 단점들은 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%81%EC%86%8D%20%EC%A0%95%EC%9D%98%2C%20%EC%83%81%EC%86%8D%EC%9D%B4%20%EA%B0%96%EB%8A%94%20%EB%8B%A8%EC%A0%90%EB%93%A4.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - DTO를 만들어 두면 무슨 장점이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DTO%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%91%90%EB%A9%B4%20%EB%AC%B4%EC%8A%A8%20%EC%9E%A5%EC%A0%90%EC%9D%B4%20%EC%9E%88%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각 - JAVA] - 클래스 멤버 변수의 초기화 순서는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%A9%A4%EB%B2%84%20%EB%B3%80%EC%88%98%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%88%9C%EC%84%9C%EB%8A%94%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%90%98%EB%82%98%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 왜 배열의 index는 0부터 시작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20index%EB%8A%94%20%EC%99%9C%200%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 왜 생성자를 만들어야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%95%BC%20%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - 왜 String 객체가 불변인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EA%B0%80%20%EB%B6%88%EB%B3%80%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)<br/>
@@ -83,7 +84,7 @@
 - [["왜?" 관점에서 생각 - JAVA] - String을 합칠때 “+” 연산자를 사용한다면 단점은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%EC%9D%84%20%ED%95%A9%EC%B9%A0%EB%95%8C%20%E2%80%9C%2B%E2%80%9D%20%EC%97%B0%EC%82%B0%EC%9E%90%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%8B%A8%EC%A0%90%EC%9D%80.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - Comparable과 Comparator을 사용하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Comparable%EA%B3%BC%20Comparator%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각 - JAVA] - exception VS error](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/exception%20VS%20error.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
+
 - [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
 - [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
 - [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
