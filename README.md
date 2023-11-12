@@ -139,9 +139,9 @@
 - [["왜?" 관점에서 생각 - DB] - attribute data type 정의란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/attribute%20data%20type%20%EC%A0%95%EC%9D%98.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - 프로시저(procedure)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80(procedure)%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - trigger란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/trigger%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - transaction 설명](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/transaction%20%EC%84%A4%EB%AA%85.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
+- [["왜?" 관점에서 생각 - DB] - transaction은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/transaction%20%EC%84%A4%EB%AA%85.md)<br/>
+- [["왜?" 관점에서 생각 - DB] - transaction isolation level이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/transaction%20isolation%20level.md)<br/>
+- [["왜?" 관점에서 생각 - DB] - schedule과 serializable이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/schedule%EA%B3%BC%20serializable%EC%9D%B4%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
