@@ -38,20 +38,20 @@
 ```
 
 깊게 이해 - JVM 관련
-- [["왜?" 관점에서 생각 - JVM 관련] - JVM 동작원리와 내부구조는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC%EC%99%80%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - JIT 컴파일러의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JIT%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - JVM 힙 내부구조는 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%ED%9E%99%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - 가비지 컬렉션(G.C)의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EA%B0%80%EB%B9%84%EC%A7%80%20%EC%BB%AC%EB%A0%89%EC%85%98(G.C)%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - 배열의 선언과 메모리 할당은 어떤식으로 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%ED%95%A0%EB%8B%B9.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - String 객체를 생성하는 방법과 내부 동작 원리는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EB%A5%BC%20%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%EA%B3%BC%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - 자바는 어떻게 실행 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9E%90%EB%B0%94%EB%8A%94%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%8B%A4%ED%96%89%EB%90%98%EB%82%98%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - 자바 메모리 구조가 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9E%90%EB%B0%94%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B5%AC%EC%A1%B0%EA%B0%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%90%98%EC%96%B4%20%EC%9E%88%EB%82%98%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - 변수들은 JVM에서 어디에 할당 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%80%20JVM%EC%97%90%EC%84%9C%20%EC%96%B4%EB%94%94%EC%97%90%20%ED%95%A0%EB%8B%B9%EB%90%98%EB%8A%94%EA%B0%80.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - 원시형과 참조형 타입은 JVM 메모리에 어느 위치에 할당 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9B%90%EC%8B%9C%ED%98%95%EA%B3%BC%20%EC%B0%B8%EC%A1%B0%ED%98%95%20%ED%83%80%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%B4.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - static 메서드와 일반 메서드의 차이점은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/static%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%EC%9D%BC%EB%B0%98%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90.md)<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - ]()<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - ]()<br/>
-- [["왜?" 관점에서 생각 - JVM 관련] - ]()<br/>
+- [["왜?" 관점에서 생각 - JVM] - JVM 동작원리와 내부구조는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC%EC%99%80%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - JIT 컴파일러의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JIT%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - JVM 힙 내부구조는 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%ED%9E%99%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - 가비지 컬렉션(G.C)의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EA%B0%80%EB%B9%84%EC%A7%80%20%EC%BB%AC%EB%A0%89%EC%85%98(G.C)%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - 배열의 선언과 메모리 할당은 어떤식으로 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%ED%95%A0%EB%8B%B9.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - String 객체를 생성하는 방법과 내부 동작 원리는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EB%A5%BC%20%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%EA%B3%BC%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - 자바는 어떻게 실행 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9E%90%EB%B0%94%EB%8A%94%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%8B%A4%ED%96%89%EB%90%98%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - 자바 메모리 구조가 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9E%90%EB%B0%94%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B5%AC%EC%A1%B0%EA%B0%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%90%98%EC%96%B4%20%EC%9E%88%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - 변수들은 JVM에서 어디에 할당 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%80%20JVM%EC%97%90%EC%84%9C%20%EC%96%B4%EB%94%94%EC%97%90%20%ED%95%A0%EB%8B%B9%EB%90%98%EB%8A%94%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - 원시형과 참조형 타입은 JVM 메모리에 어느 위치에 할당 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9B%90%EC%8B%9C%ED%98%95%EA%B3%BC%20%EC%B0%B8%EC%A1%B0%ED%98%95%20%ED%83%80%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%B4.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - static 메서드와 일반 메서드의 차이점은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/static%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%EC%9D%BC%EB%B0%98%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90.md)<br/>
+- [["왜?" 관점에서 생각 - JVM] - ]()<br/>
+- [["왜?" 관점에서 생각 - JVM] - ]()<br/>
+- [["왜?" 관점에서 생각 - JVM] - ]()<br/>
 
 
 
@@ -139,7 +139,7 @@
 - [["왜?" 관점에서 생각 - DB] - attribute data type 정의란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/attribute%20data%20type%20%EC%A0%95%EC%9D%98.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - 프로시저(procedure)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80(procedure)%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - trigger란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/trigger%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - transaction 설명]()<br/>
+- [["왜?" 관점에서 생각 - DB] - transaction 설명](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/transaction%20%EC%84%A4%EB%AA%85.md)<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>
 - [["왜?" 관점에서 생각 - DB] - ]()<br/>

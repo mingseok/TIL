@@ -22,7 +22,6 @@
 
 **`Non-Blocking` :** 다른 주체의 작업에 관련없이 자신의 작업을 하는 것
 
-`CAS(Compare-and-swap)` 알고리즘을 이용하기 때문이다.
 
 - ex) 예시
     
