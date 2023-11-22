@@ -38,58 +38,58 @@
 ```
 
 깊게 이해 - JVM 관련
-- [["왜?" 관점에서 생각 - JVM] - JVM 동작원리와 내부구조는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC%EC%99%80%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - JIT 컴파일러의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JIT%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - JVM 힙 내부구조는 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%ED%9E%99%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - 가비지 컬렉션(G.C)의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EA%B0%80%EB%B9%84%EC%A7%80%20%EC%BB%AC%EB%A0%89%EC%85%98(G.C)%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - 배열의 선언과 메모리 할당은 어떤식으로 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%ED%95%A0%EB%8B%B9.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - String 객체를 생성하는 방법과 내부 동작 원리는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EB%A5%BC%20%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%EA%B3%BC%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - 자바는 어떻게 실행 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9E%90%EB%B0%94%EB%8A%94%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%8B%A4%ED%96%89%EB%90%98%EB%82%98%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - 자바 메모리 구조가 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9E%90%EB%B0%94%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B5%AC%EC%A1%B0%EA%B0%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%90%98%EC%96%B4%20%EC%9E%88%EB%82%98%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - 변수들은 JVM에서 어디에 할당 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%80%20JVM%EC%97%90%EC%84%9C%20%EC%96%B4%EB%94%94%EC%97%90%20%ED%95%A0%EB%8B%B9%EB%90%98%EB%8A%94%EA%B0%80.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - 원시형과 참조형 타입은 JVM 메모리에 어느 위치에 할당 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9B%90%EC%8B%9C%ED%98%95%EA%B3%BC%20%EC%B0%B8%EC%A1%B0%ED%98%95%20%ED%83%80%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%B4.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - static 메서드와 일반 메서드의 차이점은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/static%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%EC%9D%BC%EB%B0%98%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90.md)<br/>
-- [["왜?" 관점에서 생각 - JVM] - ]()<br/>
-- [["왜?" 관점에서 생각 - JVM] - ]()<br/>
-- [["왜?" 관점에서 생각 - JVM] - ]()<br/>
+- [["왜?" 관점에서 생각] - JVM 동작원리와 내부구조는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC%EC%99%80%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
+- [["왜?" 관점에서 생각] - JIT 컴파일러의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JIT%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - JVM 힙 내부구조는 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%ED%9E%99%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
+- [["왜?" 관점에서 생각] - 가비지 컬렉션(G.C)의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EA%B0%80%EB%B9%84%EC%A7%80%20%EC%BB%AC%EB%A0%89%EC%85%98(G.C)%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 배열의 선언과 메모리 할당은 어떤식으로 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%ED%95%A0%EB%8B%B9.md)<br/>
+- [["왜?" 관점에서 생각] - String 객체를 생성하는 방법과 내부 동작 원리는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EB%A5%BC%20%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%EA%B3%BC%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.md)<br/>
+- [["왜?" 관점에서 생각] - 자바는 어떻게 실행 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9E%90%EB%B0%94%EB%8A%94%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%8B%A4%ED%96%89%EB%90%98%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 자바 메모리 구조가 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9E%90%EB%B0%94%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B5%AC%EC%A1%B0%EA%B0%80%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%90%98%EC%96%B4%20%EC%9E%88%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 변수들은 JVM에서 어디에 할당 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%80%20JVM%EC%97%90%EC%84%9C%20%EC%96%B4%EB%94%94%EC%97%90%20%ED%95%A0%EB%8B%B9%EB%90%98%EB%8A%94%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각] - 원시형과 참조형 타입은 JVM 메모리에 어느 위치에 할당 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9B%90%EC%8B%9C%ED%98%95%EA%B3%BC%20%EC%B0%B8%EC%A1%B0%ED%98%95%20%ED%83%80%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%B4.md)<br/>
+- [["왜?" 관점에서 생각] - static 메서드와 일반 메서드의 차이점은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/static%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%EC%9D%BC%EB%B0%98%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90.md)<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
 
 
 
 
 
 깊게 이해 - JAVA
-- [["왜?" 관점에서 생각 - JAVA] - 왜 모든 클래스는 Object 클래스의 상속을 받나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%99%9C%20%EB%AA%A8%EB%93%A0%20%ED%81%B4%EB%9E%98%EC%8A%A4%EB%8A%94%20Object%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98%20%EC%83%81%EC%86%8D%EC%9D%84%20%EB%B0%9B%EC%9D%84%EA%B9%8C.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 인터페이스는 상수 필드만 선언이 가능한가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%8A%94%20%EC%83%81%EC%88%98%20%ED%95%84%EB%93%9C%EB%A7%8C%20%EC%84%A0%EC%96%B8%EC%9D%B4%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 실행을 위해서는 main 메서드가 필요한 것 인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%A4%ED%96%89%EC%9D%84%20%EC%9C%84%ED%95%B4%EC%84%9C%20%EC%99%9C%20main%20%EB%A9%94%EC%84%9C%EB%93%9C%EA%B0%80%20%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - System.out.println() 내부 동작원리가 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/System.out.println()%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 상속이 갖는 단점들은 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%81%EC%86%8D%20%EC%A0%95%EC%9D%98%2C%20%EC%83%81%EC%86%8D%EC%9D%B4%20%EA%B0%96%EB%8A%94%20%EB%8B%A8%EC%A0%90%EB%93%A4.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - DTO를 만들어 두면 무슨 장점이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DTO%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%91%90%EB%A9%B4%20%EB%AC%B4%EC%8A%A8%20%EC%9E%A5%EC%A0%90%EC%9D%B4%20%EC%9E%88%EB%82%98%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 클래스 멤버 변수의 초기화 순서는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%A9%A4%EB%B2%84%20%EB%B3%80%EC%88%98%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%88%9C%EC%84%9C%EB%8A%94%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%90%98%EB%82%98%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 배열의 index는 0부터 시작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20index%EB%8A%94%20%EC%99%9C%200%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 생성자를 만들어야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%95%BC%20%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 String 객체가 불변인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EA%B0%80%20%EB%B6%88%EB%B3%80%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 char타입은 정수인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/char%ED%83%80%EC%9E%85%EC%9D%80%20%EC%A0%95%EC%88%98%EC%9D%B8%EA%B0%80.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 클래스와 객체 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%B0%A8%EC%9D%B4.md#%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EA%B0%9D%EC%B2%B4-%EC%B0%A8%EC%9D%B4)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 클래스와 메소드를 사용하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%9D%98%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 추상클래스와 인터페이스의 용도를 나눈 것인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98%20%EC%9A%A9%EB%8F%84%EB%A5%BC%20%EB%82%98%EB%88%88%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 인터페이스를 왜 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC%20%EC%99%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 인터페이스는 Default Method는 왜 추가 했나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98%20Default%20Method%EB%8A%94%20%EC%99%9C%20%EC%B6%94%EA%B0%80%20%ED%96%88%EC%9D%84%EA%B9%8C.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 enum을 사용하는 건가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/enum%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 박싱을 해야 하고, 언박싱을 해야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%95%EC%8B%B1%EC%9D%84%20%ED%95%B4%EC%95%BC%20%ED%95%98%EA%B3%A0%2C%20%EC%96%B8%EB%B0%95%EC%8B%B1%EC%9D%84%20%ED%95%B4%EC%95%BC%20%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 제네릭이 필요한가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%9D%B4%20%ED%95%84%EC%9A%94%ED%95%9C%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 래퍼 클래스를 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%9E%98%ED%8D%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 equals, hashCode 메서드는 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/equals%2C%20hashCode%20%EB%A9%94%EC%84%9C%EB%93%9C%EB%8A%94%20%EC%99%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - feat : (JAVA) : try / catch / finally 동작 순서에 대해서 자세히 설명](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/try%20%20catch%20%20finally.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - 왜 불변 객체나 final을 굳이 사용해야 하는 이유가 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80%20%EC%84%A4%EB%AA%85.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - String, StringBuffer, StringBuilder의 3개의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%2C%20StringBuffer%2C%20StringBuilder%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - String을 합칠때 “+” 연산자를 사용한다면 단점은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%EC%9D%84%20%ED%95%A9%EC%B9%A0%EB%95%8C%20%E2%80%9C%2B%E2%80%9D%20%EC%97%B0%EC%82%B0%EC%9E%90%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%8B%A8%EC%A0%90%EC%9D%80.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - Comparable과 Comparator을 사용하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Comparable%EA%B3%BC%20Comparator%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - exception VS error](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/exception%20VS%20error.md)<br/>
-- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
-- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
-- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
-- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
-- [["왜?" 관점에서 생각 - JAVA] - ]()<br/>
+- [["왜?" 관점에서 생각] - 왜 모든 클래스는 Object 클래스의 상속을 받나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%99%9C%20%EB%AA%A8%EB%93%A0%20%ED%81%B4%EB%9E%98%EC%8A%A4%EB%8A%94%20Object%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98%20%EC%83%81%EC%86%8D%EC%9D%84%20%EB%B0%9B%EC%9D%84%EA%B9%8C.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 인터페이스는 상수 필드만 선언이 가능한가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%8A%94%20%EC%83%81%EC%88%98%20%ED%95%84%EB%93%9C%EB%A7%8C%20%EC%84%A0%EC%96%B8%EC%9D%B4%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 실행을 위해서는 main 메서드가 필요한 것 인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%A4%ED%96%89%EC%9D%84%20%EC%9C%84%ED%95%B4%EC%84%9C%20%EC%99%9C%20main%20%EB%A9%94%EC%84%9C%EB%93%9C%EA%B0%80%20%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - System.out.println() 내부 동작원리가 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/System.out.println()%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md)<br/>
+- [["왜?" 관점에서 생각] - 상속이 갖는 단점들은 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%81%EC%86%8D%20%EC%A0%95%EC%9D%98%2C%20%EC%83%81%EC%86%8D%EC%9D%B4%20%EA%B0%96%EB%8A%94%20%EB%8B%A8%EC%A0%90%EB%93%A4.md)<br/>
+- [["왜?" 관점에서 생각] - DTO를 만들어 두면 무슨 장점이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DTO%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%91%90%EB%A9%B4%20%EB%AC%B4%EC%8A%A8%20%EC%9E%A5%EC%A0%90%EC%9D%B4%20%EC%9E%88%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 클래스 멤버 변수의 초기화 순서는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%A9%A4%EB%B2%84%20%EB%B3%80%EC%88%98%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%88%9C%EC%84%9C%EB%8A%94%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%90%98%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 배열의 index는 0부터 시작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20index%EB%8A%94%20%EC%99%9C%200%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 생성자를 만들어야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%99%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%95%BC%20%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 String 객체가 불변인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%20%EA%B0%9D%EC%B2%B4%EA%B0%80%20%EB%B6%88%EB%B3%80%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 char타입은 정수인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/char%ED%83%80%EC%9E%85%EC%9D%80%20%EC%A0%95%EC%88%98%EC%9D%B8%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각] - 클래스와 객체 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%B0%A8%EC%9D%B4.md#%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EA%B0%9D%EC%B2%B4-%EC%B0%A8%EC%9D%B4)<br/>
+- [["왜?" 관점에서 생각] - 클래스와 메소드를 사용하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%9D%98%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 추상클래스와 인터페이스의 용도를 나눈 것인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98%20%EC%9A%A9%EB%8F%84%EB%A5%BC%20%EB%82%98%EB%88%88%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 인터페이스를 왜 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC%20%EC%99%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 인터페이스는 Default Method는 왜 추가 했나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98%20Default%20Method%EB%8A%94%20%EC%99%9C%20%EC%B6%94%EA%B0%80%20%ED%96%88%EC%9D%84%EA%B9%8C.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 enum을 사용하는 건가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/enum%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 박싱을 해야 하고, 언박싱을 해야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%95%EC%8B%B1%EC%9D%84%20%ED%95%B4%EC%95%BC%20%ED%95%98%EA%B3%A0%2C%20%EC%96%B8%EB%B0%95%EC%8B%B1%EC%9D%84%20%ED%95%B4%EC%95%BC%20%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 제네릭이 필요한가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%9D%B4%20%ED%95%84%EC%9A%94%ED%95%9C%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 래퍼 클래스를 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%9E%98%ED%8D%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 equals, hashCode 메서드는 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/equals%2C%20hashCode%20%EB%A9%94%EC%84%9C%EB%93%9C%EB%8A%94%20%EC%99%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - feat : (JAVA) : try / catch / finally 동작 순서에 대해서 자세히 설명](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/try%20%20catch%20%20finally.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 불변 객체나 final을 굳이 사용해야 하는 이유가 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80%20%EC%84%A4%EB%AA%85.md)<br/>
+- [["왜?" 관점에서 생각] - String, StringBuffer, StringBuilder의 3개의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%2C%20StringBuffer%2C%20StringBuilder%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EB%8A%94.md)<br/>
+- [["왜?" 관점에서 생각] - String을 합칠때 “+” 연산자를 사용한다면 단점은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%EC%9D%84%20%ED%95%A9%EC%B9%A0%EB%95%8C%20%E2%80%9C%2B%E2%80%9D%20%EC%97%B0%EC%82%B0%EC%9E%90%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%8B%A8%EC%A0%90%EC%9D%80.md)<br/>
+- [["왜?" 관점에서 생각] - Comparable과 Comparator을 사용하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Comparable%EA%B3%BC%20Comparator%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - exception VS error](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/exception%20VS%20error.md)<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
 
 
 
@@ -101,25 +101,25 @@
 
 
 깊게 이해 - Spring
-- [["왜?" 관점에서 생각 - Spring] - 왜 스프링을 쓰는 건가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%B4%EB%9E%80%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%EB%9E%80.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - Annotation을 왜 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Annotation.md#%EC%82%AC%EC%9A%A9-%EC%9D%B4%EC%9C%A0%EB%8A%94-1)<br/>
-- [["왜?" 관점에서 생각 - Spring] - IoC, DI, DIP 다 같은거 아닌가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/IoC%2C%20DI%2C%20DIP%20%EB%8B%A4%20%EA%B0%99%EC%9D%80%EA%B1%B0%20%EC%95%84%EB%8B%8C%EA%B0%80.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - 왜 AOP를 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/AOP%20(%3DAspect%20Oriented%20Programming).md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - DI 생성자 주입을 권장 하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DI%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EA%B6%8C%EC%9E%A5%20%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - 스프링 컨테이너 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - 스프링 빈(Bean)이랑, BeanDefinition 차이가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88(Bean)%EC%9D%B4%EB%9E%80%20%20BeanDefinition%EC%9D%B4%EB%9E%80.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - 빈 생명주기 콜백 내부 동작 순서는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%C2%A0%EC%BD%9C%EB%B0%B1(Bean%20LifeCycle)%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - 왜 싱글톤 레지스트리를 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%A0%88%EC%A7%80%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%9E%80.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - @Configuration 내부에서 @Bean이 등록되는 과정은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40Configuration%20%EC%95%88%EC%97%90%EC%84%9C%20%40Bean%EC%9D%B4%20%EB%B9%88%EC%9C%BC%EB%A1%9C%20%EB%93%B1%EB%A1%9D%EB%90%98%EB%8A%94%20%EA%B3%BC%EC%A0%95.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - 왜? @Bean과 @Configuration 함께 사용해야 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40Bean%EA%B3%BC%20%40Configuration%20%ED%95%A8%EA%BB%98%20%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC%20%EB%90%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - @Bean vs @Component 차이가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40Bean%20vs%20%40%20Component%20%EC%B0%A8%EC%9D%B4%EA%B0%80%20%EB%AD%98%EA%B9%8C.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - 스프링에서 빈을 등록하는 방법은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%EC%97%90%EC%84%9C%20%EB%B9%88%EC%9D%84%20%EB%93%B1%EB%A1%9D%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - 프로토타입 사용 이유 / 싱글톤 빈과 같이 사용시 문제점은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%20%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B9%88%EA%B3%BC%20%EA%B0%99%EC%9D%B4%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)<br/>
-- [["왜?" 관점에서 생각 - Spring] - ]()<br/>
-- [["왜?" 관점에서 생각 - Spring] - ]()<br/>
-- [["왜?" 관점에서 생각 - Spring] - ]()<br/>
-- [["왜?" 관점에서 생각 - Spring] - ]()<br/>
-- [["왜?" 관점에서 생각 - Spring] - ]()<br/>
+- [["왜?" 관점에서 생각] - 왜 스프링을 쓰는 건가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%B4%EB%9E%80%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%EB%9E%80.md)<br/>
+- [["왜?" 관점에서 생각] - Annotation을 왜 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Annotation.md#%EC%82%AC%EC%9A%A9-%EC%9D%B4%EC%9C%A0%EB%8A%94-1)<br/>
+- [["왜?" 관점에서 생각] - IoC, DI, DIP 다 같은거 아닌가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/IoC%2C%20DI%2C%20DIP%20%EB%8B%A4%20%EA%B0%99%EC%9D%80%EA%B1%B0%20%EC%95%84%EB%8B%8C%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각m/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/AOP%20(%3DAspect%20Oriented%20Programming).md)<br/>
+- [["왜?" 관점에서 생각] - DI 생성자 주입을 권장 하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DI%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EA%B6%8C%EC%9E%A5%20%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링 컨테이너 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링 빈(Bean)이랑, BeanDefinition 차이가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88(Bean)%EC%9D%B4%EB%9E%80%20%20BeanDefinition%EC%9D%B4%EB%9E%80.md)<br/>
+- [["왜?" 관점에서 생각] - 빈 생명주기 콜백 내부 동작 순서는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%C2%A0%EC%BD%9C%EB%B0%B1(Bean%20LifeCycle)%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 싱글톤 레지스트리를 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%A0%88%EC%A7%80%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%9E%80.md)<br/>
+- [["왜?" 관점에서 생각] - @Configuration 내부에서 @Bean이 등록되는 과정은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40Configuration%20%EC%95%88%EC%97%90%EC%84%9C%20%40Bean%EC%9D%B4%20%EB%B9%88%EC%9C%BC%EB%A1%9C%20%EB%93%B1%EB%A1%9D%EB%90%98%EB%8A%94%20%EA%B3%BC%EC%A0%95.md)<br/>
+- [["왜?" 관점에서 생각] - 왜? @Bean과 @Configuration 함께 사용해야 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40Bean%EA%B3%BC%20%40Configuration%20%ED%95%A8%EA%BB%98%20%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC%20%EB%90%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
+- [["왜?" 관점에서 생각] - @Bean vs @Component 차이가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40Bean%20vs%20%40%20Component%20%EC%B0%A8%EC%9D%B4%EA%B0%80%20%EB%AD%98%EA%B9%8C.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링에서 빈을 등록하는 방법은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%EC%97%90%EC%84%9C%20%EB%B9%88%EC%9D%84%20%EB%93%B1%EB%A1%9D%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [["왜?" 관점에서 생각] - 프로토타입 사용 이유 / 싱글톤 빈과 같이 사용시 문제점은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%20%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B9%88%EA%B3%BC%20%EA%B0%99%EC%9D%B4%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
 
 
 
@@ -130,29 +130,28 @@
 
 
 깊게 이해 - DataBase
-- [["왜?" 관점에서 생각 - DB] - database system 동작하는 방식은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/database%20system%20%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%20%EB%B0%A9%EC%8B%9D.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - RDBMS와 DBMS 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/RDBMS%EC%99%80%20DBMS%20%EC%B0%A8%EC%9D%B4%EB%8A%94.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - logical vs conceptual vs physical 각각의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/logical%20vs%20conceptual%20vs%20physical.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - three-schema architecture란? 무엇인지 설명해주세요](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/three-schema%20architecture%20%EB%9E%80.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - DML, VDL, DDL 각각 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DML%2C%20VDL%2C%20DDL%20%EC%84%A4%EB%AA%85.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - relation database 개념 / 특징 / keys 종류는 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/relation%20database%20%EA%B0%9C%EB%85%90%20%ED%8A%B9%EC%A7%95%20keys%20%EC%A2%85%EB%A5%98.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - attribute data type 정의란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/attribute%20data%20type%20%EC%A0%95%EC%9D%98.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - 프로시저(procedure)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80(procedure)%EB%9E%80.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - trigger란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/trigger%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - transaction은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/transaction%20%EC%84%A4%EB%AA%85.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - Isolation 비정상적인 현상이란?]()<br/>
-- [["왜?" 관점에서 생각 - DB] - transaction isolation level이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/transaction%20isolation%20level.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - schedule과 serializable이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/schedule%EA%B3%BC%20serializable%EC%9D%B4%EB%9E%80.md)<br/>
-- [["왜?" 관점에서 생각 - DB] - Three-tier architecture / stored procedure이란?]()<br/>
-
-- [["왜?" 관점에서 생각 - DB] - recoverable, unrecoverable 이란?]()<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
-- [["왜?" 관점에서 생각 - DB] - ]()<br/>
+- [["왜?" 관점에서 생각] - database system 동작하는 방식은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/database%20system%20%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%20%EB%B0%A9%EC%8B%9D.md)<br/>
+- [["왜?" 관점에서 생각] - RDBMS와 DBMS 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/RDBMS%EC%99%80%20DBMS%20%EC%B0%A8%EC%9D%B4%EB%8A%94.md)<br/>
+- [["왜?" 관점에서 생각] - logical vs conceptual vs physical 각각의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/logical%20vs%20conceptual%20vs%20physical.md)<br/>
+- [["왜?" 관점에서 생각] - three-schema architecture란? 무엇인지 설명해주세요](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/three-schema%20architecture%20%EB%9E%80.md)<br/>
+- [["왜?" 관점에서 생각] - DML, VDL, DDL 각각 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DML%2C%20VDL%2C%20DDL%20%EC%84%A4%EB%AA%85.md)<br/>
+- [["왜?" 관점에서 생각] - relation database 개념 / 특징 / keys 종류는 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/relation%20database%20%EA%B0%9C%EB%85%90%20%ED%8A%B9%EC%A7%95%20keys%20%EC%A2%85%EB%A5%98.md)<br/>
+- [["왜?" 관점에서 생각] - attribute data type 정의란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/attribute%20data%20type%20%EC%A0%95%EC%9D%98.md)<br/>
+- [["왜?" 관점에서 생각] - 프로시저(procedure)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80(procedure)%EB%9E%80.md)<br/>
+- [["왜?" 관점에서 생각] - trigger란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/trigger%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - transaction은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/transaction%20%EC%84%A4%EB%AA%85.md)<br/>
+- [["왜?" 관점에서 생각] - Isolation 비정상적인 현상이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Isolation%20%EB%B9%84%EC%A0%95%EC%83%81%EC%A0%81%EC%9D%B8%20%ED%98%84%EC%83%81.md)<br/>
+- [["왜?" 관점에서 생각] - transaction isolation level이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/transaction%20isolation%20level.md)<br/>
+- [["왜?" 관점에서 생각] - schedule과 serializable이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/schedule%EA%B3%BC%20serializable%EC%9D%B4%EB%9E%80.md)<br/>
+- [["왜?" 관점에서 생각] - Three-tier architecture / stored procedure이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Three-tier%20architecture.md)<br/>
+- [["왜?" 관점에서 생각] - recoverable, unrecoverable 이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/recoverable%2C%20unrecoverable.md)<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
 
 
 
@@ -172,8 +171,6 @@
 - [[CS] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
 - [[CS] - CAS 알고리즘이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/CAS%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EB%AA%85.md)<br/>
 - [[CS] - sync(동기) vs async(비동기)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
-
-
 - [[CS] - ]()<br/>
 - [[CS] - ]()<br/>
 - [[CS] - ]()<br/>
