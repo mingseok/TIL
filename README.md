@@ -63,6 +63,17 @@
 - [["왜?" 관점에서 생각] - 왜 실행을 위해서는 main 메서드가 필요한 것 인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%A4%ED%96%89%EC%9D%84%20%EC%9C%84%ED%95%B4%EC%84%9C%20%EC%99%9C%20main%20%EB%A9%94%EC%84%9C%EB%93%9C%EA%B0%80%20%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각] - System.out.println() 내부 동작원리가 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/System.out.println()%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md)<br/>
 - [["왜?" 관점에서 생각] - 상속이 갖는 단점들은 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%83%81%EC%86%8D%20%EC%A0%95%EC%9D%98%2C%20%EC%83%81%EC%86%8D%EC%9D%B4%20%EA%B0%96%EB%8A%94%20%EB%8B%A8%EC%A0%90%EB%93%A4.md)<br/>
+
+
+
+
+
+- [["왜?" 관점에서 생각] - 상속받는 자식 클래스를 생성하면 부모 객체는 생성 될까?]()<br/>
+
+
+
+
+
 - [["왜?" 관점에서 생각] - DTO를 만들어 두면 무슨 장점이 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DTO%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%91%90%EB%A9%B4%20%EB%AC%B4%EC%8A%A8%20%EC%9E%A5%EC%A0%90%EC%9D%B4%20%EC%9E%88%EB%82%98%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각] - 클래스 멤버 변수의 초기화 순서는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%A9%A4%EB%B2%84%20%EB%B3%80%EC%88%98%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%88%9C%EC%84%9C%EB%8A%94%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%90%98%EB%82%98%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각] - 왜 배열의 index는 0부터 시작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20index%EB%8A%94%20%EC%99%9C%200%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
@@ -85,7 +96,7 @@
 - [["왜?" 관점에서 생각] - String을 합칠때 “+” 연산자를 사용한다면 단점은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%EC%9D%84%20%ED%95%A9%EC%B9%A0%EB%95%8C%20%E2%80%9C%2B%E2%80%9D%20%EC%97%B0%EC%82%B0%EC%9E%90%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%8B%A8%EC%A0%90%EC%9D%80.md)<br/>
 - [["왜?" 관점에서 생각] - Comparable과 Comparator을 사용하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Comparable%EA%B3%BC%20Comparator%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각] - exception VS error](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/exception%20VS%20error.md)<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
+
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
@@ -116,9 +127,9 @@
 - [["왜?" 관점에서 생각] - @Bean vs @Component 차이가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40Bean%20vs%20%40%20Component%20%EC%B0%A8%EC%9D%B4%EA%B0%80%20%EB%AD%98%EA%B9%8C.md)<br/>
 - [["왜?" 관점에서 생각] - 스프링에서 빈을 등록하는 방법은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%EC%97%90%EC%84%9C%20%EB%B9%88%EC%9D%84%20%EB%93%B1%EB%A1%9D%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)<br/>
 - [["왜?" 관점에서 생각] - 프로토타입 사용 이유 / 싱글톤 빈과 같이 사용시 문제점은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%20%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B9%88%EA%B3%BC%20%EA%B0%99%EC%9D%B4%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)<br/>
-- [["왜?" 관점에서 생각] - 빌더 패턴 사용 이유는?]()<br/>
-- [["왜?" 관점에서 생각] - @RequestBody, @RequestParam, @ModelAttribute의 차이는?]()<br/>
-- [["왜?" 관점에서 생각] - 롬복이 만드는 메소드들이 생성되는 시점은?]()<br/>
+- [["왜?" 관점에서 생각] - 빌더 패턴 사용 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B9%8C%EB%8D%94%20%ED%8C%A8%ED%84%B4%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0.md)<br/>
+- [["왜?" 관점에서 생각] - @RequestBody, @RequestParam, @ModelAttribute의 차이는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40RequestBody%2C%20%40RequestParam%2C%20%40ModelAttribute%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
+- [["왜?" 관점에서 생각] - 롬복이 만드는 메소드들이 생성되는 시점은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%A1%AC%EB%B3%B5%EC%9D%B4%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EB%A9%94%EC%86%8C%EB%93%9C%EB%93%A4%EC%9D%B4%20%EC%83%9D%EC%84%B1%EB%90%98%EB%8A%94%20%EC%8B%9C%EC%A0%90%EC%9D%80.md)<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
@@ -179,8 +190,8 @@
 - [[CS] - PSA(Portable Service Abstraction)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/PSA(Portable%20Service%20Abstraction).md)<br/>
 - [[CS] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
 - [[CS] - CAS 알고리즘이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/CAS%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[CS] - sync(동기) vs async(비동기)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
-- [[CS] - ]()<br/>
+- [[CS] - Block vs Non-Block / sync(동기) vs async(비동기)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
+- [[CS] - blocking / non-blocking, sync / async 코드 구현]()<br/>
 - [[CS] - ]()<br/>
 - [[CS] - ]()<br/>
 - [[CS] - ]()<br/>
