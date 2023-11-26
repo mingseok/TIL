@@ -154,7 +154,7 @@
 - [["왜?" 관점에서 생각] - schedule과 serializable이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/schedule%EA%B3%BC%20serializable%EC%9D%B4%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각] - Three-tier architecture / stored procedure이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Three-tier%20architecture.md)<br/>
 - [["왜?" 관점에서 생각] - recoverable, unrecoverable 이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/recoverable%2C%20unrecoverable.md)<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - read-lock, write-lock]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
@@ -180,10 +180,17 @@
 - [[CS] - CAS 알고리즘이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/CAS%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EB%AA%85.md)<br/>
 - [[CS] - Block vs Non-Block / sync(동기) vs async(비동기)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
 - [[CS] - blocking / non-blocking, sync / async 코드 구현](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/async%20%EC%BD%94%EB%93%9C%20%EA%B5%AC%ED%98%84.md)<br/>
-- [[CS] - 뮤텍스와 세마포어의 차이는?]()<br/>
+- [[CS] - 뮤텍스와 세마포어의 차이는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%AE%A4%ED%85%8D%EC%8A%A4%EC%99%80%20%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
 - [[CS] - ]()<br/>
 - [[CS] - ]()<br/>
 - [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+
 
 
 
