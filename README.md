@@ -154,8 +154,8 @@
 - [["왜?" 관점에서 생각] - schedule과 serializable이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/schedule%EA%B3%BC%20serializable%EC%9D%B4%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각] - Three-tier architecture / stored procedure이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Three-tier%20architecture.md)<br/>
 - [["왜?" 관점에서 생각] - recoverable, unrecoverable 이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/recoverable%2C%20unrecoverable.md)<br/>
-- [["왜?" 관점에서 생각] - read-lock, write-lock]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - read-lock, write-lock 이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/read-lock%2C%20write-lock.md)<br/>
+- [["왜?" 관점에서 생각] - MVCC 이란 무엇인가요?]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
