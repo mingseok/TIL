@@ -159,8 +159,8 @@
 
 
 
-- [["왜?" 관점에서 생각] - Functional dependency 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Functional%20dependency.md)<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - Functional dependency란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Functional%20dependency.md)<br/>
+- [["왜?" 관점에서 생각] - DB 정규화(Normalization)란 무엇인가요?]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
