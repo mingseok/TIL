@@ -160,7 +160,13 @@
 
 
 - [["왜?" 관점에서 생각] - Functional dependency란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Functional%20dependency.md)<br/>
-- [["왜?" 관점에서 생각] - DB 정규화(Normalization)란 무엇인가요?]()<br/>
+- [["왜?" 관점에서 생각] - DB 정규화(Normalization)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DB%20%EC%A0%95%EA%B7%9C%ED%99%94.md)<br/>
+- [["왜?" 관점에서 생각] - DB 인덱스란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DB%20%EC%9D%B8%EB%8D%B1%EC%8A%A4.md)<br/>
+- [["왜?" 관점에서 생각] - B tree 설명]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
