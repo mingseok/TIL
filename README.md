@@ -119,18 +119,23 @@
 - [["왜?" 관점에서 생각] - 빌더 패턴 사용 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B9%8C%EB%8D%94%20%ED%8C%A8%ED%84%B4%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0.md)<br/>
 - [["왜?" 관점에서 생각] - @RequestBody, @RequestParam, @ModelAttribute의 차이는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40RequestBody%2C%20%40RequestParam%2C%20%40ModelAttribute%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
 - [["왜?" 관점에서 생각] - 롬복이 만드는 메소드들이 생성되는 시점은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%A1%AC%EB%B3%B5%EC%9D%B4%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EB%A9%94%EC%86%8C%EB%93%9C%EB%93%A4%EC%9D%B4%20%EC%83%9D%EC%84%B1%EB%90%98%EB%8A%94%20%EC%8B%9C%EC%A0%90%EC%9D%80.md)<br/>
+
+
+
+- [["왜?" 관점에서 생각] - form태그의 실행 내부 동작은?]()<br/>
+- [["왜?" 관점에서 생각] - API (json)방식 / @ResponseBody 내부 동작은?]()<br/>
+- [["왜?" 관점에서 생각] - 서블릿 설명 / 내부 동작은?]()<br/>
+- [["왜?" 관점에서 생각] - Front Controller란?]()<br/>
+- [["왜?" 관점에서 생각] - 리다이렉트, 디스패처 서블릿은 무엇인가?]()<br/>
+- [["왜?" 관점에서 생각] - 디스패처 서블릿 내부 동작은 어떠한가?]()<br/>
+- [["왜?" 관점에서 생각] - 뷰 리졸버(viewResolver) 사용 이유는?]()<br/>
+- [["왜?" 관점에서 생각] - Handler vs HandlerAdapter 비교]()<br/>
+- [["왜?" 관점에서 생각] - MVC 요청 처리 내부 동작]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
+
+
+
 
 
 
@@ -156,20 +161,23 @@
 - [["왜?" 관점에서 생각] - recoverable, unrecoverable 이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/recoverable%2C%20unrecoverable.md)<br/>
 - [["왜?" 관점에서 생각] - read-lock, write-lock 이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/read-lock%2C%20write-lock.md)<br/>
 - [["왜?" 관점에서 생각] - MVCC 이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/MVCC%20%EA%B0%9C%EB%85%90.md)<br/>
-
-
-
 - [["왜?" 관점에서 생각] - Functional dependency란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Functional%20dependency.md)<br/>
 - [["왜?" 관점에서 생각] - DB 정규화(Normalization)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DB%20%EC%A0%95%EA%B7%9C%ED%99%94.md)<br/>
 - [["왜?" 관점에서 생각] - DB 인덱스란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DB%20%EC%9D%B8%EB%8D%B1%EC%8A%A4.md)<br/>
-- [["왜?" 관점에서 생각] - B tree 설명]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - B tree 란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/B%20tree%20%EC%84%A4%EB%AA%85.md)<br/>
+
+
+
+- [["왜?" 관점에서 생각] - B tree 데이터 삭제 방식 어떤가요?]()<br/>
+- [["왜?" 관점에서 생각] - computer system 무엇인가요?]()<br/>
+- [["왜?" 관점에서 생각] - 왜 DB index로 B tree 계열이 사용되는가?]()<br/>
+- [["왜?" 관점에서 생각] - 파티셔닝(partitioning) 이란?]()<br/>
+- [["왜?" 관점에서 생각] - DBCP (DB connection pool) 무엇인가요?]()<br/>
+- [["왜?" 관점에서 생각] - NoSQL이란 무엇인가?]()<br/>
+
+
+
+
 
 
 
