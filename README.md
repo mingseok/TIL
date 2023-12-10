@@ -7,22 +7,17 @@
 
 
 ### ETC
-- [백엔드 개발자?](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%EC%9E%90.md)<br/>
-- [테스트 코드 작성 이유?](https://github.com/mingseok/TIL/blob/main/ETC/%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EC%9D%B4%EC%9C%A0.md)<br/>
 - [질문하는 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EC%A7%88%EB%AC%B8%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [효율을 올리는 독서 방법](https://brunch.co.kr/@gleet/61)<br/>
-- [멘토링 진행과정 (나의 블로그✏️)](https://alstjr706.tistory.com/category/%EB%A9%98%ED%86%A0%EB%A7%81)<br/>
+- [3배의 효율을 올리는 독서 방법](https://brunch.co.kr/@gleet/61)<br/>
 - [우아한형제들 - 김영한님의 강연](https://github.com/mingseok/TIL/blob/main/ETC/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%8A%94%20%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EC%82%AC%EB%8B%A4.md)<br/>
 - [인프랩(CTO) - 이동욱님의 강연](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%B4%EB%8F%99%EC%9A%B1%EB%8B%98%EC%9D%98%20%EA%B0%95%EC%97%B0.md)<br/>
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
-- [@Slf4j - 사용 방법](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B9%85.md)<br/>
-- [bootstrap - 사용 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9.md)<br/>
 - [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
 - [Java 네이밍 규칙](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9E%90%EB%B0%94%EB%84%A4%EC%9D%B4%EB%B0%8D%EA%B7%9C%EC%B9%99.md)<br/>
 - [스트림 컨벤션](http://blog.marcinchwedczuk.pl/java-streams-best-practices)<br/>
 - [객체지향적 코드 설계](https://github.com/mingseok/TIL/blob/main/ETC/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1.md)<br/>
-
-
+- [@Slf4j - 사용 방법](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B9%85.md)<br/>
+- [bootstrap - 사용 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9.md)<br/>
 
 
 
@@ -37,7 +32,7 @@
 내부 원리에 대해 깊게 이해하도록 노력하기
 ```
 
-깊게 이해 - JVM 관련
+깊게 이해 - JAVA + JVM 관련
 - [["왜?" 관점에서 생각] - JVM 동작원리와 내부구조는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC%EC%99%80%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
 - [["왜?" 관점에서 생각] - JIT 컴파일러의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JIT%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각] - JVM 힙 내부구조는 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%ED%9E%99%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
@@ -49,15 +44,6 @@
 - [["왜?" 관점에서 생각] - 변수들은 JVM에서 어디에 할당 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B3%80%EC%88%98%EB%93%A4%EC%9D%80%20JVM%EC%97%90%EC%84%9C%20%EC%96%B4%EB%94%94%EC%97%90%20%ED%95%A0%EB%8B%B9%EB%90%98%EB%8A%94%EA%B0%80.md)<br/>
 - [["왜?" 관점에서 생각] - 원시형과 참조형 타입은 JVM 메모리에 어느 위치에 할당 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9B%90%EC%8B%9C%ED%98%95%EA%B3%BC%20%EC%B0%B8%EC%A1%B0%ED%98%95%20%ED%83%80%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%B4.md)<br/>
 - [["왜?" 관점에서 생각] - static 메서드와 일반 메서드의 차이점은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/static%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%EC%9D%BC%EB%B0%98%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90.md)<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-
-
-
-
-
-깊게 이해 - JAVA
 - [["왜?" 관점에서 생각] - 왜 모든 클래스는 Object 클래스의 상속을 받나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%99%9C%20%EB%AA%A8%EB%93%A0%20%ED%81%B4%EB%9E%98%EC%8A%A4%EB%8A%94%20Object%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98%20%EC%83%81%EC%86%8D%EC%9D%84%20%EB%B0%9B%EC%9D%84%EA%B9%8C.md)<br/>
 - [["왜?" 관점에서 생각] - 왜 인터페이스는 상수 필드만 선언이 가능한가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%8A%94%20%EC%83%81%EC%88%98%20%ED%95%84%EB%93%9C%EB%A7%8C%20%EC%84%A0%EC%96%B8%EC%9D%B4%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
 - [["왜?" 관점에서 생각] - 왜 실행을 위해서는 main 메서드가 필요한 것 인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%A4%ED%96%89%EC%9D%84%20%EC%9C%84%ED%95%B4%EC%84%9C%20%EC%99%9C%20main%20%EB%A9%94%EC%84%9C%EB%93%9C%EA%B0%80%20%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
