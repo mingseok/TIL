@@ -72,10 +72,7 @@
 - [["왜?" 관점에서 생각] - String을 합칠때 “+” 연산자를 사용한다면 단점은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/String%EC%9D%84%20%ED%95%A9%EC%B9%A0%EB%95%8C%20%E2%80%9C%2B%E2%80%9D%20%EC%97%B0%EC%82%B0%EC%9E%90%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%8B%A8%EC%A0%90%EC%9D%80.md)<br/>
 - [["왜?" 관점에서 생각] - Comparable과 Comparator을 사용하는 이유는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Comparable%EA%B3%BC%20Comparator%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각] - exception VS error](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/exception%20VS%20error.md)<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
+
 
 
 
@@ -480,22 +477,9 @@
 
 
 ### HTTP
-- [[HTTP] - IP프로토콜 (=인터넷 프로토콜)](https://github.com/mingseok/TIL/blob/main/HTTP/IP%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C.md)<br/>
-- [[HTTP] - TCP, 3 way handshake, UDP](https://github.com/mingseok/TIL/blob/main/HTTP/TCP%2C%203%20way%20handshake%2C%20UDP.md)<br/>
-- [[HTTP] - PORT (=포트)](https://github.com/mingseok/TIL/blob/main/HTTP/PORT.md)<br/>
-- [[HTTP] - DNS](https://github.com/mingseok/TIL/blob/main/HTTP/DNS.md)<br/>
-- [[HTTP] - (지금까지)인터넷 네트워크 정리](https://github.com/mingseok/TIL/blob/main/HTTP/(%EC%A7%80%EA%B8%88%EA%B9%8C%EC%A7%80)%EC%9D%B8%ED%84%B0%EB%84%B7%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%A0%95%EB%A6%AC.md)<br/>
-- [[HTTP] - URI](https://github.com/mingseok/TIL/blob/main/HTTP/URI.md)<br/>
-- [[HTTP] - 웹 브라우저 요청 흐름](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%9A%94%EC%B2%AD%20%ED%9D%90%EB%A6%84.md)<br/>
-- [[HTTP] - 클라이언트 서버 구조](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%EC%A1%B0.md)<br/>
-- [[HTTP] - Stateful, Stateless](https://github.com/mingseok/TIL/blob/main/HTTP/Stateful%2C%20Stateless.md)<br/>
-- [[HTTP] - 비 연결성(connectionless)](https://github.com/mingseok/TIL/blob/main/HTTP/%EB%B9%84%20%EC%97%B0%EA%B2%B0%EC%84%B1(connectionless).md)<br/>
-- [[HTTP] - HTTP 메시지](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80.md)<br/>
-- [[HTTP] - URI 설계](https://github.com/mingseok/TIL/blob/main/HTTP/URI%20%EC%84%A4%EA%B3%84.md)<br/>
-- [[HTTP] - HTTP 메서드 - GET, POST](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%20-%20GET%2C%20POST.md)<br/>
-- [[HTTP] - 2xx, 3xx, 4xx, 5xx](https://github.com/mingseok/TIL/blob/main/HTTP/2xx%2C%203xx%2C%204xx%2C%205xx.md)<br/>
-- [[HTTP] - 쿠키](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BF%A0%ED%82%A4.md)<br/>
-- [[HTTP] - 캐시](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BA%90%EC%8B%9C.md)<br/>
+- [[HTTP] - 네트워크와 인터넷 개념]()<br/>
+
+
 
 
 
