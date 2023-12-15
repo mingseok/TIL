@@ -32,7 +32,9 @@
 내부 원리에 대해 깊게 이해하도록 노력하기
 ```
 
-깊게 이해 - JAVA + JVM 관련
+### 깊게 이해하고 정리 - JAVA + JVM 관련
+
+
 - [["왜?" 관점에서 생각] - JVM 동작원리와 내부구조는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC%EC%99%80%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
 - [["왜?" 관점에서 생각] - JIT 컴파일러의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JIT%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각] - JVM 힙 내부구조는 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%ED%9E%99%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
@@ -78,12 +80,7 @@
 
 
 
-
-
-
-
-
-깊게 이해 - Spring
+### 깊게 이해하고 정리 - Spring
 - [["왜?" 관점에서 생각] - 왜 스프링을 쓰는 건가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%B4%EB%9E%80%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각] - Annotation을 왜 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Annotation.md#%EC%82%AC%EC%9A%A9-%EC%9D%B4%EC%9C%A0%EB%8A%94-1)<br/>
 - [["왜?" 관점에서 생각] - IoC, DI, DIP 다 같은거 아닌가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/IoC%2C%20DI%2C%20DIP%20%EB%8B%A4%20%EA%B0%99%EC%9D%80%EA%B1%B0%20%EC%95%84%EB%8B%8C%EA%B0%80.md)<br/>
@@ -102,9 +99,6 @@
 - [["왜?" 관점에서 생각] - 빌더 패턴 사용 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B9%8C%EB%8D%94%20%ED%8C%A8%ED%84%B4%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0.md)<br/>
 - [["왜?" 관점에서 생각] - @RequestBody, @RequestParam, @ModelAttribute의 차이는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%40RequestBody%2C%20%40RequestParam%2C%20%40ModelAttribute%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
 - [["왜?" 관점에서 생각] - 롬복이 만드는 메소드들이 생성되는 시점은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%A1%AC%EB%B3%B5%EC%9D%B4%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EB%A9%94%EC%86%8C%EB%93%9C%EB%93%A4%EC%9D%B4%20%EC%83%9D%EC%84%B1%EB%90%98%EB%8A%94%20%EC%8B%9C%EC%A0%90%EC%9D%80.md)<br/>
-
-
-
 - [["왜?" 관점에서 생각] - form태그의 실행 내부 동작은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/form%ED%83%9C%EA%B7%B8%EC%9D%98%20%EC%8B%A4%ED%96%89%20%EB%8F%99%EC%9E%91%EC%9D%80.md)<br/>
 - [["왜?" 관점에서 생각] - API (json)방식 / @ResponseBody 내부 동작은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/API%20(json)%EB%B0%A9%EC%8B%9D%20%40ResponseBody%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
 - [["왜?" 관점에서 생각] - 서블릿 설명 / 내부 동작은?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%84%9C%EB%B8%94%EB%A6%BF%20%EC%84%A4%EB%AA%85%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
@@ -126,7 +120,7 @@
 
 
 
-깊게 이해 - DataBase
+### 깊게 이해하고 정리 - DataBase
 - [["왜?" 관점에서 생각] - database system 동작하는 방식은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/database%20system%20%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%20%EB%B0%A9%EC%8B%9D.md)<br/>
 - [["왜?" 관점에서 생각] - RDBMS와 DBMS 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/RDBMS%EC%99%80%20DBMS%20%EC%B0%A8%EC%9D%B4%EB%8A%94.md)<br/>
 - [["왜?" 관점에서 생각] - logical vs conceptual vs physical 각각의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/logical%20vs%20conceptual%20vs%20physical.md)<br/>
@@ -166,7 +160,7 @@
 
 
 
-### CS (Computer Science)
+### 깊게 이해하고 정리 - CS (Computer Science)
 - [[CS] - ‘메모리에 적재’ / CPU의 연산](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%E2%80%98%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%97%90%20%EC%A0%81%EC%9E%AC%E2%80%99%20CPU%EC%9D%98%20%EC%97%B0%EC%82%B0.md)<br/>
 - [[CS] - 동시성 vs 동기화 / 경쟁 조건 vs 임계 영역](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%20%EB%8F%99%EA%B8%B0%ED%99%94.md)<br/>
 - [[CS] - 동시성 문제 해결 방법으로는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)<br/>
