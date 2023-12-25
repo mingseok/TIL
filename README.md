@@ -108,20 +108,10 @@
 - [["왜?" 관점에서 생각] - 뷰 리졸버(viewResolver) 사용 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B7%B0%20%EB%A6%AC%EC%A1%B8%EB%B2%84(viewResolver)%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
 - [["왜?" 관점에서 생각] - Handler vs HandlerAdapter 비교](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Handler%20vs%20HandlerAdapter.md)<br/>
 - [["왜?" 관점에서 생각] - MVC 요청 처리 내부 동작](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/MVC%20%EC%9A%94%EC%B2%AD%20%EC%B2%98%EB%A6%AC%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
-- [["왜?" 관점에서 생각] - HTTP 메시지 컨버터란 무엇인가요?]()<br/>
-- [["왜?" 관점에서 생각] - 요청 매핑 헨들러 어뎁터 구조는?]()<br/>
-- [["왜?" 관점에서 생각] - PRG, RedirectAttributes 설명]()<br/>
-- [["왜?" 관점에서 생각] - 스프링 메시지 적용하기]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-- [["왜?" 관점에서 생각] - ]()<br/>
-
-
-
+- [["왜?" 관점에서 생각] - HTTP 메시지 컨버터란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
+- [["왜?" 관점에서 생각] - 요청 매핑 헨들러 어뎁터 구조는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20%ED%97%A8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8E%81%ED%84%B0%20%EA%B5%AC%EC%A1%B0.md)<br/>
+- [["왜?" 관점에서 생각] - PRG, RedirectAttributes 설명](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/PRG%2C%20RedirectAttributes%20%EC%84%A4%EB%AA%85.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링 메시지 적용하기](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)<br/>
 - [["왜?" 관점에서 생각] - MessageCodesResolver, Validation](https://github.com/mingseok/TIL/blob/main/Spring/Validation%2C%20%40Validated.md)<br/>
 - [["왜?" 관점에서 생각] - @Validated 설명, Bean Validation](https://github.com/mingseok/TIL/blob/main/Spring/Bean%20Validation.md)<br/>
 - [["왜?" 관점에서 생각] - 검증: Form 전송 객체 분리](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20Form%20%EC%A0%84%EC%86%A1%20%EA%B0%9D%EC%B2%B4%20%EB%B6%84%EB%A6%AC.md)<br/>
@@ -167,15 +157,12 @@
 - [["왜?" 관점에서 생각] - DB 정규화(Normalization)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DB%20%EC%A0%95%EA%B7%9C%ED%99%94.md)<br/>
 - [["왜?" 관점에서 생각] - DB 인덱스란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DB%20%EC%9D%B8%EB%8D%B1%EC%8A%A4.md)<br/>
 - [["왜?" 관점에서 생각] - B tree 란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/B%20tree%20%EC%84%A4%EB%AA%85.md)<br/>
-
-
-
-- [["왜?" 관점에서 생각] - B tree 데이터 삭제 방식 어떤가요?]()<br/>
-- [["왜?" 관점에서 생각] - computer system 무엇인가요?]()<br/>
-- [["왜?" 관점에서 생각] - 왜 DB index로 B tree 계열이 사용되는가?]()<br/>
-- [["왜?" 관점에서 생각] - 파티셔닝(partitioning) 이란?]()<br/>
-- [["왜?" 관점에서 생각] - DBCP (DB connection pool) 무엇인가요?]()<br/>
-- [["왜?" 관점에서 생각] - NoSQL이란 무엇인가?]()<br/>
+- [["왜?" 관점에서 생각] - B tree 데이터 삭제 방식 어떤가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/B%20tree%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%20%EB%B0%A9%EC%8B%9D.md)<br/>
+- [["왜?" 관점에서 생각] - computer system 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/computer%20system.md)<br/>
+- [["왜?" 관점에서 생각] - 왜 DB index로 B tree 계열이 사용되는가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DB%20index%EB%A1%9C%20B%20tree%20%EA%B3%84%EC%97%B4%EC%9D%B4%20%EC%82%AC%EC%9A%A9%EB%90%98%EB%8A%94%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각] - 파티셔닝(partitioning) 이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D(partitioning).md)<br/>
+- [["왜?" 관점에서 생각] - DBCP (DB connection pool) 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DBCP%20(DB%20connection%20pool).md)<br/>
+- [["왜?" 관점에서 생각] - NoSQL이란 무엇인가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/NoSQL%EC%9D%B4%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80.md)<br/>
 
 
 
