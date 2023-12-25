@@ -108,8 +108,33 @@
 - [["왜?" 관점에서 생각] - 뷰 리졸버(viewResolver) 사용 이유는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B7%B0%20%EB%A6%AC%EC%A1%B8%EB%B2%84(viewResolver)%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%EB%8A%94.md)<br/>
 - [["왜?" 관점에서 생각] - Handler vs HandlerAdapter 비교](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Handler%20vs%20HandlerAdapter.md)<br/>
 - [["왜?" 관점에서 생각] - MVC 요청 처리 내부 동작](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/MVC%20%EC%9A%94%EC%B2%AD%20%EC%B2%98%EB%A6%AC%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91.md)<br/>
+- [["왜?" 관점에서 생각] - HTTP 메시지 컨버터란 무엇인가요?]()<br/>
+- [["왜?" 관점에서 생각] - 요청 매핑 헨들러 어뎁터 구조는?]()<br/>
+- [["왜?" 관점에서 생각] - PRG, RedirectAttributes 설명]()<br/>
+- [["왜?" 관점에서 생각] - 스프링 메시지 적용하기]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
 - [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+- [["왜?" 관점에서 생각] - ]()<br/>
+
+
+
+- [["왜?" 관점에서 생각] - MessageCodesResolver, Validation](https://github.com/mingseok/TIL/blob/main/Spring/Validation%2C%20%40Validated.md)<br/>
+- [["왜?" 관점에서 생각] - @Validated 설명, Bean Validation](https://github.com/mingseok/TIL/blob/main/Spring/Bean%20Validation.md)<br/>
+- [["왜?" 관점에서 생각] - 검증: Form 전송 객체 분리](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20Form%20%EC%A0%84%EC%86%A1%20%EA%B0%9D%EC%B2%B4%20%EB%B6%84%EB%A6%AC.md)<br/>
+- [["왜?" 관점에서 생각] - 검증: HTTP 메시지 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
+- [["왜?" 관점에서 생각] - 로그인 쿠키, 세션 이해, ArgumentResolver 활용](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%EC%BF%A0%ED%82%A4%2C%20%EC%84%B8%EC%85%98%20%EC%9D%B4%ED%95%B4%2C%20ArgumentResolver%20%ED%99%9C%EC%9A%A9.md)<br/>
+- [["왜?" 관점에서 생각] - 필터, 스프링 인터셉터 설명](https://github.com/mingseok/TIL/blob/main/Spring/%ED%95%84%ED%84%B0%2C%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9D%B8%ED%84%B0%EC%85%89%ED%84%B0%20%EC%84%A4%EB%AA%85.md)<br/>
+- [["왜?" 관점에서 생각] - 예외 처리와 오류 페이지 개념](https://github.com/mingseok/TIL/blob/main/Spring/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%EC%99%80%20%EC%98%A4%EB%A5%98%20%ED%8E%98%EC%9D%B4%EC%A7%80%20%EA%B0%9C%EB%85%90.md)<br/>
+- [["왜?" 관점에서 생각] - API 예외 처리](https://github.com/mingseok/TIL/blob/main/Spring/API%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링 타입 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%83%80%EC%9E%85%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
+- [["왜?" 관점에서 생각] - @EventListener](https://github.com/mingseok/TIL/blob/main/Spring/%40EventListener.md)<br/>
+
+
+
 
 
 
@@ -362,26 +387,6 @@
 - [[Spring] - 스프링 MVC 구조](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20MVC%20%EA%B5%AC%EC%A1%B0.md)<br/>
 - [[Spring] - 핸들러 매핑과 핸들러 어댑터](https://github.com/mingseok/TIL/blob/main/Spring/%ED%95%B8%EB%93%A4%EB%9F%AC%20%EB%A7%A4%ED%95%91%EA%B3%BC%20%ED%95%B8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8C%91%ED%84%B0.md)<br/>
 - [[Spring] - 요청 매핑 - API 예시](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20-%20API%20%EC%98%88%EC%8B%9C.md)<br/>
-- [[Spring] - HTTP 메시지 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
-- [[Spring] - 요청 매핑 헨들러 어뎁터 구조](https://github.com/mingseok/TIL/blob/main/Spring/%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20%ED%97%A8%EB%93%A4%EB%9F%AC%20%EC%96%B4%EB%8E%81%ED%84%B0%20%EA%B5%AC%EC%A1%B0.md)<br/>
-- [[Spring] - PRG, RedirectAttributes 설명](https://github.com/mingseok/TIL/blob/main/Spring/PRG%2C%20RedirectAttributes%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[Spring] - 스프링 메시지 적용하기](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.md)<br/>
-- [[Spring] - MessageCodesResolver, Validation](https://github.com/mingseok/TIL/blob/main/Spring/Validation%2C%20%40Validated.md)<br/>
-- [[Spring] - @Validated 설명, Bean Validation](https://github.com/mingseok/TIL/blob/main/Spring/Bean%20Validation.md)<br/>
-- [[Spring] - 검증: Form 전송 객체 분리](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20Form%20%EC%A0%84%EC%86%A1%20%EA%B0%9D%EC%B2%B4%20%EB%B6%84%EB%A6%AC.md)<br/>
-- [[Spring] - 검증: HTTP 메시지 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/%EA%B2%80%EC%A6%9D%20-%20HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
-- [[Spring] - 로그인 쿠키, 세션 이해, ArgumentResolver 활용](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%EC%BF%A0%ED%82%A4%2C%20%EC%84%B8%EC%85%98%20%EC%9D%B4%ED%95%B4%2C%20ArgumentResolver%20%ED%99%9C%EC%9A%A9.md)<br/>
-- [[Spring] - 필터, 스프링 인터셉터 설명](https://github.com/mingseok/TIL/blob/main/Spring/%ED%95%84%ED%84%B0%2C%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9D%B8%ED%84%B0%EC%85%89%ED%84%B0%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[Spring] - 예외 처리와 오류 페이지 개념](https://github.com/mingseok/TIL/blob/main/Spring/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%EC%99%80%20%EC%98%A4%EB%A5%98%20%ED%8E%98%EC%9D%B4%EC%A7%80%20%EA%B0%9C%EB%85%90.md)<br/>
-- [[Spring] - API 예외 처리](https://github.com/mingseok/TIL/blob/main/Spring/API%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC.md)<br/>
-- [[Spring] - 스프링 타입 컨버터](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%83%80%EC%9E%85%20%EC%BB%A8%EB%B2%84%ED%84%B0.md)<br/>
-- [[Spring] - @EventListener](https://github.com/mingseok/TIL/blob/main/Spring/%40EventListener.md)<br/>
-
-
-
-
-
-
 
 
 
