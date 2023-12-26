@@ -32,9 +32,51 @@
 내부 원리에 대해 깊게 이해하도록 노력하기
 ```
 
+
+
+
+### 깊게 이해하고 정리 - CS (Computer Science)
+- [[CS] - ‘메모리에 적재’ / CPU의 연산](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%E2%80%98%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%97%90%20%EC%A0%81%EC%9E%AC%E2%80%99%20CPU%EC%9D%98%20%EC%97%B0%EC%82%B0.md)<br/>
+- [[CS] - 동시성 vs 동기화 / 경쟁 조건 vs 임계 영역](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%20%EB%8F%99%EA%B8%B0%ED%99%94.md)<br/>
+- [[CS] - 동시성 문제 해결 방법으로는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [[CS] - context switch vs Context](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/context%20switch%20vs%20Context.md)<br/>
+- [[CS] - process란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/process%EB%A5%BC%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.md)<br/>
+- [[CS] - PCB가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/pcb%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [[CS] - Multi process가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Multi%20process%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.md)<br/>
+- [[CS] - multi thread VS multi process](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/multi%20thread%20VS%20multi%20process.md)<br/>
+- [[CS] - PSA(Portable Service Abstraction)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/PSA(Portable%20Service%20Abstraction).md)<br/>
+- [[CS] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
+- [[CS] - CAS 알고리즘이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/CAS%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EB%AA%85.md)<br/>
+- [[CS] - Block vs Non-Block / sync(동기) vs async(비동기)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
+- [[CS] - blocking / non-blocking, sync / async 코드 구현](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/async%20%EC%BD%94%EB%93%9C%20%EA%B5%AC%ED%98%84.md)<br/>
+- [[CS] - 뮤텍스와 세마포어의 차이는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%AE%A4%ED%85%8D%EC%8A%A4%EC%99%80%20%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+- [[CS] - ]()<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 깊게 이해하고 정리 - JAVA + JVM 관련
-
-
 - [["왜?" 관점에서 생각] - JVM 동작원리와 내부구조는 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC%EC%99%80%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
 - [["왜?" 관점에서 생각] - JIT 컴파일러의 내부 동작은 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JIT%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
 - [["왜?" 관점에서 생각] - JVM 힙 내부구조는 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/JVM%20%ED%9E%99%20%EB%82%B4%EB%B6%80%EA%B5%AC%EC%A1%B0.md)<br/>
@@ -145,12 +187,18 @@
 - [["왜?" 관점에서 생각] - attribute data type 정의란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/attribute%20data%20type%20%EC%A0%95%EC%9D%98.md)<br/>
 - [["왜?" 관점에서 생각] - 프로시저(procedure)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80(procedure)%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각] - trigger란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/trigger%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - JDBC 표준 인터페이스란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/DataBase/JDBC%20%ED%91%9C%EC%A4%80%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)<br/>
+- [["왜?" 관점에서 생각] - 커넥션 풀, DataSource는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%BB%A4%EB%84%A5%EC%85%98%20%ED%92%80%2C%20DataSource.md)<br/>
 - [["왜?" 관점에서 생각] - transaction은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/transaction%20%EC%84%A4%EB%AA%85.md)<br/>
 - [["왜?" 관점에서 생각] - Isolation 비정상적인 현상이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Isolation%20%EB%B9%84%EC%A0%95%EC%83%81%EC%A0%81%EC%9D%B8%20%ED%98%84%EC%83%81.md)<br/>
 - [["왜?" 관점에서 생각] - transaction isolation level이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/transaction%20isolation%20level.md)<br/>
+- [["왜?" 관점에서 생각] - 서비스 계층에 대해서](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B3%84%EC%B8%B5.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링으로 트랜잭션을 해결한다면?](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9C%BC%EB%A1%9C%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%ED%95%B4%EA%B2%B0.md)<br/>
+- [["왜?" 관점에서 생각] - 트랜잭션 AOP, @Transactional은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%2C%20%40Transactional.md)<br/>
 - [["왜?" 관점에서 생각] - schedule과 serializable이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/schedule%EA%B3%BC%20serializable%EC%9D%B4%EB%9E%80.md)<br/>
 - [["왜?" 관점에서 생각] - Three-tier architecture / stored procedure이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Three-tier%20architecture.md)<br/>
 - [["왜?" 관점에서 생각] - recoverable, unrecoverable 이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/recoverable%2C%20unrecoverable.md)<br/>
+- [["왜?" 관점에서 생각] - DB에서의 lock 개념 설명](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EB%9D%BD.md)<br/>
 - [["왜?" 관점에서 생각] - read-lock, write-lock 이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/read-lock%2C%20write-lock.md)<br/>
 - [["왜?" 관점에서 생각] - MVCC 이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/MVCC%20%EA%B0%9C%EB%85%90.md)<br/>
 - [["왜?" 관점에서 생각] - Functional dependency란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Functional%20dependency.md)<br/>
@@ -163,41 +211,46 @@
 - [["왜?" 관점에서 생각] - 파티셔닝(partitioning) 이란?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D(partitioning).md)<br/>
 - [["왜?" 관점에서 생각] - DBCP (DB connection pool) 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/DBCP%20(DB%20connection%20pool).md)<br/>
 - [["왜?" 관점에서 생각] - NoSQL이란 무엇인가?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/NoSQL%EC%9D%B4%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각] - JDBC 반복 문제 해결해보기. (JdbcTemplate)](https://github.com/mingseok/TIL/blob/main/DataBase/JDBC%20%EB%B0%98%EB%B3%B5%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20(JdbcTemplate).md)<br/>
+- [["왜?" 관점에서 생각] - JdbcTemplate 장/단점](https://github.com/mingseok/TIL/blob/main/DataBase/JdbcTemplate%20%EC%9E%A5%EB%8B%A8%EC%A0%90.md)<br/>
+- [["왜?" 관점에서 생각] - DB연결 테스트 코드(설정)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20(%2B%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%A9%EB%B2%95).md)<br/>
+- [["왜?" 관점에서 생각] - DB연결 테스트 방법 (@Transactional)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%A9%EB%B2%95%20(%40Transactional).md)<br/>
+- [["왜?" 관점에서 생각] - 임베디드 모드](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20(%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%20%EB%AA%A8%EB%93%9C).md)<br/>
+- [["왜?" 관점에서 생각] - 트랜잭션 AOP 주의 사항](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%20%EC%A3%BC%EC%9D%98%20%EC%82%AC%ED%95%AD.md)<br/>
+- [["왜?" 관점에서 생각] - 트랜잭션 AOP 주의 사항 - 초기화 시점](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%20%EC%A3%BC%EC%9D%98%20%EC%82%AC%ED%95%AD%20-%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%8B%9C%EC%A0%90.md)<br/>
+- [["왜?" 관점에서 생각] - 트랜잭션 옵션](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%98%B5%EC%85%98.md)<br/>
+- [["왜?" 관점에서 생각] - 예외와 트랜잭션 커밋, 롤백](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%98%88%EC%99%B8%EC%99%80%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%BB%A4%EB%B0%8B%2C%20%EB%A1%A4%EB%B0%B1.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링 트랜잭션 전파](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%A0%84%ED%8C%8C.md)<br/>
+- [["왜?" 관점에서 생각] - REQUIRED](https://github.com/mingseok/TIL/blob/main/DataBase/REQUIRED.md)<br/>
+- [["왜?" 관점에서 생각] - MyBatis 설명, 설정 방법](https://github.com/mingseok/TIL/blob/main/DataBase/MyBatis%20%EC%84%A4%EB%AA%85%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [["왜?" 관점에서 생각] - MyBatis 적용 해보기](https://github.com/mingseok/TIL/blob/main/DataBase/MyBatis%20%EC%A0%81%EC%9A%A9.md)<br/>
+- [["왜?" 관점에서 생각] - DB 접근(JPA)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC(JPA).md)<br/>
+- [["왜?" 관점에서 생각] - JPA 설정, 적용, 핵심](https://github.com/mingseok/TIL/blob/main/DataBase/JPA%20%EC%84%A4%EC%A0%95%2C%20%EC%A0%81%EC%9A%A9%2C%20%ED%95%B5%EC%8B%AC.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링 데이터 JPA (사용 이유)](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20JPA%20(%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0).md)<br/>
+- [["왜?" 관점에서 생각] - Querydsl, 설정 방법](https://github.com/mingseok/TIL/blob/main/DataBase/Querydsl%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [["왜?" 관점에서 생각] - 트레이드 오프](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%93%9C%20%EC%98%A4%ED%94%84.md)<br/>
 
 
 
 
-
-
-
-
-
-### 깊게 이해하고 정리 - CS (Computer Science)
-- [[CS] - ‘메모리에 적재’ / CPU의 연산](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%E2%80%98%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%97%90%20%EC%A0%81%EC%9E%AC%E2%80%99%20CPU%EC%9D%98%20%EC%97%B0%EC%82%B0.md)<br/>
-- [[CS] - 동시성 vs 동기화 / 경쟁 조건 vs 임계 영역](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%20%EB%8F%99%EA%B8%B0%ED%99%94.md)<br/>
-- [[CS] - 동시성 문제 해결 방법으로는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [[CS] - context switch vs Context](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/context%20switch%20vs%20Context.md)<br/>
-- [[CS] - process란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/process%EB%A5%BC%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.md)<br/>
-- [[CS] - PCB가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/pcb%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [[CS] - Multi process가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Multi%20process%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.md)<br/>
-- [[CS] - multi thread VS multi process](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/multi%20thread%20VS%20multi%20process.md)<br/>
-- [[CS] - PSA(Portable Service Abstraction)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/PSA(Portable%20Service%20Abstraction).md)<br/>
-- [[CS] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
-- [[CS] - CAS 알고리즘이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/CAS%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[CS] - Block vs Non-Block / sync(동기) vs async(비동기)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
-- [[CS] - blocking / non-blocking, sync / async 코드 구현](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/async%20%EC%BD%94%EB%93%9C%20%EA%B5%AC%ED%98%84.md)<br/>
-- [[CS] - 뮤텍스와 세마포어의 차이는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%AE%A4%ED%85%8D%EC%8A%A4%EC%99%80%20%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
-- [[CS] - ]()<br/>
-- [[CS] - ]()<br/>
-- [[CS] - ]()<br/>
-- [[CS] - ]()<br/>
-- [[CS] - ]()<br/>
-- [[CS] - ]()<br/>
-- [[CS] - ]()<br/>
-- [[CS] - ]()<br/>
-- [[CS] - ]()<br/>
-
-
+### HTTP
+- [[HTTP] - 네트워크와 인터넷 개념](https://github.com/mingseok/TIL/blob/main/HTTP/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%99%80%20%EC%9D%B8%ED%84%B0%EB%84%B7%20%EA%B0%9C%EB%85%90.md)<br/>
+- [[HTTP] - World Wide Web]()<br/>
+- [[HTTP] - IP프로토콜 (=인터넷 프로토콜)]()<br/>
+- [[HTTP] - TCP, UDP 간단히 설명]()<br/>
+- [[HTTP] - TCP 3 way handshake]()<br/>
+- [[HTTP] - PORT, DNS 설명]()<br/>
+- [[HTTP] - TCP/IP stack 설명]()<br/>
+- [[HTTP] - 프로토콜 / OSI 7 layer]()<br/>
+- [[HTTP] - 중간 정리]()<br/>
+- [[HTTP] - ]()<br/>
+- [[HTTP] - ]()<br/>
+- [[HTTP] - ]()<br/>
+- [[HTTP] - ]()<br/>
+- [[HTTP] - ]()<br/>
+- [[HTTP] - ]()<br/>
+- [[HTTP] - ]()<br/>
+- [[HTTP] - ]()<br/>
 
 
 
@@ -343,6 +396,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ### Spring
 - [[Spring] - 스프링이 뭔가?](https://github.com/mingseok/TIL/blob/main/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%B4%20%EB%AD%94%EA%B0%80.md)<br/>
 - [[Spring] - Java에서의 ‘역할’과 ‘구현’](https://github.com/mingseok/TIL/blob/main/Spring/Java%EC%97%90%EC%84%9C%EC%9D%98%20%E2%80%98%EC%97%AD%ED%95%A0%E2%80%99%EA%B3%BC%20%E2%80%98%EA%B5%AC%ED%98%84%E2%80%99.md)<br/>
@@ -380,37 +445,6 @@
 
 
 
-
-
-
-
-### DataBase
-- [[DB] - JDBC 표준 인터페이스](https://github.com/mingseok/TIL/blob/main/DataBase/JDBC%20%ED%91%9C%EC%A4%80%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)<br/>
-- [[DB] - 커넥션 풀, DataSource](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%BB%A4%EB%84%A5%EC%85%98%20%ED%92%80%2C%20DataSource.md)<br/>
-- [[DB] - 트랜잭션 (정의)](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98%20%EC%A0%95%EC%9D%98.md)<br/>
-- [[DB] - 트랜잭션 (개념 이해)](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20-%20%EA%B0%9C%EB%85%90%20%EC%9D%B4%ED%95%B4.md)<br/>
-- [[DB] - DB 락](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EB%9D%BD.md)<br/>
-- [[DB] - 서비스 계층](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B3%84%EC%B8%B5.md)<br/>
-- [[DB] - 스프링으로 트랜잭션 해결](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9C%BC%EB%A1%9C%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%ED%95%B4%EA%B2%B0.md)<br/>
-- [[DB] - 트랜잭션 AOP, @Transactional](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%2C%20%40Transactional.md)<br/>
-- [[DB] - JDBC 반복 문제 해결 (JdbcTemplate)](https://github.com/mingseok/TIL/blob/main/DataBase/JDBC%20%EB%B0%98%EB%B3%B5%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20(JdbcTemplate).md)<br/>
-- [[DB] - JdbcTemplate 장/단점](https://github.com/mingseok/TIL/blob/main/DataBase/JdbcTemplate%20%EC%9E%A5%EB%8B%A8%EC%A0%90.md)<br/>
-- [[DB] - DB연결 테스트 코드 (설정)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20(%2B%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%A9%EB%B2%95).md)<br/>
-- [[DB] - DB연결 테스트 방법 (@Transactional)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%B0%A9%EB%B2%95%20(%40Transactional).md)<br/>
-- [[DB] - 임베디드 모드](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC%20(%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%20%EB%AA%A8%EB%93%9C).md)<br/>
-- [[DB] - 트랜잭션 AOP 주의 사항](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%20%EC%A3%BC%EC%9D%98%20%EC%82%AC%ED%95%AD.md)<br/>
-- [[DB] - 트랜잭션 AOP 주의 사항 - 초기화 시점](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20AOP%20%EC%A3%BC%EC%9D%98%20%EC%82%AC%ED%95%AD%20-%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%8B%9C%EC%A0%90.md)<br/>
-- [[DB] - 트랜잭션 옵션](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%98%B5%EC%85%98.md)<br/>
-- [[DB] - 예외와 트랜잭션 커밋, 롤백](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%98%88%EC%99%B8%EC%99%80%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%BB%A4%EB%B0%8B%2C%20%EB%A1%A4%EB%B0%B1.md)<br/>
-- [[DB] - 스프링 트랜잭션 전파](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%A0%84%ED%8C%8C.md)<br/>
-- [[DB] - REQUIRED](https://github.com/mingseok/TIL/blob/main/DataBase/REQUIRED.md)<br/>
-- [[DB] - MyBatis 설명, 설정 방법](https://github.com/mingseok/TIL/blob/main/DataBase/MyBatis%20%EC%84%A4%EB%AA%85%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [[DB] - MyBatis 적용 해보기](https://github.com/mingseok/TIL/blob/main/DataBase/MyBatis%20%EC%A0%81%EC%9A%A9.md)<br/>
-- [[DB] - DB 접근(JPA)](https://github.com/mingseok/TIL/blob/main/DataBase/DB%20%EC%A0%91%EA%B7%BC(JPA).md)<br/>
-- [[DB] - JPA 설정, 적용, 핵심](https://github.com/mingseok/TIL/blob/main/DataBase/JPA%20%EC%84%A4%EC%A0%95%2C%20%EC%A0%81%EC%9A%A9%2C%20%ED%95%B5%EC%8B%AC.md)<br/>
-- [[DB] - 스프링 데이터 JPA (사용 이유)](https://github.com/mingseok/TIL/blob/main/DataBase/%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20JPA%20(%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0).md)<br/>
-- [[DB] - Querydsl, 설정 방법](https://github.com/mingseok/TIL/blob/main/DataBase/Querydsl%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [[DB] - 트레이드 오프](https://github.com/mingseok/TIL/blob/main/DataBase/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%93%9C%20%EC%98%A4%ED%94%84.md)<br/>
 
 
 
@@ -462,18 +496,6 @@
 
 
 
-### HTTP
-- [[HTTP] - 네트워크와 인터넷 개념]()<br/>
-
-
-
-
-
-
-
-
-
-
 ### 예외처리
 - [[예외처리] - 에러는 크게 2가지](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%97%90%EB%9F%AC%EB%8A%94%20%ED%81%AC%EA%B2%8C%202%EA%B0%80%EC%A7%80.md)<br/>
 - [[예외처리] - 예외 계층](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%EA%B3%84%EC%B8%B5.md)<br/>
@@ -496,15 +518,6 @@
 - [[SQL] - 데이터 조회 기술 subquery / IN / EXISTS / ANY / ALL](https://github.com/mingseok/TIL/blob/main/SQL/subquery%20%20IN%20%20EXISTS%20%20ANY%20%20ALL.md)<br/>
 - [[SQL] - inner join, outer join 종류](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
 - [[SQL] - 그룹별로 원하는 통계 group by / aggregate function / order by](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
-
-
-
-
-
-
-
-
-
 - [[SQL] - 행 제한하기 (LIMIT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
 - [[SQL] - 수치 연산, 별칭(AS) 사용](https://github.com/mingseok/TIL/blob/main/SQL/%EC%97%B4%EC%9D%98%20%EB%B3%84%EB%AA%85.md)<br/>
 - [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
