@@ -237,7 +237,7 @@
 - [[HTTP] - 프로토콜 / OSI 7 layer](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%20OSI%207%20layer.md)<br/>
 - [[HTTP] - 중간 정리](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%A4%91%EA%B0%84%20%EC%A0%95%EB%A6%AC.md)<br/>
 - [[HTTP] - URI 이란?]()<br/>
-- [[HTTP] - ]()<br/>
+- [[HTTP] - 웹 브라우저 요청 흐름]()<br/>
 - [[HTTP] - ]()<br/>
 - [[HTTP] - ]()<br/>
 - [[HTTP] - ]()<br/>
