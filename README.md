@@ -238,8 +238,8 @@
 - [[HTTP] - 중간 정리](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%A4%91%EA%B0%84%20%EC%A0%95%EB%A6%AC.md)<br/>
 - [[HTTP] - URI 이란?]()<br/>
 - [[HTTP] - 웹 브라우저 요청 흐름]()<br/>
-- [[HTTP] - ]()<br/>
-- [[HTTP] - ]()<br/>
+- [[HTTP] - 클라이언트 서버 구조]()<br/>
+- [[HTTP] - Stateful, Stateless]()<br/>
 - [[HTTP] - ]()<br/>
 - [[HTTP] - ]()<br/>
 - [[HTTP] - ]()<br/>
