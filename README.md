@@ -250,8 +250,8 @@
 
 // 여기서 부터 진행
 
-- [[HTTP] - HTTP 상태코드 소개 (2xx, 3xx)]()<br/>
-- [[HTTP] - HTTP 상태코드 소개 (4xx, 5xx)]()<br/>
+- [[HTTP] - HTTP 상태코드 소개 (2xx, 3xx)](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%20%EC%86%8C%EA%B0%9C%20(2xx%2C%203xx).md)<br/>
+- [[HTTP] - HTTP 상태코드 소개 (4xx, 5xx)](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%20%EC%86%8C%EA%B0%9C%20(4xx%2C%205xx).md)<br/>
 - [[HTTP] - 일반 정보, 특별한 정보]()<br/>
 - [[HTTP] - 쿠키, 세션]()<br/>
 - [[HTTP] - 캐시 기본 동작]()<br/>
