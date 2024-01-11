@@ -252,9 +252,9 @@
 
 - [[HTTP] - HTTP 상태코드 소개 (2xx, 3xx)](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%20%EC%86%8C%EA%B0%9C%20(2xx%2C%203xx).md)<br/>
 - [[HTTP] - HTTP 상태코드 소개 (4xx, 5xx)](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%20%EC%86%8C%EA%B0%9C%20(4xx%2C%205xx).md)<br/>
-- [[HTTP] - 일반 정보, 특별한 정보]()<br/>
-- [[HTTP] - 쿠키, 세션]()<br/>
-- [[HTTP] - 캐시 기본 동작]()<br/>
+- [[HTTP] - 일반 정보, 특별한 정보](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%9D%BC%EB%B0%98%20%EC%A0%95%EB%B3%B4%2C%20%ED%8A%B9%EB%B3%84%ED%95%9C%20%EC%A0%95%EB%B3%B4.md)<br/>
+- [[HTTP] - 쿠키, 세션](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BF%A0%ED%82%A4%2C%20%EC%84%B8%EC%85%98.md)<br/>
+- [[HTTP] - 캐시 기본 동작](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BA%90%EC%8B%9C%20%EA%B8%B0%EB%B3%B8%20%EB%8F%99%EC%9E%91.md)<br/>
 - [[HTTP] - 검증 헤더와 조건부 요청]()<br/>
 - [[HTTP] - 프록시 캐시, 캐시 무효화]()<br/>
 
