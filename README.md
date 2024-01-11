@@ -246,17 +246,13 @@
 - [[HTTP] - HTTP 메서드 - PUT, PATCH, DELETE](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%20-%20PUT%2C%20PATCH%2C%20DELETE.md)<br/>
 - [[HTTP] - HTTP 메서드의 속성 (=멱등)](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%98%20%EC%86%8D%EC%84%B1%20(%3D%EB%A9%B1%EB%93%B1).md)<br/>
 - [[HTTP] - 클라이언트에서 서버로 데이터 전송](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C%20%EC%84%9C%EB%B2%84%EB%A1%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%84%EC%86%A1.md)<br/>
-
-
-// 여기서 부터 진행
-
 - [[HTTP] - HTTP 상태코드 소개 (2xx, 3xx)](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%20%EC%86%8C%EA%B0%9C%20(2xx%2C%203xx).md)<br/>
 - [[HTTP] - HTTP 상태코드 소개 (4xx, 5xx)](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%20%EC%86%8C%EA%B0%9C%20(4xx%2C%205xx).md)<br/>
 - [[HTTP] - 일반 정보, 특별한 정보](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%9D%BC%EB%B0%98%20%EC%A0%95%EB%B3%B4%2C%20%ED%8A%B9%EB%B3%84%ED%95%9C%20%EC%A0%95%EB%B3%B4.md)<br/>
 - [[HTTP] - 쿠키, 세션](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BF%A0%ED%82%A4%2C%20%EC%84%B8%EC%85%98.md)<br/>
 - [[HTTP] - 캐시 기본 동작](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BA%90%EC%8B%9C%20%EA%B8%B0%EB%B3%B8%20%EB%8F%99%EC%9E%91.md)<br/>
-- [[HTTP] - 검증 헤더와 조건부 요청]()<br/>
-- [[HTTP] - 프록시 캐시, 캐시 무효화]()<br/>
+- [[HTTP] - 검증 헤더와 조건부 요청](https://github.com/mingseok/TIL/blob/main/HTTP/%EA%B2%80%EC%A6%9D%20%ED%97%A4%EB%8D%94%EC%99%80%20%EC%A1%B0%EA%B1%B4%EB%B6%80%20%EC%9A%94%EC%B2%AD.md)<br/>
+- [[HTTP] - 프록시 캐시, 캐시 무효화](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%94%84%EB%A1%9D%EC%8B%9C%20%EC%BA%90%EC%8B%9C%2C%20%EC%BA%90%EC%8B%9C%20%EB%AC%B4%ED%9A%A8%ED%99%94.md)<br/>
 
 
 
