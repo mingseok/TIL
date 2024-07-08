@@ -248,13 +248,6 @@
 
 
 
-### project 기본기
-- [[project] - yml 파일 환경 변수로 관리하는 방법](https://github.com/mingseok/TIL/blob/main/project/yml%20%ED%8C%8C%EC%9D%BC%20%ED%99%98%EA%B2%BD%20%EB%B3%80%EC%88%98.md)<br/>
-
-
-
-
-
 ### MyBatis 사용해보기 + Trouble Shooting. [(Link)](https://github.com/mingseok/facegram) 
 
 
