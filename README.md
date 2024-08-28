@@ -252,6 +252,17 @@
 - [[HTTP] - 프록시 캐시, 캐시 무효화](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%94%84%EB%A1%9D%EC%8B%9C%20%EC%BA%90%EC%8B%9C%2C%20%EC%BA%90%EC%8B%9C%20%EB%AC%B4%ED%9A%A8%ED%99%94.md)<br/>
 
 
+<br/>
+
+### AWS
+- [[AWS] - EC2 서버로 접속하기](https://alstjr706.tistory.com/352)<br/>
+- [[AWS] - IntelliJ에서 RDS에 접속하기](https://alstjr706.tistory.com/353)<br/>
+- [[AWS] - EC2에서 RDS 연결 확인 방법](https://alstjr706.tistory.com/354)<br/>
+- [[AWS] - ]()<br/>
+
+
+
+
 
 
 ### MyBatis 사용해보기 + Trouble Shooting. [(Link)](https://github.com/mingseok/facegram) 
