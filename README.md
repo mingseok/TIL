@@ -260,6 +260,8 @@
 - [[AWS] - EC2에서 RDS 연결 확인 방법](https://alstjr706.tistory.com/354)<br/>
 - [[AWS] - 클라우드 컴퓨팅 / 리전(Region) / 가용영역(Availability Zone)](https://alstjr706.tistory.com/358)<br/>
 - [[AWS] - EC2란? / RDS란?](https://alstjr706.tistory.com/359)<br/>
+- [[AWS] - 라우트 테이블(Route Table) / 보안 그룹(Security Group)](https://alstjr706.tistory.com/360)<br/>
+- [[AWS] - VPC란? / 보안 그룹(Security Group)이란?](https://alstjr706.tistory.com/361)<br/>
 - [[AWS] - ]()<br/>
 
 
