@@ -258,7 +258,10 @@
 - [[AWS] - EC2 서버로 접속하기](https://alstjr706.tistory.com/352)<br/>
 - [[AWS] - IntelliJ에서 RDS에 접속하기](https://alstjr706.tistory.com/353)<br/>
 - [[AWS] - EC2에서 RDS 연결 확인 방법](https://alstjr706.tistory.com/354)<br/>
+- [[AWS] - 클라우드 컴퓨팅 / 리전(Region) / 가용영역(Availability Zone)](https://alstjr706.tistory.com/358)<br/>
+- [[AWS] - EC2란? / RDS란?](https://alstjr706.tistory.com/359)<br/>
 - [[AWS] - ]()<br/>
+
 
 
 
