@@ -7,11 +7,11 @@
 
 ### ETC
 - [🍞 빵 부스러기 저장소](https://github.com/mingseok/TIL/blob/main/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0/%EB%B9%B5%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0.md)<br/>
+- [INFCON - 김영한님 강연](https://github.com/mingseok/TIL/blob/main/ETC/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%8A%94%20%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EC%82%AC%EB%8B%A4.md)<br/>
+- [INFCON - 이동욱님 강연](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%B4%EB%8F%99%EC%9A%B1%EB%8B%98%EC%9D%98%20%EA%B0%95%EC%97%B0.md)<br/>
 - [질문하는 방법](https://github.com/mingseok/TIL/blob/main/ETC/%EC%A7%88%EB%AC%B8%20%EB%B0%A9%EB%B2%95.md)<br/>
 - [코딩 테스트 노하우](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%20%26%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%BD%94%EB%94%A9%20%ED%85%8C%EC%8A%A4%ED%8A%B8.md)<br/>
 - [3배의 효율을 올리는 독서 방법](https://brunch.co.kr/@gleet/61)<br/>
-- [우아한형제들 - 김영한님의 강연](https://github.com/mingseok/TIL/blob/main/ETC/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%8A%94%20%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EC%82%AC%EB%8B%A4.md)<br/>
-- [인프랩(CTO) - 이동욱님의 강연](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%B4%EB%8F%99%EC%9A%B1%EB%8B%98%EC%9D%98%20%EA%B0%95%EC%97%B0.md)<br/>
 - [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
 - [Java 네이밍 규칙](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9E%90%EB%B0%94%EB%84%A4%EC%9D%B4%EB%B0%8D%EA%B7%9C%EC%B9%99.md)<br/>
 - [스트림 컨벤션](http://blog.marcinchwedczuk.pl/java-streams-best-practices)<br/>
