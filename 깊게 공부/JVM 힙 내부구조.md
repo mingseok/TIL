@@ -7,12 +7,10 @@
 - `Eden` 영역 : 새롭게 생성된 객체들이 할당되는 영역
 
 - `Survival` 영역(S0, S1) : `minor gc`로부터 살아남은 객체들이 존재하는 영역
-    - `Survival` 영역의 특별한 규칙 : `Survival 0`, 혹은 `Survival 1` 둘 중 하나는
-        
-        꼭 비어 있어야 한다는 것이다
+    - `Survival` 영역의 특별한 규칙 : `Survival 0`, 혹은 `Survival 1` 둘 중 하나는 꼭 비어 있어야 한다는 것이다
         
 
-<br/><br/>
+<br/>
 
 ## Heap 영역은
 
