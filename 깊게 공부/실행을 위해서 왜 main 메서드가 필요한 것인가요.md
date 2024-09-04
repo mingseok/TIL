@@ -15,7 +15,7 @@ public static void main(String[] args) {
 }
 ```
 
-<br/><br/>
+<br/>
 
 ## main 메서드는 문자열 배열을 매개 변수로 선언한 이유는 뭘까?
 
@@ -24,10 +24,11 @@ public static void main(String[] args) {
 - 매개변수를 사용하지도 않을 것인데, 왜 문자열 배열을 매개변수로 할당 해줘야 하는 것일까?
 
 ```java
-/*오류: chapter1.Hello 클래스에서 기본 메소드를 찾을 수 없습니다. 
-다음 형식으로 기본 메소드를 정의하십시오.
- public static void main(String[] args)
-또는 JavaFX 애플리케이션 클래스는 javafx.application.Application을(를) 확장해야 합니다. */
+/*
+ 오류: chapter1.Hello 클래스에서 기본 메소드를 찾을 수 없습니다.
+ 다음 형식으로 기본 메소드를 정의하십시오.
+ public static void main(String[] args) 또는 JavaFX 애플리케이션 클래스는 javafx.application.Application을 확장해야 합니다.
+*/
 class Main {
 	public static void main(){ // 매개변수 제거
     	System.out.println("Hello")
@@ -37,22 +38,19 @@ class Main {
 
 <br/>
 
-### 이유는
+## 이유는
 
 프로그램을 실행하면 `JVM`은 길이가 `0`인 `String` 배열을 먼저 생성하고 
 
 `main()` 메서드를 호출할 때 매개값으로 전달한다고 한다.
 
-<br/>
-
-`main()`메서드를 호출할 때 문자열 배열이 할당되어야 하는 것인데
+`main()`메서드를 호출할 때 문자열 배열이 할당되어야 하는 것인데 
 
 클래스의 메서드 선언시 매개변수를 주지 않아 버리니 에러가 발생하는 것이다.
 
-<br/><br/>
+<br/>
 
-
-### 자바는 설계시에 문자열 배열을 생성하고 매개값으로 전달되도록 설계했을까?
+## 자바는 설계시에 문자열 배열을 생성하고 매개값으로 전달되도록 설계했을까?
 
 
 이유는 프로그램을 실행할 때 외부에서 프로그램으로 데이터를 전달 해줘야 하는 경우가 있기 때문이다.
