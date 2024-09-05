@@ -9,6 +9,9 @@
 
 그렇기 때문에 `equals()`, `hashCode()` 처럼 다시 재정의 해줘야 하는 것이다.
 
+<br/>
+
+
 ```java
 Comparable과 Comparator는 모두 인터페이스이다
 ```
