@@ -24,7 +24,7 @@ Comparable과 Comparator는 모두 인터페이스이다
 
     - 우리가 실질적으로 구현해야 하는 것은 단 하나다 → `compare(T o1, T o2)`
 
-<br/><br/>
+<br/>
 
 ## Comparable과 Comparator의 무슨 차이인 것일까?
 
@@ -38,7 +38,7 @@ Comparator는 "자기 자신의 상태가 어떻던 상관없이," +
              "파라미터로 들어오는 두 객체를 비교" 하는 것이다.
 ```
 
-<br/><br/>
+<br/>
 
 ## 왜 객체를 비교할 수 있도록 한다는 것일까?
 
@@ -46,7 +46,7 @@ Comparator는 "자기 자신의 상태가 어떻던 상관없이," +
 
 `primitive` 타입은은 자바에서 제공되기에 별다른 처리 없이 비교가 가능하다. 
 
-<br/><br/>
+<br/>
 
 ## 새로운 객체를 만들어 비교하고자 한다면 어떻게 될까?
 
@@ -66,15 +66,15 @@ Comparator는 "자기 자신의 상태가 어떻던 상관없이," +
 
 ```java
 public class Test {
-	public static void main(String[] args)  {
-		Student 민석 = new Student(17, 2);	// 17살 2반
-		Student 다연 = new Student(18, 1);	// 18살 1반
-		
-		/*
-		 * 어떻게 비교해..? (기준이 없다)
-		 * "if(민석 > 다연) ?? 이렇게 못한다.."
-		*/
-	}
+   public static void main(String[] args)  {
+      Student 민석 = new Student(17, 2);  // 17살 2반
+      Student 다연 = new Student(18, 1);  // 18살 1반
+
+      /*
+       * 어떻게 비교해..? (기준이 없다)
+       * "if(민석 > 다연) ?? 이렇게 못한다.."
+       */
+   }
 }
  
 class Student {
@@ -88,7 +88,7 @@ class Student {
 }
 ```
 
-<br/><br/>
+<br/>
 
 ## Comparable 인터페이스
 
@@ -96,7 +96,7 @@ class Student {
 
 통해 들어온 파라미터 `o`가 비교 할 객체가 되는 것이다.
 
-<br/><br/>
+<br/>
 
 ## 예로 들어보자.
 
@@ -121,7 +121,7 @@ class Student implements Comparable<Student> {
 }
 ```
 
-<br/><br/>
+<br/>
 
 ## 이제 compareTo 메소드를 구현 하면 된다. (=주석 잘보기)
 
@@ -146,7 +146,7 @@ class Student implements Comparable<Student> {
 }
 ```
 
-<br/><br/>
+<br/>
 
 ## 윗부분 전체 설명 코드
 
@@ -169,22 +169,22 @@ public class Test {
 }
  
 class Student implements Comparable<Student> {
-	int age;			// 나이
-	int classNumber;	// 학급
-	
-	Student(int age, int classNumber) {
-		this.age = age;
-		this.classNumber = classNumber;
-	}
-	
-	@Override
-	public int compareTo(Student o) {
-		return this.age - o.age;
-	}
+   int age;  // 나이
+   int classNumber;  // 학급
+
+   Student(int age, int classNumber) {
+      this.age = age;
+      this.classNumber = classNumber;
+   }
+
+   @Override
+   public int compareTo(Student o) {
+      return this.age - o.age;
+   }
 }
 ```
 
-<br/><br/>
+<br/>
 
 ## Comparator
 
@@ -203,19 +203,19 @@ Comparator는 매개변수로 들어오는 두 객체를 비교하는 것이기 
 import java.util.Comparator;	// import 필요
 
 class Student implements Comparator<Student> {
-	int age; // 나이
-	int classNumber; // 학급
-	
-	Student(int age, int classNumber) {
-		this.age = age;
-		this.classNumber = classNumber;
-	}
-	
-	@Override
-	public int compare(Student o1, Student o2) {
-		// 만약 o1의 classNumber가 o2의 classNumber보다 크다면 양수가 반환 될 것이고,
-		// 같다면 0을, 작다면 음수를 반환할 것이다.
-		return o1.classNumber - o2.classNumber;
-	}
+    int age; // 나이
+    int classNumber; // 학급
+
+    Student(int age, int classNumber) {
+	this.age = age;
+	this.classNumber = classNumber;
+    }
+
+    @Override
+    public int compare(Student o1, Student o2) {
+	// 만약 o1의 classNumber가 o2의 classNumber보다 크다면 양수가 반환 될 것이고,
+	// 같다면 0을, 작다면 음수를 반환할 것이다.
+	return o1.classNumber - o2.classNumber;
+    }
 }
 ```
