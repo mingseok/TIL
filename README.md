@@ -499,7 +499,6 @@
 
 ### Java
 - [[Java] - 📁자바 기초 디렉토리](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94)<br/>
-- [[Java] - 자바의 신 퀴즈](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%B0%94%20%ED%80%B4%EC%A6%88.md)<br/>
 - [[Java] - 자바 가상머신(=JVM)](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%B0%94%20%EA%B0%80%EC%83%81%EB%A8%B8%EC%8B%A0(JVM).md)<br/>
 - [[Java] - Map 정리](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/Map%20%EC%A0%95%EB%A6%AC.md)<br/>
 - [[Java] - 오토박싱 & 언박싱](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%98%A4%ED%86%A0%EB%B0%95%EC%8B%B1%20%26%20%EC%96%B8%EB%B0%95%EC%8B%B1.md)<br/>
