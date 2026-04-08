@@ -19,7 +19,6 @@
 - [Java Style Guide](https://github.com/mingseok/TIL/blob/main/ETC/Java%20Style%20Guide.md#java-style-guide)<br/> 
 - [Java 네이밍 규칙](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9E%90%EB%B0%94%EB%84%A4%EC%9D%B4%EB%B0%8D%EA%B7%9C%EC%B9%99.md)<br/>
 - [객체지향적 코드 설계](https://github.com/mingseok/TIL/blob/main/ETC/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1.md)<br/>
-- [@Slf4j - 사용 방법](https://github.com/mingseok/TIL/blob/main/Spring/%EB%A1%9C%EA%B9%85.md)<br/>
 
 
 
