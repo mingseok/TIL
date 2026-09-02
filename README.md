@@ -39,6 +39,39 @@
 - [["왜?" 관점에서 생각] - Block과 Non-Block, sync(동기)와 async(비동기)는 어떻게 다른가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
 - [["왜?" 관점에서 생각] - blocking / non-blocking, sync / async는 코드로 어떻게 구현하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/async%20%EC%BD%94%EB%93%9C%20%EA%B5%AC%ED%98%84.md)<br/>
 - [["왜?" 관점에서 생각] - 뮤텍스와 세마포어는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%AE%A4%ED%85%8D%EC%8A%A4%EC%99%80%20%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
+- [["왜?" 관점에서 생각] - 스레드의 상태(Thread State)는 어떻게 바뀌나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%8A%A4%EB%A0%88%EB%93%9C%EC%9D%98%20%EC%83%81%ED%83%9C(Thread%20State)%EB%8A%94%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%B0%94%EB%80%8C%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - interrupt()는 스레드를 멈추는 것이 아니라 무엇을 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2Finterrupt()%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%84%20%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 교착 상태(Deadlock)는 왜 생기고 어떻게 찾나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EA%B5%90%EC%B0%A9%20%EC%83%81%ED%83%9C(Deadlock)%EB%8A%94%20%EC%99%9C%20%EC%83%9D%EA%B8%B0%EA%B3%A0%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%B0%BE%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 스레드 풀은 왜 쓰고 크기는 어떻게 정하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%8A%A4%EB%A0%88%EB%93%9C%20%ED%92%80%EC%9D%80%20%EC%99%9C%20%EC%93%B0%EA%B3%A0%20%ED%81%AC%EA%B8%B0%EB%8A%94%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%A0%95%ED%95%98%EB%82%98%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - 가상 스레드(Virtual Thread)는 무엇이 다른가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EA%B0%80%EC%83%81%20%EC%8A%A4%EB%A0%88%EB%93%9C(Virtual%20Thread).md)<br/>
+- [["왜?" 관점에서 생각] - 생산자-소비자 문제와 배압(Backpressure)은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%83%9D%EC%82%B0%EC%9E%90-%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%AC%B8%EC%A0%9C%EC%99%80%20%EB%B0%B0%EC%95%95(Backpressure).md)<br/>
+- [["왜?" 관점에서 생각] - Blocking IO, NIO, 멀티플렉싱은 어떻게 다른가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2FIO%20%EB%AA%A8%EB%8D%B8%20-%20Blocking%20IO%2C%20NIO%2C%20%EB%A9%80%ED%8B%B0%ED%94%8C%EB%A0%89%EC%8B%B1.md)<br/>
+- [["왜?" 관점에서 생각] - 시스템 콜은 무엇이고 유저 모드와 커널 모드는 왜 나뉘어 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%BD%9C%EA%B3%BC%20%EC%9C%A0%EC%A0%80%20%EB%AA%A8%EB%93%9C%2C%20%EC%BB%A4%EB%84%90%20%EB%AA%A8%EB%93%9C.md)<br/>
+- [["왜?" 관점에서 생각] - CPU 스케줄링은 어떻게 동작하고 스레드 우선순위는 먹히나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2FCPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%EA%B3%BC%20%EC%8A%A4%EB%A0%88%EB%93%9C%20%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84.md)<br/>
+- [["왜?" 관점에서 생각] - 가상 메모리와 페이지 폴트는 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EA%B0%80%EC%83%81%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20%ED%8E%98%EC%9D%B4%EC%A7%80%20%ED%8F%B4%ED%8A%B8.md)<br/>
+- [["왜?" 관점에서 생각] - 거짓 공유(False Sharing)는 왜 성능을 떨어뜨리나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EA%B1%B0%EC%A7%93%20%EA%B3%B5%EC%9C%A0(False%20Sharing).md)<br/>
+- [["왜?" 관점에서 생각] - 분기 예측(Branch Prediction)은 무엇이고 왜 정렬하면 빨라지나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EB%B6%84%EA%B8%B0%20%EC%98%88%EC%B8%A1(Branch%20Prediction).md)<br/>
+- [["왜?" 관점에서 생각] - 엔디언(Byte Order)이란 무엇이고 자바에서는 언제 신경 써야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%97%94%EB%94%94%EC%96%B8(Byte%20Order).md)<br/>
+- [["왜?" 관점에서 생각] - 메모리 재정렬은 왜 일어나고 happens-before란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EC%9E%AC%EC%A0%95%EB%A0%AC%EA%B3%BC%20happens-before.md)<br/>
+- [["왜?" 관점에서 생각] - ReadWriteLock과 StampedLock은 언제 synchronized보다 빠른가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2FReadWriteLock%EA%B3%BC%20StampedLock.md)<br/>
+- [["왜?" 관점에서 생각] - ThreadLocal은 어디에 저장되고 왜 메모리 누수가 생기나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2FThreadLocal%20%EB%82%B4%EB%B6%80%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EB%88%84%EC%88%98.md)<br/>
+- [["왜?" 관점에서 생각] - CountDownLatch, CyclicBarrier, Phaser는 각각 언제 쓰나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2FCountDownLatch%2C%20CyclicBarrier%2C%20Phaser.md)<br/>
+- [["왜?" 관점에서 생각] - 스핀락과 블로킹 락은 어느 쪽이 언제 유리한가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%8A%A4%ED%95%80%EB%9D%BD%20vs%20%EB%B8%94%EB%A1%9C%ED%82%B9%20%EB%9D%BD.md)<br/>
+- [["왜?" 관점에서 생각] - 좀비 프로세스와 고아 프로세스는 왜 생기나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%A2%80%EB%B9%84%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80%20%EA%B3%A0%EC%95%84%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4.md)<br/>
+- [["왜?" 관점에서 생각] - 파일 디스크립터 한계(Too many open files)는 왜 생기나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%ED%8C%8C%EC%9D%BC%20%EB%94%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0%20%ED%95%9C%EA%B3%84.md)<br/>
+- [["왜?" 관점에서 생각] - 시그널(SIGTERM, SIGKILL)과 graceful shutdown은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%8B%9C%EA%B7%B8%EB%84%90%EA%B3%BC%20graceful%20shutdown.md)<br/>
+- [["왜?" 관점에서 생각] - 객체 하나는 메모리를 얼마나 차지하고 필드는 어떻게 배치되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EA%B0%9D%EC%B2%B4%20%ED%97%A4%EB%8D%94%EC%99%80%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EC%A0%95%EB%A0%AC.md)<br/>
+- [["왜?" 관점에서 생각] - TCP 소켓의 TIME_WAIT과 CLOSE_WAIT은 왜 생기고 무엇이 문제인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2FTCP%20%EC%86%8C%EC%BC%93%20%EC%83%81%ED%83%9C%20(TIME_WAIT%2C%20CLOSE_WAIT).md)<br/>
+- [["왜?" 관점에서 생각] - zero-copy와 mmap은 무엇을 줄여서 빨라지나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2Fzero-copy%EC%99%80%20mmap.md)<br/>
+- [["왜?" 관점에서 생각] - 페이지 캐시란 무엇이고 디스크를 읽는데 왜 메모리 속도가 나오나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%ED%8E%98%EC%9D%B4%EC%A7%80%20%EC%BA%90%EC%8B%9C%20-%20%EB%94%94%EC%8A%A4%ED%81%AC%EB%A5%BC%20%EC%9D%BD%EB%8A%94%EB%8D%B0%20%EC%99%9C%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EC%86%8D%EB%8F%84%EC%9D%B8%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각] - 해시 테이블의 충돌과 리사이즈는 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%ED%95%B4%EC%8B%9C(Hash)%20%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%B6%A9%EB%8F%8C%EA%B3%BC%20%EB%A6%AC%EC%82%AC%EC%9D%B4%EC%A6%88.md)<br/>
+- [["왜?" 관점에서 생각] - 타임아웃은 왜 반드시 걸어야 하고 어떤 종류가 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%ED%83%80%EC%9E%84%EC%95%84%EC%9B%83%EC%9D%80%20%EC%99%9C%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EA%B1%B8%EC%96%B4%EC%95%BC%20%ED%95%98%EB%82%98.md)<br/>
+- [["왜?" 관점에서 생각] - 재시도는 왜 지수 백오프와 지터가 필요한가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%9E%AC%EC%8B%9C%EB%8F%84%EC%99%80%20%EC%A7%80%EC%88%98%20%EB%B0%B1%EC%98%A4%ED%94%84.md)<br/>
+- [["왜?" 관점에서 생각] - currentTimeMillis와 nanoTime은 어떻게 다르고 시간은 어떻게 저장해야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%8B%9C%EA%B0%84%EA%B3%BC%20%EC%8B%9C%EA%B3%84%20-%20currentTimeMillis%EC%99%80%20nanoTime.md)<br/>
+- [["왜?" 관점에서 생각] - 해싱, 암호화, 인코딩은 어떻게 다르고 각각 어디에 쓰나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%ED%95%B4%EC%8B%B1%2C%20%EC%95%94%ED%98%B8%ED%99%94%2C%20%EC%9D%B8%EC%BD%94%EB%94%A9%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
+- [["왜?" 관점에서 생각] - write()가 돌아왔는데 왜 디스크에 없고 fsync는 무엇을 보장하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2Ffsync%EC%99%80%20%EB%82%B4%EA%B5%AC%EC%84%B1%20-%20write%EA%B0%80%20%EB%8F%8C%EC%95%84%EC%99%94%EB%8B%A4%EA%B3%A0%20%EB%94%94%EC%8A%A4%ED%81%AC%EC%97%90%20%EC%9E%88%EB%8A%94%20%EA%B2%8C%20%EC%95%84%EB%8B%88%EB%8B%A4.md)<br/>
+- [["왜?" 관점에서 생각] - 문자 인코딩이란 무엇이고 한글은 왜 깨지나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EB%AC%B8%EC%9E%90%20%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC%20%ED%95%9C%EA%B8%80%20%EA%B9%A8%EC%A7%90.md)<br/>
+- [["왜?" 관점에서 생각] - 정규식은 왜 특정 입력에서 폭발적으로 느려지나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%A0%95%EA%B7%9C%EC%8B%9D%20%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9%20%ED%8F%AD%EB%B0%9C%20(ReDoS).md)<br/>
 
 
 ### 깊게 이해하고 정리 - JAVA
@@ -88,6 +121,12 @@
 - [["왜?" 관점에서 생각] - 익명 클래스는 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%9D%B5%EB%AA%85.md)<br/>
 - [["왜?" 관점에서 생각] - 람다식은 무엇이고 익명 클래스와 어떻게 다른가요?](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EB%9E%8C%EB%8B%A4%EC%8B%9D.md)<br/>
 - [["왜?" 관점에서 생각] - 스트림은 내부적으로 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%8A%A4%ED%8A%B8%EB%A6%BC.md)<br/>
+- [["왜?" 관점에서 생각] - Arrays.sort는 왜 int[]와 Integer[]에 다른 알고리즘을 쓰나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%A0%95%EB%A0%AC(Sort)%20-%20TimSort%EC%99%80%20DualPivotQuicksort.md)<br/>
+- [["왜?" 관점에서 생각] - 비트 연산은 어떻게 동작하고 어디에 쓰이나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EB%B9%84%ED%8A%B8%20%EC%97%B0%EC%82%B0.md)<br/>
+- [["왜?" 관점에서 생각] - 0.1 + 0.2가 왜 0.3이 아니고 금액은 무엇으로 다뤄야 하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EC%8B%A4%EC%88%98%20%ED%91%9C%ED%98%84%EA%B3%BC%20%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90.md)<br/>
+- [["왜?" 관점에서 생각] - 리플렉션은 무엇이고 스프링은 이것을 어떻게 쓰나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%EB%A6%AC%ED%94%8C%EB%A0%89%EC%85%98(Reflection).md)<br/>
+- [["왜?" 관점에서 생각] - 클래스는 언제 로딩되고 클래스로더는 어떻게 위임하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%A1%9C%EB%94%A9%20%EC%88%9C%EC%84%9C%EC%99%80%20%ED%81%B4%EB%9E%98%EC%8A%A4%EB%A1%9C%EB%8D%94.md)<br/>
+- [["왜?" 관점에서 생각] - InputStream과 Reader는 어떻게 다르고 왜 Buffered로 감싸나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80%2FIO%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%20-%20InputStream%2C%20Reader%2C%20Buffered.md)<br/>
 
 
 
@@ -246,6 +285,31 @@
 
 
 
+
+### 깊게 이해하고 정리 - AWS
+
+- [["왜?" 관점에서 생각] - 클라우드 컴퓨팅이란 무엇이고 리전(Region)과 가용영역(Availability Zone)은 왜 나뉘어 있나요?](https://github.com/mingseok/TIL/blob/main/AWS%2F%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%20%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC%20%EB%A6%AC%EC%A0%84%2C%20%EA%B0%80%EC%9A%A9%EC%98%81%EC%97%AD.md)<br/>
+- [["왜?" 관점에서 생각] - EC2 가상 서버는 무엇이고 인스턴스 타입, stop과 terminate, EBS는 어떻게 다른가요?](https://github.com/mingseok/TIL/blob/main/AWS%2FEC2%20-%20%EA%B0%80%EC%83%81%20%EC%84%9C%EB%B2%84%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각] - 사설 IP와 CIDR, 서브넷은 무엇이고 사용 가능한 주소는 어떻게 계산하나요?](https://github.com/mingseok/TIL/blob/main/AWS%2F%EC%82%AC%EC%84%A4%20IP%2C%20CIDR%2C%20%EC%84%9C%EB%B8%8C%EB%84%B7%20%EA%B3%84%EC%82%B0.md)<br/>
+- [["왜?" 관점에서 생각] - VPC의 퍼블릭 서브넷과 프라이빗 서브넷은 무엇이 다르고 라우트 테이블은 어떤 역할을 하나요?](https://github.com/mingseok/TIL/blob/main/AWS%2FVPC%20-%20%ED%8D%BC%EB%B8%94%EB%A6%AD%20%EC%84%9C%EB%B8%8C%EB%84%B7%2C%20%ED%94%84%EB%9D%BC%EC%9D%B4%EB%B9%97%20%EC%84%9C%EB%B8%8C%EB%84%B7%2C%20%EB%9D%BC%EC%9A%B0%ED%8A%B8%20%ED%85%8C%EC%9D%B4%EB%B8%94.md)<br/>
+- [["왜?" 관점에서 생각] - 보안 그룹(Security Group)과 NACL은 어떤 역할을 하고 무엇이 다른가요?](https://github.com/mingseok/TIL/blob/main/AWS%2F%EB%B3%B4%EC%95%88%20%EA%B7%B8%EB%A3%B9%EA%B3%BC%20NACL.md)<br/>
+- [["왜?" 관점에서 생각] - EC2 서버에는 어떻게 접속하고 키 페어와 chmod 400은 왜 필요한가요?](https://github.com/mingseok/TIL/blob/main/AWS%2FEC2%20%EC%A0%91%EC%86%8D%20-%20SSH%EC%99%80%20%ED%82%A4%20%ED%8E%98%EC%96%B4.md)<br/>
+- [["왜?" 관점에서 생각] - EC2를 재시작하면 IP가 왜 바뀌고 탄력적 IP(Elastic IP)는 언제 필요한가요?](https://github.com/mingseok/TIL/blob/main/AWS%2F%ED%83%84%EB%A0%A5%EC%A0%81%20IP%20-%20%EC%9E%AC%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B4%20IP%EA%B0%80%20%EB%B0%94%EB%80%90%EB%8B%A4.md)<br/>
+- [["왜?" 관점에서 생각] - RDS는 EC2에 직접 DB를 설치하는 것과 무엇이 다르고 Multi-AZ와 리드 레플리카는 언제 쓰나요?](https://github.com/mingseok/TIL/blob/main/AWS%2FRDS%20-%20%EA%B4%80%EB%A6%AC%ED%98%95%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md)<br/>
+- [["왜?" 관점에서 생각] - IntelliJ에서 RDS에는 어떻게 접속하고 SSH 터널링은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/AWS%2FRDS%20%EC%A0%91%EC%86%8D%20-%20%ED%8D%BC%EB%B8%94%EB%A6%AD%20%EC%95%A1%EC%84%B8%EC%8A%A4%EC%99%80%20SSH%20%ED%84%B0%EB%84%90%EB%A7%81.md)<br/>
+- [["왜?" 관점에서 생각] - EC2에서 RDS 연결은 어떻게 확인하고 refused와 timed out은 무엇이 다른가요?](https://github.com/mingseok/TIL/blob/main/AWS%2FEC2%EC%97%90%EC%84%9C%20RDS%20%EC%97%B0%EA%B2%B0%20%ED%99%95%EC%9D%B8%20-%20refused%EC%99%80%20timed%20out.md)<br/>
+- [["왜?" 관점에서 생각] - IAM의 사용자, 역할, 정책은 무엇이고 최소 권한은 어떻게 적용하나요?](https://github.com/mingseok/TIL/blob/main/AWS%2FIAM%20-%20%EC%82%AC%EC%9A%A9%EC%9E%90%2C%20%EC%97%AD%ED%95%A0%2C%20%EC%A0%95%EC%B1%85%2C%20%EC%B5%9C%EC%86%8C%20%EA%B6%8C%ED%95%9C.md)<br/>
+- [["왜?" 관점에서 생각] - 액세스 키를 코드에 넣지 않으려면 어떻게 하고 IAM Role과 자격 증명 체인은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/AWS%2F%EC%95%A1%EC%84%B8%EC%8A%A4%20%ED%82%A4%EB%A5%BC%20%EC%BD%94%EB%93%9C%EC%97%90%20%EB%84%A3%EC%A7%80%20%EC%95%8A%EB%8A%94%20%EB%B2%95%20-%20IAM%20Role%EA%B3%BC%20%EC%9E%90%EA%B2%A9%20%EC%A6%9D%EB%AA%85%20%EC%B2%B4%EC%9D%B8.md)<br/>
+- [["왜?" 관점에서 생각] - S3 객체 스토리지는 파일 시스템과 무엇이 다르고 presigned URL은 어떻게 위조를 막나요?](https://github.com/mingseok/TIL/blob/main/AWS%2FS3%20-%20%EA%B0%9D%EC%B2%B4%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%EC%99%80%20presigned%20URL.md)<br/>
+- [["왜?" 관점에서 생각] - CloudFront CDN은 무엇을 캐시하고 서명 URL로 어떻게 접근을 제어하나요?](https://github.com/mingseok/TIL/blob/main/AWS%2FCloudFront%20-%20CDN%EA%B3%BC%20%EC%84%9C%EB%AA%85%20URL.md)<br/>
+- [["왜?" 관점에서 생각] - ALB 로드밸런서의 헬스체크는 무엇을 보고 서버는 X-Forwarded-For로 어떻게 사용자 IP를 아나요?](https://github.com/mingseok/TIL/blob/main/AWS%2FALB%20-%20%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C%2C%20%ED%97%AC%EC%8A%A4%EC%B2%B4%ED%81%AC%2C%20X-Forwarded-For.md)<br/>
+- [["왜?" 관점에서 생각] - Route 53의 A 레코드, CNAME, Alias는 무엇이 다르고 TTL은 왜 미리 줄여야 하나요?](https://github.com/mingseok/TIL/blob/main/AWS%2FRoute%2053%20-%20DNS%2C%20A%20%EB%A0%88%EC%BD%94%EB%93%9C%2C%20CNAME%2C%20Alias.md)<br/>
+- [["왜?" 관점에서 생각] - 무중단 배포의 블루그린과 롤링은 어떻게 동작하고 두 버전이 동시에 돌 때 무엇을 조심하나요?](https://github.com/mingseok/TIL/blob/main/AWS%2F%EB%AC%B4%EC%A4%91%EB%8B%A8%20%EB%B0%B0%ED%8F%AC%20-%20%EB%B8%94%EB%A3%A8%EA%B7%B8%EB%A6%B0%EA%B3%BC%20%EB%A1%A4%EB%A7%81.md)<br/>
+- [["왜?" 관점에서 생각] - CloudWatch로 지표, 로그, 경보는 어떻게 구성하고 EC2 기본 지표에 메모리는 왜 없나요?](https://github.com/mingseok/TIL/blob/main/AWS%2FCloudWatch%20-%20%EC%A7%80%ED%91%9C%2C%20%EB%A1%9C%EA%B7%B8%2C%20%EA%B2%BD%EB%B3%B4.md)<br/>
+- [["왜?" 관점에서 생각] - AWS 비용은 어떤 구조로 나오고 켜져 있지 않아도 나가는 요금은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/AWS%2FAWS%20%EB%B9%84%EC%9A%A9%20-%20%EA%B3%BC%EA%B8%88%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%ED%95%A8%EC%A0%95.md)<br/>
+
+
+
 ### ‘우아한 테크코스’ 과정 피드백
 - [‘우아한 테크코스’ PR 정리 목록](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4.md)<br/>
 - [[우아한 테크코스] - git, PR, README 작성법](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/git%2C%20PR%2C%20README%20%EC%9E%91%EC%84%B1%EB%B2%95.md)<br/>
@@ -262,16 +326,6 @@
 - [[객체지향설계] - 객체지향적 설계 예시](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%BD%94%EB%93%9C.md)<br/>
 
 
-
-### 깊게 이해하고 정리 - AWS
-- [[AWS] - EC2 서버에는 어떻게 접속하나요?](https://alstjr706.tistory.com/352)<br/>
-- [[AWS] - IntelliJ에서 RDS에는 어떻게 접속하나요?](https://alstjr706.tistory.com/353)<br/>
-- [[AWS] - EC2에서 RDS 연결은 어떻게 확인하나요?](https://alstjr706.tistory.com/354)<br/>
-- [[AWS] - 클라우드 컴퓨팅에서 리전(Region)과 가용영역(Availability Zone)은 무엇인가요?](https://alstjr706.tistory.com/358)<br/>
-- [[AWS] - EC2와 RDS는 각각 무엇인가요?](https://alstjr706.tistory.com/359)<br/>
-- [[AWS] - 라우트 테이블(Route Table)과 보안 그룹(Security Group)은 어떤 역할을 하나요?](https://alstjr706.tistory.com/360)<br/>
-- [[AWS] - VPC와 보안 그룹(Security Group)이란 무엇인가요?](https://alstjr706.tistory.com/361)<br/>
-- [[AWS] - 사설 ip와 CIDR, 서브넷이란 무엇인가요?](https://alstjr706.tistory.com/362)<br/>
 
 
 
