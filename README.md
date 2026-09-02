@@ -24,21 +24,21 @@
 
 
 
-### 깊게 이해하고 정리 - CS (Computer Science)
-- [[CS] - ‘메모리에 적재’ / CPU의 연산](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%E2%80%98%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%97%90%20%EC%A0%81%EC%9E%AC%E2%80%99%20CPU%EC%9D%98%20%EC%97%B0%EC%82%B0.md)<br/>
-- [[CS] - 동시성 vs 동기화 / 경쟁 조건 vs 임계 영역](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%20%EB%8F%99%EA%B8%B0%ED%99%94.md)<br/>
-- [[CS] - 동시성 문제 해결 방법으로는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [[CS] - context switch vs Context](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/context%20switch%20vs%20Context.md)<br/>
-- [[CS] - process란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/process%EB%A5%BC%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.md)<br/>
-- [[CS] - PCB가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/pcb%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
-- [[CS] - Multi process가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Multi%20process%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.md)<br/>
-- [[CS] - multi thread VS multi process](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/multi%20thread%20VS%20multi%20process.md)<br/>
-- [[CS] - PSA(Portable Service Abstraction)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/PSA(Portable%20Service%20Abstraction).md)<br/>
-- [[CS] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
-- [[CS] - CAS 알고리즘이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/CAS%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[CS] - Block vs Non-Block / sync(동기) vs async(비동기)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
-- [[CS] - blocking / non-blocking, sync / async 코드 구현](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/async%20%EC%BD%94%EB%93%9C%20%EA%B5%AC%ED%98%84.md)<br/>
-- [[CS] - 뮤텍스와 세마포어의 차이는?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%AE%A4%ED%85%8D%EC%8A%A4%EC%99%80%20%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
+### 깊게 이해하고 정리 - CS
+- [["왜?" 관점에서 생각] - ‘메모리에 적재’란 무엇이고 CPU는 어떻게 연산하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%E2%80%98%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%97%90%20%EC%A0%81%EC%9E%AC%E2%80%99%20CPU%EC%9D%98%20%EC%97%B0%EC%82%B0.md)<br/>
+- [["왜?" 관점에서 생각] - 동시성과 동기화, 경쟁 조건과 임계 영역은 각각 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%20%EB%8F%99%EA%B8%B0%ED%99%94.md)<br/>
+- [["왜?" 관점에서 생각] - 동시성 문제 해결 방법으로는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [["왜?" 관점에서 생각] - context switch와 Context는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/context%20switch%20vs%20Context.md)<br/>
+- [["왜?" 관점에서 생각] - process란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/process%EB%A5%BC%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - PCB가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/pcb%EB%8A%94%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - Multi process가 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Multi%20process%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.md)<br/>
+- [["왜?" 관점에서 생각] - multi thread와 multi process는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/multi%20thread%20VS%20multi%20process.md)<br/>
+- [["왜?" 관점에서 생각] - PSA(Portable Service Abstraction)란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/PSA(Portable%20Service%20Abstraction).md)<br/>
+- [["왜?" 관점에서 생각] - Reentrant Lock과 synchronized의 차이는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/Reentrant%20Lock%EA%B3%BC%20synchronized%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
+- [["왜?" 관점에서 생각] - CAS 알고리즘이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/CAS%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EB%AA%85.md)<br/>
+- [["왜?" 관점에서 생각] - Block과 Non-Block, sync(동기)와 async(비동기)는 어떻게 다른가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/sync(%EB%8F%99%EA%B8%B0)%20vs%20async(%EB%B9%84%EB%8F%99%EA%B8%B0).md)<br/>
+- [["왜?" 관점에서 생각] - blocking / non-blocking, sync / async는 코드로 어떻게 구현하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/async%20%EC%BD%94%EB%93%9C%20%EA%B5%AC%ED%98%84.md)<br/>
+- [["왜?" 관점에서 생각] - 뮤텍스와 세마포어는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%AE%A4%ED%85%8D%EC%8A%A4%EC%99%80%20%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4%EC%9D%98%20%EC%B0%A8%EC%9D%B4.md)<br/>
 
 
 ### 깊게 이해하고 정리 - JAVA
@@ -81,9 +81,9 @@
 - [["왜?" 관점에서 생각] - 배열의 선언과 메모리 할당은 어떤식으로 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EB%B0%B0%EC%97%B4%EC%9D%98%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%ED%95%A0%EB%8B%B9.md)<br/>
 - [["왜?" 관점에서 생각] - 왜 모든 클래스는 Object 클래스의 상속을 받나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%99%9C%20%EB%AA%A8%EB%93%A0%20%ED%81%B4%EB%9E%98%EC%8A%A4%EB%8A%94%20Object%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98%20%EC%83%81%EC%86%8D%EC%9D%84%20%EB%B0%9B%EC%9D%84%EA%B9%8C.md)<br/>
 - [["왜?" 관점에서 생각] - System.out.println() 내부 동작원리가 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/System.out.println()%20%EB%82%B4%EB%B6%80%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md)<br/>
-- [["왜?" 관점에서 생각] - 자바 기초 문법을 정리해 둔 디렉토리](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94)<br/>
+- [["왜?" 관점에서 생각] - 자바 기초 문법은 어디에 정리해 두었나요?](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94)<br/>
 - [["왜?" 관점에서 생각] - Map은 어떤 종류가 있고 무엇을 기준으로 골라야 하나요?](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/Map%20%EC%A0%95%EB%A6%AC.md)<br/>
-- [["왜?" 관점에서 생각] - 컬렉션 프레임워크를 정리해 둔 디렉토리](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)<br/>
+- [["왜?" 관점에서 생각] - 컬렉션 프레임워크는 어디에 정리해 두었나요?](https://github.com/mingseok/TIL/tree/main/%EC%9E%90%EB%B0%94/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)<br/>
 - [["왜?" 관점에서 생각] - Optional은 무엇이고 어디에 써야 하나요?](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/Optional.md)<br/>
 - [["왜?" 관점에서 생각] - 익명 클래스는 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EC%9D%B5%EB%AA%85.md)<br/>
 - [["왜?" 관점에서 생각] - 람다식은 무엇이고 익명 클래스와 어떻게 다른가요?](https://github.com/mingseok/TIL/blob/main/%EC%9E%90%EB%B0%94/%EB%9E%8C%EB%8B%A4%EC%8B%9D.md)<br/>
@@ -216,43 +216,62 @@
 
 
 ### 깊게 이해하고 정리 - HTTP
-- [[HTTP] - 네트워크와 인터넷 개념](https://github.com/mingseok/TIL/blob/main/HTTP/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%99%80%20%EC%9D%B8%ED%84%B0%EB%84%B7%20%EA%B0%9C%EB%85%90.md)<br/>
-- [[HTTP] - World Wide Web](https://github.com/mingseok/TIL/blob/main/HTTP/World%20Wide%20Web.md)<br/>
-- [[HTTP] - IP프로토콜 (=인터넷 프로토콜)](https://github.com/mingseok/TIL/blob/main/HTTP/IP%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%20(%3D%EC%9D%B8%ED%84%B0%EB%84%B7%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C).md)<br/>
-- [[HTTP] - TCP와 UDP의 차이](https://github.com/mingseok/TIL/blob/main/HTTP/TCP%2C%20UDP%20%EA%B0%84%EB%8B%A8%ED%9E%88%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[HTTP] - TCP 3 way handshake](https://github.com/mingseok/TIL/blob/main/HTTP/TCP%203%20way%20handshake.md)<br/>
-- [[HTTP] - PORT, DNS 설명](https://github.com/mingseok/TIL/blob/main/HTTP/PORT%2C%20DNS.md)<br/>
-- [[HTTP] - TCP/IP stack 설명](https://github.com/mingseok/TIL/blob/main/HTTP/TCP%20IP%20stack%20%EC%9E%90%EC%84%B8%ED%9E%88%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[HTTP] - 프로토콜 / OSI 7 layer](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%20OSI%207%20layer.md)<br/>
-- [[HTTP] - 인터넷 네트워크 중간 정리](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%A4%91%EA%B0%84%20%EC%A0%95%EB%A6%AC.md)<br/>
-- [[HTTP] - URI의 구조와 의미](https://github.com/mingseok/TIL/blob/main/HTTP/URI.md)<br/>
-- [[HTTP] - 웹 브라우저 요청 흐름](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%9A%94%EC%B2%AD%20%ED%9D%90%EB%A6%84.md)<br/>
-- [[HTTP] - 클라이언트 서버 구조](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%EC%A1%B0.md)<br/>
-- [[HTTP] - Stateful, Stateless](https://github.com/mingseok/TIL/blob/main/HTTP/Stateful%2C%20Stateless.md)<br/>
-- [[HTTP] - 비 연결성(connectionless)](https://github.com/mingseok/TIL/blob/main/HTTP/%EB%B9%84%20%EC%97%B0%EA%B2%B0%EC%84%B1(connectionless).md)<br/>
-- [[HTTP] - HTTP 메시지](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80.md)<br/>
-- [[HTTP] - 리소스 식별](https://github.com/mingseok/TIL/blob/main/HTTP/%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EC%8B%9D%EB%B3%84.md)<br/>
-- [[HTTP] - HTTP 메서드 - GET, POST](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%20-%20GET%2C%20POST.md)<br/>
-- [[HTTP] - HTTP 메서드 - PUT, PATCH, DELETE](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%20-%20PUT%2C%20PATCH%2C%20DELETE.md)<br/>
-- [[HTTP] - HTTP 메서드의 속성 (=멱등)](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%98%20%EC%86%8D%EC%84%B1%20(%3D%EB%A9%B1%EB%93%B1).md)<br/>
-- [[HTTP] - 클라이언트에서 서버로 데이터 전송](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C%20%EC%84%9C%EB%B2%84%EB%A1%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%84%EC%86%A1.md)<br/>
-- [[HTTP] - HTTP 상태코드 소개 (2xx, 3xx)](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%20%EC%86%8C%EA%B0%9C%20(2xx%2C%203xx).md)<br/>
-- [[HTTP] - HTTP 상태코드 소개 (4xx, 5xx)](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%20%EC%86%8C%EA%B0%9C%20(4xx%2C%205xx).md)<br/>
-- [[HTTP] - 일반 정보, 특별한 정보](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%9D%BC%EB%B0%98%20%EC%A0%95%EB%B3%B4%2C%20%ED%8A%B9%EB%B3%84%ED%95%9C%20%EC%A0%95%EB%B3%B4.md)<br/>
-- [[HTTP] - 쿠키, 세션](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BF%A0%ED%82%A4%2C%20%EC%84%B8%EC%85%98.md)<br/>
-- [[HTTP] - 캐시 기본 동작](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BA%90%EC%8B%9C%20%EA%B8%B0%EB%B3%B8%20%EB%8F%99%EC%9E%91.md)<br/>
-- [[HTTP] - 검증 헤더와 조건부 요청](https://github.com/mingseok/TIL/blob/main/HTTP/%EA%B2%80%EC%A6%9D%20%ED%97%A4%EB%8D%94%EC%99%80%20%EC%A1%B0%EA%B1%B4%EB%B6%80%20%EC%9A%94%EC%B2%AD.md)<br/>
-- [[HTTP] - 프록시 캐시, 캐시 무효화](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%94%84%EB%A1%9D%EC%8B%9C%20%EC%BA%90%EC%8B%9C%2C%20%EC%BA%90%EC%8B%9C%20%EB%AC%B4%ED%9A%A8%ED%99%94.md)<br/>
+- [["왜?" 관점에서 생각] - 네트워크와 인터넷은 어떤 개념인가요?](https://github.com/mingseok/TIL/blob/main/HTTP/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%99%80%20%EC%9D%B8%ED%84%B0%EB%84%B7%20%EA%B0%9C%EB%85%90.md)<br/>
+- [["왜?" 관점에서 생각] - World Wide Web은 무엇이고 어떻게 시작되었나요?](https://github.com/mingseok/TIL/blob/main/HTTP/World%20Wide%20Web.md)<br/>
+- [["왜?" 관점에서 생각] - IP 프로토콜(=인터넷 프로토콜)은 무엇이고 어떤 한계가 있나요?](https://github.com/mingseok/TIL/blob/main/HTTP/IP%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%20(%3D%EC%9D%B8%ED%84%B0%EB%84%B7%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C).md)<br/>
+- [["왜?" 관점에서 생각] - TCP와 UDP는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/HTTP/TCP%2C%20UDP%20%EA%B0%84%EB%8B%A8%ED%9E%88%20%EC%84%A4%EB%AA%85.md)<br/>
+- [["왜?" 관점에서 생각] - TCP 3 way handshake는 어떤 순서로 이루어지나요?](https://github.com/mingseok/TIL/blob/main/HTTP/TCP%203%20way%20handshake.md)<br/>
+- [["왜?" 관점에서 생각] - PORT와 DNS는 각각 어떤 역할을 하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/PORT%2C%20DNS.md)<br/>
+- [["왜?" 관점에서 생각] - TCP/IP stack은 어떤 계층으로 나뉘어 있나요?](https://github.com/mingseok/TIL/blob/main/HTTP/TCP%20IP%20stack%20%EC%9E%90%EC%84%B8%ED%9E%88%20%EC%84%A4%EB%AA%85.md)<br/>
+- [["왜?" 관점에서 생각] - 프로토콜과 OSI 7 layer는 어떻게 구성되어 있나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%20OSI%207%20layer.md)<br/>
+- [["왜?" 관점에서 생각] - 인터넷망에서 메시지가 전달되는 과정을 중간 정리하면 어떻게 되나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%A4%91%EA%B0%84%20%EC%A0%95%EB%A6%AC.md)<br/>
+- [["왜?" 관점에서 생각] - URI는 어떤 구조로 되어 있고 무엇을 의미하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/URI.md)<br/>
+- [["왜?" 관점에서 생각] - 웹 브라우저가 요청을 보내면 어떤 흐름으로 처리되나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%9B%B9%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%9A%94%EC%B2%AD%20%ED%9D%90%EB%A6%84.md)<br/>
+- [["왜?" 관점에서 생각] - 클라이언트 서버 구조로 나누면 무엇이 좋아지나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%EC%A1%B0.md)<br/>
+- [["왜?" 관점에서 생각] - Stateful과 Stateless는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/HTTP/Stateful%2C%20Stateless.md)<br/>
+- [["왜?" 관점에서 생각] - 비 연결성(connectionless)은 무엇이고 어떤 한계가 있나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%EB%B9%84%20%EC%97%B0%EA%B2%B0%EC%84%B1(connectionless).md)<br/>
+- [["왜?" 관점에서 생각] - HTTP 메시지는 어떤 구조로 되어 있나요?](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80.md)<br/>
+- [["왜?" 관점에서 생각] - URI를 설계할 때 리소스는 어떻게 식별해야 하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EC%8B%9D%EB%B3%84.md)<br/>
+- [["왜?" 관점에서 생각] - HTTP 메서드 GET과 POST는 어떻게 구분해서 쓰나요?](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%20-%20GET%2C%20POST.md)<br/>
+- [["왜?" 관점에서 생각] - HTTP 메서드 PUT, PATCH, DELETE는 각각 무엇이 다른가요?](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%20-%20PUT%2C%20PATCH%2C%20DELETE.md)<br/>
+- [["왜?" 관점에서 생각] - HTTP 메서드의 속성에서 멱등은 무엇을 뜻하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%98%20%EC%86%8D%EC%84%B1%20(%3D%EB%A9%B1%EB%93%B1).md)<br/>
+- [["왜?" 관점에서 생각] - 클라이언트에서 서버로 데이터는 어떤 방식으로 전송하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C%20%EC%84%9C%EB%B2%84%EB%A1%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%84%EC%86%A1.md)<br/>
+- [["왜?" 관점에서 생각] - HTTP 상태코드 2xx, 3xx는 각각 무엇을 뜻하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%20%EC%86%8C%EA%B0%9C%20(2xx%2C%203xx).md)<br/>
+- [["왜?" 관점에서 생각] - HTTP 상태코드 4xx, 5xx는 각각 무엇을 뜻하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/HTTP%20%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C%20%EC%86%8C%EA%B0%9C%20(4xx%2C%205xx).md)<br/>
+- [["왜?" 관점에서 생각] - HTTP 헤더의 일반 정보와 특별한 정보에는 무엇이 있나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%9D%BC%EB%B0%98%20%EC%A0%95%EB%B3%B4%2C%20%ED%8A%B9%EB%B3%84%ED%95%9C%20%EC%A0%95%EB%B3%B4.md)<br/>
+- [["왜?" 관점에서 생각] - 쿠키와 세션은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BF%A0%ED%82%A4%2C%20%EC%84%B8%EC%85%98.md)<br/>
+- [["왜?" 관점에서 생각] - 캐시는 기본적으로 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%EC%BA%90%EC%8B%9C%20%EA%B8%B0%EB%B3%B8%20%EB%8F%99%EC%9E%91.md)<br/>
+- [["왜?" 관점에서 생각] - 검증 헤더와 조건부 요청은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%EA%B2%80%EC%A6%9D%20%ED%97%A4%EB%8D%94%EC%99%80%20%EC%A1%B0%EA%B1%B4%EB%B6%80%20%EC%9A%94%EC%B2%AD.md)<br/>
+- [["왜?" 관점에서 생각] - 프록시 캐시와 캐시 무효화는 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/HTTP/%ED%94%84%EB%A1%9D%EC%8B%9C%20%EC%BA%90%EC%8B%9C%2C%20%EC%BA%90%EC%8B%9C%20%EB%AC%B4%ED%9A%A8%ED%99%94.md)<br/>
+
+
+
+### ‘우아한 테크코스’ 과정 피드백
+- [‘우아한 테크코스’ PR 정리 목록](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4.md)<br/>
+- [[우아한 테크코스] - git, PR, README 작성법](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/git%2C%20PR%2C%20README%20%EC%9E%91%EC%84%B1%EB%B2%95.md)<br/>
+- [[우아한 테크코스] - 클래스명, 메소드명, 변수명 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85%2C%20%EB%A9%94%EC%86%8C%EB%93%9C%EB%AA%85%2C%20%EB%B3%80%EC%88%98%EB%AA%85%20%EA%B7%9C%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 코딩 컨벤션](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EC%BD%94%EB%94%A9%20%EC%BB%A8%EB%B2%A4%EC%85%98.md)<br/>
+- [[우아한 테크코스] - 자바 API를 사용하자](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EC%9E%90%EB%B0%94%20API%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EC%9E%90.md)<br/>
+- [[우아한 테크코스] - 메소드, 필드, enum 작성을 위한 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EB%A9%94%EC%86%8C%EB%93%9C%2C%20%ED%95%84%EB%93%9C%2C%20enum%20%EC%9E%91%EC%84%B1%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EA%B7%9C%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 객체는 객체스럽게 사용한다](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EA%B0%9D%EC%B2%B4%EB%8A%94%20%EA%B0%9D%EC%B2%B4%EC%8A%A4%EB%9F%BD%EA%B2%8C%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4.md)<br/>
+- [[우아한 테크코스] - 테스트 코드 작성 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EA%B7%9C%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 객체지향 설계 방법](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84.md)<br/>
+- [[우아한 테크코스] - 객체지향 생활 체조 9가지 원칙](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%83%9D%ED%99%9C%20%EC%B2%B4%EC%A1%B0%209%EA%B0%80%EC%A7%80%20%EC%9B%90%EC%B9%99.md)<br/>
+- [[우아한 테크코스] - 방어적 복사, Unmodifiable](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC%2C%20Unmodifiable.md)<br/>
+- [[우아한 테크코스] - 일급 컬렉션을 사용하는 이유](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%BC%EA%B8%89%20%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%9E%80.md)<br/>
+- [[객체지향설계] - 객체지향적 설계 예시](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%BD%94%EB%93%9C.md)<br/>
+
+
 
 ### 깊게 이해하고 정리 - AWS
-- [[AWS] - EC2 서버로 접속하기](https://alstjr706.tistory.com/352)<br/>
-- [[AWS] - IntelliJ에서 RDS에 접속하기](https://alstjr706.tistory.com/353)<br/>
-- [[AWS] - EC2에서 RDS 연결 확인 방법](https://alstjr706.tistory.com/354)<br/>
-- [[AWS] - 클라우드 컴퓨팅 / 리전(Region) / 가용영역(Availability Zone)](https://alstjr706.tistory.com/358)<br/>
-- [[AWS] - EC2란? / RDS란?](https://alstjr706.tistory.com/359)<br/>
-- [[AWS] - 라우트 테이블(Route Table) / 보안 그룹(Security Group)](https://alstjr706.tistory.com/360)<br/>
-- [[AWS] - VPC란? / 보안 그룹(Security Group)이란?](https://alstjr706.tistory.com/361)<br/>
-- [[AWS] - 사설 ip, CIDR / 서브넷이란?](https://alstjr706.tistory.com/362)<br/>
+- [[AWS] - EC2 서버에는 어떻게 접속하나요?](https://alstjr706.tistory.com/352)<br/>
+- [[AWS] - IntelliJ에서 RDS에는 어떻게 접속하나요?](https://alstjr706.tistory.com/353)<br/>
+- [[AWS] - EC2에서 RDS 연결은 어떻게 확인하나요?](https://alstjr706.tistory.com/354)<br/>
+- [[AWS] - 클라우드 컴퓨팅에서 리전(Region)과 가용영역(Availability Zone)은 무엇인가요?](https://alstjr706.tistory.com/358)<br/>
+- [[AWS] - EC2와 RDS는 각각 무엇인가요?](https://alstjr706.tistory.com/359)<br/>
+- [[AWS] - 라우트 테이블(Route Table)과 보안 그룹(Security Group)은 어떤 역할을 하나요?](https://alstjr706.tistory.com/360)<br/>
+- [[AWS] - VPC와 보안 그룹(Security Group)이란 무엇인가요?](https://alstjr706.tistory.com/361)<br/>
+- [[AWS] - 사설 ip와 CIDR, 서브넷이란 무엇인가요?](https://alstjr706.tistory.com/362)<br/>
 
 
 
@@ -288,157 +307,99 @@
 
 
 
-### 프로젝트 (구현 + 문제) 해결기 [(Link)](https://github.com/f-lab-edu/dev-link-central) 
-
-```text
-### 블로그 작성 방법은 다음과 같습니다.
-
-- 어떻게 했기에 문제 상황을 마주하게 되었는지?
-- 이게 왜 문제인지?
-- 문제를 어떻게 감지했는지?
-- 어떻게 해결했는지?
-- 그렇게 하면 왜 해결되는지?
-- 얼마나 개선되었는지?
-- 배우는 것은 무엇인지?
-- 무엇을 얻을 것인지?
-- 이 방법이 최선이었는지?
-- 다른 방법은 없었는지?
-```
-
-- [비밀번호 검증 및 데이터 무결성 유지](https://alstjr706.tistory.com/384)
-- [닉네임 중복 검증과 예외 처리](https://alstjr706.tistory.com/387)
-- [HTTP 415 오류(회원가입 + 로그인)](https://alstjr706.tistory.com/388)
-- [유효성 검사 및 이메일 인증 오류](https://alstjr706.tistory.com/408)
-- [비밀번호 찾기 및 재설정과 임시 비밀번호 문제](https://alstjr706.tistory.com/379)
-- [비밀번호 해싱과 Security로 보안 높이기](https://alstjr706.tistory.com/383)
-- [JWT 로그인 및 Spring Security 인증 문제](https://alstjr706.tistory.com/395)
-- [JWT 도입 후 API 인증 이슈](https://alstjr706.tistory.com/398)
-- [JPA 엔티티 Dirty Checking 오류](https://alstjr706.tistory.com/389)
-- [JPA 논리적 삭제와 데이터 무결성 문제](https://alstjr706.tistory.com/385)
-- [트랜잭션 및 외래키 제약 조건 문제](https://alstjr706.tistory.com/381)
-- [REST API와 JPA 기반 프로필 및 친구 관리 오류](https://alstjr706.tistory.com/397)
-- [동시성 문제로 인한 조회수 및 좋아요](https://alstjr706.tistory.com/404)
-- [페이징, 무한 스크롤(댓글) 기능 구현 중 문제](https://alstjr706.tistory.com/391)
-- [AWS S3 연동 및 이미지 업로드 문제](https://alstjr706.tistory.com/405)
-- [AWS EC2 인스턴스와 MySQL 연결 문제](https://alstjr706.tistory.com/411)
-
-
-
-
-### ‘우아한 테크코스’ 과정 피드백
-- [🎒 ‘우아한 테크코스’ 프리코스 PR 정리 목록](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4.md)<br/>
-- [[우아한 테크코스] - git, PR, README 작성법](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/git%2C%20PR%2C%20README%20%EC%9E%91%EC%84%B1%EB%B2%95.md)<br/>
-- [[우아한 테크코스] - 클래스명, 메소드명, 변수명 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85%2C%20%EB%A9%94%EC%86%8C%EB%93%9C%EB%AA%85%2C%20%EB%B3%80%EC%88%98%EB%AA%85%20%EA%B7%9C%EC%B9%99.md)<br/>
-- [[우아한 테크코스] - 코딩 컨벤션](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EC%BD%94%EB%94%A9%20%EC%BB%A8%EB%B2%A4%EC%85%98.md)<br/>
-- [[우아한 테크코스] - 자바 API를 사용하자](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EC%9E%90%EB%B0%94%20API%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EC%9E%90.md)<br/>
-- [[우아한 테크코스] - 메소드, 필드, enum 작성을 위한 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EB%A9%94%EC%86%8C%EB%93%9C%2C%20%ED%95%84%EB%93%9C%2C%20enum%20%EC%9E%91%EC%84%B1%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EA%B7%9C%EC%B9%99.md)<br/>
-- [[우아한 테크코스] - 객체는 객체스럽게 사용한다](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%EA%B0%9D%EC%B2%B4%EB%8A%94%20%EA%B0%9D%EC%B2%B4%EC%8A%A4%EB%9F%BD%EA%B2%8C%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4.md)<br/>
-- [[우아한 테크코스] - 테스트 코드 작성 규칙](https://github.com/mingseok/TIL/blob/main/%EC%9A%B0%ED%85%8C%EC%BD%94/%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EA%B7%9C%EC%B9%99.md)<br/>
-- [[우아한 테크코스] - 객체지향 설계 방법](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84.md)<br/>
-- [[우아한 테크코스] - 객체지향 생활 체조 9가지 원칙](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%83%9D%ED%99%9C%20%EC%B2%B4%EC%A1%B0%209%EA%B0%80%EC%A7%80%20%EC%9B%90%EC%B9%99.md)<br/>
-- [[우아한 테크코스] - 방어적 복사, Unmodifiable](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC%2C%20Unmodifiable.md)<br/>
-- [[우아한 테크코스] - 일급 컬렉션을 사용하는 이유](https://github.com/mingseok/TIL/blob/main/ETC/%EC%9D%BC%EA%B8%89%20%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%9E%80.md)<br/>
-- [[객체지향설계] - 객체지향적 설계 예시](https://github.com/mingseok/TIL/blob/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%84%A4%EA%B3%84/%EC%BD%94%EB%93%9C.md)<br/>
-
-
-
-
-
-
-
 ### 깊게 이해하고 정리 - JPA
-- [[JPA] - ORM이란 무엇인가](https://github.com/mingseok/TIL/blob/main/JPA/ORM.md)<br/>
-- [[JPA] - JPA 설정(Maven 환경)](https://github.com/mingseok/TIL/blob/main/JPA/JPA%20%EC%84%A4%EC%A0%95%20-%20persistence.xml.md)<br/>
-- [[JPA] - JPA 어떻게 동작하는가](https://github.com/mingseok/TIL/blob/main/JPA/JPA%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%80.md)<br/>
-- [[JPA] - 영속성 컨텍스트](https://github.com/mingseok/TIL/blob/main/JPA/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8.md)<br/>
-- [[JPA] - 영속성 컨텍스트의 플러시](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%8C%EB%9F%AC%EC%8B%9C.md)<br/>
-- [[JPA] - 엔티티 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%94%ED%8B%B0%ED%8B%B0%20%EB%A7%A4%ED%95%91.md)<br/>
-- [[JPA] - DB 스키마 자동 생성](https://github.com/mingseok/TIL/blob/main/JPA/DB%20%EC%8A%A4%ED%82%A4%EB%A7%88%20%EC%9E%90%EB%8F%99%20%EC%83%9D%EC%84%B1.md)<br/>
-- [[JPA] - 기본 키 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B8%B0%EB%B3%B8%20%ED%82%A4%20%EB%A7%A4%ED%95%91.md)<br/>
-- [[JPA] - 연관관계 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)<br/>
-- [[JPA] - 연관관계 매핑(=코드)](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%BD%94%EB%93%9C).md)<br/>
-- [[JPA] - 다양한 연관관계 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)<br/>
-- [[JPA] - 다양한 연관관계 매핑(=코드)](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%8B%A4%EC%8A%B5).md)<br/>
-- [[JPA] - 상속관계 매핑](https://github.com/mingseok/TIL/blob/main/JPA/%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)<br/>
-- [[JPA] - 상속관계 매핑(=코드)](https://github.com/mingseok/TIL/blob/main/JPA/%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%8B%A4%EC%8A%B5).md)<br/>
-- [[JPA] - 프록시 기초](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%84%EB%A1%9D%EC%8B%9C%20%EA%B8%B0%EC%B4%88.md)<br/>
-- [[JPA] - 즉시 로딩과 지연 로딩](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A6%89%EC%8B%9C%20%EB%A1%9C%EB%94%A9%EA%B3%BC%20%EC%A7%80%EC%97%B0%20%EB%A1%9C%EB%94%A9.md)<br/>
-- [[JPA] - 영속성 전이: CASCADE](https://github.com/mingseok/TIL/blob/main/JPA/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%A0%84%EC%9D%B4%20CASCADE.md)<br/>
-- [[JPA] - 기본값 타입](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B8%B0%EB%B3%B8%EA%B0%92%20%ED%83%80%EC%9E%85.md)<br/>
-- [[JPA] - 임베디드 타입](https://github.com/mingseok/TIL/blob/main/JPA/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%20%ED%83%80%EC%9E%85.md)<br/>
-- [[JPA] - 값 타입과 불변 객체](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B0%92%20%ED%83%80%EC%9E%85%EA%B3%BC%20%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4.md)<br/>
-- [[JPA] - API를 만들 때 ‘회원 조회’에서 유의할 점](https://github.com/mingseok/TIL/blob/main/JPA/JPA%ED%9A%8C%EC%9B%90%EC%A1%B0%ED%9A%8C.md)<br/>
-- [[JPA] - 엔티티 조회와 DTO 조회의 차이](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%94%ED%8B%B0%ED%8B%B0%20%EC%A1%B0%ED%9A%8C%20DTO%20%EC%A1%B0%ED%9A%8C.md)<br/>
-- [[JPA] - Spring Data JPA 설명](https://github.com/mingseok/TIL/blob/main/JPA/Spring%20Data%20JPA%20%EC%84%A4%EB%AA%85.md)<br/>
-- [[JPA] - 스프링 데이터 JPA 분석](https://github.com/mingseok/TIL/blob/main/JPA/Spring%20Data%20JPA%20%EB%B6%84%EC%84%9D.md)<br/>
-- [[JPA] - 메소드 이름으로 쿼리 생성](https://github.com/mingseok/TIL/blob/main/JPA/%EC%BF%BC%EB%A6%AC%20%EB%A9%94%EC%86%8C%EB%93%9C.md)<br/>
-- [[JPA] - @Query 설명, 값, DTO 조회](https://github.com/mingseok/TIL/blob/main/JPA/%40Query%2C%20%EA%B0%92%2C%20DTO%20%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0.md)<br/>
-- [[JPA] - 페이징과 정렬](https://github.com/mingseok/TIL/blob/main/JPA/%ED%8E%98%EC%9D%B4%EC%A7%95%EA%B3%BC%20%EC%A0%95%EB%A0%AC.md)<br/>
-- [[JPA] - Auditing으로 생성일, 수정일 자동 기록하기](https://github.com/mingseok/TIL/blob/main/JPA/Auditing.md)<br/>
+- [["왜?" 관점에서 생각] - ORM이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/JPA/ORM.md)<br/>
+- [["왜?" 관점에서 생각] - JPA는 Maven 환경에서 어떻게 설정하나요?](https://github.com/mingseok/TIL/blob/main/JPA/JPA%20%EC%84%A4%EC%A0%95%20-%20persistence.xml.md)<br/>
+- [["왜?" 관점에서 생각] - JPA는 내부적으로 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/JPA/JPA%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%80.md)<br/>
+- [["왜?" 관점에서 생각] - 영속성 컨텍스트는 무엇이고 어떤 일을 하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8.md)<br/>
+- [["왜?" 관점에서 생각] - 영속성 컨텍스트의 플러시는 언제 일어나나요?](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%8C%EB%9F%AC%EC%8B%9C.md)<br/>
+- [["왜?" 관점에서 생각] - 엔티티 매핑은 어떤 어노테이션으로 하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%94%ED%8B%B0%ED%8B%B0%20%EB%A7%A4%ED%95%91.md)<br/>
+- [["왜?" 관점에서 생각] - DB 스키마 자동 생성은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/JPA/DB%20%EC%8A%A4%ED%82%A4%EB%A7%88%20%EC%9E%90%EB%8F%99%20%EC%83%9D%EC%84%B1.md)<br/>
+- [["왜?" 관점에서 생각] - 기본 키 매핑 전략에는 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B8%B0%EB%B3%B8%20%ED%82%A4%20%EB%A7%A4%ED%95%91.md)<br/>
+- [["왜?" 관점에서 생각] - 연관관계 매핑은 왜 필요하고 어떻게 하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)<br/>
+- [["왜?" 관점에서 생각] - 연관관계 매핑은 코드로 어떻게 작성하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%BD%94%EB%93%9C).md)<br/>
+- [["왜?" 관점에서 생각] - 다양한 연관관계 매핑에는 어떤 종류가 있나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)<br/>
+- [["왜?" 관점에서 생각] - 다양한 연관관계 매핑은 실습에서 어떻게 작성하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%8B%A4%EC%8A%B5).md)<br/>
+- [["왜?" 관점에서 생각] - 상속관계 매핑에는 어떤 전략이 있나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)<br/>
+- [["왜?" 관점에서 생각] - 상속관계 매핑은 실습에서 어떻게 작성하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%83%81%EC%86%8D%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20(%EC%8B%A4%EC%8A%B5).md)<br/>
+- [["왜?" 관점에서 생각] - JPA의 프록시는 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%84%EB%A1%9D%EC%8B%9C%20%EA%B8%B0%EC%B4%88.md)<br/>
+- [["왜?" 관점에서 생각] - 즉시 로딩과 지연 로딩은 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A6%89%EC%8B%9C%20%EB%A1%9C%EB%94%A9%EA%B3%BC%20%EC%A7%80%EC%97%B0%20%EB%A1%9C%EB%94%A9.md)<br/>
+- [["왜?" 관점에서 생각] - 영속성 전이 CASCADE는 언제 사용하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%A0%84%EC%9D%B4%20CASCADE.md)<br/>
+- [["왜?" 관점에서 생각] - JPA의 기본값 타입에는 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B8%B0%EB%B3%B8%EA%B0%92%20%ED%83%80%EC%9E%85.md)<br/>
+- [["왜?" 관점에서 생각] - 임베디드 타입은 무엇이고 언제 쓰나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%20%ED%83%80%EC%9E%85.md)<br/>
+- [["왜?" 관점에서 생각] - 값 타입은 왜 불변 객체로 만들어야 하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B0%92%20%ED%83%80%EC%9E%85%EA%B3%BC%20%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4.md)<br/>
+- [["왜?" 관점에서 생각] - API를 만들 때 ‘회원 조회’에서 유의할 점은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/JPA/JPA%ED%9A%8C%EC%9B%90%EC%A1%B0%ED%9A%8C.md)<br/>
+- [["왜?" 관점에서 생각] - 엔티티 조회와 DTO 조회는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%97%94%ED%8B%B0%ED%8B%B0%20%EC%A1%B0%ED%9A%8C%20DTO%20%EC%A1%B0%ED%9A%8C.md)<br/>
+- [["왜?" 관점에서 생각] - Spring Data JPA는 무엇을 대신 해주나요?](https://github.com/mingseok/TIL/blob/main/JPA/Spring%20Data%20JPA%20%EC%84%A4%EB%AA%85.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링 데이터 JPA는 내부적으로 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/JPA/Spring%20Data%20JPA%20%EB%B6%84%EC%84%9D.md)<br/>
+- [["왜?" 관점에서 생각] - 메소드 이름만으로 쿼리는 어떻게 생성되나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%BF%BC%EB%A6%AC%20%EB%A9%94%EC%86%8C%EB%93%9C.md)<br/>
+- [["왜?" 관점에서 생각] - @Query로 값과 DTO는 어떻게 조회하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%40Query%2C%20%EA%B0%92%2C%20DTO%20%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링 데이터 JPA에서 페이징과 정렬은 어떻게 하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%ED%8E%98%EC%9D%B4%EC%A7%95%EA%B3%BC%20%EC%A0%95%EB%A0%AC.md)<br/>
+- [["왜?" 관점에서 생각] - Auditing으로 생성일과 수정일은 어떻게 자동 기록하나요?](https://github.com/mingseok/TIL/blob/main/JPA/Auditing.md)<br/>
 
 
 
 ### 깊게 이해하고 정리 - JPQL
-- [[JPQL] - 객체지향 쿼리 언어(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BF%BC%EB%A6%AC%20%EC%96%B8%EC%96%B4(JPQL).md)<br/>
-- [[JPQL] - TypeQuery, Query, 프로젝션](https://github.com/mingseok/TIL/blob/main/JPA/TypeQuery%2C%20Query%2C%20%ED%94%84%EB%A1%9C%EC%A0%9D%EC%85%98.md)<br/>
-- [[JPQL] - 페이징 API, 조인](https://github.com/mingseok/TIL/blob/main/JPA/%ED%8E%98%EC%9D%B4%EC%A7%95%20API%2C%20%EC%A1%B0%EC%9D%B8.md)<br/>
-- [[JPQL] - 서브 쿼리, JPQL 타입 표현](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A1%B0%EA%B1%B4%EC%8B%9D%2C%20JPQL%20%EA%B8%B0%EB%B3%B8%20%ED%95%A8%EC%88%98.md)<br/>
-- [[JPQL] - 조건식, JPQL 기본 함수](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A1%B0%EA%B1%B4%EC%8B%9D%20-%20CASE%20%EC%8B%9D%2C%20JPQL%20%EA%B8%B0%EB%B3%B8%20%ED%95%A8%EC%88%98.md)<br/>
-- [[JPQL] - 경로 표현식(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%EA%B2%BD%EB%A1%9C%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
-- [[JPQL] - 페치 조인(JPQL)](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%ED%8E%98%EC%B9%98%20%EC%A1%B0%EC%9D%B8.md)<br/>
+- [["왜?" 관점에서 생각] - 객체지향 쿼리 언어(JPQL)는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BF%BC%EB%A6%AC%20%EC%96%B8%EC%96%B4(JPQL).md)<br/>
+- [["왜?" 관점에서 생각] - TypeQuery와 Query, 프로젝션은 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/JPA/TypeQuery%2C%20Query%2C%20%ED%94%84%EB%A1%9C%EC%A0%9D%EC%85%98.md)<br/>
+- [["왜?" 관점에서 생각] - 페이징 API와 조인은 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%ED%8E%98%EC%9D%B4%EC%A7%95%20API%2C%20%EC%A1%B0%EC%9D%B8.md)<br/>
+- [["왜?" 관점에서 생각] - 서브 쿼리와 타입 표현은 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A1%B0%EA%B1%B4%EC%8B%9D%2C%20JPQL%20%EA%B8%B0%EB%B3%B8%20%ED%95%A8%EC%88%98.md)<br/>
+- [["왜?" 관점에서 생각] - 조건식 CASE와 기본 함수에는 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A1%B0%EA%B1%B4%EC%8B%9D%20-%20CASE%20%EC%8B%9D%2C%20JPQL%20%EA%B8%B0%EB%B3%B8%20%ED%95%A8%EC%88%98.md)<br/>
+- [["왜?" 관점에서 생각] - 경로 표현식은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%EA%B2%BD%EB%A1%9C%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
+- [["왜?" 관점에서 생각] - 페치 조인은 무엇이고 어떤 한계가 있나요?](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20-%20%ED%8E%98%EC%B9%98%20%EC%A1%B0%EC%9D%B8.md)<br/>
 
 
 ### 깊게 이해하고 정리 - Querydsl
-- [[Querydsl] - Querydsl 설정과 검증](https://github.com/mingseok/TIL/blob/main/JPA/Querydsl%20%EC%84%A4%EC%A0%95.md)<br/>
-- [[Querydsl] - Querydsl vs JPQL 차이, Q-Type 관례](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20vs%20Querydsl.md)<br/>
-- [[Querydsl] - 검색 조건 쿼리](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%20%EC%BF%BC%EB%A6%AC.md)<br/>
-- [[Querydsl] - 결과 조회](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B2%B0%EA%B3%BC%20%EC%A1%B0%ED%9A%8C.md)<br/>
-- [[Querydsl] - 정렬, 페이징, 집합](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A0%95%EB%A0%AC%2C%20%ED%8E%98%EC%9D%B4%EC%A7%95%2C%20%EC%A7%91%ED%95%A9.md)<br/>
-- [[Querydsl] - Querydsl 조인](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A1%B0%EC%9D%B8.md)<br/>
-- [[Querydsl] - Querydsl 서브 쿼리](https://github.com/mingseok/TIL/blob/main/JPA/%EC%84%9C%EB%B8%8C%20%EC%BF%BC%EB%A6%AC.md)<br/>
-- [[Querydsl] - 프로젝션](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%84%EB%A1%9C%EC%A0%9D%EC%85%98.md)<br/>
-- [[Querydsl] - 동적 쿼리](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8F%99%EC%A0%81%20%EC%BF%BC%EB%A6%AC.md)<br/>
-- [[Querydsl] - 순수 JPA 리포지토리, Querydsl 비교](https://github.com/mingseok/TIL/blob/main/JPA/%EC%88%9C%EC%88%98%20JPA%20%EB%A6%AC%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%2C%20Querydsl%20%EB%B9%84%EA%B5%90.md)<br/>
+- [["왜?" 관점에서 생각] - Querydsl은 어떻게 설정하고 검증하나요?](https://github.com/mingseok/TIL/blob/main/JPA/Querydsl%20%EC%84%A4%EC%A0%95.md)<br/>
+- [["왜?" 관점에서 생각] - Querydsl과 JPQL은 어떤 차이가 있고 Q-Type 관례는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/JPA/JPQL%20vs%20Querydsl.md)<br/>
+- [["왜?" 관점에서 생각] - 검색 조건 쿼리는 어떻게 작성하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%20%EC%BF%BC%EB%A6%AC.md)<br/>
+- [["왜?" 관점에서 생각] - 결과 조회는 어떤 메서드로 하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EA%B2%B0%EA%B3%BC%20%EC%A1%B0%ED%9A%8C.md)<br/>
+- [["왜?" 관점에서 생각] - 정렬과 페이징, 집합 함수는 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A0%95%EB%A0%AC%2C%20%ED%8E%98%EC%9D%B4%EC%A7%95%2C%20%EC%A7%91%ED%95%A9.md)<br/>
+- [["왜?" 관점에서 생각] - 조인은 어떻게 작성하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%A1%B0%EC%9D%B8.md)<br/>
+- [["왜?" 관점에서 생각] - 서브 쿼리는 어떻게 작성하고 어떤 한계가 있나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%84%9C%EB%B8%8C%20%EC%BF%BC%EB%A6%AC.md)<br/>
+- [["왜?" 관점에서 생각] - 프로젝션은 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%ED%94%84%EB%A1%9C%EC%A0%9D%EC%85%98.md)<br/>
+- [["왜?" 관점에서 생각] - 동적 쿼리는 어떻게 작성하나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EB%8F%99%EC%A0%81%20%EC%BF%BC%EB%A6%AC.md)<br/>
+- [["왜?" 관점에서 생각] - 순수 JPA 리포지토리와 Querydsl은 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/JPA/%EC%88%9C%EC%88%98%20JPA%20%EB%A6%AC%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%2C%20Querydsl%20%EB%B9%84%EA%B5%90.md)<br/>
 
 
 
 
 
 ### 디자인 패턴
-- [[디자인 패턴] - 싱글톤 패턴(Singleton Pattern)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%B1%EA%B8%80%ED%86%A4%20%ED%8C%A8%ED%84%B4%20(Singleton%20Pattern).md)<br/>
-- [[디자인 패턴] - 스트래티지 패턴(Strategy Pattern)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%20%ED%8C%A8%ED%84%B4%20(%3D%EC%A0%84%EB%9E%B5%ED%8C%A8%ED%84%B4).md)<br/>
-- [[디자인 패턴] - 옵저버 패턴(Observer Pattern)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%98%B5%EC%A0%80%EB%B2%84%20%ED%8C%A8%ED%84%B4.md)<br/>
-- [[디자인 패턴] - 팩토리 메서드 패턴(Factory Method Pattern)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%8C%A9%ED%86%A0%EB%A6%AC%20%EB%A9%94%EC%84%9C%EB%93%9C%20%ED%8C%A8%ED%84%B4.md)<br/>
-- [[디자인 패턴] - 어댑터 패턴(Adapter Pattern)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%96%B4%EB%8C%91%ED%84%B0%20%ED%8C%A8%ED%84%B4.md)<br/>
-- [[디자인 패턴] - 템플릿 메서드 패턴(Template Method Pattern)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A9%94%EC%84%9C%EB%93%9C%20%ED%8C%A8%ED%84%B4.md)<br/>
-- [[디자인 패턴] - 프록시 패턴(Proxy Pattern)](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9D%EC%8B%9C%20%ED%8C%A8%ED%84%B4%20(%EB%8C%80%EB%A6%AC%EC%9D%B8%20%ED%8C%A8%ED%84%B4).md)<br/>
+- [["왜?" 관점에서 생각] - 싱글톤 패턴(Singleton Pattern)은 어떻게 구현하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8B%B1%EA%B8%80%ED%86%A4%20%ED%8C%A8%ED%84%B4%20(Singleton%20Pattern).md)<br/>
+- [["왜?" 관점에서 생각] - 스트래티지 패턴(Strategy Pattern)은 언제 사용하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%20%ED%8C%A8%ED%84%B4%20(%3D%EC%A0%84%EB%9E%B5%ED%8C%A8%ED%84%B4).md)<br/>
+- [["왜?" 관점에서 생각] - 옵저버 패턴(Observer Pattern)은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%98%B5%EC%A0%80%EB%B2%84%20%ED%8C%A8%ED%84%B4.md)<br/>
+- [["왜?" 관점에서 생각] - 팩토리 메서드 패턴(Factory Method Pattern)이란 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%8C%A9%ED%86%A0%EB%A6%AC%20%EB%A9%94%EC%84%9C%EB%93%9C%20%ED%8C%A8%ED%84%B4.md)<br/>
+- [["왜?" 관점에서 생각] - 어댑터 패턴(Adapter Pattern)은 언제 필요한가요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%EC%96%B4%EB%8C%91%ED%84%B0%20%ED%8C%A8%ED%84%B4.md)<br/>
+- [["왜?" 관점에서 생각] - 템플릿 메서드 패턴(Template Method Pattern)은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A9%94%EC%84%9C%EB%93%9C%20%ED%8C%A8%ED%84%B4.md)<br/>
+- [["왜?" 관점에서 생각] - 프록시 패턴(Proxy Pattern)은 무엇이고 어디에 쓰이나요?](https://github.com/mingseok/TIL/blob/main/%EA%B9%8A%EA%B2%8C%20%EA%B3%B5%EB%B6%80/%ED%94%84%EB%A1%9D%EC%8B%9C%20%ED%8C%A8%ED%84%B4%20(%EB%8C%80%EB%A6%AC%EC%9D%B8%20%ED%8C%A8%ED%84%B4).md)<br/>
 
 
 
 
 
 ### Web Basic
-- [[Web Basic] - WAS 서버와 WEB 서버의 이해](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/WAS%20%EC%84%9C%EB%B2%84%EC%99%80%20WEB%20%EC%84%9C%EB%B2%84%EC%9D%98%20%EC%9D%B4%ED%95%B4.md)<br/>
-- [[Web Basic] - 서블릿(Servlet)의 동작 방식](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
-- [[Web Basic] - 동시 요청 - 멀티 쓰레드](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%A9%80%ED%8B%B0%20%EC%93%B0%EB%A0%88%EB%93%9C.md)<br/>
-- [[Web Basic] - HTML, HTTP API, CSR과 SSR](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HTML%2C%20HTTP%20API%2C%20CSR%2C%20SSR.md)<br/>
-- [[Web Basic] - 웰컴 페이지, WEB-INF 디렉토리](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%9B%B0%EC%BB%B4%20%ED%8E%98%EC%9D%B4%EC%A7%80%2C%20WEB-INF%20%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC.md)<br/>
-- [[Web Basic] - HttpServletRequest, HttpServletResponse](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HttpServletRequest%2C%20HttpServletResponse.md)<br/>
-- [[Web Basic] - HttpServletRequest, 쿼리 파라미터 조회 메서드들](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HttpServletRequest%2C%20%EC%BF%BC%EB%A6%AC%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20%EC%A1%B0%ED%9A%8C%20%EB%A9%94%EC%84%9C%EB%93%9C%EB%93%A4.md)<br/>
-- [[Web Basic] - JSP, 서블릿과 JSP의 한계](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/JSP%2C%20%EC%84%9C%EB%B8%94%EB%A6%BF%EA%B3%BC%20JSP%EC%9D%98%20%ED%95%9C%EA%B3%84.md)<br/>
-- [[Web Basic] - Postman 사용 이유, 사용 방법](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/Postman%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%2C%20%EC%82%AC%EC%9A%A9%20%EB%B0%A9%EB%B2%95.md)<br/>
-- [[Web Basic] - 절대 경로, 상대 경로](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%A0%88%EB%8C%80%20%EA%B2%BD%EB%A1%9C%2C%20%EC%83%81%EB%8C%80%20%EA%B2%BD%EB%A1%9C.md)<br/>
+- [["왜?" 관점에서 생각] - WAS 서버와 WEB 서버는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/WAS%20%EC%84%9C%EB%B2%84%EC%99%80%20WEB%20%EC%84%9C%EB%B2%84%EC%9D%98%20%EC%9D%B4%ED%95%B4.md)<br/>
+- [["왜?" 관점에서 생각] - 서블릿(Servlet)은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%84%9C%EB%B8%94%EB%A6%BF.md)<br/>
+- [["왜?" 관점에서 생각] - 동시 요청은 멀티 쓰레드로 어떻게 처리되나요?](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EB%A9%80%ED%8B%B0%20%EC%93%B0%EB%A0%88%EB%93%9C.md)<br/>
+- [["왜?" 관점에서 생각] - HTML과 HTTP API, CSR과 SSR은 어떻게 구분하나요?](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HTML%2C%20HTTP%20API%2C%20CSR%2C%20SSR.md)<br/>
+- [["왜?" 관점에서 생각] - 웰컴 페이지와 WEB-INF 디렉토리는 어떤 규칙으로 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%9B%B0%EC%BB%B4%20%ED%8E%98%EC%9D%B4%EC%A7%80%2C%20WEB-INF%20%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC.md)<br/>
+- [["왜?" 관점에서 생각] - HttpServletRequest와 HttpServletResponse는 무엇인가요?](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HttpServletRequest%2C%20HttpServletResponse.md)<br/>
+- [["왜?" 관점에서 생각] - HttpServletRequest로 쿼리 파라미터는 어떤 메서드로 조회하나요?](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/HttpServletRequest%2C%20%EC%BF%BC%EB%A6%AC%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20%EC%A1%B0%ED%9A%8C%20%EB%A9%94%EC%84%9C%EB%93%9C%EB%93%A4.md)<br/>
+- [["왜?" 관점에서 생각] - JSP는 무엇이고 서블릿과 JSP는 어떤 한계가 있나요?](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/JSP%2C%20%EC%84%9C%EB%B8%94%EB%A6%BF%EA%B3%BC%20JSP%EC%9D%98%20%ED%95%9C%EA%B3%84.md)<br/>
+- [["왜?" 관점에서 생각] - Postman은 왜 사용하고 어떻게 쓰나요?](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/Postman%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0%2C%20%EC%82%AC%EC%9A%A9%20%EB%B0%A9%EB%B2%95.md)<br/>
+- [["왜?" 관점에서 생각] - 절대 경로와 상대 경로는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/%EC%84%9C%EB%B8%94%EB%A6%BF%20%26%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/%EC%A0%88%EB%8C%80%20%EA%B2%BD%EB%A1%9C%2C%20%EC%83%81%EB%8C%80%20%EA%B2%BD%EB%A1%9C.md)<br/>
 
 
 
 
 ### 예외처리
-- [[예외처리] - 에러는 크게 2가지](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%97%90%EB%9F%AC%EB%8A%94%20%ED%81%AC%EA%B2%8C%202%EA%B0%80%EC%A7%80.md)<br/>
-- [[예외처리] - 예외 계층](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%EA%B3%84%EC%B8%B5.md)<br/>
-- [[예외처리] - 체크 예외와 언체크 예외의 차이](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8.md)<br/>
-- [[예외처리] - 체크 예외, 언체크(런타임) 예외 활용](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC(%EB%9F%B0%ED%83%80%EC%9E%84)%20%EC%98%88%EC%99%B8%20%ED%99%9C%EC%9A%A9.md)<br/>
-- [[예외처리] - 예외 포함과 스택 트레이스](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%ED%8F%AC%ED%95%A8%EA%B3%BC%20%EC%8A%A4%ED%83%9D%20%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%8A%A4.md)<br/>
-- [[예외처리] - 스프링 예외 추상화, SQL 예외 변환기](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%98%88%EC%99%B8%20%EC%B6%94%EC%83%81%ED%99%94%2C%20SQL%20%EC%98%88%EC%99%B8%20%EB%B3%80%ED%99%98%EA%B8%B0.md)<br/>
+- [["왜?" 관점에서 생각] - 에러는 크게 어떤 두 가지로 나뉘나요?](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%97%90%EB%9F%AC%EB%8A%94%20%ED%81%AC%EA%B2%8C%202%EA%B0%80%EC%A7%80.md)<br/>
+- [["왜?" 관점에서 생각] - 자바의 예외 계층은 어떻게 구성되어 있나요?](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%EA%B3%84%EC%B8%B5.md)<br/>
+- [["왜?" 관점에서 생각] - 체크 예외와 언체크 예외는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8.md)<br/>
+- [["왜?" 관점에서 생각] - 체크 예외와 언체크(런타임) 예외는 실무에서 어떻게 활용하나요?](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%B2%B4%ED%81%AC%20%EC%98%88%EC%99%B8%2C%20%EC%96%B8%EC%B2%B4%ED%81%AC(%EB%9F%B0%ED%83%80%EC%9E%84)%20%EC%98%88%EC%99%B8%20%ED%99%9C%EC%9A%A9.md)<br/>
+- [["왜?" 관점에서 생각] - 예외를 포함해서 던지면 스택 트레이스는 어떻게 남나요?](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%98%88%EC%99%B8%20%ED%8F%AC%ED%95%A8%EA%B3%BC%20%EC%8A%A4%ED%83%9D%20%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%8A%A4.md)<br/>
+- [["왜?" 관점에서 생각] - 스프링의 예외 추상화와 SQL 예외 변환기는 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%98%88%EC%99%B8%20%EC%B6%94%EC%83%81%ED%99%94%2C%20SQL%20%EC%98%88%EC%99%B8%20%EB%B3%80%ED%99%98%EA%B8%B0.md)<br/>
 
 
 
@@ -447,20 +408,20 @@
 
 
 ### SQL-Query + 관계형 DB
-- [[SQL] - 테이블 구조 조작](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B4%80%EB%A6%AC.md)<br/>
-- [[SQL] - 패턴 매칭 (LIKE, BETWEEN) / null 의미와 Three-Valued Logic에 대해 설명](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
-- [[SQL] - 행 추가 (INSERT) / 데이터 갱신 (UPDATE) / 삭제하기 (DELETE)](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
-- [[SQL] - 데이터 조회 (SELECT) / 별칭(AS) 사용 / 중복값 제외 (DISTINCT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
-- [[SQL] - 데이터 조회 기술 subquery / IN / EXISTS / ANY / ALL](https://github.com/mingseok/TIL/blob/main/SQL/subquery%20%20IN%20%20EXISTS%20%20ANY%20%20ALL.md)<br/>
-- [[SQL] - inner join, outer join 종류](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
-- [[SQL] - 그룹별로 원하는 통계 group by / aggregate function / order by](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
-- [[SQL] - 행 제한하기 (LIMIT)](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
-- [[SQL] - 수치 연산, 별칭(AS) 사용](https://github.com/mingseok/TIL/blob/main/SQL/%EC%97%B4%EC%9D%98%20%EB%B3%84%EB%AA%85.md)<br/>
-- [[SQL] - 문자열 연산](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
-- [[SQL] - 물리삭제와 논리삭제](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%BC%EB%A6%AC%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
-- [[SQL] - 행 개수 구하기 (COUNT)](https://github.com/mingseok/TIL/blob/main/SQL/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
-- [[관계형 DB] - 관계형 DB 설명](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
-- [[관계형 DB] - 개념적 데이터 모델링](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B0%9C%EB%85%90%EC%A0%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8%EB%A7%81.md)<br/>
+- [[SQL] - 테이블 구조는 어떻게 조작하나요?](https://github.com/mingseok/TIL/blob/main/SQL/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B4%80%EB%A6%AC.md)<br/>
+- [[SQL] - 패턴 매칭(LIKE, BETWEEN)과 null의 의미, Three-Valued Logic은 무엇인가요?](https://github.com/mingseok/TIL/blob/main/SQL/LIKE%2C%20BETWEEN.md)<br/>
+- [[SQL] - 행 추가(INSERT)와 갱신(UPDATE), 삭제(DELETE)는 어떻게 하나요?](https://github.com/mingseok/TIL/blob/main/SQL/%EC%82%BD%EC%9E%85%20(INSERT).md)<br/>
+- [[SQL] - 데이터 조회(SELECT)와 별칭(AS), 중복값 제외(DISTINCT)는 어떻게 하나요?](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%80%EC%83%89%20%EC%A1%B0%EA%B1%B4%2C%20NULL%20%EA%B0%92%2C%20%EB%B9%84%EA%B5%90%20%EC%97%B0%EC%82%B0%EC%9E%90.md)<br/>
+- [[SQL] - subquery와 IN, EXISTS, ANY, ALL은 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/SQL/subquery%20%20IN%20%20EXISTS%20%20ANY%20%20ALL.md)<br/>
+- [[SQL] - inner join과 outer join에는 어떤 종류가 있나요?](https://github.com/mingseok/TIL/blob/main/SQL/INNER%20JOIN.md)<br/>
+- [[SQL] - group by와 aggregate function, order by로 통계는 어떻게 내나요?](https://github.com/mingseok/TIL/blob/main/SQL/%EC%A0%95%EB%A0%AC%20-%20%20ORDER%20BY.md)<br/>
+- [[SQL] - 행 제한하기(LIMIT)는 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/SQL/%EA%B2%B0%EA%B3%BC%20%ED%96%89%20%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0%20-%20LIMIT.md)<br/>
+- [[SQL] - 수치 연산과 별칭(AS)은 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/SQL/%EC%97%B4%EC%9D%98%20%EB%B3%84%EB%AA%85.md)<br/>
+- [[SQL] - 문자열 연산은 어떤 함수로 하나요?](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%97%B0%EC%82%B0.md)<br/>
+- [[SQL] - 물리삭제와 논리삭제는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/SQL/%EB%AC%BC%EB%A6%AC%EB%85%BC%EB%A6%AC%EC%82%AD%EC%A0%9C.md)<br/>
+- [[SQL] - 행 개수(COUNT)는 어떻게 구하나요?](https://github.com/mingseok/TIL/blob/main/SQL/%ED%96%89%20%EA%B0%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20-%20COUNT.md)<br/>
+- [[관계형 DB] - 관계형 DB는 어떤 특징을 가지고 있나요?](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B4%80%EA%B3%84%ED%98%95%20DB.md)<br/>
+- [[관계형 DB] - 개념적 데이터 모델링은 어떻게 하나요?](https://github.com/mingseok/TIL/blob/main/DataBase/%EA%B0%9C%EB%85%90%EC%A0%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8%EB%A7%81.md)<br/>
 
 
 ### 자료구조 & 알고리즘
@@ -498,37 +459,37 @@
 
   
 ### JavaScript
-- [[JavaScript] - 자바스크립트(JS)라는 언어의 성격](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8(JS).md)<br/>
-- [[JavaScript] - 이벤트](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8.md)<br/>
-- [[JavaScript] - 데이터 타입과 변수](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%2C%20%EB%B3%80%EC%88%98.md)<br/>
-- [[JavaScript] - CSS 선택자](https://github.com/mingseok/TIL/blob/main/JavaScript/CSS%20%EC%84%A0%ED%83%9D%EC%9E%90.md)<br/>
-- [[JavaScript] - 제어할 태그 선택하기](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%A0%9C%EC%96%B4%ED%95%A0%20%ED%83%9C%EA%B7%B8%20%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0.md)<br/>
-- [[JavaScript] - 배열과 반복문의 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A9%E1%86%A8%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC.md)<br/>
-- [[JavaScript] - Function()과 함수를 정의하는 방식들](https://github.com/mingseok/TIL/blob/main/JavaScript/Function().md)<br/>
-- [[JavaScript] - JS 변수 선언 (var, let, const)](https://github.com/mingseok/TIL/blob/main/JavaScript/JS%20%EB%B3%80%EC%88%98.md)<br/>
-- [[JavaScript] - 객체와 반복문, 활용](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%80%E1%85%A2%E1%86%A8%E1%84%8E%E1%85%A6%EC%99%80%20%EB%B0%98%EB%B3%B5%EB%AC%B8%2C%20%ED%99%9C%EC%9A%A9.md)<br/>
-- [[JavaScript] - Ajax와 fetch로 비동기 요청 보내기](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
+- [[JavaScript] - 자바스크립트(JS)는 어떤 성격의 언어인가요?](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8(JS).md)<br/>
+- [[JavaScript] - 이벤트는 어떤 순서로 처리되나요?](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8.md)<br/>
+- [[JavaScript] - 데이터 타입과 변수는 어떻게 되어 있나요?](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%2C%20%EB%B3%80%EC%88%98.md)<br/>
+- [[JavaScript] - CSS 선택자는 어떤 우선순위로 적용되나요?](https://github.com/mingseok/TIL/blob/main/JavaScript/CSS%20%EC%84%A0%ED%83%9D%EC%9E%90.md)<br/>
+- [[JavaScript] - 제어할 태그는 어떻게 선택하나요?](https://github.com/mingseok/TIL/blob/main/JavaScript/%EC%A0%9C%EC%96%B4%ED%95%A0%20%ED%83%9C%EA%B7%B8%20%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0.md)<br/>
+- [[JavaScript] - 배열과 반복문은 어떻게 활용하나요?](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A9%E1%86%A8%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC.md)<br/>
+- [[JavaScript] - 함수를 정의하는 방식에는 어떤 것들이 있나요?](https://github.com/mingseok/TIL/blob/main/JavaScript/Function().md)<br/>
+- [[JavaScript] - 변수 선언 var, let, const는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/JavaScript/JS%20%EB%B3%80%EC%88%98.md)<br/>
+- [[JavaScript] - 객체와 반복문은 어떻게 활용하나요?](https://github.com/mingseok/TIL/blob/main/JavaScript/%E1%84%80%E1%85%A2%E1%86%A8%E1%84%8E%E1%85%A6%EC%99%80%20%EB%B0%98%EB%B3%B5%EB%AC%B8%2C%20%ED%99%9C%EC%9A%A9.md)<br/>
+- [[JavaScript] - Ajax와 fetch로 비동기 요청은 어떻게 보내나요?](https://github.com/mingseok/TIL/blob/main/ETC/Ajax.md)<br/>
 
 
 
 ### thymeleaf
-- [[thymeleaf] - 타임리프 소개](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%86%8C%EA%B0%9C.md)<br/>
-- [[thymeleaf] - 텍스트 - text, utext](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%8D%EC%8A%A4%ED%8A%B8%20-%20text%2C%20utext.md)<br/>
-- [[thymeleaf] - 변수 - SpringEL](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B3%80%EC%88%98%20-%20SpringEL.md)<br/>
-- [[thymeleaf] - URL 링크](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/URL%20%EB%A7%81%ED%81%AC.md)<br/>
-- [[thymeleaf] - 선택 변수 표현식 -> *{...}, object=${...}](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%84%A0%ED%83%9D%20%EB%B3%80%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
-- [[thymeleaf] - 리터럴](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A6%AC%ED%84%B0%EB%9F%B4.md)<br/>
-- [[thymeleaf] - 입력 폼 처리](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%85%EB%A0%A5%20%ED%8F%BC%20%EC%B2%98%EB%A6%AC.md)<br/>
-- [[thymeleaf] - 연산자와 조건식](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%97%B0%EC%82%B0.md)<br/>
-- [[thymeleaf] - 속성 값 설정](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%86%8D%EC%84%B1%20%EA%B0%92%20%EC%84%A4%EC%A0%95.md)<br/>
-- [[thymeleaf] - 반복 th:each](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B0%98%EB%B3%B5.md)<br/>
-- [[thymeleaf] - 조건부 if, switch 문](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%A1%B0%EA%B1%B4%EB%B6%80%20if.md)<br/>
-- [[thymeleaf] - 블록 th:block](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B8%94%EB%A1%9D.md)<br/>
-- [[thymeleaf] - 자바스크립트 인라인](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%9D%B8%EB%9D%BC%EC%9D%B8%20each.md)<br/>
-- [[thymeleaf] - 템플릿 조각(상단, 하단, 사이드)](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EC%A1%B0%EA%B0%81%20(%EC%83%81%EB%8B%A8%2C%20%ED%95%98%EB%8B%A8%2C%20%EC%82%AC%EC%9D%B4%EB%93%9C).md)<br/>
-- [[thymeleaf] - 템플릿 레이아웃](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)<br/>
-- [[thymeleaf] - 체크 박스 - 단일](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%EB%8B%A8%EC%9D%BC.md)<br/>
-- [[thymeleaf] - 체크 박스 - 타임리프 적용](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%A0%81%EC%9A%A9.md)<br/>
-- [[thymeleaf] - 멀티 체크 박스](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A9%80%ED%8B%B0%20%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4.md)<br/>
-- [[thymeleaf] - 라디오 버튼](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%9D%BC%EB%94%94%EC%98%A4%20%EB%B2%84%ED%8A%BC.md)<br/>
-- [[thymeleaf] - 셀렉트 박스](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%85%80%EB%A0%89%ED%8A%B8%20%EB%B0%95%EC%8A%A4.md)<br/>
+- [[thymeleaf] - 타임리프는 무엇이고 JSP와 어떻게 다른가요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%86%8C%EA%B0%9C.md)<br/>
+- [[thymeleaf] - text와 utext는 어떤 차이가 있나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%8D%EC%8A%A4%ED%8A%B8%20-%20text%2C%20utext.md)<br/>
+- [[thymeleaf] - 변수 표현식 SpringEL은 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B3%80%EC%88%98%20-%20SpringEL.md)<br/>
+- [[thymeleaf] - URL 링크는 어떻게 작성하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/URL%20%EB%A7%81%ED%81%AC.md)<br/>
+- [[thymeleaf] - 선택 변수 표현식 *{...}과 th:object는 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%84%A0%ED%83%9D%20%EB%B3%80%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md)<br/>
+- [[thymeleaf] - 리터럴은 어떻게 표기하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A6%AC%ED%84%B0%EB%9F%B4.md)<br/>
+- [[thymeleaf] - 입력 폼은 어떻게 처리하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%85%EB%A0%A5%20%ED%8F%BC%20%EC%B2%98%EB%A6%AC.md)<br/>
+- [[thymeleaf] - 연산자와 조건식은 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%97%B0%EC%82%B0.md)<br/>
+- [[thymeleaf] - 속성 값은 어떻게 설정하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%86%8D%EC%84%B1%20%EA%B0%92%20%EC%84%A4%EC%A0%95.md)<br/>
+- [[thymeleaf] - 반복 th:each는 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B0%98%EB%B3%B5.md)<br/>
+- [[thymeleaf] - 조건부 if와 switch는 어떻게 사용하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%A1%B0%EA%B1%B4%EB%B6%80%20if.md)<br/>
+- [[thymeleaf] - 블록 th:block은 언제 필요한가요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%B8%94%EB%A1%9D.md)<br/>
+- [[thymeleaf] - 자바스크립트 인라인은 어떻게 동작하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%9D%B8%EB%9D%BC%EC%9D%B8%20each.md)<br/>
+- [[thymeleaf] - 템플릿 조각(상단, 하단, 사이드)은 어떻게 나누나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EC%A1%B0%EA%B0%81%20(%EC%83%81%EB%8B%A8%2C%20%ED%95%98%EB%8B%A8%2C%20%EC%82%AC%EC%9D%B4%EB%93%9C).md)<br/>
+- [[thymeleaf] - 템플릿 레이아웃은 어떻게 구성하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)<br/>
+- [[thymeleaf] - 단일 체크 박스는 왜 값이 안 넘어오나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%EB%8B%A8%EC%9D%BC.md)<br/>
+- [[thymeleaf] - 체크 박스에 타임리프를 적용하면 무엇이 달라지나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4%20-%20%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84%20%EC%A0%81%EC%9A%A9.md)<br/>
+- [[thymeleaf] - 멀티 체크 박스는 어떻게 처리하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%A9%80%ED%8B%B0%20%EC%B2%B4%ED%81%AC%20%EB%B0%95%EC%8A%A4.md)<br/>
+- [[thymeleaf] - 라디오 버튼은 어떻게 처리하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EB%9D%BC%EB%94%94%EC%98%A4%20%EB%B2%84%ED%8A%BC.md)<br/>
+- [[thymeleaf] - 셀렉트 박스는 어떻게 처리하나요?](https://github.com/mingseok/TIL/blob/main/%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%84/%EC%85%80%EB%A0%89%ED%8A%B8%20%EB%B0%95%EC%8A%A4.md)<br/>
