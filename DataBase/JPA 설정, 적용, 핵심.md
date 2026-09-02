@@ -275,3 +275,181 @@ String jpql = "select i from Item i";
 
 >**Reference** <br/>[스프링 DB 2편 - 데이터 접근 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-2/dashboard)
 
+
+<br/>
+
+## 궁금증!
+
+```java
+영속성 컨텍스트라는 게 왜 필요한 걸까? 바로 DB 에 쓰면 안 되나?
+```
+
+세 가지를 얻기 위해서다. 하나씩 보면 각각 이득이 다르다.
+
+<br/>
+
+## 첫번째) 1차 캐시
+
+```java
+@Transactional
+public void test() {
+    Member a = memberRepository.findById(1L).orElseThrow();   // SELECT 나간다
+    Member b = memberRepository.findById(1L).orElseThrow();   // 쿼리가 안 나간다
+
+    System.out.println(a == b);      // true
+}
+```
+
+<br/>
+
+두 번째 조회는 DB에 안 간다. 영속성 컨텍스트에 이미 있기 때문이다.
+
+<br/>
+
+그리고 `a == b` 가 `true` 다. 같은 객체다.
+
+같은 트랜잭션 안에서는 같은 행이 항상 같은 객체로 보장된다.
+
+<br/>
+
+앞의 equals hashCode 글에서 본 동일성 문제가 여기서는 안 생긴다.
+
+`==` 로 비교해도 되는 이유가 이 보장 덕분이다.
+
+<br/>
+
+## 두번째) 쓰기 지연
+
+```java
+@Transactional
+public void test() {
+    memberRepository.save(new Member("a"));   // INSERT 가 안 나간다
+    memberRepository.save(new Member("b"));   // 아직 안 나간다
+    memberRepository.save(new Member("c"));   // 아직도 안 나간다
+}   // 여기서 세 개가 한꺼번에 나간다
+```
+
+<br/>
+
+모아뒀다가 커밋 직전에 한 번에 보낸다.
+
+앞의 DBCP 글에서 본 대로 네트워크 왕복이 비싸니, 세 번을 한 번으로 줄이는 것이다.
+
+<br/>
+
+`hibernate.jdbc.batch_size` 를 설정하면 진짜로 하나의 `INSERT` 로 묶어서 보낸다.
+
+```java
+spring.jpa.properties.hibernate.jdbc.batch_size=50
+```
+
+<br/>
+
+다만 앞의 JdbcTemplate 글에서 본 문제가 여기서 나온다.
+
+`JdbcTemplate` 과 섞어 쓰면 아직 안 나간 것을 못 본다.
+
+<br/>
+
+## 세번째) 변경 감지
+
+```java
+@Transactional
+public void updateName(Long id, String name) {
+    Member member = memberRepository.findById(id).orElseThrow();
+    member.changeName(name);
+    // save() 를 안 불렀는데 UPDATE 가 나간다
+}
+```
+
+<br/>
+
+조회할 때 복사본(스냅샷)을 만들어두고, 커밋할 때 원본과 비교한다.
+
+다른 곳이 있으면 그 부분만 `UPDATE` 를 만든다.
+
+<br/>
+
+앞의 트랜잭션 옵션 글에서 본 `readOnly = true` 가 이 스냅샷을 안 만드는 것이다.
+
+<br/>
+
+## 그래서 준영속 상태가 문제가 된다
+
+영속성 컨텍스트가 관리하는 동안만 위 세 가지가 동작한다.
+
+```java
+영속 (managed)   - 영속성 컨텍스트가 관리 중. 변경 감지가 동작한다
+준영속 (detached) - 관리에서 벗어남. 변경해도 아무 일 없다
+비영속 (transient) - 아직 저장된 적 없음
+```
+
+<br/>
+
+트랜잭션이 끝나면 영속성 컨텍스트도 닫히고, 안에 있던 엔티티는 전부 준영속이 된다.
+
+```java
+Member member = memberService.find(1L);   // 트랜잭션이 여기서 끝났다
+member.changeName("바뀐이름");             // 아무 일도 안 일어난다
+```
+
+<br/>
+
+앞의 DB 접근(JPA) 글에서 본 `LazyInitializationException` 도 준영속 상태 때문이다.
+
+<br/>
+
+## 그래서 엔티티를 밖으로 내보내지 않는다
+
+앞의 DTO 글에서 본 이유에 이것이 하나 더 붙는다.
+
+```java
+엔티티를 컨트롤러까지 들고 나가면
+  - 준영속이라 지연 로딩이 안 된다
+  - 변경 감지도 안 된다
+  - 그런데 코드에서는 그게 안 보인다
+```
+
+<br/>
+
+트랜잭션 안에서 DTO로 바꿔서 나가면 이 혼란이 사라진다.
+
+```java
+@Transactional(readOnly = true)
+public MemberResponse find(Long id) {
+    Member member = memberRepository.findById(id).orElseThrow();
+    return MemberResponse.from(member);      // 필요한 것을 여기서 다 꺼낸다
+}
+```
+
+<br/>
+
+## ddl-auto 설정을 조심해야 한다
+
+```java
+spring.jpa.hibernate.ddl-auto=create        # 뜰 때 테이블을 다 지우고 새로 만든다
+spring.jpa.hibernate.ddl-auto=update        # 바뀐 것만 반영한다
+spring.jpa.hibernate.ddl-auto=validate      # 엔티티와 테이블이 맞는지 검사만 한다
+spring.jpa.hibernate.ddl-auto=none          # 아무것도 안 한다
+```
+
+<br/>
+
+운영에서 `create` 를 쓰면 서버가 뜰 때마다 데이터가 전부 날아간다.
+
+`update` 도 위험하다. 컬럼을 지우는 것은 안 해주고 추가만 하니, 스키마가 조금씩 어긋난다.
+
+<br/>
+
+운영은 `validate` 나 `none` 으로 두고, 스키마 변경은 마이그레이션 도구로 한다.
+
+```java
+로컬 개발  - create 또는 update
+운영       - validate (엔티티와 테이블이 다르면 아예 안 뜬다)
+```
+
+<br/>
+
+`validate` 로 두면 앞의 스프링 컨테이너 글에서 본 대로 문제가 있을 때 시작 자체가 실패한다.
+
+배포하자마자 알 수 있으니, 조용히 어긋나는 것보다 낫다.

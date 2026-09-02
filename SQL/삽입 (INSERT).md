@@ -408,3 +408,214 @@ Dingyo의 id는 5였기에 `impl_id = 5` 라고 작성한 것이다.
 
 delete from works_on where impl_id = 5 and proj_id != 2001;
 ```
+<br/>
+
+## 궁금증!
+
+```java
+한 건씩 넣는 것과 한 번에 넣는 것이 얼마나 다른가
+```
+
+문법부터 다르다.
+
+```sql
+INSERT INTO member (name, age) VALUES ('민석', 30);
+INSERT INTO member (name, age) VALUES ('영한', 25);
+INSERT INTO member (name, age) VALUES ('지성', 28);
+```
+
+```sql
+INSERT INTO member (name, age) VALUES
+    ('민석', 30), ('영한', 25), ('지성', 28);
+```
+
+<br/>
+
+아래쪽이 훨씬 빠르다. 이유가 몇 가지 겹친다.
+
+```java
+네트워크 왕복이 3번에서 1번으로 준다
+파싱과 실행 계획 수립이 1번만 일어난다
+로그 기록이 한 번에 처리된다
+```
+
+<br/>
+
+건수가 많아지면 차이가 몇십 배까지 벌어진다.
+
+<br/>
+
+## JPA 에서는 이게 안 되는 경우가 있다
+
+```java
+for (Member member : members) {
+    em.persist(member);
+}
+```
+
+<br/>
+
+앞의 쓰기 지연 글에서 본 대로 모아뒀다가 한 번에 보내는데,
+
+`IDENTITY` 전략이면 모을 수가 없다.
+
+```java
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+```
+
+<br/>
+
+식별자를 DB가 정해주니, `persist` 하는 순간 `INSERT` 를 날려야 값을 알 수 있다.
+
+<br/>
+
+그래서 배치 삽입이 필요하면 전략을 바꾼다.
+
+```java
+@GeneratedValue(strategy = GenerationType.SEQUENCE)
+```
+
+<br/>
+
+시퀀스는 미리 번호를 받아올 수 있어서 모아둘 수 있다.
+
+MySQL에는 시퀀스가 없어서 `TABLE` 전략을 쓰거나 JDBC로 직접 넣는다.
+
+<br/>
+
+## 중복이면 어떻게 할지 정하는 문법들
+
+```sql
+INSERT IGNORE INTO member ...                    -- 중복이면 조용히 무시. MySQL
+INSERT ... ON DUPLICATE KEY UPDATE age = 30      -- 중복이면 수정. MySQL
+INSERT ... ON CONFLICT DO NOTHING                -- PostgreSQL
+INSERT ... ON CONFLICT (email) DO UPDATE SET ... -- PostgreSQL
+MERGE INTO ...                                   -- 표준, 오라클
+```
+
+<br/>
+
+`INSERT IGNORE` 는 조심해야 한다.
+
+중복뿐 아니라 다른 오류까지 경고로 낮춰버린다.
+
+```sql
+INSERT IGNORE INTO member (age) VALUES ('서른');   -- 0 이 들어간다
+```
+
+<br/>
+
+타입이 안 맞는데도 오류가 안 나고 들어가는 것이다.
+
+<br/>
+
+## 조회한 것을 그대로 넣기
+
+```sql
+INSERT INTO member_archive (id, name)
+SELECT id, name FROM member WHERE deleted = true;
+```
+
+<br/>
+
+`VALUES` 대신 `SELECT` 를 쓴다.
+
+<br/>
+
+앞의 물리논리삭제 글에서 본 아카이브 이관에 쓰는 방식이다.
+
+애플리케이션으로 데이터를 가져왔다가 다시 넣을 필요가 없다.
+
+<br/>
+
+수백만 건이면 한 번에 하면 안 된다.
+
+트랜잭션이 커져서 락이 오래 잡히고, undo 로그가 쌓인다.
+
+```sql
+INSERT INTO member_archive SELECT * FROM member WHERE id BETWEEN 1 AND 10000;
+INSERT INTO member_archive SELECT * FROM member WHERE id BETWEEN 10001 AND 20000;
+```
+
+<br/>
+
+나눠서 도는 게 낫다.
+
+<br/>
+
+## 넣은 행의 식별자를 받는 방법
+
+```sql
+SELECT LAST_INSERT_ID();                       -- MySQL
+INSERT ... RETURNING id;                       -- PostgreSQL, 오라클
+```
+
+<br/>
+
+`LAST_INSERT_ID()` 는 커넥션마다 따로 관리된다.
+
+그래서 다른 사람이 그 사이에 넣어도 내 값이 나온다.
+
+<br/>
+
+앞의 커넥션 풀 글에서 본 대로 커넥션을 돌려쓰는 환경에서도
+
+같은 커넥션 안이면 안전한 것이다.
+
+<br/>
+
+여러 건을 한 번에 넣으면 첫 번째 값이 나온다는 게 함정이다.
+
+<br/>
+
+## 자동 증가 번호는 롤백해도 안 돌아온다
+
+```sql
+BEGIN;
+INSERT INTO member (name) VALUES ('민석');    -- id = 10
+ROLLBACK;
+INSERT INTO member (name) VALUES ('영한');    -- id = 11. 10 은 비었다
+```
+
+<br/>
+
+번호에 구멍이 생긴다.
+
+<br/>
+
+번호를 되돌리려면 다른 트랜잭션을 막아야 하는데 그럴 수 없기 때문이다.
+
+<br/>
+
+그래서 자동 증가 번호를 `주문 번호` 로 그대로 쓰면 안 된다.
+
+`몇 번까지 나왔는지` 로 총 건수를 짐작할 수도 있고, 구멍이 있으면 설명하기 곤란해진다.
+
+<br/>
+
+주문 번호는 따로 만드는 게 낫다.
+
+```java
+20260901-000123
+```
+
+<br/>
+
+## 대량 적재는 전용 명령이 따로 있다
+
+```sql
+LOAD DATA INFILE 'members.csv' INTO TABLE member;    -- MySQL
+COPY member FROM 'members.csv' CSV;                  -- PostgreSQL
+```
+
+<br/>
+
+`INSERT` 를 수만 번 하는 것보다 몇 배에서 몇십 배 빠르다.
+
+파싱과 트랜잭션 처리를 건너뛰고 바로 적재하기 때문이다.
+
+<br/>
+
+앞의 테이블 관리 글에서 본 대로,
+
+인덱스를 잠깐 끄고 적재한 다음 다시 만드는 것과 같이 쓰면 더 빨라진다.

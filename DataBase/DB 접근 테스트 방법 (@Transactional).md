@@ -188,3 +188,185 @@ void save() {
 
 >**Reference** <br/>[스프링 DB 2편 - 데이터 접근 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-2/dashboard)
 
+
+<br/>
+
+## 궁금증!
+
+```java
+테스트에 @Transactional 을 붙이면 롤백된다는데, 운영 코드와 다르게 동작하는 걸까?
+```
+
+다르다. 테스트에서만 자동 롤백된다.
+
+```java
+@SpringBootTest
+@Transactional
+class MemberServiceTest {
+
+    @Test
+    void join() {
+        memberService.join("민석");
+        // 테스트가 끝나면 자동으로 롤백된다
+    }
+}
+```
+
+<br/>
+
+일반 코드에서는 예외가 없으면 커밋되는데, 테스트에서는 성공해도 롤백된다.
+
+`TestTransaction` 이 기본값을 `롤백` 으로 뒤집어놨기 때문이다.
+
+<br/>
+
+이렇게 하면 테스트를 몇 번 돌려도 DB가 깨끗하게 유지된다.
+
+앞의 테스트 방법 글에서 본 `테스트 간 격리` 문제가 이걸로 해결된다.
+
+<br/>
+
+## 그런데 이 편리함에 함정이 있다
+
+### 첫번째) 테스트가 통과했는데 운영에서 터진다
+
+```java
+@Test
+@Transactional
+void join() {
+    memberService.join("민석");
+    memberService.join("민석");     // 중복인데 통과할 수도 있다
+}
+```
+
+<br/>
+
+`UNIQUE` 제약 위반은 대개 `INSERT` 가 실제로 나갈 때 걸린다.
+
+그런데 JPA는 커밋 직전까지 쓰기를 미룬다. 롤백되면 `INSERT` 가 아예 안 나갈 수 있다.
+
+<br/>
+
+`flush()` 를 명시적으로 부르거나, 롤백을 끄면 드러난다.
+
+```java
+@Test
+@Transactional
+void join() {
+    memberService.join("민석");
+    entityManager.flush();          // 여기서 DB 로 나간다
+}
+```
+
+<br/>
+
+### 두번째) 지연 로딩이 테스트에서만 된다
+
+```java
+@Test
+@Transactional
+void find() {
+    Order order = orderService.find(1L);
+    order.getMember().getName();     // 테스트에서는 된다
+}
+```
+
+<br/>
+
+테스트 메서드 전체가 하나의 트랜잭션이라, 서비스가 끝나도 세션이 살아 있다.
+
+<br/>
+
+그런데 운영에서는 서비스 메서드가 끝나면 트랜잭션도 끝난다.
+
+앞의 DB 접근(JPA) 글에서 본 `LazyInitializationException` 이 거기서 터진다.
+
+```java
+테스트 - 트랜잭션이 테스트 메서드 전체를 감싼다 -> 지연 로딩이 된다
+운영   - 트랜잭션이 서비스 메서드에서 끝난다   -> 지연 로딩이 안 된다
+```
+
+<br/>
+
+이 차이 때문에 `테스트는 통과하는데 운영에서 터지는` 상황이 생긴다.
+
+<br/>
+
+### 세번째) 실제로 커밋됐는지 확인이 안 된다
+
+```java
+@Test
+@Transactional
+void order() {
+    orderService.order(...);
+    assertThat(orderRepository.count()).isEqualTo(1);   // 통과한다
+}
+```
+
+<br/>
+
+같은 트랜잭션 안에서 조회하니 내가 넣은 것이 보인다.
+
+앞의 transaction 글에서 본 `트랜잭션 안에서는 내가 바꾼 값이 보인다` 가 그대로 적용된다.
+
+<br/>
+
+정말 커밋됐는지 보려면 롤백을 꺼야 한다.
+
+```java
+@Test
+@Commit                 // 또는 @Rollback(false)
+void order() { ... }
+```
+
+<br/>
+
+대신 데이터가 남으니 다음 테스트에 영향을 준다.
+
+<br/>
+
+## 그래서 나눠서 쓴다
+
+```java
+단위 테스트         - 스프링 없이. 가짜 리포지토리로 (제일 빠르다)
+@DataJpaTest       - JPA 관련 빈만 띄운다. 기본으로 롤백된다
+@SpringBootTest    - 전체를 띄운다. 통합 테스트
+```
+
+<br/>
+
+앞의 서비스 계층 글에서 본 대로, 비즈니스 로직은 단위 테스트로 검증하는 것이 좋다.
+
+DB가 필요한 것만 `@DataJpaTest` 로 확인하면 전체 테스트가 훨씬 빨라진다.
+
+<br/>
+
+## 롤백 대신 지우는 방법도 있다
+
+`@Transactional` 을 안 쓰고 매번 테이블을 비우는 방식이다.
+
+```java
+@AfterEach
+void clear() {
+    jdbcTemplate.execute("TRUNCATE TABLE orders");
+    jdbcTemplate.execute("TRUNCATE TABLE member");
+}
+```
+
+<br/>
+
+느리지만 운영과 똑같이 동작한다. 위의 세 가지 함정이 전부 사라진다.
+
+<br/>
+
+앞의 DML/DDL 글에서 본 대로 `TRUNCATE` 는 `DELETE` 보다 훨씬 빠르다.
+
+다만 외래 키가 걸려 있으면 순서를 맞춰야 하고, 제약을 잠깐 꺼야 할 수도 있다.
+
+```sql
+SET REFERENTIAL_INTEGRITY FALSE;    -- H2
+```
+
+<br/>
+
+정확성이 중요한 핵심 흐름만 이렇게 테스트하고, 나머지는 롤백 방식을 쓰는 것이 절충안이다.

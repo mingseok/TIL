@@ -219,3 +219,201 @@ EMPLOYEE 테이블에서는 empl_id가 primary key가 되기 때문에 중복된
 ### BCNF 해결 방법
 
 ![이미지](/programming/img/입문484.PNG)
+<br/>
+
+## 궁금증!
+
+```java
+정규화를 안 하면 실제로 어떤 사고가 나는지 데이터로 보면
+```
+
+주문과 회원 정보를 한 테이블에 넣어놓고 무엇이 문제인지 확인해봤다.
+
+```sql
+CREATE TABLE orders (
+    order_id INTEGER PRIMARY KEY,
+    member_name TEXT,
+    member_phone TEXT,
+    item_name TEXT,
+    price INTEGER
+);
+
+INSERT INTO orders VALUES
+ (1, '민석', '010-1111-1111', '책', 15000),
+ (2, '민석', '010-1111-1111', '노트', 3000),
+ (3, '영한', '010-2222-2222', '펜', 1000);
+```
+
+<br/>
+
+### 첫번째) 수정 이상
+
+민석의 전화번호가 바뀌면 두 행을 다 고쳐야 한다.
+
+```sql
+UPDATE orders SET member_phone = '010-9999-9999' WHERE member_name = '민석';
+```
+
+<br/>
+
+한 행만 고치고 놓치면 같은 사람의 전화번호가 두 개가 된다.
+
+주문이 `1000` 건이면 `1000` 행을 다 고쳐야 하고, 하나라도 실패하면 데이터가 어긋난다.
+
+<br/>
+
+### 두번째) 삭제 이상
+
+영한이 주문을 취소하면 어떻게 될까.
+
+```sql
+DELETE FROM orders WHERE order_id = 3;
+```
+
+<br/>
+
+주문만 지웠는데 영한이라는 회원 정보까지 같이 사라진다.
+
+주문 기록과 회원 정보는 별개인데, 한 행에 있어서 같이 없어지는 것이다.
+
+<br/>
+
+### 세번째) 삽입 이상
+
+가입만 하고 아직 주문을 안 한 회원은 넣을 수가 없다.
+
+```sql
+INSERT INTO orders VALUES (?, '새회원', '010-3333-3333', NULL, NULL);
+```
+
+<br/>
+
+주문 테이블인데 주문 없는 행을 억지로 만들어야 한다.
+
+`item_name` 과 `price` 를 `NULL` 로 채워두면 나중에 집계할 때마다 이 행을 걸러내야 한다.
+
+<br/>
+
+## 나누면 셋 다 사라진다
+
+```sql
+CREATE TABLE member (id INTEGER PRIMARY KEY, name TEXT, phone TEXT);
+CREATE TABLE orders (id INTEGER PRIMARY KEY, member_id INTEGER, item_name TEXT, price INTEGER);
+```
+
+<br/>
+
+```java
+수정 - 전화번호는 member 에 한 곳에만 있다. 한 줄만 고치면 된다
+삭제 - 주문을 지워도 member 는 그대로다
+삽입 - 주문 없는 회원도 member 에 넣을 수 있다
+```
+
+<br/>
+
+정규화의 목적이 `공간 절약` 이라고 오해하기 쉬운데, 진짜 목적은 이것이다.
+
+`같은 사실을 한 곳에만 적어두는 것` 이다.
+
+```java
+같은 사실이 여러 곳에 있으면 -> 언젠가 서로 달라진다
+한 곳에만 있으면            -> 달라질 수가 없다
+```
+
+<br/>
+
+## 그런데 실무에서는 일부러 어기기도 한다
+
+정규화하면 조회할 때 조인이 늘어난다.
+
+```sql
+-- 정규화 전 : 테이블 하나
+SELECT member_name, item_name FROM orders;
+
+-- 정규화 후 : 조인이 필요하다
+SELECT m.name, o.item_name
+FROM orders o JOIN member m ON o.member_id = m.id;
+```
+
+<br/>
+
+테이블이 다섯 개로 쪼개져 있으면 조인이 네 번 붙는다.
+
+조회가 아주 많은 화면에서는 이 비용이 문제가 된다.
+
+<br/>
+
+그래서 일부러 중복을 두기도 한다. 이것을 `역정규화` 라고 한다.
+
+```sql
+CREATE TABLE orders (
+    id INTEGER PRIMARY KEY,
+    member_id INTEGER,
+    member_name TEXT,        -- 일부러 복사해둔다
+    item_name TEXT
+);
+```
+
+<br/>
+
+다만 이러면 위에서 본 `수정 이상` 이 그대로 돌아온다.
+
+회원 이름이 바뀌면 주문 테이블도 같이 고쳐야 한다.
+
+<br/>
+
+## 그래서 판단 기준이 필요하다
+
+```java
+바뀌는 값을 복사하면 -> 위험하다. 동기화를 계속 신경 써야 한다
+안 바뀌는 값을 복사하면 -> 괜찮다
+```
+
+<br/>
+
+주문 시점의 상품 가격이 좋은 예다.
+
+```sql
+CREATE TABLE order_item (
+    order_id INTEGER,
+    item_id INTEGER,
+    price INTEGER          -- 주문 당시 가격을 복사해둔다
+);
+```
+
+<br/>
+
+이건 중복이 아니라 `그때의 사실` 이다.
+
+나중에 상품 가격이 오르더라도 과거 주문의 결제 금액은 그대로여야 한다.
+
+<br/>
+
+`item` 테이블을 조인해서 현재 가격을 가져오면 오히려 틀린 값이 된다.
+
+```java
+정규화가 맞는 것 - 지금의 사실 (회원 전화번호, 상품 이름)
+복사해둬야 하는 것 - 그때의 사실 (주문 당시 가격, 배송지)
+```
+
+<br/>
+
+## 3정규형까지가 실무의 기준이다
+
+`BCNF` 나 `4정규형` 까지 가는 경우는 드물다.
+
+<br/>
+
+`3정규형` 만 지켜도 위에서 본 세 가지 이상은 대부분 사라진다.
+
+그 이상은 이론적으로는 더 나은데, 테이블이 너무 잘게 쪼개져서 다루기가 힘들어진다.
+
+```java
+1정규형 - 한 칸에 값 하나만 (전화번호 여러 개를 콤마로 넣지 않는다)
+2정규형 - 복합 키의 일부에만 딸린 컬럼을 분리한다
+3정규형 - 키가 아닌 컬럼에 딸린 컬럼을 분리한다
+```
+
+<br/>
+
+`3정규형` 을 한 줄로 줄이면 `모든 컬럼은 기본 키에만 의존해야 한다` 가 된다.

@@ -213,3 +213,171 @@ https://github.com/mingseok/SpringMvc
 
 >**Reference** <br/>[스프링 MVC 2편 - 백엔드 웹 개발 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2/dashboard)
 
+
+<br/>
+
+## 궁금증!
+
+```java
+MVC 로 나누기 전에는 어떻게 짰길래 나누게 된 걸까?
+```
+
+`JSP` 하나에 전부 들어 있었다.
+
+```java
+<%
+    MemberRepository repository = MemberRepository.getInstance();
+    List<Member> members = repository.findAll();          // 데이터 조회
+    if (session.getAttribute("loginMember") == null) {    // 로그인 확인
+        response.sendRedirect("/login");
+        return;
+    }
+%>
+<html>
+<body>
+    <table>
+    <% for (Member member : members) { %>
+        <tr><td><%= member.getName() %></td></tr>
+    <% } %>
+    </table>
+</body>
+</html>
+```
+
+<br/>
+
+한 파일 안에 DB 조회, 로그인 검사, HTML 생성이 다 섞여 있다.
+
+<br/>
+
+여기서 세 가지 문제가 생긴다.
+
+- 화면 디자인만 바꾸려는데 비즈니스 로직 코드를 헤집고 다녀야 한다
+
+- 비즈니스 로직만 고치려는데 HTML 사이에서 찾아야 한다
+- 로직을 테스트하려면 JSP를 실행해야 한다. 톰캣을 띄워야 한다
+
+<br/>
+
+특히 마지막이 크다. 로직이 화면에 묶여 있으면 단위 테스트를 쓸 수가 없다.
+
+<br/>
+
+## 그래서 변경 이유가 다른 것을 나눈 것이다
+
+```java
+컨트롤러 - 요청이 바뀌면 바뀐다 (새 파라미터, 새 검증)
+모델     - 화면에 필요한 데이터가 바뀌면 바뀐다
+뷰       - 디자인이 바뀌면 바뀐다
+```
+
+<br/>
+
+세 가지가 각각 다른 이유로 바뀐다. 그래서 나눠두면 하나를 고칠 때 나머지를 안 건드린다.
+
+<br/>
+
+앞의 클래스와 메소드 글에서 본 `단일 책임` 이 파일 단위로 적용된 것이다.
+
+<br/>
+
+## Model 이 왜 따로 필요한가
+
+컨트롤러가 뷰를 직접 부르면 되지 않나 싶은데, 그러면 뷰가 컨트롤러를 알게 된다.
+
+```java
+// Model 없이
+return new MembersView(members, loginMember, pageInfo);   // 뷰가 파라미터를 정한다
+```
+
+<br/>
+
+`Model` 은 그 사이에 낀 `이름표 붙은 바구니` 다.
+
+```java
+model.addAttribute("members", members);
+model.addAttribute("loginMember", member);
+return "members";
+```
+
+<br/>
+
+컨트롤러는 담기만 하고, 뷰는 꺼내기만 한다. 서로의 존재를 모른다.
+
+<br/>
+
+앞의 뷰 리졸버 글에서 본 `논리 이름과 물리 경로를 나눈다` 와 같은 구조다.
+
+`이름으로 주고받으면 양쪽이 서로를 몰라도 된다` 는 방식이 여기서도 쓰인 것이다.
+
+<br/>
+
+## 컨트롤러에 비즈니스 로직을 넣으면 안 되는 이유
+
+MVC의 `C` 를 오해해서 컨트롤러에 로직을 다 넣는 경우가 많다.
+
+```java
+@PostMapping("/orders")
+public String order(@ModelAttribute OrderForm form) {
+    Item item = itemRepository.findById(form.getItemId());
+
+    if (item.getStock() < form.getCount()) {              // 재고 확인
+        throw new IllegalStateException("재고 부족");
+    }
+    item.setStock(item.getStock() - form.getCount());     // 재고 차감
+
+    int price = item.getPrice() * form.getCount();
+    if (member.getGrade() == VIP) price = price * 90 / 100;   // 할인 계산
+
+    orderRepository.save(new Order(...));
+    return "redirect:/orders";
+}
+```
+
+<br/>
+
+이러면 처음 문제로 돌아간다. 로직을 테스트하려면 `HttpServletRequest` 를 흉내내야 한다.
+
+<br/>
+
+그래서 실제로는 한 겹 더 나눈다.
+
+```java
+Controller - HTTP 를 자바로 번역한다. 파라미터를 받고, 결과를 모델에 담는다
+Service    - 비즈니스 로직. HTTP 를 모른다
+Repository - 데이터 접근. 비즈니스 로직을 모른다
+```
+
+<br/>
+
+`Service` 가 `HttpServletRequest` 를 모르기 때문에, 앞의 DI 글에서처럼
+
+컨테이너 없이 `new` 해서 단위 테스트를 쓸 수 있게 된다.
+
+```java
+MVC 는 화면과 로직을 나눈 것
+계층 구조는 그 로직을 다시 "웹" 과 "업무" 로 나눈 것
+```
+
+<br/>
+
+## 요즘은 뷰가 서버 밖으로 나갔다
+
+`React` 나 `Vue` 를 쓰면 서버가 HTML을 안 만든다.
+
+```java
+서버 MVC  : 컨트롤러 -> 모델 -> 뷰(JSP/타임리프) -> 완성된 HTML 을 내려준다
+API + SPA : 컨트롤러 -> JSON 을 내려준다 -> 브라우저의 자바스크립트가 화면을 만든다
+```
+
+<br/>
+
+이 경우 서버에는 `V` 가 없다. `@RestController` 가 그 형태다.
+
+앞의 `@ResponseBody` 글에서 본 것처럼 뷰 리졸버를 아예 안 탄다.
+
+<br/>
+
+그래도 `MVC` 라는 발상 자체는 브라우저 쪽으로 옮겨갔을 뿐 사라지지 않았다.
+
+`React` 의 컴포넌트도 결국 `상태(모델)` 와 `화면(뷰)` 을 나누는 구조다.

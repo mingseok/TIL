@@ -300,3 +300,227 @@ where D.id NOT IN (
 )
 ```
 
+
+<br/>
+
+## 궁금증!
+
+```java
+LIKE '김%' 는 인덱스를 타는데 왜 '%석' 은 못 타나
+```
+
+실행 계획을 찍어보면 그 이유가 드러난다.
+
+```sql
+CREATE INDEX idx_name ON member(name);
+
+EXPLAIN QUERY PLAN SELECT * FROM member WHERE name LIKE '김%';
+EXPLAIN QUERY PLAN SELECT * FROM member WHERE name LIKE '%석';
+```
+
+<br/>
+
+### 결과
+
+```java
+LIKE '김%'  ->  SEARCH member USING INDEX idx_name (name>? AND name<?)
+LIKE '%석'  ->  SCAN member
+```
+
+<br/>
+
+앞쪽이 고정된 것은 `SEARCH` 이고, 뒤쪽만 아는 것은 `SCAN` 이다.
+
+<br/>
+
+## 계획에 답이 적혀 있다
+
+```java
+(name>? AND name<?)
+```
+
+<br/>
+
+`LIKE '김%'` 가 범위 조회로 바뀐 것이다.
+
+<br/>
+
+직접 범위로 써봐도 같은 계획이 나온다.
+
+```sql
+SELECT * FROM member WHERE name >= '김' AND name < '깈';
+```
+
+```java
+SEARCH member USING INDEX idx_name (name>? AND name<?)
+```
+
+<br/>
+
+`김` 으로 시작하는 것은 사전순으로 `김` 과 그 다음 글자 사이에 몰려 있으니
+
+범위로 바꿀 수 있는 것이다.
+
+<br/>
+
+## `%석` 은 범위로 못 바꾼다
+
+`석` 으로 끝나는 이름이 사전순 어디에 있는지 알 수가 없다.
+
+```java
+김민석, 최민석, 박태석 ...
+```
+
+<br/>
+
+인덱스는 앞에서부터 정렬되어 있으니, 뒤를 기준으로는 찾을 방법이 없는 것이다.
+
+<br/>
+
+앞의 인덱스 구조 글에서 본 B+트리의 성질이 그대로다.
+
+전화번호부에서 `~석` 으로 끝나는 이름을 찾으려면 다 넘겨봐야 하는 것과 같다.
+
+<br/>
+
+## 그래서 검색 기능을 만들 때 고민이 생긴다
+
+```sql
+WHERE title LIKE '%검색어%'
+```
+
+<br/>
+
+앞뒤로 `%` 가 붙으니 인덱스가 무용지물이다.
+
+<br/>
+
+데이터가 적으면 상관없는데, 수백만 건이면 매번 전부 훑는다.
+
+<br/>
+
+해결 방법이 몇 가지 있다.
+
+```java
+1. 전문 검색 인덱스 (FULLTEXT, Elasticsearch)
+2. 앞부분 검색으로 제한한다 (자동완성 같은 경우)
+3. 뒤집어서 저장한 컬럼을 하나 더 둔다 (접미사 검색용)
+```
+
+<br/>
+
+`3번` 이 재미있다.
+
+```sql
+name_reversed = '석민김'
+WHERE name_reversed LIKE '석%'      -- 이건 인덱스를 탄다
+```
+
+<br/>
+
+`뒤에서 찾는 문제` 를 `앞에서 찾는 문제` 로 바꿔버리는 것이다.
+
+<br/>
+
+## BETWEEN 은 양쪽 끝을 포함한다
+
+```sql
+SELECT name, age FROM member WHERE age BETWEEN 25 AND 30;
+```
+
+<br/>
+
+### 결과
+
+```java
+이영한  25
+한지민  25
+김민석  30
+```
+
+<br/>
+
+`25` 와 `30` 이 다 들어 있다.
+
+```sql
+age >= 25 AND age <= 30
+```
+
+<br/>
+
+이것과 같다.
+
+<br/>
+
+## 날짜에서 이 성질이 함정이 된다
+
+```sql
+WHERE created_at BETWEEN '2026-09-01' AND '2026-09-30'
+```
+
+<br/>
+
+`9월 30일 데이터가 안 나온다` 는 문의가 여기서 나온다.
+
+<br/>
+
+`'2026-09-30'` 은 `'2026-09-30 00:00:00'` 으로 해석되기 때문이다.
+
+그날 낮에 만들어진 것은 이 범위 밖이다.
+
+<br/>
+
+그래서 이렇게 쓴다.
+
+```sql
+WHERE created_at >= '2026-09-01' AND created_at < '2026-10-01'
+```
+
+<br/>
+
+`끝은 포함하지 않는` 형태가 날짜에서는 더 안전하다.
+
+`23:59:59` 로 적으면 밀리초 단위 데이터를 놓치기 때문이다.
+
+<br/>
+
+## 문자열에도 BETWEEN 을 쓸 수 있다
+
+```sql
+SELECT name FROM member WHERE name BETWEEN '김' AND '이';
+```
+
+<br/>
+
+### 결과
+
+```java
+김민석
+박지성
+```
+
+<br/>
+
+사전순으로 비교한다.
+
+`이영한` 은 안 나왔는데, `'이영한' > '이'` 라서 범위를 벗어났기 때문이다.
+
+<br/>
+
+`이` 로 시작하는 것까지 포함하려면 끝을 하나 올려야 한다.
+
+```sql
+WHERE name >= '김' AND name < '자'
+```
+
+<br/>
+
+이 성질이 앞의 `LIKE '김%'` 가 범위로 바뀌는 것과 정확히 같은 얘기다.
+
+<br/>
+
+정렬 기준이 무엇이냐에 따라 달라지니 주의해야 한다.
+
+앞의 문자 인코딩 글에서 본 대로,
+
+한글이 어떤 순서로 정렬되는지는 콜레이션 설정을 따라간다.

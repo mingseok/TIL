@@ -110,3 +110,174 @@ void hello(@RequestBody HelloData data) {}
 <br/><br/>
 
 >**Reference** <br/>[스프링 MVC 2편 - 백엔드 웹 개발 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2/dashboard)
+<br/>
+
+## 궁금증!
+
+```java
+"컨버터를 몇 가지 등록한다" 고 했는데, 실제로 몇 개나 있을까?
+```
+
+`spring-web` jar 안을 열어보면 이렇게 들어 있다.
+
+```java
+ByteArrayHttpMessageConverter            - byte[]
+StringHttpMessageConverter               - String
+FormHttpMessageConverter                 - form 데이터
+BufferedImageHttpMessageConverter        - 이미지
+AbstractJacksonHttpMessageConverter      - JSON (Jackson 계열)
+AbstractKotlinSerializationHttpMessageConverter - 코틀린 직렬화
+```
+
+<br/>
+
+원문에서 든 세 개 외에도 여러 개가 있고, 클래스패스에 어떤 라이브러리가 있느냐에 따라 등록되는 것이 달라진다.
+
+`Jackson` 이 없으면 JSON 컨버터도 등록되지 않는다.
+
+<br/>
+
+## "안되는 케이스" 를 더 정확히 보면
+
+원문에서 든 그 흐름이 실제 코드에서는 이렇게 생겼다.
+
+```java
+for (HttpMessageConverter converter : 컨버터목록) {
+    if (converter.canRead(대상클래스, 요청의 Content-Type)) {
+        return converter.read(대상클래스, 요청);
+    }
+}
+throw new HttpMediaTypeNotSupportedException();
+```
+
+<br/>
+
+`canRead()` 가 두 가지를 같이 본다는 것이 핵심이다.
+
+```java
+canRead(클래스, 미디어타입)
+  -> 이 클래스로 바꿀 수 있나?      (StringHttpMessageConverter 는 String 만)
+  -> 이 미디어 타입을 다룰 수 있나?  (Jackson 은 application/json 계열만)
+```
+
+<br/>
+
+둘 다 맞아야 통과한다. 원문의 예에서 실패한 이유가 두 번째 조건이다.
+
+```java
+Content-Type: text/html + HelloData 객체
+  -> ByteArray  : 클래스가 byte[] 가 아니다        (탈락)
+  -> String     : 클래스가 String 이 아니다         (탈락)
+  -> Jackson    : 클래스는 되는데 text/html 이다    (탈락)
+  -> 남은 컨버터 없음 -> 415 Unsupported Media Type
+```
+
+<br/>
+
+응답할 때는 `canWrite()` 로 같은 일을 하는데, 미디어 타입을 요청의 `Accept` 헤더에서 가져온다.
+
+```java
+요청을 읽을 때 -> Content-Type 헤더를 본다 (내가 보낸 것이 무엇인지)
+응답을 쓸 때   -> Accept 헤더를 본다       (상대가 무엇을 받고 싶은지)
+```
+
+<br/>
+
+## 순서가 중요하다
+
+컨버터 목록은 순서가 있고, 앞에서부터 물어본다.
+
+앞쪽이 더 구체적인 것, 뒤쪽이 더 포괄적인 것으로 정렬되어 있다.
+
+<br/>
+
+`StringHttpMessageConverter` 가 `MappingJackson2HttpMessageConverter` 보다 앞에 있는 이유가 있다.
+
+```java
+@PostMapping("/hello")
+void hello(@RequestBody String data) { }
+```
+
+<br/>
+
+`Content-Type: application/json` 인데 파라미터가 `String` 이면,
+
+Jackson도 처리할 수 있고 String 컨버터도 처리할 수 있다.
+
+<br/>
+
+이때 앞에 있는 String 컨버터가 먼저 잡아서, JSON 문자열을 그대로 `String` 에 넣어준다.
+
+원문에 적힌 그 예가 이 순서 덕분에 동작하는 것이다.
+
+<br/>
+
+## 직접 컨버터를 끼울 수도 있다
+
+앞의 핸들러 어댑터 글에서 본 것처럼 전부 인터페이스라 갈아끼울 수 있다.
+
+```java
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+
+    @Override
+    public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
+        converters.add(0, new MyCsvHttpMessageConverter());   // 맨 앞에 끼운다
+    }
+}
+```
+
+<br/>
+
+`configureMessageConverters` 와 `extendMessageConverters` 두 개가 있는데 차이가 있다.
+
+```java
+configureMessageConverters -> 기본 컨버터를 전부 없애고 내가 준 것만 쓴다
+extendMessageConverters    -> 기본 컨버터는 그대로 두고 추가하거나 순서만 바꾼다
+```
+
+<br/>
+
+보통은 `extend` 쪽을 쓴다. `configure` 를 쓰면 기본으로 되던 것들이 갑자기 안 된다.
+
+<br/>
+
+## Jackson 설정을 바꾸고 싶을 때
+
+날짜 형식이나 `null` 필드 처리를 바꾸려면 컨버터를 새로 만들 필요가 없다.
+
+컨버터가 쓰는 `ObjectMapper` 를 빈으로 등록하면 된다.
+
+```java
+@Bean
+public ObjectMapper objectMapper() {
+    return new ObjectMapper()
+            .registerModule(new JavaTimeModule())
+            .setSerializationInclusion(JsonInclude.Include.NON_NULL)
+            .disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
+}
+```
+
+<br/>
+
+앞의 스프링 부트 글에서 본 `@ConditionalOnMissingBean` 이 여기서 작동한다.
+
+내가 `ObjectMapper` 를 등록하면 부트가 만들던 기본 것이 사라지고 내 것이 쓰인다.
+
+<br/>
+
+## 뷰 리졸버와 갈라지는 지점
+
+원문 첫머리의 `뷰 템플릿 대신` 이라는 말이 정확한 갈림길이다.
+
+```java
+@Controller + String 반환         -> ViewResolver 로 간다 (화면을 만든다)
+@Controller + @ResponseBody       -> HttpMessageConverter 로 간다 (본문에 바로 쓴다)
+@RestController                   -> 전부 @ResponseBody 라 항상 컨버터로 간다
+```
+
+<br/>
+
+`@RestController` 는 `@Controller + @ResponseBody` 를 합쳐놓은 것이다.
+
+API 서버를 만들 때 메서드마다 `@ResponseBody` 를 안 적어도 되게 만든 편의 어노테이션이다.

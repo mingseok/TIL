@@ -115,3 +115,157 @@ rollback 할때 recovery가 쉽다
 `concurrency control`은 `serializable` 와 `recoverability` 를 제공합니다.
 
 이와 관련된 트랜잭션 속성이 `“Isolation”` 이다.
+<br/>
+
+## 궁금증!
+
+```java
+회복 가능성이라는 게 실무에서 어떻게 지켜질까?
+```
+
+앞의 read-lock 글에서 본 `Strict 2PL` 이 그 답이다.
+
+<br/>
+
+문제 상황을 다시 정리하면 이렇다.
+
+```java
+A: x 를 100 -> 200 으로 바꾼다 (커밋 안 함)
+B: x 를 읽는다 -> 200
+B: 커밋한다
+A: 롤백한다                      <- x 는 100 으로 돌아간다
+```
+
+<br/>
+
+`B` 는 `200` 을 보고 커밋했는데, 그 `200` 은 세상에 존재한 적 없는 값이 됐다.
+
+`B` 를 되돌리려 해도 이미 커밋됐으니 방법이 없다. 이것이 `unrecoverable` 이다.
+
+<br/>
+
+## 막는 방법은 두 가지다
+
+### 첫번째) 커밋할 때까지 락을 안 푼다
+
+`Strict 2PL` 이다. `A` 가 커밋할 때까지 `x` 에 락이 걸려 있으니 `B` 가 읽을 수가 없다.
+
+<br/>
+
+앞의 DB 락 글에서 실제로 확인한 그 동작이다.
+
+```sql
+A: BEGIN IMMEDIATE; UPDATE t SET v = 200;   -- 락 획득
+B: UPDATE t SET v = 300;
+   -> Error: database is locked
+```
+
+<br/>
+
+### 두번째) 커밋된 값만 보여준다
+
+MVCC 방식이다. `B` 를 막는 대신 `옛 값을 보여준다`.
+
+```sql
+B: SELECT v FROM t;
+   -> 100     (A 가 바꾼 200 이 아니라)
+```
+
+<br/>
+
+`B` 는 애초에 `200` 을 본 적이 없으니, `A` 가 롤백해도 아무 문제가 없다.
+
+<br/>
+
+앞의 MVCC 글에서 본 대로 이쪽이 훨씬 빠르다. `B` 가 안 기다려도 되기 때문이다.
+
+```java
+Strict 2PL - B 를 기다리게 해서 못 읽게 한다
+MVCC       - B 에게 커밋된 옛 값을 보여준다
+```
+
+<br/>
+
+## 격리 수준으로 다시 보면
+
+`READ COMMITTED` 이상이면 회복 가능성이 보장된다.
+
+```java
+READ UNCOMMITTED - 커밋 안 된 값을 읽는다 -> unrecoverable 이 생길 수 있다
+READ COMMITTED   - 커밋된 값만 읽는다     -> recoverable 이 보장된다
+```
+
+<br/>
+
+그래서 실무에서 `READ UNCOMMITTED` 를 쓰는 경우가 거의 없다.
+
+앞의 isolation level 글에서 본 표의 맨 윗줄이 사실상 쓰이지 않는 이유가 이것이다.
+
+<br/>
+
+## 연쇄 롤백
+
+`recoverable` 이어도 문제가 하나 남는다.
+
+```java
+A: x 를 바꾼다
+B: x 를 읽는다 (A 가 아직 커밋 안 했지만 락을 잠깐 풀었다고 하자)
+A: 롤백
+-> B 도 같이 롤백해야 한다
+-> B 를 읽은 C 도 롤백해야 한다
+-> 도미노처럼 번진다
+```
+
+<br/>
+
+`recoverable` 은 `되돌릴 수는 있다` 는 뜻이지 `되돌릴 일이 없다` 는 뜻이 아니다.
+
+<br/>
+
+`Strict 2PL` 은 이것도 막는다. 커밋 전에는 아무도 못 읽으니 연쇄가 시작될 수 없다.
+
+이 성질을 `cascadeless` 라고 한다.
+
+```java
+recoverable  - 되돌릴 수는 있다
+cascadeless  - 되돌릴 일이 남에게 번지지 않는다
+strict       - 읽기도 쓰기도 커밋 전에는 손댈 수 없다
+```
+
+<br/>
+
+아래로 갈수록 조건이 세다. 실무 DB는 대개 `strict` 를 만족한다.
+
+<br/>
+
+## 그런데 이건 DB 안에서만 지켜진다
+
+애플리케이션이 밖으로 나가면 되돌릴 방법이 없다.
+
+```java
+@Transactional
+public void order() {
+    orderRepository.save(order);
+    mailSender.send("주문 완료");     // 여기서 메일이 나갔다
+    throw new RuntimeException();     // 롤백된다
+}
+```
+
+<br/>
+
+주문은 롤백되는데 메일은 이미 나갔다. 메일에는 롤백이 없다.
+
+<br/>
+
+앞의 `@EventListener` 글에서 본 `AFTER_COMMIT` 이 이 문제를 다룬다.
+
+```java
+@TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
+void sendMail(OrderCreated event) { ... }
+```
+
+<br/>
+
+커밋이 확정된 뒤에만 내보내니, 롤백된 주문의 메일이 나갈 일이 없다.
+
+`회복 가능성` 을 DB 밖까지 확장한 셈이다.

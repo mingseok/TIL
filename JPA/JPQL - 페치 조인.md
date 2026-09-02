@@ -120,3 +120,196 @@ WHERE T.NAME = '팀A'
 >**Reference** <br/>[자바 ORM 표준 JPA 프로그래밍 - 기본편](https://www.inflearn.com/course/ORM-JPA-Basic)
 
 
+
+<br/>
+
+## 궁금증!
+
+```java
+일반 조인과 페치 조인이 무엇이 다른가
+```
+
+`가져오는 것` 이 다르다. 조인 자체는 똑같이 한다.
+
+```java
+-- 일반 조인
+SELECT m FROM Member m JOIN m.team t
+
+-- 페치 조인
+SELECT m FROM Member m JOIN FETCH m.team
+```
+
+<br/>
+
+나가는 SQL을 비교하면 차이가 바로 보인다.
+
+```sql
+-- 일반 조인
+SELECT m.* FROM member m INNER JOIN team t ON m.team_id = t.id
+
+-- 페치 조인
+SELECT m.*, t.* FROM member m INNER JOIN team t ON m.team_id = t.id
+```
+
+<br/>
+
+`SELECT` 에 `t.*` 가 있느냐 없느냐다.
+
+<br/>
+
+일반 조인은 `조인은 하되 팀 데이터는 안 가져온다`.
+
+그래서 나중에 `member.getTeam().getName()` 을 부르면 또 쿼리가 나간다.
+
+앞의 DB 접근(JPA) 글에서 본 `N+1` 이 그대로 생기는 것이다.
+
+<br/>
+
+## 왜 이런 구분이 있는가
+
+조인을 조건에만 쓰고 싶은 경우가 있기 때문이다.
+
+```java
+SELECT m FROM Member m JOIN m.team t WHERE t.name = 'A팀'
+```
+
+<br/>
+
+`A팀 소속 회원` 을 찾는 것이 목적이지 팀 정보가 필요한 것은 아니다.
+
+이때 팀까지 가져오면 그냥 낭비다.
+
+<br/>
+
+앞의 DB 인덱스 글에서 본 `안 쓸 데이터를 읽는 것은 낭비다` 가 여기에도 적용된다.
+
+<br/>
+
+## 페치 조인에는 별칭을 주지 않는 것이 원칙이다
+
+```java
+SELECT m FROM Member m JOIN FETCH m.team t WHERE t.name = 'A팀'    -- 위험하다
+```
+
+<br/>
+
+문법상 되기는 하는데 결과가 이상해진다.
+
+<br/>
+
+`페치 조인` 은 `연관된 것을 전부 가져온다` 는 뜻인데,
+
+`WHERE` 로 걸러내면 일부만 담긴 컬렉션이 나온다.
+
+```java
+team.getMembers()      // 실제로는 10명인데 3명만 들어 있다
+```
+
+<br/>
+
+그리고 그 상태로 영속성 컨텍스트에 올라간다.
+
+앞의 영속성 컨텍스트 글에서 본 1차 캐시에 `잘못된 데이터` 가 들어가는 것이다.
+
+다른 곳에서 같은 팀을 조회하면 그 3명짜리가 나온다.
+
+<br/>
+
+`ToOne` 관계면 상관없다. 컬렉션이 아니라 걸러낼 것이 없기 때문이다.
+
+<br/>
+
+## 컬렉션 페치 조인은 중복이 생긴다
+
+```java
+SELECT t FROM Team t JOIN FETCH t.members
+```
+
+```sql
+SELECT t.*, m.* FROM team t INNER JOIN member m ON t.id = m.team_id
+```
+
+<br/>
+
+팀 하나에 회원이 `3` 명이면 결과가 `3` 행이다.
+
+그러면 `Team` 객체가 `3` 개 나온다. 전부 같은 팀인데도 그렇다.
+
+<br/>
+
+`DISTINCT` 를 붙이면 해결된다.
+
+```java
+SELECT DISTINCT t FROM Team t JOIN FETCH t.members
+```
+
+<br/>
+
+SQL의 `DISTINCT` 만으로는 안 된다. 회원이 다르니 행이 전부 다르기 때문이다.
+
+JPQL의 `DISTINCT` 는 SQL에 붙이는 것 외에 `같은 식별자의 엔티티를 하나로 합치는` 일도 한다.
+
+<br/>
+
+`Hibernate 6` 부터는 이게 기본 동작이 되어서 `DISTINCT` 를 안 써도 된다.
+
+버전에 따라 다르니 로그로 확인해보는 편이 확실하다.
+
+<br/>
+
+## 컬렉션 페치 조인은 페이징이 안 된다
+
+앞의 페이징과 정렬 글에서 본 그 경고다.
+
+```java
+HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+```
+
+<br/>
+
+행 수와 엔티티 수가 안 맞으니 DB에서 자를 수가 없다.
+
+그래서 전부 읽어와서 메모리에서 자른다. `100만` 건이면 `100만` 건을 다 읽는다.
+
+<br/>
+
+해결은 앞의 엔티티 조회 DTO 조회 글에서 본 순서를 따른다.
+
+```java
+ToOne 은 fetch join 한다          -> 행이 안 늘어난다
+컬렉션은 batch size 로 푼다        -> N+1 이 1+1 이 된다
+```
+
+<br/>
+
+## 페치 조인은 하나만 할 수 있다는 것
+
+컬렉션 기준이다. `ToOne` 은 여러 개 해도 된다.
+
+```java
+SELECT o FROM Order o
+JOIN FETCH o.member          -- ToOne. 된다
+JOIN FETCH o.delivery        -- ToOne. 된다
+JOIN FETCH o.orderItems      -- 컬렉션. 여기까지는 된다
+JOIN FETCH o.coupons         -- 컬렉션 두 번째. 안 된다
+```
+
+```java
+MultipleBagFetchException: cannot simultaneously fetch multiple bags
+```
+
+<br/>
+
+`3 × 2 = 6` 행이 되어 어느 것이 진짜인지 구분할 수 없기 때문이다.
+
+<br/>
+
+참고로 `List` 대신 `Set` 을 쓰면 이 예외를 피할 수는 있다.
+
+`bag` 이 아니라 `set` 이 되어 중복이 자동으로 제거되기 때문이다.
+
+<br/>
+
+다만 곱집합 자체는 그대로라, 읽어오는 행 수는 여전히 많다.
+
+근본 해결은 아니고 앞의 `batch size` 쪽이 낫다.

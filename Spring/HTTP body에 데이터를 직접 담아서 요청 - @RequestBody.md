@@ -154,3 +154,168 @@ public String requestBodyString(@RequestBody String messageBody) {
 <br/><br/>
 
 >**Reference** <br/>[스프링 MVC 2편 - 백엔드 웹 개발 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2/dashboard)
+
+<br/>
+
+## 궁금증!
+
+```java
+@RequestBody 는 왜 한 번밖에 못 읽나
+```
+
+본문이 스트림이기 때문이다.
+
+```java
+InputStream body = request.getInputStream();
+```
+
+<br/>
+
+스트림은 흘러가는 물 같은 것이라, 한 번 읽으면 끝이다.
+
+되감을 수가 없다.
+
+<br/>
+
+그래서 이런 코드는 두 번째에서 빈 값이 나온다.
+
+```java
+public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) {
+    String body = readBody(request);        // 필터에서 로그를 찍으려고 읽었다
+    log.info("body = {}", body);
+    chain.doFilter(request, response);      // 컨트롤러에서는 빈 본문을 받는다
+}
+```
+
+<br/>
+
+앞의 필터, 스프링 인터셉터 글에서 본 필터에서 본문 로그를 남기려다 자주 겪는 일이다.
+
+<br/>
+
+## 해결하려면 감싸야 한다
+
+```java
+ContentCachingRequestWrapper wrapper = new ContentCachingRequestWrapper(request);
+chain.doFilter(wrapper, response);
+byte[] cached = wrapper.getContentAsByteArray();     // 읽은 것을 보관해둔다
+```
+
+<br/>
+
+읽으면서 복사본을 만들어두는 방식이다.
+
+<br/>
+
+`HttpServletRequestWrapper` 를 상속한 것인데,
+
+앞의 데코레이터 패턴 관점에서 보면 원본을 감싸서 기능을 덧붙인 것이다.
+
+<br/>
+
+## @RequestParam 은 왜 여러 번 읽히나
+
+이건 스트림이 아니기 때문이다.
+
+```java
+GET /members?name=민석      -> URL 에 붙어 있다. 파싱해서 Map 에 담아둔다
+POST + form                 -> 본문이지만 서블릿이 미리 읽어서 Map 에 담는다
+```
+
+<br/>
+
+`request.getParameter()` 는 이미 파싱된 `Map` 을 조회하는 것이라 몇 번이든 된다.
+
+<br/>
+
+앞의 클라이언트에서 서버로 데이터 전송 글에서 본 대로
+
+`application/x-www-form-urlencoded` 는 `name=민석&age=30` 형태라 파싱이 쉽다.
+
+JSON은 구조가 자유로워서 서블릿이 미리 파싱해두지 않는 것이다.
+
+<br/>
+
+## HttpEntity 로 받으면 헤더까지 같이 온다
+
+```java
+@PostMapping("/api/members")
+public String create(HttpEntity<MemberRequest> entity) {
+    MemberRequest body = entity.getBody();
+    HttpHeaders headers = entity.getHeaders();
+}
+```
+
+<br/>
+
+`RequestEntity` 를 쓰면 URL과 메서드까지 볼 수 있다.
+
+<br/>
+
+응답 쪽의 짝이 `ResponseEntity` 다.
+
+```java
+HttpEntity     - 본문 + 헤더
+RequestEntity  - + URL, 메서드
+ResponseEntity - + 상태 코드
+```
+
+<br/>
+
+## String 으로 받으면 원문이 온다
+
+```java
+@PostMapping("/api/raw")
+public String raw(@RequestBody String body) {
+    // {"name":"민석"} 이라는 글자 그대로
+}
+```
+
+<br/>
+
+앞의 API 방식(json), @ResponseBody 글에서 본 `StringHttpMessageConverter` 가 처리한다.
+
+<br/>
+
+객체로 바꾸지 않고 원문이 필요할 때 쓴다.
+
+앞의 결제 웹훅처럼 서명을 검증해야 하는 경우가 그렇다.
+
+```java
+서명은 원문 바이트로 계산한다
+-> 객체로 바꿨다가 다시 JSON 으로 만들면 공백이나 순서가 달라져 서명이 안 맞는다
+```
+
+<br/>
+
+## @RequestBody 는 생략할 수 없다
+
+```java
+@PostMapping("/api/members")
+public String create(MemberRequest request) {      // @RequestBody 를 안 붙였다
+```
+
+<br/>
+
+이러면 `@ModelAttribute` 로 동작한다.
+
+<br/>
+
+앞의 HTTP 요청 파라미터 - @ModelAttribute 글에서 본 규칙이다.
+
+```java
+단순 타입 (String, int 등)  -> @RequestParam 으로 본다
+그 외 객체                  -> @ModelAttribute 로 본다
+```
+
+<br/>
+
+JSON을 보냈는데 필드가 전부 `null` 로 들어오면 이걸 의심하면 된다.
+
+`@ModelAttribute` 는 쿼리 파라미터를 찾는데 본문에 JSON이 들어 있으니 채울 게 없는 것이다.
+
+<br/>
+
+`@RequestParam` 은 생략해도 되고 `@RequestBody` 는 생략하면 안 된다는 것을
+
+한 번 겪어보면 안 잊는다.

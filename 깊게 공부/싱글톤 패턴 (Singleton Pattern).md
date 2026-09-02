@@ -160,3 +160,226 @@ Bean을 어떻게 만드는지 생각하면 된다
 Component-scan 대상이 되는 어노테이션들 
 @Repository, @Service, @Controller, @Component 등을 사용하면 된다
 ```
+<br/>
+
+## 궁금증!
+
+```java
+private 생성자면 정말 못 만드나
+```
+
+리플렉션으로 뚫어봤다.
+
+```java
+Eager a = Eager.getInstance();
+
+Constructor<Eager> c = Eager.class.getDeclaredConstructor();
+c.setAccessible(true);
+Eager b = c.newInstance();
+```
+
+<br/>
+
+### 결과
+
+```java
+getInstance() == 리플렉션으로 만든 것 ? false
+```
+
+<br/>
+
+서로 다른 객체다. `private` 생성자가 뚫린 것이다.
+
+<br/>
+
+앞의 리플렉션(Reflection) 글에서 본 `setAccessible(true)` 가 접근 제어를 무시한다.
+
+`private` 은 컴파일러가 지키는 약속이지, 런타임에 잠긴 문이 아닌 것이다.
+
+<br/>
+
+## enum 으로 만들면 막힌다
+
+```java
+enum EnumSingleton { INSTANCE }
+```
+
+```java
+Constructor<?> ec = EnumSingleton.class.getDeclaredConstructors()[0];
+ec.setAccessible(true);
+ec.newInstance();
+```
+
+<br/>
+
+### 결과
+
+```java
+IllegalArgumentException : Cannot reflectively create enum objects
+```
+
+<br/>
+
+`newInstance()` 안에 `enum` 이면 거부하는 코드가 박혀 있다.
+
+JVM 차원에서 막아둔 것이라 우회할 방법이 없다.
+
+<br/>
+
+앞의 enum 은 어떻게 동작할까 글에서 본 대로,
+
+`enum` 상수는 클래스가 로딩될 때 `static` 블록에서 한 번만 만들어진다.
+
+<br/>
+
+## 직렬화도 막아준다
+
+일반 싱글톤은 역직렬화하면 새 객체가 생긴다.
+
+```java
+객체를 파일로 저장 -> 다시 읽으면 -> 새로운 객체
+```
+
+<br/>
+
+막으려면 이 메서드를 직접 넣어야 한다.
+
+```java
+private Object readResolve() {
+    return INSTANCE;         // 새로 만든 것 대신 기존 것을 돌려준다
+}
+```
+
+<br/>
+
+`enum` 은 이걸 안 써도 된다.
+
+역직렬화할 때 이름으로 기존 상수를 찾아오도록 자바가 정해놨기 때문이다.
+
+<br/>
+
+## 지연 초기화의 함정
+
+`getInstance()` 에서 처음 부를 때 만드는 방식이 있다.
+
+```java
+public static Singleton getInstance() {
+    if (instance == null) {
+        instance = new Singleton();
+    }
+    return instance;
+}
+```
+
+<br/>
+
+멀티 스레드에서 깨진다.
+
+앞의 조회수 증가 문제를 다룬 글에서 본 것과 똑같은 구조다.
+
+```java
+스레드 A: null 인지 확인 -> 맞다
+스레드 B: null 인지 확인 -> 맞다 (A 가 아직 안 만들었다)
+둘 다 new 한다 -> 객체가 두 개
+```
+
+<br/>
+
+`synchronized` 를 붙이면 막히는데, 부를 때마다 락을 잡아서 느려진다.
+
+<br/>
+
+## 그래서 홀더 방식을 쓴다
+
+```java
+public class Singleton {
+    private Singleton() {}
+
+    private static class Holder {
+        private static final Singleton INSTANCE = new Singleton();
+    }
+
+    public static Singleton getInstance() {
+        return Holder.INSTANCE;
+    }
+}
+```
+
+<br/>
+
+`Holder` 는 `getInstance()` 를 처음 부를 때 로딩된다.
+
+<br/>
+
+앞의 클래스 로딩 순서 글에서 본 대로,
+
+클래스 초기화는 JVM이 락을 걸고 한 번만 실행한다.
+
+```java
+내가 synchronized 를 안 써도
+클래스 초기화 자체가 이미 thread-safe 하다
+```
+
+<br/>
+
+락 비용도 없고 코드도 짧아서, `enum` 을 안 쓸 거면 이 방식이 표준이다.
+
+<br/>
+
+## 실무에서는 직접 안 만든다
+
+앞의 싱글톤 패턴, 싱글톤 방식의 주의점 글에서 본 그 이유다.
+
+```java
+MemberRepository repo = MemoryMemberRepository.getInstance();
+```
+
+<br/>
+
+`getInstance()` 를 부르는 쪽이 구체 클래스를 알게 된다.
+
+테스트에서 다른 것으로 못 바꾼다.
+
+<br/>
+
+스프링 컨테이너가 관리하면 이게 다 풀린다.
+
+```java
+public OrderService(MemberRepository repo) { ... }      // 인터페이스만 안다
+```
+
+<br/>
+
+싱글톤이라는 결과는 같은데, 만드는 책임을 컨테이너가 가져간 것이다.
+
+<br/>
+
+## 싱글톤을 쓰면 안 되는 경우
+
+상태를 가지는 객체다.
+
+```java
+@Component
+public class Counter {
+    private int count;        // 모든 요청이 이 값을 공유한다
+}
+```
+
+<br/>
+
+앞의 멀티 쓰레드 이해 글에서 본 그 문제가 생긴다.
+
+<br/>
+
+그리고 테스트 사이에 상태가 남는다.
+
+```java
+테스트 A 에서 count 를 5 로 만들었다
+테스트 B 가 그 상태에서 시작한다
+```
+
+<br/>
+
+테스트 순서에 따라 결과가 달라지는 것이라, 원인을 찾기가 아주 어렵다.
+
+싱글톤은 무상태여야 한다는 규칙이 여기서 나온 것이다.

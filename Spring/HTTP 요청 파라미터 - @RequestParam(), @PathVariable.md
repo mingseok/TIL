@@ -323,3 +323,203 @@ public String mappingPath(@PathVariable String userId, @PathVariable Long orderI
 
 
 >**Reference** <br/>[스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8?utm_source=google&utm_medium=cpc&utm_campaign=04.general_backend&utm_content=spring&utm_term=%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9E%85%EB%AC%B8&gclid=CjwKCAiAjPyfBhBMEiwAB2CCImohok2YrQ2tRdhqfr3cZvKqkIJOHUJ36u6s1-7C9X1gzZIapTvOtxoCangQAvD_BwE)
+
+<br/>
+
+## 궁금증!
+
+```java
+@RequestParam 을 생략하면 어떻게 이름을 아나
+```
+
+컴파일된 클래스 파일에 파라미터 이름이 남아 있어야 한다.
+
+```java
+public String find(String keyword)      // 이름을 "keyword" 로 알아야 한다
+```
+
+<br/>
+
+원래 자바는 컴파일할 때 파라미터 이름을 지운다.
+
+`arg0`, `arg1` 로만 남는다.
+
+<br/>
+
+`-parameters` 옵션을 주면 이름이 보존된다.
+
+```java
+$ javac -parameters Foo.java
+```
+
+<br/>
+
+스프링 부트는 이 옵션을 기본으로 켜준다.
+
+그래서 이름을 안 적어도 동작하는 것이다.
+
+<br/>
+
+옵션이 꺼져 있으면 이런 오류가 난다.
+
+```java
+Name for argument of type [java.lang.String] not specified,
+and parameter name information not available via reflection.
+```
+
+<br/>
+
+앞의 리플렉션(Reflection) 글에서 본 그 리플렉션으로 이름을 읽는 것이라,
+
+클래스 파일에 이름이 없으면 방법이 없는 것이다.
+
+<br/>
+
+## required 의 기본값이 다르다
+
+```java
+@RequestParam String keyword          // required = true. 없으면 400
+@RequestParam(required = false) String keyword    // 없으면 null
+@PathVariable Long id                 // 항상 필수. 경로에 없으면 매핑 자체가 안 된다
+```
+
+<br/>
+
+`@PathVariable` 은 URL의 일부라서 없을 수가 없다.
+
+없으면 다른 URL이 되는 것이고, 그럼 이 메서드로 안 온다.
+
+<br/>
+
+## required = false 에 int 를 쓰면 터진다
+
+```java
+@RequestParam(required = false) int age
+```
+
+```java
+IllegalStateException: Optional int parameter 'age' is present but cannot be
+translated into a null value
+```
+
+<br/>
+
+값이 없으면 `null` 을 넣어야 하는데 `int` 에는 `null` 을 못 넣기 때문이다.
+
+<br/>
+
+앞의 원시형과 참조형 글에서 본 그 차이다.
+
+```java
+int      - null 이 될 수 없다
+Integer  - null 이 될 수 있다
+```
+
+<br/>
+
+`Integer` 로 바꾸거나 기본값을 주면 된다.
+
+```java
+@RequestParam(defaultValue = "0") int age
+```
+
+<br/>
+
+`defaultValue` 를 주면 `required` 는 의미가 없어진다. 항상 값이 있기 때문이다.
+
+<br/>
+
+## defaultValue 는 빈 문자열도 잡는다
+
+```java
+@RequestParam(defaultValue = "guest") String name
+```
+
+```java
+/members            -> name = "guest"    (파라미터 자체가 없다)
+/members?name=      -> name = "guest"    (빈 문자열도 기본값으로 바뀐다)
+```
+
+<br/>
+
+`required = false` 와 다른 점이다.
+
+```java
+required = false    -> /members?name= 이면 "" 가 들어온다
+defaultValue        -> "" 도 기본값으로 바꾼다
+```
+
+<br/>
+
+## Map 으로 전부 받을 수도 있다
+
+```java
+@RequestParam Map<String, String> params
+```
+
+<br/>
+
+같은 키가 여러 번 오면 첫 번째만 들어온다.
+
+```java
+/members?tag=a&tag=b     ->  params.get("tag") = "a"
+```
+
+<br/>
+
+전부 받으려면 `MultiValueMap` 을 쓴다.
+
+```java
+@RequestParam MultiValueMap<String, String> params
+->  params.get("tag") = ["a", "b"]
+```
+
+<br/>
+
+리스트로 받는 것도 된다.
+
+```java
+@RequestParam List<String> tag       ->  ["a", "b"]
+```
+
+<br/>
+
+앞의 스프링 타입 컨버터 글에서 본 대로
+
+`"a,b"` 처럼 콤마로 온 것도 배열로 바꿔준다.
+
+<br/>
+
+## @PathVariable 의 정규식
+
+경로 변수에 조건을 걸 수 있다.
+
+```java
+@GetMapping("/members/{id:[0-9]+}")
+public Member find(@PathVariable Long id) { ... }
+```
+
+<br/>
+
+숫자만 매칭한다. `/members/abc` 는 이 메서드로 안 온다.
+
+<br/>
+
+이걸 쓰면 같은 자리에 다른 의미를 둘 수 있다.
+
+```java
+@GetMapping("/members/{id:[0-9]+}")     // /members/1
+@GetMapping("/members/new")             // /members/new
+```
+
+<br/>
+
+정규식이 없어도 스프링은 더 구체적인 것을 먼저 고른다.
+
+`{id}` 같은 변수보다 `new` 같은 고정 문자열이 우선이다.
+
+<br/>
+
+그래도 정규식을 적어두면 의도가 드러나고, 잘못된 요청이 `404` 로 걸러진다.
+
+컨트롤러 안에서 숫자인지 검사하는 코드를 안 써도 되는 것이다.

@@ -160,3 +160,193 @@ e.g.)
 완료 전에 컴퓨터가 꺼진다면 데이터는 Atomicity 원칙을 따라, 
 트랜잭션 수행하기 전으로 돌아간다.
 ```
+<br/>
+
+## 궁금증!
+
+```java
+"임시로 저장한다" 는 게 실제로 어떻게 보이는지 직접 해보자
+```
+
+SQLite로 계좌 이체를 돌려봤다.
+
+```sql
+CREATE TABLE account (id INTEGER PRIMARY KEY, name TEXT, balance INTEGER);
+INSERT INTO account VALUES (1, '민석', 10000), (2, '영한', 10000);
+```
+
+<br/>
+
+### 1) 롤백하면 없던 일이 된다
+
+```sql
+BEGIN;
+UPDATE account SET balance = balance - 5000 WHERE id = 1;
+SELECT balance FROM account WHERE id = 1;     -- 트랜잭션 안에서 보면?
+ROLLBACK;
+SELECT balance FROM account WHERE id = 1;     -- 롤백한 뒤에는?
+```
+
+```sql
+트랜잭션 안에서 본 잔액 = 5000
+롤백 후 잔액 = 10000
+```
+
+<br/>
+
+같은 조회인데 값이 다르다.
+
+트랜잭션 안에서는 내가 바꾼 값이 보이고, 롤백하면 원래대로 돌아간다.
+
+원문의 `커밋을 호출하기 전까지는 임시로 저장하는 것이다` 가 이 모습이다.
+
+<br/>
+
+### 2) 중간에 실패하면 전체가 취소된다
+
+```sql
+BEGIN;
+UPDATE account SET balance = balance - 5000 WHERE id = 1;    -- 출금은 성공
+UPDATE account SET balance = balance + 5000 WHERE id = 999;  -- 없는 계좌라 0건
+ROLLBACK;
+SELECT balance FROM account WHERE id = 1;
+```
+
+```sql
+없는 계좌에 입금 시도 -> 갱신된 행 = 0
+민석 = 10000
+```
+
+<br/>
+
+출금은 이미 실행됐는데도 잔액이 그대로다.
+
+트랜잭션이 없었다면 `5000` 원이 사라진 채로 남았을 것이다.
+
+<br/>
+
+### 3) 커밋해야 반영된다
+
+```sql
+BEGIN;
+UPDATE account SET balance = balance - 5000 WHERE id = 1;
+UPDATE account SET balance = balance + 5000 WHERE id = 2;
+COMMIT;
+```
+
+```sql
+민석 = 5000
+영한 = 15000
+```
+
+<br/>
+
+합계가 `20000` 원으로 그대로다.
+
+`전부 되거나 전부 안 되거나` 라는 원자성이 지켜진 것이다.
+
+<br/>
+
+## autocommit 이 켜져 있으면
+
+원문의 `@@autocommit` 부분이 왜 중요한지가 여기서 드러난다.
+
+```sql
+UPDATE account SET balance = balance - 5000 WHERE id = 1;
+-- 여기서 이미 커밋되어 있다
+UPDATE account SET balance = balance + 5000 WHERE id = 2;
+-- 여기서 또 커밋된다
+```
+
+<br/>
+
+`BEGIN` 을 안 적으면 SQL 한 줄마다 트랜잭션이 하나씩 만들어지고 바로 커밋된다.
+
+첫 줄과 둘째 줄 사이에 서버가 죽으면 돈이 사라진다.
+
+```java
+autocommit ON  -> SQL 한 줄이 곧 트랜잭션 하나
+autocommit OFF -> COMMIT 을 부를 때까지 하나로 묶인다
+```
+
+<br/>
+
+`@Transactional` 이 하는 일의 절반이 이것이다.
+
+메서드 시작할 때 `autocommit` 을 끄고, 끝날 때 `commit` 을 부른다.
+
+<br/>
+
+## ACID 를 코드로 다시 보면
+
+원문의 네 글자를 위 실험에 대응시키면 이렇다.
+
+```java
+Atomicity   (원자성) - 2번 실험. 중간에 실패하면 앞의 것도 취소된다
+Consistency (일관성) - 합계가 20000 원으로 유지된다
+Isolation   (격리성) - 다른 트랜잭션이 중간 상태를 못 본다
+Durability  (지속성) - 커밋한 뒤에는 서버가 죽어도 남아 있다
+```
+
+<br/>
+
+`I` 만 실험에서 확인이 안 됐다. 트랜잭션이 하나뿐이었기 때문이다.
+
+두 개를 동시에 돌려보면 이것도 확인할 수 있다.
+
+<br/>
+
+```sql
+-- A 세션
+BEGIN IMMEDIATE;
+UPDATE t SET v = 200 WHERE id = 1;
+-- 아직 커밋 안 함
+
+-- B 세션이 같은 시점에 조회
+SELECT v FROM t;
+```
+
+<br/>
+
+### 결과
+
+```sql
+A: 수정함, 아직 커밋 안 함
+B: 읽기 결과 -> 100
+```
+
+<br/>
+
+`B` 에게는 아직 `100` 으로 보인다.
+
+`A` 가 커밋하지 않은 값은 남에게 안 보이는 것이다. 이것이 격리성이다.
+
+<br/>
+
+## Durability 는 어떻게 보장하는가
+
+커밋했다고 바로 디스크의 데이터 파일에 쓰는 것이 아니다.
+
+메모리에만 반영하고, 대신 `무엇을 바꿨는지` 를 로그 파일에 먼저 적는다.
+
+```java
+COMMIT
+  -> 변경 내용을 로그 파일에 기록하고 디스크에 강제로 내린다 (여기까지 하면 커밋 성공)
+  -> 실제 데이터 파일은 나중에 천천히 반영한다
+```
+
+<br/>
+
+서버가 갑자기 죽어도 로그가 남아 있으니, 재시작할 때 로그를 다시 읽어서 복구한다.
+
+<br/>
+
+이 방식을 `WAL(Write-Ahead Logging)` 이라고 한다.
+
+`데이터를 쓰기 전에 로그를 먼저 쓴다` 는 뜻이다.
+
+<br/>
+
+데이터 파일 곳곳에 흩어져 쓰는 것보다 로그 파일 끝에 순서대로 붙이는 것이 훨씬 빠르다.
+
+빠르게 안전을 확보하고, 느린 정리는 나중으로 미루는 구조다.

@@ -168,3 +168,180 @@ public String addItem(@ModelAttribute Item item) {
 
 
 >**Reference** <br/>[스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8?utm_source=google&utm_medium=cpc&utm_campaign=04.general_backend&utm_content=spring&utm_term=%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9E%85%EB%AC%B8&gclid=CjwKCAiAjPyfBhBMEiwAB2CCImohok2YrQ2tRdhqfr3cZvKqkIJOHUJ36u6s1-7C9X1gzZIapTvOtxoCangQAvD_BwE)
+
+<br/>
+
+## 궁금증!
+
+```java
+@ModelAttribute 는 값을 어떻게 채우나
+```
+
+`setter` 를 찾아서 부른다.
+
+```java
+public class MemberForm {
+    private String name;
+    public void setName(String name) { this.name = name; }
+}
+```
+
+```java
+name=민석  ->  setName("민석") 을 부른다
+```
+
+<br/>
+
+그래서 `setter` 가 없으면 값이 안 들어온다.
+
+```java
+public class MemberForm {
+    private final String name;      // final 이라 setter 를 못 만든다
+}
+```
+
+<br/>
+
+앞의 HTTP body에 데이터를 직접 담아서 요청 - @RequestBody 글에서 본 Jackson과 다른 점이다.
+
+Jackson은 필드에 직접 넣는 것도 가능하지만, `@ModelAttribute` 는 `setter` 규칙을 따른다.
+
+<br/>
+
+## 이름을 어떻게 맞추는가
+
+`setter` 이름에서 `set` 을 떼고 첫 글자를 소문자로 바꾼 것이 파라미터 이름이 된다.
+
+```java
+setName    -> name
+setAge     -> age
+setUserId  -> userId
+```
+
+<br/>
+
+여기서 함정이 하나 있다.
+
+```java
+setURL     -> URL     (첫 두 글자가 대문자면 그대로 둔다)
+setUrl     -> url
+```
+
+<br/>
+
+자바빈 규약이 그렇게 정해져 있다.
+
+`URL=값` 으로 보내야 들어오는 것이라, 헷갈리면 필드 이름을 `url` 로 두는 게 낫다.
+
+<br/>
+
+## 중첩된 객체도 채울 수 있다
+
+```java
+public class OrderForm {
+    private String orderName;
+    private Address address;       // 객체 안의 객체
+}
+
+public class Address {
+    private String city;
+    private String street;
+}
+```
+
+```java
+orderName=책&address.city=서울&address.street=강남대로
+```
+
+<br/>
+
+점을 찍어서 안으로 들어간다.
+
+<br/>
+
+리스트도 된다.
+
+```java
+items[0].name=책&items[0].price=10000&items[1].name=펜&items[1].price=500
+```
+
+<br/>
+
+앞의 클라이언트에서 서버로 데이터 전송 글에서 본 대로
+
+폼 형식이 원래 평평한 구조인데, 이름 규칙으로 계층을 흉내내는 것이다.
+
+<br/>
+
+이 부분은 JSON이 훨씬 자연스럽다. JSON은 원래 계층 구조라서 그렇다.
+
+<br/>
+
+## 타입이 안 맞으면
+
+```java
+age=서른       // int 필드
+```
+
+<br/>
+
+앞의 HTTP 요청 메시지 - JSON 글에서 본 `@RequestBody` 와 다르게 동작한다.
+
+```java
+@ModelAttribute - BindingResult 에 typeMismatch 오류를 담고 컨트롤러로 온다
+@RequestBody    - 400 을 내고 컨트롤러까지 못 온다
+```
+
+<br/>
+
+그래서 `@ModelAttribute` 는 오류를 화면에 예쁘게 보여줄 수 있다.
+
+```java
+@PostMapping("/members")
+public String save(@ModelAttribute MemberForm form, BindingResult bindingResult) {
+    if (bindingResult.hasErrors()) {
+        return "members/form";      // 오류와 입력값을 그대로 다시 보여준다
+    }
+}
+```
+
+<br/>
+
+앞의 Validation 글에서 본 그 흐름이다.
+
+<br/>
+
+`BindingResult` 는 반드시 `@ModelAttribute` **바로 다음** 파라미터여야 한다.
+
+순서가 밀리면 어느 객체의 오류인지 모르기 때문이다.
+
+<br/>
+
+## 이름을 생략했을 때
+
+```java
+public String save(@ModelAttribute MemberForm form)      // 모델 이름 = "memberForm"
+public String save(MemberForm form)                      // @ModelAttribute 도 생략 가능
+```
+
+<br/>
+
+클래스 이름의 첫 글자를 소문자로 바꾼 것이 모델 이름이 된다.
+
+<br/>
+
+앞의 특별한 @ModelAttribute 사용법 글에서 본 대로,
+
+이 이름으로 뷰에서 꺼내 쓸 수 있다.
+
+```java
+<input type="text" th:field="*{name}" th:object="${memberForm}">
+```
+
+<br/>
+
+이름을 바꾸고 싶으면 적어주면 된다.
+
+```java
+@ModelAttribute("form") MemberForm form
+```

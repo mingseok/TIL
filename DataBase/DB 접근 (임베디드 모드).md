@@ -144,3 +144,146 @@ logging.level.org.springframework.jdbc=debug
 
 >**Reference** <br/>[스프링 DB 2편 - 데이터 접근 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-2/dashboard)
 
+
+<br/>
+
+## 궁금증!
+
+```java
+임베디드 DB 로 테스트하면 운영과 다른데 괜찮을까?
+```
+
+편하지만 그 차이 때문에 사고가 나기도 한다.
+
+<br/>
+
+## 실제로 다른 것들
+
+```java
+문법        - MySQL 의 LIMIT 1, 2 를 H2 가 못 알아듣는 경우가 있다
+함수        - DATE_FORMAT, GROUP_CONCAT 처럼 DB 전용 함수는 안 먹는다
+타입        - MySQL 의 utf8mb4 나 JSON 타입이 다르게 동작한다
+격리 수준    - 앞의 isolation 글에서 본 대로 기본값이 다르다
+                MySQL 은 REPEATABLE READ, H2 는 READ COMMITTED
+자동 증가    - 시작값과 증가 방식이 다를 수 있다
+```
+
+<br/>
+
+특히 격리 수준 차이가 무섭다.
+
+앞의 Isolation 글에서 본 이상 현상이 H2에서는 나오고 MySQL에서는 안 나오거나, 그 반대다.
+
+<br/>
+
+동시성 관련 테스트를 H2로 짜놓고 통과했다고 안심하면 안 되는 이유다.
+
+<br/>
+
+## H2 를 MySQL 흉내내게 할 수 있다
+
+```java
+jdbc:h2:mem:test;MODE=MySQL;DATABASE_TO_LOWER=TRUE
+```
+
+<br/>
+
+`MODE=MySQL` 을 주면 문법 일부를 MySQL 방식으로 해석한다.
+
+<br/>
+
+다만 흉내일 뿐이라 완전히 같지는 않다.
+
+앞의 database system 글에서 본 대로 옵티마이저와 저장 엔진이 아예 다르기 때문이다.
+
+실행 계획도 다르고 성능 특성도 다르다.
+
+<br/>
+
+## 그래서 요즘은 Testcontainers 를 쓴다
+
+도커로 진짜 MySQL을 띄워서 테스트하는 방식이다.
+
+```java
+@Testcontainers
+@SpringBootTest
+class MemberRepositoryTest {
+
+    @Container
+    static MySQLContainer<?> mysql = new MySQLContainer<>("mysql:8.0");
+
+    @DynamicPropertySource
+    static void props(DynamicPropertyRegistry registry) {
+        registry.add("spring.datasource.url", mysql::getJdbcUrl);
+        registry.add("spring.datasource.username", mysql::getUsername);
+        registry.add("spring.datasource.password", mysql::getPassword);
+    }
+}
+```
+
+<br/>
+
+테스트가 시작될 때 컨테이너를 띄우고 끝나면 지운다.
+
+운영과 같은 버전, 같은 문법, 같은 격리 수준으로 테스트할 수 있다.
+
+<br/>
+
+대신 느리다. 컨테이너를 띄우는 데 몇 초에서 수십 초가 걸린다.
+
+<br/>
+
+## 그래서 나눠 쓴다
+
+```java
+단위 테스트         - DB 없음. 가짜 리포지토리 (밀리초)
+임베디드 DB (H2)    - 빠르다. 간단한 CRUD 검증용 (초)
+Testcontainers     - 느리다. DB 전용 문법과 동시성 검증용 (수십 초)
+```
+
+<br/>
+
+앞의 트레이드 오프 글의 관점에서 보면 `속도와 정확성` 의 문제다.
+
+<br/>
+
+전부 `Testcontainers` 로 하면 테스트가 너무 느려서 아무도 안 돌리게 된다.
+
+전부 H2로 하면 빠른데 운영과 다른 부분을 못 잡는다.
+
+<br/>
+
+핵심 흐름만 진짜 DB로 확인하고 나머지는 빠른 방법으로 가는 것이 현실적이다.
+
+<br/>
+
+## 임베디드 모드에서 데이터가 사라지는 것
+
+```java
+jdbc:h2:mem:test
+```
+
+<br/>
+
+`mem` 은 메모리라는 뜻이다. 애플리케이션이 내려가면 전부 사라진다.
+
+<br/>
+
+그래서 테스트 사이에 데이터가 안 남는데, 한 가지 주의할 점이 있다.
+
+<br/>
+
+같은 JVM 안에서 테스트를 여러 개 돌리면 DB는 하나다.
+
+앞의 테스트 방법 글에서 본 `@Transactional` 롤백이 없으면 데이터가 서로 섞인다.
+
+```java
+테스트 A 가 회원을 3명 넣는다
+테스트 B 가 count() 를 세면 3이 나온다   -> 테스트 순서에 따라 결과가 달라진다
+```
+
+<br/>
+
+테스트마다 격리하려면 `@Transactional` 을 붙이거나 매번 비워야 한다.
+
+`메모리 DB 니까 알아서 깨끗하겠지` 는 틀린 생각이다.

@@ -296,3 +296,213 @@ where E.id = W.empl_id and W.proj_id != all (
                                               where empl_id = 13
                                              );
 ```
+<br/>
+
+## 궁금증!
+
+```java
+NOT IN 과 NOT EXISTS 가 정말 다른 결과를 내나
+```
+
+주문 표에 `member_id` 가 `NULL` 인 행을 하나 넣어두고 비교했다.
+
+```sql
+SELECT count(*) FROM member WHERE id NOT IN (SELECT member_id FROM orders);
+
+SELECT count(*) FROM member m
+WHERE NOT EXISTS (SELECT 1 FROM orders o WHERE o.member_id = m.id);
+```
+
+<br/>
+
+### 결과
+
+```java
+NOT IN 결과     = 0
+NOT EXISTS 결과 = 3
+```
+
+<br/>
+
+같은 뜻으로 쓴 쿼리인데 하나는 0건, 하나는 3건이다.
+
+<br/>
+
+## NOT IN 이 왜 0 이 되나
+
+`NOT IN` 은 이렇게 풀린다.
+
+```sql
+id <> 1 AND id <> 2 AND id <> NULL
+```
+
+<br/>
+
+앞의 검색 조건, NULL 값 글에서 본 대로 `id <> NULL` 은 `UNKNOWN` 이다.
+
+`AND` 에 `UNKNOWN` 이 있으면 전체가 `TRUE` 가 될 수 없다.
+
+<br/>
+
+그래서 한 건도 안 나오는 것이다.
+
+<br/>
+
+오류가 안 나고 `0건` 이 나오니 `주문 안 한 회원이 없구나` 로 오해하게 된다.
+
+이게 제일 무서운 종류의 버그다.
+
+<br/>
+
+## EXISTS 는 값을 비교하지 않는다
+
+```sql
+NOT EXISTS (SELECT 1 FROM orders o WHERE o.member_id = m.id)
+```
+
+<br/>
+
+`있느냐 없느냐` 만 본다.
+
+`o.member_id = m.id` 가 `NULL` 이면 그냥 안 맞는 것으로 처리되고 끝이다.
+
+<br/>
+
+`SELECT 1` 이라고 쓴 것도 이 때문이다.
+
+무엇을 뽑는지는 상관없어서 관례상 `1` 을 쓴다.
+
+`SELECT *` 를 써도 결과가 같다.
+
+<br/>
+
+## 그래서 NOT IN 을 쓸 때는
+
+```sql
+WHERE id NOT IN (SELECT member_id FROM orders WHERE member_id IS NOT NULL)
+```
+
+<br/>
+
+`NULL` 을 빼고 쓰면 안전하다.
+
+<br/>
+
+그런데 이걸 매번 기억해야 한다는 게 문제다.
+
+처음엔 `NOT NULL` 이던 컬럼이 나중에 `NULL` 을 허용하게 바뀌면 조용히 깨진다.
+
+<br/>
+
+그래서 `NOT EXISTS` 를 기본으로 쓰는 게 안전하다.
+
+<br/>
+
+## IN 과 EXISTS 는 성능도 다르다
+
+```sql
+IN     - 서브쿼리 결과를 먼저 만들고 그것과 비교한다
+EXISTS - 바깥 행마다 안쪽을 확인하고 하나 찾으면 멈춘다
+```
+
+<br/>
+
+앞의 서브 쿼리 글에서 본 그 차이다.
+
+<br/>
+
+```java
+서브쿼리 결과가 작다  -> IN 이 유리
+바깥이 작고 안쪽이 크다 -> EXISTS 가 유리
+```
+
+<br/>
+
+`EXISTS` 는 하나만 찾으면 멈추니 안쪽이 아무리 커도 상관없다.
+
+<br/>
+
+다만 요즘 옵티마이저는 `IN` 을 세미 조인으로 바꿔서 처리한다.
+
+그래서 실제로는 차이가 안 나는 경우가 많다.
+
+<br/>
+
+## ANY 와 ALL
+
+```sql
+WHERE amount > ANY (SELECT amount FROM orders)     -- 하나라도 넘으면. 최솟값보다 크면
+WHERE amount > ALL (SELECT amount FROM orders)     -- 전부 넘으면. 최댓값보다 크면
+```
+
+<br/>
+
+`= ANY` 는 `IN` 과 같다.
+
+<br/>
+
+`<> ALL` 은 `NOT IN` 과 같다. 그래서 같은 `NULL` 함정이 있다.
+
+<br/>
+
+실무에서는 잘 안 쓴다.
+
+`MAX` 나 `MIN` 으로 쓰는 게 읽기 쉽기 때문이다.
+
+```sql
+WHERE amount > (SELECT MAX(amount) FROM orders)
+```
+
+<br/>
+
+여기에도 함정이 있다.
+
+`orders` 가 비어 있으면 `MAX` 가 `NULL` 이 되어서 결과가 0건이 된다.
+
+`> ALL` 은 빈 집합이면 전부 `TRUE` 로 본다.
+
+<br/>
+
+미묘하게 다른 것이라, 데이터가 비었을 때 어떻게 되어야 하는지를
+
+먼저 정해두고 고르는 게 낫다.
+
+<br/>
+
+## 스칼라 서브쿼리를 SELECT 절에 쓸 때
+
+```sql
+SELECT m.name,
+       (SELECT count(*) FROM orders o WHERE o.member_id = m.id) AS 주문수
+FROM member m;
+```
+
+<br/>
+
+회원 행마다 서브쿼리가 한 번씩 돈다.
+
+<br/>
+
+앞의 N+1 문제 글에서 본 그 구조와 같다.
+
+회원이 1000명이면 쿼리가 1001번 도는 셈이다.
+
+<br/>
+
+조인과 `GROUP BY` 로 바꾸면 한 번에 끝난다.
+
+```sql
+SELECT m.name, count(o.id) AS 주문수
+FROM member m LEFT JOIN orders o ON m.id = o.member_id
+GROUP BY m.id, m.name;
+```
+
+<br/>
+
+`LEFT JOIN` 을 써야 주문 없는 회원도 나온다.
+
+그리고 `count(o.id)` 여야 한다.
+
+앞의 행 개수 구하기 - COUNT 글에서 본 대로,
+
+`count(*)` 를 쓰면 `NULL` 로 채워진 행도 세어서 주문 없는 회원이 `1` 이 되기 때문이다.

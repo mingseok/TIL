@@ -247,3 +247,219 @@ public class InternalCallV2Test {
 
 >**Reference** <br/>[스프링 DB 2편 - 데이터 접근 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-2/dashboard)
 
+
+<br/>
+
+## 궁금증!
+
+```java
+프록시를 거치지 않으면 왜 트랜잭션이 안 걸리는지, 직접 확인할 수 있을까?
+```
+
+스프링 AOP로 같은 상황을 만들어봤다.
+
+```java
+class ConcreteCalc {
+    public int sum(int n) { ... }
+
+    public int outer(int n) {
+        System.out.println("outer() 실행, 이제 내부에서 sum() 을 부른다");
+        return sum(n);            // this.sum() 이다
+    }
+}
+```
+
+<br/>
+
+`sum` 과 `outer` 둘 다에 부가 기능이 붙도록 프록시를 만들고 `outer()` 를 호출했다.
+
+<br/>
+
+### 결과
+
+```java
+  [AOP] outer 시작
+  outer() 실행, 이제 내부에서 sum() 을 부른다
+  [AOP] outer 끝
+```
+
+<br/>
+
+`sum` 에 대한 `[AOP]` 줄이 없다.
+
+`outer` 에는 붙었는데 그 안에서 부른 `sum` 에는 안 붙은 것이다.
+
+<br/>
+
+## 이유는 this 가 프록시가 아니기 때문이다
+
+```java
+클라이언트 -> 프록시 -> 진짜 객체
+```
+
+<br/>
+
+`outer()` 호출은 프록시를 거치니 부가 기능이 붙는다.
+
+그런데 `outer()` 안으로 들어가면 그 `this` 는 프록시가 아니라 진짜 객체다.
+
+`this.sum()` 은 프록시를 지나치지 않고 바로 자기 메서드를 부른다.
+
+```java
+프록시.outer()  -> [AOP] -> 진짜객체.outer()
+                              -> this.sum()   <- 프록시를 안 거친다
+```
+
+<br/>
+
+`@Transactional` 에 그대로 적용하면 이렇게 된다.
+
+```java
+@Service
+public class OrderService {
+
+    public void order() {
+        save();              // 트랜잭션이 안 걸린다
+    }
+
+    @Transactional
+    public void save() { }
+}
+```
+
+<br/>
+
+`order()` 를 부르면 `save()` 의 `@Transactional` 이 아무 일도 안 한다.
+
+예외가 나도 롤백이 안 되니, 데이터가 반쪽만 저장되는 사고가 난다.
+
+<br/>
+
+## 로그로 확인하는 방법
+
+트랜잭션이 실제로 걸렸는지 확인하는 설정이 있다.
+
+```java
+logging.level.org.springframework.transaction.interceptor=TRACE
+```
+
+<br/>
+
+```java
+Getting transaction for [com.example.OrderService.save]
+Completing transaction for [com.example.OrderService.save]
+```
+
+<br/>
+
+이 줄이 안 나오면 프록시를 안 거친 것이다.
+
+<br/>
+
+코드 안에서 확인할 수도 있다.
+
+```java
+TransactionSynchronizationManager.isActualTransactionActive();
+```
+
+<br/>
+
+`false` 가 나오면 트랜잭션 없이 실행되고 있다는 뜻이다.
+
+<br/>
+
+## 해결 방법
+
+### 첫번째) 클래스를 분리한다 (권장)
+
+```java
+@Service
+@RequiredArgsConstructor
+public class OrderService {
+    private final OrderSaver orderSaver;
+
+    public void order() {
+        orderSaver.save();       // 다른 빈이니 프록시를 거친다
+    }
+}
+
+@Component
+public class OrderSaver {
+
+    @Transactional
+    public void save() { }
+}
+```
+
+<br/>
+
+제일 깔끔하다. 그리고 대개 이렇게 나눠야 할 이유가 원래부터 있었던 경우가 많다.
+
+<br/>
+
+### 두번째) 자기 자신을 주입받는다
+
+```java
+@Service
+public class OrderService {
+
+    @Autowired
+    private OrderService self;       // 프록시가 주입된다
+
+    public void order() {
+        self.save();                 // 프록시를 거친다
+    }
+}
+```
+
+<br/>
+
+동작은 하는데 읽기가 이상하다.
+
+자기 자신을 필드로 갖고 있는 코드를 나중에 보면 왜 그런지 알기 어렵다.
+
+<br/>
+
+### 세번째) 호출하는 쪽에 트랜잭션을 건다
+
+```java
+@Transactional
+public void order() {
+    save();                          // 이미 트랜잭션 안이라 상관없다
+}
+```
+
+<br/>
+
+애초에 `order()` 전체가 하나의 트랜잭션이어야 한다면 이게 맞다.
+
+<br/>
+
+## private 메서드에도 안 걸린다
+
+```java
+@Transactional
+private void save() { }              // 아무 일도 안 한다
+```
+
+<br/>
+
+앞의 AOP 글에서 본 대로 CGLIB은 상속으로 프록시를 만든다.
+
+`private` 메서드는 오버라이딩할 수 없으니 가로챌 방법이 없다.
+
+<br/>
+
+`final` 메서드나 `final` 클래스도 마찬가지다.
+
+<br/>
+
+경고도 안 나오고 컴파일도 되기 때문에 알아채기 어렵다.
+
+`@Transactional` 은 `public` 메서드에만 붙인다고 외워두는 편이 안전하다.
+
+```java
+public 메서드          -> 걸린다
+private / final 메서드 -> 안 걸린다
+같은 클래스 내부 호출   -> 안 걸린다
+```

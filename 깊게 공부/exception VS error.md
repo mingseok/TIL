@@ -162,3 +162,216 @@ Error도 "언체크 예외"이다
 체크 예외와 언체크 예외의 차이는 예외를 처리할 수 없을 때 예외를 밖으로 던지는 부분에 있다. 
 
 이 부분을 필수로 선언해야 하는가? 생략할 수 있는가? 의 차이다.
+
+<br/>
+
+## 궁금증!
+
+```java
+체크 예외가 안전 장치라면서, 실무에서는 왜 대부분 언체크 예외를 쓸까?
+```
+
+두 가지 이유가 있다.
+
+<br/>
+
+## 첫번째) 체크 예외는 의존 관계를 위로 끌고 올라간다
+
+```java
+class MemberRepository {
+    void save(Member member) throws SQLException {
+        // JDBC 로 저장
+    }
+}
+
+class MemberService {
+    void join(Member member) throws SQLException {    // 어쩔 수 없이 같이 선언
+        memberRepository.save(member);
+    }
+}
+
+class MemberController {
+    void create(Member member) throws SQLException {  // 여기까지 올라온다
+        memberService.join(member);
+    }
+}
+```
+
+<br/>
+
+`SQLException` 은 JDBC의 예외다. 데이터베이스를 어떻게 쓰는지에 대한 얘기다.
+
+그런데 컨트롤러까지 그 이름을 알게 됐다.
+
+<br/>
+
+여기서 저장소를 JPA로 바꾸면 어떻게 될까.
+
+`SQLException` 이 아니라 `PersistenceException` 이 나오니, 서비스와 컨트롤러의 `throws` 를 전부 고쳐야 한다.
+
+<br/>
+
+저장 방식을 바꿨을 뿐인데 컨트롤러가 바뀌는 것이다.
+
+```java
+체크 예외 -> 던지는 쪽의 사정을 받는 쪽이 알아야 한다 -> 결합도가 올라간다
+```
+
+<br/>
+
+스프링이 `SQLException` 을 잡아서 `DataAccessException` 이라는 언체크 예외로 바꿔 던지는 이유가 이것이다.
+
+서비스와 컨트롤러는 예외 이름을 몰라도 되게 만든 것이다.
+
+<br/>
+
+## 두번째) 스프링 트랜잭션은 체크 예외에 롤백하지 않는다
+
+이건 모르면 크게 당한다.
+
+```java
+@Transactional
+void order() throws IOException {
+    save();
+    throw new IOException();     // 롤백될까?
+}
+```
+
+<br/>
+
+롤백되지 않는다. 커밋된다.
+
+`@Transactional` 의 기본 롤백 규칙이 `RuntimeException 과 Error 만` 이기 때문이다.
+
+<br/>
+
+체크 예외는 `비즈니스적으로 예상한 상황` 으로 보고 커밋해버린다.
+
+주문이 실패했는데 데이터는 저장되어 있는 상황이 생기는 것이다.
+
+<br/>
+
+굳이 체크 예외를 쓰면서 롤백하고 싶으면 이렇게 적어야 한다.
+
+```java
+@Transactional(rollbackFor = Exception.class)
+```
+
+이걸 매번 신경 쓰느니 처음부터 언체크 예외를 쓰는 쪽이 안전하다.
+
+<br/>
+
+## 예외를 바꿔 던질 때는 원인을 담아야 한다
+
+언체크 예외로 바꿔 던지는 것까지는 좋은데, 여기서 흔한 실수가 하나 있다.
+
+```java
+static void withoutCause() {
+    try {
+        deep();
+    } catch (IllegalStateException e) {
+        throw new RuntimeException("저장 실패");        // 원인을 버렸다
+    }
+}
+
+static void withCause() {
+    try {
+        deep();
+    } catch (IllegalStateException e) {
+        throw new RuntimeException("저장 실패", e);     // 원인을 담았다
+    }
+}
+```
+
+<br/>
+
+### 결과
+
+```java
+--- 원인을 안 담으면 ---
+java.lang.RuntimeException: 저장 실패
+  원인 = null
+
+--- 원인을 담으면 ---
+java.lang.RuntimeException: 저장 실패
+  원인 = java.lang.IllegalStateException: 커넥션이 끊겼다
+  터진 자리 = Cause.deep(Cause.java:36)
+```
+
+<br/>
+
+원인을 안 담으면 `저장 실패` 라는 말만 남는다.
+
+왜 실패했는지, 어느 줄에서 시작됐는지가 통째로 사라진다.
+
+<br/>
+
+원인을 담으면 로그에 `Caused by:` 로 원래 예외가 같이 찍힌다.
+
+`커넥션이 끊겼다` 는 진짜 이유와 `Cause.java:36` 이라는 진짜 자리까지 따라온다.
+
+```java
+예외를 바꿔 던질 때는 반드시 원인을 함께 넘기자
+throw new RuntimeException("메시지", e);
+```
+
+<br/>
+
+## 예외를 삼키는 것이 제일 위험하다
+
+```java
+try {
+    save();
+} catch (Exception e) {
+    // 일단 넘어가자
+}
+```
+
+<br/>
+
+이러면 실패했는데 아무 일도 없었던 것처럼 다음 줄로 넘어간다.
+
+로그도 안 남고 예외도 안 올라가니, 나중에 데이터가 이상해도 여기를 의심할 수가 없다.
+
+<br/>
+
+정말 무시해도 되는 예외라면 왜 무시해도 되는지 주석으로 남기고, 최소한 로그는 찍어야 한다.
+
+<br/>
+
+## Error를 잡으면 안 되는 이유
+
+원문에서 `개발자는 이 예외를 잡으려고 해서는 안된다` 고 한 것도 같은 맥락이다.
+
+```java
+try {
+    // ...
+} catch (OutOfMemoryError e) {
+    // 어떻게든 이어가보자
+}
+```
+
+<br/>
+
+`OutOfMemoryError` 를 잡아도 메모리가 부족한 상황은 그대로다.
+
+잡고 나서 하는 일마다 또 터진다. 앞에서 힙을 채우는 실험을 했을 때
+
+`OutOfMemoryError` 를 잡고 출력을 하려다 출력 자체가 또 터졌던 것이 그 예다.
+
+<br/>
+
+`StackOverflowError` 도 마찬가지다. 스택이 이미 꽉 찬 상태라 뭘 해도 다시 넘친다.
+
+이런 상황은 프로그램을 살리려 애쓰는 것보다, 빨리 죽고 다시 뜨는 쪽이 낫다.
+
+```java
+Exception -> 복구를 시도할 수 있다
+Error     -> 복구할 방법이 없다. 잡지 말고 죽게 두자
+```
+
+<br/>
+
+`catch (Throwable e)` 를 쓰면 `Error` 까지 같이 잡히니 쓰지 않는 것이 좋다.
+
+`catch (Exception e)` 까지가 우리가 다룰 범위다.

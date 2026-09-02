@@ -249,3 +249,210 @@ Form 전송 객체 분리해서 등록과 수정에 딱 맞는 기능을 구성�
 <br/><br/>
 
 >**Reference** <br/>[스프링 MVC 2편 - 백엔드 웹 개발 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2/dashboard)
+<br/>
+
+## 궁금증!
+
+```java
+클래스가 두 개로 늘어나는데, 그래도 나누는 게 나은 걸까?
+```
+
+나누기 전에 어떤 일이 벌어지는지 보면 답이 나온다.
+
+<br/>
+
+`Item` 하나로 등록과 수정을 다 하려면 이렇게 된다.
+
+```java
+public class Item {
+    @NotNull(groups = UpdateCheck.class)          // 수정할 때만 필수
+    private Long id;
+
+    @NotBlank(groups = {SaveCheck.class, UpdateCheck.class})
+    private String itemName;
+
+    @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
+    @Range(min = 1000, max = 1000000, groups = {SaveCheck.class, UpdateCheck.class})
+    private Integer price;
+
+    @NotNull(groups = SaveCheck.class)             // 등록할 때만 필수
+    @Max(value = 9999, groups = SaveCheck.class)
+    private Integer quantity;
+}
+```
+
+<br/>
+
+어노테이션마다 `groups` 를 붙여야 하고, 필드가 늘어날 때마다 두 군데를 다 신경 써야 한다.
+
+읽어서 `등록할 때 뭐가 필수인지` 파악하기가 어렵다.
+
+<br/>
+
+나누면 이렇게 된다.
+
+```java
+public class ItemSaveForm {
+    @NotBlank
+    private String itemName;
+
+    @NotNull @Range(min = 1000, max = 1000000)
+    private Integer price;
+
+    @NotNull @Max(9999)
+    private Integer quantity;
+}
+
+public class ItemUpdateForm {
+    @NotNull
+    private Long id;
+
+    @NotBlank
+    private String itemName;
+
+    @NotNull @Range(min = 1000, max = 1000000)
+    private Integer price;
+
+    private Integer quantity;      // 수정할 때는 수량 제한이 없다
+}
+```
+
+<br/>
+
+`groups` 가 하나도 없다. 각 클래스만 보면 그 상황의 규칙이 전부 보인다.
+
+<br/>
+
+## 더 큰 이유는 도메인이 화면을 모르게 하는 것이다
+
+원문의 `Item 클래스 이렇게만 남기기` 가 이 얘기다.
+
+```java
+// 나누기 전 - Item 이 화면 검증 규칙을 알고 있다
+public class Item {
+    @NotBlank(message = "공백 X")
+    private String itemName;
+}
+```
+
+<br/>
+
+`Item` 은 원래 `상품이 무엇인가` 를 나타내는 도메인 객체다.
+
+거기에 `이 화면에서는 공백을 못 넣는다` 는 규칙이 들어가 있으면 이상하다.
+
+<br/>
+
+관리자 화면에서는 공백을 허용해야 한다거나, 배치로 넣을 때는 검증이 필요 없다거나 하면
+
+`Item` 을 고쳐야 한다. 화면 사정 때문에 도메인이 바뀌는 것이다.
+
+<br/>
+
+앞의 DTO 글에서 본 것과 정확히 같은 이유다.
+
+```java
+Item (도메인)         -> 상품이 무엇인지. DB 와 비즈니스 로직의 사정
+ItemSaveForm (폼)     -> 등록 화면에서 뭘 받고 어떻게 검증할지. 화면의 사정
+```
+
+<br/>
+
+## 그런데 필드가 중복된다
+
+`itemName`, `price` 가 세 클래스에 다 있다. 중복 아닌가 싶다.
+
+<br/>
+
+이 중복은 감수하는 쪽이 맞다고 본다. 셋이 바뀌는 이유가 다르기 때문이다.
+
+```java
+Item           - DB 컬럼이 바뀌면 바뀐다
+ItemSaveForm   - 등록 화면 요구사항이 바뀌면 바뀐다
+ItemUpdateForm - 수정 화면 요구사항이 바뀌면 바뀐다
+```
+
+<br/>
+
+지금은 모양이 같아도 앞으로 다른 방향으로 갈라진다.
+
+등록에는 `약관 동의` 가 추가되고, 수정에는 `수정 사유` 가 추가되는 식이다.
+
+<br/>
+
+같아 보인다고 합쳐두면, 나중에 갈라질 때 다시 `groups` 같은 것으로 억지로 구분하게 된다.
+
+```java
+지금 같은 모양이라고 합치면 -> 나중에 갈라질 때 조건 분기가 생긴다
+바뀌는 이유가 다르면 나눈다 -> 지금은 중복처럼 보여도 각자 자유롭게 바뀐다
+```
+
+<br/>
+
+## 변환 코드는 어디에 둘까
+
+컨트롤러에서 `Form` 을 `Item` 으로 바꾸는 코드가 생긴다.
+
+```java
+@PostMapping("/add")
+public String addItem(@Validated @ModelAttribute("item") ItemSaveForm form,
+                      BindingResult bindingResult) {
+    if (bindingResult.hasErrors()) {
+        return "items/addForm";
+    }
+
+    Item item = new Item();
+    item.setItemName(form.getItemName());
+    item.setPrice(form.getPrice());
+    item.setQuantity(form.getQuantity());
+
+    itemRepository.save(item);
+    return "redirect:/items/{itemId}";
+}
+```
+
+<br/>
+
+이 세 줄이 컨트롤러에 있으면 필드가 늘어날 때마다 컨트롤러가 길어진다.
+
+Form 쪽에 메서드로 두는 편이 낫다.
+
+```java
+public class ItemSaveForm {
+    // ...
+
+    public Item toItem() {
+        return new Item(itemName, price, quantity);
+    }
+}
+```
+
+```java
+itemRepository.save(form.toItem());
+```
+
+<br/>
+
+`Form` 은 `Item` 을 알아도 되지만 `Item` 은 `Form` 을 몰라야 한다.
+
+앞의 인터페이스 글에서 본 `의존 방향을 한쪽으로` 가 여기서도 적용된다.
+
+<br/>
+
+## @ModelAttribute("item") 으로 이름을 맞춘 이유
+
+```java
+@ModelAttribute("item") ItemSaveForm form
+```
+
+<br/>
+
+이름을 안 주면 클래스 이름을 따라 `itemSaveForm` 이라는 이름으로 모델에 담긴다.
+
+그러면 뷰 템플릿의 `th:object="${item}"` 을 전부 고쳐야 한다.
+
+<br/>
+
+이름을 `item` 으로 맞춰두면 뷰는 그대로 두고 자바 쪽만 바꿀 수 있다.
+
+원문의 `등록, 수정 뷰 템플릿은 합치는게 좋을까` 도 이 이름 문제와 이어진다.

@@ -265,3 +265,172 @@ public class ValidationItemController {
 <br/><br/>
 
 >**Reference** <br/>[스프링 MVC 2편 - 백엔드 웹 개발 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2/dashboard)
+<br/>
+
+## 궁금증!
+
+```java
+BindingResult 를 파라미터로 받는 것과 안 받는 것이 왜 그렇게 다를까?
+```
+
+받느냐 안 받느냐로 오류가 갈 곳이 정해지기 때문이다.
+
+```java
+// BindingResult 없음
+public String add(@ModelAttribute Item item) { ... }
+  -> 바인딩 실패 시 컨트롤러가 아예 호출되지 않는다
+  -> 400 오류 페이지로 넘어간다
+
+// BindingResult 있음
+public String add(@ModelAttribute Item item, BindingResult bindingResult) { ... }
+  -> 오류를 BindingResult 에 담고 컨트롤러는 정상 호출된다
+  -> 개발자가 화면으로 되돌릴지 정할 수 있다
+```
+
+<br/>
+
+`BindingResult` 는 `이 요청의 오류를 내가 처리하겠다` 는 선언인 셈이다.
+
+<br/>
+
+## 그래서 위치가 중요하다
+
+```java
+public String add(@ModelAttribute Item item, BindingResult bindingResult) { ... }   // 맞다
+public String add(BindingResult bindingResult, @ModelAttribute Item item) { ... }   // 틀리다
+```
+
+<br/>
+
+`BindingResult` 는 `바로 앞 파라미터의 검증 결과` 를 담는 객체다.
+
+앞에 검증할 대상이 없으면 무엇의 결과인지 알 수가 없다.
+
+<br/>
+
+순서를 바꾸면 실행할 때 이런 에러가 난다.
+
+```java
+An Errors/BindingResult argument is expected to be declared immediately after
+the model attribute
+```
+
+<br/>
+
+## 타입 오류는 우리가 담는 게 아니다
+
+원문의 `필드 오류` 를 `rejectValue` 로 담는 부분과, 타입 변환 실패는 다른 경로다.
+
+```java
+사용자가 price 에 "abc" 입력
+  -> Integer 로 변환 실패
+  -> 스프링이 알아서 FieldError 를 만들어 BindingResult 에 담는다
+  -> 코드는 "typeMismatch"
+```
+
+<br/>
+
+우리가 아무것도 안 해도 오류가 이미 들어와 있다.
+
+그래서 `bindingResult.hasErrors()` 가 `true` 가 된다.
+
+<br/>
+
+여기서 중요한 점 하나. 이때 화면에 원래 입력값을 다시 보여줄 수 있어야 한다.
+
+`"abc"` 는 `Integer` 필드에 담을 수 없으니 객체에는 안 들어가 있다.
+
+<br/>
+
+`FieldError` 의 생성자에 `rejectedValue` 자리가 있는 이유가 이것이다.
+
+```java
+new FieldError("item", "price", "abc", true, null, null, "가격 오류")
+                                 ^^^^^ 사용자가 입력한 원본을 따로 들고 있는다
+```
+
+<br/>
+
+`bindingFailure` 가 `true` 면 타입 변환 실패라는 뜻이고,
+
+화면에서는 객체의 값이 아니라 이 `rejectedValue` 를 다시 보여준다.
+
+```java
+th:field="*{price}"
+  -> 오류가 없으면 객체의 값
+  -> 오류가 있으면 rejectedValue (사용자가 입력한 원본)
+```
+
+<br/>
+
+이게 없으면 사용자가 잘못 입력했을 때 입력창이 비워지거나 `0` 이 되어버린다.
+
+<br/>
+
+## MessageCodesResolver 가 코드를 여러 개 만드는 이유
+
+원문의 `구체적인 것에서 덜 구체적인 것으로` 가 실제로는 이런 목록이다.
+
+```java
+rejectValue("itemName", "required")
+
+-> required.item.itemName      (객체명 + 필드명)
+-> required.itemName           (필드명)
+-> required.java.lang.String   (필드 타입)
+-> required                    (코드만)
+```
+
+<br/>
+
+네 개를 만들어놓고 순서대로 `MessageSource` 에서 찾는다.
+
+먼저 찾은 것을 쓰고, 하나도 없으면 `defaultMessage` 를 쓴다.
+
+<br/>
+
+이 방식의 이득은 `기본은 한 줄로, 예외는 필요할 때만` 이다.
+
+```java
+required=필수 값입니다                        <- 이 한 줄로 모든 required 가 처리된다
+required.item.itemName=상품 이름은 필수입니다   <- 이 필드만 다르게 하고 싶을 때 추가
+```
+
+<br/>
+
+메시지 파일에 수십 줄을 미리 적어둘 필요가 없다.
+
+<br/>
+
+## 객체 오류와 필드 오류를 나눈 이유
+
+```java
+필드 오류 - 특정 필드 하나가 잘못됐다        rejectValue("price", "range")
+객체 오류 - 필드끼리의 관계가 잘못됐다        reject("totalPriceMin")
+```
+
+<br/>
+
+`가격 × 수량이 10000원 이상이어야 한다` 같은 규칙은 어느 한 필드의 문제가 아니다.
+
+가격만 봐도, 수량만 봐도 각각은 정상이다.
+
+<br/>
+
+그래서 화면에서도 표시 위치가 다르다.
+
+```java
+필드 오류 -> 그 입력창 바로 아래
+객체 오류 -> 폼 맨 위에 모아서
+```
+
+<br/>
+
+Bean Validation의 어노테이션은 필드 하나만 보기 때문에 이런 규칙을 표현하지 못한다.
+
+`@ScriptAssert` 로 억지로 할 수는 있지만 읽기 어려워서, 보통은 자바 코드로 직접 검사한다.
+
+```java
+if (item.getPrice() * item.getQuantity() < 10000) {
+    bindingResult.reject("totalPriceMin", new Object[]{10000, 결과값}, null);
+}
+```

@@ -204,3 +204,184 @@ public void accountTransfer(String fromId, String toId, int money) throws SQLExc
 
 >**Reference** <br/>[스프링 DB 2편 - 데이터 접근 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-2/dashboard)
 
+
+<br/>
+
+## 궁금증!
+
+```java
+@Transactional 을 붙이면 스프링이 정확히 무엇을 끼워 넣는 걸까?
+```
+
+앞의 AOP 글에서 본 프록시가 메서드를 이렇게 감싼다.
+
+```java
+프록시.order()
+  1. 트랜잭션 매니저에게 트랜잭션을 시작해달라고 한다
+       -> 커넥션을 하나 빌리고 setAutoCommit(false)
+       -> 그 커넥션을 ThreadLocal 에 넣어둔다
+  2. 진짜 order() 를 부른다
+  3-a. 예외 없이 끝나면 -> commit()
+  3-b. 언체크 예외가 나면 -> rollback()
+  4. 커넥션을 반납하고 ThreadLocal 을 비운다
+```
+
+<br/>
+
+`1번` 과 `4번` 이 우리가 손으로 적던 것이다.
+
+앞의 스프링으로 트랜잭션 해결 글에서 본 그 `try-catch-finally` 다.
+
+<br/>
+
+## 프록시가 실제로 씌워졌는지 확인하는 법
+
+```java
+@Autowired ApplicationContext context;
+
+@Test
+void proxyCheck() {
+    OrderService service = context.getBean(OrderService.class);
+    System.out.println(service.getClass());
+    System.out.println(AopUtils.isAopProxy(service));
+}
+```
+
+<br/>
+
+```java
+class com.example.OrderService$$SpringCGLIB$$0
+true
+```
+
+<br/>
+
+앞의 AOP 글과 `@Configuration` 글에서 본 그 `$$SpringCGLIB$$0` 이다.
+
+이 이름이 안 나오면 `@Transactional` 이 아무 일도 안 하고 있는 것이다.
+
+<br/>
+
+## 트랜잭션이 실제로 걸렸는지 확인하는 법
+
+프록시가 씌워져 있어도 내부 호출이면 안 걸린다.
+
+앞의 트랜잭션 AOP 주의 사항 글에서 본 그 문제다.
+
+<br/>
+
+실행 중에 확인하는 방법이 있다.
+
+```java
+TransactionSynchronizationManager.isActualTransactionActive();   // true 여야 한다
+TransactionSynchronizationManager.getCurrentTransactionName();   // 어느 메서드의 트랜잭션인지
+```
+
+<br/>
+
+로그로 보는 방법도 있다.
+
+```java
+logging.level.org.springframework.transaction.interceptor=TRACE
+```
+
+```java
+Getting transaction for [com.example.OrderService.order]
+Completing transaction for [com.example.OrderService.order]
+```
+
+<br/>
+
+이 줄이 안 나오면 프록시를 안 거친 것이다.
+
+<br/>
+
+## 어디에 붙이느냐에 따라 범위가 달라진다
+
+```java
+@Transactional
+public class OrderService { ... }        // 모든 public 메서드에 적용
+
+public class OrderService {
+    @Transactional
+    public void order() { ... }          // 이 메서드만
+}
+```
+
+<br/>
+
+클래스와 메서드 둘 다 있으면 메서드 쪽이 이긴다.
+
+```java
+@Transactional(readOnly = true)          // 기본은 읽기 전용
+public class MemberService {
+
+    @Transactional                        // 이 메서드만 쓰기 가능
+    public void join(String name) { ... }
+
+    public Member find(Long id) { ... }   // 읽기 전용
+}
+```
+
+<br/>
+
+앞의 트랜잭션 옵션 글에서 본 `조회에는 readOnly` 를 이렇게 적용하면 편하다.
+
+기본을 읽기 전용으로 두고 쓰는 메서드만 표시하는 것이다.
+
+<br/>
+
+## 인터페이스에 붙이면 안 되는 이유
+
+```java
+public interface OrderService {
+    @Transactional
+    void order();
+}
+```
+
+<br/>
+
+동작은 하는데 권장되지 않는다.
+
+<br/>
+
+CGLIB 프록시는 클래스를 상속해서 만들기 때문에, 인터페이스의 어노테이션을 못 볼 수 있다.
+
+스프링 부트는 기본이 CGLIB이라 이 경우에 해당한다.
+
+<br/>
+
+그래서 구현 클래스에 붙이는 것이 확실하다.
+
+```java
+@Service
+public class OrderServiceImpl implements OrderService {
+
+    @Transactional
+    public void order() { ... }      // 여기에 붙인다
+}
+```
+
+<br/>
+
+## 스프링 어노테이션과 자카르타 어노테이션이 따로 있다
+
+```java
+org.springframework.transaction.annotation.Transactional    -- 스프링
+jakarta.transaction.Transactional                           -- 자바 표준
+```
+
+<br/>
+
+IDE에서 자동 완성할 때 잘못 고르기 쉽다.
+
+<br/>
+
+자바 표준 쪽은 `readOnly` 옵션이 없고, 롤백 규칙 지정 방식도 다르다.
+
+앞의 트랜잭션 옵션 글에서 본 옵션들을 쓰려면 스프링 쪽이어야 한다.
+
+```java
+import 가 org.springframework 로 시작하는지 확인하는 습관을 들이면 된다
+```

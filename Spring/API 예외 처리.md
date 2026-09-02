@@ -280,3 +280,190 @@ public class ExControllerAdvice {
 @ControllerAdvice("org.example.controllers")
 public class ExampleAdvice2 {...}
 ```
+
+<br/>
+
+## 궁금증!
+
+```java
+@ExceptionHandler 는 어떻게 우리 메서드를 찾아서 부르는 걸까?
+```
+
+앞의 디스패처 서블릿 글에서 본 예외 갈래에 그 답이 있다.
+
+```java
+doDispatch()
+  try {
+      핸들러 실행
+  } catch (Exception e) {
+      dispatchException = e;              // 던지지 않고 잡아둔다
+  }
+  processDispatchResult(..., dispatchException)
+      -> HandlerExceptionResolver 목록에게 순서대로 물어본다
+```
+
+<br/>
+
+컨트롤러에서 예외가 나도 그 자리에서 위로 던지지 않는다.
+
+`DispatcherServlet` 이 일단 잡아두고, 처리할 수 있는 리졸버를 찾는다.
+
+<br/>
+
+기본으로 등록된 리졸버가 셋이다.
+
+```java
+ExceptionHandlerExceptionResolver   -> @ExceptionHandler 를 찾아서 실행    (우선순위 1)
+ResponseStatusExceptionResolver     -> @ResponseStatus 를 보고 상태 코드 결정 (2)
+DefaultHandlerExceptionResolver     -> 스프링 내부 예외를 상태 코드로 변환    (3)
+```
+
+<br/>
+
+`@ExceptionHandler` 가 제일 먼저 물어보는 대상이다.
+
+그래서 우리가 만든 핸들러가 있으면 나머지는 아예 안 불린다.
+
+<br/>
+
+## 어떤 핸들러를 고르는가
+
+여러 개가 있으면 `가장 구체적인 것` 을 고른다.
+
+```java
+@ExceptionHandler(IllegalArgumentException.class)
+public ErrorResult a(IllegalArgumentException e) { ... }
+
+@ExceptionHandler(RuntimeException.class)
+public ErrorResult b(RuntimeException e) { ... }
+
+@ExceptionHandler(Exception.class)
+public ErrorResult c(Exception e) { ... }
+```
+
+<br/>
+
+`IllegalArgumentException` 이 터지면 셋 다 처리할 수 있다.
+
+`IllegalArgumentException` 은 `RuntimeException` 이고 `Exception` 이기도 하기 때문이다.
+
+<br/>
+
+이때 스프링은 상속 계층에서 가장 가까운 `a` 를 고른다.
+
+원문의 `핵심은 구체적인 것에서 덜 구체적인 것으로` 와 같은 규칙이다.
+
+<br/>
+
+## 그래서 Exception.class 핸들러는 맨 마지막 보루다
+
+```java
+@ExceptionHandler(Exception.class)
+public ResponseEntity<ErrorResult> unexpected(Exception e) {
+    log.error("예상 못 한 예외", e);         // 반드시 로그를 남긴다
+    return ResponseEntity.status(500)
+            .body(new ErrorResult("SERVER_ERROR", "잠시 후 다시 시도해주세요"));
+}
+```
+
+<br/>
+
+이걸 안 두면 처리 못 한 예외가 톰캣까지 올라가서 기본 오류 페이지가 나간다.
+
+API인데 HTML이 응답으로 나가는 셈이라, 클라이언트가 파싱에 실패한다.
+
+<br/>
+
+주의할 점이 하나 있다. 여기서 예외 메시지를 그대로 내려주면 안 된다.
+
+```java
+return new ErrorResult("ERROR", e.getMessage());   // 위험하다
+```
+
+<br/>
+
+`SQLException` 의 메시지에는 테이블 이름과 컬럼 이름이 그대로 들어 있다.
+
+`NullPointerException` 은 내부 클래스 이름을 노출한다.
+
+<br/>
+
+밖으로는 안전한 문구만 내보내고, 진짜 원인은 로그에만 남기는 것이 맞다.
+
+앞의 예외 글에서 본 `원인을 담아 던져야 한다` 는 로그를 위한 것이고, 응답은 별개다.
+
+```java
+로그에는  -> 원인 예외까지 전부 (개발자가 본다)
+응답에는  -> 사용자가 이해할 문구만 (누구나 본다)
+```
+
+<br/>
+
+## @ControllerAdvice 가 필요한 이유
+
+`@ExceptionHandler` 를 컨트롤러 안에 두면 그 컨트롤러에서만 동작한다.
+
+컨트롤러가 스무 개면 같은 핸들러를 스무 번 적어야 한다.
+
+<br/>
+
+`@ControllerAdvice` 는 그것을 한 곳으로 모은 것이다.
+
+```java
+@RestControllerAdvice
+public class ApiExceptionAdvice {
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<ErrorResult> badRequest(IllegalArgumentException e) { ... }
+}
+```
+
+<br/>
+
+`@RestControllerAdvice` 는 `@ControllerAdvice + @ResponseBody` 다.
+
+앞의 `@RestController` 와 같은 방식으로 묶어놓은 것이다.
+
+<br/>
+
+원문의 `대상 컨트롤러 지정 방법` 을 쓰면 범위를 좁힐 수도 있다.
+
+```java
+@RestControllerAdvice(basePackages = "com.example.api")     // 이 패키지만
+@RestControllerAdvice(annotations = RestController.class)   // @RestController 만
+```
+
+<br/>
+
+화면용 컨트롤러와 API 컨트롤러가 섞여 있을 때 유용하다.
+
+화면 쪽은 오류 페이지로 보내고, API 쪽은 JSON을 내려줘야 하니 처리가 다르기 때문이다.
+
+<br/>
+
+## @ResponseStatus 로 될 일도 있다
+
+간단한 경우는 예외 클래스에 붙이는 것만으로 끝난다.
+
+```java
+@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "회원을 찾을 수 없습니다")
+public class MemberNotFoundException extends RuntimeException { }
+```
+
+<br/>
+
+`ResponseStatusExceptionResolver` 가 이걸 읽어서 `404` 로 응답한다.
+
+핸들러를 따로 안 만들어도 된다.
+
+<br/>
+
+다만 응답 본문을 마음대로 못 만든다는 한계가 있다.
+
+에러 코드나 필드별 오류 같은 것을 담으려면 결국 `@ExceptionHandler` 를 써야 한다.
+
+```java
+상태 코드만 바꾸면 됨       -> @ResponseStatus
+응답 본문까지 만들어야 함   -> @ExceptionHandler
+여러 컨트롤러에서 공통으로   -> @ControllerAdvice
+```

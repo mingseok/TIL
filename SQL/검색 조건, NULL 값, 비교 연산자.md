@@ -261,3 +261,194 @@ FROM employee AS E, works_on AS W, project P
 WHERE E.position = 'DSGN' and
       E.id = W.empl_id and W.proj_id = P.id;
 ```
+<br/>
+
+## 궁금증!
+
+```java
+NULL 을 = 로 비교하면 정말 안 되나
+```
+
+직접 돌려봤다. 5명 중 나이가 `NULL` 인 사람이 1명 있는 표다.
+
+```sql
+SELECT count(*) FROM member WHERE age = NULL;
+SELECT count(*) FROM member WHERE age IS NULL;
+```
+
+<br/>
+
+### 결과
+
+```java
+age = NULL 로 찾은 개수  = 0
+age IS NULL 로 찾은 개수 = 1
+```
+
+<br/>
+
+`= NULL` 은 오류도 안 나고 그냥 아무것도 안 나온다.
+
+<br/>
+
+## 왜 이런가
+
+`NULL` 은 `값이 없다` 가 아니라 `모른다` 이기 때문이다.
+
+```sql
+NULL = NULL       ->  UNKNOWN (TRUE 가 아니다)
+NULL <> NULL      ->  UNKNOWN
+NULL + 1          ->  NULL
+```
+
+<br/>
+
+`모르는 값` 과 `모르는 값` 이 같은지는 알 수 없다는 논리다.
+
+<br/>
+
+`WHERE` 절은 `TRUE` 인 행만 통과시킨다.
+
+`UNKNOWN` 은 `TRUE` 가 아니니 전부 걸러지는 것이다.
+
+<br/>
+
+앞의 3값 논리 얘기가 여기서 실제로 드러난다.
+
+```java
+참, 거짓, 그리고 모름
+```
+
+<br/>
+
+## NOT IN 에 NULL 이 섞이면 전부 사라진다
+
+이게 실무에서 제일 위험하다.
+
+```sql
+SELECT count(*) FROM member WHERE city NOT IN ('서울', NULL);
+SELECT count(*) FROM member WHERE city NOT IN ('서울');
+```
+
+<br/>
+
+### 결과
+
+```java
+city NOT IN (서울, NULL) 결과 = 0
+city NOT IN (서울) 결과       = 2
+```
+
+<br/>
+
+`NULL` 하나가 목록에 섞이니 결과가 통째로 없어졌다.
+
+<br/>
+
+`NOT IN` 은 이렇게 풀린다.
+
+```sql
+city <> '서울' AND city <> NULL
+```
+
+<br/>
+
+뒤쪽이 항상 `UNKNOWN` 이니 `AND` 전체가 `TRUE` 가 될 수 없는 것이다.
+
+<br/>
+
+## 서브쿼리에서 이 사고가 난다
+
+```sql
+SELECT * FROM member
+WHERE id NOT IN (SELECT member_id FROM orders);
+```
+
+<br/>
+
+`orders.member_id` 에 `NULL` 이 하나라도 있으면 결과가 0건이다.
+
+<br/>
+
+오류가 안 나니 `주문 안 한 회원이 없구나` 로 오해하게 된다.
+
+<br/>
+
+앞의 subquery IN EXISTS ANY ALL 글에서 본 `NOT EXISTS` 를 쓰면 안전하다.
+
+```sql
+SELECT * FROM member m
+WHERE NOT EXISTS (SELECT 1 FROM orders o WHERE o.member_id = m.id);
+```
+
+<br/>
+
+`EXISTS` 는 `있느냐 없느냐` 만 보고 값을 비교하지 않아서 `NULL` 의 영향을 안 받는다.
+
+<br/>
+
+## NULL 을 다루는 함수
+
+```sql
+COALESCE(age, 0)        -- NULL 이면 0
+IFNULL(age, 0)          -- MySQL, SQLite
+NVL(age, 0)             -- 오라클
+NULLIF(a, b)            -- 같으면 NULL, 다르면 a
+```
+
+<br/>
+
+`COALESCE` 가 표준이라 어디서든 된다.
+
+인자를 여러 개 받아서 처음 `NULL` 이 아닌 것을 돌려준다.
+
+```sql
+COALESCE(nickname, name, '이름없음')
+```
+
+<br/>
+
+`NULLIF` 는 0으로 나누는 것을 막을 때 쓴다.
+
+```sql
+total / NULLIF(count, 0)      -- count 가 0 이면 NULL 이 되어 오류를 피한다
+```
+
+<br/>
+
+## 그래서 NULL 을 허용할지 정하는 게 중요하다
+
+컬럼을 만들 때 정해야 한다.
+
+```sql
+CREATE TABLE member (
+    name VARCHAR(50) NOT NULL,
+    age  INT                    -- NULL 허용
+);
+```
+
+<br/>
+
+앞의 테이블 관리 글에서 본 그 제약이다.
+
+<br/>
+
+`NOT NULL` 을 붙이면 위의 함정들이 애초에 안 생긴다.
+
+기본값을 주는 것도 방법이다.
+
+```sql
+age INT NOT NULL DEFAULT 0
+```
+
+<br/>
+
+다만 `0` 과 `모름` 이 다른 의미면 억지로 채우면 안 된다.
+
+`나이가 0살` 과 `나이를 모름` 은 다른 얘기이기 때문이다.
+
+<br/>
+
+앞의 Optional 글에서 본 것과 같은 고민이다.
+
+`없음` 을 어떻게 표현할지는 결국 도메인이 정해야 하는 것이다.

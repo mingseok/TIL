@@ -219,3 +219,223 @@ having AVG(salary) < (
                        from employee
                      );
 ```
+<br/>
+
+## 궁금증!
+
+```java
+NULL 은 정렬에서 어디로 가나
+```
+
+찍어봤다.
+
+```sql
+SELECT name, age FROM member ORDER BY age;
+```
+
+<br/>
+
+### 결과 (SQLite)
+
+```java
+박지성          <- age 가 NULL. 맨 앞으로 갔다
+이영한  25
+한지민  25
+김민석  30
+최민식  40
+```
+
+<br/>
+
+`NULL` 이 제일 작은 값처럼 취급됐다.
+
+<br/>
+
+## DB 마다 다르다
+
+```java
+MySQL, SQLite, SQL Server   ->  ASC 에서 NULL 이 앞
+PostgreSQL, 오라클           ->  ASC 에서 NULL 이 뒤
+```
+
+<br/>
+
+표준에는 `구현에 맡긴다` 로 되어 있다.
+
+<br/>
+
+그래서 DB를 옮기면 정렬 결과가 달라진다.
+
+`값이 있는 것부터 보여주려고 했는데 빈 것이 먼저 나온다` 는 문제가 생기는 것이다.
+
+<br/>
+
+## 명시하려면
+
+```sql
+ORDER BY age NULLS LAST      -- PostgreSQL, 오라클
+```
+
+<br/>
+
+MySQL은 이 문법이 없다. 이렇게 흉내낸다.
+
+```sql
+ORDER BY age IS NULL, age
+```
+
+<br/>
+
+`age IS NULL` 이 `0` 또는 `1` 이라, `NULL` 인 행이 뒤로 간다.
+
+<br/>
+
+앞의 정렬, 페이징, 집합 글에서 본 QueryDSL의 `nullsLast` 가
+
+이 차이를 감춰주는 것이다.
+
+<br/>
+
+## 여러 컬럼으로 정렬할 때
+
+```sql
+ORDER BY grade DESC, age ASC
+```
+
+<br/>
+
+`DESC` 는 각 컬럼에 따로 붙는다.
+
+```sql
+ORDER BY grade, age DESC
+```
+
+<br/>
+
+이건 `grade` 는 오름차순, `age` 만 내림차순이다.
+
+`DESC` 가 앞의 것까지 적용되는 게 아니다.
+
+<br/>
+
+앞의 Comparable과 Comparator 글에서 본
+
+자바의 `reversed()` 는 반대로 앞의 체인 전체를 뒤집는다.
+
+둘이 반대로 동작하니 헷갈리기 쉽다.
+
+<br/>
+
+## 정렬이 비싼 이유
+
+```sql
+EXPLAIN QUERY PLAN SELECT * FROM member ORDER BY age LIMIT 2 OFFSET 3;
+```
+
+```java
+SCAN member
+USE TEMP B-TREE FOR ORDER BY
+```
+
+<br/>
+
+정렬하려고 임시 구조를 만들었다.
+
+<br/>
+
+MySQL에서는 `Using filesort` 로 나온다.
+
+파일이라는 이름이 붙어 있지만 메모리에서 하는 경우가 대부분이다.
+
+<br/>
+
+데이터가 `sort_buffer_size` 를 넘으면 진짜 디스크를 쓴다. 그때부터 아주 느려진다.
+
+<br/>
+
+## 인덱스가 있으면 정렬을 안 해도 된다
+
+인덱스는 이미 정렬되어 있기 때문이다.
+
+```sql
+CREATE INDEX idx_age ON member(age);
+SELECT * FROM member ORDER BY age;      -- 인덱스를 순서대로 읽으면 끝
+```
+
+<br/>
+
+앞의 인덱스 구조 글에서 본 B+트리의 리프 노드가 정렬된 연결 리스트라 그렇다.
+
+<br/>
+
+방향이 반대여도 된다. 거꾸로 읽으면 되기 때문이다.
+
+<br/>
+
+다만 여러 컬럼을 섞으면 안 된다.
+
+```sql
+CREATE INDEX idx ON member(grade, age);
+
+ORDER BY grade, age            -- 인덱스를 쓴다
+ORDER BY grade DESC, age DESC  -- 쓴다 (전부 거꾸로 읽으면 된다)
+ORDER BY grade, age DESC       -- 못 쓴다
+```
+
+<br/>
+
+세 번째는 인덱스 순서와 다르다.
+
+한 방향으로 읽어서는 이 순서를 만들 수 없는 것이다.
+
+<br/>
+
+MySQL 8.0부터는 인덱스에 방향을 지정할 수 있다.
+
+```sql
+CREATE INDEX idx ON member(grade ASC, age DESC);
+```
+
+<br/>
+
+## ORDER BY 에 표현식을 쓰면
+
+```sql
+ORDER BY CASE grade
+             WHEN 'GOLD' THEN 1
+             WHEN 'SILVER' THEN 2
+             ELSE 3
+         END;
+```
+
+<br/>
+
+등급을 사전순이 아니라 내가 정한 순서로 정렬하는 방법이다.
+
+<br/>
+
+MySQL에는 더 짧게 쓰는 함수가 있다.
+
+```sql
+ORDER BY FIELD(grade, 'GOLD', 'SILVER', 'BRONZE')
+```
+
+<br/>
+
+다만 이러면 인덱스를 못 쓴다.
+
+앞의 문자열 연산 글에서 본 대로, 컬럼을 계산으로 감싸면 정렬된 순서가 깨지기 때문이다.
+
+<br/>
+
+정렬 순서가 고정이면 컬럼을 하나 두는 게 낫다.
+
+```sql
+grade_order INT      -- GOLD = 1, SILVER = 2
+```
+
+<br/>
+
+이러면 인덱스를 걸 수 있다.
+
+`enum` 에 순서 값을 같이 두는 방식과도 이어진다.

@@ -187,3 +187,200 @@ List<Item> findAll(ItemSearchCond itemSearch); -> 해당 인터페이스
 
 >**Reference** <br/>[스프링 DB 2편 - 데이터 접근 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-2/dashboard)
 
+
+<br/>
+
+## 궁금증!
+
+```java
+Mapper 인터페이스만 만들었는데 구현체는 누가 만드는가?
+```
+
+앞의 스프링 데이터 JPA 글에서 본 것과 같은 방식이다. 실행 중에 프록시를 만든다.
+
+```java
+@Mapper
+public interface ItemMapper {
+    void save(Item item);
+    List<Item> findAll(ItemSearchCond cond);
+}
+```
+
+<br/>
+
+주입받아서 클래스 이름을 찍어보면 프록시다.
+
+```java
+class com.sun.proxy.$Proxy68
+```
+
+<br/>
+
+## 프록시가 하는 일
+
+메서드 호출을 가로채서 XML을 찾아 실행한다.
+
+```java
+itemMapper.findAll(cond)
+  -> 프록시가 가로챈다
+  -> "ItemMapper 인터페이스의 findAll 이구나"
+  -> ItemMapper.xml 의 namespace 와 id 로 SQL 을 찾는다
+  -> 파라미터를 바인딩해서 실행한다
+  -> 결과를 resultType 에 맞춰 객체로 만든다
+  -> 돌려준다
+```
+
+<br/>
+
+연결 고리는 이름 두 개다.
+
+```xml
+<mapper namespace="hello.itemservice.repository.mybatis.ItemMapper">
+    <select id="findAll" resultType="Item">
+```
+
+<br/>
+
+`namespace` 가 인터페이스의 전체 이름과 같아야 하고,
+
+`id` 가 메서드 이름과 같아야 한다.
+
+<br/>
+
+## 이름으로 연결되어서 생기는 문제
+
+앞의 Querydsl 글과 비교하면 차이가 확실하다.
+
+```java
+MyBatis  - 이름 문자열로 연결된다. IDE 가 잘 못 따라간다
+QueryDSL - 자바 코드라 컴파일러가 검사한다
+```
+
+<br/>
+
+메서드 이름을 바꾸면 XML도 같이 고쳐야 하는데, IDE의 이름 변경 기능이 XML까지 못 간다.
+
+<br/>
+
+애플리케이션이 뜰 때 검사해주기는 한다.
+
+```java
+Invalid bound statement (not found): ItemMapper.findAll
+```
+
+<br/>
+
+이 에러가 나면 셋 중 하나다.
+
+```java
+namespace 가 인터페이스 이름과 다르다
+id 가 메서드 이름과 다르다
+XML 파일 위치를 못 찾고 있다
+```
+
+<br/>
+
+## XML 위치 규칙
+
+기본은 `자바 인터페이스와 같은 패키지 경로` 다.
+
+```java
+src/main/java/hello/itemservice/repository/mybatis/ItemMapper.java
+src/main/resources/hello/itemservice/repository/mybatis/ItemMapper.xml
+```
+
+<br/>
+
+`resources` 아래에 패키지 경로를 그대로 만들어야 한다.
+
+폴더 하나만 틀려도 못 찾는다.
+
+<br/>
+
+한군데 모아두고 싶으면 설정으로 바꿀 수 있다.
+
+```java
+mybatis.mapper-locations=classpath:mapper/**/*.xml
+```
+
+<br/>
+
+## resultType 에 별칭을 주는 이유
+
+```xml
+<select id="findAll" resultType="Item">
+```
+
+<br/>
+
+원래는 전체 이름을 적어야 한다.
+
+```xml
+resultType="hello.itemservice.domain.Item"
+```
+
+<br/>
+
+매번 적기 번거로우니 별칭을 등록해둔다.
+
+```java
+mybatis.type-aliases-package=hello.itemservice.domain
+```
+
+<br/>
+
+이러면 그 패키지 안의 클래스는 짧은 이름으로 쓸 수 있다.
+
+<br/>
+
+## 카멜 케이스 변환
+
+```java
+mybatis.configuration.map-underscore-to-camel-case=true
+```
+
+<br/>
+
+앞의 JdbcTemplate 글에서 본 `BeanPropertyRowMapper` 와 같은 일을 한다.
+
+```java
+item_name 컬럼 -> setItemName()
+```
+
+<br/>
+
+이 설정을 안 켜면 `item_name` 을 못 찾아서 그 필드만 `null` 이 된다.
+
+에러가 안 나고 값만 비는 형태라 알아채기 어렵다.
+
+<br/>
+
+규칙에 안 맞는 이름은 SQL에서 별칭으로 맞춰야 한다.
+
+```sql
+SELECT item_nm AS item_name FROM item
+```
+
+<br/>
+
+## 로그를 켜두면 훨씬 편하다
+
+```java
+logging.level.hello.itemservice.repository.mybatis=trace
+```
+
+<br/>
+
+실행된 SQL과 넘어간 파라미터가 그대로 찍힌다.
+
+```java
+==>  Preparing: SELECT id, item_name, price FROM item WHERE price <= ?
+==> Parameters: 10000(Integer)
+<==      Total: 3
+```
+
+<br/>
+
+앞의 MyBatis 설명 글에서 본 `<if>` 조건이 실제로 붙었는지 안 붙었는지가 여기서 보인다.
+
+동적 쿼리를 쓸 때는 이 로그가 사실상 필수다.

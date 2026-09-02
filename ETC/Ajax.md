@@ -277,3 +277,252 @@ setting는 Ajax 통신을 위한 옵션을 담고 있는 객체가 들어간다.
 <br/><br/>
 
 >**Reference** <br/>생활코딩 javaScript - Ajax : https://www.youtube.com/watch?v=_FI0U7I8QAg
+
+<br/>
+
+## 궁금증!
+
+```java
+fetch 는 왜 404 에서 catch 로 안 가나
+```
+
+`fetch` 는 네트워크가 실패했을 때만 거부한다.
+
+```javascript
+fetch('/api/none')
+    .then(res => console.log('여기로 온다'))     // 404 여도 여기
+    .catch(err => console.log('여기는 안 온다'));
+```
+
+<br/>
+
+서버가 응답을 주기만 하면 `성공` 으로 본다.
+
+`404` 든 `500` 든 응답은 응답이기 때문이다.
+
+<br/>
+
+`catch` 로 가는 건 이런 경우다.
+
+```java
+네트워크가 끊겼다
+CORS 에 막혔다
+요청이 중단됐다
+```
+
+<br/>
+
+## 그래서 직접 확인해야 한다
+
+```javascript
+const res = await fetch('/api/members');
+if (!res.ok) {
+    throw new Error(`HTTP ${res.status}`);
+}
+const data = await res.json();
+```
+
+<br/>
+
+`res.ok` 는 상태 코드가 `200~299` 면 `true` 다.
+
+<br/>
+
+앞의 HTTP 상태 코드 글에서 본 그 분류다.
+
+<br/>
+
+`axios` 는 이걸 알아서 해준다.
+
+`4xx` 와 `5xx` 를 거부로 처리하는 것이다.
+
+<br/>
+
+`fetch` 가 표준인데도 `axios` 를 쓰는 이유 중 하나가 이것이다.
+
+<br/>
+
+## json() 도 비동기다
+
+```javascript
+const data = await res.json();
+```
+
+<br/>
+
+응답 본문이 스트림이라 다 읽어야 파싱할 수 있기 때문이다.
+
+<br/>
+
+앞의 HTTP body에 데이터를 직접 담아서 요청 - @RequestBody 글에서 본 그 성질이다.
+
+한 번 읽으면 다시 못 읽는다.
+
+```javascript
+await res.json();
+await res.text();      // TypeError: body stream already read
+```
+
+<br/>
+
+두 번 읽으려면 복제해야 한다.
+
+```javascript
+const clone = res.clone();
+```
+
+<br/>
+
+서버 쪽의 `ContentCachingRequestWrapper` 와 같은 발상이다.
+
+<br/>
+
+## CORS 가 왜 필요한가
+
+브라우저가 다른 출처로 요청을 보내는 것을 막기 때문이다.
+
+```java
+출처 = 프로토콜 + 도메인 + 포트
+```
+
+<br/>
+
+하나라도 다르면 다른 출처다.
+
+```java
+https://a.com      -> http://a.com       (프로토콜이 다르다)
+https://a.com      -> https://api.a.com  (도메인이 다르다)
+https://a.com:443  -> https://a.com:8080 (포트가 다르다)
+```
+
+<br/>
+
+앞의 쿠키(Cookie) 글에서 본 그 문제 때문이다.
+
+<br/>
+
+브라우저는 쿠키를 자동으로 붙인다.
+
+악성 사이트가 은행 API를 부르면 사용자 쿠키가 같이 나갈 것이다.
+
+<br/>
+
+그래서 `서버가 허락한 출처만` 읽을 수 있게 막아둔 것이다.
+
+<br/>
+
+## 요청은 나가고 응답만 막힌다
+
+이게 헷갈리는 부분이다.
+
+<br/>
+
+단순 요청은 서버까지 갔다 온다.
+
+브라우저가 응답을 자바스크립트에 안 넘길 뿐이다.
+
+<br/>
+
+그래서 `GET` 요청은 CORS로 막아도 서버에서는 실행된다.
+
+<br/>
+
+`부수 효과가 있는 요청` 은 미리 물어본다.
+
+```java
+OPTIONS /api/members
+Access-Control-Request-Method: DELETE
+```
+
+<br/>
+
+이게 프리플라이트다.
+
+`DELETE` 를 보내도 되냐고 먼저 묻는 것이다.
+
+<br/>
+
+서버가 허락하면 진짜 요청을 보낸다.
+
+<br/>
+
+## 프리플라이트가 뜨는 조건
+
+```java
+메서드가 GET, HEAD, POST 가 아니다
+Content-Type 이 application/json 이다
+커스텀 헤더가 있다 (Authorization 등)
+```
+
+<br/>
+
+JSON을 보내는 API는 거의 전부 프리플라이트가 뜬다.
+
+<br/>
+
+요청이 두 번 나가니 느려진다.
+
+```java
+Access-Control-Max-Age: 3600
+```
+
+<br/>
+
+이걸 주면 브라우저가 결과를 캐시해서 한동안 안 묻는다.
+
+<br/>
+
+## 쿠키를 같이 보내려면 양쪽 설정이 필요하다
+
+```javascript
+fetch(url, { credentials: 'include' })
+```
+
+```java
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: https://a.com      // * 는 안 된다
+```
+
+<br/>
+
+`*` 와 `credentials` 는 같이 못 쓴다.
+
+<br/>
+
+`아무나 와도 된다` 와 `쿠키를 붙여 보내라` 가 같이 있으면
+
+아무 사이트나 사용자 쿠키로 API를 부를 수 있게 되기 때문이다.
+
+<br/>
+
+그래서 출처를 명시해야 한다.
+
+<br/>
+
+## 서버가 서버를 부를 때는 CORS 가 없다
+
+CORS는 브라우저의 규칙이다.
+
+<br/>
+
+앞의 Postman 사용 이유 글에서 본 대로,
+
+`curl` 이나 Postman으로는 그냥 된다.
+
+<br/>
+
+서버끼리 부를 때도 마찬가지다.
+
+<br/>
+
+`CORS 오류` 를 보안 기능으로 오해하기 쉬운데,
+
+브라우저 밖에서는 아무 보호가 안 되는 것이다.
+
+<br/>
+
+진짜 보안은 서버의 인증과 인가다.
+
+앞의 조건부 if 글에서 본 것과 같은 얘기다.
+
+`화면에서 막는 것` 과 `서버에서 막는 것` 은 다른 층의 일이다.

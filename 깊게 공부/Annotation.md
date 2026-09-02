@@ -120,3 +120,205 @@
 - RetentionPolicy.CLASS   : 클래스 파일(.class)까지 남아있는다.
 - RetentionPolicy.RUNTIME : 런타임까지 남아있는다.(=사라지지 않는다.)
 ```
+
+<br/>
+
+## 궁금증!
+
+```java
+@Retention 을 CLASS 로 두면 정말 런타임에 못 읽는 걸까?
+```
+
+두 어노테이션을 같은 클래스에 붙여놓고 리플렉션으로 읽어봤다.
+
+```java
+@Retention(RetentionPolicy.RUNTIME)
+@interface KeepRuntime { }
+
+@Retention(RetentionPolicy.CLASS)
+@interface KeepClass { }
+
+@KeepRuntime
+@KeepClass
+class Target1 { }
+```
+
+<br/>
+
+```java
+System.out.println(Target1.class.getAnnotation(KeepRuntime.class) != null);
+System.out.println(Target1.class.getAnnotation(KeepClass.class) != null);
+```
+
+<br/>
+
+### 결과
+
+```java
+RUNTIME 어노테이션 = true
+CLASS 어노테이션    = false
+```
+
+<br/>
+
+`CLASS` 는 `.class` 파일에는 들어 있지만 JVM이 메모리로 올릴 때 버린다.
+
+그래서 실행 중에는 찾을 수가 없다.
+
+```java
+SOURCE  - 컴파일하면 사라진다.        (@Override, @SuppressWarnings, 롬복)
+CLASS   - .class 에는 있지만 안 읽힌다. 기본값. 바이트코드를 직접 읽는 도구용
+RUNTIME - 실행 중에 읽을 수 있다.      (@Controller, @Transactional, @Entity)
+```
+
+<br/>
+
+스프링 어노테이션이 전부 `RUNTIME` 인 이유가 여기 있다.
+
+스프링이 실행 중에 클래스를 훑으면서 `@Component` 가 붙었는지 확인해야 하기 때문이다.
+
+<br/>
+
+`@Override` 가 `SOURCE` 인 것도 이유가 있다. 컴파일러가 검사하고 나면 더 쓸 일이 없기 때문이다.
+
+<br/>
+
+## 어노테이션 자체는 아무 일도 안 한다
+
+이게 제일 중요한 지점이다. 어노테이션은 표시일 뿐이고, 읽어서 처리하는 코드가 따로 있어야 한다.
+
+<br/>
+
+`@MyTest` 가 붙은 메서드만 골라 실행하는 코드를 직접 짜봤다.
+
+```java
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+@interface MyTest {
+    String value() default "";
+}
+
+class Target1 {
+    @MyTest("첫 번째 테스트")
+    public void testA() { ... }
+
+    public void notATest() { ... }
+}
+```
+
+<br/>
+
+```java
+for (Method method : Target1.class.getDeclaredMethods()) {
+    MyTest test = method.getAnnotation(MyTest.class);
+    if (test != null) {
+        System.out.println("실행 : " + method.getName() + " (설명 = " + test.value() + ")");
+        method.invoke(instance);
+    }
+}
+```
+
+<br/>
+
+### 결과
+
+```java
+실행 : testA (설명 = 첫 번째 테스트)
+  testA 본문 실행됨
+```
+
+<br/>
+
+`notATest` 는 안 불렸다. 어노테이션이 없어서 건너뛴 것이다.
+
+<br/>
+
+JUnit이 `@Test` 를 찾아 실행하는 방식이 정확히 이것이다.
+
+어노테이션에 마법이 있는 게 아니라, `리플렉션으로 훑어서 붙어 있으면 실행` 하는 코드가 있는 것이다.
+
+```java
+어노테이션        - "여기에 표시를 해둔다"
+리플렉션 + 처리기 - "표시를 찾아서 실제로 일을 한다"
+```
+
+<br/>
+
+## 어노테이션 안에 어노테이션을 넣을 수 있다
+
+`@Service` 안에 `@Component` 가 들어 있다는 얘기가 이 구조다.
+
+```java
+@Retention(RetentionPolicy.RUNTIME)
+@MyComponent                       // 어노테이션에 어노테이션을 붙였다
+@interface MyServiceAnno { }
+
+@MyServiceAnno
+class MyService { }
+```
+
+<br/>
+
+```java
+System.out.println(MyService.class.getAnnotation(MyComponent.class) != null);
+```
+
+<br/>
+
+### 결과
+
+```java
+false  <- 직접 붙인 게 아니라 못 찾는다
+
+붙어 있는 것 = MyServiceAnno
+  그 안에 = MyComponent 가 들어 있다
+```
+
+<br/>
+
+`getAnnotation()` 은 직접 붙은 것만 본다.
+
+한 단계 들어가서 찾아야 `MyComponent` 가 나온다.
+
+<br/>
+
+그래서 스프링은 이걸 직접 뒤지지 않고 `AnnotatedElementUtils` 라는 도우미를 쓴다.
+
+```java
+AnnotatedElementUtils.hasAnnotation(MyService.class, MyComponent.class);   // true
+```
+
+<br/>
+
+몇 단계를 타고 들어가든 찾아준다. 이것을 `메타 어노테이션` 이라고 한다.
+
+`@RestController` 안에 `@Controller` 가, 그 안에 다시 `@Component` 가 들어 있는 구조도 같은 방식이다.
+
+```java
+@RestController -> @Controller -> @Component
+```
+
+<br/>
+
+## @Target 을 안 쓰면 어떻게 되는가
+
+`@Target` 을 생략하면 거의 모든 곳에 붙일 수 있게 된다.
+
+```java
+@interface Anything { }
+
+@Anything
+class C {
+    @Anything
+    private String field;
+
+    @Anything
+    void method(@Anything String param) { }     // 전부 통과한다
+}
+```
+
+<br/>
+
+컴파일러가 아무것도 안 막아주니, 엉뚱한 데 붙여놓고 왜 동작을 안 하나 고민하게 된다.
+
+원문의 `컴파일러가 검사해주는 것` 이 이 실수를 막아주는 장치인 것이다.

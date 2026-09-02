@@ -109,3 +109,193 @@
 
 
 
+
+<br/>
+
+## 궁금증!
+
+```java
+JDBC 가 "표준 인터페이스" 라는 게 코드에서 어떻게 드러날까?
+```
+
+`java.sql` 패키지 안에 있는 것들이 전부 인터페이스라는 점에서 드러난다.
+
+```java
+public interface Connection { ... }
+public interface Statement { ... }
+public interface PreparedStatement extends Statement { ... }
+public interface ResultSet { ... }
+```
+
+<br/>
+
+구현이 하나도 없다. `무엇을 할 수 있는지` 만 정해놓은 것이다.
+
+<br/>
+
+실제 구현은 각 DB 회사가 만들어서 배포한다. 그것이 `드라이버` 다.
+
+```java
+mysql-connector-j-9.7.0.jar        -- MySQL 이 만든 구현체
+postgresql-42.x.jar                -- PostgreSQL 이 만든 구현체
+ojdbc11.jar                        -- Oracle 이 만든 구현체
+```
+
+<br/>
+
+그래서 우리 코드는 인터페이스만 쓰고, jar 만 바꾸면 DB가 바뀐다.
+
+```java
+Connection connection = dataSource.getConnection();   // 타입은 인터페이스
+System.out.println(connection.getClass().getName());
+// -> com.mysql.cj.jdbc.ConnectionImpl  (드라이버가 만든 구현체)
+```
+
+<br/>
+
+앞의 PSA 글에서 본 구조와 완전히 같다.
+
+인터페이스는 표준이 정하고, 구현은 각자 만들고, 쓰는 쪽은 인터페이스만 안다.
+
+<br/>
+
+## 드라이버는 어떻게 찾아지는가
+
+예전에는 직접 등록해야 했다.
+
+```java
+Class.forName("com.mysql.cj.jdbc.Driver");    // 옛날 코드
+```
+
+<br/>
+
+지금은 이 줄이 필요 없다. `JDBC 4.0` 부터 자동으로 찾는다.
+
+<br/>
+
+드라이버 jar 안을 열어보면 이런 파일이 들어 있다.
+
+```java
+META-INF/services/java.sql.Driver
+```
+
+<br/>
+
+그 안에 구현 클래스 이름이 적혀 있고, `DriverManager` 가 클래스패스를 훑어서 읽는다.
+
+이 방식을 `SPI(Service Provider Interface)` 라고 한다.
+
+<br/>
+
+앞의 스프링 부트 글에서 본 자동 구성의 `AutoConfiguration.imports` 파일과 같은 발상이다.
+
+`jar 안에 목록을 넣어두면 프레임워크가 읽어간다` 는 방식이다.
+
+<br/>
+
+## PreparedStatement 를 써야 하는 이유
+
+`Statement` 와 `PreparedStatement` 중 후자를 쓰라고 하는 이유가 두 가지다.
+
+<br/>
+
+### 첫번째) SQL 인젝션을 막는다
+
+```java
+// 위험
+String sql = "SELECT * FROM member WHERE id = '" + input + "'";
+```
+
+<br/>
+
+`input` 에 `1' OR '1'='1` 을 넣으면 이렇게 된다.
+
+```sql
+SELECT * FROM member WHERE id = '1' OR '1'='1'
+```
+
+<br/>
+
+조건이 항상 참이 되어 전체가 조회된다.
+
+`1'; DROP TABLE member; --` 를 넣으면 테이블이 날아간다.
+
+<br/>
+
+`PreparedStatement` 는 값을 따로 보낸다.
+
+```java
+PreparedStatement ps = connection.prepareStatement("SELECT * FROM member WHERE id = ?");
+ps.setString(1, input);
+```
+
+<br/>
+
+SQL 구조를 먼저 서버에 보내고 값은 나중에 보내기 때문에,
+
+값에 무엇이 들어 있든 SQL 문법으로 해석되지 않는다.
+
+```java
+문자열을 이어 붙인다 -> 값이 SQL 의 일부가 된다
+? 로 넘긴다         -> 값은 끝까지 값으로만 남는다
+```
+
+<br/>
+
+### 두번째) 실행 계획을 재사용한다
+
+DB는 SQL을 받으면 파싱하고 실행 계획을 짠다.
+
+앞의 DB 인덱스 글에서 본 `EXPLAIN QUERY PLAN` 의 그 계획이다.
+
+<br/>
+
+`?` 를 쓰면 SQL 문자열이 항상 같으니, 한 번 짠 계획을 재사용할 수 있다.
+
+값을 이어 붙이면 매번 다른 SQL이 되어서 매번 새로 짜야 한다.
+
+```java
+SELECT * FROM member WHERE id = 1     -- 새 SQL
+SELECT * FROM member WHERE id = 2     -- 또 새 SQL
+SELECT * FROM member WHERE id = ?     -- 항상 같은 SQL
+```
+
+<br/>
+
+## 그런데 JDBC 를 직접 쓸 일은 거의 없다
+
+앞의 JdbcTemplate 글에서 본 반복 코드 때문이다.
+
+```java
+Connection connection = null;
+PreparedStatement ps = null;
+ResultSet rs = null;
+try {
+    // ... 진짜 하고 싶은 일은 두세 줄
+} catch (SQLException e) {
+    throw new RuntimeException(e);
+} finally {
+    if (rs != null) try { rs.close(); } catch (SQLException e) {}
+    if (ps != null) try { ps.close(); } catch (SQLException e) {}
+    if (connection != null) try { connection.close(); } catch (SQLException e) {}
+}
+```
+
+<br/>
+
+앞의 try-catch-finally 글에서 본 그 중첩된 정리 코드다.
+
+<br/>
+
+그래도 JDBC를 알아야 하는 이유는, 위에 얹힌 것들이 전부 이걸 쓰기 때문이다.
+
+```java
+JDBC (표준 인터페이스)
+  -> JdbcTemplate     (반복 코드를 없앰)
+  -> MyBatis          (SQL 을 XML 로 분리)
+  -> JPA / Hibernate  (객체와 테이블을 매핑)
+```
+
+<br/>
+
+문제가 생겼을 때 결국 이 층까지 내려가서 봐야 하는 경우가 있다.

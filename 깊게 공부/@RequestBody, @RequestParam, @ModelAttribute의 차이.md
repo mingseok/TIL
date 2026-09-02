@@ -230,3 +230,187 @@ public String addItem(@ModelAttribute Item item) {
     return "basic/item";
 }
 ```
+<br/>
+
+## 궁금증!
+
+```java
+셋의 차이를 "어디서 값을 꺼내오는가" 로 정리하면 어떻게 될까?
+```
+
+앞의 form 태그 글에서 요청을 실제로 찍어봤던 것을 다시 보면 답이 나온다.
+
+```java
+GET /members?name=%eb%af%bc%ec%84%9d&age=30 HTTP/1.1
+
+[본문] (없음)
+```
+
+```java
+POST /members/new HTTP/1.1
+Content-type: application/x-www-form-urlencoded
+
+[본문] name=%EB%AF%BC%EC%84%9D&age=30
+```
+
+<br/>
+
+`GET` 은 URL 뒤에, form `POST` 는 본문에 값이 있지만 형식이 똑같다.
+
+`키=값&키=값` 이다.
+
+<br/>
+
+서블릿은 이 둘을 구분하지 않고 `request.getParameter("name")` 하나로 꺼낼 수 있게 해준다.
+
+이것을 `요청 파라미터` 라고 부른다. 원문의 정의 그대로다.
+
+```java
+요청 파라미터 (getParameter 로 꺼낼 수 있는 것)
+  - GET 의 쿼리 스트링
+  - POST 의 form 형식 본문
+
+그 외의 본문 (JSON, XML, 순수 텍스트)
+  - getParameter 로는 못 꺼낸다. 본문을 직접 읽어야 한다
+```
+
+<br/>
+
+이 경계가 곧 세 어노테이션의 경계다.
+
+```java
+@RequestParam    -> 요청 파라미터를 하나씩 꺼낸다
+@ModelAttribute  -> 요청 파라미터를 객체에 한 번에 담는다
+@RequestBody     -> 본문을 통째로 읽어서 컨버터로 객체를 만든다
+```
+
+<br/>
+
+## 값을 채우는 방식이 다르다
+
+이게 실무에서 문제가 되는 지점이다.
+
+```java
+@ModelAttribute -> 기본 생성자로 만들고 -> 세터로 하나씩 채운다
+@RequestBody    -> Jackson 이 만든다. 기본 생성자 + 세터, 또는 생성자
+```
+
+<br/>
+
+`@ModelAttribute` 는 세터가 없으면 값이 안 들어간다.
+
+```java
+class ItemForm {
+    private String name;      // 게터만 있고 세터가 없다면
+    public String getName() { return name; }
+}
+```
+
+<br/>
+
+에러도 안 나고 `name` 만 `null` 로 남는다.
+
+앞의 form 태그 글에서 `키가 안 맞으면 조용히 넘어간다` 고 한 것과 같은 모양이다.
+
+<br/>
+
+그래서 불변 DTO를 만들고 싶으면 `@ModelAttribute` 로는 어렵다.
+
+`final` 필드에는 세터를 만들 수 없기 때문이다.
+
+<br/>
+
+`@RequestBody` 는 사정이 좀 낫다.
+
+Jackson이 생성자로 값을 받게 할 수 있어서, `final` 필드를 가진 불변 객체를 만들 수 있다.
+
+```java
+public class ItemRequest {
+    private final String name;
+    private final int price;
+
+    @JsonCreator
+    public ItemRequest(@JsonProperty("name") String name,
+                       @JsonProperty("price") int price) {
+        this.name = name;
+        this.price = price;
+    }
+}
+```
+
+<br/>
+
+## 검증이 실패하는 시점도 다르다
+
+이 차이가 예외 처리 방식을 갈라놓는다.
+
+```java
+@ModelAttribute -> 타입이 안 맞으면 BindingResult 에 오류를 담고 계속 진행한다
+@RequestBody    -> 변환에 실패하면 컨트롤러가 아예 호출되지 않는다
+```
+
+<br/>
+
+`@ModelAttribute` 는 `age` 에 글자가 들어와도 컨트롤러까지는 들어온다.
+
+`BindingResult` 를 파라미터로 받으면 어떤 필드가 잘못됐는지 볼 수 있다.
+
+```java
+@PostMapping("/add")
+public String add(@ModelAttribute ItemForm form, BindingResult bindingResult) {
+    if (bindingResult.hasErrors()) {
+        return "items/addForm";       // 입력 화면으로 되돌린다
+    }
+    ...
+}
+```
+
+<br/>
+
+`@RequestBody` 는 JSON 파싱 자체가 실패하면 컨트롤러 앞에서 예외가 난다.
+
+`HttpMessageNotReadableException` 이 나면서 `400` 이 나간다.
+
+<br/>
+
+이유는 목적이 다르기 때문이다.
+
+```java
+@ModelAttribute -> 사람이 폼에 입력한 것. 틀릴 수 있으니 화면에 오류를 보여줘야 한다
+@RequestBody    -> 프로그램이 보낸 JSON. 형식이 틀렸으면 그건 버그다
+```
+
+<br/>
+
+## 셋 다 생략할 수 있다
+
+```java
+public String search(String keyword)          // @RequestParam 생략
+public String add(ItemForm form)              // @ModelAttribute 생략
+```
+
+<br/>
+
+스프링이 타입을 보고 알아서 정한다.
+
+```java
+String, int 같은 단순 타입   -> @RequestParam 으로 본다
+그 외 객체 타입             -> @ModelAttribute 로 본다
+```
+
+<br/>
+
+`@RequestBody` 만은 생략할 수 없다.
+
+객체 타입이면 기본이 `@ModelAttribute` 라서, 본문을 읽으라고 명시해줘야 하기 때문이다.
+
+<br/>
+
+생략하면 짧아지지만 읽는 사람이 헷갈린다.
+
+```java
+public String add(ItemForm form)                     // 본문? 파라미터? 헷갈린다
+public String add(@ModelAttribute ItemForm form)     // 명확하다
+```
+
+적어두는 편이 낫다.

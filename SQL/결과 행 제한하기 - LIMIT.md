@@ -193,3 +193,196 @@ SELECT * FROM sample33 LIMIT 3 OFFSET 3;
 <br/><br/>
 
 >**Reference** <br/> SQL 첫걸음 : 아사이 아츠시 지음, 박준용 옮김, 한빛미디어
+
+<br/>
+
+## 궁금증!
+
+```java
+ORDER BY 없이 LIMIT 을 쓰면 어떤 행이 나오나
+```
+
+정해져 있지 않다.
+
+```sql
+SELECT id, name FROM member LIMIT 2;
+```
+
+<br/>
+
+### 결과
+
+```java
+1   김민석
+3   박지성
+```
+
+<br/>
+
+`1, 2` 가 아니라 `1, 3` 이 나왔다.
+
+앞에서 만들어둔 인덱스를 타면서 순서가 그렇게 된 것이다.
+
+<br/>
+
+`정렬 없이는 순서가 보장되지 않는다` 는 게 이런 뜻이다.
+
+<br/>
+
+인덱스가 생기거나 없어지면, 같은 쿼리가 다른 결과를 낸다.
+
+데이터가 안 바뀌었는데도 그렇다.
+
+<br/>
+
+앞의 정렬, 페이징, 집합 글에서 본 그 규칙이다.
+
+```java
+페이징에는 반드시 정렬이 있어야 한다
+```
+
+<br/>
+
+## 정렬 기준이 겹쳐도 마찬가지다
+
+```sql
+SELECT name, age FROM member ORDER BY age LIMIT 2 OFFSET 0;
+```
+
+<br/>
+
+`25살` 이 두 명이면 둘 중 누가 먼저 나올지 정해져 있지 않다.
+
+<br/>
+
+1페이지에서 `이영한`, 2페이지에서 또 `이영한` 이 나올 수 있는 것이다.
+
+<br/>
+
+그래서 유일한 값을 마지막에 하나 붙인다.
+
+```sql
+ORDER BY age, id
+```
+
+<br/>
+
+## OFFSET 이 커지면 느려진다
+
+```sql
+SELECT * FROM member ORDER BY age LIMIT 2 OFFSET 3;
+```
+
+<br/>
+
+### 결과 (실행 계획)
+
+```java
+SCAN member
+USE TEMP B-TREE FOR ORDER BY
+```
+
+<br/>
+
+정렬용 임시 구조를 만들어서 처리한다.
+
+<br/>
+
+`OFFSET` 은 앞의 행을 **읽고 나서 버린다.**
+
+건너뛰는 게 아니라 읽는 것이다.
+
+```sql
+LIMIT 20 OFFSET 100000
+```
+
+<br/>
+
+20개를 보여주려고 100,020개를 읽는다.
+
+뒤 페이지로 갈수록 느려지는 이유다.
+
+<br/>
+
+## 그래서 커서 방식을 쓴다
+
+마지막으로 본 값을 기준으로 이어서 읽는다.
+
+```sql
+SELECT * FROM member WHERE id > 100000 ORDER BY id LIMIT 20;
+```
+
+<br/>
+
+`OFFSET` 이 없으니 몇 페이지든 같은 속도다.
+
+인덱스로 `id > 100000` 위치를 바로 찾아가기 때문이다.
+
+<br/>
+
+무한 스크롤에 잘 맞는다.
+
+<br/>
+
+대신 제약이 있다.
+
+```java
+"5페이지로 바로 가기" 가 안 된다
+정렬 기준을 자유롭게 못 바꾼다
+```
+
+<br/>
+
+정렬 기준이 여러 개면 조건도 복잡해진다.
+
+```sql
+WHERE (age, id) > (25, 100)      -- 나이순 정렬일 때
+```
+
+<br/>
+
+앞의 페이징 API, 조인 글에서 본 것과 같은 고민이다.
+
+<br/>
+
+## DB 마다 문법이 다르다
+
+```sql
+MySQL, PostgreSQL   LIMIT 20 OFFSET 100
+오라클 (11g 이전)     ROWNUM 을 쓴다
+SQL Server          TOP 또는 OFFSET FETCH
+표준 SQL            OFFSET 100 ROWS FETCH NEXT 20 ROWS ONLY
+```
+
+<br/>
+
+앞의 페이징 API 글에서 본 대로,
+
+JPA는 이걸 방언으로 흡수해서 같은 코드로 쓸 수 있게 한다.
+
+```java
+setFirstResult(100).setMaxResults(20)
+```
+
+<br/>
+
+DB를 바꿔도 이 코드는 안 바뀌는 것이다.
+
+<br/>
+
+## 페이징에서 총 개수를 세는 게 더 비쌀 때가 많다
+
+```sql
+SELECT * FROM orders ORDER BY id DESC LIMIT 20;    -- 빠르다
+SELECT count(*) FROM orders;                        -- 느리다
+```
+
+<br/>
+
+앞의 행 개수 구하기 - COUNT 글에서 본 그 문제다.
+
+<br/>
+
+`21개를 가져와서 20개만 보여주기` 로 총 개수를 안 세는 방식이
+
+실무에서 자주 쓰이는 절충안이다.

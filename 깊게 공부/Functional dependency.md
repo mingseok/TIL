@@ -200,3 +200,149 @@ x의 부분 집합이지만, x와 동일하지는 않은 집합을 말한다. �
             즉, 같은 클래스id에 대해서도 각각의 다른 성적을 가질 수 있기 때문에  
             
             `class_id집합`만으로는 결정 지을 수 없게 되는 것이다.
+<br/>
+
+## 궁금증!
+
+```java
+함수 종속성을 알면 정규화를 기계적으로 할 수 있다는데 정말일까?
+```
+
+정규형의 정의 자체가 함수 종속성으로 되어 있어서 그렇다.
+
+앞의 정규화 글에서 본 그 테이블로 확인해보면 바로 보인다.
+
+```sql
+CREATE TABLE orders (
+    order_id INTEGER PRIMARY KEY,
+    member_name TEXT,
+    member_phone TEXT,
+    item_name TEXT,
+    price INTEGER
+);
+```
+
+<br/>
+
+여기서 종속 관계를 적어보면 이렇다.
+
+```java
+order_id -> member_name, member_phone, item_name, price   (기본 키니까 당연하다)
+member_name -> member_phone                                (이름을 알면 전화번호가 정해진다)
+```
+
+<br/>
+
+두 번째가 문제다. `member_phone` 이 기본 키가 아닌 `member_name` 에 딸려 있다.
+
+<br/>
+
+`3정규형` 의 정의가 정확히 이것을 금지한다.
+
+```java
+3정규형 = 기본 키가 아닌 컬럼이, 기본 키가 아닌 다른 컬럼에 종속되면 안 된다
+```
+
+<br/>
+
+그러니 `member_name -> member_phone` 을 찾은 순간 답이 나온다.
+
+`왼쪽에 있는 것을 기준으로 테이블을 떼어내라` 는 것이다.
+
+```sql
+CREATE TABLE member (name TEXT PRIMARY KEY, phone TEXT);   -- name -> phone 을 옮긴다
+CREATE TABLE orders (order_id INTEGER PRIMARY KEY, member_name TEXT, item_name TEXT, price INTEGER);
+```
+
+<br/>
+
+앞의 정규화 글에서 본 `수정 이상, 삭제 이상, 삽입 이상` 이 여기서 전부 사라진다.
+
+<br/>
+
+## 그래서 정규화 순서가 이렇게 된다
+
+```java
+1. 모든 함수 종속성을 찾아 적는다
+2. 왼쪽이 기본 키가 아닌 것을 찾는다
+3. 그것을 떼어내서 별도 테이블로 만든다
+4. 더 이상 나올 것이 없을 때까지 반복한다
+```
+
+<br/>
+
+`정규화가 어렵다` 고 느끼는 이유는 대개 `1번` 이 어려워서다.
+
+무엇이 무엇을 결정하는지는 업무를 알아야 판단할 수 있기 때문이다.
+
+<br/>
+
+## 데이터만 보고 판단하면 안 된다
+
+이게 흔한 실수다.
+
+```sql
+member_name | member_phone
+민석         | 010-1111
+영한         | 010-2222
+```
+
+<br/>
+
+지금 데이터만 보면 `member_name -> member_phone` 이 성립하는 것처럼 보인다.
+
+그런데 동명이인이 들어오면 깨진다.
+
+```sql
+민석         | 010-1111
+민석         | 010-3333      -- 다른 사람이다
+```
+
+<br/>
+
+함수 종속성은 `지금 데이터가 그렇다` 가 아니라 `앞으로도 반드시 그래야 한다` 는 규칙이다.
+
+업무 규칙에서 나오는 것이지 데이터에서 유추하는 것이 아니다.
+
+<br/>
+
+## 2정규형과 3정규형이 갈리는 지점
+
+둘 다 `기본 키가 아닌 것에 딸리면 안 된다` 인데 상황이 다르다.
+
+```java
+2정규형 - 복합 키의 "일부" 에만 딸린 컬럼이 있으면 안 된다 (부분 함수 종속)
+3정규형 - 키가 아닌 컬럼에 딸린 컬럼이 있으면 안 된다 (이행 함수 종속)
+```
+
+<br/>
+
+```sql
+-- 2정규형 위반 : 기본 키가 (order_id, item_id) 인데
+CREATE TABLE order_item (
+    order_id INTEGER,
+    item_id INTEGER,
+    quantity INTEGER,      -- (order_id, item_id) 에 딸린다. 정상
+    item_name TEXT,        -- item_id 에만 딸린다. 부분 종속
+    PRIMARY KEY (order_id, item_id)
+);
+
+-- 3정규형 위반 : 기본 키가 order_id 인데
+CREATE TABLE orders (
+    order_id INTEGER PRIMARY KEY,
+    member_id INTEGER,
+    member_name TEXT       -- member_id 에 딸린다. 이행 종속
+);
+```
+
+<br/>
+
+기본 키가 하나짜리면 `2정규형` 은 자동으로 만족된다.
+
+부분 종속이라는 것이 애초에 성립할 수 없기 때문이다.
+
+<br/>
+
+요즘은 앞의 relation database 글에서 본 대로 대리 키를 많이 써서
+
+기본 키가 대개 하나짜리다. 그래서 실무에서는 `3정규형` 만 신경 쓰면 되는 경우가 많다.

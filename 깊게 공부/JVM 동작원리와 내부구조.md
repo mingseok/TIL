@@ -333,3 +333,210 @@ GC는 메모리 관리 기법 중 하나이다.
 그럼, 이중에서 뭘 선택해야 하는데?
 - 나의 어플리케이션에 서비스 특성에 맞는 GC를 선택하는것이 옳다
 ```
+
+<br/>
+
+## 궁금증!
+
+```java
+Class Loader가 "필요한 class를 찾는다" 고 했는데, 어디서 어떻게 찾는 것일까?
+```
+
+클래스 로더는 하나가 아니라 세 개가 계층으로 쌓여 있다.
+
+직접 찍어보면 확인된다.
+
+```java
+public class Loader {
+    public static void main(String[] args) {
+        System.out.println("내 클래스      = " + Loader.class.getClassLoader());
+        System.out.println("  그 부모      = " + Loader.class.getClassLoader().getParent());
+        System.out.println("  그 위의 부모 = " + Loader.class.getClassLoader().getParent().getParent());
+        System.out.println("String 클래스  = " + String.class.getClassLoader());
+    }
+}
+```
+
+<br/>
+
+### 결과
+
+```java
+내 클래스      = jdk.internal.loader.ClassLoaders$AppClassLoader@1369b299
+  그 부모      = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1dbd16a6
+  그 위의 부모 = null
+String 클래스  = null
+```
+
+<br/>
+
+세 계층이 이렇게 나뉘어 있다.
+
+```java
+Bootstrap ClassLoader  - java.lang.* 같은 자바 핵심 클래스. C로 짜여 있어서 자바에서는 null 로 보인다
+Platform ClassLoader   - 그 외 표준 라이브러리
+Application ClassLoader - 우리가 짠 클래스와 라이브러리 (클래스패스)
+```
+
+`String` 의 로더가 `null` 인 것은 로더가 없다는 뜻이 아니라, `Bootstrap` 이 자바 객체가 아니라서 그렇다.
+
+<br/>
+
+## 왜 굳이 나눠놨는가
+
+찾을 때 `자기가 먼저 찾지 않고 부모에게 먼저 물어보기` 때문이다.
+
+```java
+클래스가 필요하다
+-> Application 이 Platform 에게 물어본다
+-> Platform 이 Bootstrap 에게 물어본다
+-> Bootstrap 이 없다고 하면 Platform 이 찾아본다
+-> 그것도 없으면 그때서야 Application 이 찾는다
+```
+
+<br/>
+
+이걸 `위임(delegation)` 이라고 한다. 이렇게 하는 이유는 보안이다.
+
+<br/>
+
+누가 `java.lang.String` 이라는 이름으로 악의적인 클래스를 만들어 클래스패스에 넣었다고 해보자.
+
+위임 구조가 없다면 `Application` 이 그것을 먼저 찾아서 로드해버린다.
+
+세상의 모든 문자열이 가짜 `String` 이 되는 것이다.
+
+<br/>
+
+위임 구조에서는 `Bootstrap` 이 진짜 `java.lang.String` 을 먼저 돌려주니, 가짜는 로드될 기회가 없다.
+
+```java
+항상 위에서부터 찾는다 -> 핵심 클래스를 아무도 바꿔치기 할 수 없다
+```
+
+<br/>
+
+## 클래스는 처음부터 다 로드되지 않는다
+
+원문에 `필요한 경우 동적으로 메모리에 적재한다` 고 되어 있는 그 부분이다.
+
+직접 확인해봤다.
+
+```java
+public class Loader {
+    public static void main(String[] args) {
+        System.out.println("아직 Lazy 를 안 건드림");
+        System.out.println("이제 건드린다 -> " + Lazy.VALUE);
+    }
+}
+
+class Lazy {
+    static final String VALUE = make();
+
+    static String make() {
+        System.out.println("   (Lazy 클래스 초기화됨)");
+        return "값";
+    }
+}
+```
+
+<br/>
+
+### 결과
+
+```java
+아직 Lazy 를 안 건드림
+   (Lazy 클래스 초기화됨)
+이제 건드린다 -> 값
+```
+
+<br/>
+
+`Lazy` 클래스는 `Lazy.VALUE` 를 읽으려는 순간에야 초기화됐다.
+
+프로그램이 시작될 때 다 올려놓는 것이 아니라, 진짜 쓸 때 올린다.
+
+<br/>
+
+`main` 이 도는 동안 한 번도 안 쓰는 클래스는 끝까지 로드되지 않는다.
+
+스프링 부트를 띄우면 수천 개 클래스가 로드되지만, 그것도 전부 `쓰이니까` 로드된 것이다.
+
+<br/>
+
+앞에서 본 holder 방식 싱글턴이 동작하는 근거도 이것이다.
+
+```java
+public class Singleton {
+    private static class Holder {
+        private static final Singleton INSTANCE = new Singleton();
+    }
+
+    public static Singleton getInstance() {
+        return Holder.INSTANCE;
+    }
+}
+```
+
+`getInstance()` 를 처음 부르는 순간에야 `Holder` 가 로드되면서 `INSTANCE` 가 만들어진다.
+
+아무도 안 부르면 객체가 아예 안 만들어지는 것이다.
+
+<br/>
+
+## 로드된 클래스를 눈으로 보려면
+
+```java
+java -verbose:class Loader
+```
+
+<br/>
+
+```java
+[0.008s][info][class,load] jdk.internal.module.ModuleLoaderMap  source: shared objects file
+[0.015s][info][class,load] jdk.internal.loader.BootLoader       source: shared objects file
+[0.017s][info][class,load] jdk.internal.loader.URLClassPath     source: jrt:/java.base
+```
+
+<br/>
+
+`Hello World` 하나 찍는 데도 수백 개의 클래스가 로드된다.
+
+오른쪽의 `source:` 가 어디서 읽어왔는지를 알려준다.
+
+`shared objects file` 은 미리 만들어둔 캐시에서 읽은 것이고, `jrt:/java.base` 는 JDK 모듈에서 읽은 것이다.
+
+<br/>
+
+## Linking 단계에서 하는 검증
+
+원문의 `Loading -> Linking -> Initialization` 중 `Linking` 이 하는 일을 좀 더 풀면 세 가지다.
+
+```java
+Verification  : 이 바이트코드가 안전한지 검사한다
+Preparation   : static 필드 자리를 잡고 기본값(0, null)으로 채운다
+Resolution    : 다른 클래스를 가리키는 이름들을 실제 주소로 바꾼다
+```
+
+<br/>
+
+`Verification` 이 있어서 자바는 이상한 `.class` 파일을 실행하지 않는다.
+
+스택이 넘치는 코드나 타입이 안 맞는 코드가 있으면 여기서 거부한다.
+
+<br/>
+
+바이트코드를 손으로 조작해서 넣어도, 검증을 통과하지 못하면 `VerifyError` 가 나면서 실행되지 않는다.
+
+`C` 처럼 잘못된 포인터로 아무 메모리나 건드리는 일이 자바에서 안 생기는 이유 중 하나다.
+
+<br/>
+
+`Preparation` 이 앞에서 봤던 `기본값으로 먼저 채운다` 는 그 단계다.
+
+우리가 적은 초기화식은 아직 실행되지 않고, 다음 단계인 `Initialization` 에서 실행된다.
+
+```java
+Preparation    : static int count 자리를 잡고 0 을 넣는다
+Initialization : static int count = 10 이라고 적은 것을 실행해서 10 으로 바꾼다
+```

@@ -167,3 +167,218 @@ public class MemberRepositoryV4_2 implements MemberRepository {
     - dataSource 넣어주는 이유는? → 여기서 어떤 DB를 쓰는지 정보를 넣는 것이다.
 
 
+
+<br/>
+
+## 궁금증!
+
+```java
+어떻게 DB 마다 다른 오류 코드를 하나로 맞추나
+```
+
+DB별 오류 코드가 파일에 정리되어 있다.
+
+```java
+org/springframework/jdbc/support/sql-error-codes.xml
+```
+
+<br/>
+
+이 파일을 열어보면 이런 식이다.
+
+```xml
+<bean id="MySQL" class="...SQLErrorCodes">
+    <property name="badSqlGrammarCodes">
+        <value>1054,1064,1146</value>
+    </property>
+    <property name="duplicateKeyCodes">
+        <value>1062</value>
+    </property>
+</bean>
+
+<bean id="H2" class="...SQLErrorCodes">
+    <property name="duplicateKeyCodes">
+        <value>23001,23505</value>
+    </property>
+</bean>
+```
+
+<br/>
+
+`중복 키` 라는 같은 상황을 MySQL은 `1062`, H2는 `23505` 로 알려준다.
+
+<br/>
+
+이 표를 보고 같은 예외로 바꾸는 것이다.
+
+```java
+MySQL 1062  ->  DuplicateKeyException
+H2    23505 ->  DuplicateKeyException
+```
+
+<br/>
+
+## 어느 DB 인지는 어떻게 아나
+
+`DataSource` 에서 메타데이터를 읽는다.
+
+```java
+connection.getMetaData().getDatabaseProductName()     ->  "MySQL"
+```
+
+<br/>
+
+기동할 때 한 번 읽어두고, 그 이름으로 표를 찾는다.
+
+<br/>
+
+## 요즘은 SQLState 기반도 쓴다
+
+오류 코드는 DB 벤더가 정한 것이고,
+
+`SQLState` 는 표준에 가깝다.
+
+```java
+23  - 무결성 제약 위반
+42  - 문법 오류
+08  - 연결 문제
+```
+
+<br/>
+
+앞 두 자리가 분류다.
+
+<br/>
+
+`SQLExceptionSubclassTranslator` 가 이걸 쓴다.
+
+JDBC 4부터 예외 자체가 세분화됐기 때문이다.
+
+```java
+SQLIntegrityConstraintViolationException
+SQLSyntaxErrorException
+SQLTimeoutException
+```
+
+<br/>
+
+`sql-error-codes.xml` 방식은 스프링 6에서 기본이 아니게 됐다.
+
+표준 쪽이 충분히 자리 잡았기 때문이다.
+
+<br/>
+
+## @Repository 가 이걸 켠다
+
+```java
+@Repository
+public class MemberRepository { ... }
+```
+
+<br/>
+
+앞의 @Controller, @RestController 글에서 본 그 부가 기능이다.
+
+<br/>
+
+`PersistenceExceptionTranslationPostProcessor` 가
+
+`@Repository` 가 붙은 빈에 프록시를 씌운다.
+
+<br/>
+
+앞의 프록시 패턴 글에서 본 그 방식이다.
+
+```java
+메서드를 부른다 -> 예외가 난다 -> 프록시가 잡는다 -> 변환해서 다시 던진다
+```
+
+<br/>
+
+`@Service` 에 붙이면 이게 안 된다.
+
+<br/>
+
+## Spring Data JPA 는 자동으로 된다
+
+```java
+public interface MemberRepository extends JpaRepository<Member, Long> { }
+```
+
+<br/>
+
+`@Repository` 를 안 붙여도 된다.
+
+<br/>
+
+앞의 스프링 데이터 JPA 분석 글에서 본 대로,
+
+`SimpleJpaRepository` 에 이미 `@Repository` 가 붙어 있기 때문이다.
+
+<br/>
+
+## 무엇이 좋아지는가
+
+서비스 층이 기술을 모르게 된다.
+
+```java
+public void join(Member member) {
+    try {
+        memberRepository.save(member);
+    } catch (DuplicateKeyException e) {           // JDBC 든 JPA 든 같은 예외
+        throw new ServiceException(ErrorCode.DUPLICATE_EMAIL);
+    }
+}
+```
+
+<br/>
+
+JDBC에서 JPA로 바꿔도 이 코드가 안 바뀐다.
+
+<br/>
+
+앞의 PSA(Portable Service Abstraction) 글에서 본 그 이득이다.
+
+```java
+기술은 아래에서 바뀌고, 위층은 그대로 있는다
+```
+
+<br/>
+
+## 그래도 완전하지는 않다
+
+변환 표에 없는 코드는 이렇게 나온다.
+
+```java
+UncategorizedSQLException
+```
+
+<br/>
+
+`분류 못 하겠다` 는 뜻이다. 원본 `SQLException` 은 안에 들어 있다.
+
+<br/>
+
+그리고 예외의 이름이 같아도 상황이 미묘하게 다를 수 있다.
+
+`DataIntegrityViolationException` 이 유니크 제약 위반인지 외래 키 위반인지는
+
+이 예외만으로는 구분이 안 된다.
+
+<br/>
+
+정확히 나누려면 결국 원본을 봐야 한다.
+
+```java
+Throwable cause = NestedExceptionUtils.getMostSpecificCause(e);
+```
+
+<br/>
+
+앞의 예외 포함과 스택 트레이스 글에서 본 그 메서드다.
+
+<br/>
+
+추상화가 대부분을 덮어주지만, 마지막 몇 퍼센트는 뚫고 내려가야 하는 것이다.
+
+추상화의 성질이 원래 그렇다.

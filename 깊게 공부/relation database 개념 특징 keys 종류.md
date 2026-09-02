@@ -178,4 +178,157 @@ relational database의 relations들이 언제나 항상 지켜줘야 하는 제�
         되어 있어야 한다는 것이다. `PLAYER` FK값을 의미로 `{team_id = 222}`하면 안된다.
         
 
+
+<br/>
+
+## 궁금증!
+
+```java
+super key, candidate key, primary key 를 실제 테이블로 구분해보면
 ```
+
+회원 테이블을 예로 들면 이렇다.
+
+```sql
+CREATE TABLE member (
+    id         BIGINT,        -- 자동 증가
+    email      VARCHAR(100),  -- 중복 불가
+    phone      VARCHAR(20),   -- 중복 불가
+    name       VARCHAR(50),
+    birth_date DATE
+);
+```
+
+<br/>
+
+```java
+super key     - 행을 유일하게 구분할 수 있는 모든 조합
+                {id}, {email}, {phone}, {id, name}, {email, phone, name}, ...
+
+candidate key - super key 중에서 더 줄일 수 없는 것들
+                {id}, {email}, {phone}
+                ({id, name} 은 name 을 빼도 되니 candidate 가 아니다)
+
+primary key   - candidate key 중에 하나를 고른 것
+                {id}
+
+alternate key - 고르지 않은 나머지 candidate key
+                {email}, {phone}
+```
+
+<br/>
+
+`super key` 가 제일 넓고, `candidate` 가 그 부분집합, `primary` 는 그중 하나다.
+
+<br/>
+
+## 왜 id 를 고르는가
+
+`email` 도 유일하니 기본 키로 쓸 수 있는데 잘 안 쓴다. 이유가 몇 가지 있다.
+
+```java
+바뀔 수 있다   - 이메일은 사용자가 바꾼다. 기본 키가 바뀌면 참조하던 모든 곳을 고쳐야 한다
+길다          - VARCHAR(100) 을 외래 키로 들고 다니면 인덱스가 커진다
+개인정보다     - 다른 테이블에 외래 키로 흩어지면 지우기 어려워진다
+```
+
+<br/>
+
+앞의 B tree 글에서 본 것과 이어진다.
+
+기본 키는 모든 보조 인덱스에 같이 들어가기 때문에, 짧을수록 인덱스가 작아진다.
+
+```java
+id BIGINT      -> 8 바이트
+email VARCHAR  -> 최대 100 바이트
+```
+
+<br/>
+
+인덱스가 다섯 개면 그 차이가 다섯 배로 불어난다.
+
+<br/>
+
+그래서 `의미 없는 값을 기본 키로 쓰는` 방식이 자리 잡았다.
+
+이것을 `대리 키(surrogate key)` 라고 하고, 반대로 `email` 처럼 의미가 있는 것을 `자연 키` 라고 한다.
+
+<br/>
+
+## 그래도 유일성은 지켜야 한다
+
+`email` 을 기본 키로 안 쓴다고 중복을 허용해도 된다는 뜻은 아니다.
+
+```sql
+CREATE UNIQUE INDEX uk_member_email ON member(email);
+```
+
+<br/>
+
+`alternate key` 에는 `UNIQUE` 제약을 걸어둔다.
+
+이렇게 해야 `candidate key` 라는 사실이 DB에 실제로 표현된다.
+
+<br/>
+
+애플리케이션에서만 검사하면 뚫린다.
+
+```java
+if (memberRepository.existsByEmail(email)) {    // 여기서 없다고 나왔는데
+    throw new DuplicateException();
+}
+memberRepository.save(member);                   // 그 사이에 남이 먼저 넣을 수 있다
+```
+
+<br/>
+
+앞의 Isolation 글에서 본 `Lost Update` 와 같은 구조의 문제다.
+
+확인과 실행 사이에 틈이 있으면 동시에 들어온 요청이 둘 다 통과한다.
+
+<br/>
+
+`UNIQUE` 제약이 있으면 DB가 두 번째를 거부한다.
+
+```java
+DuplicateKeyException
+```
+
+<br/>
+
+앞의 PSA 글에서 본 대로 스프링이 이걸 기술 무관 예외로 바꿔 던져준다.
+
+이걸 잡아서 처리하는 것이 확실한 방법이다.
+
+<br/>
+
+## 무결성 제약이 지켜주는 것
+
+원문 마지막의 세 가지를 정리하면 이렇다.
+
+```java
+도메인 무결성  - 값의 타입과 범위. NOT NULL, CHECK
+개체 무결성    - 기본 키는 NULL 일 수 없고 중복될 수 없다
+참조 무결성    - 외래 키는 참조하는 곳에 실제로 있는 값이어야 한다
+```
+
+<br/>
+
+`참조 무결성` 이 실무에서 논쟁거리다. 외래 키를 걸 것인가 말 것인가.
+
+```java
+외래 키를 건다   - DB 가 정합성을 보장한다. 대신 쓰기마다 확인 비용이 들고 락이 늘어난다
+외래 키를 안 건다 - 빠르고 유연하다. 대신 참조가 깨진 데이터가 생길 수 있다
+```
+
+<br/>
+
+대규모 서비스에서 외래 키를 안 거는 경우가 꽤 있다.
+
+앞의 파티셔닝이나 샤딩을 하면 외래 키를 쓸 수 없기도 하다.
+
+<br/>
+
+다만 안 걸면 그 검증을 애플리케이션이 대신 해야 한다.
+
+앞의 NoSQL 글에서 본 `스키마가 없어진 게 아니라 코드로 옮겨간 것` 과 같은 얘기다.

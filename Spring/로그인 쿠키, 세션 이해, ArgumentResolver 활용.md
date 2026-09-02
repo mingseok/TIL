@@ -369,3 +369,218 @@ public class WebConfig implements WebMvcConfigurer {
 <br/><br/>
 
 >**Reference** <br/>[스프링 MVC 2편 - 백엔드 웹 개발 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2/dashboard)
+
+<br/>
+
+## 궁금증!
+
+```java
+쿠키가 "자동으로 실려간다" 는 게 실제로 어떤 헤더로 오가는 걸까?
+```
+
+쿠키를 내려주는 서버를 띄워놓고 주고받는 것을 그대로 찍어봤다.
+
+<br/>
+
+### 1) 로그인 응답
+
+```java
+$ curl -i -c jar.txt http://localhost:18082/login
+
+HTTP/1.1 200 OK
+Set-cookie: JSESSIONID=A1B2C3D4E5; Path=/; HttpOnly
+Set-cookie: memberId=1; Path=/
+```
+
+<br/>
+
+서버는 `Set-Cookie` 헤더로 내려준다. 쿠키 하나에 헤더 한 줄이다.
+
+<br/>
+
+### 2) 브라우저가 저장한 내용
+
+```java
+localhost           | / | memberId   | 1
+#HttpOnly_localhost | / | JSESSIONID | A1B2C3D4E5
+```
+
+<br/>
+
+`JSESSIONID` 앞에 `#HttpOnly_` 가 붙어 있다.
+
+`HttpOnly` 라고 표시된 쿠키는 자바스크립트가 못 읽게 따로 표시해두는 것이다.
+
+<br/>
+
+### 3) 다음 요청
+
+```java
+$ curl -b jar.txt http://localhost:18082/me
+
+받은 Cookie 헤더 = [JSESSIONID=A1B2C3D4E5; memberId=1]
+```
+
+<br/>
+
+이번엔 `Set-Cookie` 가 아니라 `Cookie` 헤더 하나에 세미콜론으로 이어 붙어서 간다.
+
+우리가 아무것도 안 했는데 알아서 실려간 것이다.
+
+<br/>
+
+### 4) 쿠키 없이 요청
+
+```java
+받은 Cookie 헤더 = (없음)
+```
+
+<br/>
+
+## 그래서 원문의 "쿠키 보안 문제" 가 이런 뜻이다
+
+```java
+Set-Cookie: memberId=1
+```
+
+<br/>
+
+이 값이 브라우저에 그대로 저장되어 있고, 개발자 도구로 바로 보인다.
+
+`memberId=1` 을 `memberId=2` 로 고쳐서 보내면 다른 사람 행세를 할 수 있다.
+
+<br/>
+
+세션은 이 문제를 `의미 없는 값을 대신 보내는` 방식으로 푼다.
+
+```java
+쿠키에 담긴 것 : JSESSIONID=A1B2C3D4E5     <- 아무 의미 없는 랜덤 문자열
+서버가 들고 있는 것 : A1B2C3D4E5 -> Member(id=1, name="민석")
+```
+
+<br/>
+
+`A1B2C3D4E5` 를 고쳐봐야 서버 쪽 표에 없는 값이라 아무것도 안 된다.
+
+추측하기 어렵게 만드는 것이 전부라서, 세션 ID는 반드시 예측 불가능해야 한다.
+
+<br/>
+
+## HttpOnly 와 Secure
+
+원문의 보안 문제에 이어서, 쿠키에 붙일 수 있는 옵션이 몇 가지 있다.
+
+```java
+HttpOnly - 자바스크립트가 document.cookie 로 못 읽는다. XSS 로 세션을 훔치는 것을 막는다
+Secure   - HTTPS 일 때만 전송한다. 중간에서 훔쳐보는 것을 막는다
+SameSite - 다른 사이트에서 온 요청에는 안 보낸다. CSRF 를 막는다
+```
+
+<br/>
+
+`JSESSIONID` 에 `HttpOnly` 가 붙어 있는 것이 위 결과에서 확인됐다.
+
+세션 ID가 자바스크립트로 읽히면 스크립트 한 줄로 남의 세션을 가져갈 수 있기 때문이다.
+
+<br/>
+
+## ArgumentResolver 가 왜 나오는가
+
+세션에서 회원을 꺼내는 코드가 컨트롤러마다 반복되기 때문이다.
+
+```java
+@GetMapping("/items")
+public String items(HttpServletRequest request, Model model) {
+    HttpSession session = request.getSession(false);
+    if (session == null) return "redirect:/login";
+
+    Member member = (Member) session.getAttribute(SessionConst.LOGIN_MEMBER);
+    if (member == null) return "redirect:/login";
+
+    // 여기서부터 진짜 로직
+}
+```
+
+<br/>
+
+앞의 세 줄이 모든 컨트롤러에 복사된다.
+
+<br/>
+
+`@SessionAttribute` 를 쓰면 두 줄로 줄어든다.
+
+```java
+public String items(@SessionAttribute(name = "loginMember", required = false) Member member) {
+    if (member == null) return "redirect:/login";
+    ...
+}
+```
+
+<br/>
+
+`ArgumentResolver` 를 만들면 어노테이션 하나로 끝난다.
+
+```java
+public String items(@Login Member member) { ... }
+```
+
+<br/>
+
+앞의 요청 매핑 헨들러 어뎁터 글에서 본 그 구조다.
+
+`RequestMappingHandlerAdapter` 가 파라미터마다 리졸버에게 물어보는데,
+
+거기에 내가 만든 리졸버를 하나 끼워 넣는 것이다.
+
+```java
+supportsParameter() -> "@Login 이 붙은 Member 타입인가?"
+resolveArgument()   -> "그러면 세션에서 꺼내서 주겠다"
+```
+
+<br/>
+
+## 세션 타임아웃이 두 종류인 것
+
+원문의 `세션의 종료 시점` 이 헷갈리기 쉬운 부분이다.
+
+```java
+쿠키의 만료 시간 - 브라우저가 쿠키를 언제까지 들고 있을지
+세션의 만료 시간 - 서버가 그 세션 데이터를 언제까지 들고 있을지
+```
+
+<br/>
+
+`JSESSIONID` 는 보통 만료 시간을 안 준다.
+
+만료 시간이 없는 쿠키를 `세션 쿠키` 라고 하는데, 브라우저를 닫으면 사라진다.
+
+<br/>
+
+서버 쪽 타임아웃은 `마지막 요청 이후` 를 기준으로 센다.
+
+```java
+server.servlet.session.timeout=1800     # 30분
+```
+
+<br/>
+
+로그인한 지 30분이 아니라, 마지막으로 요청을 보낸 지 30분이다.
+
+계속 쓰고 있으면 시간이 계속 갱신되어서 안 끊긴다.
+
+<br/>
+
+그리고 서버가 세션을 메모리에 들고 있다는 점이 중요하다.
+
+서버를 재시작하면 전부 날아가고, 서버를 여러 대로 늘리면 세션이 서버마다 따로 생긴다.
+
+```java
+서버 A 에서 로그인 -> 세션은 A 에만 있다
+다음 요청이 서버 B 로 가면 -> 로그인이 안 된 것으로 보인다
+```
+
+<br/>
+
+그래서 서버를 여러 대 쓰면 세션을 밖으로 빼야 한다.
+
+Redis에 세션을 저장하거나, 아예 세션을 안 쓰고 JWT 같은 토큰 방식으로 가는 것이 그 이유다.

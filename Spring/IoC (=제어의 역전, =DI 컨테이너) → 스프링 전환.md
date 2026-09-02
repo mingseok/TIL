@@ -124,3 +124,181 @@ public class AppConfig {
 
 
 >**Reference** <br/>[스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8?utm_source=google&utm_medium=cpc&utm_campaign=04.general_backend&utm_content=spring&utm_term=%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9E%85%EB%AC%B8&gclid=CjwKCAiAjPyfBhBMEiwAB2CCImohok2YrQ2tRdhqfr3cZvKqkIJOHUJ36u6s1-7C9X1gzZIapTvOtxoCangQAvD_BwE)
+
+<br/>
+
+## 궁금증!
+
+```java
+AppConfig 를 @Configuration 으로 바꾸면 무엇이 달라지나
+```
+
+같은 빈을 두 번 호출해봤다.
+
+```java
+@Configuration
+class Config {
+    @Bean A a() { return new A(b()); }
+    @Bean B b() { return new B(); }        // a() 안에서도 b() 를 부른다
+}
+```
+
+<br/>
+
+자바 코드만 보면 `b()` 가 두 번 실행되어야 한다.
+
+`Config` 를 빈으로 등록할 때 한 번, `a()` 안에서 한 번이다.
+
+<br/>
+
+실제로 찍어보니 아니었다. 앞의 @Configuration과 싱글톤 글에서 확인한 그것이다.
+
+```java
+Config 클래스 = class demo.Config$$SpringCGLIB$$0
+b() 호출 횟수 = 1
+```
+
+<br/>
+
+클래스 이름에 `SpringCGLIB` 가 붙어 있다.
+
+내가 만든 `Config` 가 아니라 스프링이 상속해서 만든 자식 클래스가 등록된 것이다.
+
+<br/>
+
+## 그 자식 클래스가 하는 일
+
+`@Bean` 메서드를 전부 오버라이딩해서 이렇게 바꾼다.
+
+```java
+@Bean
+public B b() {
+    if (컨테이너에 이미 있으면) {
+        return 그것;
+    }
+    return super.b();       // 없으면 원래 메서드를 부르고 컨테이너에 넣는다
+}
+```
+
+<br/>
+
+앞의 상속, 오버라이딩 글에서 본 그 오버라이딩을 런타임에 하는 것이다.
+
+<br/>
+
+그래서 `@Bean` 메서드를 몇 번 부르든 같은 객체가 온다.
+
+<br/>
+
+## @Configuration 을 빼면
+
+`@Bean` 만 남기고 `@Configuration` 을 지우면 CGLIB 처리를 안 한다.
+
+```java
+b() 호출 횟수 = 2
+```
+
+<br/>
+
+`a()` 안의 `b()` 가 그냥 자바 메서드 호출이 되어버린다.
+
+<br/>
+
+싱글톤이 깨지는 것이라, 상태를 가진 빈이면 문제가 된다.
+
+앞의 싱글톤 패턴, 싱글톤 방식의 주의점 글에서 본 그 상황이 생긴다.
+
+<br/>
+
+## 그럼 @Configuration 없이 쓰는 경우가 있나
+
+의도적으로 그렇게 쓰기도 한다. `Lite 모드` 라고 부른다.
+
+```java
+@Component
+public class Config {
+    @Bean
+    public B b() { return new B(); }
+}
+```
+
+<br/>
+
+CGLIB 프록시를 안 만드니 기동이 조금 빠르다.
+
+대신 `@Bean` 메서드끼리 서로 부르면 안 된다.
+
+<br/>
+
+명시적으로 끌 수도 있다.
+
+```java
+@Configuration(proxyBeanMethods = false)
+```
+
+<br/>
+
+스프링 부트 내부의 자동 설정 클래스들이 이 옵션을 많이 쓴다.
+
+기동 시간을 줄이려는 것이다.
+
+<br/>
+
+## CGLIB 를 쓰니 제약이 생긴다
+
+앞의 AOP 프록시 글에서 본 것과 같은 제약이다.
+
+```java
+@Configuration 클래스는 final 이면 안 된다   (상속을 못 한다)
+@Bean 메서드도 final 이면 안 된다             (오버라이딩을 못 한다)
+private 메서드에 @Bean 을 붙이면 안 된다
+```
+
+<br/>
+
+`final` 을 붙이면 이런 오류가 난다.
+
+```java
+@Configuration class 'Config' may not be final. Remove the final marker
+```
+
+<br/>
+
+앞의 final 키워드 글에서 본 대로 `final` 클래스는 상속이 막힌다.
+
+프레임워크가 상속으로 동작하는 곳에서는 `final` 이 걸림돌이 되는 것이다.
+
+<br/>
+
+## 제어의 역전이라는 말
+
+무엇이 뒤집힌 것인지 다시 정리하면 이렇다.
+
+```java
+원래  - 내 코드가 필요한 것을 만들고 부른다
+IoC   - 프레임워크가 내 코드를 만들고 부른다
+```
+
+<br/>
+
+`main` 에서 시작해서 아래로 내려가는 흐름이 아니라,
+
+프레임워크가 위에서 내 코드를 꺼내 쓰는 흐름이 된다.
+
+<br/>
+
+앞의 스프링 MVC 구조 글에서 본 것도 같은 모양이다.
+
+```java
+내가 DispatcherServlet 을 부르는 게 아니라
+DispatcherServlet 이 내 컨트롤러를 부른다
+```
+
+<br/>
+
+라이브러리와 프레임워크의 차이가 여기서 갈린다.
+
+```java
+라이브러리   - 내가 부른다
+프레임워크   - 내가 불린다
+```

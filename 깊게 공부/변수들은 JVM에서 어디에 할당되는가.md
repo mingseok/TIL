@@ -69,3 +69,149 @@
 지역 변수는 해당 메서드나 블록의 `스코프` 내에서 사용되며, 
 
 실행이 완료되면 해당 스택 프레임과 지역 변수가 스택에서 `제거`됩니다.
+
+<br/>
+
+## 궁금증!
+
+```java
+네 가지가 정말 다른 곳에 있는지, 코드 한 줄로 확인할 방법이 있을까?
+```
+
+바이트코드를 보면 변수를 꺼내는 명령어가 종류마다 다르다.
+
+네 가지를 한 메서드에서 다 써보고 컴파일해봤다.
+
+```java
+public class Vars {
+    static int classVariable = 1;
+    int instanceVariable = 2;
+
+    void method(int parameter) {
+        int local = 3;
+        String text = "hello";
+        System.out.println(classVariable + instanceVariable + parameter + local + text.length());
+    }
+}
+```
+
+<br/>
+
+### 컴파일 결과
+
+```java
+  void method(int);
+    Code:
+       0: iconst_3
+       1: istore_2                 // local 을 2번 슬롯에 저장
+       2: ldc            // String hello
+       4: astore_3                 // text 를 3번 슬롯에 저장
+       5: getstatic      // Field java/lang/System.out
+       8: getstatic      // Field classVariable:I        <- 클래스 변수
+      11: aload_0                                        <- this 를 먼저 꺼내고
+      12: getfield       // Field instanceVariable:I     <- 인스턴스 변수
+      16: iload_1                                        <- 매개 변수
+      18: iload_2                                        <- 지역 변수
+```
+
+<br/>
+
+명령어가 네 종류로 갈린다.
+
+- `getstatic` : 클래스 변수. 객체가 필요 없어서 바로 꺼낸다
+
+- `aload_0` + `getfield` : 인스턴스 변수. `this` 를 먼저 꺼내야 그 안의 필드를 읽을 수 있다
+- `iload_1` : 매개 변수. 슬롯 번호로 바로 읽는다
+- `iload_2` : 지역 변수. 마찬가지로 슬롯 번호로 읽는다
+
+<br/>
+
+`인스턴스 변수만 this를 거친다` 는 것이 눈에 보인다.
+
+객체 안에 들어 있으니 객체부터 찾아야 하는 것이다.
+
+<br/>
+
+## 스택 프레임 안은 이렇게 생겼다
+
+`javap -c -l` 로 열면 슬롯 표가 같이 나온다.
+
+```java
+  LocalVariableTable:
+    Start  Length  Slot  Name       Signature
+        0      29     0  this       LVars;
+        0      29     1  parameter  I
+        2      27     2  local      I
+        5      24     3  text       Ljava/lang/String;
+```
+
+<br/>
+
+메서드 하나가 쓸 슬롯이 컴파일 시점에 이미 정해져 있다.
+
+`0번은 this, 1번은 매개변수, 2번부터 지역변수` 순서로 자리가 잡힌다.
+
+<br/>
+
+여기서 두 가지를 알 수 있다.
+
+- 매개 변수와 지역 변수는 같은 표에 나란히 있다. JVM 입장에서는 구분이 없다시피 하다
+
+- `0번 슬롯에 this` 가 들어 있다. 인스턴스 메서드는 자기 객체를 몰래 하나 더 받는 것이다
+
+<br/>
+
+`static` 메서드로 바꿔서 컴파일해보면 `0번 슬롯` 이 `this` 가 아니라 매개변수로 채워진다.
+
+`static` 메서드에서 `this` 를 못 쓰는 이유가 여기서도 확인된다. 애초에 안 넘어온다.
+
+<br/>
+
+## Text 라는 이름의 참조 변수는 어디에 있는가
+
+`text` 는 `String` 이니 참조형이다. 이 경우는 두 군데로 나뉜다.
+
+```java
+String text = "hello";
+```
+
+- `text` 라는 변수 자체 (주소를 담는 칸) -> 스택 프레임의 `3번 슬롯`
+
+- `"hello"` 라는 문자열 객체 -> 힙 (정확히는 String Pool)
+
+<br/>
+
+`astore_3` 이 저장하는 것은 문자열이 아니라 문자열의 주소다.
+
+메서드가 끝나면 프레임이 통째로 사라지면서 `3번 슬롯` 도 없어지지만,
+
+힙에 있는 `"hello"` 는 다른 데서 참조하고 있으면 계속 살아 있는다.
+
+```java
+스택에서 사라지는 것 = 주소를 담고 있던 칸
+힙에서 사라지는 것   = 아무도 안 가리키게 됐을 때, GC가 치울 때
+```
+
+<br/>
+
+## 그래서 동시성 문제도 여기서 갈린다
+
+앞의 네 가지를 `스레드끼리 공유하는가` 로 다시 묶어보면 이렇게 된다.
+
+```java
+지역 변수, 매개 변수 -> 스택 프레임 안 -> 스레드마다 따로 -> 공유되지 않는다
+인스턴스 변수        -> 힙의 객체 안    -> 그 객체를 여러 스레드가 보면 공유된다
+클래스 변수(static)  -> 클래스 쪽       -> 언제나 공유된다
+```
+
+<br/>
+
+메서드 안에서만 쓰는 지역 변수에 `synchronized` 를 걸 필요가 없는 이유가 이것이다.
+
+스레드마다 자기 스택이 따로 있으니 애초에 남이 볼 수가 없다.
+
+<br/>
+
+반대로 `static` 변수는 항상 공유된다. 스프링 빈이 싱글턴이라 필드에 상태를 두면 안 된다는 말도 같은 얘기다.
+
+빈이 하나뿐인데 요청마다 다른 스레드가 그 필드를 같이 건드리기 때문이다.

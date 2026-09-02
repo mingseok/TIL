@@ -114,3 +114,179 @@ List<Member> result = em.createQuery(jpql, Member.class).getResultList();
 
 >**Reference** <br/>[자바 ORM 표준 JPA 프로그래밍 - 기본편](https://www.inflearn.com/course/ORM-JPA-Basic)
 
+
+<br/>
+
+## 궁금증!
+
+```java
+JPQL 이 SQL 과 정확히 무엇이 다른가
+```
+
+`무엇을 대상으로 쓰는가` 가 다르다.
+
+```java
+SQL  - 테이블과 컬럼을 대상으로 한다
+JPQL - 엔티티와 필드를 대상으로 한다
+```
+
+<br/>
+
+```java
+SELECT m FROM Member m WHERE m.name = :name
+```
+
+<br/>
+
+여기서 `Member` 는 테이블 이름이 아니라 엔티티 이름이다.
+
+앞의 엔티티 매핑 글에서 본 `@Entity(name = "...")` 가 정하는 그 이름이다.
+
+<br/>
+
+`m.name` 도 컬럼 이름이 아니라 필드 이름이다.
+
+컬럼이 `member_name` 이어도 JPQL에는 `name` 이라고 쓴다.
+
+<br/>
+
+## 그래서 DB 를 바꿔도 안 바뀐다
+
+앞의 JPA 설정 - persistence.xml 글에서 본 방언이 이걸 처리한다.
+
+```java
+-- JPQL (항상 같다)
+SELECT m FROM Member m ORDER BY m.age
+
+-- MySQL
+SELECT * FROM member ORDER BY age LIMIT 10 OFFSET 20
+
+-- Oracle
+SELECT * FROM (SELECT ROWNUM rn, ... ) WHERE rn BETWEEN 21 AND 30
+```
+
+<br/>
+
+앞의 PSA 글에서 본 `기술이 바뀌어도 내 코드는 그대로` 가 여기에도 적용된다.
+
+<br/>
+
+## 그런데 완전히 독립적이지는 않다
+
+JPQL에도 DB 문법이 새어 들어온다.
+
+```java
+SELECT FUNCTION('group_concat', m.name) FROM Member m
+```
+
+<br/>
+
+`group_concat` 은 MySQL 함수다. 이걸 쓰는 순간 다른 DB로 못 옮긴다.
+
+<br/>
+
+앞의 MyBatis 설명, 설정 방법 글에서 본 것과 같은 상황이다.
+
+편의를 위해 이식성을 포기하는 선택인 것이다.
+
+<br/>
+
+## SELECT m 이 엔티티를 돌려준다는 것
+
+이게 SQL과 제일 크게 다른 점이다.
+
+```java
+List<Member> members = em.createQuery("SELECT m FROM Member m", Member.class)
+        .getResultList();
+
+members.get(0).changeName("바뀐이름");     // UPDATE 가 나간다
+```
+
+<br/>
+
+앞의 영속성 컨텍스트 글에서 본 대로, 조회한 엔티티가 영속 상태가 된다.
+
+그래서 변경 감지가 동작한다.
+
+<br/>
+
+앞의 @Query, 값, DTO 조회하기 글에서 본 DTO 조회는 이게 안 된다.
+
+```java
+SELECT new com.example.MemberDto(m.id, m.name) FROM Member m
+```
+
+<br/>
+
+DTO는 엔티티가 아니라 영속성 컨텍스트가 관리하지 않는다.
+
+```java
+엔티티로 조회 - 변경 감지가 된다. 대신 필요 없는 컬럼까지 읽는다
+DTO 로 조회   - 필요한 것만 읽는다. 대신 수정은 못 한다
+```
+
+<br/>
+
+## 대상이 엔티티라서 생기는 제약
+
+```java
+SELECT * FROM member                  -- SQL 은 된다
+SELECT * FROM Member m                -- JPQL 은 안 된다
+```
+
+<br/>
+
+`*` 라는 개념이 없다. 엔티티 전체를 원하면 별칭을 쓴다.
+
+```java
+SELECT m FROM Member m
+```
+
+<br/>
+
+그리고 별칭이 필수다. `FROM Member` 만 쓰면 안 된다.
+
+엔티티를 가리킬 방법이 없기 때문이다.
+
+<br/>
+
+## 조인도 다르다
+
+```sql
+-- SQL : 조인 조건을 직접 적는다
+SELECT * FROM member m JOIN team t ON m.team_id = t.id
+```
+
+```java
+-- JPQL : 연관관계를 따라간다
+SELECT m FROM Member m JOIN m.team t
+```
+
+<br/>
+
+`ON` 절이 없다. `m.team` 이라고 적으면 매핑 정보에서 조인 조건을 알아낸다.
+
+<br/>
+
+앞의 연관관계 매핑 글에서 본 `@JoinColumn` 이 그 정보다.
+
+객체 그래프를 따라가는 방식이라 조인 조건을 틀릴 일이 없다.
+
+<br/>
+
+## 그래서 나가는 SQL 을 봐야 한다
+
+JPQL이 편한 만큼 실제 SQL이 안 보인다.
+
+앞의 DB 접근(JPA) 글에서 본 `N+1` 이 그 대표적인 결과다.
+
+```java
+spring.jpa.properties.hibernate.format_sql=true
+logging.level.org.hibernate.SQL=debug
+```
+
+<br/>
+
+이 설정을 켜두는 것이 JPQL을 쓰는 전제 조건이라고 봐도 된다.
+
+내가 쓴 JPQL 한 줄이 SQL 몇 줄이 되는지 모르면 성능을 다룰 수가 없다.

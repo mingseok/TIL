@@ -138,3 +138,182 @@ URL라는 주소에 쿼리 파라미터인 데이터를 포함해서 전달 하�
 
 
 >**Reference** <br/>[스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8?utm_source=google&utm_medium=cpc&utm_campaign=04.general_backend&utm_content=spring&utm_term=%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9E%85%EB%AC%B8&gclid=CjwKCAiAjPyfBhBMEiwAB2CCImohok2YrQ2tRdhqfr3cZvKqkIJOHUJ36u6s1-7C9X1gzZIapTvOtxoCangQAvD_BwE)
+
+<br/>
+
+## 궁금증!
+
+```java
+Model 은 어디에 담기는가
+```
+
+결국 `HttpServletRequest` 의 attribute 로 들어간다.
+
+```java
+model.addAttribute("members", members);
+```
+
+<br/>
+
+이것이 나중에 이렇게 바뀐다.
+
+```java
+request.setAttribute("members", members);
+```
+
+<br/>
+
+앞의 리다이렉트, 디스패처 글에서 본 대로,
+
+포워드를 하면 같은 `request` 를 넘기니 JSP에서 꺼내 쓸 수 있는 것이다.
+
+```java
+<c:forEach var="member" items="${members}">
+```
+
+<br/>
+
+`${members}` 가 `request.getAttribute("members")` 를 찾는 표현식이다.
+
+<br/>
+
+## 그래서 리다이렉트하면 Model 이 사라진다
+
+```java
+@PostMapping("/members/new")
+public String save(Model model) {
+    model.addAttribute("message", "등록 완료");
+    return "redirect:/members";        // message 는 사라진다
+}
+```
+
+<br/>
+
+리다이렉트는 새 요청이라 앞의 `request` 가 버려지기 때문이다.
+
+<br/>
+
+그래서 `RedirectAttributes` 가 따로 있는 것이다.
+
+```java
+redirectAttributes.addFlashAttribute("message", "등록 완료");
+```
+
+<br/>
+
+이건 세션에 잠깐 넣었다가 다음 요청에서 꺼내고 지운다.
+
+<br/>
+
+## Model 대신 쓸 수 있는 것들
+
+세 가지가 있는데 결국 같은 데로 간다.
+
+```java
+public String list(Model model) {
+    model.addAttribute("members", members);
+}
+
+public String list(ModelMap map) {
+    map.addAttribute("members", members);
+}
+
+public ModelAndView list() {
+    ModelAndView mv = new ModelAndView("members/list");
+    mv.addObject("members", members);
+    return mv;
+}
+```
+
+<br/>
+
+`ModelAndView` 는 옛날 방식이다. 모델과 뷰 이름을 한 객체에 담아 돌려준다.
+
+<br/>
+
+앞의 스프링 MVC 구조 글에서 본 대로 `HandlerAdapter` 의 반환 타입이 `ModelAndView` 라,
+
+`Model` 을 쓰고 `String` 을 반환해도 내부에서 `ModelAndView` 로 조립된다.
+
+```java
+String 반환 + Model 파라미터  ->  내부에서 ModelAndView 로 합쳐진다
+```
+
+<br/>
+
+## 반환값을 아예 안 쓸 수도 있다
+
+```java
+@GetMapping("/members")
+public void list(Model model) {
+    model.addAttribute("members", members);
+}
+```
+
+<br/>
+
+`void` 를 반환하면 스프링이 요청 경로를 뷰 이름으로 쓴다.
+
+`/members` 로 들어왔으니 `members` 라는 뷰를 찾는 것이다.
+
+<br/>
+
+되긴 하는데 실무에서는 안 쓴다.
+
+URL을 바꾸면 뷰까지 같이 바뀌어버려서 예상하기 어렵기 때문이다.
+
+<br/>
+
+## @ModelAttribute 도 모델에 담긴다
+
+```java
+@GetMapping("/members/new")
+public String form(@ModelAttribute("memberForm") MemberForm form) {
+    return "members/newForm";
+}
+```
+
+<br/>
+
+앞의 특별한 @ModelAttribute 사용법 글에서 본 대로,
+
+`@ModelAttribute` 는 객체를 만들어 값을 채운 다음 모델에도 자동으로 넣어준다.
+
+<br/>
+
+그래서 `model.addAttribute()` 를 따로 안 써도 뷰에서 쓸 수 있다.
+
+```java
+<input type="text" th:field="*{name}">
+```
+
+<br/>
+
+이름을 생략하면 클래스 이름의 첫 글자를 소문자로 바꾼 것이 이름이 된다.
+
+```java
+MemberForm  -> "memberForm"
+Item        -> "item"
+```
+
+<br/>
+
+## Model 을 안 쓰는 경우
+
+앞의 API 방식(json), @ResponseBody 글에서 본 그 경우다.
+
+```java
+@GetMapping("/api/members")
+@ResponseBody
+public List<Member> list() {
+    return members;              // Model 이 필요 없다
+}
+```
+
+<br/>
+
+뷰를 안 그리니 모델도 필요 없다. 객체를 그대로 돌려주면 JSON이 된다.
+
+<br/>
+
+`Model` 은 화면을 서버에서 그릴 때만 쓰는 것이라고 보면 된다.

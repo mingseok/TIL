@@ -101,3 +101,175 @@ POST : "내가 데이터를 줄 테니 등록을 하거나, 처리를 해주세�
     - e.g.) `json으로 조회 데이터를 넘겨야 하는데`, get 메서드를 사용하기 어려운 경우
     
     - 애매하면 post
+<br/>
+
+## 궁금증!
+
+```java
+GET 과 POST 가 실제 요청에서 어떻게 다른지 그대로 보자
+```
+
+요청을 되돌려주는 서버로 확인해봤다.
+
+<br/>
+
+### GET
+
+```java
+$ curl --get --data-urlencode "name=민석" --data-urlencode "age=30" http://localhost:18080/members
+
+GET /members?name=%eb%af%bc%ec%84%9d&age=30 HTTP/1.1
+Host: localhost:18080
+
+[본문] (없음)
+```
+
+<br/>
+
+### POST
+
+```java
+$ curl -X POST http://localhost:18080/members/new --data-urlencode "name=민석" --data-urlencode "age=30"
+
+POST /members/new HTTP/1.1
+Host: localhost:18080
+Content-type: application/x-www-form-urlencoded
+Content-length: 30
+
+[본문] name=%EB%AF%BC%EC%84%9D&age=30
+```
+
+<br/>
+
+## 세 가지가 다르다
+
+```java
+1. 값이 실리는 자리 - GET 은 URL, POST 는 본문
+2. Content-Type    - POST 에만 있다
+3. 값의 형식        - 둘 다 키=값&키=값 으로 같다
+```
+
+<br/>
+
+`3번` 이 재밌다. 형식이 똑같다.
+
+그래서 서블릿은 둘을 구분하지 않고 `request.getParameter()` 하나로 꺼낼 수 있다.
+
+앞의 `@RequestParam` 글에서 본 `요청 파라미터` 가 이 둘을 합쳐 부르는 말이다.
+
+<br/>
+
+## 그래서 생기는 실질적인 차이들
+
+### 첫번째) 길이 제한
+
+`HTTP` 규격에는 URL 길이 제한이 없다. 그런데 구현마다 한계가 있다.
+
+```java
+브라우저 - 대략 2000 자 정도
+서버     - 톰캣 기본값은 8 KB (헤더 전체 기준)
+```
+
+<br/>
+
+넘으면 이런 응답이 온다.
+
+```java
+414 URI Too Long
+431 Request Header Fields Too Large
+```
+
+<br/>
+
+검색 조건이 아주 많은 화면에서 `GET` 이 갑자기 실패하는 경우가 이것이다.
+
+<br/>
+
+### 두번째) 기록에 남는다
+
+```java
+GET /login?password=1234
+```
+
+<br/>
+
+이 주소가 남는 곳이 여러 군데다.
+
+```java
+브라우저 방문 기록
+서버 액세스 로그
+프록시와 중간 장비 로그
+Referer 헤더 (다른 사이트로 이동하면 그쪽에 알려진다)
+```
+
+<br/>
+
+비밀번호가 서버 로그 파일에 평문으로 쌓인다.
+
+`HTTPS` 를 써도 소용없다. 암호화는 전송 구간만 보호할 뿐, 로그는 서버가 남기는 것이다.
+
+<br/>
+
+앞의 일반 정보 글에서 본 `Referer` 가 특히 위험하다.
+
+우리 사이트에서 외부 링크를 누르면, 그 사이트가 우리 URL을 보게 된다.
+
+<br/>
+
+### 세번째) 캐시와 재시도
+
+앞의 멱등 글에서 본 성질 차이가 여기서 나온다.
+
+```java
+GET  - 캐시된다. 자동 재시도된다. 북마크할 수 있다
+POST - 캐시 안 된다. 재시도 안 된다. 북마크 못 한다
+```
+
+<br/>
+
+## GET 에 본문을 넣으면 안 되는가
+
+규격상 금지는 아니다. `HTTP/1.1` 명세도 명시적으로 막지는 않는다.
+
+<br/>
+
+문제는 중간 장비들이 무시하거나 잘라버린다는 것이다.
+
+```java
+프록시, 로드 밸런서, CDN 중 일부는 GET 의 본문을 버린다
+```
+
+<br/>
+
+그리고 캐시가 URL만 보고 판단하기 때문에, 본문이 달라도 같은 응답을 준다.
+
+<br/>
+
+그래서 조회 조건이 너무 복잡하면 `POST` 로 보내는 쪽을 택한다.
+
+```java
+POST /search
+Content-Type: application/json
+
+{"filters": [...], "sort": [...], "page": 1}
+```
+
+<br/>
+
+이건 규격을 어기는 것이 아니라, `조회지만 POST 를 쓰기로 한` 실용적 타협이다.
+
+Elasticsearch 같은 검색 엔진이 이렇게 한다.
+
+<br/>
+
+## 조회인데 POST 를 쓰면 잃는 것
+
+```java
+캐시 - 앞의 캐시 글에서 본 max-age 와 304 를 못 쓴다
+공유 - URL 을 복사해서 남에게 줄 수 없다
+뒤로가기 - 브라우저가 POST 를 다시 보내려 해서 경고가 뜬다
+```
+
+<br/>
+
+그래서 가능하면 `GET` 을 쓰고, 정말 안 될 때만 `POST` 로 가는 순서가 맞다.

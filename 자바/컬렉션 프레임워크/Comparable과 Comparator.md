@@ -403,3 +403,243 @@ class Student implements Comparator<Student> {
 	}
 }
 ```
+<br/>
+
+## 궁금증!
+
+```java
+(a, b) -> a - b 로 쓰면 안 되나
+```
+
+짧아서 자주 쓰는데, 오버플로가 난다.
+
+```java
+int a = Integer.MAX_VALUE;
+int b = -1;
+```
+
+<br/>
+
+### 결과
+
+```java
+a - b            = -2147483648   <- 음수다. a 가 작다는 뜻
+Integer.compare  = 1             <- 양수다. a 가 크다는 뜻
+```
+
+<br/>
+
+`2147483647 - (-1)` 은 `2147483648` 이어야 하는데 `int` 범위를 넘는다.
+
+앞의 정수 오버플로 글에서 본 대로 한 바퀴 돌아 음수가 된다.
+
+<br/>
+
+비교기가 **반대로** 답한 것이다.
+
+<br/>
+
+## 그런데 정렬 결과는 맞게 나왔다
+
+```java
+뺄셈    = [-2147483648, -100, -1, 0, 5, 2147483000, 2147483647]
+compare = [-2147483648, -100, -1, 0, 5, 2147483000, 2147483647]
+같은가? true
+```
+
+<br/>
+
+비교기가 틀렸는데 결과는 같다.
+
+<br/>
+
+원소 배치에 따라 그 잘못된 비교가 결과를 뒤집는 자리까지 안 갈 수도 있기 때문이다.
+
+앞의 정렬(Sort) 글에서 본 `TimSort` 가 원소를 어떤 순서로 비교하느냐에 달렸다.
+
+<br/>
+
+이게 더 나쁘다.
+
+테스트에서는 통과하고 운영 데이터에서만 틀리는 종류의 버그인 것이다.
+
+<br/>
+
+값이 항상 작으면 뺄셈도 문제가 없다. 그래서 몇 년을 모르고 지나가기도 한다.
+
+<br/>
+
+## 그러니 그냥 표준 메서드를 쓰면 된다
+
+```java
+Integer.compare(a, b)
+Comparator.comparingInt(Member::getAge)
+```
+
+<br/>
+
+`Integer.compare` 안은 뺄셈이 아니다.
+
+```java
+return (x < y) ? -1 : ((x == y) ? 0 : 1);
+```
+
+<br/>
+
+비교만 하고 계산을 안 하니 오버플로가 날 수가 없다.
+
+<br/>
+
+## Comparable 과 equals 가 안 맞으면
+
+이것도 조용히 깨지는 종류다.
+
+```java
+class Money implements Comparable<Money> {
+    int amount;
+    String where;
+
+    public int compareTo(Money o) { return Integer.compare(amount, o.amount); }   // 금액만
+    public boolean equals(Object o) { ... }                                        // 금액 + 장소
+}
+```
+
+<br/>
+
+```java
+TreeSet<Money> set = new TreeSet<>();
+set.add(new Money(1000, "지갑"));
+set.add(new Money(1000, "통장"));
+```
+
+<br/>
+
+### 결과
+
+```java
+TreeSet 크기 = 1   <- 하나가 안 들어갔다
+HashSet 크기 = 2
+```
+
+<br/>
+
+같은 데이터인데 `Set` 종류에 따라 크기가 다르다.
+
+<br/>
+
+앞의 Set 글에서 본 대로 두 `Set` 이 중복을 판단하는 기준이 다르기 때문이다.
+
+```java
+HashSet - hashCode() 와 equals() 로 판단
+TreeSet - compareTo() 가 0 이면 같다고 본다
+```
+
+<br/>
+
+`compareTo` 가 금액만 보니 `1000원` 이면 전부 같은 것으로 취급한 것이다.
+
+<br/>
+
+## 그래서 규약이 있다
+
+```java
+(x.compareTo(y) == 0) == x.equals(y)
+```
+
+<br/>
+
+`compareTo` 가 0이면 `equals` 도 `true` 여야 한다는 뜻이다.
+
+<br/>
+
+자바 문서에도 적혀 있고, 안 지켜도 컴파일은 된다.
+
+`강력히 권장한다` 는 표현으로 되어 있다. 강제할 방법이 없는 것이다.
+
+<br/>
+
+`BigDecimal` 이 유명한 위반 사례다.
+
+```java
+new BigDecimal("1.0").equals(new BigDecimal("1.00"))     -> false
+new BigDecimal("1.0").compareTo(new BigDecimal("1.00"))  -> 0
+```
+
+<br/>
+
+`equals` 는 소수점 자릿수까지 보고, `compareTo` 는 값만 본다.
+
+그래서 `HashSet` 에는 둘 다 들어가고 `TreeSet` 에는 하나만 들어간다.
+
+<br/>
+
+앞의 BigDecimal 글에서 본 그 특성이 여기까지 영향을 준다.
+
+<br/>
+
+## Comparable 과 Comparator 를 언제 쓰나
+
+```java
+Comparable - 그 클래스의 "자연스러운 순서" 가 하나 있을 때. 클래스 안에 넣는다
+Comparator - 정렬 기준이 여러 개일 때. 밖에서 만든다
+```
+
+<br/>
+
+`String` 은 사전순이 자연스러운 순서라 `Comparable` 이 있다.
+
+그런데 길이순으로 정렬하고 싶으면 `Comparator` 를 따로 만들어야 한다.
+
+```java
+list.sort(Comparator.comparingInt(String::length));
+```
+
+<br/>
+
+`Member` 같은 도메인 객체는 자연스러운 순서가 없는 경우가 많다.
+
+이름순인지 나이순인지 가입일순인지 정할 수가 없다.
+
+<br/>
+
+그럴 때는 `Comparable` 을 안 만드는 게 낫다.
+
+억지로 하나 정해두면 나중에 다른 기준으로 정렬할 때 헷갈리기 때문이다.
+
+<br/>
+
+## 체이닝이 편하다
+
+```java
+list.sort(Comparator.comparing(Member::getGrade)
+                    .thenComparing(Member::getName)
+                    .reversed());
+```
+
+<br/>
+
+등급으로 먼저, 같으면 이름으로, 전체를 뒤집는다.
+
+<br/>
+
+`reversed()` 가 맨 뒤에 붙으면 앞의 체인 전체를 뒤집는다는 게 헷갈리기 쉽다.
+
+이름만 뒤집고 싶으면 그 자리에 붙여야 한다.
+
+```java
+.thenComparing(Comparator.comparing(Member::getName).reversed())
+```
+
+<br/>
+
+`null` 이 섞여 있으면 터진다.
+
+```java
+Comparator.nullsFirst(Comparator.comparing(Member::getName))
+```
+
+<br/>
+
+앞의 정렬, 페이징, 집합 글에서 본 QueryDSL의 `nullsLast` 와 같은 고민이다.
+
+`null` 을 어디에 둘지는 결국 사람이 정해줘야 하는 것이다.

@@ -369,3 +369,197 @@ required = 필수 값 입니다.
 <br/><br/>
 
 >**Reference** <br/>[스프링 MVC 2편 - 백엔드 웹 개발 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2/dashboard)
+
+<br/>
+
+## 궁금증!
+
+```java
+@NotNull, @NotEmpty, @NotBlank 는 뭐가 다를까?
+```
+
+셋 다 비슷해 보이는데 통과 기준이 다르다.
+
+```java
+값             @NotNull   @NotEmpty   @NotBlank
+null           실패        실패         실패
+""             통과        실패         실패
+"   " (공백)    통과        통과         실패
+"abc"          통과        통과         통과
+```
+
+<br/>
+
+`@NotNull` 은 `null` 만 막는다. 빈 문자열은 통과한다.
+
+사용자가 입력창을 비우고 보내면 대부분 `""` 로 오기 때문에, `@NotNull` 만으로는 못 막는다.
+
+<br/>
+
+`@NotBlank` 는 공백만 있는 것도 막는다. 문자열에는 이게 맞다.
+
+```java
+문자열       -> @NotBlank
+컬렉션, 배열 -> @NotEmpty (@NotBlank 는 문자열 전용이라 못 쓴다)
+숫자, 객체    -> @NotNull
+```
+
+<br/>
+
+`@NotEmpty` 는 문자열과 컬렉션 둘 다에 쓸 수 있는데, 문자열이면 `@NotBlank` 가 낫다.
+
+<br/>
+
+## 숫자에는 @NotBlank 를 못 쓴다
+
+```java
+@NotBlank
+private Integer price;     // 컴파일은 되는데 실행하면 터진다
+```
+
+```java
+UnexpectedTypeException: No validator could be found for constraint
+'jakarta.validation.constraints.NotBlank' validating type 'java.lang.Integer'
+```
+
+<br/>
+
+`@NotBlank` 는 `CharSequence` 에만 붙일 수 있다.
+
+숫자는 `@NotNull` 로 `null` 을 막고, 범위는 `@Min`, `@Max`, `@Positive` 로 따로 잡는다.
+
+```java
+@NotNull
+@Range(min = 1000, max = 1000000)
+private Integer price;
+```
+
+<br/>
+
+## 검증 순서가 중요하다
+
+원문의 `검증 순서` 를 더 파보면, 실패했을 때 무엇이 남는지가 다르다.
+
+```java
+1. @ModelAttribute 로 타입 변환을 시도한다
+     - 실패하면 typeMismatch 오류를 BindingResult 에 담고, 그 필드는 검증을 건너뛴다
+2. 변환에 성공한 필드만 Bean Validation 을 돌린다
+```
+
+<br/>
+
+`price` 에 `"abc"` 를 넣으면 `Integer` 로 못 바꾼다.
+
+이때 `@Range` 검증은 아예 안 돈다. 검증할 값 자체가 없기 때문이다.
+
+<br/>
+
+그래서 사용자에게는 `숫자를 입력해주세요` 라는 타입 오류만 보인다.
+
+`1000원 이상 입력해주세요` 라는 메시지는 안 나온다.
+
+```java
+값이 아예 안 들어옴 -> 타입 오류만
+값은 들어왔는데 범위가 틀림 -> Bean Validation 오류
+```
+
+<br/>
+
+## @Valid 와 @Validated 의 차이
+
+```java
+@Valid      - 자바 표준 (jakarta.validation)
+@Validated  - 스프링이 만든 것 (org.springframework.validation.annotation)
+```
+
+<br/>
+
+컨트롤러 파라미터에 붙일 때는 기능이 거의 같다.
+
+차이는 두 가지다.
+
+<br/>
+
+### 첫번째) @Validated 만 그룹을 지정할 수 있다
+
+```java
+@Validated(SaveCheck.class)
+```
+
+<br/>
+
+같은 클래스를 등록할 때와 수정할 때 다르게 검증하고 싶을 때 쓴다.
+
+다만 원문의 `Form 전송 객체 분리` 처럼 클래스를 나누는 편이 실무에서는 더 많이 쓰인다.
+
+<br/>
+
+### 두번째) @Validated 는 컨트롤러 밖에서도 쓸 수 있다
+
+```java
+@Service
+@Validated                              // 클래스에 붙인다
+public class OrderService {
+
+    public void order(@Valid OrderCommand command) { ... }
+}
+```
+
+<br/>
+
+이건 AOP로 동작한다. 앞의 AOP 글에서 본 프록시가 메서드 호출을 가로채서 검증한다.
+
+<br/>
+
+그래서 AOP의 제약이 그대로 따라온다.
+
+```java
+같은 클래스 안에서 내부 호출하면 -> 검증이 안 된다
+private 메서드에 붙이면          -> 검증이 안 된다
+```
+
+<br/>
+
+그리고 검증에 실패하면 `BindingResult` 가 아니라 예외가 던져진다.
+
+```java
+ConstraintViolationException
+```
+
+컨트롤러에서는 오류를 화면에 보여줄 수 있었지만, 서비스에서는 예외로 처리해야 한다.
+
+<br/>
+
+## 메시지를 찾는 순서
+
+원문의 `errors.properties 추가 등록` 이 왜 동작하는지는 이 순서 때문이다.
+
+```java
+1. 어노테이션의 message 속성       @NotBlank(message = "이름은 필수입니다")
+2. MessageSource 에서 코드로 찾기   NotBlank.item.itemName -> NotBlank.itemName
+                                    -> NotBlank.java.lang.String -> NotBlank
+3. 라이브러리 기본 메시지           "must not be blank"
+```
+
+<br/>
+
+`2번` 이 앞의 `MessageCodesResolver` 가 만들어주는 코드들이다.
+
+구체적인 것부터 찾다가 없으면 점점 덜 구체적인 것으로 내려간다.
+
+<br/>
+
+그래서 `errors.properties` 에 `NotBlank` 한 줄만 적어두면 모든 `@NotBlank` 에 적용되고,
+
+특정 필드만 다르게 하고 싶으면 `NotBlank.item.itemName` 을 추가하면 된다.
+
+```java
+NotBlank=공백은 입력할 수 없습니다
+NotBlank.item.itemName=상품 이름은 필수입니다
+```
+
+<br/>
+
+메시지를 코드에서 빼두면 문구를 바꿀 때 자바 파일을 안 건드려도 된다.
+
+앞의 뷰 리졸버 글에서 본 `이름과 실제를 분리한다` 가 여기에도 적용된 것이다.

@@ -192,3 +192,221 @@ OptionalInt, OptionalLong, OptionalDouble 이 있는데 이건 필요하면 그�
 
 >**Reference**
 ><br/>남궁 성 지음, 『자바의 정석』, 도우출판.
+
+<br/>
+
+## 궁금증!
+
+```java
+orElse 와 orElseGet 이 무엇이 다른가
+```
+
+이름이 비슷해서 아무거나 써도 될 것 같은데 아니다.
+
+<br/>
+
+값이 있는 `Optional` 에 둘 다 써봤다.
+
+```java
+Optional<String> present = Optional.of("있음");
+
+present.orElse(expensive("orElse"));
+present.orElseGet(() -> expensive("orElseGet"));
+```
+
+<br/>
+
+### 결과
+
+```java
+(비싼 계산 실행: orElse(값이 있는데도))
+결과 = 있음, 있음
+```
+
+<br/>
+
+`orElse` 쪽만 `비싼 계산` 이 실행됐다.
+
+값이 있어서 쓰지도 않을 건데 실행된 것이다.
+
+<br/>
+
+## 자바 문법 때문이다
+
+```java
+present.orElse(expensive())
+```
+
+<br/>
+
+메서드를 부르려면 인자를 먼저 평가해야 한다.
+
+`orElse` 안으로 들어가기 전에 `expensive()` 가 실행되는 것이다.
+
+<br/>
+
+```java
+present.orElseGet(() -> expensive())
+```
+
+<br/>
+
+이건 람다를 넘긴다. 실행이 아니라 `실행 방법` 을 넘기는 것이다.
+
+앞의 람다식 글에서 본 그 지연 실행이다.
+
+<br/>
+
+## 실무에서 이게 문제가 되는 경우
+
+```java
+Member member = memberRepository.findById(id)
+        .orElse(memberRepository.findGuest());     // 항상 조회한다
+```
+
+<br/>
+
+회원을 찾았는데도 게스트 조회 쿼리가 나간다.
+
+<br/>
+
+```java
+.orElseGet(() -> memberRepository.findGuest())     // 없을 때만 조회
+```
+
+<br/>
+
+예외를 던지는 것도 마찬가지다.
+
+```java
+.orElse(throwException())          // 이건 아예 컴파일이 안 된다
+.orElseThrow(() -> new MemberNotFoundException())
+```
+
+<br/>
+
+`orElseThrow` 가 따로 있는 이유다.
+
+<br/>
+
+## 상수면 orElse 가 낫다
+
+```java
+.orElse("기본값")           // 계산할 게 없다
+.orElseGet(() -> "기본값")  // 람다 객체를 만드는 비용만 더 든다
+```
+
+<br/>
+
+`값을 만드는 데 비용이 드느냐` 로 고르면 된다.
+
+<br/>
+
+## Optional 을 어디에 쓰면 안 되나
+
+```java
+필드         -> 안 된다. 직렬화가 안 되고 메모리만 늘어난다
+파라미터     -> 안 된다. null 을 넘길지 Optional.empty 를 넘길지 애매해진다
+컬렉션 안    -> 안 된다. 빈 리스트를 쓰면 된다
+```
+
+<br/>
+
+`Optional` 은 반환 타입으로 쓰라고 만든 것이다.
+
+```java
+Optional<Member> findById(Long id);
+```
+
+<br/>
+
+`이 메서드는 값이 없을 수도 있다` 를 타입으로 알려주는 게 목적이다.
+
+<br/>
+
+앞의 @Autowired, DI 글에서 본 선택적 주입도 같은 맥락이다.
+
+```java
+public MemberService(Optional<StatCollector> stat) { ... }
+```
+
+<br/>
+
+여기서는 파라미터에 쓰지만, 스프링이 채워주는 자리라 예외에 가깝다.
+
+<br/>
+
+## isPresent + get 은 안 쓰는 게 낫다
+
+```java
+if (optional.isPresent()) {
+    Member member = optional.get();
+    ...
+}
+```
+
+<br/>
+
+이러면 `null` 체크와 다를 게 없다.
+
+```java
+if (member != null) { ... }
+```
+
+<br/>
+
+`Optional` 을 쓴 의미가 없어진 것이다.
+
+<br/>
+
+```java
+optional.ifPresent(member -> ...);
+optional.map(Member::getName).orElse("이름 없음");
+optional.filter(m -> m.getAge() > 20).orElseThrow();
+```
+
+<br/>
+
+체인으로 이어 쓰는 게 원래 쓰임새다.
+
+<br/>
+
+`get()` 은 자바 10에서 `orElseThrow()` 라는 이름이 따로 생겼다.
+
+`get` 이라는 이름이 안전해 보여서 그냥 부르는 사람이 많았기 때문이다.
+
+<br/>
+
+## null 을 완전히 없애주지는 않는다
+
+```java
+Optional<Member> optional = null;      // 이게 가능하다
+optional.isPresent();                  // NullPointerException
+```
+
+<br/>
+
+`Optional` 자체가 `null` 일 수 있다.
+
+<br/>
+
+그래서 `Optional` 을 반환하는 메서드는 절대 `null` 을 반환하면 안 된다.
+
+```java
+return Optional.ofNullable(member);    // member 가 null 이면 empty
+```
+
+<br/>
+
+`of` 와 `ofNullable` 을 헷갈리면 여기서 터진다.
+
+```java
+Optional.of(null)          -> NullPointerException
+Optional.ofNullable(null)  -> Optional.empty
+```
+
+<br/>
+
+앞의 NullPointerException 글에서 본 대로,
+
+`null` 이 없어진 게 아니라 다룰 자리가 정해진 것이라고 보면 된다.
